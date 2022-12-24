@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/VornAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/VornAvatar.webp";
 import ImageUrl from "@/assets/hero/big/VornBig.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/VornMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";

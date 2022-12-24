@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/DuncanAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/DuncanAvatar.webp";
 import ImageUrl from "@/assets/hero/big/DuncanBig.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/DuncanMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";

@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/KellamAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/KellamAvatar.webp";
 import ImageUrl from "@/assets/hero/big/KellamBig.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/KellamMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";

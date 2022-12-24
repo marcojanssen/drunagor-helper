@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/KatarinaAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/KatarinaAvatar.webp";
 import ImageUrl from "@/assets/hero/big/KatarinaBig.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/KatarinaMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";

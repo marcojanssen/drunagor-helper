@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/ArkhanosAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/ArkhanosAvatar.webp";
 import ImageUrl from "@/assets/hero/big/ArkhanosBig.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/ArkhanosMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";

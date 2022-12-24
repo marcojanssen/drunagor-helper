@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/DrasekAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/DrasekAvatar.webp";
 import ImageUrl from "@/assets/hero/big/DrasekBig.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";

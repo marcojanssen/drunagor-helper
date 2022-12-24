@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/HandurielAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/HandurielAvatar.webp";
 import ImageUrl from "@/assets/hero/big/HandurielBig.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";

@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/FlavianAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/FlavianAvatar.webp";
 import ImageUrl from "@/assets/hero/big/FlavianBig.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/FlavianMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";
