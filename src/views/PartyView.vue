@@ -2,8 +2,7 @@
 import { ref } from "vue";
 import HeroView from "@/views/HeroView.vue";
 import PartyAddHero from "@/components/PartyAddHero.vue";
-import RemoveHero from "@/components/RemoveHero.vue";
-
+import PartyRemoveHero from "@/components/PartyRemoveHero.vue";
 import { AuraDataStore } from "@/data/store/AuraDataStore";
 import { HeroStore } from "@/data/store/HeroDataStore.js";
 import { PartyStore } from "@/store/PartyStore";
@@ -34,7 +33,7 @@ function viewHero(heroId: string) {
         <PartyAddHero />
       </div>
       <div class="w-full pl-4">
-        <RemoveHero />
+        <PartyRemoveHero />
       </div>
     </div>
     <TransitionGroup name="list">

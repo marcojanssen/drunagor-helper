@@ -63,7 +63,7 @@ function addRandomHeroToParty() {
 <template>
   <button class="btn" @click="openModal">Add hero</button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
-    <template #header> Select a hero </template>
+    <template #header> Add hero </template>
     <template #default>
       <TrackerMenuSearchItem @search="getAllEnabledHeroes"> </TrackerMenuSearchItem>
       <TrackerMenuList>
