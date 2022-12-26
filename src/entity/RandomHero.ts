@@ -1,6 +1,6 @@
 import type { RandomImage } from "@/entity/RandomImage";
 
-export class RandomCommander {
+export class RandomHero {
   public id: string;
   public name: string;
   public image: RandomImage;

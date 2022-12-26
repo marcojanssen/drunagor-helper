@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import HeroView from "@/views/HeroView.vue";
-import AddHero from "@/components/AddHero.vue";
+import PartyAddHero from "@/components/PartyAddHero.vue";
 import RemoveHero from "@/components/RemoveHero.vue";
 
 import { AuraDataStore } from "@/data/store/AuraDataStore";
@@ -31,7 +31,7 @@ function viewHero(heroId: string) {
   <div class="grid gap-4 grid-cols-1 place-items-center">
     <div class="grid grid-cols-2 place-items-center w-full lg:w-1/2">
       <div class="w-full pr-4">
-        <AddHero />
+        <PartyAddHero />
       </div>
       <div class="w-full pl-4">
         <RemoveHero />
