@@ -22,12 +22,16 @@ const excludeCurrentCharacter = ref(true);
 
 const variantStore = VariantStore();
 
-function getRandomMonster(color: MonsterColor) {
-  let excludedMonsters: string[] = [];
+function getExcludedCharacters(): string[] {
+  let excludedCharacters: string[] = [];
   if (excludeCurrentCharacter.value) {
-    excludedMonsters = [currentCharacterId.value];
+    excludedCharacters = [currentCharacterId.value];
   }
-  let monster: RandomMonster | null = new RandomizeMonster().randomizeByColor(color, excludedMonsters);
+  return excludedCharacters;
+}
+
+function getRandomMonster(color: MonsterColor) {
+  let monster: RandomMonster | null = new RandomizeMonster().randomizeByColor(color, getExcludedCharacters());
 
   if (monster === null) {
     toast.error("No other monster available.");
@@ -42,12 +46,7 @@ function getRandomMonster(color: MonsterColor) {
 }
 
 function getRandomCommander() {
-  let excludedCommander: string[] = [];
-  if (excludeCurrentCharacter.value) {
-    excludedCommander = [currentCharacterId.value];
-  }
-
-  let commander: RandomCommander | null = new RandomizeCommander().randomize(excludedCommander);
+  let commander: RandomCommander | null = new RandomizeCommander().randomize(getExcludedCharacters());
 
   if (commander === null) {
     toast.error("No other commander available.");
