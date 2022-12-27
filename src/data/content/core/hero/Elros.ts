@@ -1,5 +1,6 @@
 import AvatarImageUrl from "@/assets/hero/avatar/ElrosAvatar.webp";
 import ImageUrl from "@/assets/hero/big/ElrosBig.webp";
+import ListImageUrl from "@/assets/hero/list/ElrosList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/ElrosMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -18,6 +19,6 @@ export class Elros implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: "",
+    list: ListImageUrl,
   };
 }

@@ -1,5 +1,6 @@
 import AvatarImageUrl from "@/assets/hero/avatar/ArkhanosAvatar.webp";
 import ImageUrl from "@/assets/hero/big/ArkhanosBig.webp";
+import ListImageUrl from "@/assets/hero/list/ArkhanosList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/ArkhanosMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -18,6 +19,6 @@ export class Arkhanos implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: "",
+    list: ListImageUrl,
   };
 }

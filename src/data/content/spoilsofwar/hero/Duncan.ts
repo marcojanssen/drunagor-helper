@@ -1,5 +1,6 @@
 import AvatarImageUrl from "@/assets/hero/avatar/DuncanAvatar.webp";
 import ImageUrl from "@/assets/hero/big/DuncanBig.webp";
+import ListImageUrl from "@/assets/hero/list/DuncanList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/DuncanMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -18,6 +19,6 @@ export class Duncan implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: "",
+    list: ListImageUrl,
   };
 }
