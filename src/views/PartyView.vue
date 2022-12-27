@@ -53,7 +53,7 @@ function viewHero(heroId: string) {
         <div class="border-gold relative h-32 lg:w-1/2 bg-black">
           <div class="flex">
             <div class="flex-none w-32 h-full hero-list-item">
-              <img :src="heroStore.find(member.heroId).images.list" />
+              <img class="hero-image" :src="heroStore.find(member.heroId).images.list" />
               <div class="absolute bottom-0 w-32 left-0 right-0 py-1 bg-black bg-opacity-40">
                 <p class="text-xs pl-4 text-left font-medium">{{ heroStore.find(member.heroId).name }}</p>
               </div>
