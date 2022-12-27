@@ -2,6 +2,10 @@
 import { MagnifyingGlassIcon } from "@heroicons/vue/24/solid";
 import { ref } from "vue";
 
+const props = defineProps<{
+  id?: string;
+}>();
+
 const keyword = ref("");
 
 const emit = defineEmits<{
@@ -14,7 +18,7 @@ function search(keyword: string) {
 </script>
 
 <template>
-  <div class="flex p-2 h-16">
+  <div :id="props.id" class="flex p-2 h-16 sticky top-12 bg-base-100">
     <div class="mt-1 flex rounded-md shadow-sm w-full">
       <div class="relative flex items-stretch flex-grow">
         <input

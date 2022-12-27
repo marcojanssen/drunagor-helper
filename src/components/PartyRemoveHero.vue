@@ -11,6 +11,7 @@ import { useToast } from "vue-toastification";
 import * as _ from "lodash-es";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import type { Member } from "@/store/Member";
+import { XMarkIcon } from "@heroicons/vue/24/solid";
 
 const toast = useToast();
 
@@ -51,12 +52,22 @@ function removeHeroFromParty(heroId: string) {
 </script>
 
 <template>
-  <button class="btn" @click="openModal">Remove hero</button>
+  <button id="party-remove-hero" class="btn float-right" @click="openModal">Remove hero</button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
-    <template #header> Remove hero </template>
+    <template #header>
+      <div class="grid grid-cols-3">
+        <div></div>
+        <div class="text-center font-medium place-self-center">Remove hero</div>
+        <div>
+          <button id="close-modal" class="btn btn-sm btn-circle float-right" @click="closeModal">
+            <XMarkIcon class="h-7 btn-sm btn-circle rounded-lg p-1" />
+          </button>
+        </div>
+      </div>
+    </template>
     <template #default>
       <TrackerMenuSearchItem @search="getAllHeroesInParty"> </TrackerMenuSearchItem>
-      <TrackerMenuList>
+      <TrackerMenuList id="party-remove-heroes">
         <template v-for="hero in heroesInParty" :key="hero.id">
           <TrackerMenuListItem :avatar="hero.images.avatar" @click="removeHeroFromParty(hero.id)">
             {{ hero.name }}

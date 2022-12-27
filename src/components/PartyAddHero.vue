@@ -12,6 +12,7 @@ import { Member } from "@/store/Member";
 import { useToast } from "vue-toastification";
 import RandomImage from "@/assets/hero/avatar/RandomAvatar.webp";
 import * as _ from "lodash-es";
+import { XMarkIcon } from "@heroicons/vue/24/solid";
 
 const toast = useToast();
 
@@ -61,15 +62,25 @@ function addRandomHeroToParty() {
 </script>
 
 <template>
-  <button class="btn" @click="openModal">Add hero</button>
+  <button id="party-add-hero" class="btn" @click="openModal">Add hero</button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
-    <template #header> Add hero </template>
+    <template #header>
+      <div class="grid grid-cols-3">
+        <div></div>
+        <div class="text-center font-medium place-self-center">Add hero</div>
+        <div>
+          <button id="close-modal" class="btn btn-sm btn-circle float-right" @click="closeModal">
+            <XMarkIcon class="h-7 btn-sm btn-circle rounded-lg p-1" />
+          </button>
+        </div>
+      </div>
+    </template>
     <template #default>
-      <TrackerMenuSearchItem @search="getAllEnabledHeroes"> </TrackerMenuSearchItem>
-      <TrackerMenuList>
-        <TrackerMenuListItem @click="addRandomHeroToParty" :avatar="RandomImage.toString()">
-          Random hero
-        </TrackerMenuListItem>
+      <TrackerMenuSearchItem id="party-search-hero" @search="getAllEnabledHeroes"> </TrackerMenuSearchItem>
+      <TrackerMenuListItem id="party-random-hero" @click="addRandomHeroToParty" :avatar="RandomImage.toString()">
+        Random hero
+      </TrackerMenuListItem>
+      <TrackerMenuList id="party-add-heroes">
         <template v-for="hero in availableHeroes" :key="hero.id">
           <TrackerMenuListItem :avatar="hero.images.avatar" @click="addHeroToParty(hero.id)">
             {{ hero.name }}

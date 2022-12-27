@@ -59,9 +59,9 @@ const monsterStore = MonsterDataStore();
   <footer class="flex w-full justify-center p-4 bg-base-100 fixed bottom-0 left-0">
     <button class="btn">End round</button>
   </footer>
-  <BaseModal>
+  <!-- <BaseModal>
     <TrackerMenu />
-  </BaseModal>
+  </BaseModal> -->
 </template>
 
 <style scoped></style>

@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps<{
+  id?: string;
+}>();
+</script>
 
 <template>
-  <div class="divide-y dark:divide-slate-200/5">
+  <div :id="props.id" class="divide-y divide-gray-800">
     <header>
       <slot name="header"></slot>
     </header>

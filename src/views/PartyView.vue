@@ -9,20 +9,28 @@ import { PartyStore } from "@/store/PartyStore";
 import { OutcomeDataStore } from "@/data/store/OutcomeDataStore";
 import { StatusDataStore } from "@/data/store/StatusDataStore";
 import BaseModal from "@/components/BaseModal.vue";
-import { BaseModalStore } from "@/store/BaseModalStore";
+import { XMarkIcon } from "@heroicons/vue/24/solid";
+
+const isOpen = ref(false);
+
+function openModal() {
+  isOpen.value = true;
+}
+function closeModal() {
+  isOpen.value = false;
+}
 
 const heroStore = HeroStore();
 const partyStore = PartyStore();
 const auraStore = AuraDataStore();
 const outcomeStore = OutcomeDataStore();
 const statusStore = StatusDataStore();
-const modalStore = BaseModalStore();
 
 const heroViewId = ref("");
 
 function viewHero(heroId: string) {
   heroViewId.value = heroId;
-  modalStore.open();
+  openModal();
 }
 </script>
 
@@ -37,6 +45,19 @@ function viewHero(heroId: string) {
       </div>
     </div>
     <TransitionGroup name="list">
+      <div class="border-gold relative h-32 lg:w-1/2 bg-black">
+        <!-- <img class="absolute top-10 -left-6" :src="runeUrl" /> -->
+        <div class="flex h-full">
+          <div class="flex-none w-32 h-full">
+            <img :src="url" />
+          </div>
+          <div class="grid pt-3 w-full">
+            <div class="text-2m text-center font-medium">Skeleton Archer - Rookie</div>
+            <div class="text-sm text-center uppercase">Regeneration x; Bloodseeker; <br />Strike 1, stun</div>
+          </div>
+        </div>
+      </div>
+
       <div class="flex w-full lg:w-1/2" v-for="member in partyStore.findAll()" :key="member.heroId">
         <div class="flex-none w-32 relative -mt-3">
           <img class="hero-image" :src="heroStore.find(member.heroId).images.avatar" />
@@ -83,12 +104,31 @@ function viewHero(heroId: string) {
     </TransitionGroup>
   </div>
 
-  <BaseModal v-if="heroViewId">
-    <HeroView v-if="modalStore.state" :heroId="heroViewId" />
+  <BaseModal :is-open="isOpen" @close-modal="closeModal">
+    <template #header>
+      <div class="grid grid-cols-3 pb-3">
+        <div></div>
+        <div class="text-center font-medium place-self-center"></div>
+        <div>
+          <button id="close-modal" class="btn btn-sm btn-circle float-right" @click="closeModal">
+            <XMarkIcon class="h-7 btn-sm btn-circle rounded-lg p-1" />
+          </button>
+        </div>
+      </div>
+    </template>
+    <template #default>
+      <HeroView :heroId="heroViewId" />
+    </template>
   </BaseModal>
 </template>
 
 <style scoped>
+.border-gold {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #f5dab7, #4c4037) 1;
+}
+
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
