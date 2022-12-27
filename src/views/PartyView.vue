@@ -50,17 +50,17 @@ function viewHero(heroId: string) {
         v-for="member in partyStore.findAll()"
         :key="member.heroId"
       >
-        <div class="border-gold relative h-32 lg:w-1/2 bg-black">
+        <div class="border-gold relative h-32 w-full lg:w-1/2 bg-black">
           <div class="flex">
-            <div class="flex-none w-32 h-full hero-list-item">
+            <div class="flex-none w-32 h-full hero-list-item absolute">
               <img class="hero-image" :src="heroStore.find(member.heroId).images.list" />
-              <div class="absolute bottom-0 w-32 left-0 right-0 py-1 bg-black bg-opacity-40">
+              <div class="absolute bottom-0 w-32 left-0 right-0 py-1 bg-black bg-opacity-60">
                 <p class="text-xs pl-4 text-left font-medium">{{ heroStore.find(member.heroId).name }}</p>
               </div>
             </div>
             <div
               @click="viewHero(member.heroId)"
-              class="hero-overview grid gap-1 w-full place-content-start cursor-pointer pl-2 py-2"
+              class="hero-overview grid gap-1 h-32 w-full place-content-start cursor-pointer pl-32 py-2"
             >
               <div class="text-sm" v-if="member.statusIds && member.statusIds.length > 0">
                 <span class="text-gray-400">Status: </span>
