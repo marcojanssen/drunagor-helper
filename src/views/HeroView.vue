@@ -11,17 +11,14 @@ import { OutcomeDataStore } from "@/data/store/OutcomeDataStore";
 import { HeroStore } from "@/data/store/HeroDataStore";
 import { PartyStore } from "@/store/PartyStore";
 import { StatusDataStore } from "@/data/store/StatusDataStore";
-import BaseModalButtonClose from "@/components/BaseModalButtonClose.vue";
 import SwappableImage from "@/components/SwappableImage.vue";
 import backgroundImage from "@/assets/hero/big/Background.webp";
-import { BaseModalStore } from "@/store/BaseModalStore";
 
 const heroStore = HeroStore();
 const partyStore = PartyStore();
 const auraStore = AuraDataStore();
 const outcomeStore = OutcomeDataStore();
 const statusStore = StatusDataStore();
-const baseModalStore = BaseModalStore();
 
 const props = defineProps({
   heroId: {
@@ -67,9 +64,6 @@ watch(heroId, (newHeroId) => {
 </script>
 
 <template>
-  <div class="container w-full bg-base-100 h-12 z-20 sticky top-0">
-    <BaseModalButtonClose />
-  </div>
   <div class="grid grid-cols-1 gap-2 p-4 place-items-center w-full divide-y divide-dotted divide-slate-500 rounded-md">
     <div class="mb-4">
       <SwappableImage
@@ -144,9 +138,6 @@ watch(heroId, (newHeroId) => {
       <div class="w-full bg-base-200 p-4 rounded-md" v-if="member.auraId">
         {{ auraStore.find(member.auraId)?.effect }}
       </div>
-    </div>
-    <div>
-      <button class="btn" @click="baseModalStore.close()">Close</button>
     </div>
   </div>
 </template>

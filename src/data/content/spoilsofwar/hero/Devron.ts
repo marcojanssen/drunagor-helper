@@ -1,5 +1,6 @@
-import AvatarImageUrl from "@/assets/hero/avatar/DevronAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/DevronAvatar.webp";
 import ImageUrl from "@/assets/hero/big/DevronBig.webp";
+import ListImageUrl from "@/assets/hero/list/DevronList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/DevronMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -18,6 +19,6 @@ export class Devron implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: "",
+    list: ListImageUrl,
   };
 }

@@ -12,9 +12,14 @@ export const BaseModalStore = defineStore("base-modal", () => {
     state.value = false;
   }
 
+  function isOpen() {
+    return state.value;
+  }
+
   return {
     state,
     open,
     close,
+    isOpen,
   };
 });

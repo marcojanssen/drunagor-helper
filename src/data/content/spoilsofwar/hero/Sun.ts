@@ -1,5 +1,6 @@
-import AvatarImageUrl from "@/assets/hero/avatar/SunAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/SunAvatar.webp";
 import ImageUrl from "@/assets/hero/big/SunBig.webp";
+import ListImageUrl from "@/assets/hero/list/SunList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/SunMiniature.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -18,6 +19,6 @@ export class Sun implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: "",
+    list: ListImageUrl,
   };
 }

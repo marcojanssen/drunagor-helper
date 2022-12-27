@@ -1,5 +1,5 @@
 import type { VariantId } from "@/data/type/VariantId";
-import type { RandomImage } from "./RandomImage";
+import type { RandomImage } from "@/entity/RandomImage";
 
 export class RandomMonster {
   public id: string;

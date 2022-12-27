@@ -1,5 +1,6 @@
-import AvatarImageUrl from "@/assets/hero/avatar/JadeAvatar.png";
+import AvatarImageUrl from "@/assets/hero/avatar/JadeAvatar.webp";
 import ImageUrl from "@/assets/hero/big/JadeBig.webp";
+import ListImageUrl from "@/assets/hero/list/JadeList.webp";
 import type { HeroData } from "@/data/store/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { HeroClass } from "@/data/type/HeroClass";
@@ -17,6 +18,6 @@ export class Jade implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: "",
-    list: "",
+    list: ListImageUrl,
   };
 }

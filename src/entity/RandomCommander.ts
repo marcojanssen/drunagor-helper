@@ -1,4 +1,4 @@
-import type { RandomImage } from "./RandomImage";
+import type { RandomImage } from "@/entity/RandomImage";
 
 export class RandomCommander {
   public id: string;

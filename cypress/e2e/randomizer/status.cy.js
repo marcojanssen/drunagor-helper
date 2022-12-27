@@ -3,8 +3,8 @@ describe("status selection", () => {
     cy.visit("./party");
   }),
     it("has multiple statuses available", () => {
-      cy.get("#multiselect-add-heroes").click();
-      cy.get("ul#multiselect-add-heroes-multiselect-options li").first().click();
+      cy.get("#party-add-hero").click();
+      cy.get("div#party-add-heroes div").first().click();
       cy.get(".hero-overview").click();
 
       cy.get("ul#multiselect-select-status-multiselect-options li").should("have.length", 66);
@@ -21,28 +21,28 @@ describe("status selection", () => {
         .should("have.text", "A mysterious click");
     });
   it("can set, remove, stores and reset status", () => {
-    cy.get("#multiselect-add-heroes").click();
-    cy.get("ul#multiselect-add-heroes-multiselect-options li").first().click();
+    cy.get("#party-add-hero").click();
+    cy.get("div#party-add-heroes div").first().click();
 
     cy.get(".hero-overview").contains("No aura, status or outcome");
 
     cy.get(".hero-overview").click();
     cy.get("#multiselect-select-status").click();
     cy.get("ul#multiselect-select-status-multiselect-options li").first().click();
-    cy.get("#base-modal-close").click();
+    cy.get("#close-modal").click();
 
     cy.get(".hero-overview").contains("Status: A cooperative approach");
 
     cy.get(".hero-overview").click();
     cy.get("#multiselect-select-status").click();
     cy.get("ul#multiselect-select-status-multiselect-options li").first().next().click();
-    cy.get("#base-modal-close").click();
+    cy.get("#close-modal").click();
 
     cy.get(".hero-overview").contains("Status: A cooperative approach, Aggressive approach");
 
     cy.get(".hero-overview").click();
     cy.get('[aria-label="A cooperative approach ❎"] > .multiselect-tag-remove > .multiselect-tag-remove-icon').click();
-    cy.get("#base-modal-close").click();
+    cy.get("#close-modal").click();
 
     cy.get(".hero-overview").contains("Status: Aggressive approach");
 
