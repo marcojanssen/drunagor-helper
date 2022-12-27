@@ -24,31 +24,31 @@ describe("outcome selection", () => {
     cy.get("#multiselect-add-heroes").click();
     cy.get("ul#multiselect-add-heroes-multiselect-options li").first().click();
 
-    cy.get(":nth-child(2) > .hero-overview").contains("No aura, status or outcome");
+    cy.get(".hero-overview").contains("No aura, status or outcome");
 
-    cy.get(":nth-child(2) > .hero-overview").click();
+    cy.get(".hero-overview").click();
     cy.get("#multiselect-select-outcome").click();
     cy.get("ul#multiselect-select-outcome-multiselect-options li").first().click();
     cy.get("#base-modal-close").click();
 
-    cy.get(":nth-child(2) > .hero-overview").first().contains("Outcome: A courier's job");
+    cy.get(".hero-overview").contains("Outcome: A courier's job");
 
-    cy.get(":nth-child(2) > .hero-overview").click();
+    cy.get(".hero-overview").click();
     cy.get("#multiselect-select-outcome").click();
     cy.get("ul#multiselect-select-outcome-multiselect-options li").first().next().click();
     cy.get("#base-modal-close").click();
 
-    cy.get(":nth-child(2) > .hero-overview").first().contains("Outcome: A courier's job, A hideous act");
+    cy.get(".hero-overview").contains("Outcome: A courier's job, A hideous act");
 
-    cy.get(":nth-child(2) > .hero-overview").click();
+    cy.get(".hero-overview").click();
     cy.get(".multiselect-tag-remove-icon").first().click();
     cy.get("#base-modal-close").click();
 
-    cy.get(":nth-child(2) > .hero-overview").first().contains("Outcome: A hideous act");
+    cy.get(".hero-overview").contains("Outcome: A hideous act");
 
     cy.reload();
 
-    cy.get(":nth-child(2) > .hero-overview").first().contains("Outcome: A hideous act");
+    cy.get(".hero-overview").contains("Outcome: A hideous act");
 
     cy.clearLocalStorage();
     cy.get(".hero-image").should("not.exist");
