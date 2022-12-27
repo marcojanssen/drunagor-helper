@@ -24,30 +24,31 @@ describe("aura selection", () => {
     cy.get("#multiselect-add-heroes").click();
     cy.get("ul#multiselect-add-heroes-multiselect-options li").first().click();
 
-    cy.get(":nth-child(3) > .hero-overview").contains("No aura, status or outcome");
+    cy.get(".hero-overview").contains("No aura, status or outcome");
 
-    cy.get(":nth-child(2) > .hero-overview").click();
+    cy.get(".hero-overview").click();
     cy.get("#multiselect-select-aura").click();
     cy.get("ul#multiselect-select-aura-multiselect-options li").first().click();
     cy.get("#base-modal-close").click();
 
-    cy.get(":nth-child(2) > .hero-overview").contains("Aura: Blessing of good fortune");
+    cy.get(".hero-overview").contains("Aura: Blessing of good fortune");
 
-    cy.get(":nth-child(3) > .hero-overview").click();
+    cy.get(".hero-overview").click();
     cy.get("#multiselect-select-aura").click();
     cy.get("ul#multiselect-select-aura-multiselect-options li").first().next().click();
     cy.get("#base-modal-close").click();
 
-    cy.get(":nth-child(3) > .hero-overview").contains("Aura: Blessing of the guardian");
+    cy.get(".hero-overview").contains("Aura: Blessing of the guardian");
+    cy.reload();
+    cy.get(".hero-overview").contains("Aura: Blessing of the guardian");
 
-    cy.get(":nth-child(2) > .hero-overview").click();
+    cy.get(".hero-overview").click();
     cy.get(".multiselect-clear").click();
     cy.get("#base-modal-close").click();
 
-    cy.get(":nth-child(2) > .hero-overview").contains("No aura, status or outcome");
-
+    cy.get(".hero-overview").contains("No aura, status or outcome");
     cy.reload();
-    cy.get(":nth-child(3) > .hero-overview").contains("Aura: Blessing of the guardian");
+    cy.get(".hero-overview").contains("No aura, status or outcome");
 
     cy.clearLocalStorage();
     cy.get(".hero-image").should("not.exist");
