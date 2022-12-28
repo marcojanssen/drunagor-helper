@@ -9,7 +9,6 @@ import PartyView from "./views/PartyView.vue";
 import RandomizerView from "./views/RandomizerView.vue";
 import TrackerView from "./views/TrackerView.vue";
 
-import "../node_modules/@vueform/multiselect/themes/tailwind.css";
 import "./assets/main.css";
 import "vue-toastification/dist/index.css";
 
