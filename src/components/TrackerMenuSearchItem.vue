@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import { MagnifyingGlassIcon } from "@heroicons/vue/24/solid";
-import { ref } from "vue";
 
 const props = defineProps<{
   id?: string;
 }>();
 
-const keyword = ref("");
-
 const emit = defineEmits<{
-  (e: "search", keyword: string): void;
+  (e: "search", keyword: string | null): void;
 }>();
 
-function search(keyword: string) {
-  emit("search", keyword);
+function search(event: Event) {
+  const target = event.target as HTMLInputElement;
+  emit("search", target.value);
 }
 </script>
 
@@ -26,9 +24,7 @@ function search(keyword: string) {
           name="search"
           class="border-neutral bg-base-100 w-full pl-2 rounded-l-md text-white"
           placeholder="Search"
-          v-model="keyword"
-          @input="search(keyword)"
-          @change="search(keyword)"
+          @input="(event) => search(event)"
         />
       </div>
       <button type="button" class="px-4 py-2 border-1 border-base-100 rounded-r-md bg-neutral">
