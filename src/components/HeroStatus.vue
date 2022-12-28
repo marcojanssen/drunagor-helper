@@ -41,7 +41,7 @@ watch(statusIds, (newStatusIds) => {
     <p class="text-sm text-gray-500">Statuses are removed during the camp phase.</p>
   </div>
   <div class="w-full">
-    <Combobox v-model="statusIds" nullable multiple>
+    <Combobox v-model="statusIds" multiple>
       <div class="relative mt-1">
         <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
           <ComboboxButton as="div" class="flex">
@@ -49,9 +49,11 @@ watch(statusIds, (newStatusIds) => {
               class="w-full bg-neutral py-2 pl-3 pr-16 leading-5 focus:ring-0"
               placeholder="Select status"
               @change="query = $event.target.value"
+              id="hero-status"
             />
           </ComboboxButton>
           <button
+            id="hero-status-clear"
             @click="clearSelection"
             v-if="statusIds.length > 0"
             class="absolute inset-y-0 right-7 flex items-center pr-2"
@@ -65,6 +67,7 @@ watch(statusIds, (newStatusIds) => {
 
         <ComboboxOptions
           class="bg-neutral -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
+          id="hero-status-options"
         >
           <div v-if="filteredStatuses.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
             Nothing found.
@@ -101,7 +104,7 @@ watch(statusIds, (newStatusIds) => {
     </Combobox>
   </div>
   <template v-for="statusId in statusIds" :key="statusId">
-    <ul class="list-disc list-inside">
+    <ul id="hero-status-display" class="list-disc list-inside">
       <li>
         {{ statusStore.find(statusId)?.name }}
         <span class="bg-base-200 p-4 block" v-if="statusStore.find(statusId)?.effect">
