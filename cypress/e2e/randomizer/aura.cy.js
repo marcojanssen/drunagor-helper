@@ -74,7 +74,7 @@ describe("aura selection", () => {
     cy.get("#hero-aura").type("Spellshock");
     cy.get("ul#hero-aura-options li").first().click();
 
-    cy.get("#hero-aura").clear();
+    cy.get("#hero-aura-clear").click();
     cy.get("#hero-aura").type("Hellbent");
     cy.get("ul#hero-aura-options li").first().click();
 

@@ -49,9 +49,11 @@ watch(outcomeIds, (newOutcomeIds) => {
               class="w-full bg-neutral py-2 pl-3 pr-16 leading-5 focus:ring-0"
               placeholder="Select outcome"
               @change="query = $event.target.value"
+              id="hero-outcome"
             />
           </ComboboxButton>
           <button
+            id="hero-outcome-clear"
             @click="clearSelection"
             v-if="outcomeIds.length > 0"
             class="absolute inset-y-0 right-7 flex items-center pr-2"
@@ -65,6 +67,7 @@ watch(outcomeIds, (newOutcomeIds) => {
 
         <ComboboxOptions
           class="bg-neutral -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
+          id="hero-outcome-options"
         >
           <div v-if="filteredOutcomes.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
             Nothing found.
@@ -101,7 +104,7 @@ watch(outcomeIds, (newOutcomeIds) => {
     </Combobox>
   </div>
   <template v-for="outcomeId in outcomeIds" :key="outcomeId">
-    <ul class="list-disc list-inside">
+    <ul id="hero-outcome-display" class="list-disc list-inside">
       <li>
         {{ outcomeStore.find(outcomeId)?.name }}
         <span class="bg-base-200 p-4 block" v-if="outcomeStore.find(outcomeId)?.effect">
