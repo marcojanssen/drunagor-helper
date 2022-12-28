@@ -94,7 +94,9 @@ describe("outcome selection", () => {
     cy.get("ul#hero-outcome-options li").first().click();
 
     cy.get("#hero-outcome-display > li").contains("Guardian's curse");
-    cy.get("#hero-outcome-display > li span").contains("As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet.");
+    cy.get("#hero-outcome-display > li span").contains(
+      "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
+    );
 
     cy.get("#hero-outcome").type("Curse breaker");
     cy.get("ul#hero-outcome-options li").first().click();
