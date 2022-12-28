@@ -31,7 +31,7 @@ function setIsOpen(value: boolean) {
       </TransitionChild>
 
       <div class="fixed inset-0 overflow-y-auto">
-        <div class="flex h-screen p-4 justify-center items-center">
+        <div class="flex h-full p-4 justify-center items-center">
           <TransitionChild
             as="template"
             enter="duration-200 ease-out"
@@ -39,7 +39,7 @@ function setIsOpen(value: boolean) {
             enter-to="opacity-100 scale-100"
           >
             <DialogPanel
-              class="bg-base-100 w-full max-w-xl h-full lg:h-3/4 transform overflow-y-auto rounded-2xl text-left align-middle shadow-xl transition-all"
+              class="bg-base-100 w-full max-w-xl h-full lg:h-5/6 transform overflow-y-auto rounded-2xl text-left align-middle shadow-xl transition-all"
             >
               <DialogTitle class="sticky top-0 pt-4 px-4 bg-base-100 z-50">
                 <slot name="header"> </slot>
