@@ -6,12 +6,12 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
-  (e: "search", keyword: string | null): void;
+  (e: "search", keyword: string): void;
 }>();
 
 function search(event: Event) {
   const target = event.target as HTMLInputElement;
-  emit("search", target.value);
+  emit("search", target.value || "");
 }
 </script>
 

@@ -6,14 +6,10 @@ import BaseModal from "@/components/BaseModal.vue";
 import TrackerMenuList from "@/components/TrackerMenuList.vue";
 import TrackerMenuListItem from "@/components/TrackerMenuListItem.vue";
 import TrackerMenuSearchItem from "@/components/TrackerMenuSearchItem.vue";
-import { EnabledHeroes } from "@/repository/EnabledHeroes";
-import { useToast } from "vue-toastification";
 import * as _ from "lodash-es";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import type { Member } from "@/store/Member";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
-
-const toast = useToast();
 
 const isOpen = ref(false);
 
