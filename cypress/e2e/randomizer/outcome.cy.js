@@ -63,7 +63,7 @@ describe("outcome selection", () => {
     cy.get(".hero-overview").contains("No aura, status or outcome");
 
     cy.get(".hero-overview").click();
-    cy.get("#hero-outcome").type("Corrupted hero ");
+    cy.get("#hero-outcome").type("Corrupted hero");
     cy.get("ul#hero-outcome-options li").first().click();
     cy.get("#close-modal").click();
 
@@ -76,12 +76,31 @@ describe("outcome selection", () => {
     cy.get("ul#hero-outcome-options li").first().click();
 
     cy.get("#hero-outcome-clear").click();
-    cy.get("#hero-outcome").type("Lovebird reunited ");
+    cy.get("#hero-outcome").type("Lovebird reunited");
     cy.get("ul#hero-outcome-options li").first().click();
 
     cy.get("#close-modal").click();
 
     cy.get(".hero-overview").contains("Outcome: Lovebird reunited");
+  });
+  it("can clear outcome", () => {
+    cy.get("#party-add-hero").click();
+    cy.get("div#party-add-heroes div").first().click();
+
+    cy.get(".hero-overview").contains("No aura, status or outcome");
+
+    cy.get(".hero-overview").click();
+    cy.get("#hero-outcome").type("Corrupted hero");
+    cy.get("ul#hero-outcome-options li").first().click();
+    cy.get("#close-modal").click();
+
+    cy.get(".hero-overview").contains("Outcome: Corrupted hero");
+
+    cy.get(".hero-overview").click();
+    cy.get("#hero-outcome-clear").click();
+    cy.get("#close-modal").click();
+
+    cy.get(".hero-overview").contains("No aura, status or outcome");
   });
   it("displays the effect of an outcome", () => {
     cy.get("#party-add-hero").click();

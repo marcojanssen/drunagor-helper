@@ -41,7 +41,7 @@ watch(outcomeIds, (newOutcomeIds) => {
     <p class="text-sm text-gray-500">Remain in effect for the entire campaign unless some other effect changes them.</p>
   </div>
   <div class="w-full">
-    <Combobox v-model="outcomeIds" nullable multiple>
+    <Combobox v-model="outcomeIds" multiple>
       <div class="relative mt-1">
         <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
           <ComboboxButton as="div" class="flex">
