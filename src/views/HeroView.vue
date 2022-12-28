@@ -68,7 +68,7 @@ watch(heroId, (newHeroId) => {
     <div class="mb-4">
       <SwappableImage
         :title="hero.name"
-        :sub-title="hero.race + ' ' + hero.class + ' - Path of ' + hero.path"
+        :sub-title="hero.class + ' - Path of ' + hero.path"
         :background="backgroundImage"
         :frontImage="hero.images.big"
         :backImage="hero.images.miniature"
