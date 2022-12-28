@@ -56,9 +56,15 @@ watch(auraId, (newAuraId) => {
               placeholder="Select aura"
               @change="query = $event.target.value"
               @blur="query = ''"
+              id="hero-aura"
             />
           </ComboboxButton>
-          <button @click="clearSelection" v-if="auraId" class="absolute inset-y-0 right-7 flex items-center pr-2">
+          <button
+            id="hero-aura-clear"
+            @click="clearSelection"
+            v-if="auraId"
+            class="absolute inset-y-0 right-7 flex items-center pr-2"
+          >
             <XMarkIcon class="h-5 w-5 text-white" />
           </button>
           <ComboboxButton class="absolute inset-y-0 right-0 flex items-center pr-2">
@@ -68,6 +74,7 @@ watch(auraId, (newAuraId) => {
 
         <ComboboxOptions
           class="bg-neutral -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
+          id="hero-aura-options"
         >
           <div
             v-if="filteredAura.length === 0 && query !== ''"
@@ -107,7 +114,7 @@ watch(auraId, (newAuraId) => {
       </div>
     </Combobox>
   </div>
-  <div class="w-full bg-base-200 p-4 rounded-md" v-if="auraId">
+  <div id="hero-aura-effect" class="w-full bg-base-200 p-4 rounded-md" v-if="auraId">
     {{ auraStore.find(auraId)?.effect }}
   </div>
 </template>
