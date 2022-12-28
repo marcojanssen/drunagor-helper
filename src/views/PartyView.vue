@@ -121,6 +121,7 @@ function viewHero(heroId: string) {
 <style scoped>
 .hero-list-item {
   background-image: url("@/assets/hero/list/Background.webp");
+  background-repeat: no-repeat;
 }
 .border-gold {
   border-width: 1px;
