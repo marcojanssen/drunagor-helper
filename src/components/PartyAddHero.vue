@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import type { HeroData } from "@/data/store/HeroData";
+import type { HeroData } from "@/data/repository/HeroData";
 import { PartyStore } from "@/store/PartyStore";
 import BaseModal from "@/components/BaseModal.vue";
 import TrackerMenuList from "@/components/TrackerMenuList.vue";

@@ -2,7 +2,7 @@ import AvatarImageUrl from "@/assets/hero/avatar/ShadowAvatar.webp";
 import ImageUrl from "@/assets/hero/big/ShadowBig.webp";
 import ListImageUrl from "@/assets/hero/list/ShadowList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/ShadowMiniature.webp";
-import type { HeroData } from "@/data/store/HeroData";
+import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { HeroClass } from "@/data/type/HeroClass";
 import type { HeroPath } from "@/data/type/HeroPath";

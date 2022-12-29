@@ -1,5 +1,5 @@
+import type { HeroData } from "@/data/repository/HeroData";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
-import type { HeroData } from "@/data/store/HeroData";
 import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 export class EnabledHeroes {
