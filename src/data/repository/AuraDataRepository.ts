@@ -1,6 +1,3 @@
-import * as _ from "lodash-es";
-import { defineStore } from "pinia";
-
 import { BlessingofGoodFortune } from "@/data/content/core/aura/BlessingofGoodFortune";
 import { BlessingoftheGuardian } from "@/data/content/core/aura/BlessingoftheGuardian";
 import { Bloodlust } from "@/data/content/core/aura/Bloodlust";
@@ -22,10 +19,12 @@ import { SoulmatesReunited } from "@/data/content/core/aura/SoulmatesReunited";
 import { Spellshock } from "@/data/content/core/aura/Spellshock";
 import { TrueheartedBlessing } from "@/data/content/core/aura/TrueheartedBlessing";
 import { WellMeaning } from "@/data/content/core/aura/WellMeaning";
-import type { AuraData } from "@/data/store/AuraData";
+import type { AuraData } from "@/data/repository/AuraData";
+import * as _ from "lodash-es";
+import type { DataRepository } from "./DataRepository";
 
-export const AuraDataStore = defineStore("data-aura", () => {
-  const auras = [
+export class AuraDataRepository implements DataRepository {
+  private auras = [
     new BlessingofGoodFortune(),
     new BlessingoftheGuardian(),
     new Bloodlust(),
@@ -49,17 +48,11 @@ export const AuraDataStore = defineStore("data-aura", () => {
     new WellMeaning(),
   ];
 
-  function find(auraId: string): AuraData | undefined {
-    return _.find(auras, { id: auraId });
+  public find(auraId: string): AuraData | undefined {
+    return _.find(this.auras, { id: auraId });
   }
 
-  function findAll(): AuraData[] {
-    return auras;
+  public findAll(): AuraData[] {
+    return this.auras;
   }
-
-  return {
-    auras,
-    find,
-    findAll,
-  };
-});
+}

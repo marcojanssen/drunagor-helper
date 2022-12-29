@@ -3,13 +3,13 @@ import { ref } from "vue";
 import HeroView from "@/views/HeroView.vue";
 import PartyAddHero from "@/components/PartyAddHero.vue";
 import PartyRemoveHero from "@/components/PartyRemoveHero.vue";
-import { AuraDataStore } from "@/data/store/AuraDataStore";
 import { HeroStore } from "@/data/store/HeroDataStore.js";
 import { PartyStore } from "@/store/PartyStore";
 import { OutcomeDataStore } from "@/data/store/OutcomeDataStore";
 import { StatusDataStore } from "@/data/store/StatusDataStore";
 import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
+import { AuraDataRepository } from "@/data/repository/AuraDataRepository";
 
 const isOpen = ref(false);
 
@@ -22,7 +22,7 @@ function closeModal() {
 
 const heroStore = HeroStore();
 const partyStore = PartyStore();
-const auraStore = AuraDataStore();
+const auraDataRepository = new AuraDataRepository();
 const outcomeStore = OutcomeDataStore();
 const statusStore = StatusDataStore();
 
@@ -80,7 +80,7 @@ function viewHero(heroId: string) {
 
               <div class="text-sm" v-if="member.auraId">
                 <span class="text-gray-400">Aura: </span>
-                {{ auraStore.find(member.auraId)?.name }}
+                {{ auraDataRepository.find(member.auraId)?.name }}
               </div>
 
               <div

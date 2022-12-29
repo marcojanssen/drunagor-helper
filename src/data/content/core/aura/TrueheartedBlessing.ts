@@ -1,4 +1,4 @@
-import type { AuraData } from "@/data/store/AuraData";
+import type { AuraData } from "@/data/repository/AuraData";
 
 export class TrueheartedBlessing implements AuraData {
   id = "true-hearted-blessing";
