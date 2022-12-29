@@ -3,11 +3,12 @@ import { ref, computed, watch } from "vue";
 import { PartyStore } from "@/store/PartyStore";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import { StatusDataStore } from "@/data/store/StatusDataStore";
+import { StatusDataRepository } from "@/data/repository/StatusDataRepository";
+import type { StatusData } from "@/data/repository/StatusData";
 
 const partyStore = PartyStore();
-const statusStore = StatusDataStore();
-const statuses = statusStore.findAll();
+const statusDataRepository = new StatusDataRepository();
+const statuses = statusDataRepository.findAll();
 
 const props = defineProps<{
   heroId: string;
@@ -28,6 +29,18 @@ let query = ref("");
 function clearSelection() {
   statusIds.value = [];
   query.value = "";
+}
+
+function findStatuses(statusIds: string[]): StatusData[] {
+  const statuses: StatusData[] = [];
+  statusIds.forEach((statusId) => {
+    let outcome = statusDataRepository.find(statusId);
+    if (outcome) {
+      statuses.push(outcome);
+    }
+  });
+
+  return statuses;
 }
 
 watch(statusIds, (newStatusIds) => {
@@ -103,12 +116,12 @@ watch(statusIds, (newStatusIds) => {
       </div>
     </Combobox>
   </div>
-  <template v-for="statusId in statusIds" :key="statusId">
+  <template v-for="status in findStatuses(statusIds)" :key="status.id">
     <ul id="hero-status-display" class="list-disc list-inside">
       <li>
-        {{ statusStore.find(statusId)?.name }}
-        <span class="bg-base-200 p-4 block" v-if="statusStore.find(statusId)?.effect">
-          {{ statusStore.find(statusId)?.effect }}
+        {{ status.name }}
+        <span class="bg-base-200 p-4 block" v-if="status.effect">
+          {{ status.effect }}
         </span>
       </li>
     </ul>

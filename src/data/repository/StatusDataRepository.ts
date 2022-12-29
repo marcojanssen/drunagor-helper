@@ -1,6 +1,3 @@
-import * as _ from "lodash-es";
-import { defineStore } from "pinia";
-
 import { ACooperativeApproach } from "@/data/content/core/status/ACooperativeApproach";
 import { AFriendlyApproach } from "@/data/content/core/status/AFriendlyApproach";
 import { AMansBestFriend } from "@/data/content/core/status/AMansBestFriend";
@@ -67,10 +64,12 @@ import { UnravelingTheMystery } from "@/data/content/core/status/UnravelingTheMy
 import { Warned } from "@/data/content/core/status/Warned";
 import { WatchYourStep } from "@/data/content/core/status/WatchYourStep";
 import { Waxed } from "@/data/content/core/status/Waxed";
-import type { StatusData } from "@/data/store/StatusData";
+import type { DataRepository } from "@/data/repository/DataRepository";
+import type { StatusData } from "@/data/repository/StatusData";
+import * as _ from "lodash-es";
 
-export const StatusDataStore = defineStore("data-status", () => {
-  const status = [
+export class StatusDataRepository implements DataRepository {
+  statuses = [
     new ACooperativeApproach(),
     new AFriendlyApproach(),
     new AggressiveApproach(),
@@ -139,17 +138,11 @@ export const StatusDataStore = defineStore("data-status", () => {
     new Waxed(),
   ];
 
-  function find(outcomeId: string): StatusData | undefined {
-    return _.find(status, { id: outcomeId });
+  public find(statusId: string): StatusData | undefined {
+    return _.find(this.statuses, { id: statusId });
   }
 
-  function findAll(): StatusData[] {
-    return status;
+  public findAll(): StatusData[] {
+    return this.statuses;
   }
-
-  return {
-    status,
-    find,
-    findAll,
-  };
-});
+}
