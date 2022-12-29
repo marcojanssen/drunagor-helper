@@ -3,11 +3,12 @@ import { ref, computed, watch } from "vue";
 import { PartyStore } from "@/store/PartyStore";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import { OutcomeDataStore } from "@/data/store/OutcomeDataStore";
+import { OutcomeDataRepository } from "@/data/repository/OutcomeDataRepository";
+import type { OutcomeData } from "@/data/repository/OutcomeData";
 
 const partyStore = PartyStore();
-const outcomeStore = OutcomeDataStore();
-const outcomes = outcomeStore.findAll();
+const outcomeDataRepository = new OutcomeDataRepository();
+const outcomes = outcomeDataRepository.findAll();
 
 const props = defineProps<{
   heroId: string;
@@ -28,6 +29,18 @@ let query = ref("");
 function clearSelection() {
   outcomeIds.value = [];
   query.value = "";
+}
+
+function findOutcomes(outcomeIds: string[]): OutcomeData[] {
+  const outcomes: OutcomeData[] = [];
+  outcomeIds.forEach((outcomeId) => {
+    let outcome = outcomeDataRepository.find(outcomeId);
+    if (outcome) {
+      outcomes.push(outcome);
+    }
+  });
+
+  return outcomes;
 }
 
 watch(outcomeIds, (newOutcomeIds) => {
@@ -103,12 +116,12 @@ watch(outcomeIds, (newOutcomeIds) => {
       </div>
     </Combobox>
   </div>
-  <template v-for="outcomeId in outcomeIds" :key="outcomeId">
+  <template v-for="outcome in findOutcomes(outcomeIds)" :key="outcome.id">
     <ul id="hero-outcome-display" class="list-disc list-inside">
       <li>
-        {{ outcomeStore.find(outcomeId)?.name }}
-        <span class="bg-base-200 p-4 block" v-if="outcomeStore.find(outcomeId)?.effect">
-          {{ outcomeStore.find(outcomeId)?.effect }}
+        {{ outcome.name }}
+        <span class="bg-base-200 p-4 block" v-if="outcome.effect">
+          {{ outcome.effect }}
         </span>
       </li>
     </ul>

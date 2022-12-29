@@ -5,11 +5,11 @@ import PartyAddHero from "@/components/PartyAddHero.vue";
 import PartyRemoveHero from "@/components/PartyRemoveHero.vue";
 import { HeroStore } from "@/data/store/HeroDataStore.js";
 import { PartyStore } from "@/store/PartyStore";
-import { OutcomeDataStore } from "@/data/store/OutcomeDataStore";
 import { StatusDataStore } from "@/data/store/StatusDataStore";
 import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { AuraDataRepository } from "@/data/repository/AuraDataRepository";
+import { OutcomeDataRepository } from "@/data/repository/OutcomeDataRepository";
 
 const isOpen = ref(false);
 
@@ -23,7 +23,7 @@ function closeModal() {
 const heroStore = HeroStore();
 const partyStore = PartyStore();
 const auraDataRepository = new AuraDataRepository();
-const outcomeStore = OutcomeDataStore();
+const outcomeDataRepository = new OutcomeDataRepository();
 const statusStore = StatusDataStore();
 
 const heroViewId = ref("");
@@ -73,8 +73,8 @@ function viewHero(heroId: string) {
               <div class="text-sm" v-if="member.outcomeIds && member.outcomeIds.length > 0">
                 <span class="text-gray-400">Outcome: </span>
                 <template v-for="(outcomeId, index) in member.outcomeIds">
-                  {{ outcomeStore.find(outcomeId)?.name
-                  }}<template v-if="index + 1 < member.outcomeIds.length">, </template>
+                  {{ outcomeDataRepository.find(outcomeId)?.name }}
+                  <template v-if="index + 1 < member.outcomeIds.length">, </template>
                 </template>
               </div>
 
