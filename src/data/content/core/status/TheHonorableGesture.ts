@@ -1,4 +1,4 @@
-import type { StatusData } from "@/data/store/StatusData";
+import type { StatusData } from "@/data/repository/StatusData";
 
 export class TheHonorableGesture implements StatusData {
   id = "the-honorable-gesture";

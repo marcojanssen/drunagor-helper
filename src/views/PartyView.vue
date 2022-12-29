@@ -3,13 +3,13 @@ import { ref } from "vue";
 import HeroView from "@/views/HeroView.vue";
 import PartyAddHero from "@/components/PartyAddHero.vue";
 import PartyRemoveHero from "@/components/PartyRemoveHero.vue";
-import { AuraDataStore } from "@/data/store/AuraDataStore";
-import { HeroStore } from "@/data/store/HeroDataStore.js";
 import { PartyStore } from "@/store/PartyStore";
-import { OutcomeDataStore } from "@/data/store/OutcomeDataStore";
-import { StatusDataStore } from "@/data/store/StatusDataStore";
 import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
+import { AuraDataRepository } from "@/data/repository/AuraDataRepository";
+import { OutcomeDataRepository } from "@/data/repository/OutcomeDataRepository";
+import { StatusDataRepository } from "@/data/repository/StatusDataRepository";
+import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 
 const isOpen = ref(false);
 
@@ -20,11 +20,11 @@ function closeModal() {
   isOpen.value = false;
 }
 
-const heroStore = HeroStore();
 const partyStore = PartyStore();
-const auraStore = AuraDataStore();
-const outcomeStore = OutcomeDataStore();
-const statusStore = StatusDataStore();
+const heroDataRepository = new HeroDataRepository();
+const auraDataRepository = new AuraDataRepository();
+const outcomeDataRepository = new OutcomeDataRepository();
+const statusDataRepository = new StatusDataRepository();
 
 const heroViewId = ref("");
 
@@ -53,9 +53,9 @@ function viewHero(heroId: string) {
         <div class="border-gold relative h-32 w-full lg:w-1/2 bg-black">
           <div class="flex">
             <div class="flex-none w-32 h-full hero-list-item absolute">
-              <img class="hero-image" :src="heroStore.find(member.heroId).images.list" />
+              <img class="hero-image" :src="heroDataRepository.find(member.heroId)?.images.list" />
               <div class="absolute bottom-0 w-32 left-0 right-0 py-1 bg-black bg-opacity-60">
-                <p class="text-xs pl-4 text-left font-medium">{{ heroStore.find(member.heroId).name }}</p>
+                <p class="text-xs pl-4 text-left font-medium">{{ heroDataRepository.find(member.heroId)?.name }}</p>
               </div>
             </div>
             <div
@@ -65,7 +65,7 @@ function viewHero(heroId: string) {
               <div class="text-sm" v-if="member.statusIds && member.statusIds.length > 0">
                 <span class="text-gray-400">Status: </span>
                 <template v-for="(statusId, index) in member.statusIds">
-                  {{ statusStore.find(statusId)?.name
+                  {{ statusDataRepository.find(statusId)?.name
                   }}<template v-if="index + 1 < member.statusIds.length">, </template>
                 </template>
               </div>
@@ -73,14 +73,14 @@ function viewHero(heroId: string) {
               <div class="text-sm" v-if="member.outcomeIds && member.outcomeIds.length > 0">
                 <span class="text-gray-400">Outcome: </span>
                 <template v-for="(outcomeId, index) in member.outcomeIds">
-                  {{ outcomeStore.find(outcomeId)?.name
+                  {{ outcomeDataRepository.find(outcomeId)?.name
                   }}<template v-if="index + 1 < member.outcomeIds.length">, </template>
                 </template>
               </div>
 
               <div class="text-sm" v-if="member.auraId">
                 <span class="text-gray-400">Aura: </span>
-                {{ auraStore.find(member.auraId)?.name }}
+                {{ auraDataRepository.find(member.auraId)?.name }}
               </div>
 
               <div

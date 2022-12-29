@@ -1,6 +1,3 @@
-import * as _ from "lodash-es";
-import { defineStore } from "pinia";
-
 import { ACouriersJob } from "@/data/content/core/outcome/ACouriersJob";
 import { AHideousAct } from "@/data/content/core/outcome/AHideousAct";
 import { ALoversRequest } from "@/data/content/core/outcome/ALoversRequest";
@@ -16,10 +13,12 @@ import { RelicBreaker } from "@/data/content/core/outcome/RelicBreaker";
 import { SowingWinds } from "@/data/content/core/outcome/SowingWinds";
 import { Storyteller } from "@/data/content/core/outcome/Storyteller";
 import { Unbroken } from "@/data/content/core/outcome/Unbroken";
-import type { OutcomeData } from "@/data/store/OutcomeData";
+import * as _ from "lodash-es";
+import type { DataRepository } from "./DataRepository";
+import type { OutcomeData } from "./OutcomeData";
 
-export const OutcomeDataStore = defineStore("data-outcome", () => {
-  const outcomes = [
+export class OutcomeDataRepository implements DataRepository {
+  private outcomes = [
     new ACouriersJob(),
     new Adamant(),
     new AHideousAct(),
@@ -37,17 +36,11 @@ export const OutcomeDataStore = defineStore("data-outcome", () => {
     new Unbroken(),
   ];
 
-  function find(outcomeId: string): OutcomeData | undefined {
-    return _.find(outcomes, { id: outcomeId });
+  public find(outcomeId: string): OutcomeData | undefined {
+    return _.find(this.outcomes, { id: outcomeId });
   }
 
-  function findAll(): OutcomeData[] {
-    return outcomes;
+  public findAll(): OutcomeData[] {
+    return this.outcomes;
   }
-
-  return {
-    outcomes,
-    find,
-    findAll,
-  };
-});
+}

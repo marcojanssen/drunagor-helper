@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import { HeroStore } from "@/data/store/HeroDataStore";
 import SwappableImage from "@/components/SwappableImage.vue";
 import backgroundImage from "@/assets/hero/big/Background.webp";
 import HeroAura from "@/components/HeroAura.vue";
 import HeroOutcome from "@/components/HeroOutcome.vue";
 import HeroStatus from "@/components/HeroStatus.vue";
+import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
+import type { HeroData } from "@/data/repository/HeroData";
 
-const heroStore = HeroStore();
+const heroDataRepository = new HeroDataRepository();
 
 const props = defineProps<{
   heroId: string;
 }>();
 
-const hero = heroStore.find(props.heroId);
+const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
 </script>
 
 <template>

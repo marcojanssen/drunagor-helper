@@ -1,4 +1,4 @@
-import type { StatusData } from "@/data/store/StatusData";
+import type { StatusData } from "@/data/repository/StatusData";
 
 export class CicadasChant implements StatusData {
   id = "cicadas-chant";

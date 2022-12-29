@@ -2,7 +2,7 @@ import AvatarImageUrl from "@/assets/hero/avatar/FlavianAvatar.webp";
 import ImageUrl from "@/assets/hero/big/FlavianBig.webp";
 import ListImageUrl from "@/assets/hero/list/FlavianList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/FlavianMiniature.webp";
-import type { HeroData } from "@/data/store/HeroData";
+import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { HeroClass } from "@/data/type/HeroClass";
 import type { HeroPath } from "@/data/type/HeroPath";

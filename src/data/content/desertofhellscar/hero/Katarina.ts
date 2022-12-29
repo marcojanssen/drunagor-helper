@@ -1,8 +1,8 @@
 import AvatarImageUrl from "@/assets/hero/avatar/KatarinaAvatar.webp";
 import ImageUrl from "@/assets/hero/big/KatarinaBig.webp";
-import MiniatureImageUrl from "@/assets/hero/miniature/KatarinaMiniature.webp";
 import ListImageUrl from "@/assets/hero/list/KatarinaList.webp";
-import type { HeroData } from "@/data/store/HeroData";
+import MiniatureImageUrl from "@/assets/hero/miniature/KatarinaMiniature.webp";
+import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { HeroClass } from "@/data/type/HeroClass";
 import type { HeroPath } from "@/data/type/HeroPath";

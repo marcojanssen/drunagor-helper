@@ -3,11 +3,11 @@ import { ref, computed, watch } from "vue";
 import { PartyStore } from "@/store/PartyStore";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import { AuraDataStore } from "@/data/store/AuraDataStore";
+import { AuraDataRepository } from "@/data/repository/AuraDataRepository";
 
 const partyStore = PartyStore();
-const auraStore = AuraDataStore();
-const auras = auraStore.findAll();
+const auraDataRepository = new AuraDataRepository();
+const auras = auraDataRepository.findAll();
 
 const props = defineProps<{
   heroId: string;
@@ -31,8 +31,7 @@ function clearSelection() {
 }
 
 function displayValue(id: unknown) {
-  console.log(id);
-  return auraStore.find(id as string)?.name ?? "";
+  return auraDataRepository.find(id as string)?.name ?? "";
 }
 
 watch(auraId, (newAuraId) => {
@@ -115,7 +114,7 @@ watch(auraId, (newAuraId) => {
     </Combobox>
   </div>
   <div id="hero-aura-effect" class="w-full bg-base-200 p-4 rounded-md" v-if="auraId">
-    {{ auraStore.find(auraId)?.effect }}
+    {{ auraDataRepository.find(auraId)?.effect }}
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-import type { OutcomeData } from "@/data/store/OutcomeData";
+import type { OutcomeData } from "@/data/repository/OutcomeData";
 
 export class RelicBreaker implements OutcomeData {
   id = "relic-breaker";
