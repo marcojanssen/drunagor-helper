@@ -7,7 +7,7 @@
     "preview": "vite preview",
     "test": "cypress run --e2e",
     "test:e2e": "start-server-and-test preview http://localhost:4173/drunagor-helper/ 'cypress run --e2e'",
-    "test:e2e:parallel": "start-server-and-test preview http://localhost:4173/drunagor-helper/ 'cypress-parallel -s test -t 4 -d cypress/e2e'",
+    "test:e2e:parallel": "npm run build && start-server-and-test preview http://localhost:4173/drunagor-helper/ 'cypress-parallel -s test -t 4 -d cypress/e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.cypress-ct.json --composite false",
