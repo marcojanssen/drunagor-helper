@@ -73,8 +73,8 @@ function viewHero(heroId: string) {
               <div class="text-sm" v-if="member.outcomeIds && member.outcomeIds.length > 0">
                 <span class="text-gray-400">Outcome: </span>
                 <template v-for="(outcomeId, index) in member.outcomeIds">
-                  {{ outcomeDataRepository.find(outcomeId)?.name }}
-                  <template v-if="index + 1 < member.outcomeIds.length">, </template>
+                  {{ outcomeDataRepository.find(outcomeId)?.name
+                  }}<template v-if="index + 1 < member.outcomeIds.length">, </template>
                 </template>
               </div>
 
