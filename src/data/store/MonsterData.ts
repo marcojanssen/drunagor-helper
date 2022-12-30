@@ -1,6 +1,37 @@
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
 import type { VariantId } from "@/data/type/VariantId";
+import type { AttackType } from "../type/AttackType";
+import type { Condition } from "../type/Condition";
+import type { Rune } from "../type/Rune";
+import type { TrackerPosition } from "../type/TrackerPosition";
+
+interface Data {
+  immunities: Condition[];
+  position: TrackerPosition;
+  rune: Rune;
+  attackType: AttackType;
+  hp: number | null;
+  damage: number | null;
+  movement: number | null;
+  attack: string | null;
+}
+
+interface Variant {
+  standard: Data;
+  alternate: Data;
+  complex?: {
+    a: Data;
+    b: Data;
+  };
+}
+
+interface Rank {
+  rookie: Variant;
+  fighter: Variant;
+  veteran: Variant;
+  champion: Variant;
+}
 
 export interface MonsterData {
   id: string;
@@ -14,10 +45,5 @@ export interface MonsterData {
     list: string;
   };
   color: MonsterColor;
-  rank: {
-    rookie: {};
-    fighter: {};
-    veteran: {};
-    champion: {};
-  };
+  rank: Rank;
 }

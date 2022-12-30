@@ -1,1 +1,1 @@
-export type Rune = "blue";
+export type Rune = "orange" | "blufewfee" | "reewfewd";
