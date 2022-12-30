@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import BaseModal from "@/components/BaseModal.vue";
-import BaseModalButtonOpen from "@/components/BaseModalButtonOpen.vue";
 import TrackerMenu from "@/components/TrackerMenu.vue";
 import { MonsterDataStore } from "@/data/store/MonsterDataStore.js";
-import { TrackerMenuStore } from "@/store/TrackerMenuStore";
 import { TrackerStore } from "@/store/TrackerStore";
 
-const trackerMenuStore = TrackerMenuStore();
 const trackerStore = TrackerStore();
 const monsterStore = MonsterDataStore();
 </script>
@@ -14,7 +10,7 @@ const monsterStore = MonsterDataStore();
 <template>
   <div class="grid gap-4 grid-cols-1 place-items-center mb-32">
     <div class="grid w-full lg:w-1/2">
-      <BaseModalButtonOpen @click="trackerMenuStore.resetMenu()"> open menu </BaseModalButtonOpen>
+      <TrackerMenu />
     </div>
     <TransitionGroup name="list">
       <template v-for="item in trackerStore.findAll()" :key="item.id">
@@ -59,9 +55,6 @@ const monsterStore = MonsterDataStore();
   <footer class="flex w-full justify-center p-4 bg-base-100 fixed bottom-0 left-0">
     <button class="btn">End round</button>
   </footer>
-  <!-- <BaseModal>
-    <TrackerMenu />
-  </BaseModal> -->
 </template>
 
 <style scoped></style>

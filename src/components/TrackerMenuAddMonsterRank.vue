@@ -4,13 +4,13 @@ import TrackerMenuList from "./TrackerMenuList.vue";
 import TrackerMenuListItem from "./TrackerMenuListItem.vue";
 import { TrackedItem } from "@/store/TrackedItem";
 import { TrackerMenuStore } from "@/store/TrackerMenuStore";
-import { BaseModalStore } from "@/store/BaseModalStore";
 import { TrackedItemMonster } from "@/store/TrackedItemMonster";
 import { TrackedItemMonsterId } from "@/store/TrackedItemMonsterId";
 
 const trackerStore = TrackerStore();
 const trackerMenuStore = TrackerMenuStore();
-const modalStore = BaseModalStore();
+
+const emit = defineEmits(["close-modal"]);
 
 function addToTracker(rank: "rookie" | "fighter" | "veteran" | "champion") {
   const monsterId = trackerMenuStore.selectedMonster;
@@ -18,7 +18,7 @@ function addToTracker(rank: "rookie" | "fighter" | "veteran" | "champion") {
   const trackedMonster = new TrackedItemMonster(monsterId, rank);
   const trackedMonsterId = new TrackedItemMonsterId(monsterId, rank).toString();
   trackerStore.add(new TrackedItem(trackedMonsterId, "top", "monster", trackedMonster));
-  modalStore.close();
+  emit("close-modal");
 }
 </script>
 
