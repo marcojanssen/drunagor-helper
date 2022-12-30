@@ -27,7 +27,7 @@ function closeModal() {
   <button class="btn" @click="openModal">open menu</button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
-      <div class="grid grid-cols-3 h-12">
+      <div class="grid grid-cols-3">
         <div><TrackerMenuButtonBack /></div>
         <div class="text-center font-medium place-self-center"></div>
         <div>
@@ -38,7 +38,7 @@ function closeModal() {
       </div>
     </template>
     <template #default>
-      <div class="container p-4 h-128">
+      <div class="container">
         <TransitionGroup :name="trackerMenuStore.direction">
           <TrackerMenuMain v-if="trackerMenuStore.activeMenu == 'main'" />
           <TrackerMenuAddMonster v-if="trackerMenuStore.activeMenu == 'add-monster'" />

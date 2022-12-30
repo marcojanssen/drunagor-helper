@@ -28,13 +28,15 @@ function closeModal() {
 
 const partyStore = PartyStore();
 const availableHeroes = ref([] as HeroData[]);
+const enabledHeroes = new EnabledHeroes();
 
-function getAllEnabledHeroes(filter: string = "") {
-  const filteredHeroes = new EnabledHeroes().findAll().filter((hero: HeroData) => {
+function getAllEnabledHeroes(query: string = "") {
+  const regExp = new RegExp(query, "gi");
+  const filteredHeroes = enabledHeroes.findAll().filter((hero: HeroData) => {
     if (partyStore.has(hero.id) == true) {
       return false;
     }
-    if (new RegExp(filter, "gi").test(hero.name) === false) {
+    if (regExp.test(hero.name) === false) {
       return false;
     }
     return true;
@@ -76,7 +78,7 @@ function addRandomHeroToParty() {
       </div>
     </template>
     <template #default>
-      <BaseListSearch id="party-search-hero" @search="getAllEnabledHeroes"> </BaseListSearch>
+      <BaseListSearch id="party-search-hero" @search="getAllEnabledHeroes" />
       <BaseListItem id="party-random-hero" @click="addRandomHeroToParty" :avatar="RandomImage.toString()">
         Random hero
       </BaseListItem>

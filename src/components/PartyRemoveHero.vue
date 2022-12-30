@@ -23,15 +23,16 @@ function closeModal() {
 
 const partyStore = PartyStore();
 const heroesInParty = ref([] as HeroData[]);
+const repository = new HeroDataRepository();
 
-function getAllHeroesInParty(filter: string = "") {
+function getAllHeroesInParty(query: string = "") {
   const heroes: HeroData[] = [];
-  const repository = new HeroDataRepository();
 
   partyStore.findAll().forEach((member: Member) => {
     let hero = repository.find(member.heroId);
+    const regExp = new RegExp(query, "gi");
 
-    if (hero && new RegExp(filter, "gi").test(hero.name)) {
+    if (hero && regExp.test(hero.name)) {
       heroes.push(hero);
     }
   });
@@ -62,7 +63,7 @@ function removeHeroFromParty(heroId: string) {
       </div>
     </template>
     <template #default>
-      <BaseListSearch @search="getAllHeroesInParty"> </BaseListSearch>
+      <BaseListSearch @search="getAllHeroesInParty" />
       <BaseList id="party-remove-heroes">
         <template v-for="hero in heroesInParty" :key="hero.id">
           <BaseListItem :avatar="hero.images.avatar" @click="removeHeroFromParty(hero.id)">

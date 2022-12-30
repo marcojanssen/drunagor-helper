@@ -8,7 +8,7 @@ const trackerMenuStore = TrackerMenuStore();
 <template>
   <TransitionGroup name="tracker-menu-back-button">
     <button class="btn btn-sm btn-circle" v-if="trackerMenuStore.canGoBack()" @click="trackerMenuStore.goBack()">
-      <ChevronLeftIcon class="h-7 btn-sm btn-circle rounded-lg p-1" />
+      <ChevronLeftIcon class="h-4 btn-circle rounded-lg" />
     </button>
   </TransitionGroup>
 </template>
