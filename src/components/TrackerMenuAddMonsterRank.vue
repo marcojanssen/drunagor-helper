@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { TrackerStore } from "@/store/TrackerStore";
-import TrackerMenuList from "./TrackerMenuList.vue";
-import TrackerMenuListItem from "./TrackerMenuListItem.vue";
+import BaseList from "@/components/BaseList.vue";
+import BaseListItem from "@/components/BaseListItem.vue";
 import { TrackedItem } from "@/store/TrackedItem";
 import { TrackerMenuStore } from "@/store/TrackerMenuStore";
 import { TrackedItemMonster } from "@/store/TrackedItemMonster";
@@ -23,12 +23,12 @@ function addToTracker(rank: "rookie" | "fighter" | "veteran" | "champion") {
 </script>
 
 <template>
-  <TrackerMenuList>
-    <TrackerMenuListItem @click="addToTracker('rookie')">Rookie</TrackerMenuListItem>
-    <TrackerMenuListItem @click="addToTracker('fighter')">Fighter</TrackerMenuListItem>
-    <TrackerMenuListItem @click="addToTracker('veteran')">Veteran</TrackerMenuListItem>
-    <TrackerMenuListItem @click="addToTracker('champion')">Champion</TrackerMenuListItem>
-  </TrackerMenuList>
+  <BaseList>
+    <BaseListItem @click="addToTracker('rookie')">Rookie</BaseListItem>
+    <BaseListItem @click="addToTracker('fighter')">Fighter</BaseListItem>
+    <BaseListItem @click="addToTracker('veteran')">Veteran</BaseListItem>
+    <BaseListItem @click="addToTracker('champion')">Champion</BaseListItem>
+  </BaseList>
 </template>
 
 <style scoped></style>
