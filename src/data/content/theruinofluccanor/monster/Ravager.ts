@@ -1,4 +1,4 @@
-import AvatarUrl from "@/assets/monster/avatar/RavagerAvatar.png";
+import AvatarUrl from "@/assets/monster/avatar/RavagerAvatar.webp";
 import ImageUrl from "@/assets/monster/big/RavagerBig.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";

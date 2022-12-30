@@ -1,4 +1,4 @@
-import AvatarUrl from "@/assets/monster/avatar/ShadowGuardianAvatar.png";
+import AvatarUrl from "@/assets/monster/avatar/ShadowGuardianAvatar.webp";
 import ImageUrl from "@/assets/monster/big/ShadowGuardianBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowGuardianMiniature.webp";
 import type { MonsterData } from "@/data/store/MonsterData";

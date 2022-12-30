@@ -1,4 +1,4 @@
-import AvatarUrl from "@/assets/monster/avatar/CorruptedWormAvatar.png";
+import AvatarUrl from "@/assets/monster/avatar/CorruptedWormAvatar.webp";
 import ImageUrl from "@/assets/monster/big/CorruptedWormBig.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";

@@ -1,3 +1,4 @@
+import AvatarUrl from "@/assets/monster/avatar/LadyClawAvatar.webp";
 import ImageUrl from "@/assets/monster/big/LadyClawBig.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -10,7 +11,7 @@ export class LadyClaw implements MonsterData {
   content: ContentId = "the-ruin-of-luccanor";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: "",
+    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: "",
     list: "",

@@ -1,4 +1,4 @@
-import AvatarUrl from "@/assets/monster/avatar/ThernAvatar.png";
+import AvatarUrl from "@/assets/monster/avatar/ThernAvatar.webp";
 import ImageUrl from "@/assets/monster/big/ThernBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ThernMiniature.webp";
 import type { CommanderData } from "@/data/store/CommanderData";
