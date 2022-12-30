@@ -128,7 +128,6 @@ function viewHero(heroId: string) {
   border-style: solid;
   border-image: linear-gradient(to bottom, #f5dab7, #4c4037) 1;
 }
-
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;

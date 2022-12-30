@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { MonsterDataStore } from "@/data/store/MonsterDataStore";
-import TrackerMenuListItem from "./TrackerMenuListItem.vue";
-import TrackerMenuList from "./TrackerMenuList.vue";
+import BaseListItem from "@/components/BaseListItem.vue";
+import BaseList from "@/components/BaseList.vue";
 import { TrackerStore } from "@/store/TrackerStore";
 import { BaseModalStore } from "@/store/BaseModalStore";
 import type { TrackedItem } from "@/store/TrackedItem";
@@ -19,16 +19,13 @@ function remove(item: TrackedItem) {
 <template>
   <div>
     <div v-if="trackerStore.count() == 0">No active characters</div>
-    <TrackerMenuList v-if="trackerStore.count() > 0">
+    <BaseList v-if="trackerStore.count() > 0">
       <template v-for="item in trackerStore.findAll()" :key="item.characterId">
-        <TrackerMenuListItem
-          @click.prevent="remove(item)"
-          :avatar="monsterStore.find(item.trackedItem.id).images.avatar"
-        >
+        <BaseListItem @click.prevent="remove(item)" :avatar="monsterStore.find(item.trackedItem.id).images.avatar">
           {{ monsterStore.find(item.trackedItem.id).name }}
-        </TrackerMenuListItem>
+        </BaseListItem>
       </template>
-    </TrackerMenuList>
+    </BaseList>
   </div>
 </template>
 

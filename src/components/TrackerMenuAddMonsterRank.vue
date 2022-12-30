@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { TrackerStore } from "@/store/TrackerStore";
-import TrackerMenuList from "./TrackerMenuList.vue";
-import TrackerMenuListItem from "./TrackerMenuListItem.vue";
+import BaseList from "@/components/BaseList.vue";
+import BaseListItem from "@/components/BaseListItem.vue";
 import { TrackedItem } from "@/store/TrackedItem";
 import { TrackerMenuStore } from "@/store/TrackerMenuStore";
-import { BaseModalStore } from "@/store/BaseModalStore";
 import { TrackedItemMonster } from "@/store/TrackedItemMonster";
 import { TrackedItemMonsterId } from "@/store/TrackedItemMonsterId";
 
 const trackerStore = TrackerStore();
 const trackerMenuStore = TrackerMenuStore();
-const modalStore = BaseModalStore();
+
+const emit = defineEmits(["close-modal"]);
 
 function addToTracker(rank: "rookie" | "fighter" | "veteran" | "champion") {
   const monsterId = trackerMenuStore.selectedMonster;
@@ -18,17 +18,17 @@ function addToTracker(rank: "rookie" | "fighter" | "veteran" | "champion") {
   const trackedMonster = new TrackedItemMonster(monsterId, rank);
   const trackedMonsterId = new TrackedItemMonsterId(monsterId, rank).toString();
   trackerStore.add(new TrackedItem(trackedMonsterId, "top", "monster", trackedMonster));
-  modalStore.close();
+  emit("close-modal");
 }
 </script>
 
 <template>
-  <TrackerMenuList>
-    <TrackerMenuListItem @click="addToTracker('rookie')">Rookie</TrackerMenuListItem>
-    <TrackerMenuListItem @click="addToTracker('fighter')">Fighter</TrackerMenuListItem>
-    <TrackerMenuListItem @click="addToTracker('veteran')">Veteran</TrackerMenuListItem>
-    <TrackerMenuListItem @click="addToTracker('champion')">Champion</TrackerMenuListItem>
-  </TrackerMenuList>
+  <BaseList>
+    <BaseListItem @click="addToTracker('rookie')">Rookie</BaseListItem>
+    <BaseListItem @click="addToTracker('fighter')">Fighter</BaseListItem>
+    <BaseListItem @click="addToTracker('veteran')">Veteran</BaseListItem>
+    <BaseListItem @click="addToTracker('champion')">Champion</BaseListItem>
+  </BaseList>
 </template>
 
 <style scoped></style>

@@ -3,9 +3,9 @@ import { ref } from "vue";
 import type { HeroData } from "@/data/repository/HeroData";
 import { PartyStore } from "@/store/PartyStore";
 import BaseModal from "@/components/BaseModal.vue";
-import TrackerMenuList from "@/components/TrackerMenuList.vue";
-import TrackerMenuListItem from "@/components/TrackerMenuListItem.vue";
-import TrackerMenuSearchItem from "@/components/TrackerMenuSearchItem.vue";
+import BaseList from "@/components/BaseList.vue";
+import BaseListItem from "@/components/BaseListItem.vue";
+import BaseListSearch from "@/components/BaseListSearch.vue";
 import * as _ from "lodash-es";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import type { Member } from "@/store/Member";
@@ -23,15 +23,16 @@ function closeModal() {
 
 const partyStore = PartyStore();
 const heroesInParty = ref([] as HeroData[]);
+const repository = new HeroDataRepository();
 
-function getAllHeroesInParty(filter: string = "") {
+function getAllHeroesInParty(query: string = "") {
   const heroes: HeroData[] = [];
-  const repository = new HeroDataRepository();
 
   partyStore.findAll().forEach((member: Member) => {
     let hero = repository.find(member.heroId);
+    const regExp = new RegExp(query, "gi");
 
-    if (hero && new RegExp(filter, "gi").test(hero.name)) {
+    if (hero && regExp.test(hero.name)) {
       heroes.push(hero);
     }
   });
@@ -62,14 +63,14 @@ function removeHeroFromParty(heroId: string) {
       </div>
     </template>
     <template #default>
-      <TrackerMenuSearchItem @search="getAllHeroesInParty"> </TrackerMenuSearchItem>
-      <TrackerMenuList id="party-remove-heroes">
+      <BaseListSearch @search="getAllHeroesInParty" />
+      <BaseList id="party-remove-heroes">
         <template v-for="hero in heroesInParty" :key="hero.id">
-          <TrackerMenuListItem :avatar="hero.images.avatar" @click="removeHeroFromParty(hero.id)">
+          <BaseListItem :avatar="hero.images.avatar" @click="removeHeroFromParty(hero.id)">
             {{ hero.name }}
-          </TrackerMenuListItem>
+          </BaseListItem>
         </template>
-      </TrackerMenuList>
+      </BaseList>
     </template>
   </BaseModal>
 </template>

@@ -4,9 +4,10 @@ import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 export class EnabledHeroes {
   private configurationStore = ConfigurationStore();
+  private repository = new HeroDataRepository();
 
   public findAll(): HeroData[] {
-    const data = new HeroDataRepository().findAll();
+    const data = this.repository.findAll();
 
     const enabledHeroes = data.filter((hero: HeroData) => {
       if (this.configurationStore.getEnabledHeroContent().includes(hero.content) === false) {
