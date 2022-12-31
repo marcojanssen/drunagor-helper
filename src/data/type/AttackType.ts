@@ -1,1 +1,1 @@
-export type AttackType = "melee" | "ranged" | "magic" | "";
+export type AttackType = "melee" | "ranged" | "magic";

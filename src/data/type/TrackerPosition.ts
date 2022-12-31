@@ -1,1 +1,1 @@
-export type TrackerPosition = "top" | "bottom" | "";
+export type TrackerPosition = "top" | "bottom";
