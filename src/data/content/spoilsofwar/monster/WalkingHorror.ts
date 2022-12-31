@@ -1,13 +1,9 @@
 import AvatarUrl from "@/assets/monster/avatar/WalkingHorrorAvatar.webp";
 import ImageUrl from "@/assets/monster/big/WalkingHorrorBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/WalkingHorrorMiniature.webp";
-import type { MonsterData } from "@/data/store/MonsterData";
-import type { AttackType } from "@/data/type/AttackType";
-import type { Condition } from "@/data/type/Condition";
+import type { MonsterData, Rank } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
-import type { Rune } from "@/data/type/Rune";
-import type { TrackerPosition } from "@/data/type/TrackerPosition";
 import type { VariantId } from "@/data/type/VariantId";
 
 export class WalkingHorror implements MonsterData {
@@ -22,23 +18,23 @@ export class WalkingHorror implements MonsterData {
     list: "",
   };
   color: MonsterColor = "white";
-  rank = {
+  rank: Rank = {
     rookie: {
       standard: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 9,
         damage: 3,
         movement: 3,
         attack: "CLEAVE 2, POISON 1 AND INTIMIDATE 1",
       },
       alternate: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 9,
         damage: 4,
         movement: 3,
@@ -47,20 +43,20 @@ export class WalkingHorror implements MonsterData {
     },
     fighter: {
       standard: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 12,
         damage: 4,
         movement: 3,
         attack: "CLEAVE 2, POISON 1 AND INTIMIDATE 1",
       },
       alternate: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 12,
         damage: 5,
         movement: 3,
@@ -69,20 +65,20 @@ export class WalkingHorror implements MonsterData {
     },
     veteran: {
       standard: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 15,
         damage: 5,
         movement: 4,
         attack: "CLEAVE 2, POISON 2 AND INTIMIDATE 2",
       },
       alternate: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 15,
         damage: 6,
         movement: 4,
@@ -91,20 +87,20 @@ export class WalkingHorror implements MonsterData {
     },
     champion: {
       standard: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 18,
         damage: 6,
         movement: 4,
         attack: "CLEAVE 2, POISON 2 AND INTIMIDATE 2",
       },
       alternate: {
-        immunities: ["knock-down"] as Condition[],
-        position: "bottom" as TrackerPosition,
-        rune: "red" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["knock-down"],
+        position: "bottom",
+        rune: "red",
+        attackType: "melee",
         hp: 18,
         damage: 7,
         movement: 4,

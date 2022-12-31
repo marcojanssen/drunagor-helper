@@ -1,13 +1,9 @@
 import AvatarUrl from "@/assets/monster/avatar/ShadowMistressAvatar.webp";
 import ImageUrl from "@/assets/monster/big/ShadowMistressBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowMistressMiniature.webp";
-import type { MonsterData } from "@/data/store/MonsterData";
-import type { AttackType } from "@/data/type/AttackType";
-import type { Condition } from "@/data/type/Condition";
+import type { MonsterData, Rank } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
-import type { Rune } from "@/data/type/Rune";
-import type { TrackerPosition } from "@/data/type/TrackerPosition";
 import type { VariantId } from "@/data/type/VariantId";
 
 export class ShadowMistress implements MonsterData {
@@ -22,23 +18,23 @@ export class ShadowMistress implements MonsterData {
     list: "",
   };
   color: MonsterColor = "white";
-  rank = {
+  rank: Rank = {
     rookie: {
       standard: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 9,
         damage: 2,
         movement: 4,
         attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
       },
       alternate: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 9,
         damage: 3,
         movement: 4,
@@ -47,20 +43,20 @@ export class ShadowMistress implements MonsterData {
     },
     fighter: {
       standard: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 12,
         damage: 3,
         movement: 4,
         attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
       },
       alternate: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 12,
         damage: 4,
         movement: 4,
@@ -69,20 +65,20 @@ export class ShadowMistress implements MonsterData {
     },
     veteran: {
       standard: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 15,
         damage: 4,
         movement: 5,
         attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
       },
       alternate: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 15,
         damage: 5,
         movement: 5,
@@ -91,20 +87,20 @@ export class ShadowMistress implements MonsterData {
     },
     champion: {
       standard: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 18,
         damage: 5,
         movement: 5,
         attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
       },
       alternate: {
-        immunities: ["stun"] as Condition[],
-        position: "top" as TrackerPosition,
-        rune: "orange" as Rune,
-        attackType: "melee" as AttackType,
+        immunities: ["stun"],
+        position: "top",
+        rune: "orange",
+        attackType: "melee",
         hp: 18,
         damage: 6,
         movement: 5,

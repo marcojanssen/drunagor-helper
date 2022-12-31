@@ -6,7 +6,7 @@ import type { Condition } from "../type/Condition";
 import type { Rune } from "../type/Rune";
 import type { TrackerPosition } from "../type/TrackerPosition";
 
-interface Data {
+export interface VariantData {
   immunities: Condition[];
   position: TrackerPosition;
   rune: Rune;
@@ -17,16 +17,16 @@ interface Data {
   attack: string | null;
 }
 
-interface Variant {
-  standard: Data;
-  alternate: Data;
+export interface Variant {
+  standard: VariantData;
+  alternate: VariantData;
   complex?: {
-    a: Data;
-    b: Data;
+    a: VariantData;
+    b: VariantData;
   };
 }
 
-interface Rank {
+export interface Rank {
   rookie: Variant;
   fighter: Variant;
   veteran: Variant;
