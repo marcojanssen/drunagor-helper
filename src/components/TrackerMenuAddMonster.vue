@@ -9,6 +9,7 @@ import { useToast } from "vue-toastification";
 import type { MonsterData } from "@/data/store/MonsterData";
 import { ref } from "vue";
 import BaseListSearch from "@/components/BaseListSearch.vue";
+import RandomAvatarImage from "@/assets/monster/avatar/RandomAvatar.webp";
 
 const toast = useToast();
 
@@ -34,7 +35,7 @@ function randomMonster(color: MonsterColor) {
   const randomMonster = new RandomizeMonster().randomizeByColor(color);
 
   if (randomMonster === null) {
-    toast.error("No random monster available. Check the content / variant settings");
+    toast.error("No random monster available. Check your settings.");
     return;
   }
 
@@ -51,9 +52,9 @@ function selectMonster(monsterId: string) {
   <div>
     <BaseListSearch @search="searchMonsters" />
     <BaseList>
-      <BaseListItem @click="randomMonster('white')"> Random white </BaseListItem>
-      <BaseListItem @click="randomMonster('gray')"> Random gray </BaseListItem>
-      <BaseListItem @click="randomMonster('black')"> Random black </BaseListItem>
+      <BaseListItem @click="randomMonster('white')" :avatar="RandomAvatarImage"> Random white </BaseListItem>
+      <BaseListItem @click="randomMonster('gray')" :avatar="RandomAvatarImage"> Random gray </BaseListItem>
+      <BaseListItem @click="randomMonster('black')" :avatar="RandomAvatarImage"> Random black </BaseListItem>
       <template v-for="monster in filteredMonsters" :key="monster.id">
         <BaseListItem @click="selectMonster(monster.id)" :avatar="monster.images.avatar">
           {{ monster.name }}

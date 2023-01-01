@@ -6,7 +6,6 @@ import BaseModal from "@/components/BaseModal.vue";
 import BaseList from "@/components/BaseList.vue";
 import BaseListItem from "@/components/BaseListItem.vue";
 import BaseListSearch from "@/components/BaseListSearch.vue";
-import * as _ from "lodash-es";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import type { Member } from "@/store/Member";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
