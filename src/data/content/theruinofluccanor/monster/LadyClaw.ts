@@ -27,7 +27,7 @@ export class LadyClaw implements MonsterData {
         hp: 12,
         damage: 4,
         movement: 4,
-        attack: "CLEAVE 2, POISON 1 AND KNOCK DOWN",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "poison", value: "1" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["burn", "slow"],
@@ -37,7 +37,13 @@ export class LadyClaw implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 3,
-        attack: "DEFIANT; FATIGUE X AND POISON 1",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "fatigue", value: "X" },
+          "AND",
+          { id: "poison", value: "1" },
+        ],
       },
     },
     fighter: {
@@ -49,7 +55,7 @@ export class LadyClaw implements MonsterData {
         hp: 16,
         damage: 5,
         movement: 4,
-        attack: "CLEAVE 2, POISON 1 AND KNOCK DOWN",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "poison", value: "1" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["burn", "slow"],
@@ -59,7 +65,13 @@ export class LadyClaw implements MonsterData {
         hp: 16,
         damage: 6,
         movement: 3,
-        attack: "DEFIANT; FATIGUE X AND POISON 1",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "fatigue", value: "X" },
+          "AND",
+          { id: "poison", value: "1" },
+        ],
       },
     },
     veteran: {
@@ -71,7 +83,7 @@ export class LadyClaw implements MonsterData {
         hp: 20,
         damage: 6,
         movement: 5,
-        attack: "CLEAVE 2, POISON 2 AND KNOCK DOWN",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "poison", value: "2" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["burn", "slow"],
@@ -81,7 +93,13 @@ export class LadyClaw implements MonsterData {
         hp: 20,
         damage: 7,
         movement: 4,
-        attack: "DEFIANT; FATIGUE X AND POISON 2",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "fatigue", value: "X" },
+          "AND",
+          { id: "poison", value: "2" },
+        ],
       },
     },
     champion: {
@@ -93,7 +111,7 @@ export class LadyClaw implements MonsterData {
         hp: 24,
         damage: 7,
         movement: 5,
-        attack: "CLEAVE 2, POISON 2 AND KNOCK DOWN",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "poison", value: "2" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["burn", "slow"],
@@ -103,7 +121,13 @@ export class LadyClaw implements MonsterData {
         hp: 24,
         damage: 8,
         movement: 4,
-        attack: "DEFIANT; FATIGUE X AND POISON 2",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "fatigue", value: "X" },
+          "AND",
+          { id: "poison", value: "2" },
+        ],
       },
     },
   };

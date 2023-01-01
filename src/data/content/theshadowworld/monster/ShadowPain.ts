@@ -28,7 +28,7 @@ export class ShadowPain implements MonsterData {
         hp: 9,
         damage: 4,
         movement: 4,
-        attack: "JUMP; BLEED 1 AND KNOCK DOWN",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "bleed", value: "1" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -38,7 +38,13 @@ export class ShadowPain implements MonsterData {
         hp: 9,
         damage: 3,
         movement: 4,
-        attack: "BLOODSEEKER; MULTISHOT 2, BLEED 1",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "multishot", value: "2" },
+          ",",
+          { id: "bleed", value: "1" },
+        ],
       },
     },
     fighter: {
@@ -50,7 +56,7 @@ export class ShadowPain implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 4,
-        attack: "JUMP; BLEED 1 AND KNOCK DOWN",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "bleed", value: "1" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -60,7 +66,13 @@ export class ShadowPain implements MonsterData {
         hp: 12,
         damage: 4,
         movement: 4,
-        attack: "BLOODSEEKER; MULTISHOT 2, BLEED 1",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "multishot", value: "2" },
+          ",",
+          { id: "bleed", value: "1" },
+        ],
       },
     },
     veteran: {
@@ -72,7 +84,7 @@ export class ShadowPain implements MonsterData {
         hp: 15,
         damage: 6,
         movement: 5,
-        attack: "JUMP; BLEED 2 AND KNOCK DOWN",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "bleed", value: "2" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -82,7 +94,13 @@ export class ShadowPain implements MonsterData {
         hp: 15,
         damage: 3,
         movement: 4,
-        attack: "BLOODSEEKER; MULTISHOT 2, BLEED 2",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "multishot", value: "2" },
+          ",",
+          { id: "bleed", value: "2" },
+        ],
       },
     },
     champion: {
@@ -94,7 +112,7 @@ export class ShadowPain implements MonsterData {
         hp: 18,
         damage: 7,
         movement: 5,
-        attack: "JUMP; BLEED 2 AND KNOCK DOWN",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "bleed", value: "2" }, "AND", { id: "knock-down" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -104,7 +122,13 @@ export class ShadowPain implements MonsterData {
         hp: 18,
         damage: 6,
         movement: 5,
-        attack: "BLOODSEEKER; MULTISHOT 2, BLEED 2",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "multishot", value: "2" },
+          ",",
+          { id: "bleed", value: "2" },
+        ],
       },
     },
   };

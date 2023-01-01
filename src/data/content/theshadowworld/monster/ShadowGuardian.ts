@@ -28,7 +28,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 12,
         damage: 3,
         movement: 3,
-        attack: "JUMP; STRIKE 1, PENITENCE",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "strike", value: "1" }, ",", { id: "penitence" }],
       },
       alternate: {
         immunities: ["bleed", "stealth"],
@@ -38,7 +38,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 9,
         damage: 4,
         movement: 4,
-        attack: "RECKONER; SHADOW AURA AND STUN",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "shadow-aura" }, "AND", { id: "stun" }],
       },
     },
     fighter: {
@@ -50,7 +50,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 16,
         damage: 4,
         movement: 3,
-        attack: "JUMP; STRIKE 1, PENITENCE",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "strike", value: "1" }, ",", { id: "penitence" }],
       },
       alternate: {
         immunities: ["bleed", "stealth"],
@@ -60,7 +60,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 4,
-        attack: "RECKONER; SHADOW AURA AND STUN",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "shadow-aura" }, "AND", { id: "stun" }],
       },
     },
     veteran: {
@@ -72,7 +72,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 20,
         damage: 5,
         movement: 4,
-        attack: "JUMP; STRIKE 1, PENITENCE",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "strike", value: "1" }, ",", { id: "penitence" }],
       },
       alternate: {
         immunities: ["bleed", "stealth"],
@@ -82,7 +82,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 15,
         damage: 6,
         movement: 5,
-        attack: "RECKONER; SHADOW AURA AND STUN",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "shadow-aura" }, "AND", { id: "stun" }],
       },
     },
     champion: {
@@ -94,7 +94,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 24,
         damage: 6,
         movement: 4,
-        attack: "JUMP; STRIKE 1, PENITENCE",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "strike", value: "1" }, ",", { id: "penitence" }],
       },
       alternate: {
         immunities: ["bleed", "stealth"],
@@ -104,7 +104,7 @@ export class ShadowGuardian implements MonsterData {
         hp: 18,
         damage: 7,
         movement: 5,
-        attack: "RECKONER; SHADOW AURA AND STUN",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "shadow-aura" }, "AND", { id: "stun" }],
       },
     },
   };

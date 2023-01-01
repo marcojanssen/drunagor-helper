@@ -28,7 +28,13 @@ export class ShadowMistress implements MonsterData {
         hp: 9,
         damage: 2,
         movement: 4,
-        attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
+        attack: [
+          { id: "shield", value: "X", color: "pink" },
+          ";",
+          { id: "cleave", value: "2" },
+          ",",
+          { id: "attack-twice" },
+        ],
       },
       alternate: {
         immunities: ["stun"],
@@ -38,7 +44,7 @@ export class ShadowMistress implements MonsterData {
         hp: 9,
         damage: 3,
         movement: 4,
-        attack: "RECKONER; ATTACK TWICE",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "attack-twice" }],
       },
     },
     fighter: {
@@ -50,7 +56,13 @@ export class ShadowMistress implements MonsterData {
         hp: 12,
         damage: 3,
         movement: 4,
-        attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
+        attack: [
+          { id: "shield", value: "X", color: "pink" },
+          ";",
+          { id: "cleave", value: "2" },
+          ",",
+          { id: "attack-twice" },
+        ],
       },
       alternate: {
         immunities: ["stun"],
@@ -60,7 +72,7 @@ export class ShadowMistress implements MonsterData {
         hp: 12,
         damage: 4,
         movement: 4,
-        attack: "RECKONER; ATTACK TWICE",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "attack-twice" }],
       },
     },
     veteran: {
@@ -72,7 +84,13 @@ export class ShadowMistress implements MonsterData {
         hp: 15,
         damage: 4,
         movement: 5,
-        attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
+        attack: [
+          { id: "shield", value: "X", color: "pink" },
+          ";",
+          { id: "cleave", value: "2" },
+          ",",
+          { id: "attack-twice" },
+        ],
       },
       alternate: {
         immunities: ["stun"],
@@ -82,7 +100,7 @@ export class ShadowMistress implements MonsterData {
         hp: 15,
         damage: 5,
         movement: 5,
-        attack: "RECKONER; ATTACK TWICE",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "attack-twice" }],
       },
     },
     champion: {
@@ -94,7 +112,13 @@ export class ShadowMistress implements MonsterData {
         hp: 18,
         damage: 5,
         movement: 5,
-        attack: "SHIELD X; CLEAVE 2, ATTACK TWICE",
+        attack: [
+          { id: "shield", value: "X", color: "pink" },
+          ";",
+          { id: "cleave", value: "2" },
+          ",",
+          { id: "attack-twice" },
+        ],
       },
       alternate: {
         immunities: ["stun"],
@@ -104,7 +128,7 @@ export class ShadowMistress implements MonsterData {
         hp: 18,
         damage: 6,
         movement: 5,
-        attack: "RECKONER; ATTACK TWICE",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "attack-twice" }],
       },
     },
   };
