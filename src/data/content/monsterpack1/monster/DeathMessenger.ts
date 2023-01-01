@@ -28,7 +28,7 @@ export class DeathMessenger implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 3,
-        attack: "CURSE 1 AND SHADOW AURA",
+        attack: [{ id: "curse", value: "1" }, "AND", { id: "shadow-aura" }],
       },
       alternate: {
         immunities: ["bleed", "slow"],
@@ -38,7 +38,7 @@ export class DeathMessenger implements MonsterData {
         hp: 9,
         damage: 4,
         movement: 4,
-        attack: "RECKONER; PENITENCE AND SLOW",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "penitence" }, "AND", { id: "slow" }],
       },
     },
     fighter: {
@@ -50,7 +50,7 @@ export class DeathMessenger implements MonsterData {
         hp: 16,
         damage: 6,
         movement: 3,
-        attack: "CURSE 1 AND SHADOW AURA",
+        attack: [{ id: "curse", value: "1" }, "AND", { id: "shadow-aura" }],
       },
       alternate: {
         immunities: ["bleed", "slow"],
@@ -60,7 +60,7 @@ export class DeathMessenger implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 4,
-        attack: "RECKONER; PENITENCE AND SLOW",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "penitence" }, "AND", { id: "slow" }],
       },
     },
     veteran: {
@@ -72,7 +72,7 @@ export class DeathMessenger implements MonsterData {
         hp: 20,
         damage: 7,
         movement: 4,
-        attack: "CURSE 1 AND SHADOW AURA",
+        attack: [{ id: "curse", value: "1" }, "AND", { id: "shadow-aura" }],
       },
       alternate: {
         immunities: ["bleed", "slow"],
@@ -82,7 +82,7 @@ export class DeathMessenger implements MonsterData {
         hp: 15,
         damage: 6,
         movement: 5,
-        attack: "RECKONER; PENITENCE AND SLOW",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "penitence" }, "AND", { id: "slow" }],
       },
     },
     champion: {
@@ -94,7 +94,7 @@ export class DeathMessenger implements MonsterData {
         hp: 24,
         damage: 8,
         movement: 4,
-        attack: "CURSE 1 AND SHADOW AURA",
+        attack: [{ id: "curse", value: "1" }, "AND", { id: "shadow-aura" }],
       },
       alternate: {
         immunities: ["bleed", "slow"],
@@ -104,7 +104,7 @@ export class DeathMessenger implements MonsterData {
         hp: 18,
         damage: 7,
         movement: 5,
-        attack: "RECKONER; PENITENCE AND SLOW",
+        attack: [{ id: "reckoner", color: "blue" }, ";", { id: "penitence" }, "AND", { id: "slow" }],
       },
     },
   };

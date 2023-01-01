@@ -28,7 +28,7 @@ export class ShadowCultist implements MonsterData {
         hp: 9,
         damage: 4,
         movement: 3,
-        attack: "BURN 1 AND CURSE 1",
+        attack: [{ id: "burn", value: "1" }, "AND", { id: "curse", value: "1" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -38,7 +38,7 @@ export class ShadowCultist implements MonsterData {
         hp: 9,
         damage: 4,
         movement: 3,
-        attack: "DEFIANT; POISON 1 AND SLOW",
+        attack: [{ id: "defiant", color: "blue" }, ";", { id: "poison", value: "1" }, "AND", { id: "slow" }],
       },
     },
     fighter: {
@@ -50,7 +50,7 @@ export class ShadowCultist implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 3,
-        attack: "BURN 1 AND CURSE 1",
+        attack: [{ id: "burn", value: "1" }, "AND", { id: "curse", value: "1" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -60,7 +60,7 @@ export class ShadowCultist implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 3,
-        attack: "DEFIANT; POISON 2 AND SLOW",
+        attack: [{ id: "defiant", color: "blue" }, ";", { id: "poison", value: "2" }, "AND", { id: "slow" }],
       },
     },
     veteran: {
@@ -72,7 +72,7 @@ export class ShadowCultist implements MonsterData {
         hp: 15,
         damage: 6,
         movement: 4,
-        attack: "BURN 2 AND CURSE 1",
+        attack: [{ id: "burn", value: "2" }, "AND", { id: "curse", value: "1" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -82,7 +82,7 @@ export class ShadowCultist implements MonsterData {
         hp: 15,
         damage: 6,
         movement: 4,
-        attack: "DEFIANT; POISON 3 AND SLOW",
+        attack: [{ id: "defiant", color: "blue" }, ";", { id: "poison", value: "3" }, "AND", { id: "slow" }],
       },
     },
     champion: {
@@ -94,7 +94,7 @@ export class ShadowCultist implements MonsterData {
         hp: 18,
         damage: 7,
         movement: 4,
-        attack: "BURN 2 AND CURSE 1",
+        attack: [{ id: "burn", value: "2" }, "AND", { id: "curse", value: "1" }],
       },
       alternate: {
         immunities: ["poison"],
@@ -104,7 +104,7 @@ export class ShadowCultist implements MonsterData {
         hp: 18,
         damage: 7,
         movement: 4,
-        attack: "DEFIANT; POISON 4 AND SLOW",
+        attack: [{ id: "defiant", color: "blue" }, ";", { id: "poison", value: "4" }, "AND", { id: "slow" }],
       },
     },
   };

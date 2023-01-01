@@ -28,7 +28,7 @@ export class Executioner implements MonsterData {
         hp: 12,
         damage: 4,
         movement: 4,
-        attack: "CLEAVE 2, BLEED 1 AND SLOW",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "bleed", value: "1" }, "AND", { id: "slow" }],
       },
       alternate: {
         immunities: ["intimidate", "slow"],
@@ -38,7 +38,15 @@ export class Executioner implements MonsterData {
         hp: 15,
         damage: 3,
         movement: 4,
-        attack: "SHIELD 1; RECKONER, CLEAVE 2 AND CURSE 1",
+        attack: [
+          { id: "shield", value: "1", color: "pink" },
+          ";",
+          { id: "reckoner", color: "blue" },
+          ",",
+          { id: "cleave", value: "2" },
+          "AND",
+          { id: "curse", value: "1" },
+        ],
       },
     },
     fighter: {
@@ -50,7 +58,7 @@ export class Executioner implements MonsterData {
         hp: 16,
         damage: 5,
         movement: 4,
-        attack: "CLEAVE 2, BLEED 1 AND SLOW",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "bleed", value: "1" }, "AND", { id: "slow" }],
       },
       alternate: {
         immunities: ["intimidate", "slow"],
@@ -60,7 +68,15 @@ export class Executioner implements MonsterData {
         hp: 20,
         damage: 4,
         movement: 4,
-        attack: "SHIELD 2; RECKONER, CLEAVE 2 AND CURSE 1",
+        attack: [
+          { id: "shield", value: "2", color: "pink" },
+          ";",
+          { id: "reckoner", color: "blue" },
+          ",",
+          { id: "cleave", value: "2" },
+          "AND",
+          { id: "curse", value: "1" },
+        ],
       },
     },
     veteran: {
@@ -72,7 +88,7 @@ export class Executioner implements MonsterData {
         hp: 20,
         damage: 6,
         movement: 5,
-        attack: "CLEAVE 2, BLEED 2 AND SLOW",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "bleed", value: "2" }, "AND", { id: "slow" }],
       },
       alternate: {
         immunities: ["intimidate", "slow"],
@@ -82,7 +98,15 @@ export class Executioner implements MonsterData {
         hp: 25,
         damage: 5,
         movement: 5,
-        attack: "SHIELD 3; RECKONER, CLEAVE 2 AND CURSE 1",
+        attack: [
+          { id: "shield", value: "3", color: "pink" },
+          ";",
+          { id: "reckoner", color: "blue" },
+          ",",
+          { id: "cleave", value: "2" },
+          "AND",
+          { id: "curse", value: "1" },
+        ],
       },
     },
     champion: {
@@ -94,7 +118,7 @@ export class Executioner implements MonsterData {
         hp: 24,
         damage: 7,
         movement: 5,
-        attack: "CLEAVE 2, BLEED 2 AND SLOW",
+        attack: [{ id: "cleave", value: "2" }, ",", { id: "bleed", value: "2" }, "AND", { id: "slow" }],
       },
       alternate: {
         immunities: ["intimidate", "slow"],
@@ -104,7 +128,15 @@ export class Executioner implements MonsterData {
         hp: 30,
         damage: 6,
         movement: 5,
-        attack: "SHIELD 4; RECKONER, CLEAVE 2 AND CURSE 1",
+        attack: [
+          { id: "shield", value: "4", color: "pink" },
+          ";",
+          { id: "reckoner", color: "blue" },
+          ",",
+          { id: "cleave", value: "2" },
+          "AND",
+          { id: "curse", value: "1" },
+        ],
       },
     },
   };

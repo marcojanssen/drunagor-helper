@@ -28,7 +28,13 @@ export class Abomination implements MonsterData {
         hp: 15,
         damage: 5,
         movement: 2,
-        attack: "REGENERATION 1; STRIKE 1, STUN",
+        attack: [
+          { id: "regeneration", value: "1", color: "pink" },
+          ";",
+          { id: "strike", value: "1" },
+          "AND",
+          { id: "stun" },
+        ],
       },
       alternate: {
         immunities: ["large", "burn"],
@@ -38,7 +44,13 @@ export class Abomination implements MonsterData {
         hp: 15,
         damage: 3,
         movement: 2,
-        attack: "DEFIANT; STRIKE 1, DRAIN HEALTH 1",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "strike", value: "1" },
+          ",",
+          { id: "drain-health", value: "1" },
+        ],
       },
     },
     fighter: {
@@ -50,7 +62,13 @@ export class Abomination implements MonsterData {
         hp: 20,
         damage: 6,
         movement: 2,
-        attack: "REGENERATION 1; STRIKE 1, STUN",
+        attack: [
+          { id: "regeneration", value: "1", color: "pink" },
+          ";",
+          { id: "strike", value: "1" },
+          "AND",
+          { id: "stun" },
+        ],
       },
       alternate: {
         immunities: ["large", "burn"],
@@ -60,7 +78,13 @@ export class Abomination implements MonsterData {
         hp: 20,
         damage: 4,
         movement: 2,
-        attack: "DEFIANT; STRIKE 1, DRAIN HEALTH 2",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "strike", value: "1" },
+          ",",
+          { id: "drain-health", value: "2" },
+        ],
       },
     },
     veteran: {
@@ -72,7 +96,13 @@ export class Abomination implements MonsterData {
         hp: 25,
         damage: 7,
         movement: 3,
-        attack: "REGENERATION 2; STRIKE 1, STUN",
+        attack: [
+          { id: "regeneration", value: "2", color: "pink" },
+          ";",
+          { id: "strike", value: "1" },
+          "AND",
+          { id: "stun" },
+        ],
       },
       alternate: {
         immunities: ["large", "burn"],
@@ -82,7 +112,13 @@ export class Abomination implements MonsterData {
         hp: 25,
         damage: 5,
         movement: 3,
-        attack: "DEFIANT; STRIKE 1, DRAIN HEALTH 3",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "strike", value: "1" },
+          ",",
+          { id: "drain-health", value: "3" },
+        ],
       },
     },
     champion: {
@@ -94,7 +130,13 @@ export class Abomination implements MonsterData {
         hp: 30,
         damage: 8,
         movement: 3,
-        attack: "REGENERATION 2; STRIKE 1, STUN",
+        attack: [
+          { id: "regeneration", value: "2", color: "pink" },
+          ";",
+          { id: "strike", value: "1" },
+          "AND",
+          { id: "stun" },
+        ],
       },
       alternate: {
         immunities: ["large", "burn"],
@@ -104,7 +146,13 @@ export class Abomination implements MonsterData {
         hp: 30,
         damage: 6,
         movement: 3,
-        attack: "DEFIANT; STRIKE 1, DRAIN HEALTH 4",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "strike", value: "1" },
+          ",",
+          { id: "drain-health", value: "4" },
+        ],
       },
     },
   };

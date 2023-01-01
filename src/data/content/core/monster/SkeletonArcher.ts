@@ -28,7 +28,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 9,
         damage: 3,
         movement: 4,
-        attack: "MULTISHOT 2, POISON 1",
+        attack: [{ id: "multishot", value: "2" }, ",", { id: "poison", value: "1" }],
       },
       alternate: {
         immunities: ["bleed"],
@@ -38,7 +38,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 6,
         damage: 4,
         movement: 4,
-        attack: "BLOODSEEKER; BURN 1",
+        attack: [{ id: "bloodseeker", color: "blue" }, ";", { id: "burn", value: "1" }],
       },
     },
     fighter: {
@@ -50,7 +50,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 12,
         damage: 4,
         movement: 4,
-        attack: "MULTISHOT 2, POISON 1",
+        attack: [{ id: "multishot", value: "2" }, ",", { id: "poison", value: "1" }],
       },
       alternate: {
         immunities: ["bleed"],
@@ -60,7 +60,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 9,
         damage: 5,
         movement: 4,
-        attack: "BLOODSEEKER; BURN 2",
+        attack: [{ id: "bloodseeker", color: "blue" }, ";", { id: "burn", value: "2" }],
       },
     },
     veteran: {
@@ -72,7 +72,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 15,
         damage: 5,
         movement: 5,
-        attack: "MULTISHOT 2, POISON 2",
+        attack: [{ id: "multishot", value: "2" }, ",", { id: "poison", value: "2" }],
       },
       alternate: {
         immunities: ["bleed"],
@@ -82,7 +82,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 12,
         damage: 6,
         movement: 5,
-        attack: "BLOODSEEKER; BURN 3",
+        attack: [{ id: "bloodseeker", color: "blue" }, ";", { id: "burn", value: "3" }],
       },
     },
     champion: {
@@ -94,7 +94,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 18,
         damage: 6,
         movement: 5,
-        attack: "MULTISHOT 2, POISON 2",
+        attack: [{ id: "multishot", value: "2" }, ",", { id: "poison", value: "2" }],
       },
       alternate: {
         immunities: ["bleed"],
@@ -104,7 +104,7 @@ export class SkeletonArcher implements MonsterData {
         hp: 15,
         damage: 7,
         movement: 5,
-        attack: "BLOODSEEKER; BURN 4",
+        attack: [{ id: "bloodseeker", color: "blue" }, ";", { id: "burn", value: "4" }],
       },
     },
   };

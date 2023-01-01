@@ -28,7 +28,7 @@ export class ShadowVampire implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 5,
-        attack: "JUMP; DRAIN HEALTH 1",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "drain-health", value: "1" }],
       },
       alternate: {
         immunities: ["knock-down", "stealth"],
@@ -38,7 +38,13 @@ export class ShadowVampire implements MonsterData {
         hp: 9,
         damage: 1,
         movement: 5,
-        attack: "JUMP; RELENTLESS; VICIOUS",
+        attack: [
+          { id: "jump", color: "blue" },
+          ";",
+          { id: "relentless", color: "blue" },
+          ";",
+          { id: "vicious", color: "blue" },
+        ],
       },
     },
     fighter: {
@@ -50,7 +56,7 @@ export class ShadowVampire implements MonsterData {
         hp: 16,
         damage: 6,
         movement: 5,
-        attack: "JUMP; DRAIN HEALTH 1",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "drain-health", value: "1" }],
       },
       alternate: {
         immunities: ["knock-down", "stealth"],
@@ -60,7 +66,13 @@ export class ShadowVampire implements MonsterData {
         hp: 12,
         damage: 2,
         movement: 5,
-        attack: "JUMP; RELENTLESS; VICIOUS",
+        attack: [
+          { id: "jump", color: "blue" },
+          ";",
+          { id: "relentless", color: "blue" },
+          ";",
+          { id: "vicious", color: "blue" },
+        ],
       },
     },
     veteran: {
@@ -72,7 +84,7 @@ export class ShadowVampire implements MonsterData {
         hp: 20,
         damage: 7,
         movement: 6,
-        attack: "JUMP; DRAIN HEALTH 2",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "drain-health", value: "2" }],
       },
       alternate: {
         immunities: ["knock-down", "stealth"],
@@ -82,7 +94,13 @@ export class ShadowVampire implements MonsterData {
         hp: 15,
         damage: 3,
         movement: 5,
-        attack: "JUMP; RELENTLESS; VICIOUS",
+        attack: [
+          { id: "jump", color: "blue" },
+          ";",
+          { id: "relentless", color: "blue" },
+          ";",
+          { id: "vicious", color: "blue" },
+        ],
       },
     },
     champion: {
@@ -94,7 +112,7 @@ export class ShadowVampire implements MonsterData {
         hp: 24,
         damage: 8,
         movement: 6,
-        attack: "JUMP; DRAIN HEALTH 2",
+        attack: [{ id: "jump", color: "blue" }, ";", { id: "drain-health", value: "2" }],
       },
       alternate: {
         immunities: ["knock-down", "stealth"],
@@ -104,7 +122,13 @@ export class ShadowVampire implements MonsterData {
         hp: 18,
         damage: 4,
         movement: 5,
-        attack: "JUMP; RELENTLESS; VICIOUS",
+        attack: [
+          { id: "jump", color: "blue" },
+          ";",
+          { id: "relentless", color: "blue" },
+          ";",
+          { id: "vicious", color: "blue" },
+        ],
       },
     },
   };

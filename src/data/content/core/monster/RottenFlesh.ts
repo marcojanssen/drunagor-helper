@@ -28,7 +28,7 @@ export class RottenFlesh implements MonsterData {
         hp: 12,
         damage: 3,
         movement: 3,
-        attack: "ATTACK TWICE, INTIMIDATE 1",
+        attack: [{ id: "attack-twice" }, ",", { id: "intimidate", value: "1" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -38,7 +38,13 @@ export class RottenFlesh implements MonsterData {
         hp: 12,
         damage: 5,
         movement: 2,
-        attack: "DEFIANT; DRAIN HEALTH 1 AND FATIGUE 1",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "drain-health", value: "1" },
+          "AND",
+          { id: "fatigue", value: "1" },
+        ],
       },
     },
     fighter: {
@@ -50,7 +56,7 @@ export class RottenFlesh implements MonsterData {
         hp: 16,
         damage: 4,
         movement: 3,
-        attack: "ATTACK TWICE, INTIMIDATE 1",
+        attack: [{ id: "attack-twice" }, ",", { id: "intimidate", value: "1" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -60,7 +66,13 @@ export class RottenFlesh implements MonsterData {
         hp: 16,
         damage: 6,
         movement: 2,
-        attack: "DEFIANT; DRAIN HEALTH 1 AND FATIGUE 2",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "drain-health", value: "1" },
+          "AND",
+          { id: "fatigue", value: "2" },
+        ],
       },
     },
     veteran: {
@@ -72,7 +84,7 @@ export class RottenFlesh implements MonsterData {
         hp: 20,
         damage: 5,
         movement: 4,
-        attack: "ATTACK TWICE, INTIMIDATE 2",
+        attack: [{ id: "attack-twice" }, ",", { id: "intimidate", value: "2" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -82,7 +94,13 @@ export class RottenFlesh implements MonsterData {
         hp: 20,
         damage: 7,
         movement: 3,
-        attack: "DEFIANT; DRAIN HEALTH 2 AND FATIGUE 3",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "drain-health", value: "2" },
+          "AND",
+          { id: "fatigue", value: "3" },
+        ],
       },
     },
     champion: {
@@ -94,7 +112,7 @@ export class RottenFlesh implements MonsterData {
         hp: 24,
         damage: 6,
         movement: 4,
-        attack: "ATTACK TWICE, INTIMIDATE 2",
+        attack: [{ id: "attack-twice" }, ",", { id: "intimidate", value: "2" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -104,7 +122,13 @@ export class RottenFlesh implements MonsterData {
         hp: 24,
         damage: 8,
         movement: 3,
-        attack: "DEFIANT; DRAIN HEALTH 2 AND FATIGUE 4",
+        attack: [
+          { id: "defiant", color: "blue" },
+          ";",
+          { id: "drain-health", value: "2" },
+          "AND",
+          { id: "fatigue", value: "4" },
+        ],
       },
     },
   };

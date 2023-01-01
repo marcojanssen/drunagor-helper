@@ -1,20 +1,28 @@
+import type { AttackType } from "@/data/type/AttackType";
+import type { Condition } from "@/data/type/Condition";
 import type { ContentId } from "@/data/type/ContentId";
+import type { KeywordColor } from "@/data/type/KeywordColor";
+import type { KeywordSeperator } from "@/data/type/KeywordSeperator";
 import type { MonsterColor } from "@/data/type/MonsterColor";
+import type { Rune } from "@/data/type/Rune";
+import type { TrackerPosition } from "@/data/type/TrackerPosition";
 import type { VariantId } from "@/data/type/VariantId";
-import type { AttackType } from "../type/AttackType";
-import type { Condition } from "../type/Condition";
-import type { Rune } from "../type/Rune";
-import type { TrackerPosition } from "../type/TrackerPosition";
+
+export interface Keyword {
+  id: string;
+  value?: string;
+  color?: KeywordColor;
+}
 
 export interface VariantData {
   immunities: Condition[];
   position: TrackerPosition;
   rune: Rune;
   attackType: AttackType;
-  hp: number | null;
-  damage: number | null;
-  movement: number | null;
-  attack: string | null;
+  hp: number;
+  damage: number;
+  movement: number;
+  attack: Array<Keyword | KeywordSeperator>;
 }
 
 export interface Variant {

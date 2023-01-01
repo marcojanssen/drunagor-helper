@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import KeywordTooltip from "@/components/KeywordTooltip.vue";
+import MonsterAttack from "@/components/MonsterAttack.vue";
 import TrackerMenu from "@/components/TrackerMenu.vue";
 import { MonsterDataStore } from "@/data/store/MonsterDataStore.js";
 import { TrackerStore } from "@/store/TrackerStore";
@@ -11,6 +13,17 @@ const monsterStore = MonsterDataStore();
   <div class="grid gap-4 grid-cols-1 place-items-center mb-32">
     <div class="grid w-full lg:w-1/2">
       <TrackerMenu />
+    </div>
+    <div class="grid w-full lg:w-1/2">
+      <MonsterAttack
+        :attack="[
+          { id: 'regeneration', value: '1', color: 'pink' },
+          ';',
+          { id: 'strike', value: '1' },
+          'AND',
+          { id: 'stun' },
+        ]"
+      />
     </div>
     <TransitionGroup name="list">
       <template v-for="item in trackerStore.findAll()" :key="item.id">

@@ -28,7 +28,7 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 9,
         damage: 2,
         movement: 4,
-        attack: "ATTACK TWICE, DRAIN HEALTH 1",
+        attack: [{ id: "attack-twice" }, ",", { id: "drain-health", value: "1" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -38,7 +38,13 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 9,
         damage: 3,
         movement: 4,
-        attack: "BLOODSEEKER; INTIMIDATE X AND KNOCK DOWN",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "intimidate", value: "X" },
+          "AND",
+          { id: "knock-down" },
+        ],
       },
     },
     fighter: {
@@ -50,7 +56,7 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 12,
         damage: 3,
         movement: 4,
-        attack: "ATTACK TWICE, DRAIN HEALTH 1",
+        attack: [{ id: "attack-twice" }, ",", { id: "drain-health", value: "1" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -60,7 +66,13 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 12,
         damage: 4,
         movement: 4,
-        attack: "BLOODSEEKER; INTIMIDATE X AND KNOCK DOWN",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "intimidate", value: "X" },
+          "AND",
+          { id: "knock-down" },
+        ],
       },
     },
     veteran: {
@@ -72,7 +84,7 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 15,
         damage: 4,
         movement: 5,
-        attack: "ATTACK TWICE, DRAIN HEALTH 2",
+        attack: [{ id: "attack-twice" }, ",", { id: "drain-health", value: "2" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -82,7 +94,13 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 15,
         damage: 5,
         movement: 5,
-        attack: "BLOODSEEKER; INTIMIDATE X AND KNOCK DOWN",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "intimidate", value: "X" },
+          "AND",
+          { id: "knock-down" },
+        ],
       },
     },
     champion: {
@@ -94,7 +112,7 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 18,
         damage: 5,
         movement: 5,
-        attack: "ATTACK TWICE, DRAIN HEALTH 2",
+        attack: [{ id: "attack-twice" }, ",", { id: "drain-health", value: "2" }],
       },
       alternate: {
         immunities: ["stun"],
@@ -104,7 +122,13 @@ export class ScoutOfDarkness implements MonsterData {
         hp: 18,
         damage: 6,
         movement: 5,
-        attack: "BLOODSEEKER; INTIMIDATE X AND KNOCK DOWN",
+        attack: [
+          { id: "bloodseeker", color: "blue" },
+          ";",
+          { id: "intimidate", value: "X" },
+          "AND",
+          { id: "knock-down" },
+        ],
       },
     },
   };
