@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-nocheck
 import MonsterAttack from "@/components/MonsterAttack.vue";
 import TrackerMenu from "@/components/TrackerMenu.vue";
 import { MonsterDataStore } from "@/data/store/MonsterDataStore.js";
@@ -13,17 +14,7 @@ const monsterStore = MonsterDataStore();
     <div class="grid w-full lg:w-1/2">
       <TrackerMenu />
     </div>
-    <div class="grid w-full lg:w-1/2">
-      <MonsterAttack
-        :attack="[
-          { id: 'regeneration', value: '1', color: 'pink' },
-          ';',
-          { id: 'strike', value: '1' },
-          'AND',
-          { id: 'stun' },
-        ]"
-      />
-    </div>
+    <div class="grid w-full lg:w-1/2"></div>
     <TransitionGroup name="list">
       <template v-for="item in trackerStore.findAll()" :key="item.id">
         <template v-if="item.type == 'monster'">
@@ -39,7 +30,16 @@ const monsterStore = MonsterDataStore();
             </div>
             <div
               class="hero-overview grid gap-1 w-full place-content-start cursor-pointer bg-neutral rounded-md pl-2 py-2"
-            ></div>
+            >
+              {{ item.trackedItem.rank }}
+              {{ item.trackedItem.variant }}
+
+              <MonsterAttack
+                :attack="
+                  monsterStore.find(item.trackedItem.id).rank[item.trackedItem.rank][item.trackedItem.variant].attack
+                "
+              />
+            </div>
           </div>
           <!-- <template v-for="spawn in character.getSpawns()" :key="character.characterId">
             <div class="h-6">yolo</div>
