@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { MonsterRank } from "@/data/type/MonsterRank";
 import KeywordTooltip from "./KeywordTooltip.vue";
 import type { KeywordSeperator } from "@/data/type/KeywordSeperator";
 import type { Keyword } from "@/data/store/MonsterData";

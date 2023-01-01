@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import KeywordTooltip from "@/components/KeywordTooltip.vue";
 import MonsterAttack from "@/components/MonsterAttack.vue";
 import TrackerMenu from "@/components/TrackerMenu.vue";
 import { MonsterDataStore } from "@/data/store/MonsterDataStore.js";
