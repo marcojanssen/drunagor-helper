@@ -1,14 +1,14 @@
+import type { MonsterRank } from "@/data/type/MonsterRank";
+import type { VariantId } from "@/data/type/VariantId";
+
 export class TrackedItemMonster {
   public id: string;
-  public health: number = 20;
-  public rank: "rookie" | "fighter" | "veteran" | "champion";
+  public rank: MonsterRank;
+  public variant: VariantId;
 
-  constructor(id: string, rank: "rookie" | "fighter" | "veteran" | "champion") {
+  constructor(id: string, rank: MonsterRank, variant: VariantId) {
     this.id = id;
     this.rank = rank;
+    this.variant = variant;
   }
-
-  public spawn() {}
-
-  public kill() {}
 }
