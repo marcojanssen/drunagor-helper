@@ -3,6 +3,7 @@ import { MagnifyingGlassIcon } from "@heroicons/vue/24/solid";
 
 const props = defineProps<{
   id?: string;
+  class?: string;
 }>();
 
 const emit = defineEmits<{
@@ -16,7 +17,7 @@ function search(event: Event) {
 </script>
 
 <template>
-  <div :id="props.id" class="flex p-2 h-16 sticky top-12 bg-base-100">
+  <div :id="props.id" class="flex p-2 h-16 sticky inset-12 bg-base-100" :class="props.class">
     <div class="mt-1 flex rounded-md shadow-sm w-full">
       <div class="relative flex items-stretch flex-grow">
         <input
