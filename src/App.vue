@@ -2,7 +2,13 @@
 import { ref } from "vue";
 import { ConfigurationStore } from "./store/ConfigurationStore";
 import type { VariantId } from "./data/type/VariantId";
-import { ListBulletIcon, UserGroupIcon } from "@heroicons/vue/24/solid";
+import {
+  Bars3Icon,
+  Cog6ToothIcon,
+  ListBulletIcon,
+  QuestionMarkCircleIcon,
+  UserGroupIcon,
+} from "@heroicons/vue/24/solid";
 
 const drawerClose = ref(false);
 function closeDrawer() {
@@ -31,100 +37,51 @@ configurationStore.enabledVariants = newVariants;
 
 <template>
   <div class="drawer">
-    <input id="my-drawer-3" v-model="drawerClose" type="checkbox" class="drawer-toggle" />
+    <input id="menu-drawer" v-model="drawerClose" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <div class="w-full navbar bg-neutral sticky top-0 z-50 drop-shadow">
-        <div class="flex-none">
-          <label for="my-drawer-3" class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </label>
-        </div>
-        <div class="flex-1">Menu</div>
+        <label for="menu-drawer" class="flex cursor-pointer">
+          <Bars3Icon class="h-6 w-6" />
+          <span class="pl-2">Menu</span>
+        </label>
       </div>
       <div class="container mx-auto lg:w-3/4 p-4">
         <router-view> </router-view>
       </div>
     </div>
     <div class="drawer-side">
-      <label for="my-drawer-3" class="drawer-overlay"></label>
-      <ul class="menu w-80 flex flex-col pt-4 px-4 bg-neutral drop-shadow">
-        <!-- <li>
-          <router-link class="flex gap-4" to="/tracker" @click="closeDrawer">
-            <span class="flex-none">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="stroke-current flex-shrink-0 w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </span>
-            <span class="flex-1"
-              >Tracker <span class="text-primary text-xs font-semibold align-super">Experimental</span></span
-            >
-          </router-link>
-        </li> -->
+      <label for="menu-drawer" class="drawer-overlay bg-opacity-90"></label>
+      <ul class="menu w-80 flex flex-col pt-4 px-4 bg-base-300 drop-shadow">
         <li>
-          <router-link class="flex gap-4" to="/" @click="closeDrawer">
-            <span class="flex-none">
-              <svg
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-16 0 512 512"
-                class="w-6 h-6 stroke-current fill-accent"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M106.75 215.06 1.2 370.95c-3.08 5 .1 11.5 5.93 12.14l208.26 22.07-108.64-190.1zM7.41 315.43 82.7 193.08 6.06 147.1c-2.67-1.6-6.06.32-6.06 3.43v162.81c0 4.03 5.29 5.53 7.41 2.09zM18.25 423.6l194.4 87.66c5.3 2.45 11.35-1.43 11.35-7.26v-65.67l-203.55-22.3c-4.45-.5-6.23 5.59-2.2 7.57zm81.22-257.78L179.4 22.88c4.34-7.06-3.59-15.25-10.78-11.14L17.81 110.35c-2.47 1.62-2.39 5.26.13 6.78l81.53 48.69zM240 176h109.21L253.63 7.62C250.5 2.54 245.25 0 240 0s-10.5 2.54-13.63 7.62L130.79 176H240zm233.94-28.9-76.64 45.99 75.29 122.35c2.11 3.44 7.41 1.94 7.41-2.1V150.53c0-3.11-3.39-5.03-6.06-3.43zm-93.41 18.72 81.53-48.7c2.53-1.52 2.6-5.16.13-6.78l-150.81-98.6c-7.19-4.11-15.12 4.08-10.78 11.14l79.93 142.94zm79.02 250.21L256 438.32v65.67c0 5.84 6.05 9.71 11.35 7.26l194.4-87.66c4.03-1.97 2.25-8.06-2.2-7.56zm-86.3-200.97-108.63 190.1 208.26-22.07c5.83-.65 9.01-7.14 5.93-12.14L373.25 215.06zM240 208H139.57L240 383.75 340.43 208H240z"
-                />
-              </svg>
+          <router-link class="flex" to="/" @click="closeDrawer">
+            <span>
+              <QuestionMarkCircleIcon class="h-7 w-7" />
             </span>
-            <span class="flex-1">Randomizer</span>
+            <span>Randomizer</span>
           </router-link>
         </li>
         <li>
-          <router-link class="flex gap-4" to="/party" @click="closeDrawer">
-            <span class="flex-none">
+          <router-link class="flex" to="/party" @click="closeDrawer">
+            <span>
               <UserGroupIcon class="h-7 w-7" />
             </span>
-            <span class="flex-1">Party</span>
+            <span>Party</span>
           </router-link>
         </li>
-
         <li>
-          <router-link class="flex gap-4" to="/keyword" @click="closeDrawer">
-            <span class="flex-none">
+          <router-link class="flex" to="/keyword" @click="closeDrawer">
+            <span>
               <ListBulletIcon class="h-7 w-7" />
             </span>
-            <span class="flex-1">Keyword <span class="text-primary text-xs font-semibold align-super">Beta</span></span>
+            <span>Keyword <span class="text-emerald-300 text-xs font-semibold align-super">Beta</span></span>
           </router-link>
         </li>
-
         <li>
-          <router-link class="flex gap-4" to="/configuration" @click="closeDrawer">
-            <span class="flex-none"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                xml:space="preserve"
-                viewBox="0 0 489.802 489.802"
-                class="w-6 h-6 stroke-current fill-accent"
-              >
-                <path
-                  d="m20.701 281.901 32.1.2c4.8 24.7 14.3 48.7 28.7 70.5l-22.8 22.6c-8.2 8.1-8.2 21.2-.2 29.4l24.6 24.9c8.1 8.2 21.2 8.2 29.4.2l22.8-22.6c21.6 14.6 45.5 24.5 70.2 29.5l-.2 32.1c-.1 11.5 9.2 20.8 20.7 20.9l35 .2c11.5.1 20.8-9.2 20.9-20.7l.2-32.1c24.7-4.8 48.7-14.3 70.5-28.7l22.6 22.8c8.1 8.2 21.2 8.2 29.4.2l24.9-24.6c8.2-8.1 8.2-21.2.2-29.4l-22.6-22.8c14.6-21.6 24.5-45.5 29.5-70.2l32.1.2c11.5.1 20.8-9.2 20.9-20.7l.2-35c.1-11.5-9.2-20.8-20.7-20.9l-32.1-.2c-4.8-24.7-14.3-48.7-28.7-70.5l22.8-22.6c8.2-8.1 8.2-21.2.2-29.4l-24.6-24.9c-8.1-8.2-21.2-8.2-29.4-.2l-22.8 22.6c-21.6-14.6-45.5-24.5-70.2-29.5l.2-32.1c.1-11.5-9.2-20.8-20.7-20.9l-35-.2c-11.5-.1-20.8 9.2-20.9 20.7l-.3 32.1c-24.8 4.8-48.8 14.3-70.5 28.7l-22.6-22.8c-8.1-8.2-21.2-8.2-29.4-.2l-24.8 24.6c-8.2 8.1-8.2 21.2-.2 29.4l22.6 22.8c-14.6 21.6-24.5 45.5-29.5 70.2l-32.1-.2c-11.5-.1-20.8 9.2-20.9 20.7l-.2 35c-.1 11.4 9.2 20.8 20.7 20.9zm158.6-103.3c36.6-36.2 95.5-35.9 131.7.7s35.9 95.5-.7 131.7-95.5 35.9-131.7-.7-35.9-95.5.7-131.7z"
-                /></svg
-            ></span>
-            <span class="flex-1">Content / Variant</span>
+          <router-link class="flex" to="/configuration" @click="closeDrawer">
+            <span>
+              <Cog6ToothIcon class="h-7 w-7" />
+            </span>
+            <span>Content / Variant</span>
           </router-link>
         </li>
       </ul>
@@ -132,4 +89,11 @@ configurationStore.enabledVariants = newVariants;
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.router-link-active {
+  @apply bg-neutral;
+}
+a:active {
+  @apply bg-neutral text-white;
+}
+</style>
