@@ -20,7 +20,6 @@
     "@vueuse/core": "^9.9.0",
     "daisyui": "^2.46.0",
     "lodash-es": "^4.17.21",
-    "mini-svg-data-uri": "^1.4.4",
     "pinia": "^2.0.28",
     "vue": "^3.2.41",
     "vue-router": "^4.1.6",
