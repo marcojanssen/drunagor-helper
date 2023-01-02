@@ -1,44 +1,38 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { KeywordDataRepository } from "@/data/repository/KeywordDataRepository";
-import type { KeywordData } from "@/data/repository/KeywordData";
 import BaseListSearch from "@/components/BaseListSearch.vue";
 import BaseList from "@/components/BaseList.vue";
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
+import KeywordListItem from "@/components/KeywordListItem.vue";
 
 const keywordDataRepository = new KeywordDataRepository();
+const keywords = keywordDataRepository.findAll();
 
-const filteredKeywords = ref([] as KeywordData[]);
-searchKeywords();
+let filteredKeyword = computed(() =>
+  query.value === ""
+    ? keywords
+    : keywords.filter((keyword) =>
+        keyword.keyword.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
+      )
+);
 
-function searchKeywords(query: string = "") {
-  const keywords: KeywordData[] = [];
-  const regExp = new RegExp(query, "gi");
-
-  keywordDataRepository.findAll().forEach((keyword: KeywordData) => {
-    if (regExp.test(keyword.keyword)) {
-      keywords.push(keyword);
-    }
-  });
-
-  filteredKeywords.value = keywords;
-}
+let query = ref("");
 </script>
 
 <template>
-  <div>
-    <BaseListSearch @search="searchKeywords" class="inset-16" />
-    <BaseList>
-      <template v-for="keyword in filteredKeywords" :key="keyword.id">
-        <Disclosure as="div">
-          <DisclosureButton class="py-2"> {{ keyword.keyword }} </DisclosureButton>
-          <DisclosurePanel class="text-gray-500">
-            {{ keyword.description }}
-          </DisclosurePanel>
-        </Disclosure>
-      </template>
-    </BaseList>
-  </div>
+  <BaseListSearch id="keyword-search" @search="query = $event" class="inset-16" />
+  <BaseList id="keyword-list">
+    <template v-for="keyword in filteredKeyword" :key="keyword.id">
+      <KeywordListItem>
+        <template #default>
+          {{ keyword.keyword }}
+        </template>
+        <template #description>
+          <span class="text-gray-500">{{ keyword.description }}</span>
+        </template>
+      </KeywordListItem>
+    </template>
+  </BaseList>
 </template>
 
 <style scoped></style>

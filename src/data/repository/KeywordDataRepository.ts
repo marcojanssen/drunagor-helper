@@ -13,23 +13,6 @@ export class KeywordDataRepository implements DataRepository {
 
   private keywords: KeywordData[] = [
     {
-      id: "reaction",
-      keyword: "REACTION",
-      description:
-        "Skill that can be used in response to a threat (taking preventable damage). Each hero can only use one Reaction per threat. Shields must be applied before and Reactions can still be used even if damage has been reduced to 0.",
-    },
-    {
-      id: "spell-attack",
-      keyword: "SPELL ATTACK",
-      description: "Magic skill that always succeeds, inflicting damage.",
-    },
-    {
-      id: "weapon-attack",
-      keyword: "WEAPON ATTACK",
-      description:
-        "Attack skill using your Weapon. Roll D20, attack succeeds if roll is equal to or greater than Weapon hit chance after applying HIT modifiers. Attacking from a higher level than the Target gives +2 HIT; however, attacking from a lower level gives -2 HIT. By default, before HIT modifiers, a roll of 1 is always a Critical Failure and a roll of 20 is a Critical Hit (x2 DMG).",
-    },
-    {
       id: "x-dmg",
       keyword: "+X or -X DMG",
       description:
@@ -84,7 +67,12 @@ export class KeywordDataRepository implements DataRepository {
       id: "aura",
       keyword: "AURA",
       description:
-        "A hero can only have one and is removed when the hero is KNOCKED OUT and receives a TC. (Not removed during Camp Phase)",
+        "A hero can only have one and is removed when the hero is KNOCKED OUT and receives a TRAUMA CUBE. (Not removed during Camp Phase)",
+    },
+    {
+      id: "bear-trap",
+      keyword: "BEAR TRAP",
+      description: "All enemies in AREA take 2 non-preventable Damage, BLEED 2, DISCARD.",
     },
     {
       id: "bleed",
@@ -172,6 +160,18 @@ export class KeywordDataRepository implements DataRepository {
       description: "Target gains X CC as an effect.",
     },
     {
+      id: "darkness-behavior",
+      keyword: "DARKNESS BEHAVIOR",
+      description:
+        'Tries to reach the Strongest Hero not on top of Darkness. "Crush": If all Heroes are already on top of Darkness when a Rune is drawn, Skip spawning tile and all Heroes take N Damage. (N = Number of Heroes).',
+    },
+    {
+      id: "darkness-effect",
+      keyword: "DARKNESS EFFECT (STANDING ON IT)",
+      description:
+        "Deals 2 non-preventable Damage to a Hero (once per turn), Companion or Pet caught by it when spawned; stepped on it for first time in a turn; or ended their turn on top of it. Heroes: Imposes a -2 HIT penalty. Monsters: Gives +2 DMG bonus.",
+    },
+    {
       id: "defiant",
       keyword: "DEFIANT",
       description:
@@ -181,7 +181,7 @@ export class KeywordDataRepository implements DataRepository {
       id: "difficult-terrain",
       keyword: "DIFFICULT TERRAIN",
       description:
-        " A character that is affected by Difficult Terrain (like Water) loses 1 movement point from its current move effect. As with any harmful terrain, a character can only be affected by Difficult Terrain once per turn.",
+        "A character that is affected by Difficult Terrain (like Water) loses 1 movement point from its current move effect. As with any harmful terrain, a character can only be affected by Difficult Terrain once per turn.",
     },
     {
       id: "disarm",
@@ -204,6 +204,11 @@ export class KeywordDataRepository implements DataRepository {
       description: "Any character that is not in your party or an NPC. Heroes are monster's enemies.",
     },
     {
+      id: "engaged",
+      keyword: "ENGAGED",
+      description: "When a Character is adjacent to an Enemy. Ranged Attacks and most Minor Actions are not allowed.",
+    },
+    {
       id: "evolve",
       keyword: "EVOLVE",
       description: "Monster gains +2 DMG and +1 MOVE.",
@@ -217,12 +222,17 @@ export class KeywordDataRepository implements DataRepository {
     {
       id: "falling-damage",
       keyword: "FALLING DAMAGE",
-      description: "Character suffers 2 Damage () when descending two levels in a single step.",
+      description: "Character suffers 2 non-preventable Damage when descending two levels in a single step.",
     },
     {
       id: "fatigue",
       keyword: "FATIGUE",
       description: "Target must expend X (or as many as possible) of their available AC for no effect.",
+    },
+    {
+      id: "fire-trap",
+      keyword: "FIRE TRAP",
+      description: "All enemies in AREA take 2 non-preventable Damage, BURN 4, DISCARD.",
     },
     {
       id: "flyby",
@@ -368,7 +378,8 @@ export class KeywordDataRepository implements DataRepository {
     {
       id: "passive",
       keyword: "PASSIVE",
-      description: "Ability is always active (including Commander Attack cards) unless blocked by TC or CC.",
+      description:
+        "Ability is always active (including Commander Attack cards) unless blocked by TRAUMA CUBE or CURSE CUBE.",
     },
     {
       id: "pay-life",
@@ -378,7 +389,7 @@ export class KeywordDataRepository implements DataRepository {
     {
       id: "penitence",
       keyword: "PENITENCE",
-      description: "Target takes 1 Damage per CC.",
+      description: "Target takes 1 non-preventable Damage per CURSE CUBE.",
     },
     {
       id: "pet",
@@ -408,6 +419,11 @@ export class KeywordDataRepository implements DataRepository {
         "The Target takes X POISON tokens. At the beginning of that character's next turn, it takes 1 non-preventable damage for each POISON token it has. Unlike BLEED or BURN, POISON is not removed after dealing its damage. However, whenever a character receives a CLEANSE effect, it also removes all POISON affecting it. POISON is a stackable Condition.",
     },
     {
+      id: "poison-trap",
+      keyword: "POISON TRAP",
+      description: "All enemies in AREA take 2 non-preventable Damage, POISON 2, DISCARD.",
+    },
+    {
       id: "push",
       keyword: "PUSH",
       description: "Push the Target X SQUARES away from the Caster in a straight line. Must be pushed entire length.",
@@ -422,6 +438,12 @@ export class KeywordDataRepository implements DataRepository {
       keyword: "RANGER'S MARK",
       description:
         "When a character is Marked, it receives a RANGER'S MARK token. All Weapon Attacks and Spell Attacks made by the Ranger against a character they marked deals +1 DMG. As mentioned earlier, this damage is doubled if the character scores a Critical Hit as normal.",
+    },
+    {
+      id: "reaction",
+      keyword: "REACTION",
+      description:
+        "Skill that can be used in response to a threat (taking preventable damage). Each hero can only use one Reaction per threat. Shields must be applied before and Reactions can still be used even if damage has been reduced to 0.",
     },
     {
       id: "recall",
@@ -513,6 +535,11 @@ export class KeywordDataRepository implements DataRepository {
         "Characters, Chests, Interactions, Piles of Runes, NPCs, and others specified as such during a setup.",
     },
     {
+      id: "spell-attack",
+      keyword: "SPELL ATTACK",
+      description: "Magic skill that always succeeds, inflicting damage.",
+    },
+    {
       id: "split",
       keyword: "SPLIT",
       description:
@@ -537,7 +564,7 @@ export class KeywordDataRepository implements DataRepository {
         "Status is a reward related to a choice a character made during the story. Some Statuses can give special abilities as if they were some kind of blessing, while others are just related to the story. Regardless, a character can have any number of Statuses noted on their Campaign Log and all Statuses are erased during the next Camp Phase.",
     },
     {
-      id: "status",
+      id: "stealth",
       keyword: "STEALTH",
       description:
         'The Target receives a STEALTH Token and is considered hidden while they are holding it. Characters without Immunity to STEALTH do not count a hidden character either as their Target nor an enemy for engagement purposes (they still can\'t pass through them if they are enemies). Hidden characters still take damage from area Attacks such as STRIKE and from Darkness. At the beginning of its next turn, the character is no longer hidden and must discard its STEALTH token. Alternatively, as many seasoned assassins do, a character can end their STEALTH sooner by trying to Surprise a Target. Thus, if a character with a STEALTH token makes a Weapon Attack ( ), whether it hits or not, it Immediately loses STEALTH. On the other hand, if the Attack hits, it gains DOUBLE DAMAGE if the attacking character was considered hidden from its Target. This is called "Surprise." Characters immune to STEALTH cannot be Surprised.',
@@ -586,7 +613,7 @@ export class KeywordDataRepository implements DataRepository {
       description: "Pass through but not end on ENEMIES. Inflicts X Damage to each trampled enemy once.",
     },
     {
-      id: "trample",
+      id: "trap",
       keyword: "TRAP",
       description:
         "Place a Trap token in the center of an area that is adjacent to your area (blue square). The first time an enemy activates within that area or moves into that area, the Trap is triggered. All enemies inside that area are affected by the Trap, then remove the Trap token. There can only be 1 Trap token in an area at a time.",
@@ -595,7 +622,7 @@ export class KeywordDataRepository implements DataRepository {
       id: "trauma-cube",
       keyword: "TRAUMA CUBE (TC)",
       description:
-        "Purple cubes that are allocated to Hero or Dungeon Roles skills which blocks their use. Hero is killed upon receiving a 2nd TC and ends the adventure.",
+        "Purple cubes that are allocated to Hero or Dungeon Roles skills which blocks their use. Hero is killed upon receiving a 2nd TRAUMA CUBE and ends the adventure.",
     },
     {
       id: "trick-or-treat",
@@ -612,6 +639,12 @@ export class KeywordDataRepository implements DataRepository {
       id: "vicious",
       keyword: "VICIOUS",
       description: "The damage dealt by this Monster's attack is non-preventable.",
+    },
+    {
+      id: "weapon-attack",
+      keyword: "WEAPON ATTACK",
+      description:
+        "Attack skill using your Weapon. Roll D20, attack succeeds if roll is equal to or greater than Weapon hit chance after applying HIT modifiers. Attacking from a higher level than the Target gives +2 HIT; however, attacking from a lower level gives -2 HIT. By default, before HIT modifiers, a roll of 1 is always a Critical Failure and a roll of 20 is a Critical Hit (x2 DMG).",
     },
     {
       id: "wild-cube",
