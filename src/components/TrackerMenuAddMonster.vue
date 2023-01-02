@@ -6,8 +6,7 @@ import BaseList from "@/components/BaseList.vue";
 import type { MonsterColor } from "@/data/type/MonsterColor";
 import { RandomizeMonster } from "@/service/RandomizeMonster";
 import { useToast } from "vue-toastification";
-import type { MonsterData } from "@/data/store/MonsterData";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import BaseListSearch from "@/components/BaseListSearch.vue";
 import RandomAvatarImage from "@/assets/monster/avatar/RandomAvatar.webp";
 
@@ -15,21 +14,18 @@ const toast = useToast();
 
 const monsterStore = MonsterDataStore();
 const trackerMenuStore = TrackerMenuStore();
-const filteredMonsters = ref([] as MonsterData[]);
-searchMonsters();
 
-function searchMonsters(query: string = "") {
-  const monsters: MonsterData[] = [];
-  const regExp = new RegExp(query, "gi");
+const monsters = monsterStore.findAll();
 
-  monsterStore.findAllEnabled().forEach((monster: MonsterData) => {
-    if (regExp.test(monster.name)) {
-      monsters.push(monster);
-    }
-  });
+let filteredMonsters = computed(() =>
+  query.value === ""
+    ? monsters
+    : monsters.filter((monster) =>
+        monster.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
+      )
+);
 
-  filteredMonsters.value = monsters;
-}
+let query = ref("");
 
 function randomMonster(color: MonsterColor) {
   const randomMonster = new RandomizeMonster().randomizeByColor(color);
@@ -50,7 +46,7 @@ function selectMonster(monsterId: string) {
 
 <template>
   <div>
-    <BaseListSearch @search="searchMonsters" />
+    <BaseListSearch @search="query = $event" />
     <BaseList>
       <BaseListItem @click="randomMonster('white')" :avatar="RandomAvatarImage"> Random white </BaseListItem>
       <BaseListItem @click="randomMonster('gray')" :avatar="RandomAvatarImage"> Random gray </BaseListItem>

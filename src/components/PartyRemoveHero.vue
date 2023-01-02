@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import type { HeroData } from "@/data/repository/HeroData";
 import { PartyStore } from "@/store/PartyStore";
 import BaseModal from "@/components/BaseModal.vue";
@@ -7,39 +7,30 @@ import BaseList from "@/components/BaseList.vue";
 import BaseListItem from "@/components/BaseListItem.vue";
 import BaseListSearch from "@/components/BaseListSearch.vue";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
-import type { Member } from "@/store/Member";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 
 const isOpen = ref(false);
 
 function openModal() {
   isOpen.value = true;
-  getAllHeroesInParty();
+  query.value = "";
 }
 function closeModal() {
   isOpen.value = false;
 }
 
 const partyStore = PartyStore();
-const heroesInParty = ref([] as HeroData[]);
-const repository = new HeroDataRepository();
+const heroes = new HeroDataRepository().findAll();
 
-function getAllHeroesInParty(query: string = "") {
-  const heroes: HeroData[] = [];
+let filteredHeroes = computed(() => heroes.filter(filterHero));
+let query = ref("");
 
-  partyStore.findAll().forEach((member: Member) => {
-    let hero = repository.find(member.heroId);
-    const regExp = new RegExp(query, "gi");
-
-    if (hero && regExp.test(hero.name)) {
-      heroes.push(hero);
-    }
-  });
-
-  heroesInParty.value = heroes;
+function filterHero(hero: HeroData) {
+  if (partyStore.has(hero.id) == false) {
+    return false;
+  }
+  return hero.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""));
 }
-
-getAllHeroesInParty();
 
 function removeHeroFromParty(heroId: string) {
   partyStore.removeMember(heroId);
@@ -62,9 +53,9 @@ function removeHeroFromParty(heroId: string) {
       </div>
     </template>
     <template #default>
-      <BaseListSearch @search="getAllHeroesInParty" />
+      <BaseListSearch @search="query = $event" />
       <BaseList id="party-remove-heroes">
-        <template v-for="hero in heroesInParty" :key="hero.id">
+        <template v-for="hero in filteredHeroes" :key="hero.id">
           <BaseListItem :avatar="hero.images.avatar" @click="removeHeroFromParty(hero.id)">
             {{ hero.name }}
           </BaseListItem>
