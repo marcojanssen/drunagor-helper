@@ -20,19 +20,21 @@ let query = ref("");
 </script>
 
 <template>
-  <BaseListSearch id="keyword-search" @search="query = $event" class="inset-16" />
-  <BaseList id="keyword-list">
-    <template v-for="keyword in filteredKeyword" :key="keyword.id">
-      <KeywordListItem>
-        <template #default>
-          {{ keyword.keyword }}
-        </template>
-        <template #description>
-          <span class="text-gray-500">{{ keyword.description }}</span>
-        </template>
-      </KeywordListItem>
-    </template>
-  </BaseList>
+  <div class="grid place-items-center w-full">
+    <BaseListSearch id="keyword-search" @search="query = $event" class="z-10 bg-base-100 inset-16 w-full lg:w-1/2" />
+    <BaseList id="keyword-list" class="w-full lg:w-1/2">
+      <template v-for="keyword in filteredKeyword" :key="keyword.id">
+        <KeywordListItem>
+          <template #default>
+            {{ keyword.keyword }}
+          </template>
+          <template #description>
+            <span>{{ keyword.description }}</span>
+          </template>
+        </KeywordListItem>
+      </template>
+    </BaseList>
+  </div>
 </template>
 
 <style scoped></style>
