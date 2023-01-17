@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, toRef, watch } from "vue";
-import { TransitionRoot, TransitionChild, Dialog, DialogPanel, DialogTitle } from "@headlessui/vue";
+import { TransitionRoot, TransitionChild, Dialog, DialogPanel, DialogTitle, DialogOverlay } from "@headlessui/vue";
 
 const props = defineProps<{
   isOpen: boolean;
@@ -26,9 +26,7 @@ function setIsOpen(value: boolean) {
 <template>
   <TransitionRoot appear :show="isOpen" as="template">
     <Dialog :open="isOpen" @close="setIsOpen(false)" as="div" class="relative z-10">
-      <TransitionChild as="template" enter="duration-200 ease-out" enter-from="opacity-0" enter-to="opacity-100">
-        <div class="fixed inset-0 bg-zinc-900 bg-opacity-80"></div>
-      </TransitionChild>
+      <DialogOverlay class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur" />
 
       <div class="fixed inset-0 overflow-y-auto">
         <div class="flex h-full p-4 justify-center items-center">
