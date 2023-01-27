@@ -37,6 +37,12 @@ describe("content selection", () => {
     cy.get('#configuration-content-monster input[id="desert-of-hellscar"]').should("be.checked");
   });
 
+  it("is not allowed to deselect all monster content and will reset to previous selection", () => {
+    cy.get('#configuration-content-monster input[id="core"]').uncheck();
+    cy.reload();
+    cy.get('#configuration-content-monster input[id="core"]').should("be.checked");
+  });
+
   it("displays all hero content by default", () => {
     cy.get("#configuration-content-hero label").should("have.length", 6);
     cy.get("#configuration-content-hero label")
@@ -72,5 +78,21 @@ describe("content selection", () => {
     cy.get('#configuration-content-hero input[id="spoils-of-war"]').should("not.be.checked");
     cy.get('#configuration-content-hero input[id="handuriel"]').should("not.be.checked");
     cy.get('#configuration-content-hero input[id="desert-of-hellscar"]').should("not.be.checked");
+  });
+
+  it("is not allowed to deselect all hero content and will reset to previous selection", () => {
+    cy.get('#configuration-content-hero input[id="core"]').uncheck();
+    cy.get('#configuration-content-hero input[id="spoils-of-war"]').uncheck();
+    cy.get('#configuration-content-hero input[id="desert-of-hellscar"]').uncheck();
+    cy.get('#configuration-content-hero input[id="rise-of-the-undead-dragon"]').uncheck();
+    cy.get('#configuration-content-hero input[id="handuriel"]').uncheck();
+    cy.get('#configuration-content-hero input[id="lordwrath"]').uncheck();
+    cy.reload();
+    cy.get('#configuration-content-hero input[id="core"]').should("not.be.checked");
+    cy.get('#configuration-content-hero input[id="spoils-of-war"]').should("not.be.checked");
+    cy.get('#configuration-content-hero input[id="desert-of-hellscar"]').should("not.be.checked");
+    cy.get('#configuration-content-hero input[id="rise-of-the-undead-dragon"]').should("not.be.checked");
+    cy.get('#configuration-content-hero input[id="handuriel"]').should("not.be.checked");
+    cy.get('#configuration-content-hero input[id="lordwrath"]').should("be.checked");
   });
 });
