@@ -27,4 +27,16 @@ describe("variant selection", () => {
     cy.get('#configuration-variant input[id="standard"]').should("be.checked");
     cy.get('#configuration-variant input[id="complex"]').should("not.be.checked");
   });
+
+  it("is not allowed to deselect all variants and will reset to previous selection", () => {
+    cy.get('#configuration-variant input[id="standard"]').uncheck();
+    cy.reload();
+    cy.get('#configuration-variant input[id="standard"]').should("be.checked");
+
+    cy.get('#configuration-variant input[id="complex"]').check();
+    cy.get('#configuration-variant input[id="standard"]').uncheck();
+    cy.reload();
+    cy.get('#configuration-variant input[id="standard"]').should("not.be.checked");
+    cy.get('#configuration-variant input[id="complex"]').should("be.checked");
+  });
 });
