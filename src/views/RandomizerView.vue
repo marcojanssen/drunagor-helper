@@ -83,34 +83,34 @@ function getRandomCommander() {
     <div class="grid grid-flow-col auto-cols-max gap-2">
       <div>
         <button
-          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('white')"
         >
-          WHITE
+          White
         </button>
       </div>
       <div>
         <button
-          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('gray')"
         >
-          GRAY
+          Gray
         </button>
       </div>
       <div>
         <button
-          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('black')"
         >
-          BLACK
+          Black
         </button>
       </div>
       <div>
         <button
-          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomCommander()"
         >
-          COMMANDER
+          Commander
         </button>
       </div>
     </div>
