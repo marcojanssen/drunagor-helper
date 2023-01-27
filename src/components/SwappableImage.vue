@@ -33,11 +33,11 @@ function swapImage() {
 
 <template>
   <div
-    class="border-gold bg-black relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]"
+    class="border-silver bg-black relative w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]"
     :style="{ backgroundImage: 'url(' + props.background + ')' }"
   >
     <img id="swappable-image" :src="currentImage" />
-    <div class="absolute top-border-gold h-20 bottom-0 left-0 right-0 bg-black bg-opacity-70">
+    <div class="absolute top-border-silver h-20 bottom-0 left-0 right-0 bg-black bg-opacity-70">
       <p id="swappable-title" class="text-center font-semibold pt-2">{{ props.title }}</p>
       <p id="swappable-sub-title" class="text-center">{{ props.subTitle }}</p>
     </div>
@@ -47,18 +47,18 @@ function swapImage() {
       @click="swapImage()"
       class="absolute left-1/2 -bottom-6 transform -translate-x-1/2 p-2"
     >
-      <ArrowsRightLeftIcon class="bg-[#3d342d] text-[#f5dab7] h-8 rounded-lg p-1" />
+      <ArrowsRightLeftIcon class="bg-emerald-500 h-7 rounded-lg p-1" />
     </button>
   </div>
 </template>
 
 <style scoped>
-.border-gold {
-  border-width: 3px;
+.border-silver {
+  border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(to bottom, #f5dab7, #4c4037) 1;
+  border-image: linear-gradient(to bottom, #d4d4d8, #111827) 1;
 }
-.top-border-gold {
-  border-top: 2px solid #4c4037;
+.top-border-silver {
+  border-top: 2px solid #1f2937;
 }
 </style>

@@ -70,24 +70,48 @@ function getRandomCommander() {
       :frontImage="frontImage"
       :backImage="backImage"
     />
-    <div class="form-control w-72">
-      <label class="label cursor-pointer">
-        <span class="text-md">Exclude current drawn character</span>
-        <input type="checkbox" v-model="excludeCurrentCharacter" class="checkbox checkbox-neutral" />
+    <div class="form-control py-4 w-72">
+      <label class="cursor-pointer">
+        <span class="text-md pr-4">Exclude current drawn character</span>
+        <input
+          type="checkbox"
+          v-model="excludeCurrentCharacter"
+          class="w-5 h-5 text-emerald-500 bg-neutral rounded shadow border-transparent focus:border-transparent focus:ring-0"
+        />
       </label>
     </div>
     <div class="grid grid-flow-col auto-cols-max gap-2">
       <div>
-        <button class="btn p-2" @click="getRandomMonster('white')">White</button>
+        <button
+          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          @click="getRandomMonster('white')"
+        >
+          WHITE
+        </button>
       </div>
       <div>
-        <button class="btn p-2" @click="getRandomMonster('gray')">Gray</button>
+        <button
+          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          @click="getRandomMonster('gray')"
+        >
+          GRAY
+        </button>
       </div>
       <div>
-        <button class="btn p-2" @click="getRandomMonster('black')">Black</button>
+        <button
+          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          @click="getRandomMonster('black')"
+        >
+          BLACK
+        </button>
       </div>
       <div>
-        <button class="btn p-2" @click="getRandomCommander()">Commander</button>
+        <button
+          class="px-3 py-3 bg-neutral text-gray-200 font-semibold text-sm rounded-lg active:bg-emerald-500"
+          @click="getRandomCommander()"
+        >
+          COMMANDER
+        </button>
       </div>
     </div>
   </div>

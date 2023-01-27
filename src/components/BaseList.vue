@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div :id="props.id" class="divide-y divide-gray-800">
+  <div :id="props.id" class="divide-y divide-gray-900">
     <header>
       <slot name="header"></slot>
     </header>

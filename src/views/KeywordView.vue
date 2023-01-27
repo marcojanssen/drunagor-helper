@@ -21,7 +21,7 @@ let query = ref("");
 
 <template>
   <div class="grid place-items-center w-full">
-    <BaseListSearch id="keyword-search" @search="query = $event" class="z-10 bg-base-100 inset-16 w-full lg:w-1/2" />
+    <BaseListSearch id="keyword-search" @search="query = $event" class="z-10 bg-base-300 inset-16 w-full lg:w-1/2" />
     <BaseList id="keyword-list" class="w-full lg:w-1/2">
       <template v-for="keyword in filteredKeyword" :key="keyword.id">
         <KeywordListItem>
