@@ -56,15 +56,25 @@ function addRandomHeroToParty() {
 </script>
 
 <template>
-  <button id="party-add-hero" class="btn" @click="openModal">Add hero</button>
+  <button
+    id="party-add-hero"
+    class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
+    @click="openModal"
+  >
+    Add hero
+  </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-3">
         <div></div>
         <div class="text-center font-medium place-self-center">Add hero</div>
         <div>
-          <button id="close-modal" class="btn btn-sm btn-circle float-right" @click="closeModal">
-            <XMarkIcon class="h-7 btn-sm btn-circle rounded-lg p-1" />
+          <button
+            id="close-modal"
+            class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
+            @click="closeModal"
+          >
+            <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
           </button>
         </div>
       </div>

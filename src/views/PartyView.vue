@@ -106,8 +106,12 @@ function viewHero(heroId: string) {
         <div></div>
         <div class="text-center font-medium place-self-center"></div>
         <div>
-          <button id="close-modal" class="btn btn-sm btn-circle float-right" @click="closeModal">
-            <XMarkIcon class="h-7 btn-sm btn-circle rounded-lg p-1" />
+          <button
+            id="close-modal"
+            class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
+            @click="closeModal"
+          >
+            <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
           </button>
         </div>
       </div>

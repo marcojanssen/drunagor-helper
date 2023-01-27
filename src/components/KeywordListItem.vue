@@ -9,7 +9,7 @@ function toggleDisplay() {
 </script>
 
 <template>
-  <div @click="toggleDisplay" class="relative h-12 pt-3 cursor-pointer w-full">
+  <div @click="toggleDisplay" class="bg-base-100 relative h-12 pl-2 pt-3 cursor-pointer w-full">
     <slot></slot>
     <ChevronDownIcon v-if="!displayDescription" class="absolute top-4 right-2 h-4 w-4" />
     <ChevronUpIcon v-if="displayDescription" class="absolute top-4 right-2 h-4 w-4" />

@@ -25,16 +25,20 @@ watch(monsterContentSettings, async (newSettings) => {
 </script>
 
 <template>
-  <div id="configuration-content-monster" class="form-control p-4 drop-shadow bg-neutral rounded-box">
-    <h2 class="text-l font-semibold">Enabled monster content</h2>
-    <label v-for="content in contentStore.getAllWithMonsters()" :key="content.id" class="label cursor-pointer">
+  <div id="configuration-content-monster" class="form-control p-4 drop-shadow bg-neutral rounded-lg">
+    <p class="text-l font-semibold">Enabled monster content</p>
+    <label
+      v-for="content in contentStore.getAllWithMonsters()"
+      :key="content.id"
+      class="pt-4 relative block cursor-pointer"
+    >
       <span>{{ content.title }}</span>
       <input
         type="checkbox"
         v-model="monsterContentSettings"
         :id="content.id"
         :value="content.id"
-        class="w-5 h-5 text-emerald-500 bg-gray-700 rounded shadow border-transparent focus:border-transparent focus:ring-0"
+        class="absolute right-0 w-5 h-5 text-emerald-500 bg-base-100 rounded shadow border-transparent focus:border-transparent focus:ring-0"
       />
     </label>
   </div>

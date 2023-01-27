@@ -37,9 +37,9 @@ function setIsOpen(value: boolean) {
             enter-to="opacity-100 scale-100"
           >
             <DialogPanel
-              class="bg-base-100 w-full max-w-xl h-full lg:h-5/6 transform overflow-x-hidden overflow-y-auto rounded-2xl text-left align-middle shadow-xl transition-all"
+              class="bg-base-300 w-full max-w-xl h-full lg:h-5/6 transform overflow-x-hidden overflow-y-auto rounded-2xl text-left align-middle shadow-xl transition-all"
             >
-              <DialogTitle class="sticky top-0 pt-4 px-4 bg-base-100 z-50">
+              <DialogTitle class="sticky top-0 pt-4 px-4 bg-base-300 z-50">
                 <slot name="header"> </slot>
               </DialogTitle>
               <div class="container px-4">
