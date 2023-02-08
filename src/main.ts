@@ -4,7 +4,6 @@ import HeroView from "@/views/HeroView.vue";
 import KeywordView from "@/views/KeywordView.vue";
 import PartyView from "@/views/PartyView.vue";
 import RandomizerView from "@/views/RandomizerView.vue";
-import TrackerView from "@/views/TrackerView.vue";
 import { createPinia } from "pinia";
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
@@ -24,7 +23,6 @@ const routes = [
   },
   { path: "/party", name: "Party", component: PartyView },
   { path: "/hero/:id", name: "Hero", component: HeroView },
-  { path: "/tracker", name: "Tracker", component: TrackerView },
   { path: "/keyword", name: "Keyword", component: KeywordView },
 ];
 
