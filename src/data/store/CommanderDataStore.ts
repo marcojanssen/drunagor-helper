@@ -1,5 +1,6 @@
 import { Archon } from "@/data/content/core/commander/Archon";
 import { Bane } from "@/data/content/core/commander/Bane";
+import { DemonLord } from "@/data/content/monsterpack1/overlord/DemonLord";
 import { Thern } from "@/data/content/spoilsofwar/commander/Thern";
 import { Twin } from "@/data/content/spoilsofwar/commander/Twin";
 import { ConfigurationStore } from "@/store/ConfigurationStore";
@@ -10,7 +11,7 @@ import type { CommanderData } from "./CommanderData";
 export const CommanderDataStore = defineStore("data-commander", () => {
   const configurationStore = ConfigurationStore();
 
-  const commanders = [new Archon(), new Bane(), new Thern(), new Twin()];
+  const commanders = [new Archon(), new Bane(), new Thern(), new Twin(), new DemonLord()];
 
   function find(commanderId: string): CommanderData {
     const commander = _.find(commanders, { id: commanderId });

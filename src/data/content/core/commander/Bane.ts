@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/ShadowVampireAvatar.webp";
 import ImageUrl from "@/assets/monster/big/ShadowVampireBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowVampireMiniature.webp";
 import type { CommanderData } from "@/data/store/CommanderData";
@@ -9,9 +8,7 @@ export class Bane implements CommanderData {
   name = "Bane";
   content: ContentId = "core";
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: MiniatureUrl,
-    list: "",
   };
 }

@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/RavagerAvatar.webp";
 import ImageUrl from "@/assets/monster/big/RavagerBig.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -11,10 +10,8 @@ export class Ravager implements MonsterData {
   content: ContentId = "the-ruin-of-luccanor";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: "",
-    list: "",
   };
   color: MonsterColor = "white";
 }

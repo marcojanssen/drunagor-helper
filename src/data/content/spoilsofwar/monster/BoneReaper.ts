@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/BoneReaperAvatar.webp";
 import ImageUrl from "@/assets/monster/big/BoneReaperBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/BoneReaperMiniature.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
@@ -12,10 +11,8 @@ export class BoneReaper implements MonsterData {
   content: ContentId = "spoils-of-war";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: MiniatureUrl,
-    list: "",
   };
   color: MonsterColor = "gray";
 }
