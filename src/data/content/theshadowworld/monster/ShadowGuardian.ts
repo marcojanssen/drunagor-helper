@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/ShadowGuardianAvatar.webp";
 import ImageUrl from "@/assets/monster/big/ShadowGuardianBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowGuardianMiniature.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
@@ -12,10 +11,8 @@ export class ShadowGuardian implements MonsterData {
   content: ContentId = "the-shadow-world";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: MiniatureUrl,
-    list: "",
   };
   color: MonsterColor = "gray";
 }

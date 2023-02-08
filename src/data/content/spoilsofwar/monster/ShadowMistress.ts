@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/ShadowMistressAvatar.webp";
 import ImageUrl from "@/assets/monster/big/ShadowMistressBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowMistressMiniature.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
@@ -12,10 +11,8 @@ export class ShadowMistress implements MonsterData {
   content: ContentId = "spoils-of-war";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: MiniatureUrl,
-    list: "",
   };
   color: MonsterColor = "white";
 }

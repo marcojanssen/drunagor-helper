@@ -5,9 +5,7 @@ export interface CommanderData {
   content: ContentId;
   name: string;
   images: {
-    avatar: string;
     big: string;
     miniature: string;
-    list: string;
   };
 }

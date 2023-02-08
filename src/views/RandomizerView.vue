@@ -49,13 +49,17 @@ function getRandomCommander() {
   let commander: RandomCommander | null = new RandomizeCommander().randomize(getExcludedCharacters());
 
   if (commander === null) {
-    toast.error("No other commander available.");
+    toast.error("No other commander / overlord available.");
     return;
   }
 
   currentCharacterId.value = commander.id;
   name.value = commander.name;
   variant.value = "Commander";
+  if (commander.id === "demon-lord") {
+    variant.value = "Overlord";
+  }
+
   frontImage.value = commander.image.main;
   backImage.value = commander.image.miniature;
 }

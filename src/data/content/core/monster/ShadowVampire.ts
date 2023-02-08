@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/ShadowVampireAvatar.webp";
 import ImageUrl from "@/assets/monster/big/ShadowVampireBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowVampireMiniature.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
@@ -12,10 +11,8 @@ export class ShadowVampire implements MonsterData {
   content: ContentId = "core";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: MiniatureUrl,
-    list: "",
   };
   color: MonsterColor = "gray";
 }

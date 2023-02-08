@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/CorruptedWormAvatar.webp";
 import ImageUrl from "@/assets/monster/big/CorruptedWormBig.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -11,10 +10,8 @@ export class CorruptedWorm implements MonsterData {
   content: ContentId = "desert-of-hellscar";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: "",
-    list: "",
   };
   color: MonsterColor = "gray";
 }

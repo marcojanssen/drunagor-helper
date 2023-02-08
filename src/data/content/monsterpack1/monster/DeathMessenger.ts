@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/DeathMessengerAvatar.webp";
 import ImageUrl from "@/assets/monster/big/DeathMessengerBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/DeathMessengerMiniature.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
@@ -12,10 +11,8 @@ export class DeathMessenger implements MonsterData {
   content: ContentId = "monster-pack-1";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: MiniatureUrl,
-    list: "",
   };
   color: MonsterColor = "gray";
 }

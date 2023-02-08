@@ -8,10 +8,8 @@ export interface MonsterData {
   name: string;
   variants: VariantId[];
   images: {
-    avatar: string;
     big: string;
     miniature: string;
-    list: string;
   };
   color: MonsterColor;
 }

@@ -1,4 +1,3 @@
-import AvatarUrl from "@/assets/monster/avatar/SkeletonArcherAvatar.webp";
 import ImageUrl from "@/assets/monster/big/SkeletonArcherBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/SkeletonArcherMiniature.webp";
 import type { MonsterData } from "@/data/store/MonsterData";
@@ -12,10 +11,8 @@ export class SkeletonArcher implements MonsterData {
   content: ContentId = "core";
   variants: VariantId[] = ["standard", "alternate"];
   images = {
-    avatar: AvatarUrl,
     big: ImageUrl,
     miniature: MiniatureUrl,
-    list: "",
   };
   color: MonsterColor = "white";
 }
