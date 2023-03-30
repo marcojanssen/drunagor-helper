@@ -4,6 +4,7 @@ import { KeywordDataRepository } from "@/data/repository/KeywordDataRepository";
 import BaseListSearch from "@/components/BaseListSearch.vue";
 import BaseList from "@/components/BaseList.vue";
 import KeywordListItem from "@/components/KeywordListItem.vue";
+import { marked } from "marked";
 
 const keywordDataRepository = new KeywordDataRepository();
 const keywords = keywordDataRepository.findAll();
@@ -29,7 +30,7 @@ let query = ref("");
             {{ keyword.keyword }}
           </template>
           <template #description>
-            <span>{{ keyword.description }}</span>
+            <span v-html="marked.parse(keyword.description)"></span>
           </template>
         </KeywordListItem>
       </template>

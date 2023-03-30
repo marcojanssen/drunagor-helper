@@ -1,8 +1,7 @@
 import App from "@/App.vue";
+import CampaignView from "@/views/CampaignView.vue";
 import ConfigurationView from "@/views/ConfigurationView.vue";
-import HeroView from "@/views/HeroView.vue";
 import KeywordView from "@/views/KeywordView.vue";
-import PartyView from "@/views/PartyView.vue";
 import RandomizerView from "@/views/RandomizerView.vue";
 import { createPinia } from "pinia";
 import { createApp } from "vue";
@@ -21,8 +20,8 @@ const routes = [
     name: "Configuration",
     component: ConfigurationView,
   },
-  { path: "/party", name: "Party", component: PartyView },
-  { path: "/hero/:id", name: "Hero", component: HeroView },
+  { path: "/party", name: "Party", component: CampaignView },
+  { path: "/campaign", name: "Campaign", component: CampaignView },
   { path: "/keyword", name: "Keyword", component: KeywordView },
 ];
 

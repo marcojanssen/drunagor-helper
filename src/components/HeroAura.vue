@@ -40,10 +40,6 @@ watch(auraId, (newAuraId) => {
 </script>
 
 <template>
-  <div>
-    <h2 class="text-white">Aura</h2>
-    <p class="text-sm text-gray-500">Aura is removed when you receive a trauma cube or another aura.</p>
-  </div>
   <div class="w-full">
     <Combobox v-model="auraId" nullable>
       <div class="relative mt-1">
@@ -113,9 +109,12 @@ watch(auraId, (newAuraId) => {
       </div>
     </Combobox>
   </div>
-  <div id="hero-aura-effect" class="w-full bg-base-200 p-4 rounded-md" v-if="auraId">
-    {{ auraDataRepository.find(auraId)?.effect }}
-  </div>
+  <template v-if="auraId">
+    <p class="text-sm text-gray-500">Aura is removed when you receive a trauma cube or another aura.</p>
+    <div id="hero-aura-effect" class="w-full p-4 rounded-md">
+      {{ auraDataRepository.find(auraId)?.effect }}
+    </div>
+  </template>
 </template>
 
 <style scoped></style>

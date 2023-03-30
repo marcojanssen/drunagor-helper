@@ -13,7 +13,7 @@ import backgroundImage from "@/assets/monster/big/Background.webp";
 
 const toast = useToast();
 
-const name = ref("Randomizer");
+const name = ref("Random monster");
 const variant = ref("");
 const currentCharacterId = ref("");
 const frontImage = ref(RandomizerTitle.toString());

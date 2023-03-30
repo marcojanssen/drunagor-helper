@@ -123,7 +123,7 @@ export class KeywordDataRepository implements DataRepository {
       id: "copy",
       keyword: "COPY EFFECT",
       description:
-        "Copies effect of another Hero skill including its base color (range). Dungeon Roll Skills, Equipment Skills and Reactions, unless stated otherwise, cannot be copied.",
+        "Copies effect of another Hero skill including its base color (range). **Dungeon Roll Skills, Equipment Skills and Reactions, unless stated otherwise, cannot be copied.**",
     },
     {
       id: "covetous",
@@ -567,7 +567,7 @@ export class KeywordDataRepository implements DataRepository {
       id: "stealth",
       keyword: "STEALTH",
       description:
-        'The Target receives a STEALTH Token and is considered hidden while they are holding it. Characters without Immunity to STEALTH do not count a hidden character either as their Target nor an enemy for engagement purposes (they still can\'t pass through them if they are enemies). Hidden characters still take damage from area Attacks such as STRIKE and from Darkness. At the beginning of its next turn, the character is no longer hidden and must discard its STEALTH token. Alternatively, as many seasoned assassins do, a character can end their STEALTH sooner by trying to Surprise a Target. Thus, if a character with a STEALTH token makes a Weapon Attack ( ), whether it hits or not, it Immediately loses STEALTH. On the other hand, if the Attack hits, it gains DOUBLE DAMAGE if the attacking character was considered hidden from its Target. This is called "Surprise." Characters immune to STEALTH cannot be Surprised.',
+        'The Target receives a STEALTH Token and is considered hidden while they are holding it. Characters without Immunity to STEALTH do not count a hidden character either as their Target nor an enemy for engagement purposes (they still can\'t pass through them if they are enemies). Hidden characters still take damage from area Attacks such as STRIKE and from Darkness. At the beginning of its next turn, the character is no longer hidden and must discard its STEALTH token.<br><br>Alternatively, as many seasoned assassins do, a character can end their STEALTH sooner by trying to Surprise a Target. Thus, if a character with a STEALTH token makes a Weapon Attack, whether it hits or not, it Immediately loses STEALTH. On the other hand, if the Attack hits, it gains DOUBLE DAMAGE if the attacking character was considered hidden from its Target. This is called "Surprise." Characters immune to STEALTH cannot be Surprised.',
     },
     {
       id: "square",

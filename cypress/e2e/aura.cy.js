@@ -5,8 +5,6 @@ describe("aura selection", () => {
     it("has multiple auras available", () => {
       cy.get("#party-add-hero").click();
       cy.get("div#party-add-heroes div").first().click();
-      cy.get(".hero-overview").click();
-
       cy.get("#hero-aura").click();
 
       cy.get("ul#hero-aura-options li").should("have.length", 21);
@@ -26,31 +24,23 @@ describe("aura selection", () => {
     cy.get("#party-add-hero").click();
     cy.get("div#party-add-heroes div").first().click();
 
-    cy.get(".hero-overview").contains("No aura, status or outcome");
-
-    cy.get(".hero-overview").click();
     cy.get("#hero-aura").click();
     cy.get("ul#hero-aura-options li").first().click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("Aura: Blessing of good fortune");
+    cy.get("#hero-aura-effect").contains("Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also recall 1 AC.");
 
-    cy.get(".hero-overview").click();
     cy.get("#hero-aura").click();
     cy.get("ul#hero-aura-options li").first().next().click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("Aura: Blessing of the guardian");
+    cy.get("#hero-aura-effect").contains("Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2.");
     cy.reload();
-    cy.get(".hero-overview").contains("Aura: Blessing of the guardian");
+    cy.get("#hero-aura-effect").contains("Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2.");
 
-    cy.get(".hero-overview").click();
     cy.get("#hero-aura-clear").click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("No aura, status or outcome");
+    cy.get("#hero-aura-effect").should("not.exist");
     cy.reload();
-    cy.get(".hero-overview").contains("No aura, status or outcome");
+    cy.get("#hero-aura-effect").should("not.exist");
 
     cy.clearLocalStorage();
     cy.get(".hero-image").should("not.exist");
@@ -59,16 +49,10 @@ describe("aura selection", () => {
     cy.get("#party-add-hero").click();
     cy.get("div#party-add-heroes div").first().click();
 
-    cy.get(".hero-overview").contains("No aura, status or outcome");
-
-    cy.get(".hero-overview").click();
     cy.get("#hero-aura").type("Well meaning");
     cy.get("ul#hero-aura-options li").first().click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("Aura: Well meaning");
-
-    cy.get(".hero-overview").click();
+    cy.get("#hero-aura-effect").contains("Whenever you use a CLEANSE effect on any Hero, that Hero may also Recall up to one Action Cube.");
 
     cy.get("#hero-aura").clear();
     cy.get("#hero-aura").type("Spellshock");
@@ -78,20 +62,6 @@ describe("aura selection", () => {
     cy.get("#hero-aura").type("Hellbent");
     cy.get("ul#hero-aura-options li").first().click();
 
-    cy.get("#close-modal").click();
-
-    cy.get(".hero-overview").contains("Aura: Hellbent");
-  });
-  it("displays the effect of an aura", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
-
-    cy.get(".hero-overview").contains("No aura, status or outcome");
-
-    cy.get(".hero-overview").click();
-    cy.get("#hero-aura").type("Bonding");
-    cy.get("ul#hero-aura-options li").first().click();
-
-    cy.get("#hero-aura-effect").contains("Whenever a Companion ends its turn adjacent to you, they gain SHIELD 4.");
+    cy.get("#hero-aura-effect").contains("Whenever any Hero scores a Critical Hit, the attack gains +1 DMG (do not double it due to the critical) per Curse Cube that Hero is holding.");
   });
 });
