@@ -50,15 +50,15 @@ function open() {
                   <span>
                     <QuestionMarkCircleIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">Randomizer</span>
+                  <span class="pl-2">Random monster</span>
                 </router-link>
               </li>
               <li>
-                <router-link class="flex p-3 rounded items-center" to="/party" @click="close">
+                <router-link class="flex p-3 rounded items-center" to="/campaign" @click="close">
                   <span>
                     <UserGroupIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">Party</span>
+                  <span class="pl-2">Campaign</span>
                 </router-link>
               </li>
               <li>

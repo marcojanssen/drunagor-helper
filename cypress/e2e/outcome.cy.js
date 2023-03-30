@@ -5,7 +5,6 @@ describe("outcome selection", () => {
     it("has multiple outcomes available", () => {
       cy.get("#party-add-hero").click();
       cy.get("div#party-add-heroes div").first().click();
-      cy.get(".hero-overview").click();
 
       cy.get("#hero-outcome").click();
 
@@ -26,32 +25,28 @@ describe("outcome selection", () => {
     cy.get("#party-add-hero").click();
     cy.get("div#party-add-heroes div").first().click();
 
-    cy.get(".hero-overview").contains("No aura, status or outcome");
-
-    cy.get(".hero-overview").click();
     cy.get("#hero-outcome").click();
     cy.get("ul#hero-outcome-options li").first().click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("Outcome: A courier's job");
+    cy.get("#hero-outcome-display").click();
+    cy.get("#hero-outcome-display > li").contains("A courier's job");
 
-    cy.get(".hero-overview").click();
     cy.get("#hero-outcome").click();
     cy.get("ul#hero-outcome-options li").first().next().click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("Outcome: A courier's job, Adamant");
+    cy.get("#hero-outcome-display").click();
+    cy.get("#hero-outcome-display > li").contains("A courier's job");
+    cy.get("#hero-outcome-display > li").contains("Adamant");
 
-    cy.get(".hero-overview").click();
     cy.get("#hero-outcome").click();
     cy.get("ul#hero-outcome-options li").first().click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("Outcome: Adamant");
+    cy.get("#hero-outcome-display").click();
+    cy.get("#hero-outcome-display > li").contains("Adamant");
 
     cy.reload();
 
-    cy.get(".hero-overview").contains("Outcome: Adamant");
+    cy.get("#hero-outcome-display > li").contains("Adamant");
 
     cy.clearLocalStorage();
     cy.get(".hero-image").should("not.exist");
@@ -60,55 +55,28 @@ describe("outcome selection", () => {
     cy.get("#party-add-hero").click();
     cy.get("div#party-add-heroes div").first().click();
 
-    cy.get(".hero-overview").contains("No aura, status or outcome");
-
-    cy.get(".hero-overview").click();
     cy.get("#hero-outcome").type("Corrupted hero");
     cy.get("ul#hero-outcome-options li").first().click();
-    cy.get("#close-modal").click();
 
-    cy.get(".hero-overview").contains("Outcome: Corrupted hero");
-
-    cy.get(".hero-overview").click();
+    cy.get("#hero-outcome-display").click();
+    cy.get("#hero-outcome-display > li").contains("Corrupted hero");
 
     cy.get("#hero-outcome").clear();
     cy.get("#hero-outcome").type("Unbroken");
     cy.get("ul#hero-outcome-options li").first().click();
 
+    cy.get("#hero-outcome-display").click();
     cy.get("#hero-outcome-clear").click();
     cy.get("#hero-outcome").type("Lovebird reunited");
     cy.get("ul#hero-outcome-options li").first().click();
 
-    cy.get("#close-modal").click();
-
-    cy.get(".hero-overview").contains("Outcome: Lovebird reunited");
-  });
-  it("can clear outcome", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
-
-    cy.get(".hero-overview").contains("No aura, status or outcome");
-
-    cy.get(".hero-overview").click();
-    cy.get("#hero-outcome").type("Corrupted hero");
-    cy.get("ul#hero-outcome-options li").first().click();
-    cy.get("#close-modal").click();
-
-    cy.get(".hero-overview").contains("Outcome: Corrupted hero");
-
-    cy.get(".hero-overview").click();
-    cy.get("#hero-outcome-clear").click();
-    cy.get("#close-modal").click();
-
-    cy.get(".hero-overview").contains("No aura, status or outcome");
+    cy.get("#hero-outcome-display").click();
+    cy.get("#hero-outcome-display > li").contains("Lovebird reunited");
   });
   it("displays the effect of an outcome", () => {
     cy.get("#party-add-hero").click();
     cy.get("div#party-add-heroes div").first().click();
 
-    cy.get(".hero-overview").contains("No aura, status or outcome");
-
-    cy.get(".hero-overview").click();
     cy.get("#hero-outcome").type("Guardian's curse");
     cy.get("ul#hero-outcome-options li").first().click();
 
