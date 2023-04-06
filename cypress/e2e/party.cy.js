@@ -1,6 +1,6 @@
 describe("party selection", () => {
   beforeEach(() => {
-    cy.visit("./party");
+    cy.visit("./campaign");
   }),
     it("has all heroes", () => {
       cy.get("#party-add-hero").click();

@@ -54,8 +54,8 @@ watch(statusIds, (newStatusIds) => {
       <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
-            class="w-full bg-neutral py-2 pl-3 pr-16 leading-5 focus:ring-0"
-            placeholder="Select status"
+            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
+            placeholder="Add or remove status"
             @change="query = $event.target.value"
             id="hero-status"
           />
@@ -74,11 +74,11 @@ watch(statusIds, (newStatusIds) => {
       </div>
 
       <ComboboxOptions
-        class="bg-neutral -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
+        class="bg-base-100 -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
         id="hero-status-options"
       >
         <div v-if="filteredStatuses.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
-          Nothing found.
+          Nothing found
         </div>
 
         <ComboboxOption

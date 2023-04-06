@@ -17,10 +17,10 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
 <template>
   <div class="hero-list-item p-4">
     <div class="flex h-28">
-      <div class="w-24">
+      <div>
         <img class="-ml-1 w-14 rounded-full hero-image" :src="hero.images.avatar" />
       </div>
-      <div>
+      <div class="pl-8">
         <p>{{ hero.name }}</p>
         <p>{{ hero.race }} {{ hero.class }}</p>
         <p>Path of {{ hero.path }}</p>

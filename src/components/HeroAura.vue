@@ -46,7 +46,7 @@ watch(auraId, (newAuraId) => {
         <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
           <ComboboxButton as="div" class="flex">
             <ComboboxInput
-              class="w-full bg-neutral py-2 pl-3 pr-20 leading-5 focus:ring-0"
+              class="w-full bg-base-100 py-2 pl-3 pr-20 leading-5 focus:ring-0 border-0"
               :displayValue="displayValue"
               placeholder="Select aura"
               @change="query = $event.target.value"
@@ -68,7 +68,7 @@ watch(auraId, (newAuraId) => {
         </div>
 
         <ComboboxOptions
-          class="bg-neutral -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
+          class="bg-base-100 -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
           id="hero-aura-options"
         >
           <div
@@ -110,8 +110,8 @@ watch(auraId, (newAuraId) => {
     </Combobox>
   </div>
   <template v-if="auraId">
-    <p class="text-sm text-gray-500">Aura is removed when you receive a trauma cube or another aura.</p>
-    <div id="hero-aura-effect" class="w-full p-4 rounded-md">
+    <p class="text-sm text-gray-500 py-2">Aura is removed when you receive a trauma cube or another aura.</p>
+    <div id="hero-aura-effect" class="w-full rounded-md">
       {{ auraDataRepository.find(auraId)?.effect }}
     </div>
   </template>
