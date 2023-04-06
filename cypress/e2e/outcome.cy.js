@@ -1,6 +1,6 @@
 describe("outcome selection", () => {
   beforeEach(() => {
-    cy.visit("./party");
+    cy.visit("./campaign");
   }),
     it("has multiple outcomes available", () => {
       cy.get("#party-add-hero").click();
@@ -80,6 +80,7 @@ describe("outcome selection", () => {
     cy.get("#hero-outcome").type("Guardian's curse");
     cy.get("ul#hero-outcome-options li").first().click();
 
+    cy.get("#hero-outcome-display").click();
     cy.get("#hero-outcome-display > li").contains("Guardian's curse");
     cy.get("#hero-outcome-display > li span").contains(
       "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
@@ -88,6 +89,12 @@ describe("outcome selection", () => {
     cy.get("#hero-outcome").type("Curse breaker");
     cy.get("ul#hero-outcome-options li").first().click();
 
+    cy.get("#hero-outcome-display").click();
+
+    cy.get("#hero-outcome-display > li").contains("Guardian's curse");
+    cy.get("#hero-outcome-display > li span").contains(
+      "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
+    );
     cy.get("#hero-outcome-display > li").contains("Curse breaker");
   });
 });

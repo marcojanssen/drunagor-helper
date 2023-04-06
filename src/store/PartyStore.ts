@@ -1,7 +1,6 @@
-import { defineStore } from "pinia";
 import { useStorage } from "@vueuse/core";
 import * as _ from "lodash-es";
-
+import { defineStore } from "pinia";
 import type { Member } from "./Member";
 
 export const PartyStore = defineStore("party", () => {

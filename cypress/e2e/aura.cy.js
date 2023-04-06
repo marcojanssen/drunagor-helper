@@ -1,6 +1,6 @@
 describe("aura selection", () => {
   beforeEach(() => {
-    cy.visit("./party");
+    cy.visit("./campaign");
   }),
     it("has multiple auras available", () => {
       cy.get("#party-add-hero").click();
@@ -27,14 +27,20 @@ describe("aura selection", () => {
     cy.get("#hero-aura").click();
     cy.get("ul#hero-aura-options li").first().click();
 
-    cy.get("#hero-aura-effect").contains("Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also recall 1 AC.");
+    cy.get("#hero-aura-effect").contains(
+      "Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also recall 1 AC."
+    );
 
     cy.get("#hero-aura").click();
     cy.get("ul#hero-aura-options li").first().next().click();
 
-    cy.get("#hero-aura-effect").contains("Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2.");
+    cy.get("#hero-aura-effect").contains(
+      "Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2."
+    );
     cy.reload();
-    cy.get("#hero-aura-effect").contains("Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2.");
+    cy.get("#hero-aura-effect").contains(
+      "Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2."
+    );
 
     cy.get("#hero-aura-clear").click();
 
@@ -52,7 +58,9 @@ describe("aura selection", () => {
     cy.get("#hero-aura").type("Well meaning");
     cy.get("ul#hero-aura-options li").first().click();
 
-    cy.get("#hero-aura-effect").contains("Whenever you use a CLEANSE effect on any Hero, that Hero may also Recall up to one Action Cube.");
+    cy.get("#hero-aura-effect").contains(
+      "Whenever you use a CLEANSE effect on any Hero, that Hero may also Recall up to one Action Cube."
+    );
 
     cy.get("#hero-aura").clear();
     cy.get("#hero-aura").type("Spellshock");
@@ -62,6 +70,8 @@ describe("aura selection", () => {
     cy.get("#hero-aura").type("Hellbent");
     cy.get("ul#hero-aura-options li").first().click();
 
-    cy.get("#hero-aura-effect").contains("Whenever any Hero scores a Critical Hit, the attack gains +1 DMG (do not double it due to the critical) per Curse Cube that Hero is holding.");
+    cy.get("#hero-aura-effect").contains(
+      "Whenever any Hero scores a Critical Hit, the attack gains +1 DMG (do not double it due to the critical) per Curse Cube that Hero is holding."
+    );
   });
 });

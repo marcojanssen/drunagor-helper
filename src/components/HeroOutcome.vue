@@ -54,8 +54,8 @@ watch(outcomeIds, (newOutcomeIds) => {
       <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
-            class="w-full bg-neutral py-2 pl-3 pr-16 leading-5 focus:ring-0"
-            placeholder="Select outcome"
+            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
+            placeholder="Add or remove outcome"
             @change="query = $event.target.value"
             id="hero-outcome"
           />
@@ -74,7 +74,7 @@ watch(outcomeIds, (newOutcomeIds) => {
       </div>
 
       <ComboboxOptions
-        class="bg-neutral -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
+        class="bg-base-100 -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
         id="hero-outcome-options"
       >
         <div v-if="filteredOutcomes.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
