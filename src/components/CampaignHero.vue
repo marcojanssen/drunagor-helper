@@ -9,6 +9,7 @@ const heroDataRepository = new HeroDataRepository();
 
 const props = defineProps<{
   heroId: string;
+  campaignId: string;
 }>();
 
 const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
@@ -27,13 +28,13 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
       </div>
     </div>
     <div class="pt-2 w-full">
-      <HeroStatus :hero-id="heroId" />
+      <HeroStatus :campaign-id="campaignId" :hero-id="heroId" />
     </div>
     <div class="pt-2 w-full">
-      <HeroOutcome :hero-id="heroId" />
+      <HeroOutcome :campaign-id="campaignId" :hero-id="heroId" />
     </div>
     <div class="py-2 w-full">
-      <HeroAura :hero-id="heroId" />
+      <HeroAura :campaign-id="campaignId" :hero-id="heroId" />
     </div>
   </div>
 </template>

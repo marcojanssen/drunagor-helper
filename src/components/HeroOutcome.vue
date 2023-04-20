@@ -1,20 +1,21 @@
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
-import { PartyStore } from "@/store/PartyStore";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
 import { OutcomeDataRepository } from "@/data/repository/OutcomeDataRepository";
 import type { OutcomeData } from "@/data/repository/OutcomeData";
+import { HeroStore } from "@/store/HeroStore";
 
-const partyStore = PartyStore();
+const heroStore = HeroStore();
 const outcomeDataRepository = new OutcomeDataRepository();
 const outcomes = outcomeDataRepository.findAll();
 
 const props = defineProps<{
   heroId: string;
+  campaignId: string;
 }>();
 const outcomeIds = ref([] as string[]);
-outcomeIds.value = partyStore.find(props.heroId).outcomeIds;
+outcomeIds.value = heroStore.findInCampaign(props.heroId, props.campaignId).outcomeIds;
 
 let filteredOutcomes = computed(() =>
   query.value === ""
@@ -44,7 +45,7 @@ function findOutcomes(outcomeIds: string[]): OutcomeData[] {
 }
 
 watch(outcomeIds, (newOutcomeIds) => {
-  partyStore.find(props.heroId).outcomeIds = newOutcomeIds;
+  heroStore.findInCampaign(props.heroId, props.campaignId).outcomeIds = newOutcomeIds;
 });
 </script>
 
