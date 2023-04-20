@@ -5,6 +5,7 @@ import BaseListSearch from "@/components/BaseListSearch.vue";
 import BaseList from "@/components/BaseList.vue";
 import KeywordListItem from "@/components/KeywordListItem.vue";
 import { marked } from "marked";
+import BaseDivider from "@/components/BaseDivider.vue";
 
 const keywordDataRepository = new KeywordDataRepository();
 const keywords = keywordDataRepository.findAll();
@@ -22,8 +23,13 @@ let query = ref("");
 
 <template>
   <div class="grid place-items-center w-full">
-    <BaseListSearch id="keyword-search" @search="query = $event" class="z-10 bg-base-300 inset-16 w-full lg:w-1/2" />
-    <BaseList id="keyword-list" class="w-full lg:w-1/2">
+    <BaseDivider>Keywords</BaseDivider>
+    <BaseListSearch
+      id="keyword-search"
+      @search="query = $event"
+      class="z-10 bg-base-300 inset-16 w-full border-0 shadow-xl"
+    />
+    <BaseList id="keyword-list" class="grid gap-3 w-full">
       <template v-for="keyword in filteredKeyword" :key="keyword.id">
         <KeywordListItem>
           <template #default>

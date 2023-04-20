@@ -1,10 +1,12 @@
 describe("aura selection", () => {
   beforeEach(() => {
     cy.visit("./campaign");
+    cy.get("#campaign-new").click();
+    cy.get("#campaign-core").click();
   }),
     it("has multiple auras available", () => {
-      cy.get("#party-add-hero").click();
-      cy.get("div#party-add-heroes div").first().click();
+      cy.get("#campaign-add-hero").click();
+      cy.get("div#campaign-add-heroes div").first().click();
       cy.get("#hero-aura").click();
 
       cy.get("ul#hero-aura-options li").should("have.length", 21);
@@ -21,8 +23,8 @@ describe("aura selection", () => {
         .should("have.text", "Boon of empathy");
     });
   it("can set and remove aura", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-aura").click();
     cy.get("ul#hero-aura-options li").first().click();
@@ -52,8 +54,8 @@ describe("aura selection", () => {
     cy.get(".hero-image").should("not.exist");
   });
   it("can search for an aura", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-aura").type("Well meaning");
     cy.get("ul#hero-aura-options li").first().click();

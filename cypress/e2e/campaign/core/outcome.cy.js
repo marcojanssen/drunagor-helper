@@ -1,10 +1,12 @@
 describe("outcome selection", () => {
   beforeEach(() => {
     cy.visit("./campaign");
+    cy.get("#campaign-new").click();
+    cy.get("#campaign-core").click();
   }),
     it("has multiple outcomes available", () => {
-      cy.get("#party-add-hero").click();
-      cy.get("div#party-add-heroes div").first().click();
+      cy.get("#campaign-add-hero").click();
+      cy.get("div#campaign-add-heroes div").first().click();
 
       cy.get("#hero-outcome").click();
 
@@ -22,8 +24,8 @@ describe("outcome selection", () => {
         .should("have.text", "Corrupted hero");
     });
   it("can set, remove, stores and reset outcome", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-outcome").click();
     cy.get("ul#hero-outcome-options li").first().click();
@@ -52,8 +54,8 @@ describe("outcome selection", () => {
     cy.get(".hero-image").should("not.exist");
   });
   it("can search for an outcome", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-outcome").type("Corrupted hero");
     cy.get("ul#hero-outcome-options li").first().click();
@@ -74,8 +76,8 @@ describe("outcome selection", () => {
     cy.get("#hero-outcome-display > li").contains("Lovebird reunited");
   });
   it("displays the effect of an outcome", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-outcome").type("Guardian's curse");
     cy.get("ul#hero-outcome-options li").first().click();

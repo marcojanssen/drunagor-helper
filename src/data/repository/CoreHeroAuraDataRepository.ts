@@ -23,7 +23,7 @@ import type { AuraData } from "@/data/repository/AuraData";
 import * as _ from "lodash-es";
 import type { DataRepository } from "./DataRepository";
 
-export class AuraDataRepository implements DataRepository {
+export class CoreHeroAuraDataRepository implements DataRepository {
   private auras = [
     new BlessingofGoodFortune(),
     new BlessingoftheGuardian(),

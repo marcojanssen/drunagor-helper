@@ -1,26 +1,35 @@
 <script setup lang="ts">
 import CampaignAddHero from "@/components/CampaignAddHero.vue";
 import CampaignRemoveHero from "@/components/CampaignRemoveHero.vue";
-import { PartyStore } from "@/store/PartyStore";
-import CampaignHero from "@/components/CampaignHero.vue";
+import CampaignCoreHero from "@/components/CampaignCoreHero.vue";
+import { useRoute } from "vue-router";
+import { HeroStore } from "@/store/HeroStore";
+import CampaignRemove from "@/components/CampaignRemove.vue";
+import BaseDivider from "@/components/BaseDivider.vue";
+import BaseButtonMenu from "@/components/BaseButtonMenu.vue";
 
-const partyStore = PartyStore();
+const route = useRoute();
+
+const campaignId = route.params.id.toString();
+const heroStore = HeroStore();
 </script>
 
 <template>
-  <div class="grid gap-4 grid-cols-1 w-full place-items-center">
-    <div class="grid grid-cols-2 place-items-center w-full lg:w-1/2">
-      <CampaignAddHero />
-      <CampaignRemoveHero />
-    </div>
-    <div class="h-16"></div>
-    <div class="grid gap-4 w-full 2xl:w-3/4">
-      <template v-for="member in partyStore.findAll()" :key="member.heroId">
-        <div class="bg-neutral form-control drop-shadow rounded-lg">
-          <CampaignHero :hero-id="member.heroId" />
-        </div>
-      </template>
-    </div>
+  <BaseDivider>Campaign</BaseDivider>
+  <BaseButtonMenu>
+    <CampaignRemove :campaign-id="campaignId" />
+  </BaseButtonMenu>
+  <BaseDivider>Heroes</BaseDivider>
+  <BaseButtonMenu>
+    <CampaignAddHero :campaign-id="campaignId" />
+    <CampaignRemoveHero :campaign-id="campaignId" />
+  </BaseButtonMenu>
+  <div id="heroes" class="grid pt-4 gap-4 w-full">
+    <template v-for="hero in heroStore.findAllInCampaign(campaignId)" :key="hero.heroId">
+      <div class="bg-neutral form-control drop-shadow rounded-lg">
+        <CampaignCoreHero :campaign-id="campaignId" :hero-id="hero.heroId" />
+      </div>
+    </template>
   </div>
 </template>
 

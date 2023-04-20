@@ -1,10 +1,12 @@
 describe("status selection", () => {
   beforeEach(() => {
     cy.visit("./party");
+    cy.get("#campaign-new").click();
+    cy.get("#campaign-core").click();
   }),
     it("has multiple statuses available", () => {
-      cy.get("#party-add-hero").click();
-      cy.get("div#party-add-heroes div").first().click();
+      cy.get("#campaign-add-hero").click();
+      cy.get("div#campaign-add-heroes div").first().click();
 
       cy.get("#hero-status").click();
 
@@ -22,8 +24,8 @@ describe("status selection", () => {
         .should("have.text", "A mysterious click");
     });
   it("can set, remove, stores and reset status", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-status").click();
     cy.get("ul#hero-status-options li").first().click();
@@ -52,8 +54,8 @@ describe("status selection", () => {
     cy.get(".hero-image").should("not.exist");
   });
   it("can search for an status", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-status").type("A mysterious click");
     cy.get("ul#hero-status-options li").first().click();
@@ -73,8 +75,8 @@ describe("status selection", () => {
     cy.get("#hero-status-display > li").contains("Embarrassed");
   });
   it("displays the effect of an status", () => {
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get("#hero-status").type("Master of undeath");
     cy.get("ul#hero-status-options li").first().click();

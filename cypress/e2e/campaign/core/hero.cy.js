@@ -1,11 +1,13 @@
 describe("party selection", () => {
   beforeEach(() => {
     cy.visit("./campaign");
+    cy.get("#campaign-new").click();
+    cy.get("#campaign-core").click();
   }),
     it("has all heroes", () => {
-      cy.get("#party-add-hero").click();
-      cy.get("div#party-add-heroes div").should("have.length", 23);
-      cy.get("div#party-add-heroes div")
+      cy.get("#campaign-add-hero").click();
+      cy.get("div#campaign-add-heroes div").should("have.length", 23);
+      cy.get("div#campaign-add-heroes div")
         .first()
         .should("have.text", "Arkhanos")
         .next()
@@ -20,42 +22,42 @@ describe("party selection", () => {
   it("can add and remove a hero", () => {
     cy.get(".hero-image").should("not.exist");
 
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
     cy.get(".hero-image")
       .should("have.attr", "src")
       .should("match", /Arkhanos/g);
 
-    cy.get("#party-remove-hero").click();
-    cy.get("div#party-remove-heroes div").first().click();
+    cy.get("#campaign-remove-hero").click();
+    cy.get("div#campaign-remove-heroes div").first().click();
 
     cy.get(".hero-image").should("not.exist");
   });
   it("can manage multiple heroes", () => {
     cy.get(".hero-image").should("not.exist");
 
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get(".hero-image")
       .first()
       .should("have.attr", "src")
       .should("match", /Arkhanos/g);
 
-    cy.get("#party-remove-hero").click();
-    cy.get("div#party-remove-heroes div").first().click();
+    cy.get("#campaign-remove-hero").click();
+    cy.get("div#campaign-remove-heroes div").first().click();
     cy.get(".hero-image").should("have.length", 3);
 
     cy.get(".hero-image").first().should("have.attr", "src").should("match", /Barak/g);
 
-    cy.get("#party-remove-hero").click();
-    cy.get("div#party-remove-heroes div").first().click();
+    cy.get("#campaign-remove-hero").click();
+    cy.get("div#campaign-remove-heroes div").first().click();
     cy.get(".hero-image").should("have.length", 2);
 
     cy.get(".hero-image")
@@ -63,8 +65,8 @@ describe("party selection", () => {
       .should("have.attr", "src")
       .should("match", /Devron/g);
 
-    cy.get("#party-remove-hero").click();
-    cy.get("div#party-remove-heroes div").first().click();
+    cy.get("#campaign-remove-hero").click();
+    cy.get("div#campaign-remove-heroes div").first().click();
     cy.get(".hero-image").should("have.length", 1);
 
     cy.get(".hero-image")
@@ -72,24 +74,24 @@ describe("party selection", () => {
       .should("have.attr", "src")
       .should("match", /Drasek/g);
 
-    cy.get("#party-remove-hero").click();
-    cy.get("div#party-remove-heroes div").first().click();
+    cy.get("#campaign-remove-hero").click();
+    cy.get("div#campaign-remove-heroes div").first().click();
 
     cy.get(".hero-image").should("not.exist");
   });
   it("can search a hero", () => {
     cy.get(".hero-image").should("not.exist");
 
-    cy.get("#party-add-hero").click();
+    cy.get("#campaign-add-hero").click();
     cy.get("#party-search-hero input").type("Jade");
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get(".hero-image").first().should("have.attr", "src").should("match", /Jade/g);
   });
   it("selects a random hero", () => {
     cy.get(".hero-image").should("not.exist");
 
-    cy.get("#party-add-hero").click();
+    cy.get("#campaign-add-hero").click();
     cy.get("#party-random-hero").click();
 
     cy.get(".hero-image")
@@ -103,10 +105,10 @@ describe("party selection", () => {
   it("stores the state and resets to default", () => {
     cy.get(".hero-image").should("not.exist");
 
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.reload();
 
@@ -129,10 +131,11 @@ describe("party selection", () => {
     cy.get('#configuration-content-hero input[id="rise-of-the-undead-dragon"]').uncheck();
     cy.get('#configuration-content-hero input[id="handuriel"]').uncheck();
 
-    cy.visit("./party");
+    cy.visit("./campaign");
+    cy.get("#campaigns").first().click();
     cy.get(".hero-image").should("not.exist");
-    cy.get("#party-add-hero").click();
-    cy.get("div#party-add-heroes div").first().click();
+    cy.get("#campaign-add-hero").click();
+    cy.get("div#campaign-add-heroes div").first().click();
 
     cy.get(".hero-image")
       .first()

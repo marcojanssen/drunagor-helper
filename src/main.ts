@@ -1,4 +1,6 @@
 import App from "@/App.vue";
+import "@/assets/main.css";
+import CampaignOverviewView from "@/views/CampaignOverviewView.vue";
 import CampaignView from "@/views/CampaignView.vue";
 import ConfigurationView from "@/views/ConfigurationView.vue";
 import KeywordView from "@/views/KeywordView.vue";
@@ -7,8 +9,6 @@ import { createPinia } from "pinia";
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import Toast from "vue-toastification";
-
-import "@/assets/main.css";
 import "vue-toastification/dist/index.css";
 
 const pinia = createPinia();
@@ -20,8 +20,9 @@ const routes = [
     name: "Configuration",
     component: ConfigurationView,
   },
-  { path: "/party", name: "Party", component: CampaignView },
-  { path: "/campaign", name: "Campaign", component: CampaignView },
+  { path: "/party", redirect: "/campaign" },
+  { path: "/campaign/:id", name: "Campaign", component: CampaignView },
+  { path: "/campaign", name: "Campaign Overview", component: CampaignOverviewView },
   { path: "/keyword", name: "Keyword", component: KeywordView },
 ];
 

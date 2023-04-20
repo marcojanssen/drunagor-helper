@@ -1,19 +1,20 @@
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
-import { PartyStore } from "@/store/PartyStore";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import { AuraDataRepository } from "@/data/repository/AuraDataRepository";
+import { CoreHeroAuraDataRepository } from "@/data/repository/CoreHeroAuraDataRepository.js";
+import { HeroStore } from "@/store/HeroStore";
 
-const partyStore = PartyStore();
-const auraDataRepository = new AuraDataRepository();
+const heroStore = HeroStore();
+const auraDataRepository = new CoreHeroAuraDataRepository();
 const auras = auraDataRepository.findAll();
 
 const props = defineProps<{
   heroId: string;
+  campaignId: string;
 }>();
 const auraId = ref("");
-auraId.value = partyStore.find(props.heroId).auraId ?? "";
+auraId.value = heroStore.findInCampaign(props.heroId, props.campaignId).auraId ?? "";
 
 let filteredAura = computed(() =>
   query.value === ""
@@ -35,7 +36,7 @@ function displayValue(id: unknown) {
 }
 
 watch(auraId, (newAuraId) => {
-  partyStore.find(props.heroId).auraId = newAuraId;
+  heroStore.findInCampaign(props.heroId, props.campaignId).auraId = newAuraId;
 });
 </script>
 
