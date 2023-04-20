@@ -42,12 +42,12 @@ function filterHero(hero: HeroData) {
   return hero.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""));
 }
 
-function addHeroToParty(heroId: string) {
+function addHeroToCampaign(heroId: string) {
   heroStore.add(new Hero(heroId, props.campaignId));
   closeModal();
 }
 
-function addRandomHeroToParty() {
+function addRandomHeroToCampaign() {
   const randomHero = new RandomizeHero().randomize(_.map(heroStore.findAllInCampaign(props.campaignId), "heroId"));
 
   if (randomHero === null) {
@@ -84,12 +84,12 @@ function addRandomHeroToParty() {
     </template>
     <template #default>
       <BaseListSearch id="party-search-hero" @search="query = $event" />
-      <BaseListItem id="party-random-hero" @click="addRandomHeroToParty" :avatar="RandomImage.toString()">
+      <BaseListItem id="party-random-hero" @click="addRandomHeroToCampaign" :avatar="RandomImage.toString()">
         Random hero
       </BaseListItem>
       <BaseList id="campaign-add-heroes">
         <template v-for="hero in filteredHeroes" :key="hero.id">
-          <BaseListItem :avatar="hero.images.avatar" @click="addHeroToParty(hero.id)">
+          <BaseListItem :avatar="hero.images.avatar" @click="addHeroToCampaign(hero.id)">
             {{ hero.name }}
           </BaseListItem>
         </template>

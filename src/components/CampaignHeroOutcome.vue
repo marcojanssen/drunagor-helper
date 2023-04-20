@@ -2,12 +2,12 @@
 import { ref, computed, watch } from "vue";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import { OutcomeDataRepository } from "@/data/repository/OutcomeDataRepository";
+import { CoreHeroOutcomeDataRepository } from "@/data/repository/CoreHeroOutcomeDataRepository.js";
 import type { OutcomeData } from "@/data/repository/OutcomeData";
 import { HeroStore } from "@/store/HeroStore";
 
 const heroStore = HeroStore();
-const outcomeDataRepository = new OutcomeDataRepository();
+const outcomeDataRepository = new CoreHeroOutcomeDataRepository();
 const outcomes = outcomeDataRepository.findAll();
 
 const props = defineProps<{

@@ -17,13 +17,13 @@ function search(event: Event) {
 </script>
 
 <template>
-  <div :id="props.id" class="flex p-2 h-16 sticky inset-12 bg-base-300" :class="props.class">
-    <div class="mt-1 flex rounded-md shadow-sm w-full">
-      <div class="relative flex items-stretch flex-grow">
+  <div :id="props.id" class="flex h-14 sticky inset-16 bg-base-300" :class="props.class">
+    <div class="flex rounded-md shadow-sm w-full">
+      <div class="relative flex items-stretch flex-grow form-control border-1 border-neutral">
         <input
           type="text"
           name="search"
-          class="border-neutral bg-base-300 w-full pl-2 rounded-l-md text-white"
+          class="bg-base-100 w-full pl-2 rounded-l-md text-white border-0 focus:ring-0"
           placeholder="Search"
           @input="(event) => search(event)"
         />
@@ -36,11 +36,4 @@ function search(event: Event) {
   </div>
 </template>
 
-<style scoped>
-input {
-  box-shadow: none;
-  border: 1;
-  border-width: 1px;
-  outline: none;
-}
-</style>
+<style scoped></style>

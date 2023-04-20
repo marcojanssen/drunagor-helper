@@ -4,9 +4,11 @@ import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { CampaignStore } from "@/store/CampaignStore";
 import { useRouter } from "vue-router";
+import { HeroStore } from "@/store/HeroStore";
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
+const heroStore = HeroStore();
 const router = useRouter();
 
 function openModal() {
@@ -22,6 +24,9 @@ const props = defineProps<{
 
 function removeCampaign() {
   campaignStore.remove(props.campaignId);
+  heroStore.findAllInCampaign(props.campaignId).forEach((hero) => {
+    heroStore.removeFromCampaign(hero.heroId, props.campaignId);
+  });
   closeModal();
   router.push("/campaign/");
 }

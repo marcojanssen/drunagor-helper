@@ -9,15 +9,17 @@ import { CampaignStore } from "@/store/CampaignStore";
 import { Hero } from "@/store/Hero";
 import { HeroStore } from "@/store/HeroStore";
 import { PartyStore } from "@/store/PartyStore";
+import { customAlphabet } from "nanoid";
 
 const partyStore = PartyStore();
 const legacyCampaign = partyStore.findAll();
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
+const nanoid = customAlphabet("1234567890", 5);
 
 //backwards compatibility
 if (legacyCampaign.length > 0) {
-  let campaignId = "1337";
+  let campaignId = nanoid();
   campaignStore.add(new Campaign(campaignId, "core"));
 
   legacyCampaign.forEach((hero) => {

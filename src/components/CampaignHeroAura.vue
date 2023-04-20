@@ -2,11 +2,11 @@
 import { ref, computed, watch } from "vue";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import { AuraDataRepository } from "@/data/repository/AuraDataRepository";
+import { CoreHeroAuraDataRepository } from "@/data/repository/CoreHeroAuraDataRepository.js";
 import { HeroStore } from "@/store/HeroStore";
 
 const heroStore = HeroStore();
-const auraDataRepository = new AuraDataRepository();
+const auraDataRepository = new CoreHeroAuraDataRepository();
 const auras = auraDataRepository.findAll();
 
 const props = defineProps<{

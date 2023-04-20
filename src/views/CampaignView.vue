@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CampaignAddHero from "@/components/CampaignAddHero.vue";
 import CampaignRemoveHero from "@/components/CampaignRemoveHero.vue";
-import CampaignHero from "@/components/CampaignHero.vue";
+import CampaignCoreHero from "@/components/CampaignCoreHero.vue";
 import { useRoute } from "vue-router";
 import { HeroStore } from "@/store/HeroStore";
 import CampaignRemove from "@/components/CampaignRemove.vue";
@@ -27,7 +27,7 @@ const heroStore = HeroStore();
   <div id="heroes" class="grid pt-4 gap-4 w-full">
     <template v-for="hero in heroStore.findAllInCampaign(campaignId)" :key="hero.heroId">
       <div class="bg-neutral form-control drop-shadow rounded-lg">
-        <CampaignHero :campaign-id="campaignId" :hero-id="hero.heroId" />
+        <CampaignCoreHero :campaign-id="campaignId" :hero-id="hero.heroId" />
       </div>
     </template>
   </div>

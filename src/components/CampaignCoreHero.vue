@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HeroAura from "@/components/HeroAura.vue";
-import HeroOutcome from "@/components/HeroOutcome.vue";
-import HeroStatus from "@/components/HeroStatus.vue";
+import CampaignCoreHeroAura from "@/components/CampaignHeroAura.vue";
+import CampaignCoreHeroOutcome from "@/components/CampaignHeroOutcome.vue";
+import CampaignCoreHeroStatus from "@/components/CampaignHeroStatus.vue";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import type { HeroData } from "@/data/repository/HeroData";
 
@@ -28,13 +28,13 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
       </div>
     </div>
     <div class="pt-2 w-full">
-      <HeroStatus :campaign-id="campaignId" :hero-id="heroId" />
+      <CampaignCoreHeroStatus :campaign-id="campaignId" :hero-id="heroId" />
     </div>
     <div class="pt-2 w-full">
-      <HeroOutcome :campaign-id="campaignId" :hero-id="heroId" />
+      <CampaignCoreHeroOutcome :campaign-id="campaignId" :hero-id="heroId" />
     </div>
     <div class="py-2 w-full">
-      <HeroAura :campaign-id="campaignId" :hero-id="heroId" />
+      <CampaignCoreHeroAura :campaign-id="campaignId" :hero-id="heroId" />
     </div>
   </div>
 </template>

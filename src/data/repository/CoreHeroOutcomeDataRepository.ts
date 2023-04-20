@@ -17,7 +17,7 @@ import * as _ from "lodash-es";
 import type { DataRepository } from "./DataRepository";
 import type { OutcomeData } from "./OutcomeData";
 
-export class OutcomeDataRepository implements DataRepository {
+export class CoreHeroOutcomeDataRepository implements DataRepository {
   private outcomes = [
     new ACouriersJob(),
     new Adamant(),

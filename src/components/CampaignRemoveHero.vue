@@ -36,7 +36,7 @@ function filterHero(hero: HeroData) {
   return hero.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""));
 }
 
-function removeHeroFromParty(heroId: string) {
+function removeHeroFromCampaign(heroId: string) {
   heroStore.removeFromCampaign(heroId, props.campaignId);
   closeModal();
 }
@@ -69,7 +69,7 @@ function removeHeroFromParty(heroId: string) {
       <BaseListSearch @search="query = $event" />
       <BaseList id="campaign-remove-heroes">
         <template v-for="hero in filteredHeroes" :key="hero.id">
-          <BaseListItem :avatar="hero.images.avatar" @click="removeHeroFromParty(hero.id)">
+          <BaseListItem :avatar="hero.images.avatar" @click="removeHeroFromCampaign(hero.id)">
             {{ hero.name }}
           </BaseListItem>
         </template>

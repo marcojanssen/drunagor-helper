@@ -68,7 +68,7 @@ import type { DataRepository } from "@/data/repository/DataRepository";
 import type { StatusData } from "@/data/repository/StatusData";
 import * as _ from "lodash-es";
 
-export class StatusDataRepository implements DataRepository {
+export class CoreHeroStatusDataRepository implements DataRepository {
   statuses = [
     new ACooperativeApproach(),
     new AFriendlyApproach(),
