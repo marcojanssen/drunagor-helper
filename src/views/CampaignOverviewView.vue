@@ -55,7 +55,10 @@ function findHeroes(campaignId: string): HeroData[] {
       <router-link :to="{ name: 'Campaign', params: { id: campaign.campaignId } }" class="w-full">
         <div class="bg-neutral p-2 drop-shadow-lg rounded-lg w-full">
           <div class="pb-4">
-            <p class="text-center">Core campaign</p>
+            <p class="text-center">
+              <span class="capitalize">{{ campaign.campaign }}</span>
+              <template v-if="campaign.name"> - {{ campaign.name }} </template>
+            </p>
           </div>
           <div class="flex flex-wrap justify-center min-h-16">
             <template v-for="hero in findHeroes(campaign.campaignId)" :key="hero.heroId">
