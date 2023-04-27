@@ -1,6 +1,5 @@
 import AvatarImageUrl from "@/assets/hero/avatar/MayaAvatar.webp";
 import ImageUrl from "@/assets/hero/big/MayaBig.webp";
-import ListImageUrl from "@/assets/hero/list/MayaList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/MayaMiniature.webp";
 import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -19,6 +18,5 @@ export class Maya implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: ListImageUrl,
   };
 }

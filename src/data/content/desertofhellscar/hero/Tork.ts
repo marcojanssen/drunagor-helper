@@ -1,6 +1,5 @@
 import AvatarImageUrl from "@/assets/hero/avatar/TorkAvatar.webp";
 import ImageUrl from "@/assets/hero/big/TorkBig.webp";
-import ListImageUrl from "@/assets/hero/list/TorkList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/TorkMiniature.webp";
 import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -19,6 +18,5 @@ export class Tork implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: ListImageUrl,
   };
 }

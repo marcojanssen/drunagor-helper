@@ -14,6 +14,5 @@ export interface HeroData {
     avatar: string;
     big: string;
     miniature: string;
-    list: string;
   };
 }

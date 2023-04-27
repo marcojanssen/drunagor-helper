@@ -1,6 +1,5 @@
 import AvatarImageUrl from "@/assets/hero/avatar/SskarAvatar.webp";
 import ImageUrl from "@/assets/hero/big/SskarBig.webp";
-import ListImageUrl from "@/assets/hero/list/SskarList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/SskarMiniature.webp";
 import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -19,6 +18,5 @@ export class Sskar implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: ListImageUrl,
   };
 }

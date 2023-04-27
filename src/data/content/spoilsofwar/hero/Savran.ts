@@ -1,6 +1,5 @@
 import AvatarImageUrl from "@/assets/hero/avatar/SavranAvatar.webp";
 import ImageUrl from "@/assets/hero/big/SavranBig.webp";
-import ListImageUrl from "@/assets/hero/list/SavranList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/SavranMiniature.webp";
 import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -19,6 +18,5 @@ export class Savran implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: ListImageUrl,
   };
 }

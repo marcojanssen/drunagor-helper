@@ -1,6 +1,5 @@
 import AvatarImageUrl from "@/assets/hero/avatar/KellamAvatar.webp";
 import ImageUrl from "@/assets/hero/big/KellamBig.webp";
-import ListImageUrl from "@/assets/hero/list/KellamList.webp";
 import MiniatureImageUrl from "@/assets/hero/miniature/KellamMiniature.webp";
 import type { HeroData } from "@/data/repository/HeroData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -19,6 +18,5 @@ export class Kellam implements HeroData {
     big: ImageUrl,
     avatar: AvatarImageUrl,
     miniature: MiniatureImageUrl,
-    list: ListImageUrl,
   };
 }
