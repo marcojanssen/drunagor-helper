@@ -1,6 +1,6 @@
-import type { AuraData } from "@/data/repository/campaign/AuraData";
+import type { Aura } from "@/data/repository/campaign/Aura";
 
 export interface AuraRepository {
-  find(id: string): AuraData | undefined;
-  findAll(): AuraData[];
+  find(id: string): Aura | undefined;
+  findAll(): Aura[];
 }

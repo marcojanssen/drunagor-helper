@@ -1,4 +1,4 @@
-export interface OutcomeData {
+export interface Outcome {
   id: string;
   name: string;
   effect: string;

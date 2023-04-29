@@ -1,9 +1,9 @@
-import type { OutcomeData } from "@/data/repository/campaign/OutcomeData";
+import type { Outcome } from "@/data/repository/campaign/Outcome";
 import type { OutcomeRepository } from "@/data/repository/campaign/OutcomeRepository";
 import * as _ from "lodash-es";
 
 export class StoryRecordOutcomeRepository implements OutcomeRepository {
-  private outcomes: OutcomeData[] = [
+  private outcomes: Outcome[] = [
     {
       id: "ancient-book",
       name: "Ancient Book",
@@ -86,11 +86,11 @@ export class StoryRecordOutcomeRepository implements OutcomeRepository {
     },
   ];
 
-  public find(outcomeId: string): OutcomeData | undefined {
+  public find(outcomeId: string): Outcome | undefined {
     return _.find(this.outcomes, { id: outcomeId });
   }
 
-  public findAll(): OutcomeData[] {
+  public findAll(): Outcome[] {
     return this.outcomes;
   }
 }

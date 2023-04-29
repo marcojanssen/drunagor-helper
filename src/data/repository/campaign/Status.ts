@@ -1,4 +1,4 @@
-export interface StatusData {
+export interface Status {
   id: string;
   name: string;
   effect: string;

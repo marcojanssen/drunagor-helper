@@ -1,6 +1,6 @@
-import type { StatusData } from "@/data/repository/campaign/StatusData";
+import type { Status } from "@/data/repository/campaign/Status";
 
 export interface StatusRepository {
-  find(id: string): StatusData | undefined;
-  findAll(): StatusData[];
+  find(id: string): Status | undefined;
+  findAll(): Status[];
 }

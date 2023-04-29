@@ -1,9 +1,9 @@
-import type { StatusData } from "@/data/repository/campaign/StatusData";
+import type { Status } from "@/data/repository/campaign/Status";
 import type { StatusRepository } from "@/data/repository/campaign/StatusRepository";
 import * as _ from "lodash-es";
 
 export class CampaignLogStatusRepository implements StatusRepository {
-  statuses: StatusData[] = [
+  statuses: Status[] = [
     {
       id: "a-cooperative-approach",
       name: "A cooperative approach",
@@ -360,11 +360,11 @@ export class CampaignLogStatusRepository implements StatusRepository {
     },
   ];
 
-  public find(statusId: string): StatusData | undefined {
+  public find(statusId: string): Status | undefined {
     return _.find(this.statuses, { id: statusId });
   }
 
-  public findAll(): StatusData[] {
+  public findAll(): Status[] {
     return this.statuses;
   }
 }

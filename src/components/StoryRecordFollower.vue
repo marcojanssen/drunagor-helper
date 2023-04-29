@@ -4,7 +4,7 @@ import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOption
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
 import type { FollowerRepository } from "@/data/repository/campaign/FollowerRepository";
 import { CampaignStore } from "@/store/CampaignStore";
-import type { FollowerData } from "@/data/repository/campaign/FollowerData";
+import type { Follower } from "@/data/repository/campaign/Follower";
 
 const props = defineProps<{
   campaignId: string;
@@ -33,8 +33,8 @@ function clearSelection() {
   query.value = "";
 }
 
-function findFollowers(followerIds: string[]): FollowerData[] {
-  const outcomes: FollowerData[] = [];
+function findFollowers(followerIds: string[]): Follower[] {
+  const outcomes: Follower[] = [];
   followerIds.forEach((followerId) => {
     let outcome = props.repository.find(followerId);
     if (outcome) {

@@ -1,10 +1,10 @@
 import type { HeroData } from "@/data/repository/HeroData";
 import type { KeywordData } from "@/data/repository/KeywordData";
-import type { AuraData } from "@/data/repository/campaign/AuraData";
-import type { OutcomeData } from "@/data/repository/campaign/OutcomeData";
-import type { StatusData } from "@/data/repository/campaign/StatusData";
+import type { Aura } from "@/data/repository/campaign/Aura";
+import type { Outcome } from "@/data/repository/campaign/Outcome";
+import type { Status } from "@/data/repository/campaign/Status";
 
 export interface DataRepository {
-  find(id: string): AuraData | HeroData | OutcomeData | StatusData | KeywordData | undefined;
+  find(id: string): Aura | HeroData | Outcome | Status | KeywordData | undefined;
   findAll(): Object[];
 }

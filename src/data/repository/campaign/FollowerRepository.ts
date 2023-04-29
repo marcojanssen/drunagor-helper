@@ -1,6 +1,6 @@
-import type { FollowerData } from "@/data/repository/campaign/FollowerData";
+import type { Follower } from "@/data/repository/campaign/Follower";
 
 export interface FollowerRepository {
-  find(id: string): FollowerData | undefined;
-  findAll(): FollowerData[];
+  find(id: string): Follower | undefined;
+  findAll(): Follower[];
 }

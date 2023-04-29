@@ -2,7 +2,7 @@
 import { ref, computed, watch } from "vue";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import type { OutcomeData } from "@/data/repository/campaign/OutcomeData";
+import type { Outcome } from "@/data/repository/campaign/Outcome";
 import type { OutcomeRepository } from "@/data/repository/campaign/OutcomeRepository";
 import { CampaignStore } from "@/store/CampaignStore";
 
@@ -33,8 +33,8 @@ function clearSelection() {
   query.value = "";
 }
 
-function findOutcomes(outcomeIds: string[]): OutcomeData[] {
-  const outcomes: OutcomeData[] = [];
+function findOutcomes(outcomeIds: string[]): Outcome[] {
+  const outcomes: Outcome[] = [];
   outcomeIds.forEach((outcomeId) => {
     let outcome = props.repository.find(outcomeId);
     if (outcome) {

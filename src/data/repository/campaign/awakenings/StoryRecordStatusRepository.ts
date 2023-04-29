@@ -1,9 +1,9 @@
-import type { StatusData } from "@/data/repository/campaign/StatusData";
+import type { Status } from "@/data/repository/campaign/Status";
 import type { StatusRepository } from "@/data/repository/campaign/StatusRepository";
 import * as _ from "lodash-es";
 
 export class StoryRecordStatusRepository implements StatusRepository {
-  private status: StatusData[] = [
+  private status: Status[] = [
     { id: "acquaintance", name: "Acquaintance", effect: "" },
     { id: "acquainted", name: "Acquainted", effect: "" },
     { id: "bright-pupil", name: "Bright Pupil", effect: "" },
@@ -64,11 +64,11 @@ export class StoryRecordStatusRepository implements StatusRepository {
     { id: "wrong-foot", name: "Wrong Foot", effect: "" },
   ];
 
-  public find(statusId: string): StatusData | undefined {
+  public find(statusId: string): Status | undefined {
     return _.find(this.status, { id: statusId });
   }
 
-  public findAll(): StatusData[] {
+  public findAll(): Status[] {
     return this.status;
   }
 }

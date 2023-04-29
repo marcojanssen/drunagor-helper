@@ -1,9 +1,9 @@
-import type { AuraData } from "@/data/repository/campaign/AuraData";
+import type { Aura } from "@/data/repository/campaign/Aura";
 import type { AuraRepository } from "@/data/repository/campaign/AuraRepository";
 import * as _ from "lodash-es";
 
 export class CampaignLogAuraRepository implements AuraRepository {
-  private auras: AuraData[] = [
+  private auras: Aura[] = [
     {
       id: "blessing-of-good-fortune",
       name: "Blessing of good fortune",
@@ -121,11 +121,11 @@ export class CampaignLogAuraRepository implements AuraRepository {
     },
   ];
 
-  public find(auraId: string): AuraData | undefined {
+  public find(auraId: string): Aura | undefined {
     return _.find(this.auras, { id: auraId });
   }
 
-  public findAll(): AuraData[] {
+  public findAll(): Aura[] {
     return this.auras;
   }
 }

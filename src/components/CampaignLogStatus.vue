@@ -2,7 +2,7 @@
 import { ref, computed, watch } from "vue";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import type { StatusData } from "@/data/repository/campaign/StatusData";
+import type { Status } from "@/data/repository/campaign/Status";
 import { HeroStore } from "@/store/HeroStore";
 import type { StatusRepository } from "@/data/repository/campaign/StatusRepository";
 
@@ -34,8 +34,8 @@ function clearSelection() {
   query.value = "";
 }
 
-function findStatuses(statusIds: string[]): StatusData[] {
-  const statuses: StatusData[] = [];
+function findStatuses(statusIds: string[]): Status[] {
+  const statuses: Status[] = [];
   statusIds.forEach((statusId) => {
     let status = props.repository.find(statusId);
     if (status) {

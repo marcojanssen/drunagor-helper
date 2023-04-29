@@ -1,9 +1,9 @@
-import type { FollowerData } from "@/data/repository/campaign/FollowerData";
+import type { Follower } from "@/data/repository/campaign/Follower";
 import type { FollowerRepository } from "@/data/repository/campaign/FollowerRepository";
 import * as _ from "lodash-es";
 
 export class StoryRecordFollowerRepository implements FollowerRepository {
-  private followers: FollowerData[] = [
+  private followers: Follower[] = [
     {
       id: "elros",
       name: "Elros, the Assassin",
@@ -26,11 +26,11 @@ export class StoryRecordFollowerRepository implements FollowerRepository {
     },
   ];
 
-  public find(outcomeId: string): FollowerData | undefined {
+  public find(outcomeId: string): Follower | undefined {
     return _.find(this.followers, { id: outcomeId });
   }
 
-  public findAll(): FollowerData[] {
+  public findAll(): Follower[] {
     return this.followers;
   }
 }
