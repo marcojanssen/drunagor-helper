@@ -7,6 +7,7 @@ import { HeroStore } from "@/store/HeroStore";
 import CampaignRemove from "@/components/CampaignRemove.vue";
 import BaseDivider from "@/components/BaseDivider.vue";
 import BaseButtonMenu from "@/components/BaseButtonMenu.vue";
+import CampaignExport from "@/components/CampaignExport.vue";
 
 const route = useRoute();
 
@@ -15,11 +16,12 @@ const heroStore = HeroStore();
 </script>
 
 <template>
-  <BaseDivider>Campaign</BaseDivider>
+  <BaseDivider :alt="false">Campaign</BaseDivider>
   <BaseButtonMenu>
     <CampaignRemove :campaign-id="campaignId" />
+    <CampaignExport :campaign-id="campaignId" />
   </BaseButtonMenu>
-  <BaseDivider>Heroes</BaseDivider>
+  <BaseDivider :alt="false">Heroes</BaseDivider>
   <BaseButtonMenu>
     <CampaignAddHero :campaign-id="campaignId" />
     <CampaignRemoveHero :campaign-id="campaignId" />
