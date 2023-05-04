@@ -8,6 +8,7 @@ import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { Campaign } from "@/store/Campaign";
 import type { Hero } from "@/store/Hero";
 import { customAlphabet } from "nanoid";
+import { HeroEquipment } from "@/store/Hero";
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
@@ -26,6 +27,11 @@ function importCampaign() {
   const heroes = data.heroes as Hero[];
   heroes.forEach((h) => {
     h.campaignId = campaignId;
+
+    if (typeof h.equipment === "undefined") {
+      h.equipment = new HeroEquipment();
+    }
+
     heroStore.add(h);
   });
   closeModal();
