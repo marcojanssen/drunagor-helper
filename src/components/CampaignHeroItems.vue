@@ -5,12 +5,21 @@ import CampaignHeroOffHand from "@/components/CampaignHeroOffHand.vue";
 import CampaignHeroArmor from "@/components/CampaignHeroArmor.vue";
 import CampaignHeroTrinket from "@/components/CampaignHeroTrinket.vue";
 import CampaignHeroBagItem from "@/components/CampaignHeroBagItem.vue";
+import { HeroStore } from "@/store/HeroStore";
+import { HeroEquipment } from "@/store/Hero";
+
+const heroStore = HeroStore();
 const itemCardDataRepository = new CardDataRepository();
 
-defineProps<{
+const props = defineProps<{
   heroId: string;
   campaignId: string;
 }>();
+
+const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
+if (typeof hero.equipment === "undefined") {
+  hero.equipment = new HeroEquipment();
+}
 </script>
 
 <template>
