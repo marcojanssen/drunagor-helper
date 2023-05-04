@@ -10,6 +10,7 @@ import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
+import HeroDetailView from "@/views/HeroDetailView.vue";
 
 const pinia = createPinia();
 
@@ -22,6 +23,7 @@ const routes = [
   },
   { path: "/party", redirect: "/campaign" },
   { path: "/campaign/:id", name: "Campaign", component: CampaignView },
+  { path: "/campaign/:campaignId/hero/:heroId", name: "Hero", component: HeroDetailView },
   { path: "/campaign", name: "Campaign Overview", component: CampaignOverviewView },
   { path: "/keyword", name: "Keyword", component: KeywordView },
 ];

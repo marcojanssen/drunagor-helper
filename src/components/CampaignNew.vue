@@ -18,6 +18,7 @@ const router = useRouter();
 function openModal() {
   isOpen.value = true;
 }
+
 function closeModal() {
   isOpen.value = false;
 }

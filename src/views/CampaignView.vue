@@ -7,6 +7,7 @@ import { HeroStore } from "@/store/HeroStore";
 import CampaignRemove from "@/components/CampaignRemove.vue";
 import BaseDivider from "@/components/BaseDivider.vue";
 import BaseButtonMenu from "@/components/BaseButtonMenu.vue";
+import CampaignExport from "@/components/CampaignExport.vue";
 import StoryRecord from "@/components/StoryRecord.vue";
 import CampaignName from "@/components/CampaignName.vue";
 import { CampaignStore } from "@/store/CampaignStore";
@@ -22,16 +23,17 @@ const heroStore = HeroStore();
 </script>
 
 <template>
-  <BaseDivider>Campaign</BaseDivider>
+  <BaseDivider :alt="false">Campaign</BaseDivider>
   <BaseButtonMenu>
     <CampaignRemove :campaign-id="campaignId" />
+    <CampaignExport :campaign-id="campaignId" />
     <CampaignCampPhase :campaign-id="campaignId" />
   </BaseButtonMenu>
   <div class="bg-neutral mt-4 form-control drop-shadow rounded-lg">
     <CampaignName :campaign-id="campaignId" />
   </div>
   <template v-if="campaign.campaign == 'awakenings' || campaign.campaign == 'apocalypse'">
-    <BaseDivider>Story record</BaseDivider>
+    <BaseDivider :alt="false">Story record</BaseDivider>
     <div class="bg-neutral form-control drop-shadow rounded-lg">
       <StoryRecord :campaign-id="campaignId" />
     </div>

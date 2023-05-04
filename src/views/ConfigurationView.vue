@@ -7,11 +7,11 @@ import ConfigurationVariant from "@/components/ConfigurationVariant.vue";
 
 <template>
   <div class="grid gap-4 place-items-center w-full">
-    <BaseDivider>Enabled variant</BaseDivider>
+    <BaseDivider :alt="false">Enabled variant</BaseDivider>
     <ConfigurationVariant />
-    <BaseDivider>Monster content</BaseDivider>
+    <BaseDivider :alt="false">Monster content</BaseDivider>
     <ConfigurationContentMonster />
-    <BaseDivider>Hero content</BaseDivider>
+    <BaseDivider :alt="false">Hero content</BaseDivider>
     <ConfigurationContentHero />
   </div>
 </template>

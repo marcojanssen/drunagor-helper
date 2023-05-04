@@ -10,6 +10,7 @@ import { Hero } from "@/store/Hero";
 import { HeroStore } from "@/store/HeroStore";
 import { PartyStore } from "@/store/PartyStore";
 import { customAlphabet } from "nanoid";
+import CampaignImport from "@/components/CampaignImport.vue";
 
 const partyStore = PartyStore();
 const legacyCampaign = partyStore.findAll();
@@ -46,9 +47,10 @@ function findHeroes(campaignId: string): HeroData[] {
 </script>
 
 <template>
-  <BaseDivider>Campaigns</BaseDivider>
+  <BaseDivider :alt="false">Campaigns</BaseDivider>
   <BaseButtonMenu>
     <CampaignNew />
+    <CampaignImport />
   </BaseButtonMenu>
   <div id="campaigns" class="grid gap-4 pt-4 place-items-center">
     <template v-for="campaign in campaignStore.findAll()" :key="campaign.campaignId">
