@@ -71,5 +71,5 @@ describe("follower selection", () => {
 
     cy.get("#story-record-follower-display").click();
     cy.get("#story-record-follower-display > li").contains("Vorn, the Warrior");
-  });  
+  });
 });

@@ -29,20 +29,14 @@ describe("aura selection", () => {
     cy.get("#campaign-log-aura").click();
     cy.get("ul#campaign-log-aura-options li").first().click();
 
-    cy.get("#campaign-log-aura-effect").contains(
-      "At the beginning of your turn, you gain SHIELD 1."
-    );
+    cy.get("#campaign-log-aura-effect").contains("At the beginning of your turn, you gain SHIELD 1.");
 
     cy.get("#campaign-log-aura").click();
     cy.get("ul#campaign-log-aura-options li").first().next().click();
 
-    cy.get("#campaign-log-aura-effect").contains(
-      "You can't be TRAMPLED by Vicious Maulers."
-    );
+    cy.get("#campaign-log-aura-effect").contains("You can't be TRAMPLED by Vicious Maulers.");
     cy.reload();
-    cy.get("#campaign-log-aura-effect").contains(
-      "You can't be TRAMPLED by Vicious Maulers."
-    );
+    cy.get("#campaign-log-aura-effect").contains("You can't be TRAMPLED by Vicious Maulers.");
 
     cy.get("#campaign-log-aura-clear").click();
 

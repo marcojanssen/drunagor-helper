@@ -71,5 +71,5 @@ describe("outcome selection", () => {
 
     cy.get("#story-record-outcome-display").click();
     cy.get("#story-record-outcome-display > li").contains("Farewell");
-  });  
+  });
 });
