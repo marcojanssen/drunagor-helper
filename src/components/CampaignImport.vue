@@ -7,12 +7,13 @@ import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { Campaign } from "@/store/Campaign";
 import type { Hero } from "@/store/Hero";
-import { nanoid } from "nanoid";
+import { customAlphabet } from "nanoid";
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const router = useRouter();
+const nanoid = customAlphabet("1234567890", 5);
 
 const token = ref("");
 
