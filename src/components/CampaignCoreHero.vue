@@ -17,7 +17,7 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
 
 <template>
   <div class="hero-list-item p-4">
-    <div class="flex h-28">
+    <div class="hero-header flex h-28">
       <div>
         <img class="-ml-1 w-14 rounded-full hero-image" :src="hero.images.avatar" />
       </div>
@@ -27,6 +27,7 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
         <p>Path of {{ hero.path }}</p>
       </div>
     </div>
+
     <div class="pt-2 w-full">
       <CampaignCoreHeroStatus :campaign-id="campaignId" :hero-id="heroId" />
     </div>
@@ -35,6 +36,14 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
     </div>
     <div class="py-2 w-full">
       <CampaignCoreHeroAura :campaign-id="campaignId" :hero-id="heroId" />
+    </div>
+
+    <div class="pt-4 w-full">
+      <router-link :to="{ name: 'Hero', params: { campaignId: campaignId, heroId: hero.id } }" class="hero-detail-btn">
+        <button class="w-full px-2 py-2 bg-emerald-700 text-gray-200 uppercase font-semibold text-sm rounded-lg">
+          Equipment / Skills / Abilities
+        </button>
+      </router-link>
     </div>
   </div>
 </template>

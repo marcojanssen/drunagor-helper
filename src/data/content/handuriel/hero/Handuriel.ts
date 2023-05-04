@@ -6,6 +6,9 @@ import type { ContentId } from "@/data/type/ContentId";
 import type { HeroClass } from "@/data/type/HeroClass";
 import type { HeroPath } from "@/data/type/HeroPath";
 import type { HeroRace } from "@/data/type/HeroRace";
+import type { WeaponType } from "@/data/type/WeaponType";
+import type { OffHandType } from "@/data/type/OffHandType";
+import type { ArmorType } from "@/data/type/ArmorType";
 
 export class Handuriel implements HeroData {
   id = "handuriel";
@@ -14,6 +17,11 @@ export class Handuriel implements HeroData {
   class: HeroClass = "Ranger";
   path: HeroPath = "Nature";
   race: HeroRace = "Elf";
+  proficiencies = {
+    weapon: ["Ranged"] as WeaponType[],
+    offHand: ["Off Hand Weapon"] as OffHandType[],
+    armor: ["Leather"] as ArmorType[],
+  };
   images = {
     big: ImageUrl,
     avatar: AvatarImageUrl,

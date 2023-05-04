@@ -23,7 +23,7 @@ let query = ref("");
 
 <template>
   <div class="grid place-items-center w-full">
-    <BaseDivider>Keywords</BaseDivider>
+    <BaseDivider :alt="false">Keywords</BaseDivider>
     <BaseListSearch
       id="keyword-search"
       @search="query = $event"
