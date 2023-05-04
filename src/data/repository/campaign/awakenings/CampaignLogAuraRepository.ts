@@ -7,12 +7,12 @@ export class CampaignLogAuraRepository implements AuraRepository {
     {
       id: "ancient-spell",
       name: "Ancient Spell",
-      effect: "At the beginning of your turn, you gain SHIELD 1",
+      effect: "At the beginning of your turn, you gain SHIELD 1.",
     },
     {
       id: "bastion",
       name: "Bastion",
-      effect: "You can't be TRAMPLED by Vicious Maulers",
+      effect: "You can't be TRAMPLED by Vicious Maulers.",
     },
     {
       id: "blessing-of-prosperity",

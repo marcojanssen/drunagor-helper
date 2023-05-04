@@ -60,11 +60,11 @@ watch(statusIds, (newStatusIds) => {
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
             placeholder="Add or remove status"
             @change="query = $event.target.value"
-            id="hero-status"
+            id="campaign-log-status"
           />
         </ComboboxButton>
         <button
-          id="hero-status-clear"
+          id="campaign-log-status-clear"
           @click="clearSelection"
           v-if="statusIds.length > 0"
           class="absolute inset-y-0 right-7 flex items-center pr-2"
@@ -78,7 +78,7 @@ watch(statusIds, (newStatusIds) => {
 
       <ComboboxOptions
         class="bg-base-100 -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
-        id="hero-status-options"
+        id="campaign-log-status-options"
       >
         <div v-if="filteredStatuses.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
           Nothing found
@@ -115,7 +115,7 @@ watch(statusIds, (newStatusIds) => {
   </Combobox>
   <template v-if="statusIds.length > 0">
     <p class="text-sm text-gray-500 py-2">Statuses are removed during the camp phase.</p>
-    <ul id="hero-status-display" class="list-disc list-inside">
+    <ul id="campaign-log-status-display" class="list-disc list-inside">
       <template v-for="status in findStatuses(statusIds)" :key="status.id">
         <li>
           {{ status.name }}

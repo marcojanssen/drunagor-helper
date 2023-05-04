@@ -17,6 +17,7 @@ const route = useRoute();
 const campaignId = route.params.id.toString();
 const campaignStore = CampaignStore();
 const campaign = campaignStore.find(campaignId);
+
 const heroStore = HeroStore();
 </script>
 

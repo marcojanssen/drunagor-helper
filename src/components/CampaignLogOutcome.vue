@@ -60,11 +60,11 @@ watch(outcomeIds, (newOutcomeIds) => {
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
             placeholder="Add or remove outcome"
             @change="query = $event.target.value"
-            id="hero-outcome"
+            id="campaign-log-outcome"
           />
         </ComboboxButton>
         <button
-          id="hero-outcome-clear"
+          id="campaign-log-outcome-clear"
           @click="clearSelection"
           v-if="outcomeIds.length > 0"
           class="absolute inset-y-0 right-7 flex items-center pr-2"
@@ -78,7 +78,7 @@ watch(outcomeIds, (newOutcomeIds) => {
 
       <ComboboxOptions
         class="bg-base-100 -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
-        id="hero-outcome-options"
+        id="campaign-log-outcome-options"
       >
         <div v-if="filteredOutcomes.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
           Nothing found.
@@ -118,7 +118,7 @@ watch(outcomeIds, (newOutcomeIds) => {
       Remain in effect for the entire campaign unless some other effect changes them.
     </p>
     <template v-for="outcome in findOutcomes(outcomeIds)" :key="outcome.id">
-      <ul id="hero-outcome-display" class="list-disc list-inside">
+      <ul id="campaign-log-outcome-display" class="list-disc list-inside">
         <li>
           {{ outcome.name }}
           <span class="px-4 block" v-if="outcome.effect">

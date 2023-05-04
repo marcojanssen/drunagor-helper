@@ -53,11 +53,11 @@ watch(auraId, (newAuraId) => {
               placeholder="Select aura"
               @change="query = $event.target.value"
               @blur="query = ''"
-              id="hero-aura"
+              id="campaign-log-aura"
             />
           </ComboboxButton>
           <button
-            id="hero-aura-clear"
+            id="campaign-log-aura-clear"
             @click="clearSelection"
             v-if="auraId"
             class="absolute inset-y-0 right-7 flex items-center pr-2"
@@ -71,7 +71,7 @@ watch(auraId, (newAuraId) => {
 
         <ComboboxOptions
           class="bg-base-100 -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
-          id="hero-aura-options"
+          id="campaign-log-aura-options"
         >
           <div
             v-if="filteredAura.length === 0 && query !== ''"
@@ -113,7 +113,7 @@ watch(auraId, (newAuraId) => {
   </div>
   <template v-if="auraId">
     <p class="text-sm text-gray-500 py-2">Aura is removed when you receive a trauma cube or another aura.</p>
-    <div id="hero-aura-effect" class="w-full rounded-md">
+    <div id="campaign-log-aura-effect" class="w-full rounded-md">
       {{ props.repository.find(auraId)?.effect }}
     </div>
   </template>

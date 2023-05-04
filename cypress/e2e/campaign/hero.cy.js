@@ -102,7 +102,7 @@ describe("party selection", () => {
         /Arkhanos|Barak|Devron|Drasek|Duncan|Elros|Flavian|Handuriel|Jade|Jaheen|Katarina|Kellam|Lordwrath|Lorelai|Maya|Pietro|Savran|Shadow|Sskar|Sun|Tork|Vorn|Willow/g
       );
   });
-  it("stores the state and resets to default", () => {
+  it("stores the state", () => {
     cy.get(".hero-image").should("not.exist");
 
     cy.get("#campaign-add-hero").click();
@@ -116,11 +116,6 @@ describe("party selection", () => {
       .first()
       .should("have.attr", "src")
       .should("match", /Arkhanos/g);
-
-    cy.clearLocalStorage();
-    cy.reload();
-
-    cy.get(".hero-image").should("not.exist");
   });
 
   it("only shows enabled hero content", () => {

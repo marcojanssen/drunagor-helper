@@ -59,11 +59,11 @@ watch(followerIds, (newFollowerIds) => {
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
             placeholder="Add or remove follower"
             @change="query = $event.target.value"
-            id="hero-outcome"
+            id="story-record-follower"
           />
         </ComboboxButton>
         <button
-          id="hero-outcome-clear"
+          id="story-record-follower-clear"
           @click="clearSelection"
           v-if="followerIds.length > 0"
           class="absolute inset-y-0 right-7 flex items-center pr-2"
