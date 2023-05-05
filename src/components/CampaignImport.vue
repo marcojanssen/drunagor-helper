@@ -72,8 +72,12 @@ function closeModal() {
     </template>
     <template #default>
       <div class="py-4">Paste your token here</div>
-      <textarea v-model="token" id="campaign-token" class="w-full h-60 text-black"></textarea>
-      <div class="flex flex-wrap justify-center gap-4">
+      <textarea
+        v-model="token"
+        id="campaign-token"
+        class="w-full h-60 text-black rounded shadow border-transparent focus:border-transparent focus:ring-0"
+      ></textarea>
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
         <button
           id="import-button"
           class="px-2 py-2 bg-emerald-500 text-gray-200 uppercase font-semibold text-sm rounded-lg"
