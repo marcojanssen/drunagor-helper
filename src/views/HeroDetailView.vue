@@ -44,7 +44,7 @@ function onStash() {
     <BaseDividerAlt>Equipment</BaseDividerAlt>
 
     <div class="py-2 w-full">
-      <CampaignHeroItems :campaign-id="campaignId" :hero-id="heroId" @stash="onStash" />
+      <CampaignHeroItems :campaign-id="campaignId" :hero-id="heroId" :hero="hero" @stash="onStash" />
     </div>
 
     <BaseDividerAlt>Stash</BaseDividerAlt>

@@ -3,20 +3,28 @@ import type { WeaponCardData } from "@/data/repository/CardData";
 import { HeroStore } from "@/store/HeroStore";
 import ItemCardSelect from "@/components/ItemCardSelect.vue";
 import type { CardDataRepository } from "@/data/repository/CardDataRepository";
+import type { HeroData } from "@/data/repository/HeroData";
+import { heroCanUse } from "@/data/repository/HeroData";
+import { computed } from "vue";
 
 const heroStore = HeroStore();
 
 const emit = defineEmits(["stash"]);
 const props = defineProps<{
   heroId: string;
+  heroData: HeroData;
   campaignId: string;
   cardsDataRepository: CardDataRepository;
+  filterProficiencies: boolean;
 }>();
 
 const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
-const weaponCards: WeaponCardData[] = props.cardsDataRepository
-  .findByType("Weapon")
-  .map((card) => card as WeaponCardData);
+const weaponCards = computed(() =>
+  props.cardsDataRepository
+    .findByType("Weapon")
+    .filter((item) => !props.filterProficiencies || heroCanUse(props.heroData, item))
+    .map((item) => item as WeaponCardData)
+);
 
 let selectedId = hero.equipment.weaponId;
 
