@@ -4,6 +4,9 @@ import { CampaignStore } from "@/store/CampaignStore";
 import { HeroStore } from "@/store/HeroStore";
 import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
+import { useToast } from "vue-toastification";
+
+const toast = useToast();
 
 const props = defineProps<{
   campaignId: string;
@@ -32,6 +35,7 @@ function openModal() {
 
 function copyToClipboard() {
   navigator.clipboard.writeText(token.value);
+  toast.success("Token has been copied to clipboard.");
 }
 
 function closeModal() {
