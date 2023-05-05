@@ -3,21 +3,29 @@ import type { ArmorCardData } from "@/data/repository/CardData";
 import { HeroStore } from "@/store/HeroStore";
 import ItemCardSelect from "@/components/ItemCardSelect.vue";
 import type { CardDataRepository } from "@/data/repository/CardDataRepository";
+import type { HeroData } from "@/data/repository/HeroData";
+import { heroCanUse } from "@/data/repository/HeroData";
+import { computed } from "vue";
 
 const heroStore = HeroStore();
 
 const emit = defineEmits(["stash"]);
 const props = defineProps<{
   heroId: string;
+  heroData: HeroData;
   campaignId: string;
   cardsDataRepository: CardDataRepository;
+  filterProficiencies: boolean;
 }>();
 
 const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
 const armorId = hero.equipment.armorId ?? "";
-const offHandCards: ArmorCardData[] = props.cardsDataRepository
-  .findByType("Armor")
-  .map((card) => card as ArmorCardData);
+const offHandCards = computed(() =>
+  props.cardsDataRepository
+    .findByType("Armor")
+    .filter((item) => !props.filterProficiencies || heroCanUse(props.heroData, item))
+    .map((card) => card as ArmorCardData)
+);
 
 function subTypeList(item: ArmorCardData) {
   if (typeof item.armorTypes === "undefined") {
