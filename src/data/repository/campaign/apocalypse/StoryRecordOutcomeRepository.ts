@@ -17,13 +17,7 @@ export class StoryRecordOutcomeRepository implements OutcomeRepository {
     { id: "impostor", name: "Impostor", effect: "" },
     { id: "insured-trip", name: "Insured Trip", effect: "" },
     { id: "late-guests", name: "Late Guests", effect: "" },
-    { id: "late-guests", name: "Late Guests", effect: "" },
-    { id: "long-live-", name: "Long Live!", effect: "" },
-    {
-      id: "luccanor-s-redemption",
-      name: "Luccanor's Redemption",
-      effect: "",
-    },
+    { id: "long-live", name: "Long Live!", effect: "" },
     {
       id: "luccanor-s-redemption",
       name: "Luccanor's Redemption",
@@ -46,13 +40,7 @@ export class StoryRecordOutcomeRepository implements OutcomeRepository {
       name: "The Earl of Blackriver",
       effect: "",
     },
-    {
-      id: "the-earl-of-blackriver",
-      name: "The Earl of Blackriver",
-      effect: "",
-    },
     { id: "triumphant", name: "Triumphant", effect: "" },
-    { id: "truthful", name: "Truthful", effect: "" },
     {
       id: "truthful",
       name: "Truthful",

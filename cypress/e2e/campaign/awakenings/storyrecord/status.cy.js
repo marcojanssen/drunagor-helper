@@ -5,9 +5,6 @@ describe("status selection", () => {
     cy.get("#campaign-awakenings").click();
   }),
     it("has multiple statuses available", () => {
-      cy.get("#campaign-add-hero").click();
-      cy.get("div#campaign-add-heroes div").first().click();
-
       cy.get("#story-record-status").click();
 
       cy.get("ul#story-record-status-options li").should("have.length", 25);
@@ -24,9 +21,6 @@ describe("status selection", () => {
         .should("have.text", "Christi's Aid");
     });
   it("can set, remove, stores and reset status", () => {
-    cy.get("#campaign-add-hero").click();
-    cy.get("div#campaign-add-heroes div").first().click();
-
     cy.get("#story-record-status").click();
     cy.get("ul#story-record-status-options li").first().click();
 
@@ -51,9 +45,6 @@ describe("status selection", () => {
     cy.get("#story-record-status-display > li").contains("Acquainted");
   });
   it("can search for an status", () => {
-    cy.get("#campaign-add-hero").click();
-    cy.get("div#campaign-add-heroes div").first().click();
-
     cy.get("#story-record-status").type("Sea Fighter");
     cy.get("ul#story-record-status-options li").first().click();
 
@@ -72,9 +63,6 @@ describe("status selection", () => {
     cy.get("#story-record-status-display > li").contains("Painful Memories");
   });
   it("displays the effect of an status", () => {
-    cy.get("#campaign-add-hero").click();
-    cy.get("div#campaign-add-heroes div").first().click();
-
     cy.get("#story-record-status").type("Suspicious");
     cy.get("ul#story-record-status-options li").first().click();
 

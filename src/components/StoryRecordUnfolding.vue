@@ -2,56 +2,55 @@
 import { ref, computed, watch } from "vue";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
-import type { FollowerRepository } from "@/data/repository/campaign/FollowerRepository";
+import { StoryRecordUnfoldingRepository } from "@/data/repository/campaign/apocalypse/StoryRecordUnfoldingRepository";
 import { CampaignStore } from "@/store/CampaignStore";
-import type { Follower } from "@/data/repository/campaign/Follower";
+import type { Unfolding } from "@/data/repository/campaign/apocalypse/Unfolding";
 
 const props = defineProps<{
   campaignId: string;
-  repository: FollowerRepository;
 }>();
 
 const campaignStore = CampaignStore();
+const repository = new StoryRecordUnfoldingRepository();
+const unfoldings = repository.findAll();
 
-const followers = props.repository.findAll();
+const unfoldingIds = ref([] as string[]);
+unfoldingIds.value = campaignStore.find(props.campaignId).unfoldingIds ?? [];
 
-const followerIds = ref([] as string[]);
-followerIds.value = campaignStore.find(props.campaignId).followerIds ?? [];
-
-let filteredFollowers = computed(() =>
+let filteredUnfoldings = computed(() =>
   query.value === ""
-    ? followers
-    : followers.filter((follower) =>
-        follower.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
+    ? unfoldings
+    : unfoldings.filter((unfolding) =>
+        unfolding.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
       )
 );
 
 let query = ref("");
 
 function clearSelection() {
-  followerIds.value = [];
+  unfoldingIds.value = [];
   query.value = "";
 }
 
-function findFollowers(followerIds: string[]): Follower[] {
-  const followers: Follower[] = [];
+function findUnfoldings(followerIds: string[]): Unfolding[] {
+  const outcomes: Unfolding[] = [];
   followerIds.forEach((followerId) => {
-    let follower = props.repository.find(followerId);
-    if (follower) {
-      followers.push(follower);
+    let outcome = repository.find(followerId);
+    if (outcome) {
+      outcomes.push(outcome);
     }
   });
 
-  return followers;
+  return outcomes;
 }
 
-watch(followerIds, (newFollowerIds) => {
-  campaignStore.find(props.campaignId).followerIds = newFollowerIds;
+watch(unfoldingIds, (newUnfoldingIds) => {
+  campaignStore.find(props.campaignId).unfoldingIds = newUnfoldingIds;
 });
 </script>
 
 <template>
-  <Combobox v-model="followerIds" multiple>
+  <Combobox v-model="unfoldingIds" multiple>
     <div class="relative mt-1">
       <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
         <ComboboxButton as="div" class="flex">
@@ -59,13 +58,13 @@ watch(followerIds, (newFollowerIds) => {
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
             placeholder="Add or remove follower"
             @change="query = $event.target.value"
-            id="story-record-follower"
+            id="story-record-unfolding"
           />
         </ComboboxButton>
         <button
-          id="story-record-follower-clear"
+          id="story-record-unfolding-clear"
           @click="clearSelection"
-          v-if="followerIds.length > 0"
+          v-if="unfoldingIds.length > 0"
           class="absolute inset-y-0 right-7 flex items-center pr-2"
         >
           <XMarkIcon class="h-5 w-5 text-white" />
@@ -77,17 +76,17 @@ watch(followerIds, (newFollowerIds) => {
 
       <ComboboxOptions
         class="bg-base-100 -top-2 transform -translate-y-full absolute mt-1 max-h-60 w-full overflow-auto rounded-md py-1"
-        id="story-record-follower-options"
+        id="story-record-unfolding-options"
       >
-        <div v-if="filteredFollowers.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
+        <div v-if="filteredUnfoldings.length === 0" class="relative cursor-default select-none py-2 px-4 text-white">
           Nothing found.
         </div>
 
         <ComboboxOption
-          v-for="follower in filteredFollowers"
+          v-for="unfolding in filteredUnfoldings"
           as="template"
-          :key="follower.id"
-          :value="follower.id"
+          :key="unfolding.id"
+          :value="unfolding.id"
           v-slot="{ selected, active }"
         >
           <li
@@ -98,7 +97,7 @@ watch(followerIds, (newFollowerIds) => {
             }"
           >
             <span class="block truncate">
-              {{ follower.name }}
+              {{ unfolding.name }}
             </span>
             <span
               v-if="selected"
@@ -112,11 +111,11 @@ watch(followerIds, (newFollowerIds) => {
       </ComboboxOptions>
     </div>
   </Combobox>
-  <template v-if="followerIds.length > 0">
-    <template v-for="follower in findFollowers(followerIds)" :key="follower.id">
-      <ul id="story-record-follower-display" class="list-disc list-inside">
+  <template v-if="unfoldingIds.length > 0">
+    <template v-for="unfolding in findUnfoldings(unfoldingIds)" :key="unfolding.id">
+      <ul id="story-record-unfolding-display" class="list-disc list-inside">
         <li>
-          {{ follower.name }}
+          {{ unfolding.name }}
         </li>
       </ul>
     </template>

@@ -5,9 +5,6 @@ describe("outcome selection", () => {
     cy.get("#campaign-awakenings").click();
   }),
     it("has multiple outcomes available", () => {
-      cy.get("#campaign-add-hero").click();
-      cy.get("div#campaign-add-heroes div").first().click();
-
       cy.get("#story-record-outcome").click();
 
       cy.get("ul#story-record-outcome-options li").should("have.length", 16);
@@ -24,9 +21,6 @@ describe("outcome selection", () => {
         .should("have.text", "Entangled");
     });
   it("can set, remove, stores and reset outcome", () => {
-    cy.get("#campaign-add-hero").click();
-    cy.get("div#campaign-add-heroes div").first().click();
-
     cy.get("#story-record-outcome").click();
     cy.get("ul#story-record-outcome-options li").first().click();
 
@@ -51,9 +45,6 @@ describe("outcome selection", () => {
     cy.get("#story-record-outcome-display > li").contains("Counting Kittens");
   });
   it("can search for an outcome", () => {
-    cy.get("#campaign-add-hero").click();
-    cy.get("div#campaign-add-heroes div").first().click();
-
     cy.get("#story-record-outcome").type("Promised Reward");
     cy.get("ul#story-record-outcome-options li").first().click();
 

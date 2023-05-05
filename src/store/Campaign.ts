@@ -5,6 +5,7 @@ export class Campaign {
   public statusIds: string[] = [];
   public outcomeIds: string[] = [];
   public followerIds: string[] = [];
+  public unfoldingIds: string[] = [];
 
   constructor(campaignId: string, campaign: "core" | "apocalypse" | "awakenings") {
     this.campaignId = campaignId;
