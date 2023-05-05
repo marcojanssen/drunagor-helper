@@ -16,12 +16,12 @@ const heroStore = HeroStore();
 </script>
 
 <template>
-  <BaseDivider :alt="false">Campaign</BaseDivider>
+  <BaseDivider>Campaign</BaseDivider>
   <BaseButtonMenu>
     <CampaignRemove :campaign-id="campaignId" />
     <CampaignExport :campaign-id="campaignId" />
   </BaseButtonMenu>
-  <BaseDivider :alt="false">Heroes</BaseDivider>
+  <BaseDivider>Heroes</BaseDivider>
   <BaseButtonMenu>
     <CampaignAddHero :campaign-id="campaignId" />
     <CampaignRemoveHero :campaign-id="campaignId" />
