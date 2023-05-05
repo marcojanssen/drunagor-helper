@@ -9,6 +9,9 @@ import { Campaign } from "@/store/Campaign";
 import type { Hero } from "@/store/Hero";
 import { customAlphabet } from "nanoid";
 import { HeroEquipment } from "@/store/Hero";
+import { useToast } from "vue-toastification";
+
+const toast = useToast();
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
@@ -19,23 +22,27 @@ const nanoid = customAlphabet("1234567890", 5);
 const token = ref("");
 
 function importCampaign() {
-  const data = JSON.parse(atob(token.value));
+  try {
+    const data = JSON.parse(atob(token.value));
+    const campaignId = nanoid();
+    campaignStore.add(new Campaign(campaignId, data.campaign));
 
-  const campaignId = nanoid();
-  campaignStore.add(new Campaign(campaignId, data.campaign));
+    const heroes = data.heroes as Hero[];
+    heroes.forEach((h) => {
+      h.campaignId = campaignId;
 
-  const heroes = data.heroes as Hero[];
-  heroes.forEach((h) => {
-    h.campaignId = campaignId;
+      if (typeof h.equipment === "undefined") {
+        h.equipment = new HeroEquipment();
+      }
 
-    if (typeof h.equipment === "undefined") {
-      h.equipment = new HeroEquipment();
-    }
-
-    heroStore.add(h);
-  });
-  closeModal();
-  router.push("/campaign/" + campaignId);
+      heroStore.add(h);
+    });
+    closeModal();
+    router.push({ name: "Campaign", params: { id: campaignId } });
+  } catch (e) {
+    toast.error("Invalid token.");
+    return;
+  }
 }
 
 function openModal() {
@@ -72,8 +79,12 @@ function closeModal() {
     </template>
     <template #default>
       <div class="py-4">Paste your token here</div>
-      <textarea v-model="token" id="campaign-token" class="w-full h-60 text-black"></textarea>
-      <div class="flex flex-wrap justify-center gap-4">
+      <textarea
+        v-model="token"
+        id="campaign-token"
+        class="w-full h-60 text-black rounded shadow border-transparent focus:border-transparent focus:ring-0"
+      ></textarea>
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
         <button
           id="import-button"
           class="px-2 py-2 bg-emerald-500 text-gray-200 uppercase font-semibold text-sm rounded-lg"

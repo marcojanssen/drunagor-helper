@@ -4,6 +4,9 @@ import { CampaignStore } from "@/store/CampaignStore";
 import { HeroStore } from "@/store/HeroStore";
 import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
+import { useToast } from "vue-toastification";
+
+const toast = useToast();
 
 const props = defineProps<{
   campaignId: string;
@@ -28,6 +31,11 @@ function openModal() {
   token.value = btoa(JSON.stringify(data));
 
   isOpen.value = true;
+}
+
+function copyToClipboard() {
+  navigator.clipboard.writeText(token.value);
+  toast.success("Token has been copied to clipboard.");
 }
 
 function closeModal() {
@@ -60,8 +68,19 @@ function closeModal() {
     </template>
     <template #default>
       <div class="py-4">Copy this token to import your campaign on another device</div>
-      <textarea v-model="token" id="campaign-token" class="w-full h-60 text-black"></textarea>
-      <div class="flex flex-wrap justify-center gap-4">
+      <textarea
+        v-model="token"
+        id="campaign-token"
+        class="w-full h-60 text-black rounded shadow border-transparent focus:border-transparent focus:ring-0"
+      ></textarea>
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
+        <button
+          id="campaign-token-copy-to-clipboard"
+          class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
+          @click="copyToClipboard"
+        >
+          Copy to clipboard
+        </button>
         <button
           id="close-modal"
           class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"

@@ -3,11 +3,11 @@ import type { HeroData } from "@/data/repository/HeroData";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import { useRoute } from "vue-router";
 import { ChevronLeftIcon } from "@heroicons/vue/20/solid";
-import BaseDivider from "@/components/BaseDivider.vue";
 import CampaignHeroItems from "@/components/CampaignHeroItems.vue";
 import CampaignHeroStash from "@/components/CampaignHeroStash.vue";
 import CampaignHeroSkills from "@/components/CampaignHeroSkills.vue";
 import { ref } from "vue";
+import BaseDividerAlt from "@/components/BaseDividerAlt.vue";
 
 const route = useRoute();
 const heroDataRepository = new HeroDataRepository();
@@ -41,19 +41,19 @@ function onStash() {
       </div>
     </div>
 
-    <BaseDivider :alt="true">Equipment</BaseDivider>
+    <BaseDividerAlt>Equipment</BaseDividerAlt>
 
     <div class="py-2 w-full">
       <CampaignHeroItems :campaign-id="campaignId" :hero-id="heroId" @stash="onStash" />
     </div>
 
-    <BaseDivider :alt="true">Stash</BaseDivider>
+    <BaseDividerAlt>Stash</BaseDividerAlt>
 
     <div class="hero-stash-wrapper py-2 w-full">
       <CampaignHeroStash :campaign-id="campaignId" :hero-id="heroId" :key="stash" />
     </div>
 
-    <BaseDivider :alt="true">Skills</BaseDivider>
+    <BaseDividerAlt>Skills</BaseDividerAlt>
 
     <div class="py-2 w-full">
       <CampaignHeroSkills :campaign-id="campaignId" :hero-id="heroId"></CampaignHeroSkills>

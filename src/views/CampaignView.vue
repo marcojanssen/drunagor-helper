@@ -23,7 +23,7 @@ const heroStore = HeroStore();
 </script>
 
 <template>
-  <BaseDivider :alt="false">Campaign</BaseDivider>
+  <BaseDivider>Campaign</BaseDivider>
   <BaseButtonMenu>
     <CampaignRemove :campaign-id="campaignId" />
     <CampaignExport :campaign-id="campaignId" />
@@ -33,7 +33,7 @@ const heroStore = HeroStore();
     <CampaignName :campaign-id="campaignId" />
   </div>
   <template v-if="campaign.campaign == 'awakenings' || campaign.campaign == 'apocalypse'">
-    <BaseDivider :alt="false">Story record</BaseDivider>
+    <BaseDivider>Story record</BaseDivider>
     <div class="bg-neutral form-control drop-shadow rounded-lg">
       <StoryRecord :campaign-id="campaignId" />
     </div>
