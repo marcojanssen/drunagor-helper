@@ -9,6 +9,9 @@ import { Campaign } from "@/store/Campaign";
 import type { Hero } from "@/store/Hero";
 import { customAlphabet } from "nanoid";
 import { HeroEquipment } from "@/store/Hero";
+import { useToast } from "vue-toastification";
+
+const toast = useToast();
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
@@ -19,23 +22,27 @@ const nanoid = customAlphabet("1234567890", 5);
 const token = ref("");
 
 function importCampaign() {
-  const data = JSON.parse(atob(token.value));
+  try {
+    const data = JSON.parse(atob(token.value));
+    const campaignId = nanoid();
+    campaignStore.add(new Campaign(campaignId, data.campaign));
 
-  const campaignId = nanoid();
-  campaignStore.add(new Campaign(campaignId, data.campaign));
+    const heroes = data.heroes as Hero[];
+    heroes.forEach((h) => {
+      h.campaignId = campaignId;
 
-  const heroes = data.heroes as Hero[];
-  heroes.forEach((h) => {
-    h.campaignId = campaignId;
+      if (typeof h.equipment === "undefined") {
+        h.equipment = new HeroEquipment();
+      }
 
-    if (typeof h.equipment === "undefined") {
-      h.equipment = new HeroEquipment();
-    }
-
-    heroStore.add(h);
-  });
-  closeModal();
-  router.push("/campaign/" + campaignId);
+      heroStore.add(h);
+    });
+    closeModal();
+    router.push({ name: "Campaign", params: { id: campaignId } });
+  } catch (e) {
+    toast.error("Invalid token.");
+    return;
+  }
 }
 
 function openModal() {
