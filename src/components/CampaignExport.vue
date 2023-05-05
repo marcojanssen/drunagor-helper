@@ -30,6 +30,10 @@ function openModal() {
   isOpen.value = true;
 }
 
+function copyToClipboard() {
+  navigator.clipboard.writeText(token.value);
+}
+
 function closeModal() {
   isOpen.value = false;
 }
@@ -60,8 +64,19 @@ function closeModal() {
     </template>
     <template #default>
       <div class="py-4">Copy this token to import your campaign on another device</div>
-      <textarea v-model="token" id="campaign-token" class="w-full h-60 text-black"></textarea>
-      <div class="flex flex-wrap justify-center gap-4">
+      <textarea
+        v-model="token"
+        id="campaign-token"
+        class="w-full h-60 text-black rounded shadow border-transparent focus:border-transparent focus:ring-0"
+      ></textarea>
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
+        <button
+          id="campaign-token-copy-to-clipboard"
+          class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
+          @click="copyToClipboard"
+        >
+          Copy to clipboard
+        </button>
         <button
           id="close-modal"
           class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
