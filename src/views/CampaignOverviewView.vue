@@ -47,7 +47,7 @@ function findHeroes(campaignId: string): HeroData[] {
 </script>
 
 <template>
-  <BaseDivider :alt="false">Campaigns</BaseDivider>
+  <BaseDivider>Campaigns</BaseDivider>
   <BaseButtonMenu>
     <CampaignNew />
     <CampaignImport />
