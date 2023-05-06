@@ -11,59 +11,71 @@ describe("weapon selection", () => {
     it("has multiple weapons available", () => {
       cy.get(".hero-weapon-wrapper .hero-item").click();
 
-      cy.get(".hero-weapon-wrapper li").should("have.length", 42);
+      cy.get(".hero-weapon-wrapper li").should("have.length", 13);
       cy.get(".hero-weapon-wrapper li")
         .first()
-        .should("have.text", "Amiran Crossbow Ranged")
+        .should("have.text", "Dreampiercer Bow Implement | Ranged")
         .next()
-        .should("have.text", "Amiran Halberd Heavy | Light")
+        .should("have.text", "Enchanted Crossbow (Cosmic Gem) Ranged | Implement")
         .next()
-        .should("have.text", "Amiran Royal Maul Light")
+        .should("have.text", "Enchanted Crossbow (Socketed) Ranged | Implement")
         .next()
-        .should("have.text", "Battle Maul Light")
+        .should("have.text", "Runecarved Blade Light | Implement")
         .next()
-        .should("have.text", "Blacksteel Blade Heavy");
+        .should("have.text", "Staff Of The Arcana Implement");
     });
   it("can set and remove weapon", () => {
     cy.get(".hero-weapon-wrapper .hero-item").click();
     cy.get(".hero-weapon-wrapper li").first().click();
-    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Amiran Crossbow");
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Dreampiercer Bow");
 
     cy.get(".hero-weapon-wrapper .hero-item").click();
     cy.get(".hero-weapon-wrapper li").first().next().click();
-    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Amiran Halberd");
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Enchanted Crossbow (Cosmic Gem)");
 
     cy.reload();
 
-    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Amiran Halberd");
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Enchanted Crossbow (Cosmic Gem)");
+
+    cy.get("#filter-proficiencies").uncheck();
+
+    cy.get(".hero-weapon-wrapper .hero-item").click();
+    cy.get(".hero-weapon-wrapper li").first().click();
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Amiran Crossbow");
+
+    cy.get("#filter-proficiencies").check();
+
+    cy.get(".hero-weapon-wrapper .hero-item").click();
+    cy.get(".hero-weapon-wrapper li").first().click();
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Dreampiercer Bow");
 
     cy.go("back");
     cy.clearLocalStorage();
     cy.get(".hero-image").should("not.exist");
   });
   it("can search for a weapon", () => {
-    cy.get(".hero-weapon-wrapper .hero-item").type("Orcish Reaper");
+    cy.get(".hero-weapon-wrapper .hero-item").type("Runecarved");
     cy.get(".hero-weapon-wrapper li").first().click();
-    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Orcish Reaper Blade");
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Runecarved Blade");
   });
   it("can stash weapon", () => {
     cy.get(".hero-weapon-wrapper .hero-item").click();
     cy.get(".hero-weapon-wrapper li").first().click();
-    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Amiran Crossbow");
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Dreampiercer Bow");
 
     cy.get(".hero-weapon-wrapper .hero-item-stash").click();
     cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "");
-    cy.get("#hero-stash-display > li").contains("Amiran Crossbow");
+    cy.get("#hero-stash-display > li").contains("Dreampiercer Bow");
 
     cy.reload();
 
     cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "");
-    cy.get("#hero-stash-display > li").contains("Amiran Crossbow");
+    cy.get("#hero-stash-display > li").contains("Dreampiercer Bow");
   });
   it("can clear weapon", () => {
     cy.get(".hero-weapon-wrapper .hero-item").click();
     cy.get(".hero-weapon-wrapper li").first().click();
-    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Amiran Crossbow");
+    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "Dreampiercer Bow");
 
     cy.get(".hero-weapon-wrapper .hero-item-clear").click();
     cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "");

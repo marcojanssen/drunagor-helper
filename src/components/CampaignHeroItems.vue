@@ -7,31 +7,48 @@ import CampaignHeroTrinket from "@/components/CampaignHeroTrinket.vue";
 import CampaignHeroBagItem from "@/components/CampaignHeroBagItem.vue";
 import { HeroStore } from "@/store/HeroStore";
 import { HeroEquipment } from "@/store/Hero";
+import type { HeroData } from "@/data/repository/HeroData";
+import { ref } from "vue";
 
 const heroStore = HeroStore();
 const itemCardDataRepository = new CardDataRepository();
 
 const props = defineProps<{
   heroId: string;
+  hero: HeroData;
   campaignId: string;
 }>();
 
-const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
-if (typeof hero.equipment === "undefined") {
-  hero.equipment = new HeroEquipment();
+const filterProficiencies = ref(true);
+
+const campaignHero = heroStore.findInCampaign(props.heroId, props.campaignId);
+if (typeof campaignHero.equipment === "undefined") {
+  campaignHero.equipment = new HeroEquipment();
 }
 </script>
 
 <template>
   <div class="">
-    <div class="pt-2">
+    <label>
+      <input
+        type="checkbox"
+        v-model="filterProficiencies"
+        id="filter-proficiencies"
+        class="w-5 h-5 text-emerald-500 bg-base-100 rounded shadow border-transparent focus:border-transparent focus:ring-0"
+      />
+      Filter by proficiency
+    </label>
+
+    <div class="pt-4">
       <span>Weapon</span>
     </div>
     <div class="hero-weapon-wrapper">
       <CampaignHeroWeapon
         :campaign-id="campaignId"
         :hero-id="heroId"
+        :hero-data="hero"
         :cards-data-repository="itemCardDataRepository"
+        :filter-proficiencies="filterProficiencies"
         @stash="$emit('stash')"
       />
     </div>
@@ -43,7 +60,9 @@ if (typeof hero.equipment === "undefined") {
       <CampaignHeroOffHand
         :campaign-id="campaignId"
         :hero-id="heroId"
+        :hero-data="hero"
         :cards-data-repository="itemCardDataRepository"
+        :filter-proficiencies="filterProficiencies"
         @stash="$emit('stash')"
       >
       </CampaignHeroOffHand>
@@ -56,7 +75,9 @@ if (typeof hero.equipment === "undefined") {
       <CampaignHeroArmor
         :campaign-id="campaignId"
         :hero-id="heroId"
+        :hero-data="hero"
         :cards-data-repository="itemCardDataRepository"
+        :filter-proficiencies="filterProficiencies"
         @stash="$emit('stash')"
       >
       </CampaignHeroArmor>
