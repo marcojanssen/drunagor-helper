@@ -5,44 +5,46 @@ import type { ArmorType } from "@/data/type/ArmorType";
 import type { ConsumableType } from "@/data/type/ConsumableType";
 import type { WeaponType } from "@/data/type/WeaponType";
 import type { OffHandType } from "@/data/type/OffHandType";
+import type { CartRarity } from "@/data/type/CardRarity";
 
-export interface CardData {
+export interface ItemData {
   id: string;
   content: ContentId;
   name: string;
   cardType: CardType;
   cardRank: number | null;
+  cardRarity: CartRarity;
   itemType: ItemType;
 }
 
-export interface ArmorCardData extends CardData {
+export interface ArmorItemData extends ItemData {
   armorTypes: ArmorType[];
 }
 
-export interface ConsumableCardData extends CardData {
+export interface ConsumableItemData extends ItemData {
   consumableType: ConsumableType;
 }
 
-export interface OffHandCardData extends CardData {
+export interface OffHandItemData extends ItemData {
   offHandTypes: OffHandType[];
 }
 
-export interface WeaponCardData extends CardData {
+export interface WeaponItemData extends ItemData {
   weaponTypes: WeaponType[];
 }
 
-export function instanceOfArmorCardData(object: any): object is ArmorCardData {
+export function instanceOfArmorCardData(object: any): object is ArmorItemData {
   return "armorTypes" in object;
 }
 
-export function instanceOfConsumableCardData(object: any): object is ConsumableCardData {
+export function instanceOfConsumableCardData(object: any): object is ConsumableItemData {
   return "consumableType" in object;
 }
 
-export function instanceOfOffHandCardData(object: any): object is OffHandCardData {
+export function instanceOfOffHandCardData(object: any): object is OffHandItemData {
   return "offHandTypes" in object;
 }
 
-export function instanceOfWeaponCardData(object: any): object is WeaponCardData {
+export function instanceOfWeaponCardData(object: any): object is WeaponItemData {
   return "weaponTypes" in object;
 }

@@ -6,4 +6,5 @@ export class MonsterPack1 implements ContentData {
   public readonly title = "Monster Pack 1";
   public readonly heroes = false;
   public readonly monsters = true;
+  public readonly items = false;
 }

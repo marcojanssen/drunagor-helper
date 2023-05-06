@@ -6,4 +6,5 @@ export class TheShadowWorld implements ContentData {
   public readonly title = "The Shadow World";
   public readonly heroes = false;
   public readonly monsters = true;
+  public readonly items = false;
 }
