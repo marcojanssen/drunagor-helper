@@ -6,4 +6,5 @@ export class TheRuinOfLuccanor implements ContentData {
   public readonly title = "The Ruin of Luccanor";
   public readonly heroes = false;
   public readonly monsters = true;
+  public readonly items = false;
 }

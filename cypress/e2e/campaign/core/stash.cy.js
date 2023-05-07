@@ -11,7 +11,7 @@ describe("stash selection", () => {
     it("has multiple items available", () => {
       cy.get(".hero-stash-wrapper #hero-stash").click();
 
-      cy.get("ul#hero-stash-options li").should("have.length", 137);
+      cy.get("ul#hero-stash-options li").should("have.length", 147);
       cy.get("ul#hero-stash-options li")
         .first()
         .should("have.text", "Amiran Crossbow")

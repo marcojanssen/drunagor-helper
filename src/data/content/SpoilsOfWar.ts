@@ -6,4 +6,5 @@ export class SpoilsOfWar implements ContentData {
   public readonly title = "Spoils of War";
   public readonly heroes = true;
   public readonly monsters = true;
+  public readonly items = false;
 }

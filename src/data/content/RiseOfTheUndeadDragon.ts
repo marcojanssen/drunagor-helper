@@ -6,4 +6,5 @@ export class RiseOfTheUndeadDragon implements ContentData {
   public readonly title = "Rise of the Undead Dragon";
   public readonly heroes = true;
   public readonly monsters = true;
+  public readonly items = true;
 }

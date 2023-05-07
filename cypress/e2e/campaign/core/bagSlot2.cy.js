@@ -11,7 +11,7 @@ describe("bag item selection", () => {
     it("has multiple items available", () => {
       cy.get(".hero-bag2-wrapper .hero-item").click();
 
-      cy.get(".hero-bag2-wrapper li").should("have.length", 137);
+      cy.get(".hero-bag2-wrapper li").should("have.length", 147);
       cy.get(".hero-bag2-wrapper li")
         .first()
         .should("have.text", "Amiran Crossbow ")

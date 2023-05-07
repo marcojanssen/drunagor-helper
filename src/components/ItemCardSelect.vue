@@ -2,14 +2,14 @@
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
 import { computed, ref, watch } from "vue";
-import type { CardData } from "@/data/repository/CardData";
-import { CardDataRepository } from "@/data/repository/CardDataRepository";
+import type { ItemData } from "@/data/repository/ItemData";
+import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import type { ItemType } from "@/data/type/ItemType";
 
-const itemCardDataRepository = new CardDataRepository();
+const itemCardDataRepository = new CoreItemDataRepository();
 
 const props = defineProps<{
-  items: CardData[];
+  items: ItemData[];
   itemType: ItemType | null;
   subTypeList: Function;
   value: string;
