@@ -1,3 +1,11 @@
+import { FellAsteris } from "@/data/content/awakenings/monster/FellAsteris";
+import { GorgonHexer } from "@/data/content/awakenings/monster/GorgonHexer";
+import { GorgonessWitch } from "@/data/content/awakenings/monster/GorgonessWitch";
+import { GremlinHorde } from "@/data/content/awakenings/monster/GremlinHorde";
+import { GrimDoctor } from "@/data/content/awakenings/monster/GrimDoctor";
+import { HellspawnBrute } from "@/data/content/awakenings/monster/HellspawnBrute";
+import { NagianHunter } from "@/data/content/awakenings/monster/NagianHunter";
+import { NightStalker } from "@/data/content/awakenings/monster/NightStalker";
 import { Abomination } from "@/data/content/core/monster/Abomination";
 import { Executioner } from "@/data/content/core/monster/Executioner";
 import { RottenFlesh } from "@/data/content/core/monster/RottenFlesh";
@@ -31,7 +39,15 @@ export const MonsterDataStore = defineStore("data-monster", () => {
     new CorruptedWorm(),
     new DeathMessenger(),
     new Executioner(),
+    new FellAsteris(),
+    new GorgonessWitch(),
+    new GorgonHexer(),
+    new GremlinHorde(),
+    new GrimDoctor(),
+    new HellspawnBrute(),
     new LadyClaw(),
+    new NagianHunter(),
+    new NightStalker(),
     new SkeletonArcher(),
     new ShadowCultist(),
     new ShadowVampire(),

@@ -1,3 +1,11 @@
+import { Doctor } from "@/data/content/awakenings/commander/Doctor";
+import { Flinch } from "@/data/content/awakenings/commander/Flinch";
+import { Hexer } from "@/data/content/awakenings/commander/Hexer";
+import { Horde } from "@/data/content/awakenings/commander/Horde";
+import { Hunter } from "@/data/content/awakenings/commander/Hunter";
+import { Ox } from "@/data/content/awakenings/commander/Ox";
+import { Spawn } from "@/data/content/awakenings/commander/Spawn";
+import { Witch } from "@/data/content/awakenings/commander/Witch";
 import { Archon } from "@/data/content/core/commander/Archon";
 import { Bane } from "@/data/content/core/commander/Bane";
 import { FallenSisters } from "@/data/content/fallensisters/overlord/FallenSisters";
@@ -12,7 +20,22 @@ import type { CommanderData } from "./CommanderData";
 export const CommanderDataStore = defineStore("data-commander", () => {
   const configurationStore = ConfigurationStore();
 
-  const commanders = [new Archon(), new Bane(), new DemonLord(), new FallenSisters(), new Thern(), new Twin()];
+  const commanders = [
+    new Archon(),
+    new Bane(),
+    new DemonLord(),
+    new Doctor(),
+    new FallenSisters(),
+    new Flinch(),
+    new Hexer(),
+    new Horde(),
+    new Hunter(),
+    new Ox(),
+    new Spawn(),
+    new Witch(),
+    new Thern(),
+    new Twin(),
+  ];
 
   function find(commanderId: string): CommanderData {
     const commander = _.find(commanders, { id: commanderId });
