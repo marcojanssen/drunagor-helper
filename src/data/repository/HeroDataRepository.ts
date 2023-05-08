@@ -10,8 +10,12 @@ import { Vorn } from "@/data/content/core/hero/Vorn";
 import { Katarina } from "@/data/content/desertofhellscar/hero/Katarina";
 import { Tork } from "@/data/content/desertofhellscar/hero/Tork";
 import { Handuriel } from "@/data/content/handuriel/hero/Handuriel";
+import { Azriel } from "@/data/content/heropack1/hero/Azriel";
+import { Brihitte } from "@/data/content/heropack1/hero/Brihitte";
 import { Diana } from "@/data/content/heropack1/hero/Diana";
 import { Drixx } from "@/data/content/heropack1/hero/Drixx";
+import { Gramosh } from "@/data/content/heropack1/hero/Gramosh";
+import { Mordred } from "@/data/content/heropack1/hero/Mordred";
 import { Sahara } from "@/data/content/heropack1/hero/Sahara";
 import { Siff } from "@/data/content/heropack1/hero/Siff";
 import { Lordwrath } from "@/data/content/lordwrath/hero/Lordwrath";
@@ -38,7 +42,9 @@ export class HeroDataRepository implements DataRepository {
   private heroes = [
     new Andreas(),
     new Arkhanos(),
+    new Azriel(),
     new Barak(),
+    new Brihitte(),
     new Catharina(),
     new Devron(),
     new Diana(),
@@ -47,6 +53,7 @@ export class HeroDataRepository implements DataRepository {
     new Duncan(),
     new Elros(),
     new Flavian(),
+    new Gramosh(),
     new Handuriel(),
     new Jade(),
     new Jaheen(),
@@ -56,6 +63,7 @@ export class HeroDataRepository implements DataRepository {
     new Lorelai(),
     new Lorien(),
     new Maya(),
+    new Mordred(),
     new Nyx(),
     new Pietro(),
     new Sahara(),
