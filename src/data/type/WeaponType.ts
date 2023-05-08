@@ -1,1 +1,1 @@
-export type WeaponType = "Implement" | "Heavy" | "Light" | "Ranged";
+export type WeaponType = "Implement" | "Heavy" | "Light" | "Ranged" | "Claws";

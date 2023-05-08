@@ -1,15 +1,17 @@
 import { defineStore } from "pinia";
 
+import { Awakenings } from "@/data/content/Awakenings";
 import { Core } from "@/data/content/Core";
 import { DesertOfHellscar } from "@/data/content/DesertOfHellscar";
 import { Handuriel } from "@/data/content/Handuriel";
+import { HeroPack1 } from "@/data/content/HeroPack1";
 import { Lordwrath } from "@/data/content/Lordwrath";
 import { MonsterPack1 } from "@/data/content/MonsterPack1";
 import { RiseOfTheUndeadDragon } from "@/data/content/RiseOfTheUndeadDragon";
 import { SpoilsOfWar } from "@/data/content/SpoilsOfWar";
 import { TheRuinOfLuccanor } from "@/data/content/TheRuinOfLuccanor";
 import { TheShadowWorld } from "@/data/content/TheShadowWorld";
-import type { ContentData } from "./ContentData";
+import type { ContentData } from "@/data/store/ContentData";
 
 export const ContentDataStore = defineStore("data-content", () => {
   const content = [
@@ -22,6 +24,8 @@ export const ContentDataStore = defineStore("data-content", () => {
     new RiseOfTheUndeadDragon(),
     new Handuriel(),
     new Lordwrath(),
+    new Awakenings(),
+    new HeroPack1(),
   ];
 
   function getAllWithMonsters() {
