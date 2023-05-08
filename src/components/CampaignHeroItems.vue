@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CardDataRepository } from "@/data/repository/CardDataRepository";
+import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import CampaignHeroWeapon from "@/components/CampaignHeroWeapon.vue";
 import CampaignHeroOffHand from "@/components/CampaignHeroOffHand.vue";
 import CampaignHeroArmor from "@/components/CampaignHeroArmor.vue";
@@ -11,7 +11,7 @@ import type { HeroData } from "@/data/repository/HeroData";
 import { ref } from "vue";
 
 const heroStore = HeroStore();
-const itemCardDataRepository = new CardDataRepository();
+const itemCardDataRepository = new CoreItemDataRepository();
 
 const props = defineProps<{
   heroId: string;

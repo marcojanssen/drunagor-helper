@@ -6,4 +6,5 @@ export class DesertOfHellscar implements ContentData {
   public readonly title = "Desert of Hellscar";
   public readonly heroes = true;
   public readonly monsters = true;
+  public readonly items = true;
 }

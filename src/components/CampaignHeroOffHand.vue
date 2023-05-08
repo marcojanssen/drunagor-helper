@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { OffHandCardData } from "@/data/repository/CardData";
+import type { OffHandItemData } from "@/data/repository/ItemData";
 import { HeroStore } from "@/store/HeroStore";
 import ItemCardSelect from "@/components/ItemCardSelect.vue";
-import type { CardDataRepository } from "@/data/repository/CardDataRepository";
+import type { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import type { HeroData } from "@/data/repository/HeroData";
 import { heroCanUse } from "@/data/repository/HeroData";
 import { computed } from "vue";
@@ -14,7 +14,7 @@ const props = defineProps<{
   heroId: string;
   heroData: HeroData;
   campaignId: string;
-  cardsDataRepository: CardDataRepository;
+  cardsDataRepository: CoreItemDataRepository;
   filterProficiencies: boolean;
 }>();
 
@@ -24,10 +24,10 @@ const offHandCards = computed(() =>
   props.cardsDataRepository
     .findByType("Off Hand")
     .filter((item) => !props.filterProficiencies || heroCanUse(props.heroData, item))
-    .map((card) => card as OffHandCardData)
+    .map((card) => card as OffHandItemData)
 );
 
-function subTypeList(item: OffHandCardData) {
+function subTypeList(item: OffHandItemData) {
   return item.offHandTypes.join(" | ");
 }
 

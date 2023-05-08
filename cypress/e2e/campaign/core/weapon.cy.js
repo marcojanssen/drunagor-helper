@@ -11,7 +11,7 @@ describe("weapon selection", () => {
     it("has multiple weapons available", () => {
       cy.get(".hero-weapon-wrapper .hero-item").click();
 
-      cy.get(".hero-weapon-wrapper li").should("have.length", 13);
+      cy.get(".hero-weapon-wrapper li").should("have.length", 15);
       cy.get(".hero-weapon-wrapper li")
         .first()
         .should("have.text", "Dreampiercer Bow Implement | Ranged")
@@ -22,7 +22,7 @@ describe("weapon selection", () => {
         .next()
         .should("have.text", "Runecarved Blade Light | Implement")
         .next()
-        .should("have.text", "Staff Of The Arcana Implement");
+        .should("have.text", "Staff Of Gravity Implement");
     });
   it("can set and remove weapon", () => {
     cy.get(".hero-weapon-wrapper .hero-item").click();

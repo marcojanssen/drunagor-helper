@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { CardData } from "@/data/repository/CardData";
+import type { ItemData } from "@/data/repository/ItemData";
 import { HeroStore } from "@/store/HeroStore";
 import ItemCardSelect from "@/components/ItemCardSelect.vue";
-import type { CardDataRepository } from "@/data/repository/CardDataRepository";
+import type { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 
 const heroStore = HeroStore();
 
@@ -10,7 +10,7 @@ const emit = defineEmits(["stash"]);
 const props = defineProps<{
   heroId: string;
   campaignId: string;
-  cardsDataRepository: CardDataRepository;
+  cardsDataRepository: CoreItemDataRepository;
   bagSlot: number;
 }>();
 
@@ -19,9 +19,9 @@ const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
 const slotItem = props.bagSlot === 1 ? hero.equipment.bagOneId : hero.equipment.bagTwoId;
 const itemId = slotItem ?? "";
 
-const itemCards: CardData[] = props.cardsDataRepository.findAll();
+const itemCards: ItemData[] = props.cardsDataRepository.findAll();
 
-function subTypeList(item: CardData) {
+function subTypeList(item: ItemData) {
   return "";
 }
 

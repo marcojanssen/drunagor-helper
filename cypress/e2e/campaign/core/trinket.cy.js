@@ -11,7 +11,7 @@ describe("trinket selection", () => {
     it("has multiple trinkets available", () => {
       cy.get(".hero-trinket-wrapper .hero-item").click();
 
-      cy.get(".hero-trinket-wrapper li").should("have.length", 30);
+      cy.get(".hero-trinket-wrapper li").should("have.length", 32);
       cy.get(".hero-trinket-wrapper li")
         .first()
         .should("have.text", "Amulet Of Power ")

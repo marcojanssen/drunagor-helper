@@ -3,11 +3,11 @@ import { ref, computed, watch } from "vue";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
 import { HeroStore } from "@/store/HeroStore";
-import { CardDataRepository } from "@/data/repository/CardDataRepository";
-import type { CardData } from "@/data/repository/CardData";
+import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
+import type { ItemData } from "@/data/repository/ItemData";
 
 const heroStore = HeroStore();
-const cardDataRepository = new CardDataRepository();
+const cardDataRepository = new CoreItemDataRepository();
 
 const props = defineProps<{
   heroId: string;
@@ -37,8 +37,8 @@ function clearSelection() {
   query.value = "";
 }
 
-function findItemCards(stashedItemIds: string[]): CardData[] {
-  const itemCards: CardData[] = [];
+function findItemCards(stashedItemIds: string[]): ItemData[] {
+  const itemCards: ItemData[] = [];
   stashedItemIds.forEach((stashedItemId) => {
     let itemCard = cardDataRepository.find(stashedItemId);
     if (itemCard) {

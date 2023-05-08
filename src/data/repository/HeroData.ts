@@ -1,9 +1,9 @@
-import type { ArmorCardData, CardData, OffHandCardData, WeaponCardData } from "@/data/repository/CardData";
+import type { ArmorItemData, ItemData, OffHandItemData, WeaponItemData } from "@/data/repository/ItemData";
 import {
   instanceOfArmorCardData,
   instanceOfOffHandCardData,
   instanceOfWeaponCardData,
-} from "@/data/repository/CardData";
+} from "@/data/repository/ItemData";
 import type { ArmorType } from "@/data/type/ArmorType";
 import type { ContentId } from "@/data/type/ContentId";
 import type { HeroClass } from "@/data/type/HeroClass";
@@ -29,19 +29,19 @@ export interface HeroData {
   };
 }
 
-export function heroCanUse(hero: HeroData, item: CardData): boolean {
+export function heroCanUse(hero: HeroData, item: ItemData): boolean {
   if (instanceOfArmorCardData(item)) {
-    return (item as ArmorCardData).armorTypes.some((armorType) =>
+    return (item as ArmorItemData).armorTypes.some((armorType) =>
       hero.proficiencies.armor.some((armorProficiency) => armorProficiency === armorType)
     );
   }
   if (instanceOfOffHandCardData(item)) {
-    return (item as OffHandCardData).offHandTypes.some((offHandType) =>
+    return (item as OffHandItemData).offHandTypes.some((offHandType) =>
       hero.proficiencies.offHand.some((offHandProficiency) => offHandProficiency === offHandType)
     );
   }
   if (instanceOfWeaponCardData(item)) {
-    return (item as WeaponCardData).weaponTypes.some((weaponType) =>
+    return (item as WeaponItemData).weaponTypes.some((weaponType) =>
       hero.proficiencies.weapon.some((weaponProficiency) => weaponProficiency === weaponType)
     );
   }
