@@ -56,7 +56,7 @@ watch(unfoldingIds, (newUnfoldingIds) => {
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
-            placeholder="Add or remove follower"
+            placeholder="Add or remove unfolding"
             @change="query = $event.target.value"
             id="story-record-unfolding"
           />
