@@ -2,8 +2,8 @@ describe("content selection", () => {
   beforeEach(() => {
     cy.visit("./configuration");
   }),
-    it("displays all monster content by default", () => {
-      cy.get("#configuration-content-monster label").should("have.length", 7);
+    it("displays all available monster content", () => {
+      cy.get("#configuration-content-monster label").should("have.length", 10);
       cy.get("#configuration-content-monster label")
         .first()
         .should("have.text", "Core")
@@ -43,8 +43,8 @@ describe("content selection", () => {
     cy.get('#configuration-content-monster input[id="core"]').should("be.checked");
   });
 
-  it("displays all hero content by default", () => {
-    cy.get("#configuration-content-hero label").should("have.length", 6);
+  it("displays all available hero content", () => {
+    cy.get("#configuration-content-hero label").should("have.length", 9);
     cy.get("#configuration-content-hero label")
       .first()
       .should("have.text", "Core")
