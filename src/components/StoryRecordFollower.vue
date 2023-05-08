@@ -56,7 +56,7 @@ watch(followerIds, (newFollowerIds) => {
       <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
-            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
+            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 rounded-lg"
             placeholder="Add or remove follower"
             @change="query = $event.target.value"
             id="story-record-follower"
@@ -114,7 +114,7 @@ watch(followerIds, (newFollowerIds) => {
   </Combobox>
   <template v-if="followerIds.length > 0">
     <template v-for="follower in findFollowers(followerIds)" :key="follower.id">
-      <ul id="story-record-follower-display" class="list-disc list-inside">
+      <ul id="story-record-follower-display" class="pt-2 list-disc list-inside">
         <li>
           {{ follower.name }}
         </li>

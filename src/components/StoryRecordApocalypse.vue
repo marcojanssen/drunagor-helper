@@ -34,15 +34,13 @@ const followerRepository = new StoryRecordFollowerRepository();
       <StoryRecordBackgroundAndTrait :campaign-id="props.campaignId" />
     </div>
     <div class="pt-2 w-full">
-      <BaseDividerAlt> Outcomes </BaseDividerAlt>
+      <BaseDividerAlt> </BaseDividerAlt>
       <StoryRecordOutcome :repository="outcomeRepository" :campaign-id="props.campaignId" />
     </div>
     <div class="pt-2 w-full">
-      <BaseDividerAlt> Status </BaseDividerAlt>
       <StoryRecordStatus :repository="statusRepository" :campaign-id="props.campaignId" />
     </div>
     <div class="pt-2 w-full">
-      <BaseDividerAlt> Unfoldings </BaseDividerAlt>
       <StoryRecordUnfolding :campaign-id="props.campaignId" />
     </div>
   </div>

@@ -48,7 +48,7 @@ watch(auraId, (newAuraId) => {
         <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
           <ComboboxButton as="div" class="flex">
             <ComboboxInput
-              class="w-full bg-base-100 py-2 pl-3 pr-20 leading-5 focus:ring-0 border-0"
+              class="w-full bg-base-100 py-2 pl-3 pr-20 leading-5 focus:ring-0 rounded-lg"
               :displayValue="displayValue"
               placeholder="Select aura"
               @change="query = $event.target.value"

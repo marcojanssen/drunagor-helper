@@ -77,11 +77,7 @@ function getRandomCommander() {
     <div class="form-control py-4 w-72">
       <label class="cursor-pointer">
         <span class="text-md pr-4">Exclude current drawn character</span>
-        <input
-          type="checkbox"
-          v-model="excludeCurrentCharacter"
-          class="w-5 h-5 text-emerald-500 bg-neutral rounded shadow border-transparent focus:border-transparent focus:ring-0"
-        />
+        <input type="checkbox" v-model="excludeCurrentCharacter" class="w-5 h-5 text-emerald-500 bg-base-100 rounded" />
       </label>
     </div>
     <div class="grid grid-flow-col auto-cols-max gap-2">

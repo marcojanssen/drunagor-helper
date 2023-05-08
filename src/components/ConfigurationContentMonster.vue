@@ -36,7 +36,7 @@ watch(monsterContentSettings, async (newSettings) => {
         v-model="monsterContentSettings"
         :id="content.id"
         :value="content.id"
-        class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded shadow border-transparent focus:border-transparent focus:ring-0"
+        class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded"
       />
     </label>
   </div>

@@ -57,7 +57,7 @@ watch(outcomeIds, (newOutcomeIds) => {
       <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
-            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
+            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 rounded-lg"
             placeholder="Add or remove outcome"
             @change="query = $event.target.value"
             id="campaign-log-outcome"

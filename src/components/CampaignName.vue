@@ -18,12 +18,7 @@ watch(name, async (newName) => {
 <template>
   <div class="p-4 grid gap-2">
     <span class="w-48">Party name:</span>
-    <input
-      type="text"
-      id="campaign-log-name"
-      v-model="name"
-      class="w-full bg-base-100 focus:ring-0 border-0 rounded-lg"
-    />
+    <input type="text" id="campaign-log-name" v-model="name" class="w-full bg-base-100 focus:ring-0 rounded-lg" />
   </div>
 </template>
 

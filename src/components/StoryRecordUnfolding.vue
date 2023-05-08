@@ -55,7 +55,7 @@ watch(unfoldingIds, (newUnfoldingIds) => {
       <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
-            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 border-0"
+            class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 rounded-lg"
             placeholder="Add or remove unfolding"
             @change="query = $event.target.value"
             id="story-record-unfolding"
@@ -113,7 +113,7 @@ watch(unfoldingIds, (newUnfoldingIds) => {
   </Combobox>
   <template v-if="unfoldingIds.length > 0">
     <template v-for="unfolding in findUnfoldings(unfoldingIds)" :key="unfolding.id">
-      <ul id="story-record-unfolding-display" class="list-disc list-inside">
+      <ul id="story-record-unfolding-display" class="pt-2 list-disc list-inside">
         <li>
           {{ unfolding.name }}
         </li>

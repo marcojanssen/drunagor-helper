@@ -37,7 +37,7 @@ watch(selectedSkills, (newSkills) => {
             v-model="selectedSkills"
             :id="skill.id + '-1'"
             :value="skill.id + '-1'"
-            class="w-5 h-5 text-emerald-500 bg-base-100 rounded shadow border-transparent focus:border-transparent focus:ring-0"
+            class="w-5 h-5 text-emerald-500 bg-base-100 rounded"
           />
           <span class="ml-1">Level 1</span>
         </label>
@@ -49,7 +49,7 @@ watch(selectedSkills, (newSkills) => {
             v-model="selectedSkills"
             :id="skill.id + '-2'"
             :value="skill.id + '-2'"
-            class="w-5 h-5 text-emerald-500 bg-base-100 rounded shadow border-transparent focus:border-transparent focus:ring-0"
+            class="w-5 h-5 text-emerald-500 bg-base-100 rounded"
           />
           <span class="ml-1">Level 2</span>
         </label>
