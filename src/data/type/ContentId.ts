@@ -10,4 +10,5 @@ export type ContentId =
   | "lordwrath"
   | "apocalypse"
   | "awakenings"
-  | "hero-pack-1";
+  | "hero-pack-1"
+  | "lorien";

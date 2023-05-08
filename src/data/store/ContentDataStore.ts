@@ -6,6 +6,7 @@ import { DesertOfHellscar } from "@/data/content/DesertOfHellscar";
 import { Handuriel } from "@/data/content/Handuriel";
 import { HeroPack1 } from "@/data/content/HeroPack1";
 import { Lordwrath } from "@/data/content/Lordwrath";
+import { Lorien } from "@/data/content/Lorien";
 import { MonsterPack1 } from "@/data/content/MonsterPack1";
 import { RiseOfTheUndeadDragon } from "@/data/content/RiseOfTheUndeadDragon";
 import { SpoilsOfWar } from "@/data/content/SpoilsOfWar";
@@ -26,6 +27,7 @@ export const ContentDataStore = defineStore("data-content", () => {
     new Lordwrath(),
     new Awakenings(),
     new HeroPack1(),
+    new Lorien(),
   ];
 
   function getAllWithMonsters() {

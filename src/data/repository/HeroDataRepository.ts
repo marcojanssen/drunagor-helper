@@ -15,6 +15,7 @@ import { Drixx } from "@/data/content/heropack1/hero/Drixx";
 import { Sahara } from "@/data/content/heropack1/hero/Sahara";
 import { Siff } from "@/data/content/heropack1/hero/Siff";
 import { Lordwrath } from "@/data/content/lordwrath/hero/Lordwrath";
+import { Lorien } from "@/data/content/lorien/hero/Lorien";
 import { Drasek } from "@/data/content/riseoftheundeaddragon/hero/Drasek";
 import { Jade } from "@/data/content/riseoftheundeaddragon/hero/Jade";
 import { Arkhanos } from "@/data/content/spoilsofwar/hero/Arkhanos";
@@ -53,6 +54,7 @@ export class HeroDataRepository implements DataRepository {
     new Kellam(),
     new Lordwrath(),
     new Lorelai(),
+    new Lorien(),
     new Maya(),
     new Nyx(),
     new Pietro(),
