@@ -56,7 +56,7 @@ function getRandomCommander() {
   currentCharacterId.value = commander.id;
   name.value = commander.name;
   variant.value = "Commander";
-  if (commander.id === "demon-lord") {
+  if (commander.id === "demon-lord" || commander.id === "fallen-sisters") {
     variant.value = "Overlord";
   }
 
