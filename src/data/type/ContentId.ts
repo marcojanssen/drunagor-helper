@@ -11,4 +11,5 @@ export type ContentId =
   | "apocalypse"
   | "awakenings"
   | "hero-pack-1"
-  | "lorien";
+  | "lorien"
+  | "fallen-sisters";
