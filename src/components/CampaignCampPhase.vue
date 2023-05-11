@@ -4,12 +4,12 @@ import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { CampaignStore } from "@/store/CampaignStore";
 import { HeroStore } from "@/store/HeroStore";
-import { useRouter } from "vue-router";
+
+const emit = defineEmits(["campPhase"]);
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
-const router = useRouter();
 
 function openModal() {
   isOpen.value = true;
@@ -23,18 +23,23 @@ const props = defineProps<{
 }>();
 
 function campPhase() {
-  campaignStore.find(props.campaignId).statusIds = [];
+  const campaign = campaignStore.find(props.campaignId);
+  campaign.statusIds = [];
+  campaign.isSequentialAdventure = false;
+  campaign.sequentialAdventureRunes = 0;
+
   heroStore.findAllInCampaign(props.campaignId).forEach((hero) => {
     hero.statusIds = [];
+    hero.sequentialAdventureState = null;
   });
   closeModal();
-  router.go(0);
+  emit("campPhase");
 }
 </script>
 
 <template>
   <button
-    id="campaign-remove"
+    id="camp-phase"
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
@@ -56,10 +61,12 @@ function campPhase() {
       </div>
     </template>
     <template #default>
-      <div class="py-4">This will reset all statuses from this campaign. Are you sure?</div>
+      <div class="py-4">
+        This will reset all statuses and sequential adventure states from this campaign. Are you sure?
+      </div>
       <div class="flex flex-wrap justify-center gap-4">
         <button
-          id="close-modal"
+          id="confirm-camp-phase"
           class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
           @click="campPhase"
         >

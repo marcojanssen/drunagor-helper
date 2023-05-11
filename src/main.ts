@@ -11,6 +11,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import HeroDetailView from "@/views/HeroDetailView.vue";
+import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
 
 const pinia = createPinia();
 
@@ -24,6 +25,11 @@ const routes = [
   { path: "/party", redirect: "/campaign" },
   { path: "/campaign/:id", name: "Campaign", component: CampaignView },
   { path: "/campaign/:campaignId/hero/:heroId", name: "Hero", component: HeroDetailView },
+  {
+    path: "/campaign/:campaignId/hero/:heroId/sequential-state",
+    name: "HeroSequentialState",
+    component: CampaignHeroSequentialAdventure,
+  },
   { path: "/campaign", name: "Campaign Overview", component: CampaignOverviewView },
   { path: "/keyword", name: "Keyword", component: KeywordView },
 ];
