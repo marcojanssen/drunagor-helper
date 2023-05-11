@@ -18,6 +18,8 @@ export class Campaign {
     doom: 0,
     heroism: 0,
   };
+  public isSequentialAdventure: boolean = false;
+  public sequentialAdventureRunes: number = 0;
 
   constructor(campaignId: string, campaign: "core" | "apocalypse" | "awakenings") {
     this.campaignId = campaignId;

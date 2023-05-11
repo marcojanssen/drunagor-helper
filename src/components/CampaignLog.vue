@@ -5,10 +5,12 @@ import { CampaignStore } from "@/store/CampaignStore";
 import CampaignLogCore from "./CampaignLogCore.vue";
 import CampaignLogAwakenings from "./CampaignLogAwakenings.vue";
 import CampaignLogApocalypse from "./CampaignLogApocalypse.vue";
+import CampaignLogSequentialAdventure from "@/components/CampaignLogSequentialAdventure.vue";
 
 const props = defineProps<{
   heroId: string;
   campaignId: string;
+  isSequentialAdventure: boolean;
 }>();
 
 const heroDataRepository = new HeroDataRepository();
@@ -30,6 +32,7 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
         <p>Path of {{ hero.path }}</p>
       </div>
     </div>
+    <CampaignLogSequentialAdventure v-if="isSequentialAdventure" :hero="hero" :campaign-id="campaignId" />
     <CampaignLogCore v-if="campaign.campaign == 'core'" :campaign-id="props.campaignId" :hero-id="props.heroId" />
     <CampaignLogAwakenings
       v-if="campaign.campaign == 'awakenings'"
