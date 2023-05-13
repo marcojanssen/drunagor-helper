@@ -23,7 +23,7 @@ function closeModal() {
   isOpen.value = false;
 }
 
-function newCampaign(campaign: "core") {
+function newCampaign(campaign: "core" | "apocalypse" | "awakenings") {
   let campaignId = nanoid();
   campaignStore.add(new Campaign(campaignId, campaign));
   closeModal();
@@ -58,9 +58,7 @@ function newCampaign(campaign: "core") {
       <div class="grid place-items-center gap-2">
         <img id="campaign-core" class="cursor-pointer" :src="CoreLogo.toString()" @click="newCampaign('core')" />
         <img id="campaign-apocalypse" class="grayscale" :src="ApocalypseLogo.toString()" />
-        <p>(coming soon)</p>
         <img id="campaign-awakenings" class="grayscale" :src="AwakeningsLogo.toString()" />
-        <p>(coming soon)</p>
       </div>
     </template>
   </BaseModal>

@@ -57,7 +57,7 @@ watch(selectedId, (newSelectedId) => {
           <div class="relative w-full cursor-default overflow-hidden rounded-lg text-left">
             <ComboboxButton as="div" class="flex">
               <ComboboxInput
-                class="hero-item w-full bg-base-100 py-2 pl-3 pr-20 leading-5 focus:ring-0 border-0"
+                class="hero-item w-full bg-base-100 py-2 pl-3 pr-20 leading-5 focus:ring-0 rounded-lg"
                 :displayValue="displayValue"
                 :placeholder="placeholder"
                 @change="query = $event.target.value"

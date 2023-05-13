@@ -1,3 +1,7 @@
+import { Andreas } from "@/data/content/awakenings/hero/Andreas";
+import { Catharina } from "@/data/content/awakenings/hero/Catharina";
+import { Nyx } from "@/data/content/awakenings/hero/Nyx";
+import { Vacren } from "@/data/content/awakenings/hero/Vacren";
 import { Elros } from "@/data/content/core/hero/Elros";
 import { Jaheen } from "@/data/content/core/hero/Jaheen";
 import { Lorelai } from "@/data/content/core/hero/Lorelai";
@@ -6,7 +10,16 @@ import { Vorn } from "@/data/content/core/hero/Vorn";
 import { Katarina } from "@/data/content/desertofhellscar/hero/Katarina";
 import { Tork } from "@/data/content/desertofhellscar/hero/Tork";
 import { Handuriel } from "@/data/content/handuriel/hero/Handuriel";
+import { Azriel } from "@/data/content/heropack1/hero/Azriel";
+import { Brihitte } from "@/data/content/heropack1/hero/Brihitte";
+import { Diana } from "@/data/content/heropack1/hero/Diana";
+import { Drixx } from "@/data/content/heropack1/hero/Drixx";
+import { Gramosh } from "@/data/content/heropack1/hero/Gramosh";
+import { Mordred } from "@/data/content/heropack1/hero/Mordred";
+import { Sahara } from "@/data/content/heropack1/hero/Sahara";
+import { Siff } from "@/data/content/heropack1/hero/Siff";
 import { Lordwrath } from "@/data/content/lordwrath/hero/Lordwrath";
+import { Lorien } from "@/data/content/lorien/hero/Lorien";
 import { Drasek } from "@/data/content/riseoftheundeaddragon/hero/Drasek";
 import { Jade } from "@/data/content/riseoftheundeaddragon/hero/Jade";
 import { Arkhanos } from "@/data/content/spoilsofwar/hero/Arkhanos";
@@ -27,13 +40,20 @@ import type { DataRepository } from "./DataRepository";
 
 export class HeroDataRepository implements DataRepository {
   private heroes = [
+    new Andreas(),
     new Arkhanos(),
+    new Azriel(),
     new Barak(),
+    new Brihitte(),
+    new Catharina(),
     new Devron(),
+    new Diana(),
     new Drasek(),
+    new Drixx(),
     new Duncan(),
     new Elros(),
     new Flavian(),
+    new Gramosh(),
     new Handuriel(),
     new Jade(),
     new Jaheen(),
@@ -41,13 +61,19 @@ export class HeroDataRepository implements DataRepository {
     new Kellam(),
     new Lordwrath(),
     new Lorelai(),
+    new Lorien(),
     new Maya(),
+    new Mordred(),
+    new Nyx(),
     new Pietro(),
+    new Sahara(),
     new Savran(),
     new Shadow(),
+    new Siff(),
     new Sskar(),
     new Sun(),
     new Tork(),
+    new Vacren(),
     new Vorn(),
     new Willow(),
   ];

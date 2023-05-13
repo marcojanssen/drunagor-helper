@@ -1,11 +1,11 @@
-describe("export campaign", () => {
+describe("import campaign", () => {
   beforeEach(() => {
     cy.visit("./campaign");
   }),
     it("can import campaign", () => {
       cy.get("#campaign-import").click();
       cy.get("#campaign-import-modal #campaign-token").type(
-        "eyJjYW1wYWlnbiI6eyJjYW1wYWlnbklkIjoiNzQ5MjUiLCJuYW1lIjoiIiwiY2FtcGFpZ24iOiJjb3JlIn0sImhlcm9lcyI6W3siaGVyb0lkIjoiYXJraGFub3MiLCJjYW1wYWlnbklkIjoiNzQ5MjUiLCJlcXVpcG1lbnQiOnsid2VhcG9uSWQiOiJhbWlyYW4tY3Jvc3Nib3ciLCJvZmZIYW5kSWQiOiIiLCJhcm1vcklkIjoiYnJlYXN0cGxhdGUiLCJ0cmlua2V0SWQiOiIiLCJiYWdPbmVJZCI6IiIsImJhZ1R3b0lkIjoiIn0sInN0YXNoZWRDYXJkSWRzIjpbXSwic2tpbGxJZHMiOltdLCJhdXJhSWQiOm51bGwsIm91dGNvbWVJZHMiOltdLCJzdGF0dXNJZHMiOltdfV19"
+        "eyJjYW1wYWlnbiI6ImNvcmUiLCJoZXJvZXMiOlt7Imhlcm9JZCI6ImFya2hhbm9zIiwiY2FtcGFpZ25JZCI6IiIsImVxdWlwbWVudCI6eyJ3ZWFwb25JZCI6ImFtaXJhbi1jcm9zc2JvdyIsIm9mZkhhbmRJZCI6IiIsImFybW9ySWQiOiJicmVhc3RwbGF0ZSIsInRyaW5rZXRJZCI6IiIsImJhZ09uZUlkIjoiIiwiYmFnVHdvSWQiOiIifSwic3Rhc2hlZENhcmRJZHMiOltdLCJza2lsbElkcyI6W10sImF1cmFJZCI6bnVsbCwib3V0Y29tZUlkcyI6W10sInN0YXR1c0lkcyI6W119XX0="
       );
       cy.get("#campaign-import-modal #import-button").click();
 

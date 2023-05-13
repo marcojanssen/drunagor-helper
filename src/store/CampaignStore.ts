@@ -39,6 +39,11 @@ export const CampaignStore = defineStore("campaign", () => {
     });
   }
 
+  function rename(campaignId: string, newName: string) {
+    const campaign = find(campaignId);
+    campaign.name = newName;
+  }
+
   return {
     campaigns,
     has,
@@ -46,5 +51,6 @@ export const CampaignStore = defineStore("campaign", () => {
     findAll,
     add,
     remove,
+    rename,
   };
 });

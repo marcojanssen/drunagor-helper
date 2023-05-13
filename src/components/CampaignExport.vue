@@ -22,6 +22,7 @@ function openModal() {
   const heroes = heroStore.findAllInCampaign(props.campaignId);
   const data = {
     campaign: campaign.campaign,
+    name: campaign.name,
     heroes: heroes.map((h) => {
       const clone = JSON.parse(JSON.stringify(h));
       clone.campaignId = "";

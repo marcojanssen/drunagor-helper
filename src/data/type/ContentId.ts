@@ -7,4 +7,9 @@ export type ContentId =
   | "the-ruin-of-luccanor"
   | "the-shadow-world"
   | "handuriel"
-  | "lordwrath";
+  | "lordwrath"
+  | "apocalypse"
+  | "awakenings"
+  | "hero-pack-1"
+  | "lorien"
+  | "fallen-sisters";

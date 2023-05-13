@@ -1,3 +1,16 @@
+import { DreamTitan } from "@/data/content/apocalypse/monster/DreamTitan";
+import { FacelessConjurer } from "@/data/content/apocalypse/monster/FacelessConjurer";
+import { HellishFlayer } from "@/data/content/apocalypse/monster/HellishFlayer";
+import { ShadowWitch } from "@/data/content/apocalypse/monster/ShadowWitch";
+import { SkeletonKnight } from "@/data/content/apocalypse/monster/SkeletonKnight";
+import { FellAsteris } from "@/data/content/awakenings/monster/FellAsteris";
+import { GorgonHexer } from "@/data/content/awakenings/monster/GorgonHexer";
+import { GorgonessWitch } from "@/data/content/awakenings/monster/GorgonessWitch";
+import { GremlinHorde } from "@/data/content/awakenings/monster/GremlinHorde";
+import { GrimDoctor } from "@/data/content/awakenings/monster/GrimDoctor";
+import { HellspawnBrute } from "@/data/content/awakenings/monster/HellspawnBrute";
+import { NagianHunter } from "@/data/content/awakenings/monster/NagianHunter";
+import { NightStalker } from "@/data/content/awakenings/monster/NightStalker";
 import { Abomination } from "@/data/content/core/monster/Abomination";
 import { Executioner } from "@/data/content/core/monster/Executioner";
 import { RottenFlesh } from "@/data/content/core/monster/RottenFlesh";
@@ -30,18 +43,31 @@ export const MonsterDataStore = defineStore("data-monster", () => {
     new CorruptedFarmer(),
     new CorruptedWorm(),
     new DeathMessenger(),
+    new DreamTitan(),
     new Executioner(),
+    new FacelessConjurer(),
+    new FellAsteris(),
+    new GorgonessWitch(),
+    new GorgonHexer(),
+    new GremlinHorde(),
+    new GrimDoctor(),
+    new HellishFlayer(),
+    new HellspawnBrute(),
     new LadyClaw(),
+    new NagianHunter(),
+    new NightStalker(),
     new SkeletonArcher(),
     new ShadowCultist(),
     new ShadowVampire(),
     new Ravager(),
     new RottenFlesh(),
     new ScoutOfDarkness(),
+    new SkeletonKnight(),
     new ShadowGuardian(),
     new ShadowKnight(),
     new ShadowMistress(),
     new ShadowPain(),
+    new ShadowWitch(),
     new WalkingHorror(),
   ];
 

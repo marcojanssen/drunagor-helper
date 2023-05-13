@@ -34,7 +34,7 @@ if (typeof campaignHero.equipment === "undefined") {
         type="checkbox"
         v-model="filterProficiencies"
         id="filter-proficiencies"
-        class="w-5 h-5 text-emerald-500 bg-base-100 rounded shadow border-transparent focus:border-transparent focus:ring-0"
+        class="w-5 h-5 text-emerald-500 bg-base-100 rounded"
       />
       Filter by proficiency
     </label>

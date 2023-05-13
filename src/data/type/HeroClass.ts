@@ -10,4 +10,8 @@ export type HeroClass =
   | "Cleric"
   | "Barbarian"
   | "Druid"
-  | "Monk";
+  | "Monk"
+  | "Swordmage"
+  | "Warlord"
+  | "Necromancer"
+  | "Shaman";
