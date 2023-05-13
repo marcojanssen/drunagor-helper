@@ -25,7 +25,9 @@ function importCampaign() {
   try {
     const data = JSON.parse(atob(token.value));
     const campaignId = nanoid();
-    campaignStore.add(new Campaign(campaignId, data.campaign));
+    let campaign = new Campaign(campaignId, data.campaign);
+    campaign.name = data.name ?? "";
+    campaignStore.add(campaign);
 
     const heroes = data.heroes as Hero[];
     heroes.forEach((h) => {
