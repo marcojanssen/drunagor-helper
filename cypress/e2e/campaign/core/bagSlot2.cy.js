@@ -14,28 +14,29 @@ describe("bag item selection", () => {
       cy.get(".hero-bag2-wrapper li").should("have.length", 147);
       cy.get(".hero-bag2-wrapper li")
         .first()
-        .should("have.text", "Amiran Crossbow ")
+        .first()
+        .should("have.text", "Cosmic Gemstone (Chest) ")
         .next()
-        .should("have.text", "Amiran Halberd ")
+        .should("have.text", "Potion Of Fortitude ")
         .next()
-        .should("have.text", "Amiran Royal Maul ")
+        .should("have.text", "Potion Of Healing ")
         .next()
-        .should("have.text", "Amulet Of Power ")
+        .should("have.text", "Potion Of Preparation ")
         .next()
-        .should("have.text", "Amulet Of Rewinding ");
+        .should("have.text", "Scroll Of Displacement ");
     });
   it("can set and remove bag item", () => {
     cy.get(".hero-bag2-wrapper .hero-item").click();
     cy.get(".hero-bag2-wrapper li").first().click();
-    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Amiran Crossbow");
+    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Cosmic Gemstone (Chest)");
 
     cy.get(".hero-bag2-wrapper .hero-item").click();
     cy.get(".hero-bag2-wrapper li").first().next().click();
-    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Amiran Halberd");
+    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Potion Of Fortitude");
 
     cy.reload();
 
-    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Amiran Halberd");
+    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Potion Of Fortitude");
 
     cy.go("back");
     cy.clearLocalStorage();
@@ -49,21 +50,21 @@ describe("bag item selection", () => {
   it("can stash item", () => {
     cy.get(".hero-bag2-wrapper .hero-item").click();
     cy.get(".hero-bag2-wrapper li").first().click();
-    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Amiran Crossbow");
+    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Cosmic Gemstone (Chest)");
 
     cy.get(".hero-bag2-wrapper .hero-item-stash").click();
     cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "");
-    cy.get("#hero-stash-display > li").contains("Amiran Crossbow");
+    cy.get("#hero-stash-display > li").contains("Cosmic Gemstone (Chest)");
 
     cy.reload();
 
     cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "");
-    cy.get("#hero-stash-display > li").contains("Amiran Crossbow");
+    cy.get("#hero-stash-display > li").contains("Cosmic Gemstone (Chest)");
   });
   it("can clear item", () => {
     cy.get(".hero-bag2-wrapper .hero-item").click();
     cy.get(".hero-bag2-wrapper li").first().click();
-    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Amiran Crossbow");
+    cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "Cosmic Gemstone (Chest)");
 
     cy.get(".hero-bag2-wrapper .hero-item-clear").click();
     cy.get(".hero-bag2-wrapper .hero-item").should("have.value", "");

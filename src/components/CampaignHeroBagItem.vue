@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { ItemData } from "@/data/repository/ItemData";
 import { HeroStore } from "@/store/HeroStore";
-import ItemCardSelect from "@/components/ItemCardSelect.vue";
 import type { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
+import ItemCardSelectCategorized from "@/components/ItemCardSelectCategorized.vue";
 
 const heroStore = HeroStore();
 
@@ -20,6 +20,10 @@ const slotItem = props.bagSlot === 1 ? hero.equipment.bagOneId : hero.equipment.
 const itemId = slotItem ?? "";
 
 const itemCards: ItemData[] = props.cardsDataRepository.findAll();
+const itemCardCategories = [
+  { name: "Treasure Deck", items: itemCards.filter((item) => item.cardType === "Chest") },
+  { name: "Misc", items: itemCards.filter((item) => item.cardType !== "Chest") },
+];
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function subTypeList(item: ItemData) {
@@ -58,15 +62,15 @@ function onStash() {
 </script>
 
 <template>
-  <ItemCardSelect
+  <ItemCardSelectCategorized
     @clear="onClear"
-    :items="itemCards"
+    :categories="itemCardCategories"
     :item-type="null"
     :sub-type-list="subTypeList"
     :value="itemId"
     @selected="onSelect"
     @stash="onStash"
-  ></ItemCardSelect>
+  ></ItemCardSelectCategorized>
 </template>
 
 <style scoped></style>

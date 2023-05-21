@@ -3,11 +3,13 @@ import type { ConsumableType } from "@/data/type/ConsumableType";
 import type { ItemType } from "@/data/type/ItemType";
 import type { OffHandType } from "@/data/type/OffHandType";
 import type { WeaponType } from "@/data/type/WeaponType";
+import type { CardType } from "@/data/type/CardType";
 
 export interface ItemData {
   id: string;
   name: string;
   itemType: ItemType;
+  cardType: CardType;
 }
 
 export interface ArmorItemData extends ItemData {
