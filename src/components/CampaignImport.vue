@@ -25,8 +25,20 @@ function importCampaign() {
   try {
     const data = JSON.parse(atob(token.value));
     const campaignId = nanoid();
-    let campaign = new Campaign(campaignId, data.campaign);
-    campaign.name = data.name ?? "";
+
+    let campaign: Campaign;
+    if ("campaign" in data || "name" in data) {
+      // This means that it's a legacy token
+      campaign = new Campaign(campaignId, data.campaign);
+      campaign.name = data.name ?? "";
+    } else if ("campaignData" in data) {
+      campaign = data.campaignData;
+      campaign.campaignId = campaignId;
+    } else {
+      toast.error("Invalid token.");
+      return;
+    }
+
     campaignStore.add(campaign);
 
     const heroes = data.heroes as Hero[];
@@ -35,6 +47,10 @@ function importCampaign() {
 
       if (typeof h.equipment === "undefined") {
         h.equipment = new HeroEquipment();
+      }
+
+      if (typeof h.sequentialAdventureState === "undefined") {
+        h.sequentialAdventureState = null;
       }
 
       heroStore.add(h);

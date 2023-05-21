@@ -18,11 +18,13 @@ const heroStore = HeroStore();
 const token = ref("");
 
 function openModal() {
-  const campaign = campaignStore.find(props.campaignId);
+  const campaignCopy = JSON.parse(JSON.stringify(campaignStore.find(props.campaignId)));
+  campaignCopy.campaignId = "";
+
   const heroes = heroStore.findAllInCampaign(props.campaignId);
+
   const data = {
-    campaign: campaign.campaign,
-    name: campaign.name,
+    campaignData: campaignCopy,
     heroes: heroes.map((h) => {
       const clone = JSON.parse(JSON.stringify(h));
       clone.campaignId = "";
