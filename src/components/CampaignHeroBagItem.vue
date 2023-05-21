@@ -21,6 +21,7 @@ const itemId = slotItem ?? "";
 
 const itemCards: ItemData[] = props.cardsDataRepository.findAll();
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function subTypeList(item: ItemData) {
   return "";
 }

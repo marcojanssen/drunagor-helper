@@ -17,6 +17,7 @@ const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
 const trinketId = hero.equipment.trinketId ?? "";
 const offHandCards: ItemData[] = props.cardsDataRepository.findByType("Trinket");
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function subTypeList(item: ItemData) {
   return "";
 }
