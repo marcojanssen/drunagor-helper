@@ -1,19 +1,12 @@
-import type { ContentId } from "@/data/type/ContentId";
-import type { CardType } from "@/data/type/CardType";
-import type { ItemType } from "@/data/type/ItemType";
 import type { ArmorType } from "@/data/type/ArmorType";
 import type { ConsumableType } from "@/data/type/ConsumableType";
-import type { WeaponType } from "@/data/type/WeaponType";
+import type { ItemType } from "@/data/type/ItemType";
 import type { OffHandType } from "@/data/type/OffHandType";
-import type { CartRarity } from "@/data/type/CardRarity";
+import type { WeaponType } from "@/data/type/WeaponType";
 
 export interface ItemData {
   id: string;
-  content: ContentId;
   name: string;
-  cardType: CardType;
-  cardRank: number | null;
-  cardRarity: CartRarity;
   itemType: ItemType;
 }
 
