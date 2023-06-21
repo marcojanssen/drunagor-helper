@@ -30,7 +30,7 @@ const followerRepository = new StoryRecordFollowerRepository();
       <StoryRecordLegacyTrail :campaign-id="props.campaignId" />
     </div>
     <div class="pt-2 w-full">
-      <BaseDividerAlt> Background and Traits </BaseDividerAlt>
+      <BaseDividerAlt> Background & Traits </BaseDividerAlt>
       <StoryRecordBackgroundAndTrait :campaign-id="props.campaignId" />
     </div>
     <div class="pt-2 w-full">
