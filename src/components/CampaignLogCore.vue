@@ -32,7 +32,7 @@ const outcomeRepository = new CampaignLogOutcomeRepository();
       class="hero-detail-btn"
     >
       <button class="w-full px-2 py-2 bg-emerald-700 text-gray-200 uppercase font-semibold text-sm rounded-lg">
-        Equipment / Skills / Abilities
+        Equipment & Skills
       </button>
     </router-link>
   </div>

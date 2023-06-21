@@ -9,6 +9,11 @@ import { RiseOfTheUndeadDragon } from "@/data/content/RiseOfTheUndeadDragon";
 import { SpoilsOfWar } from "@/data/content/SpoilsOfWar";
 import { TheRuinOfLuccanor } from "@/data/content/TheRuinOfLuccanor";
 import { TheShadowWorld } from "@/data/content/TheShadowWorld";
+import { Apocalypse } from "@/data/content/Apocalypse";
+import { Awakenings } from "@/data/content/Awakenings";
+import { HeroPack1 } from "@/data/content/HeroPack1";
+import { FallenSisters } from "@/data/content/FallenSisters";
+import { Lorien } from "@/data/content/Lorien";
 import type { ContentData } from "@/data/store/ContentData";
 
 export const ContentDataStore = defineStore("data-content", () => {
@@ -22,11 +27,11 @@ export const ContentDataStore = defineStore("data-content", () => {
     new RiseOfTheUndeadDragon(),
     new Handuriel(),
     new Lordwrath(),
-    // new Apocalypse(),
-    // new Awakenings(),
-    // new HeroPack1(),
-    // new FallenSisters(),
-    // new Lorien(),
+    new Apocalypse(),
+    new Awakenings(),
+    new HeroPack1(),
+    new FallenSisters(),
+    new Lorien(),
   ];
 
   function getAllWithMonsters() {

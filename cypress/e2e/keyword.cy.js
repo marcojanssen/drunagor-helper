@@ -6,15 +6,21 @@ describe("aura selection", () => {
       cy.get("#keyword-list div").should("have.length.above", 100);
       cy.get("#keyword-list div")
         .first()
+        .should("have.text", "+X HP")
+        .next()
+        .should("have.text", "+X HP (SIMPLE)")
+        .next()
         .should("have.text", "+X or -X DMG")
         .next()
         .should("have.text", "+X or -X HIT")
+        .next()
+        .should("have.text", "+X TO HIT")
         .next()
         .should("have.text", "+X MOVEMENT")
         .next()
         .should("have.text", "ACTION CUBES (AC)")
         .next()
-        .should("have.text", "ADJ OR ADJACENT");
+        .should("have.text", "ACTIVATE");
     });
   it("can search for a keyword", () => {
     cy.get("#keyword-search input").type("Status");

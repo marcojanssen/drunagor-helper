@@ -3,7 +3,7 @@ describe("content selection", () => {
     cy.visit("./configuration");
   }),
     it("displays all monster content by default", () => {
-      cy.get("#configuration-content-monster label").should("have.length", 7);
+      cy.get("#configuration-content-monster label").should("have.length", 10);
       cy.get("#configuration-content-monster label")
         .first()
         .should("have.text", "Core")
@@ -44,7 +44,7 @@ describe("content selection", () => {
   });
 
   it("displays all hero content by default", () => {
-    cy.get("#configuration-content-hero label").should("have.length", 6);
+    cy.get("#configuration-content-hero label").should("have.length", 9);
     cy.get("#configuration-content-hero label")
       .first()
       .should("have.text", "Core")
