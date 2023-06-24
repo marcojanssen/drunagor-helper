@@ -60,7 +60,7 @@ function onSequentialAdventure() {
   </div>
   <template v-if="campaign.campaign == 'awakenings' || campaign.campaign == 'apocalypse'">
     <BaseDivider>Story record</BaseDivider>
-    <div class="bg-neutral form-control drop-shadow rounded-lg">
+    <div class="bg-neutral form-control drop-shadow rounded-lg" :key="update">
       <StoryRecord :campaign-id="campaignId" />
     </div>
   </template>
