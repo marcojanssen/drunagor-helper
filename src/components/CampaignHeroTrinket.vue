@@ -2,7 +2,7 @@
 import type { ItemData } from "@/data/repository/ItemData";
 import { HeroStore } from "@/store/HeroStore";
 import ItemCardSelect from "@/components/ItemCardSelect.vue";
-import type { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
+import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 
 const heroStore = HeroStore();
 
@@ -10,12 +10,12 @@ const emit = defineEmits(["stash"]);
 const props = defineProps<{
   heroId: string;
   campaignId: string;
-  cardsDataRepository: CoreItemDataRepository;
+  cardsDataRepository: ItemDataRepository;
 }>();
 
 const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
 const trinketId = hero.equipment.trinketId ?? "";
-const offHandCards: ItemData[] = props.cardsDataRepository.findByType("Trinket");
+const offHandCards: ItemData[] = props.cardsDataRepository.findByType("Trinket", null);
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function subTypeList(item: ItemData) {
@@ -47,6 +47,7 @@ function onStash() {
     :value="trinketId"
     @selected="onSelect"
     @stash="onStash"
+    :repository="cardsDataRepository"
   ></ItemCardSelect>
 </template>
 

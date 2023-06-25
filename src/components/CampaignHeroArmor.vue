@@ -2,10 +2,10 @@
 import type { ArmorItemData } from "@/data/repository/ItemData";
 import { HeroStore } from "@/store/HeroStore";
 import ItemCardSelect from "@/components/ItemCardSelect.vue";
-import type { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import type { HeroData } from "@/data/repository/HeroData";
 import { heroCanUse } from "@/data/repository/HeroData";
 import { computed } from "vue";
+import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 
 const heroStore = HeroStore();
 
@@ -14,7 +14,7 @@ const props = defineProps<{
   heroId: string;
   heroData: HeroData;
   campaignId: string;
-  cardsDataRepository: CoreItemDataRepository;
+  cardsDataRepository: ItemDataRepository;
   filterProficiencies: boolean;
 }>();
 
@@ -22,7 +22,7 @@ const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
 const armorId = hero.equipment.armorId ?? "";
 const offHandCards = computed(() =>
   props.cardsDataRepository
-    .findByType("Armor")
+    .findByType("Armor", null)
     .filter((item) => !props.filterProficiencies || heroCanUse(props.heroData, item))
     .map((card) => card as ArmorItemData)
 );
@@ -59,6 +59,7 @@ function onStash() {
     :value="armorId"
     @selected="onSelect"
     @stash="onStash"
+    :repository="cardsDataRepository"
   ></ItemCardSelect>
 </template>
 

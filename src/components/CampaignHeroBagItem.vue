@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { ItemData } from "@/data/repository/ItemData";
 import { HeroStore } from "@/store/HeroStore";
-import type { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import ItemCardSelectCategorized from "@/components/ItemCardSelectCategorized.vue";
+import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 
 const heroStore = HeroStore();
 
@@ -10,7 +10,7 @@ const emit = defineEmits(["stash"]);
 const props = defineProps<{
   heroId: string;
   campaignId: string;
-  cardsDataRepository: CoreItemDataRepository;
+  cardsDataRepository: ItemDataRepository;
   bagSlot: number;
 }>();
 
@@ -70,6 +70,7 @@ function onStash() {
     :value="itemId"
     @selected="onSelect"
     @stash="onStash"
+    :repository="cardsDataRepository"
   ></ItemCardSelectCategorized>
 </template>
 

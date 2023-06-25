@@ -57,8 +57,18 @@ function newCampaign(campaign: "core" | "apocalypse" | "awakenings") {
     <template #default>
       <div class="grid place-items-center gap-2">
         <img id="campaign-core" class="cursor-pointer" :src="CoreLogo.toString()" @click="newCampaign('core')" />
-        <img id="campaign-apocalypse" class="cursor-pointer" :src="ApocalypseLogo.toString()" @click="newCampaign('apocalypse')" />
-        <img id="campaign-awakenings" class="cursor-pointer" :src="AwakeningsLogo.toString()" @click="newCampaign('awakenings')" />
+        <img
+          id="campaign-apocalypse"
+          class="cursor-pointer"
+          :src="ApocalypseLogo.toString()"
+          @click="newCampaign('apocalypse')"
+        />
+        <img
+          id="campaign-awakenings"
+          class="cursor-pointer"
+          :src="AwakeningsLogo.toString()"
+          @click="newCampaign('awakenings')"
+        />
       </div>
     </template>
   </BaseModal>

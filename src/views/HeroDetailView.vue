@@ -8,12 +8,27 @@ import CampaignHeroStash from "@/components/CampaignHeroStash.vue";
 import CampaignHeroSkills from "@/components/CampaignHeroSkills.vue";
 import { ref } from "vue";
 import BaseDividerAlt from "@/components/BaseDividerAlt.vue";
+import { CampaignStore } from "@/store/CampaignStore";
+import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
+import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
+import { ApocalypseItemDataRepository } from "@/data/repository/campaign/apocalypse/ApocalypseItemDataRepository";
 
 const route = useRoute();
 const heroDataRepository = new HeroDataRepository();
 
 const heroId = route.params.heroId.toString();
 const campaignId = route.params.campaignId.toString();
+const campaignStore = CampaignStore();
+const campaign = campaignStore.find(campaignId);
+let repository: ItemDataRepository;
+
+if (campaign.campaign === "core") {
+  repository = new CoreItemDataRepository();
+} else if (campaign.campaign === "apocalypse") {
+  repository = new ApocalypseItemDataRepository();
+} else {
+  throw new Error("Unknown campaign");
+}
 
 const hero = heroDataRepository.find(heroId) ?? ({} as HeroData);
 
@@ -44,13 +59,19 @@ function onStash() {
     <BaseDividerAlt>Equipment</BaseDividerAlt>
 
     <div class="py-2 w-full">
-      <CampaignHeroItems :campaign-id="campaignId" :hero-id="heroId" :hero="hero" @stash="onStash" />
+      <CampaignHeroItems
+        :campaign-id="campaignId"
+        :hero-id="heroId"
+        :repository="repository"
+        :hero="hero"
+        @stash="onStash"
+      />
     </div>
 
     <BaseDividerAlt>Stash</BaseDividerAlt>
 
     <div class="hero-stash-wrapper py-2 w-full">
-      <CampaignHeroStash :campaign-id="campaignId" :hero-id="heroId" :key="stash" />
+      <CampaignHeroStash :campaign-id="campaignId" :repository="repository" :hero-id="heroId" :key="stash" />
     </div>
 
     <BaseDividerAlt>Skills</BaseDividerAlt>

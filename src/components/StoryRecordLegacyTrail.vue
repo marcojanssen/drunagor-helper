@@ -126,10 +126,34 @@ watch(heroism, async (newHeroism) => {
     <div class="flex flex-row">
       <span class="w-1/2 lg:w-3/4">Heroism</span>
       <div class="w-1/2 lg:w-1/4 grid grid-cols-4 place-items-end">
-        <input type="radio" v-model="heroism" name="heroism" value="0" class="text-emerald-500 bg-base-100 focus:ring-0" />
-        <input type="radio" v-model="heroism" name="heroism" value="1" class="text-emerald-500 bg-base-100 focus:ring-0" />
-        <input type="radio" v-model="heroism" name="heroism" value="2" class="text-emerald-500 bg-base-100 focus:ring-0" />
-        <input type="radio" v-model="heroism" name="heroism" value="3" class="text-emerald-500 bg-base-100 focus:ring-0" />
+        <input
+          type="radio"
+          v-model="heroism"
+          name="heroism"
+          value="0"
+          class="text-emerald-500 bg-base-100 focus:ring-0"
+        />
+        <input
+          type="radio"
+          v-model="heroism"
+          name="heroism"
+          value="1"
+          class="text-emerald-500 bg-base-100 focus:ring-0"
+        />
+        <input
+          type="radio"
+          v-model="heroism"
+          name="heroism"
+          value="2"
+          class="text-emerald-500 bg-base-100 focus:ring-0"
+        />
+        <input
+          type="radio"
+          v-model="heroism"
+          name="heroism"
+          value="3"
+          class="text-emerald-500 bg-base-100 focus:ring-0"
+        />
       </div>
     </div>
   </div>
