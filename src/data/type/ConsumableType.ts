@@ -1,1 +1,1 @@
-export type ConsumableType = "Gem" | "Pattern" | "Potion" | "Scroll";
+export type ConsumableType = "Gem" | "Pattern" | "Potion" | "Scroll" | "Tools" | "Treasure";

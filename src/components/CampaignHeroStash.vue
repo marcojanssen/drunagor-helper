@@ -3,17 +3,17 @@ import { ref, computed, watch } from "vue";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
 import { HeroStore } from "@/store/HeroStore";
-import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import type { ItemData } from "@/data/repository/ItemData";
+import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 
 const heroStore = HeroStore();
-const cardDataRepository = new CoreItemDataRepository();
 
 const props = defineProps<{
   heroId: string;
   campaignId: string;
+  repository: ItemDataRepository;
 }>();
-const itemCardIds = cardDataRepository.findAll();
+const itemCardIds = props.repository.findAll();
 
 const stashedItemIds = ref([] as string[]);
 const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
@@ -40,7 +40,7 @@ function clearSelection() {
 function findItemCards(stashedItemIds: string[]): ItemData[] {
   const itemCards: ItemData[] = [];
   stashedItemIds.forEach((stashedItemId) => {
-    let itemCard = cardDataRepository.find(stashedItemId);
+    let itemCard = props.repository.find(stashedItemId);
     if (itemCard) {
       itemCards.push(itemCard);
     }

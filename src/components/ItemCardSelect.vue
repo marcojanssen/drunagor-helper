@@ -3,16 +3,15 @@ import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOption
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
 import { computed, ref, watch } from "vue";
 import type { ItemData } from "@/data/repository/ItemData";
-import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import type { ItemType } from "@/data/type/ItemType";
-
-const itemCardDataRepository = new CoreItemDataRepository();
+import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 
 const props = defineProps<{
   items: ItemData[];
   itemType: ItemType | null;
   subTypeList: Function;
   value: string;
+  repository: ItemDataRepository;
 }>();
 const emit = defineEmits(["clear", "selected", "stash"]);
 
@@ -35,7 +34,7 @@ function clearSelection() {
 }
 
 function displayValue(id: unknown) {
-  return itemCardDataRepository.find(id as string)?.name ?? "";
+  return props.repository.find(id as string)?.name ?? "";
 }
 
 function onStash() {
