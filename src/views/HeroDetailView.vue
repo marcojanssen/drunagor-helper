@@ -12,6 +12,7 @@ import { CampaignStore } from "@/store/CampaignStore";
 import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 import { ApocalypseItemDataRepository } from "@/data/repository/campaign/apocalypse/ApocalypseItemDataRepository";
+import { AwakeningsItemDataRepository } from "@/data/repository/campaign/awakenings/AwakeningsItemDataRepository";
 
 const route = useRoute();
 const heroDataRepository = new HeroDataRepository();
@@ -26,6 +27,8 @@ if (campaign.campaign === "core") {
   repository = new CoreItemDataRepository();
 } else if (campaign.campaign === "apocalypse") {
   repository = new ApocalypseItemDataRepository();
+} else if (campaign.campaign === "awakenings") {
+  repository = new AwakeningsItemDataRepository();
 } else {
   throw new Error("Unknown campaign");
 }
