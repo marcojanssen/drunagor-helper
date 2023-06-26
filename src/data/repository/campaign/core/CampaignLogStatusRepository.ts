@@ -127,6 +127,11 @@ export class CampaignLogStatusRepository implements StatusRepository {
       effect: "",
     },
     {
+      id: "curse",
+      name: "Curse",
+      effect: "",
+    },
+    {
       id: "cursebreaker",
       name: "Curse breaker",
       effect: "",
@@ -219,6 +224,11 @@ export class CampaignLogStatusRepository implements StatusRepository {
         "As a Minor Action, you may: SELF, Remove a Trauma Cube to either make the next Weapon Attack (a single attack, not the entire Cube Action) or Spell Attack they make that turn deal double damage.",
     },
     {
+      id: "key",
+      name: "Key",
+      effect: "",
+    },
+    {
       id: "key-shard",
       name: "Keyshard",
       effect: "",
@@ -261,6 +271,11 @@ export class CampaignLogStatusRepository implements StatusRepository {
       name: "Practical",
       effect:
         "Whenever any Hero would receive an Attack that would drop their HP to 0 or less, as a Reaction that Hero may make an Agility (green) Skill Challenge of Difficulty 15. Each Agility cube they have gives them a +2 bonus to their roll. If they succeed, they JUMP 2 and PREVENT ALL DMG they would take.",
+    },
+    {
+      id: "protection-of-the-citadel",
+      name: "Protection of the Citadel",
+      effect: "",
     },
     {
       id: "proud",
