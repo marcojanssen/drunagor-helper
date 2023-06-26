@@ -10,7 +10,7 @@ describe("status selection", () => {
 
       cy.get("#campaign-log-status").click();
 
-      cy.get("ul#campaign-log-status-options li").should("have.length", 66);
+      cy.get("ul#campaign-log-status-options li").should("have.length", 69);
       cy.get("ul#campaign-log-status-options li")
         .first()
         .should("have.text", "A cooperative approach")
