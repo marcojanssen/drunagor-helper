@@ -10,6 +10,7 @@ import { useToast } from "vue-toastification";
 import SwappableImage from "@/components/SwappableImage.vue";
 import RandomizerTitle from "@/assets/Randomizer.webp";
 import backgroundImage from "@/assets/monster/big/Background.webp";
+import RandomizerQuickSelect from "@/components/RandomizerQuickSelect.vue";
 
 const toast = useToast();
 
@@ -67,6 +68,7 @@ function getRandomCommander() {
 
 <template>
   <div class="grid grid-cols-1 gap-4 place-items-center">
+    <RandomizerQuickSelect />
     <SwappableImage
       :title="name"
       :sub-title="variant"
@@ -77,7 +79,12 @@ function getRandomCommander() {
     <div class="form-control py-4 w-72">
       <label class="cursor-pointer">
         <span class="text-md pr-4">Exclude current drawn character</span>
-        <input type="checkbox" v-model="excludeCurrentCharacter" class="w-5 h-5 text-emerald-500 bg-base-100 rounded" />
+        <input
+          type="checkbox"
+          id="randomizer-exclude-current-character"
+          v-model="excludeCurrentCharacter"
+          class="w-5 h-5 text-emerald-500 bg-base-100 rounded"
+        />
       </label>
     </div>
     <div class="grid grid-flow-col auto-cols-max gap-2">
