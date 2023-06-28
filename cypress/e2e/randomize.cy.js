@@ -162,4 +162,18 @@ describe("randomize a monster", () => {
       .should("have.attr", "src")
       .should("match", /ShadowCultist|SkeletonArcher/g);
   });
+
+  it("allows settings quickly and are in sync", () => {
+    cy.get("#randomizer-quick-select").click();
+    cy.get('#configuration-content-monster input[id="the-ruin-of-luccanor"]').check();
+    cy.get('#configuration-content-monster input[id="core"]').uncheck();
+    cy.get('#configuration-variant input[id="alternate"]').check();
+    cy.get('#configuration-variant input[id="standard"]').uncheck();
+
+    cy.visit("./configuration");
+    cy.get('#configuration-content-monster input[id="the-ruin-of-luccanor"]').should("be.checked");
+    cy.get('#configuration-content-monster input[id="core"]').should("not.be.checked");
+    cy.get('#configuration-variant input[id="alternate"]').should("be.checked");
+    cy.get('#configuration-variant input[id="standard"]').should("not.be.checked");
+  });
 });
