@@ -12,7 +12,7 @@ export class NyxAssassin implements HeroData {
   id = "nyx-assassin";
   name = "Nyx (Assassin)";
   content: ContentId = "awakenings";
-  class: HeroClass = "Assassin";
+  class: HeroClass = "Assasin";
   path: HeroPath = "Cunning";
   race: HeroRace = "Succubus";
   proficiencies = {
