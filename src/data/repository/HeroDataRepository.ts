@@ -1,7 +1,11 @@
-import { Andreas } from "@/data/content/awakenings/hero/Andreas";
-import { Catharina } from "@/data/content/awakenings/hero/Catharina";
-import { Nyx } from "@/data/content/awakenings/hero/Nyx";
-import { Vacren } from "@/data/content/awakenings/hero/Vacren";
+import { AndreasCleric } from "@/data/content/awakenings/hero/AndreasCleric";
+import { AndreasNecromancer } from "@/data/content/awakenings/hero/AndreasNecromancer";
+import { CatharinaMage } from "@/data/content/awakenings/hero/CatharinaMage";
+import { CatharinaShaman } from "@/data/content/awakenings/hero/CatharinaShaman";
+import { NyxAssassin } from "@/data/content/awakenings/hero/NyxAssassin";
+import { NyxSwordmage } from "@/data/content/awakenings/hero/NyxSwordmage";
+import { VacrenWarlord } from "@/data/content/awakenings/hero/VacrenWarlord";
+import { VacrenWarrior } from "@/data/content/awakenings/hero/VacrenWarrior";
 import { Elros } from "@/data/content/core/hero/Elros";
 import { Jaheen } from "@/data/content/core/hero/Jaheen";
 import { Lorelai } from "@/data/content/core/hero/Lorelai";
@@ -40,12 +44,14 @@ import type { DataRepository } from "./DataRepository";
 
 export class HeroDataRepository implements DataRepository {
   private heroes = [
-    new Andreas(),
+    new AndreasCleric(),
+	new AndreasNecromancer(),
     new Arkhanos(),
     new Azriel(),
     new Barak(),
     new Brihitte(),
-    new Catharina(),
+    new CatharinaMage(),
+	new CatharinaShaman(),
     new Devron(),
     new Diana(),
     new Drasek(),
@@ -64,7 +70,8 @@ export class HeroDataRepository implements DataRepository {
     new Lorien(),
     new Maya(),
     new Mordred(),
-    new Nyx(),
+	new NyxAssassin(),
+    new NyxSwordmage(),
     new Pietro(),
     new Sahara(),
     new Savran(),
@@ -73,7 +80,8 @@ export class HeroDataRepository implements DataRepository {
     new Sskar(),
     new Sun(),
     new Tork(),
-    new Vacren(),
+	new VacrenWarlord(),
+	new VacrenWarrior(),
     new Vorn(),
     new Willow(),
   ];

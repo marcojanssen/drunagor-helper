@@ -1,4 +1,4 @@
-import AvatarImageUrl from "@/assets/hero/avatar/VacrenAvatar.webp";
+import AvatarImageUrl from "@/assets/hero/avatar/NyxAvatar.webp";
 import type { HeroData } from "@/data/repository/HeroData";
 import type { ArmorType } from "@/data/type/ArmorType";
 import type { ContentId } from "@/data/type/ContentId";
@@ -8,17 +8,17 @@ import type { HeroRace } from "@/data/type/HeroRace";
 import type { OffHandType } from "@/data/type/OffHandType";
 import type { WeaponType } from "@/data/type/WeaponType";
 
-export class Vacren implements HeroData {
-  id = "vacren";
-  name = "Vacren";
+export class NyxSwordmage implements HeroData {
+  id = "nyx";
+  name = "Nyx (Swordmage)";
   content: ContentId = "awakenings";
-  class: HeroClass = "Warlord";
-  path: HeroPath = "Strength";
-  race: HeroRace = "Human";
+  class: HeroClass = "Swordmage";
+  path: HeroPath = "Cunning";
+  race: HeroRace = "Succubus";
   proficiencies = {
     weapon: ["Heavy"] as WeaponType[],
-    offHand: ["Off Hand Weapon"] as OffHandType[],
-    armor: ["Plate"] as ArmorType[],
+    offHand: ["Relic"] as OffHandType[],
+    armor: ["Cloth"] as ArmorType[],
   };
   images = {
     avatar: AvatarImageUrl,
