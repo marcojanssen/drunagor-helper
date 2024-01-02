@@ -965,6 +965,12 @@ export class KeywordDataRepository implements DataRepository {
         **Example:** *A Bonus of +1 HEAL applied to a SPLIT, HEAL 4 effect would result in a SPLIT, HEAL 5 instead of four individual effects of HEAL 2.*",
     },
     {
+      id: "spread",
+      keyword: "SPREAD",
+      description:
+        "Some attacks scatter around the victim. Whenever a Hero is hit by SPREAD, they reflect the same amount of damage they have suffered (damage suffered is the damage that has been taken and has not been mitigated or PREVENTED) on each other Hero that is Adjacent to them. This reflected damage is dealt as non-preventable damage. For example, Vorn has taken 6 damage with SPREAD. After mitigating 2 damage with his 2 SHIELD tokens and PREVENTing 2 damage with a Skill, in the end, he suffered 2 damage. Then, each other Hero that is Adjacent to him takes 2 non-preventable damage.",
+    },
+    {
       id: "spell-attack",
       keyword: "SPELL ATTACK",
       description: "Magic skill that always succeeds, inflicting damage.",
