@@ -19,7 +19,7 @@ export class KeywordDataRepository implements DataRepository {
         "The Hero's Maximum Health increases by +X points. As explained on page 7 of the Age of Darkness Rulebook, a Hero's Maximum Health, however, can never exceed 16. If a Hero has two or more effects that increase their Health Points, you should always add them up, but never exceed the value of 16 shown on the Hero board. All Maximum Health that exceeds 16 is considered wasted.",
     },
     {
-      id: "x-hp-simple",
+      id: "x-hp-(simple)",
       keyword: "+X HP (SIMPLE)",
       description:
         "If you prefer not to deal with the granularity of the +X HP rule, you can choose the simple version and disregard the second and third NOTEs. So, if you lose an effect that confers +X HP, you lose Health accordingly. However, if you regain these effects later, you won't recover any Health, even if the sum of the +X HP effects you have exceeds 16 Health.",
@@ -48,7 +48,7 @@ export class KeywordDataRepository implements DataRepository {
       description: "You received X additional movement points for every Move effect gained.",
     },
     {
-      id: "action-cube",
+      id: "action-cubes-(ac)",
       keyword: "ACTION CUBES (AC)",
       description: "Colored cubes spend by Heroes to use their skills.",
     },
@@ -59,7 +59,7 @@ export class KeywordDataRepository implements DataRepository {
         "Activate is a complicated term that appears in many effects over the three generations of the AoD System. At its design root, Activate is the instruction to take a turn. So, when you Activate a Monster, for example, you take a turn with that Monster; Whenever a Monster takes a turn, we say it is being “activated.” When a Character is activated, it takes a turn as normal: its Conditions trigger at the beginning of the turn, then its Triggered Abilities fire, and finally it takes a Movement Action and/or an Attack Action. Pets, however, have an optional effect: when you Activate one of them, instead of making them take a turn, you can Summon them. It's worth remembering: a Summoned Pet appears in an adjacent unoccupied space next to its Master.",
     },
     {
-      id: "adjacent",
+      id: "adj-or-adjacent",
       keyword: "ADJ OR ADJACENT",
       description:
         "This effect can only affect a Target in an adjacent square to the casting Character, regardless of the Skill's Range.",
@@ -94,7 +94,7 @@ export class KeywordDataRepository implements DataRepository {
         "A hero can only have one and is removed when the hero is KNOCKED OUT and receives a TRAUMA CUBE. (Not removed during Camp Phase)",
     },
     {
-      id: "aura-token",
+      id: "aura-(token)",
       keyword: "AURA (TOKEN)",
       description:
         "As a Resolution effect, a Hero is often instructed to write down an Aura on their Campaign Log or Companion App. You can keep this token on your board as a tactile and visual reminder that you have a special effect noted there. Aura tokens are Reminder tokens and were introduced in Apocalypse.",
@@ -123,13 +123,13 @@ export class KeywordDataRepository implements DataRepository {
       description: "All enemies in AREA take 2 non-preventable Damage, BLEED 2, DISCARD.",
     },
     {
-      id: "bot",
+      id: "beginning-of-turn-(bot)",
       keyword: "BEGINNING OF TURN (BOT)",
       description:
         "BOT is an abbreviation used to describe the “Beginning of Turn” moment of time, when some Characters’ special abilities are triggered, right after they suffer the effects of the Conditions they possess that also trigger at the beginning of their turn.",
     },
     {
-      id: "bleed",
+      id: "bleed-x",
       keyword: "BLEED X",
       description:
         "The Target takes X BLEED tokens. At the beginning of that character's next turn, it takes 1 non-preventable damage for each BLEED token it has and then removes all of them from its board. BLEED is a stackable Condition.",
@@ -159,7 +159,7 @@ export class KeywordDataRepository implements DataRepository {
         "Some attacks are capable of leaving their opponents vulnerable. When a Character suffers Brittle, they must take a Brittle token and keep it on their board. If they are a Hero, Pet, or Companion of any sort, the next time they suffer damage from any source, they will suffer double that damage and remove their Brittle token (remember, suffered damage is the damage taken that was not prevented). If they are a Monster, the next weapon or magic attack that hits them turns into a Critical Hit and removes their Brittle token. Brittle lingers until it is removed or is triggered as described. It is a Redundant Condition.",
     },
     {
-      id: "burn",
+      id: "burn-x",
       keyword: "BURN X",
       description:
         "The Target takes X BURN tokens. At the beginning of that character's next turn, it takes 1 non-preventable damage for each BURN token it has and then removes one of those tokens from its board. BURN is a stackable Condition.",
@@ -219,7 +219,7 @@ export class KeywordDataRepository implements DataRepository {
         "Claim is a typical Warlord effect, representing their ability to coordinate the assaults of their allies. When a Hero uses Claim, they place (or replace) the Banner on an empty square that is adjacent to them. While under the influence of a Banner, as a Minor Action, a Hero may discard an INSPIRATION token to make a Weapon Attack of +0 HIT. For rules purposes, all squares that are adjacent to a Banner are considered “Under the Banner”. Finally, Banners are Movable Solid Objects considered Furniture and, therefore, can be crushed by Large Monsters and cause 2 DMG AND BLEED 2 if they are thrown at a Character.",
     },
     {
-      id: "cleanse",
+      id: "cleanse-x",
       keyword: "CLEANSE X",
       description:
         "Target removes up to X CC and all POISON from its board. <br><br> \
@@ -227,7 +227,7 @@ export class KeywordDataRepository implements DataRepository {
       The target removes up to X Curse Cubes or Condition Stacks from its board. A Stack is: all tokens of the same kind the Character has. For each CLEANSE point received, that Character may choose to remove a Curse Cube or a Condition Stack. They don’t have to spend all the points the same way.",
     },
     {
-      id: "cleave",
+      id: "cleave-x",
       keyword: "CLEAVE X",
       description: "Target up to X enemies adjacent to attacker as single Attack Roll.",
     },
@@ -237,7 +237,7 @@ export class KeywordDataRepository implements DataRepository {
       description: "Activates the next Strongest Monster (not itself), then continues its turn.",
     },
     {
-      id: "command-draugr",
+      id: "command-a-draugr",
       keyword: "COMMAND A DRAUGR",
       description:
         "To Command a Draugr means to activate a Draugr of your choice that is already on the board. Unlike other Pets, Draugrs cannot be “Raised” through a “Command” effect or vice-versa. For them, these effects act independently. Other than this detail, Draugrs follow the same rules as a Pet when it comes to their turns and for other rules purposes.",
@@ -255,13 +255,13 @@ export class KeywordDataRepository implements DataRepository {
         "Activates after the hero they follow, Move then Attack. Will only be attacked if no hero is in range. Top left number is STURDINESS. Can hold SHIELDS and receive PREVENT effects. Discharged during Camp Phase.",
     },
     {
-      id: "copy",
+      id: "copy-effect",
       keyword: "COPY EFFECT",
       description:
         "Copies effect of another Hero skill including its base color (range). **Dungeon Roll Skills, Equipment Skills and Reactions, unless stated otherwise, cannot be copied.**",
     },
     {
-      id: "counter",
+      id: "counter-x",
       keyword: "COUNTER X",
       description:
         "Some Monsters are versed in the art of fencing and know how to take advantage of a Hero's slip-ups when fighting them. Whenever a Hero misses a Weapon Attack against a Monster that has this ability (an attack is only considered a miss after using their reroll abilities), the Monster swings their weapon around, causing the described amount of non-preventable damage to all enemies of the Monster that are adjacent to it.",
@@ -284,25 +284,25 @@ export class KeywordDataRepository implements DataRepository {
       description: "Roll X or more on D20 gives Critical Hit (x2 DMG). Does not inflict double conditions.",
     },
     {
-      id: "cube-action",
+      id: "cube-action-(ca)",
       keyword: "CUBE ACTION (CA)",
       description:
         "Spending an AC. A hero can perform 2 AC per turn and may use other actions before, between or after each AC. Reactions do not count.",
     },
     {
-      id: "cube-range",
+      id: "cube-range-(cr)",
       keyword: "CUBE RANGE (CR)",
       description:
         "Defined by color of cube used. Yellow (Melee) = Target on an adjacent SQUARE. Red (Ranged) = Target on any SQUARE up to 1 AREA away. Green (Agility) / Blue (Wisdom) = Target at any distance.",
     },
     {
-      id: "curse-cube",
+      id: "curse-cubes-(cc)",
       keyword: "CURSE CUBES (CC)",
       description:
         "Black cubes that are allocated to Hero or Dungeon Roles skills which block their use. Hero is corrupted upon receiving a 6th CC and ends the adventure. ",
     },
     {
-      id: "curse",
+      id: "curse-x",
       keyword: "CURSE X",
       description: "Target gains X CC as an effect.",
     },
@@ -313,7 +313,7 @@ export class KeywordDataRepository implements DataRepository {
         'Tries to reach the Strongest Hero not on top of Darkness. "Crush": If all Heroes are already on top of Darkness when a Rune is drawn, Skip spawning tile and all Heroes take N Damage. (N = Number of Heroes).',
     },
     {
-      id: "darkness-effect",
+      id: "darkness-effect-(standing-on-it)",
       keyword: "DARKNESS EFFECT (STANDING ON IT)",
       description:
         "Deals 2 non-preventable Damage to a Hero (once per turn), Companion or Pet caught by it when spawned; stepped on it for first time in a turn; or ended their turn on top of it. Heroes: Imposes a -2 HIT penalty. Monsters: Gives +2 DMG bonus.",
@@ -358,7 +358,7 @@ export class KeywordDataRepository implements DataRepository {
         "Concentrating your energy, you prepare to deliver a powerful blow. When you Empower, the next single Weapon Attack or Spell Attack you make this turn gains +4 DMG. Note that this effect lasts only until the end of this turn or when you make your next Weapon Attack or Spell Attack (even if you miss), whichever comes first. If an effect allows you to make two or more separate Weapon Attack as part of the same Action, the Empower effect is only applied to the first of them (Cleave is a single hit that affects two or more targets, so this bonus applies to all of them).",
     },
     {
-      id: "eot",
+      id: "end-of-turn-(eot)",
       keyword: "END OF TURN (EOT)",
       description:
         "EOT is an abbreviation used to describe the “End of Turn” moment of time, when some effects are triggered, such as those that last until the end of the Character’s turn. The End of Turn is exactly the last thing that happens in a turn, before the Initiative 81 Marker is moved forward: it triggers right after a Hero has completed all their Actions and chooses whether or not to take a Willing Recall Action. If some effect triggers because of this Recall Action, the End of Turn occurs immediately after the resolution of that effect",
@@ -402,7 +402,7 @@ export class KeywordDataRepository implements DataRepository {
       description: "Character suffers 2 non-preventable Damage when descending two levels in a single step.",
     },
     {
-      id: "fatigue",
+      id: "fatigue-x",
       keyword: "FATIGUE X",
       description: "Target must expend X (or as many as possible) of their available AC for no effect.",
     },
@@ -424,13 +424,13 @@ export class KeywordDataRepository implements DataRepository {
         "This pet freely returns to a SQUARE of their choice adjacent to its master after attacking. Only affected by terrain/Darkness once landed.",
     },
     {
-      id: "focus",
+      id: "focus-x",
       keyword: "FOCUS X",
       description:
         "The Target gains X FOCUS tokens, which they can later spend to use Focus Abilities. FOCUS is a stackable resource.",
     },
     {
-      id: "free-recall",
+      id: "free-recall-action",
       keyword: "FREE RECALL ACTION",
       description: "Hero takes a RECALL ACTION without taking a CC penalty.",
     },
@@ -450,7 +450,7 @@ export class KeywordDataRepository implements DataRepository {
         **NOTE:** Whenever you discard 1 Fury in order to boost an attack that targets more than one Character at once (CLEAVE and STRIKE, for instance) the bonus damage is dealt to each target. You don't need to discard 1 Fury token for each Character targeted this way.",
     },
     {
-      id: "heal",
+      id: "heal-x",
       keyword: "HEAL X",
       description: "Target regains X Health that cannot exceed max Health.",
     },
@@ -491,7 +491,7 @@ export class KeywordDataRepository implements DataRepository {
         "Interactions are situations that happen during an Adventure in which your Hero can (or should) intervene. Some Interactions will be presented to your party through in-game effects, but most of them will be found on the board as Interaction tokens.",
     },
     {
-      id: "interact-barrel",
+      id: "interact-(stack-of-barrels)",
       keyword: "INTERACT (STACK OF BARRELS)",
       description:
         "Dwarves and Halflings (only those) can get inside barrels and use them as hiding places. To stop hiding, the Hero will need to use another Minor Action.<br><br>\
@@ -500,13 +500,13 @@ export class KeywordDataRepository implements DataRepository {
         - If a Large Monster steps on a barrel with a hidden Hero, break that barrel and Shove the Hero aside. That Hero suffers 2 non-preventable damage.",
     },
     {
-      id: "interact-bookshelf",
+      id: "interact-(bookshelf)",
       keyword: "INTERACT (BOOKSHELF)",
       description:
         "When a Hero interacts with a Bookshelf, they can search the Chest deck for a Scroll card and keep it or immediately use it as a Free Action, as if they had just drawn it from the Chest deck. Afterwards, remove the Bookshelf from the board.",
     },
     {
-      id: "interact-chest",
+      id: "interact-(chest)",
       keyword: "INTERACT (CHEST)",
       description:
         "When a Hero interacts with a Chest: <br><br>\
@@ -514,13 +514,13 @@ export class KeywordDataRepository implements DataRepository {
         - Finally, when searching a Chest, the Hero must roll the Trap Die and suffer the effect.",
     },
     {
-      id: "interact-pile-of-crates",
+      id: "interact-(pile-of-crates)",
       keyword: "INTERACT (PILE OF CRATES)",
       description:
         "Piles of Crates are not good for anything in particular. They count as obstacles until they are destroyed or thrown.",
     },
     {
-      id: "interact-stone-fountain",
+      id: "interact-(stone-fountain)",
       keyword: "INTERACT (STONE FOUNTAIN)",
       description:
         "When a Hero interacts with a fountain, they flip the Concoction token up, apply its effects, then discard it. There are three possible effects:<br><br>\
@@ -529,7 +529,7 @@ export class KeywordDataRepository implements DataRepository {
         **Toxic Inoculation** (Green): The taste is even worse than the effect... The drinking Character suffers POISON 4.",
     },
     {
-      id: "interact-stone-pillar",
+      id: "interact-(stone-pillar)",
       keyword: "INTERACT (STONE PILLAR)",
       description: "Stone Pillars are of no use for anything in particular. They just represent a rigid obstacle.",
     },
@@ -540,13 +540,13 @@ export class KeywordDataRepository implements DataRepository {
         "This Skill can only be used in response to a Character being targeted by an Attack, but before the targeted Character spends SHIELD tokens and a threat is generated. Thus, Interrupts are “faster” than Reactions. When using an Interrupt, a Character will not be able to use a Reaction against any threats generated by the attack they have interrupted, as if they had already “reacted” to that attack. Interrupts, also, cannot target attacks that deal non-preventable damage, and they are not considered Reactions for triggering abilities such as **Caltrops**, for example. A Hero can take only one Interruption per attack, regardless of how many Characters were targeted by it.",
     },
     {
-      id: "intimidate",
+      id: "intimidate-x",
       keyword: "INTIMIDATE X",
       description:
         "Character has -X DMG for each INTIMIDATE token they are holding. Unlike other Conditions, INTIMIDATE does not take effect at the beginning of their next turn, it lingers until removed instead. The next time the affected character makes an Attack (either a Weapon Attack or a Spell Attack), whether it hits or misses, it removes all INTIMIDATE tokens they are holding. INTIMIDATE is a stackable Condition.",
     },
     {
-      id: "jump",
+      id: "jump-x",
       keyword: "JUMP X",
       description:
         "Same as MOVE X but only affected by terrain landed on and can move through enemies. Not affected by FALLING DAMAGE. Climbing up 2 levels still costs 2 movement.",
@@ -598,7 +598,7 @@ export class KeywordDataRepository implements DataRepository {
         **NOTE:** Likewise, it is important to remember that a Hero cannot Learn a Class Ability of Level 2 or 3 if they have not learned a Class Ability of Level 1 or 2 (respectively) belonging to that same Class Tree.",
     },
     {
-      id: "loot-tokens",
+      id: "loot-(tokens)",
       keyword: "LOOT (TOKENS)",
       description:
         "Loot tokens are Movable Ground Objects that can be picked up by Heroes who are adjacent to or on top of them with a Minor Action. When they do, they draw the top card of the Chest deck, but do not have to roll the Trap Die: Loot is always safe. Like a Chest, the moment a Hero draws a Consumable Item, they can choose to use it immediately as a free action. Otherwise, they keep that card in their bag.",
@@ -622,7 +622,7 @@ export class KeywordDataRepository implements DataRepository {
         "Randomly take one Rune from the bag and reveal it, triggering the effect. Does not spawn Darkness and is placed back in the bag.",
     },
     {
-      id: "mending",
+      id: "mending-x",
       keyword: "MENDING X",
       description:
         "Monsters with this ability are field doctors in the enemy's service, keeping their allies ready for another round. When this ability is triggered, another weaker Monster (the Monster with the lowest Health at the time) within range 1 of the casting Monster regains X Health (this Health cannot exceed its maximum). If two or more Monsters are tied, the one that occupies the highest color slot on the Monster Status board between them will be the chosen target (yellow is higher than dark blue, for example). If there is no other Monster within Range 1 of the caster, a Monster cannot use Mending on itself.",
@@ -652,13 +652,13 @@ export class KeywordDataRepository implements DataRepository {
         "The Hero with the most available Action Cubes is the Most Vigorous Hero. If two Heroes are tied with the same number of available Action Cubes, the Most Vigorous one among them will be the one who occupies the fastest Initiative Slot.",
     },
     {
-      id: "move",
+      id: "move-x",
       keyword: "MOVE X",
       description:
         "Target may move up to X SQUARES orthogonally or diagonally. Cannot pass through SOLID OBJECTS or ENEMIES but can pass through not land on allies. Movement may be interrupted to do a Minor Action then continued, but using a CA or REACTION will lose remaining movement points.",
     },
     {
-      id: "multishot",
+      id: "multishot-x",
       keyword: "MULTISHOT X",
       description:
         "Character fires a single Ranged Attack at X different Targets within Range. Heroes make 1 attack roll.",
@@ -699,7 +699,7 @@ export class KeywordDataRepository implements DataRepository {
         "Ability is always active (including Commander Attack cards) unless blocked by TRAUMA CUBE or CURSE CUBE.",
     },
     {
-      id: "pay-life",
+      id: "pay-x-life",
       keyword: "PAY X LIFE",
       description: "Hero takes X Damage to apply benefits. Cannot use if X > current Health.",
     },
@@ -731,7 +731,7 @@ export class KeywordDataRepository implements DataRepository {
         "There is nothing more satisfying than ridiculing a threat, turning a once-powerful enemy into a defenseless capybara! In order to emulate this effect with its proper glamour in the AoD System, you will need to follow some more preparation steps. However, do not worry: once one understands the concept of this effect, such steps become intuitive! When a Character suffers Polymorph, you must replace their model with a capybara, facing the direction of your choice, and give them a Polymorph Condition token. Take note that the direction these Characters face is important: When manipulating these Characters again, do not change their facing (unless it's specified to do so). The rulebook explains the conecpt fully.",
     },
     {
-      id: "polymorph-simple",
+      id: "polymorph-(simple)",
       keyword: "POLYMORPH (SIMPLE)",
       description:
         "If you have tried the mechanics of Polymorph and still consider them to be too complicated, you can, as a house rule, ignore the use of the Errant Behavior deck and the capybara model. You can then establish that the Polymorphed Character simply can’t take actions during their turn. Instead, at the beginning of each of their activations, they must roll the d20 to see what happens that turn: <br> \
@@ -740,7 +740,7 @@ export class KeywordDataRepository implements DataRepository {
         Regardless of your choice to proceed either withStandard Polymorph or with Simple Polymorph, the other rules to end this Condition early or to become immune to it remain the same.",
     },
     {
-      id: "prevent",
+      id: "prevent-x",
       keyword: "PREVENT X",
       description: "Ignore up to X Damage that would be dealt to target within Range.",
     },
@@ -756,7 +756,7 @@ export class KeywordDataRepository implements DataRepository {
       description: "This character becomes the Target unless already a Target due to CLEAVE, MULTISHOT or STRIKE.",
     },
     {
-      id: "push",
+      id: "push-x",
       keyword: "PUSH X",
       description: "Push the Target X SQUARES away from the Caster in a straight line. Must be pushed entire length.",
     },
@@ -775,7 +775,7 @@ export class KeywordDataRepository implements DataRepository {
       **NOTE:** A Necromancer can Raise all four Draugrs, even though they can only sustain two of them during their turn.",
     },
     {
-      id: "range",
+      id: "range-x",
       keyword: "RANGE X",
       description: "Range is counted using X AREAS away. RECALL X: Recover X Spent or Expended AC.",
     },
@@ -792,7 +792,7 @@ export class KeywordDataRepository implements DataRepository {
         "Skill that can be used in response to a threat (taking preventable damage). Each hero can only use one Reaction per threat. Shields must be applied before and Reactions can still be used even if damage has been reduced to 0.",
     },
     {
-      id: "recall",
+      id: "recall-x",
       keyword: "RECALL X",
       description:
         "You recover to your Available Action Cubes box up to X Spent or Expended Action Cubes from your board.",
@@ -827,7 +827,7 @@ export class KeywordDataRepository implements DataRepository {
         "A redundant effect means that a character can only hold one token of that specific effect. If a character would gain a second token for a redundant effect, just ignore it.",
     },
     {
-      id: "regeneration",
+      id: "regeneration-x",
       keyword: "REGENERATION X",
       description: "Character regains X Health that cannot exceed max Health.",
     },
@@ -867,12 +867,12 @@ export class KeywordDataRepository implements DataRepository {
         **NOTE:** Characters who are Restrained are able to leave their space through a Swap effect. When this is the case, the Object swapping with the Restrained Character takes its Restrain token. If this target is not a Character, the Restrain effect ends.",
     },
     {
-      id: "retaliate",
+      id: "retaliate-x",
       keyword: "RETALIATE X",
       description: "Inflict X Damage to attacker within CR or any range otherwise. Caster must be one of the targets.",
     },
     {
-      id: "roll",
+      id: "roll-x",
       keyword: "ROLL X",
       description: "Triggers a benefit for attack roll on natural roll. +X HIT modifiers do not trigger this.",
     },
@@ -894,7 +894,7 @@ export class KeywordDataRepository implements DataRepository {
       description: "A small Darkness tile is placed under Target.",
     },
     {
-      id: "shield",
+      id: "shield-x",
       keyword: "SHIELD X",
       description:
         "The target gains X SHIELD tokens. Each SHIELD token can be used to absorb 1 point of incoming damage against the character. You must use all of your SHIELD tokens before losing any Health or using a PREVENT effect—you cannot choose to take the damage and keep your SHIELD tokens or to PREVENT the damage with another Skill in order to save them. SHIELD tokens are a stackable resource.",
@@ -977,7 +977,7 @@ export class KeywordDataRepository implements DataRepository {
         **Example:** *2 tokens of Focus 2 and 4 tokens of Focus 1 are considered Focus 4 either way.*",
     },
     {
-      id: "stalker",
+      id: "stalker-(trait)",
       keyword: "STALKER (TRAIT)",
       description:
         "Some killers specialize in using stealth to their advantage. As long as the Stalker Skill is not blocked, whenever the Slayer’s Stealth fades away *(that is, it is removed on its own at the beginning of its Hero’s turn)*, the Slayer remains Hidden until the end of the current Hero's turn or until they try to surprise another Character. <br><br>\
@@ -1007,7 +1007,7 @@ export class KeywordDataRepository implements DataRepository {
       description: "Refers to a white square on map tile. ",
     },
     {
-      id: "strike",
+      id: "strike-x",
       keyword: "STRIKE X",
       description: "Targets all characters in X AREAS within Range. Melee must be AREAS adjacent to own SQUARE.",
     },
@@ -1053,7 +1053,7 @@ export class KeywordDataRepository implements DataRepository {
         "Take is not properly a Keyword, however, it is a term that is worth clarifying. Take is used to describe something that is given to a Character. Whenever that is damage, they have the opportunity to mitigate it through Shield tokens or Prevent effects (unless, of course, the damage is non-preventable). If it is a Condition (such as Bleed) or an Effect (such as Telekinesis), that Character can’t use Reactions or Interrupts to avoid it, but if they are Immune to the said effects, they simply won't take them. Taking a Curse Cube, on the other hand, is different from suffering Curse and thus, this effect can't be avoided even if the Character is Immune to Curse.",
     },
     {
-      id: "telekinesis",
+      id: "telekinesis-x",
       keyword: "TELEKINESIS X",
       description:
         "Move any small-sized object (including small Darkness tiles) or SOLID OBJECTS (except Interactions) up to X SQUARES. Target is affected by harmful terrain or Darkness landed on including FALLING DAMAGE.",
@@ -1067,7 +1067,7 @@ export class KeywordDataRepository implements DataRepository {
         Take note that Threat is just a term, it doesn't change any rules. Therefore, Reactions with “SELF” can only be used if the casting Character is also being threatened and so on, as described on page 14 of the Corebox Rulebook.",
     },
     {
-      id: "throw-barrel",
+      id: "throw-(stack-of-barrels)",
       keyword: "THROW (STACK OF BARRELS)",
       description:
         "When thrown at a Character, a barrel deals 2 DMG and inflicts KNOCK DOWN to its target if it is a Small Character. Large Monsters bodies are so powerful that barrels don't even bother them. <br><br> \
@@ -1075,40 +1075,40 @@ export class KeywordDataRepository implements DataRepository {
         - Reposition the Hero that was in the barrel in a square of their choice that is adjacent to the target against which the barrel was thrown. *(Don't forget, thrown Furniture is broken and removed from the board).*",
     },
     {
-      id: "throw-bookshelf",
+      id: "throw-(bookshelf)",
       keyword: "THROW (BOOKSHELF)",
       description:
         "Bookshelves are too heavy to be thrown at a Character with a Minor Action. Instead, it is simply knocked over, affecting a Character that is adjacent to it (chosen by the Hero who used the Throw Furniture Minor Action). TELEKINESIS, on the other hand, can throw a bookshelf normally. <br><br>\
         - Regardless of the way it was thrown, a bookshelf deals 2 DMG and inflicts STUN to its target (Don’t forget: Thrown Furniture is always broken and removed from the board.)",
     },
     {
-      id: "throw-chest",
+      id: "throw-(chest)",
       keyword: "THROW (CHEST)",
       description:
         "When thrown at a Character, a Chest causes 2 DMG and you must roll the Trap Die: add the result to this damage as a side effect. *(Don't forget, thrown Furniture is broken and removed from the board.)*",
     },
     {
-      id: "throw-piles-of-crates",
+      id: "throw-(piles-of-crates)",
       keyword: "THROW (PILE OF CRATES)",
       description:
         "When thrown, the Pile of Crate inflicts BRITTLE to its target if it is a Small Character. <br><br>\
         - Large Monsters bodies are so powerful that the crates don't even bother them. (Don't forget, thrown Furniture is broken and removed from the board.)",
     },
     {
-      id: "throw-stone-fountains",
+      id: "throw-(stone-fountains)",
       keyword: "THROW (STONE FOUNTAIN)",
       description:
         "Stone Fountains are attached to the ground and therefore cannot be thrown at other Characters in any way *(but they can still be destroyed by Large Monsters who end their movement by stepping on them).*",
     },
     {
-      id: "throw-stone-pillar",
+      id: "throw-(stone-pillar)",
       keyword: "THROW (STONE PILLAR)",
       description:
         "Stone Pillars are attached to the floor and ceiling and therefore cannot be thrown at other characters in any way. However, it is precisely because they are so firm that the opposite becomes true:<br><br>\
         - When a Character is thrown against a stone pillar (by effects like TELEKINESIS or PUSH), they suffer 4 non-preventable damage and are repositioned in a square adjacent to the pillar chosen by the Character who threw them. The pillar is not removed from the board.",
     },
     {
-      id: "trample",
+      id: "trample-x",
       keyword: "TRAMPLE X",
       description: "Pass through but not end on ENEMIES. Inflicts X Damage to each trampled enemy once.",
     },
@@ -1119,7 +1119,7 @@ export class KeywordDataRepository implements DataRepository {
         "Place a Trap token in the center of an area that is adjacent to your area (blue square). The first time an enemy activates within that area or moves into that area, the Trap is triggered. All enemies inside that area are affected by the Trap, then remove the Trap token. There can only be 1 Trap token in an area at a time.",
     },
     {
-      id: "trauma-cube",
+      id: "trauma-cube-(tc)",
       keyword: "TRAUMA CUBE (TC)",
       description:
         "Purple cubes that are allocated to Hero or Dungeon Roles skills which blocks their use. Hero is killed upon receiving a 2nd TRAUMA CUBE and ends the adventure.",
@@ -1178,13 +1178,13 @@ export class KeywordDataRepository implements DataRepository {
         "War Cry is a triggered ability that some Monsters possess. When activated, each other Monster within Range 1 of this Monster enrages and gains +1 DMG permanently (place this token on their Monster Status board).",
     },
     {
-      id: "warden",
+      id: "warden-(trait)",
       keyword: "WARDEN (TRAIT)",
       description:
         "Characters who have the Warden trait can use Interrupts and Reactions with the Keyword “SELF” on other Characters as long as they are adjacent to them. Also, Wardens can use such Skills when Characters adjacent to them are attacked or threatened (if the Skill you are using is either an Interrupt or a Reaction, respectively) instead of using them only when they are attacked or threatened themselves.",
     },
     {
-      id: "warlock",
+      id: "warlock-(trait)",
       keyword: "WARLOCK (TRAIT)",
       description:
         "Bargaining with the Darkness, Warlocks flirt with corruption in exchange for power. As long as the Otherwordly Pact Skill is not blocked, they receive their Curse Cubes as if they were Action Cubes, and when they spend them, these are treated as Wild Cubes. Once spent, these cubes become conventional Curse Cubes again, and are removed only through Cleanse effects.",

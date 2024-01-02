@@ -4,6 +4,7 @@ import { MagnifyingGlassIcon } from "@heroicons/vue/24/solid";
 const props = defineProps<{
   id?: string;
   class?: string;
+  value?: string;
 }>();
 
 const emit = defineEmits<{
@@ -25,6 +26,7 @@ function search(event: Event) {
           name="search"
           class="bg-base-100 w-full pl-2 rounded-l-md text-white border-0 focus:ring-0"
           placeholder="Search"
+          :value="props.value"
           @input="(event) => search(event)"
         />
       </div>
