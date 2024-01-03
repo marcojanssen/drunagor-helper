@@ -13,9 +13,10 @@ const keywordDataRepository = new KeywordDataRepository();
 const keywords = keywordDataRepository.findAll();
 
 let preselectedKeyword = "";
+let preselectedKeywordId = "";
 if (route.hash) {
-  preselectedKeyword = route.hash.toString().replace(/[#]/g, "");
-  preselectedKeyword = preselectedKeyword.replace(/[-]/g, " ");
+  preselectedKeywordId = route.hash.toString().replace(/[#]/g, "");
+  preselectedKeyword = preselectedKeywordId.replace(/[-]/g, " ");
 }
 
 let filteredKeyword = computed(() =>
@@ -42,7 +43,7 @@ query.value = preselectedKeyword;
     <BaseList id="keyword-list" class="grid gap-3 w-full">
       <template v-for="keyword in filteredKeyword" :key="keyword.id">
         <router-link :to="'/keyword#' + keyword.id">
-          <KeywordListItem :opened="preselectedKeyword === keyword.id">
+          <KeywordListItem :opened="preselectedKeywordId === keyword.id">
             <template #default>
               {{ keyword.keyword }}
             </template>
