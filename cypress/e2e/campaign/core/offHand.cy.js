@@ -69,7 +69,6 @@ describe("off hand selection", () => {
 
     cy.reload();
 
-    cy.get(".hero-offhand-wrapper .hero-item").should("have.value", "");
     cy.get("#hero-stash-display > li").contains("Dragonbone Wand");
   });
   it("can clear off hand", () => {

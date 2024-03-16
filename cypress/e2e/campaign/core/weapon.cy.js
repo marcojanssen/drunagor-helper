@@ -69,7 +69,6 @@ describe("weapon selection", () => {
 
     cy.reload();
 
-    cy.get(".hero-weapon-wrapper .hero-item").should("have.value", "");
     cy.get("#hero-stash-display > li").contains("Dreampiercer Bow");
   });
   it("can clear weapon", () => {

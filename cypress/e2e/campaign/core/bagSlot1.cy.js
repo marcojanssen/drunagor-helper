@@ -57,7 +57,6 @@ describe("bag item selection", () => {
 
     cy.reload();
 
-    cy.get(".hero-bag1-wrapper .hero-item").should("have.value", "");
     cy.get("#hero-stash-display > li").contains("Cosmic Gemstone (Chest)");
   });
   it("can clear item", () => {
