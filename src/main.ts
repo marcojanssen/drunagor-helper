@@ -20,21 +20,20 @@ import * as deDE from "@/locales/de_DE.json";
 const pinia = createPinia();
 
 const messages = {
-  "en-us": {
+  "en_US": {
     ...enUS,
   },
-  "de-de": {
+  "de_DE": {
     ...deDE,
   },
 };
 
 const i18n = createI18n({
   legacy: false,
-  locale: "en-us", // set locale
-  fallbackLocale: "en-us", // set fallback locale
-  messages, // set locale messages
-  // If you need to specify other options, you can set other options
-  // ...
+  globalInjection: true,
+  locale: "en_US",
+  fallbackLocale: "en_US",
+  messages,
 });
 
 const routes = [
