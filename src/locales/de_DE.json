@@ -14,6 +14,9 @@
     }
   },
   "configuration": {
+    "enabled_variant": "Aktivierte Variante",
+    "monster_content": "Verfügbare Monster",
+    "hero_content": "Verfügbare Helden",
     "error": {
       "atleast-one-selected": "Es muss mindestens eine ausgewählt werden."
     }
