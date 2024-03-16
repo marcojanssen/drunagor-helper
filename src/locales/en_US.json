@@ -14,6 +14,9 @@
     }
   },
   "configuration": {
+    "enabled_variant": "Enabled variant",
+    "monster_content": "Monster content",
+    "hero_content": "Hero content",
     "error": {
       "atleast-one-selected": "At least one has to be selected."
     }
