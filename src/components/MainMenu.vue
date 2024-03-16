@@ -50,7 +50,7 @@ function open() {
                   <span>
                     <QuestionMarkCircleIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">Random monster</span>
+                  <span class="pl-2">{{ $t("menu.random_monster") }}</span>
                 </router-link>
               </li>
               <li>
@@ -58,7 +58,7 @@ function open() {
                   <span>
                     <UserGroupIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">Campaign</span>
+                  <span class="pl-2">{{ $t("menu.campaign") }}</span>
                 </router-link>
               </li>
               <li>
@@ -66,7 +66,7 @@ function open() {
                   <span>
                     <ListBulletIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">Keyword</span>
+                  <span class="pl-2">{{ $t("menu.keyword") }}</span>
                 </router-link>
               </li>
               <li>
@@ -74,7 +74,7 @@ function open() {
                   <span>
                     <Cog6ToothIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">Settings</span>
+                  <span class="pl-2">{{ $t("menu.settings") }}</span>
                 </router-link>
               </li>
             </ul>

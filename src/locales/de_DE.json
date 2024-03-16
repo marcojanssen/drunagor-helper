@@ -13,6 +13,13 @@
       "no_other_commander_available": "Kein anderer Kommandant / Overlord verfügbar."
     }
   },
+  "menu": {
+    "menu": "Menu",
+    "random_monster": "Zufälliges Monster",
+    "campaign": "Kampagne",
+    "keyword": "Schlüsselwörter",
+    "settings": "Einstellungen"
+  },
   "configuration": {
     "enabled_variant": "Aktivierte Variante",
     "monster_content": "Verfügbare Monster",
