@@ -14,24 +14,24 @@ import "vue-toastification/dist/index.css";
 import HeroDetailView from "@/views/HeroDetailView.vue";
 import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
 
-import * as enUS from '@/locales/en_US.json'
-import * as deDE from '@/locales/de_DE.json'
+import * as enUS from "@/locales/en_US.json";
+import * as deDE from "@/locales/de_DE.json";
 
 const pinia = createPinia();
 
 const messages = {
-  'en-us': {
-    ...enUS
+  "en-us": {
+    ...enUS,
   },
-  'de-de': {
-    ...deDE
-  }
-}
+  "de-de": {
+    ...deDE,
+  },
+};
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'en-us', // set locale
-  fallbackLocale: 'en-us', // set fallback locale
+  locale: "en-us", // set locale
+  fallbackLocale: "en-us", // set fallback locale
   messages, // set locale messages
   // If you need to specify other options, you can set other options
   // ...
