@@ -15,8 +15,24 @@
   },
   "configuration": {
     "error": {
-      "atleast-one-selected": "At least one variant has to be selected."
+      "atleast-one-selected": "At least one has to be selected."
     }
+  },
+  "content": {
+    "apocalypse": "Apocalypse",
+    "awakenings": "Awakenings",
+    "core": "Core",
+    "desert_of_hellscar": "Desert of Hellscar",
+    "fallen_sisters": "Fallen Sisters",
+    "handuriel": "Handuriel",
+    "hero_pack_1": "Hero Pack 1",
+    "lord_wrath": "Lordwrath",
+    "lorien": "Lorien",
+    "monster_pack_1": "Monster Pack 1",
+    "rise_of_the_undead_dragon": "Rise of the Undead Dragon",
+    "spoils_of_war": "Spoils of War",
+    "the_ruin_of_luccanor": "The Ruin of Luccanor",
+    "the_shadow_world": "The Shadow World"
   },
   "variant": {
     "standard": "Standard",

@@ -7,4 +7,5 @@ export class RiseOfTheUndeadDragon implements ContentData {
   public readonly heroes = true;
   public readonly monsters = true;
   public readonly items = true;
+  public readonly translation_key = "content.rise_of_the_undead_dragon";
 }

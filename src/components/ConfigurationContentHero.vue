@@ -4,8 +4,10 @@ import type { ContentId } from "@/data/type/ContentId";
 import { ConfigurationStore } from "@/store/ConfigurationStore";
 import { watch, ref } from "vue";
 import { useToast } from "vue-toastification";
+import { useI18n } from "vue-i18n";
 
 const toast = useToast();
+const { t } = useI18n();
 
 const contentStore = ContentDataStore();
 const configurationStore = ConfigurationStore();
@@ -19,7 +21,7 @@ watch(heroContentSettings, async (newSettings) => {
   if (newSettings.length > 0) {
     configurationStore.$patch({ enabledHeroContent: newSettings });
   } else {
-    toast.error("At least one content pack has to be selected");
+    toast.error(t("configuration.error.atleast-one-selected"));
   }
 });
 </script>
@@ -27,7 +29,7 @@ watch(heroContentSettings, async (newSettings) => {
 <template>
   <div id="configuration-content-hero" class="bg-neutral form-control grid gap-4 p-4 drop-shadow-lg rounded-lg w-full">
     <label v-for="content in contentStore.getAllWithHeroes()" :key="content.id" class="cursor-pointer">
-      <span>{{ content.title }}</span>
+      <span>{{ $t(content.translation_key) }}</span>
       <input
         type="checkbox"
         v-model="heroContentSettings"

@@ -6,4 +6,5 @@ export class HeroPack1 implements ContentData {
   public readonly title = "Hero Pack 1";
   public readonly heroes = true;
   public readonly monsters = false;
+  public readonly translation_key = "content.hero_pack_1";
 }
