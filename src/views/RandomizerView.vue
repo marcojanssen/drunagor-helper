@@ -78,7 +78,7 @@ function getRandomCommander() {
       :frontImage="frontImage"
       :backImage="backImage"
     />
-    <div class="form-control py-4 w-72">
+    <div class="grid grid-cols-1 gap-4 place-items-center">
       <label class="cursor-pointer">
         <span class="text-md pr-4">{{ $t("randomizer.exclude_current_monster") }}</span>
         <input
