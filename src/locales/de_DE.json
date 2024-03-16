@@ -9,7 +9,7 @@
     "commander": "Kommandant",
     "overlord": "Overlord",
     "error": {
-      "no_other_monster_available": "No other monster available.",
+      "no_other_monster_available": "Kein anderer Monster verfügbar.",
       "no_other_commander_available": "Kein anderer Kommandant / Overlord verfügbar."
     }
   },
@@ -20,7 +20,7 @@
   },
   "variant": {
     "standard": "Standard",
-    "alternate": "Alternate",
+    "alternate": "Alternative",
     "complex": "Complex (A/B)"
   }
 }
