@@ -7,14 +7,16 @@ import { RandomizeMonster } from "@/service/RandomizeMonster";
 import { RandomizeCommander } from "@/service/RandomizeCommander";
 import { ref } from "vue";
 import { useToast } from "vue-toastification";
+import { useI18n } from "vue-i18n";
 import SwappableImage from "@/components/SwappableImage.vue";
 import RandomizerTitle from "@/assets/Randomizer.webp";
 import backgroundImage from "@/assets/monster/big/Background.webp";
 import RandomizerQuickSelect from "@/components/RandomizerQuickSelect.vue";
 
 const toast = useToast();
+const { t } = useI18n();
 
-const name = ref("Random monster");
+const name = ref(t("randomizer.random_monster"));
 const variant = ref("");
 const currentCharacterId = ref("");
 const frontImage = ref(RandomizerTitle.toString());
@@ -35,7 +37,7 @@ function getRandomMonster(color: MonsterColor) {
   let monster: RandomMonster | null = new RandomizeMonster().randomizeByColor(color, getExcludedCharacters());
 
   if (monster === null) {
-    toast.error("No other monster available.");
+    toast.error(t("randomizer.error.no_other_monster_available"));
     return;
   }
 
@@ -50,7 +52,7 @@ function getRandomCommander() {
   let commander: RandomCommander | null = new RandomizeCommander().randomize(getExcludedCharacters());
 
   if (commander === null) {
-    toast.error("No other commander / overlord available.");
+    toast.error(t("randomizer.error.no_other_commander_available"));
     return;
   }
 
@@ -78,7 +80,7 @@ function getRandomCommander() {
     />
     <div class="form-control py-4 w-72">
       <label class="cursor-pointer">
-        <span class="text-md pr-4">Exclude current drawn character</span>
+        <span class="text-md pr-4">{{ $t('randomizer.exclude_current_monster') }}</span>
         <input
           type="checkbox"
           id="randomizer-exclude-current-character"
@@ -93,7 +95,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('white')"
         >
-          White
+        {{ $t('randomizer.white') }}
         </button>
       </div>
       <div>
@@ -101,7 +103,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('gray')"
         >
-          Gray
+          {{ $t('randomizer.gray') }}
         </button>
       </div>
       <div>
@@ -109,7 +111,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('black')"
         >
-          Black
+          {{ $t('randomizer.black') }}
         </button>
       </div>
       <div>
@@ -117,7 +119,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomCommander()"
         >
-          Commander
+          {{ $t('randomizer.commander') }}
         </button>
       </div>
     </div>
