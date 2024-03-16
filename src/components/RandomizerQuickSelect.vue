@@ -16,7 +16,7 @@ function toggleDisplay() {
     class="bg-neutral relative h-12 pl-2 pt-3 cursor-pointer w-full lg:w-1/2 rounded-md shadow-lg"
     id="randomizer-quick-select"
   >
-    Enabled variant / content
+    {{ $t('randomizer.enabled_content') }}    
     <ChevronDownIcon v-if="!displayContent" class="absolute top-4 right-2 h-4 w-4" />
     <ChevronUpIcon v-if="displayContent" class="absolute top-4 right-2 h-4 w-4" />
   </div>
