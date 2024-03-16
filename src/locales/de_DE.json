@@ -15,12 +15,28 @@
   },
   "configuration": {
     "error": {
-      "atleast-one-selected": "Es muss mindestens eine Variante ausgewählt werden."
+      "atleast-one-selected": "Es muss mindestens eine ausgewählt werden."
     }
   },
+  "content": {
+    "apocalypse": "Apocalypse",
+    "awakenings": "Awakenings",
+    "core": "Core",
+    "desert_of_hellscar": "Wüste der Narben",
+    "fallen_sisters": "Fallen Sisters",
+    "handuriel": "Handuriel",
+    "hero_pack_1": "Hero Pack 1",
+    "lord_wrath": "Lordwrath",
+    "lorien": "Lorien",
+    "monster_pack_1": "Monster Pack 1",
+    "rise_of_the_undead_dragon": "Der untote Drache",
+    "spoils_of_war": "Kriegsbeute",
+    "the_ruin_of_luccanor": "Admiral Luccanors Verderben",
+    "the_shadow_world": "Die Schattenwelt"
+  },  
   "variant": {
     "standard": "Standard",
-    "alternate": "Alternative",
-    "complex": "Complex (A/B)"
+    "alternate": "Alternativ",
+    "complex": "Komplex (A/B)"
   }
 }

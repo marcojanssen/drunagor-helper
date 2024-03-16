@@ -7,4 +7,5 @@ export class Core implements ContentData {
   public readonly heroes = true;
   public readonly monsters = true;
   public readonly items = true;
+  public readonly translation_key = "content.core";
 }
