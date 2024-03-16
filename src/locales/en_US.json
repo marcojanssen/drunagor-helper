@@ -1,0 +1,15 @@
+{
+    "randomizer": {
+        "random_monster": "Random monster",
+        "exclude_current_monster": "Exclude current drawn character",
+        "enabled_content": "Enabled variant / content",
+        "white": "White",
+        "gray": "Gray",
+        "black": "Black",
+        "commander": "Commander",
+        "error": {
+            "no_other_monster_available": "No other monster available.",
+            "no_other_commander_available": "No other commander / overlord available."
+        }
+    }
+  }

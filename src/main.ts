@@ -14,45 +14,24 @@ import "vue-toastification/dist/index.css";
 import HeroDetailView from "@/views/HeroDetailView.vue";
 import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
 
+import * as enUS from '@/locales/en_US.json'
+import * as deDE from '@/locales/de_DE.json'
+
 const pinia = createPinia();
 
 const messages = {
-  en: {
-    randomizer: {
-      random_monster: "Random monster",
-      exclude_current_monster: "Exclude current drawn character",
-      enabled_content: "Enabled variant / content",
-      white: 'White',
-      gray: 'Gray',
-      black: 'Black',
-      commander: 'Commander',
-      error: {
-        no_other_monster_available: "No other monster available.",
-        no_other_commander_available: "No other commander / overlord available."
-      }      
-    }
+  'en-us': {
+    ...enUS
   },
-  de: {
-    randomizer: {
-      random_monster: "Zufälliges Monster",
-      exclude_current_monster: "Aktuell gezogenen Charakter ausschließen",
-      enabled_content: "Aktivierte Variante / Inhalt",
-      white: 'Weiß',
-      gray: 'Grau',
-      black: 'Schwarz',
-      commander: 'Kommandant',
-      error: {
-        no_other_monster_available: "No other monster available.",
-        no_other_commander_available: "Kein anderer Kommandant / Overlord verfügbar."
-      }      
-    }
+  'de-de': {
+    ...deDE
   }
-};
+}
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'de', // set locale
-  fallbackLocale: 'en', // set fallback locale
+  locale: 'en-us', // set locale
+  fallbackLocale: 'en-us', // set fallback locale
   messages, // set locale messages
   // If you need to specify other options, you can set other options
   // ...
