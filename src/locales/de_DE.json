@@ -1,15 +1,26 @@
 {
-    "randomizer": {
-        "random_monster": "Zufälliges Monster",
-        "exclude_current_monster": "Aktuell gezogenen Charakter ausschließen",
-        "enabled_content": "Aktivierte Variante / Inhalt",
-        "white": "Weiß",
-        "gray": "Grau",
-        "black": "Schwarz",
-        "commander": "Kommandant",
-        "error": {
-            "no_other_monster_available": "No other monster available.",
-            "no_other_commander_available": "Kein anderer Kommandant / Overlord verfügbar."
-        }
+  "randomizer": {
+    "random_monster": "Zufälliges Monster",
+    "exclude_current_monster": "Aktuell gezogenen Charakter ausschließen",
+    "enabled_content": "Aktivierte Variante / Inhalt",
+    "white": "Weiß",
+    "gray": "Grau",
+    "black": "Schwarz",
+    "commander": "Kommandant",
+    "overlord": "Overlord",
+    "error": {
+      "no_other_monster_available": "No other monster available.",
+      "no_other_commander_available": "Kein anderer Kommandant / Overlord verfügbar."
     }
+  },
+  "configuration": {
+    "error": {
+      "atleast-one-selected": "Es muss mindestens eine Variante ausgewählt werden."
+    }
+  },
+  "variant": {
+    "standard": "Standard",
+    "alternate": "Alternate",
+    "complex": "Complex (A/B)"
+  }
 }

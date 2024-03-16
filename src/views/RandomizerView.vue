@@ -43,7 +43,7 @@ function getRandomMonster(color: MonsterColor) {
 
   currentCharacterId.value = monster.id;
   name.value = monster.name;
-  variant.value = variantStore.find(monster.getRandomVariant()).title;
+  variant.value = t(variantStore.find(monster.getRandomVariant()).translation_key);
   frontImage.value = monster.image.main;
   backImage.value = monster.image.miniature;
 }
@@ -58,9 +58,9 @@ function getRandomCommander() {
 
   currentCharacterId.value = commander.id;
   name.value = commander.name;
-  variant.value = "Commander";
+  variant.value = t("randomizer.commander");
   if (commander.id === "demon-lord" || commander.id === "fallen-sisters") {
-    variant.value = "Overlord";
+    variant.value = t("randomizer.overlord");
   }
 
   frontImage.value = commander.image.main;
@@ -80,7 +80,7 @@ function getRandomCommander() {
     />
     <div class="form-control py-4 w-72">
       <label class="cursor-pointer">
-        <span class="text-md pr-4">{{ $t('randomizer.exclude_current_monster') }}</span>
+        <span class="text-md pr-4">{{ $t("randomizer.exclude_current_monster") }}</span>
         <input
           type="checkbox"
           id="randomizer-exclude-current-character"
@@ -95,7 +95,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('white')"
         >
-        {{ $t('randomizer.white') }}
+          {{ $t("randomizer.white") }}
         </button>
       </div>
       <div>
@@ -103,7 +103,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('gray')"
         >
-          {{ $t('randomizer.gray') }}
+          {{ $t("randomizer.gray") }}
         </button>
       </div>
       <div>
@@ -111,7 +111,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomMonster('black')"
         >
-          {{ $t('randomizer.black') }}
+          {{ $t("randomizer.black") }}
         </button>
       </div>
       <div>
@@ -119,7 +119,7 @@ function getRandomCommander() {
           class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
           @click="getRandomCommander()"
         >
-          {{ $t('randomizer.commander') }}
+          {{ $t("randomizer.commander") }}
         </button>
       </div>
     </div>
