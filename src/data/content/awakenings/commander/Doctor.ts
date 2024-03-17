@@ -10,4 +10,5 @@ export class Doctor implements CommanderData {
     big: ImageUrl,
     miniature: "",
   };
+  translation_key = "monster.commander-doctor";
 }

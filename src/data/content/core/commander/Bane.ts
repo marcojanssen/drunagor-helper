@@ -11,4 +11,5 @@ export class Bane implements CommanderData {
     big: ImageUrl,
     miniature: MiniatureUrl,
   };
+  translation_key = "monster.bane";
 }

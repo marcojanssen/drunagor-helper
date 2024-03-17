@@ -10,4 +10,5 @@ export class Flinch implements CommanderData {
     big: ImageUrl,
     miniature: "",
   };
+  translation_key = "monster.commander-flinch";
 }
