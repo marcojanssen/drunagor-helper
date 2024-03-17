@@ -10,6 +10,7 @@ import BaseDivider from "@/components/BaseDivider.vue";
 
 const route = useRoute();
 const keywordDataRepository = new KeywordDataRepository();
+keywordDataRepository.load("en_US");
 const keywords = keywordDataRepository.findAll();
 
 let preselectedKeyword = "";
