@@ -30,7 +30,7 @@ const messages = {
 const i18n = createI18n({
   legacy: false,
   globalInjection: true,
-  locale: "de_DE",
+  locale: "en_US",
   fallbackLocale: "en_US",
   messages,
 });
