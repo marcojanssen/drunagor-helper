@@ -15,4 +15,5 @@ export class ShadowPain implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "white";
+  translation_key = "monster.shadow-pain";
 }

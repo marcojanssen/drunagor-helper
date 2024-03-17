@@ -7,6 +7,7 @@ export class RandomMonsterFactory {
     return new RandomMonster(
       monsterData.id,
       monsterData.name,
+      monsterData.translation_key,
       monsterData.variants,
       new RandomImage(monsterData.images.big, monsterData.images.miniature)
     );

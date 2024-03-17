@@ -15,4 +15,5 @@ export class ShadowMistress implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "white";
+  translation_key = "monster.shadow-mistress";
 }

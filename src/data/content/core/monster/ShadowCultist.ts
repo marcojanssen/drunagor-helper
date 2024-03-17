@@ -15,4 +15,6 @@ export class ShadowCultist implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "white";
+  translation_key = "monster.shadow-cultist";
+
 }

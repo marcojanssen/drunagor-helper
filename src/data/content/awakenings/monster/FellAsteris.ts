@@ -14,4 +14,5 @@ export class FellAsteris implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.fell-asteris";
 }

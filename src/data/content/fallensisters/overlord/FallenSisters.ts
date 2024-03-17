@@ -10,4 +10,5 @@ export class FallenSisters implements CommanderData {
     big: ImageUrl,
     miniature: "",
   };
+  translation_key = "monster.fallen-sisters";
 }

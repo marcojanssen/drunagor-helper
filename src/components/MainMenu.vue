@@ -50,7 +50,7 @@ function open() {
                   <span>
                     <QuestionMarkCircleIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">{{ $t("menu.random_monster") }}</span>
+                  <span class="pl-2">{{ $t("menu.random-monster") }}</span>
                 </router-link>
               </li>
               <li>

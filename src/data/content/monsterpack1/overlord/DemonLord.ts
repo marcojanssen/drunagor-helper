@@ -10,4 +10,5 @@ export class DemonLord implements CommanderData {
     big: ImageUrl,
     miniature: "",
   };
+  translation_key = "monster.demon-lord";
 }

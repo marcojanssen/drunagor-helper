@@ -14,4 +14,5 @@ export class NagianHunter implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "white";
+  translation_key = "monster.nagian-hunter";
 }

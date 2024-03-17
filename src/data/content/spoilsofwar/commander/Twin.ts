@@ -12,4 +12,5 @@ export class Twin implements CommanderData {
     big: ImageUrl,
     miniature: MiniatureUrl,
   };
+  translation_key = "monster.commander-twin";
 }

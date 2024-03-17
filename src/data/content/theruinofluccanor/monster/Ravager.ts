@@ -14,4 +14,5 @@ export class Ravager implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "white";
+  translation_key = "monster.ravager";
 }
