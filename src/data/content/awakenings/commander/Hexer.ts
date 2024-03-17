@@ -10,4 +10,5 @@ export class Hexer implements CommanderData {
     big: ImageUrl,
     miniature: "",
   };
+  translation_key = "monster.commander-hexer";
 }

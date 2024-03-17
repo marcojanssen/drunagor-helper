@@ -10,4 +10,5 @@ export class Ox implements CommanderData {
     big: ImageUrl,
     miniature: "",
   };
+  translation_key = "monster.commander-ox";
 }
