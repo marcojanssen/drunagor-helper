@@ -14,4 +14,5 @@ export class GremlinHorde implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "white";
+  translation_key = "monster.gremlin-horde";
 }

@@ -15,4 +15,5 @@ export class ShadowVampire implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.shadow-vampire";
 }

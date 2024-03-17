@@ -15,4 +15,5 @@ export class RottenFlesh implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.rotten-flesh";
 }

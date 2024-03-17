@@ -16,7 +16,7 @@ import RandomizerQuickSelect from "@/components/RandomizerQuickSelect.vue";
 const toast = useToast();
 const { t } = useI18n();
 
-const name = ref(t("randomizer.random_monster"));
+const name = ref(t("randomizer.random-monster"));
 const variant = ref("");
 const currentCharacterId = ref("");
 const frontImage = ref(RandomizerTitle.toString());
@@ -37,12 +37,12 @@ function getRandomMonster(color: MonsterColor) {
   let monster: RandomMonster | null = new RandomizeMonster().randomizeByColor(color, getExcludedCharacters());
 
   if (monster === null) {
-    toast.error(t("randomizer.error.no_other_monster_available"));
+    toast.error(t("randomizer.error.no-other-monster-available"));
     return;
   }
 
   currentCharacterId.value = monster.id;
-  name.value = monster.name;
+  name.value = t(monster.translation_key);
   variant.value = t(variantStore.find(monster.getRandomVariant()).translation_key);
   frontImage.value = monster.image.main;
   backImage.value = monster.image.miniature;
@@ -52,12 +52,12 @@ function getRandomCommander() {
   let commander: RandomCommander | null = new RandomizeCommander().randomize(getExcludedCharacters());
 
   if (commander === null) {
-    toast.error(t("randomizer.error.no_other_commander_available"));
+    toast.error(t("randomizer.error.no-other-commander-available"));
     return;
   }
 
   currentCharacterId.value = commander.id;
-  name.value = commander.name;
+  name.value = t(commander.translation_key);
   variant.value = t("randomizer.commander");
   if (commander.id === "demon-lord" || commander.id === "fallen-sisters") {
     variant.value = t("randomizer.overlord");
@@ -80,7 +80,7 @@ function getRandomCommander() {
     />
     <div class="grid grid-cols-1 gap-4 place-items-center">
       <label class="cursor-pointer">
-        <span class="text-md pr-4">{{ $t("randomizer.exclude_current_monster") }}</span>
+        <span class="text-md pr-4">{{ $t("randomizer.exclude-current-monster") }}</span>
         <input
           type="checkbox"
           id="randomizer-exclude-current-character"

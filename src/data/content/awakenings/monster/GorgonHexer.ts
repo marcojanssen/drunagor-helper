@@ -14,4 +14,5 @@ export class GorgonHexer implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.gorgon-hexer";
 }

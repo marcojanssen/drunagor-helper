@@ -15,4 +15,5 @@ export class Executioner implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.executioner";
 }

@@ -14,4 +14,5 @@ export class CorruptedWorm implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.corrupted-worm";
 }

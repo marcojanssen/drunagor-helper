@@ -14,4 +14,5 @@ export class GorgonessWitch implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "white";
+  translation_key = "monster.gorgoness-witch";
 }

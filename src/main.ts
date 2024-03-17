@@ -13,7 +13,6 @@ import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import HeroDetailView from "@/views/HeroDetailView.vue";
 import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
-
 import * as enUS from "@/locales/en_US.json";
 import * as deDE from "@/locales/de_DE.json";
 
@@ -31,7 +30,7 @@ const messages = {
 const i18n = createI18n({
   legacy: false,
   globalInjection: true,
-  locale: "en_US",
+  locale: "de_DE",
   fallbackLocale: "en_US",
   messages,
 });

@@ -7,5 +7,5 @@ export class TheShadowWorld implements ContentData {
   public readonly heroes = false;
   public readonly monsters = true;
   public readonly items = false;
-  public readonly translation_key = "content.the_shadow_world";
+  public readonly translation_key = "content.the-shadow-world";
 }

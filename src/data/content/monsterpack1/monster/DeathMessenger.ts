@@ -15,4 +15,5 @@ export class DeathMessenger implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.death-messenger";
 }

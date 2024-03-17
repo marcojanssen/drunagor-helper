@@ -14,4 +14,5 @@ export class HellspawnBrute implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.hellspawn-brute";
 }

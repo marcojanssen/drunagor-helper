@@ -15,4 +15,5 @@ export class ShadowKnight implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "black";
+  translation_key = "monster.shadow-knight";
 }

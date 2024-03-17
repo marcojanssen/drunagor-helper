@@ -15,4 +15,5 @@ export class WalkingHorror implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "white";
+  translation_key = "monster.walking-horror";
 }
