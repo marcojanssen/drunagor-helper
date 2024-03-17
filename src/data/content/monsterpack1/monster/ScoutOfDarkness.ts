@@ -15,5 +15,5 @@ export class ScoutOfDarkness implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "white";
-  translation_key = "monster.scout-of-darkness";  
+  translation_key = "monster.scout-of-darkness";
 }
