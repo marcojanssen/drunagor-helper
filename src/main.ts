@@ -20,10 +20,10 @@ import * as deDE from "@/locales/de_DE.json";
 const pinia = createPinia();
 
 const messages = {
-  "en_US": {
+  en_US: {
     ...enUS,
   },
-  "de_DE": {
+  de_DE: {
     ...deDE,
   },
 };
