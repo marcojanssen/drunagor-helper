@@ -754,7 +754,6 @@
       "id": "difficult-terrain",
       "keyword": "SCHWIERIGES GELÄNDE",
       "description": "Ein Charakter, der schwieriges Gelände (wie z. B. Wasser) betritt, verliert 1 Bewegungspunkt der aktuellen Bewegung, jedoch nur 1x pro Zug. Es ist erlaubt mit dem letzten Bewegungspunkt das Gelände zu betreten und den Verlust dann zu ignorieren."
-    },
     {
       "id": "disarm",
       "keyword": "ENTWAFFNEN",
