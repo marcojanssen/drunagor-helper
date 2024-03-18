@@ -7,10 +7,10 @@
     "gray": "Grau",
     "black": "Schwarz",
     "commander": "Kommandant",
-    "overlord": "Overlord",
+    "overlord": "Leutnant",
     "error": {
       "no-other-monster-available": "Kein anderes Monster verfügbar.",
-      "no-other-commander-available": "Kein anderer Kommandant / Overlord verfügbar."
+      "no-other-commander-available": "Kein anderer Kommandant / Leutnant verfügbar."
     }
   },
   "monster": {
