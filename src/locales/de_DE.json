@@ -67,7 +67,12 @@
     "keyword": "Schlüsselwörter",
     "settings": "Einstellungen"
   },
+  "language": {
+    "english": "English",
+    "german": "German (work in progress)"
+  },
   "configuration": {
+    "language": "Language",
     "enabled-variant": "Aktivierte Variante",
     "monster-content": "Verfügbare Monster",
     "hero-content": "Verfügbare Helden",

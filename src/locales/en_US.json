@@ -67,7 +67,12 @@
     "keyword": "Keyword",
     "settings": "Settings"
   },
+  "language": {
+    "english": "English",
+    "german": "German (work in progress)"
+  },
   "configuration": {
+    "language": "Language",
     "enabled-variant": "Enabled variant",
     "monster-content": "Monster content",
     "hero-content": "Hero content",

@@ -15,6 +15,7 @@ import HeroDetailView from "@/views/HeroDetailView.vue";
 import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
 import * as enUS from "@/locales/en_US.json";
 import * as deDE from "@/locales/de_DE.json";
+import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 const pinia = createPinia();
 
@@ -67,3 +68,6 @@ app.use(router);
 app.use(Toast, { timeout: 3000 });
 
 app.mount("#app");
+
+const configurationStore = ConfigurationStore();
+i18n.global.locale.value = configurationStore.enabledLanguage as "en_US" | "de_DE";
