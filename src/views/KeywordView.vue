@@ -7,10 +7,12 @@ import BaseList from "@/components/BaseList.vue";
 import KeywordListItem from "@/components/KeywordListItem.vue";
 import { marked } from "marked";
 import BaseDivider from "@/components/BaseDivider.vue";
+import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 const route = useRoute();
 const keywordDataRepository = new KeywordDataRepository();
-keywordDataRepository.load("en_US");
+const configurationStore = ConfigurationStore();
+keywordDataRepository.load(configurationStore.enabledLanguage);
 const keywords = keywordDataRepository.findAll();
 
 let preselectedKeyword = "";
