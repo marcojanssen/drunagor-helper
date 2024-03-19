@@ -10,6 +10,7 @@ export interface ItemData {
   name: string;
   itemType: ItemType;
   cardType: CardType;
+  translation_key: string;
 }
 
 export interface ArmorItemData extends ItemData {

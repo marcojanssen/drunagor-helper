@@ -30,6 +30,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Armor",
       armorTypes: ["Cloth"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "warworn-breastplate",
@@ -40,6 +41,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Armor",
       armorTypes: ["Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "veteran-cuirass",
@@ -50,6 +52,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Armor",
       armorTypes: ["Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "hunting-shortbow",
@@ -60,6 +63,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "axe-of-the-steppes",
@@ -70,6 +74,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Heavy"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "hellscarian-falchions",
@@ -80,6 +85,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "counselors-staff",
@@ -90,6 +96,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
   ];
 

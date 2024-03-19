@@ -5,6 +5,7 @@ import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid
 import { HeroStore } from "@/store/HeroStore";
 import type { ItemData } from "@/data/repository/ItemData";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
+import { useI18n } from "vue-i18n";
 
 const heroStore = HeroStore();
 
@@ -17,6 +18,8 @@ const itemCardIds = props.repository.findAll();
 
 const stashedItemIds = ref([] as string[]);
 const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
+const { t } = useI18n();
+
 if (typeof hero.stashedCardIds === "undefined") {
   hero.stashedCardIds = [];
 }
@@ -102,7 +105,7 @@ watch(stashedItemIds, (newStashedItemCardIds) => {
             }"
           >
             <span class="block truncate">
-              {{ itemCard.name }}
+              {{ t(itemCard.translation_key) }}
             </span>
             <span
               v-if="selected"
@@ -121,7 +124,7 @@ watch(stashedItemIds, (newStashedItemCardIds) => {
     <template v-for="itemCard in findItemCards(stashedItemIds)" :key="itemCard.id">
       <ul id="hero-stash-display" class="list-disc list-inside">
         <li>
-          {{ itemCard.name }}
+          {{ t(itemCard.translation_key) }}
         </li>
       </ul>
     </template>

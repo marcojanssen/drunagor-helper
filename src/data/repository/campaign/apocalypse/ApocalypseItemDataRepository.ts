@@ -27,6 +27,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Consumable",
       cardType: "Chest",
       consumableType: "Tools",
+      translation_key: "consumable.",
     } as ConsumableItemData,
     {
       id: "axe-of-the-steppes",
@@ -34,6 +35,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Starting Gear",
       weaponTypes: ["Heavy"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "carmillas-kiss",
@@ -41,12 +43,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "chain-of-the-lost-world",
       name: "Chain of the Lost World",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "commodores-shield",
@@ -54,6 +58,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Relic", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "condottieris-breastplate",
@@ -61,6 +66,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Adventure",
       armorTypes: ["Cloth", "Leather", "Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "counselors-staff",
@@ -68,6 +74,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Starting Gear",
       weaponTypes: ["Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "draconian-war-gauntlet",
@@ -75,12 +82,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon", "Relic", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "eldritch-symbiot",
       name: "Eldritch Symbiot",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "emerald-claw-gauntlet",
@@ -88,6 +97,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Relic", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "empyrean-bowstaff",
@@ -95,24 +105,28 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Adventure",
       weaponTypes: ["Implement", "Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "executioners-helmet",
       name: "Executioner's Helmet",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as OffHandItemData,
     {
       id: "gilded-collar-death",
       name: "Gilded Collar (Death)",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "gilded-collar-life",
       name: "Gilded Collar (Life)",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "gil-garoths-sword",
@@ -120,12 +134,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Adventure",
       weaponTypes: ["Heavy", "Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "grayrock-signet",
       name: "Grayrock Signet",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "hellscarian-falchion",
@@ -133,6 +149,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Starting Gear",
       weaponTypes: ["Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "hunting-shotbow",
@@ -140,6 +157,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Starting Gear",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-arbalast",
@@ -147,6 +165,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-arcannon",
@@ -154,6 +173,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged", "Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-arming-doublet",
@@ -161,6 +181,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Cloth", "Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "improved-astral-shard",
@@ -168,6 +189,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Relic"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "improved-cape-of-the-magi",
@@ -175,6 +197,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Cloth"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "improved-claymore",
@@ -182,6 +205,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-crossbow",
@@ -189,18 +213,21 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-eldritch-mask",
       name: "Improved Eldritch Mask",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "improved-emerald-ring",
       name: "Improved Emerald Ring",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "improved-longsword",
@@ -208,6 +235,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy", "Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-lorica-armor",
@@ -215,6 +243,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Leather", "Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "improved-pact-blade",
@@ -222,12 +251,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "improved-power-gauntlet",
       name: "Improved Power Gauntlet",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "improved-rapier",
@@ -235,6 +266,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-royal-plate",
@@ -242,6 +274,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "improved-royal-staff",
@@ -249,6 +282,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "improved-shadday-shield",
@@ -256,6 +290,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "improved-shadow-leather",
@@ -263,6 +298,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "improved-shell-opener",
@@ -270,12 +306,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "improved-titan-stompers",
       name: "Improved Titan Stompers",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "improved-umbral-buckler",
@@ -283,12 +321,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "jeweled-necklace",
       name: "Jeweled Necklace",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as OffHandItemData,
     {
       id: "kraken-slayer",
@@ -296,6 +336,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon", "Relic"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "lionhearteds-sword",
@@ -303,6 +344,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Adventure",
       weaponTypes: ["Heavy", "Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "masterpiece-armor",
@@ -310,6 +352,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Adventure",
       armorTypes: ["Cloth", "Leather", "Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "masterpiece-blade",
@@ -317,6 +360,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "masterpiece-bow",
@@ -324,6 +368,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "masterpiece-staff",
@@ -331,6 +376,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Relic"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "outlander-black-plate",
@@ -338,12 +384,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Adventure",
       armorTypes: ["Cloth", "Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "outlander-helmet",
       name: "Outlander Helmet",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "outlander-shield",
@@ -351,6 +399,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "princess-bowaegis",
@@ -358,18 +407,21 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon", "Relic", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "ragged-doll",
       name: "Ragged Doll",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "rainbow-mask",
       name: "Rainbow Mask",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "reality-render",
@@ -377,12 +429,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon", "Relic"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "righteous-torch",
       name: "Righteous Torch",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "rod-of-the-prince",
@@ -390,12 +444,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Adventure",
       offHandTypes: ["Off Hand Weapon", "Relic"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "sapphire-pendant",
       name: "Sapphire Pendant",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "scholars-robe",
@@ -403,6 +459,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Starting Gear",
       armorTypes: ["Cloth"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "scroll-of-charm",
@@ -410,6 +467,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Consumable",
       cardType: "Chest",
       consumableType: "Scroll",
+      translation_key: "consumable.",
     } as ConsumableItemData,
     {
       id: "scroll-of-the-copy-cat",
@@ -417,6 +475,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Consumable",
       cardType: "Chest",
       consumableType: "Scroll",
+      translation_key: "consumable.",
     } as ConsumableItemData,
     {
       id: "scroll-of-translocation",
@@ -424,12 +483,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Consumable",
       cardType: "Chest",
       consumableType: "Scroll",
+      translation_key: "consumable.",
     } as ConsumableItemData,
     {
       id: "sprout-of-darkness",
       name: "Sprout of Darkness",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "standard-arbalast",
@@ -437,6 +498,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "standard-arcannon",
@@ -444,6 +506,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged", "Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "standard-arming-doublet",
@@ -451,6 +514,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Cloth", "Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "standard-astral-shard",
@@ -458,6 +522,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Relic"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "standard-cape-of-the-magi",
@@ -465,6 +530,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Cloth"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "standard-claymore",
@@ -472,6 +538,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "standard-crossbow",
@@ -479,18 +546,21 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "standard-eldritch-mask",
       name: "Standard Eldritch Mask",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "standard-emerald-ring",
       name: "Standard Emerald Ring",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "standard-longsword",
@@ -498,6 +568,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy", "Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "standard-lorica-armor",
@@ -505,6 +576,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Leather", "Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "standard-pact-blade",
@@ -512,12 +584,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "standard-power-gauntlet",
       name: "Standard Power Gauntlet",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "standard-rapier",
@@ -525,6 +599,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "standard-royal-plate",
@@ -532,6 +607,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "standard-royal-staff",
@@ -539,6 +615,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "standard-shadday-shield",
@@ -546,6 +623,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "standard-shadow-leather",
@@ -553,6 +631,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "standard-shell-opener",
@@ -560,12 +639,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "standard-titan-stompers",
       name: "Standard Titan Stompers",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "standard-umbral-buckler",
@@ -573,6 +654,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "treasure-trove",
@@ -580,6 +662,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Consumable",
       cardType: "Chest",
       consumableType: "Treasure",
+      translation_key: "consumable.",
     } as ConsumableItemData,
     {
       id: "sword-of-kane",
@@ -587,6 +670,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Adventure",
       weaponTypes: ["Heavy", "Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-arbalast",
@@ -594,6 +678,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-arcannon",
@@ -601,6 +686,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged", "Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-arming-doublet",
@@ -608,6 +694,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Cloth", "Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "ultimate-astral-shard",
@@ -615,6 +702,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Relic"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "ultimate-cape-of-the-magi",
@@ -622,6 +710,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Cloth"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "ultimate-claymore",
@@ -629,6 +718,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-crossbow",
@@ -636,18 +726,21 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-eldritch-mask",
       name: "Ultimate Eldritch Mask",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "ultimate-emerald-ring",
       name: "Ultimate Emerald Ring",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "ultimate-longsword",
@@ -655,6 +748,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy", "Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-lorica-armor",
@@ -662,6 +756,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Leather", "Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "ultimate-pact-blade",
@@ -669,12 +764,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "ultimate-power-gauntlet",
       name: "Ultimate Power Gauntlet",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "ultimate-rapier",
@@ -682,6 +779,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Light"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-royal-plate",
@@ -689,6 +787,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "ultimate-royal-staff",
@@ -696,6 +795,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Implement"],
+      translation_key: "weapon.",
     } as WeaponItemData,
     {
       id: "ultimate-shadday-shield",
@@ -703,6 +803,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "ultimate-shadow-leather",
@@ -710,6 +811,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "ultimate-shell-opener",
@@ -717,12 +819,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "ultimate-titan-stompers",
       name: "Ultimate Titan Stompers",
       itemType: "Trinket",
       cardType: "Camp Item",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "ultimate-umbral-buckler",
@@ -730,6 +834,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Shield"],
+      translation_key: "off-hand.",
     } as OffHandItemData,
     {
       id: "veteran-cuirass",
@@ -737,12 +842,14 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Starting Gear",
       armorTypes: ["Leather"],
+      translation_key: "armor.",
     } as ArmorItemData,
     {
       id: "vow-keeper",
       name: "Vow Keeper",
       itemType: "Trinket",
       cardType: "Adventure",
+      translation_key: "trinket.",
     } as ItemData,
     {
       id: "warworn-breastplate",
@@ -750,6 +857,7 @@ export class ApocalypseItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Starting Gear",
       armorTypes: ["Plate"],
+      translation_key: "armor.",
     } as ArmorItemData,
   ];
 

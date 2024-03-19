@@ -5,6 +5,7 @@ import { computed, ref, watch } from "vue";
 import type { ItemData } from "@/data/repository/ItemData";
 import type { ItemType } from "@/data/type/ItemType";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   categories: { name: string; items: ItemData[] }[];
@@ -17,6 +18,7 @@ const emit = defineEmits(["clear", "selected", "stash"]);
 
 const placeholder = "Select " + (props.itemType ?? "Bag Slot");
 const selectedId = ref(props.value);
+const { t } = useI18n();
 
 let query = ref("");
 let filteredCategories = computed(() =>
@@ -41,7 +43,7 @@ function clearSelection() {
 }
 
 function displayValue(id: unknown) {
-  return props.repository.find(id as string)?.name ?? "";
+  return t(props.repository.find(id as string)?.translation_key ?? "");
 }
 
 function onStash() {
@@ -111,7 +113,7 @@ watch(selectedId, (newSelectedId) => {
                   }"
                 >
                   <div class="block truncate">
-                    {{ item.name }}
+                    {{ t(item.translation_key) }}
                     <span class="text-slate-500 text-xs" v-if="subTypeList(item) !== ''">{{ subTypeList(item) }}</span>
                   </div>
                   <span
