@@ -15,6 +15,7 @@ export const ConfigurationStore = defineStore("configuration", () => {
     "lordwrath",
   ] as ContentId[]);
   const enabledVariants = useStorage("VariantStore.enabled", ["standard"] as VariantId[]);
+  const enabledLanguage = useStorage("LanguageStore.enabled", "en_US");
 
   function getEnabledMonsterContent(): ContentId[] {
     return enabledMonsterContent.value;
@@ -26,6 +27,10 @@ export const ConfigurationStore = defineStore("configuration", () => {
 
   function getEnabledVariants(): VariantId[] {
     return enabledVariants.value;
+  }
+
+  function getEnabledLanguage(): string {
+    return enabledLanguage.value;
   }
 
   function isEnabledMonsterContent(contentId: ContentId): boolean {
@@ -40,15 +45,22 @@ export const ConfigurationStore = defineStore("configuration", () => {
     return enabledVariants.value.includes(variantId);
   }
 
+  function isEnabledLanguage(locale: string): boolean {
+    return enabledLanguage.value === locale;
+  }
+
   return {
     enabledMonsterContent,
     enabledHeroContent,
     enabledVariants,
+    enabledLanguage,
     getEnabledMonsterContent,
     getEnabledHeroContent,
     getEnabledVariants,
+    getEnabledLanguage,
     isEnabledMonsterContent,
     isEnabledHeroContent,
     isEnabledVariant,
+    isEnabledLanguage,
   };
 });
