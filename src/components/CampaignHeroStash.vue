@@ -29,7 +29,10 @@ let filteredItemCards = computed(() =>
   query.value === ""
     ? itemCardIds
     : itemCardIds.filter((stashedItem) =>
-        stashedItem.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
+        t(stashedItem.translation_key)
+          .toLowerCase()
+          .replace(/\s+/g, "")
+          .includes(query.value.toLowerCase().replace(/\s+/g, ""))
       )
 );
 

@@ -25,7 +25,10 @@ let filteredItems = computed(() =>
   query.value === ""
     ? props.items
     : props.items.filter((card) =>
-        card.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
+        t(card.translation_key)
+          .toLowerCase()
+          .replace(/\s+/g, "")
+          .includes(query.value.toLowerCase().replace(/\s+/g, ""))
       )
 );
 

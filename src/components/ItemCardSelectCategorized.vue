@@ -29,7 +29,10 @@ let filteredCategories = computed(() =>
           return {
             name: category.name,
             items: category.items.filter((item) =>
-              item.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
+              t(item.translation_key)
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(query.value.toLowerCase().replace(/\s+/g, ""))
             ),
           };
         })
