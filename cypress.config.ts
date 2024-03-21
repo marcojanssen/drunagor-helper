@@ -6,5 +6,6 @@ export default defineConfig({
     baseUrl: "http://localhost:4173/drunagor-helper/",
     video: false,
     screenshotOnRunFailure: false,
+    experimentalRunAllSpecs: true,
   },
 });
