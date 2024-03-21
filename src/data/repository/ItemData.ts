@@ -7,7 +7,6 @@ import type { CardType } from "@/data/type/CardType";
 
 export interface ItemData {
   id: string;
-  name: string;
   itemType: ItemType;
   cardType: CardType;
   translation_key: string;
