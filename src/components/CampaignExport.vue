@@ -5,6 +5,7 @@ import { HeroStore } from "@/store/HeroStore";
 import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { useToast } from "vue-toastification";
+import { useI18n } from "vue-i18n";
 
 const toast = useToast();
 
@@ -16,6 +17,7 @@ const isOpen = ref(false);
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const token = ref("");
+const { t } = useI18n();
 
 function openModal() {
   const campaignCopy = JSON.parse(JSON.stringify(campaignStore.find(props.campaignId)));
@@ -52,12 +54,12 @@ function closeModal() {
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
-    Export campaign
+    {{ t("label.export-campaign") }}
   </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">Export campaign</div>
+        <div class="w-full font-medium place-self-center">{{}}</div>
         <div>
           <button
             id="close-modal"
@@ -89,7 +91,7 @@ function closeModal() {
           class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
           @click="closeModal"
         >
-          Close
+          {{ t("label.close") }}
         </button>
       </div>
     </template>

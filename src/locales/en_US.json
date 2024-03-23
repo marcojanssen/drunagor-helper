@@ -13,12 +13,30 @@
       "no-other-commander-available": "No other commander / overlord available."
     }
   },
+  "label": {
+    "equipment-skills": "Equipment & Skills",
+    "remove-campaign": "Kampagne entfernen",
+    "new-campaign": "New campaign",
+    "export-campaign": "Export campaign",
+    "import-campaign": " Import campaign",
+    "sequential-adventure": "Sequential Adventure",
+    "camp-phase": "Camp Phase",
+    "remove-hero": "Remove hero",
+    "add-hero": "Add hero",
+    "campaigns": "Campaigns",
+    "campaign": "Campaign",
+    "campaign-log": "Campaign Log",
+    "yes": "Yes",
+    "no": "No",
+    "import": "Import",
+    "close": "Close",
+    "cancel": "Cancel"
+  },
   "weapon": {
     "core": {
       "amiran-crossbow": "Amiran Crossbow",
       "amiran-halberd": "Amiran Halberd",
       "amiran-royal-maul": "Amiran Royal Maul",
-      "bane-of-the-shadows": "Bane Of The Shadows",
       "battle-maul": "Battle Maul",
       "blacksteel-blade": "Blacksteel Blade",
       "blacksteel-greatsword": "Blacksteel Greatsword",
@@ -28,7 +46,6 @@
       "bloody-axe-socketed": "Bloody Axe (Socketed)",
       "corruptor-knife": "Corruptor Knife",
       "crossbow": "Crossbow",
-      "dark-piercer": "Dark Piercer",
       "dreampiercer-bow": "Dreampiercer Bow",
       "dwarven-kings-sword-cosmic-gem": "Dwarven King's Sword (Cosmic Gem)",
       "dwarven-kings-sword-socketed": "Dwarven King's Sword (Socketed)",
@@ -61,6 +78,10 @@
       "vicious-knife": "Vicious Knife",
       "weapon-of-the-ancients": "Weapon Of The Ancients",
       "wooden-staff": "Wooden Staff"
+    },
+    "undeaddragon": {
+      "dark-piercer": "Dark Piercer",
+      "bane-of-the-shadows": "Bane Of The Shadows"
     },
     "apocalypse": {
       "axe-of-the-steppes": "Axe of the Steppes",
@@ -129,7 +150,6 @@
       "broken-phylactery": "Broken Phylactery",
       "cursed-bracelet": "Cursed Bracelet",
       "dewey-and-guss-collar": "Dewey & Guss' Collar",
-      "dragon-eye-of-memory": "Dragon Eye Of Memory",
       "family-locket-cosmic-gem": "Family Locket (Cosmic Gem)",
       "family-locket-socketed": "Family Locket (Socketed)",
       "frozen-tears-of-alagast": "Frozen Tears Of Alagast",
@@ -149,6 +169,9 @@
       "seed-of-darkness-dim": "Seed Of Darkness (Dim)",
       "sigil-of-narangerel": "Sigil Of Narang'erel",
       "teddy-bear": "Teddy Bear"
+    },
+    "undeaddragon": {
+      "dragon-eye-of-memory": "Dragon Eye Of Memory"
     },
     "apocalypse": {
       "chain-of-the-lost-world": "Chain of the Lost World",
@@ -322,7 +345,6 @@
       "deadly-backstabber": "Deadly Backstabber",
       "deft-stilleto": "Deft Stilleto",
       "dragonbone-wand": "Dragonbone Wand",
-      "dragonclaw-shield": "Dragonclaw Shield",
       "dreamcrafted-buckler": "Dreamcrafted Buckler",
       "dueling-dagger": "Dueling Dagger",
       "empowered-pact-blade": "Empowered Pact Blade",
@@ -334,7 +356,6 @@
       "kite-shield-socketed": "Kite Shield (Socketed)",
       "lesser-mystical-symbol": "Lesser Mystical Symbol",
       "lesser-symbol-of-light": "Lesser Symbol Of Light",
-      "moonlight-dagger": "Moonlight Dagger",
       "mystical-symbol": "Mystical Symbol",
       "pact-blade": "Pact Blade",
       "round-brass-shield": "Round Brass Shield",
@@ -347,6 +368,10 @@
       "throwing-dagger": "Throwing Dagger",
       "undermountain-scabbard": "Undermountain Scabbard",
       "vengeful-pact-blade": "Vengeful Pact Blade"
+    },
+    "undeaddragon": {
+      "moonlight-dagger": "Moonlight Dagger",
+      "dragonclaw-shield": "Dragonclaw Shield"
     },
     "apocalypse": {
       "carmillas-kiss": "Carmilla's Kiss",

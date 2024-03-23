@@ -5,11 +5,13 @@ import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { CampaignStore } from "@/store/CampaignStore";
 import { useRouter } from "vue-router";
 import { HeroStore } from "@/store/HeroStore";
+import { useI18n } from "vue-i18n";
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const router = useRouter();
+const { t } = useI18n();
 
 function openModal() {
   isOpen.value = true;
@@ -38,12 +40,12 @@ function removeCampaign() {
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
-    Remove campaign
+    {{ t("label.remove-campaign") }}
   </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">Remove campaign</div>
+        <div class="w-full font-medium place-self-center">{{}}</div>
         <div>
           <button
             id="close-modal"
@@ -63,14 +65,14 @@ function removeCampaign() {
           class="px-2 py-2 bg-red-500 text-gray-200 uppercase font-semibold text-sm rounded-lg"
           @click="removeCampaign"
         >
-          Yes
+          {{ t("label.yes") }}
         </button>
         <button
           id="close-modal"
           class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
           @click="closeModal"
         >
-          No
+          {{ t("label.no") }}
         </button>
       </div>
     </template>

@@ -71,7 +71,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy"],
-      translation_key: "weapon.core.bane-of-the-shadows",
+      translation_key: "weapon.undeaddragon.bane-of-the-shadows",
     } as WeaponItemData,
     {
       id: "battle-maul",
@@ -218,7 +218,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy", "Light"],
-      translation_key: "weapon.core.dark-piercer",
+      translation_key: "weapon.undeaddragon.dark-piercer",
     } as WeaponItemData,
     {
       id: "deadly-backstabber",
@@ -251,7 +251,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       id: "dragon-eye-of-memory",
       itemType: "Trinket",
       cardType: "Camp Item",
-      translation_key: "trinket.core.dragon-eye-of-memory",
+      translation_key: "trinket.undeaddragon.dragon-eye-of-memory",
     } as ItemData,
     {
       id: "dragonbone-wand",
@@ -265,7 +265,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Relic", "Shield"],
-      translation_key: "offhand.core.dragonclaw-shield",
+      translation_key: "offhand.undeaddragon.dragonclaw-shield",
     } as OffHandItemData,
     {
       id: "dream-weaveplate",
@@ -586,7 +586,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Relic"],
-      translation_key: "offhand.core.moonlight-dagger",
+      translation_key: "offhand.undeaddragon.moonlight-dagger",
     } as OffHandItemData,
     {
       id: "mystical-symbol",

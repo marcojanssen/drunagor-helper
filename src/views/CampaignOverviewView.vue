@@ -11,12 +11,14 @@ import { HeroStore } from "@/store/HeroStore";
 import { PartyStore } from "@/store/PartyStore";
 import { customAlphabet } from "nanoid";
 import CampaignImport from "@/components/CampaignImport.vue";
+import { useI18n } from "vue-i18n";
 
 const partyStore = PartyStore();
 const legacyCampaign = partyStore.findAll();
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const nanoid = customAlphabet("1234567890", 5);
+const { t } = useI18n();
 
 //backwards compatibility
 if (legacyCampaign.length > 0) {
@@ -47,7 +49,7 @@ function findHeroes(campaignId: string): HeroData[] {
 </script>
 
 <template>
-  <BaseDivider>Campaigns</BaseDivider>
+  <BaseDivider>{{ t("label.campaigns") }}</BaseDivider>
   <BaseButtonMenu>
     <CampaignNew />
     <CampaignImport />

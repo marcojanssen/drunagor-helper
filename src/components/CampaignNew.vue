@@ -9,11 +9,13 @@ import { CampaignStore } from "@/store/CampaignStore";
 import { Campaign } from "@/store/Campaign";
 import { customAlphabet } from "nanoid";
 import { useRouter } from "vue-router";
+import { useI18n } from "vue-i18n";
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
 const nanoid = customAlphabet("1234567890", 5);
 const router = useRouter();
+const { t } = useI18n();
 
 function openModal() {
   isOpen.value = true;
@@ -37,12 +39,12 @@ function newCampaign(campaign: "core" | "apocalypse" | "awakenings") {
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
-    New campaign
+    {{ t("label.new-campaign") }}
   </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">New campaign</div>
+        <div class="w-full font-medium place-self-center">{{}}</div>
         <div>
           <button
             id="close-modal"
