@@ -62,7 +62,6 @@
       "orcish-reaper-blade": "Orkische Sensenklinge",
       "repeating-crossbow": "Repetierarmbrust",
       "runecarved-blade": "Runenbesetzte Klinge",
-      "staff-of-gravity": "Staff Of Gravity",
       "staff-of-the-arcana": "Stab der arkanen Künste",
       "staff-of-the-dawn": "Stab der Dämmerung",
       "staff-of-the-moon": "Stab des Mondes",
@@ -76,12 +75,15 @@
       "terror-blade": "Schreckensklinge",
       "valaranian-runebow": "Valaranischer Bogen",
       "vicious-knife": "Bösartiges Messer",
-      "weapon-of-the-ancients": "Weapon Of The Ancients",
       "wooden-staff": "Holzstab"
     },
     "undeaddragon": {
       "dark-piercer": "Dunkle Lanze",
       "bane-of-the-shadows": "Hammer der Schatten"
+    },
+    "desertofhellscar": {
+      "staff-of-gravity": "Stab der Schwerkraft",
+      "weapon-of-the-ancients": "Waffe der Ahnen"
     },
     "apocalypse": {
       "axe-of-the-steppes": "Axe of the Steppes",
@@ -152,7 +154,6 @@
       "dewey-and-guss-collar": "Halsbänder von Dewey & Guss",
       "family-locket-cosmic-gem": "Familienmedaillon (Kosmischer Edelstein)",
       "family-locket-socketed": "Familienmedaillon (Sockel)",
-      "frozen-tears-of-alagast": "Frozen Tears Of Alagast",
       "gold-medal": "Goldene Medaille",
       "golden-locket": "Goldener Anhänger",
       "good-quality-stick": "Stock von guter Qualität",
@@ -172,6 +173,9 @@
     },
     "undeaddragon": {
       "dragon-eye-of-memory": "Dragon Eye Of Memory"
+    },
+    "desertofhellscar": {
+      "frozen-tears-of-alagast": "Eistränen aus Alagast"
     },
     "apocalypse": {
       "chain-of-the-lost-world": "Chain of the Lost World",
@@ -258,8 +262,10 @@
       "studded-leather-armor": "Nietenpanzer aus Leder",
       "studded-shadow-leather": "Genietetes Schattenleder",
       "thornmail": "Dornenbesetzter Kettenpanzer",
-      "wormscale-breastplate": "Wormscale Breastplate",
       "xerethian-breastplate": "Brustplatte von Xereth"
+    },
+    "desertofhellscar": {
+      "wormscale-breastplate": "Wurmschuppenpanzer"
     },
     "apocalypse": {
       "condottieris-breastplate": "Connottieri's Breastplate",
@@ -344,7 +350,6 @@
     "core": {
       "deadly-backstabber": "Tödlicher Verräter",
       "deft-stilleto": "Kurzschwert",
-      "dragonbone-wand": "Dragonbone Wand",
       "dreamcrafted-buckler": "Traumhafter Schild",
       "dueling-dagger": "Duelldolch",
       "empowered-pact-blade": "Mächtiges Ritualmesser",
@@ -372,6 +377,9 @@
     "undeaddragon": {
       "moonlight-dagger": "Dolch des Mondlichts",
       "dragonclaw-shield": "Drachenklauenschild"
+    },
+    "desertofhellscar": {
+      "dragonbone-wand": "Drachenknochenstab"
     },
     "apocalypse": {
       "carmillas-kiss": "Carmilla's Kiss",

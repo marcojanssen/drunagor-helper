@@ -62,7 +62,6 @@
       "orcish-reaper-blade": "Orcish Reaper Blade",
       "repeating-crossbow": "Repeating Crossbow",
       "runecarved-blade": "Runecarved Blade",
-      "staff-of-gravity": "Staff Of Gravity",
       "staff-of-the-arcana": "Staff Of The Arcana",
       "staff-of-the-dawn": "Staff Of The Dawn",
       "staff-of-the-moon": "Staff Of The Moon",
@@ -76,12 +75,15 @@
       "terror-blade": "Terror Blade",
       "valaranian-runebow": "Valaranian Runebow",
       "vicious-knife": "Vicious Knife",
-      "weapon-of-the-ancients": "Weapon Of The Ancients",
       "wooden-staff": "Wooden Staff"
     },
     "undeaddragon": {
       "dark-piercer": "Dark Piercer",
       "bane-of-the-shadows": "Bane Of The Shadows"
+    },
+    "desertofhellscar": {
+      "staff-of-gravity": "Staff Of Gravity",
+      "weapon-of-the-ancients": "Weapon Of The Ancients"
     },
     "apocalypse": {
       "axe-of-the-steppes": "Axe of the Steppes",
@@ -152,7 +154,6 @@
       "dewey-and-guss-collar": "Dewey & Guss' Collar",
       "family-locket-cosmic-gem": "Family Locket (Cosmic Gem)",
       "family-locket-socketed": "Family Locket (Socketed)",
-      "frozen-tears-of-alagast": "Frozen Tears Of Alagast",
       "gold-medal": "Gold Medal",
       "golden-locket": "Golden Locket",
       "good-quality-stick": "Good-Quality Stick",
@@ -172,6 +173,9 @@
     },
     "undeaddragon": {
       "dragon-eye-of-memory": "Dragon Eye Of Memory"
+    },
+    "desertofhellscar": {
+      "frozen-tears-of-alagast": "Frozen Tears Of Alagast"
     },
     "apocalypse": {
       "chain-of-the-lost-world": "Chain of the Lost World",
@@ -258,8 +262,10 @@
       "studded-leather-armor": "Studded Leather Armor",
       "studded-shadow-leather": "Studded Shadow Leather",
       "thornmail": "Thornmail",
-      "wormscale-breastplate": "Wormscale Breastplate",
       "xerethian-breastplate": "Xerethian Breastplate"
+    },
+    "desertofhellscar": {
+      "wormscale-breastplate": "Wormscale Breastplate"
     },
     "apocalypse": {
       "condottieris-breastplate": "Connottieri's Breastplate",
@@ -344,7 +350,6 @@
     "core": {
       "deadly-backstabber": "Deadly Backstabber",
       "deft-stilleto": "Deft Stilleto",
-      "dragonbone-wand": "Dragonbone Wand",
       "dreamcrafted-buckler": "Dreamcrafted Buckler",
       "dueling-dagger": "Dueling Dagger",
       "empowered-pact-blade": "Empowered Pact Blade",
@@ -372,6 +377,9 @@
     "undeaddragon": {
       "moonlight-dagger": "Moonlight Dagger",
       "dragonclaw-shield": "Dragonclaw Shield"
+    },
+    "desertofhellscar": {
+      "dragonbone-wand": "Dragonbone Wand"
     },
     "apocalypse": {
       "carmillas-kiss": "Carmilla's Kiss",
