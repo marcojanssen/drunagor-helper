@@ -129,6 +129,18 @@ export class CoreItemDataRepository implements ItemDataRepository {
       translation_key: "trinket.core.blue-flame-torch",
     } as ItemData,
     {
+      id: "bond of superation",
+      itemType: "Trinket",
+      cardType: "Adventure",
+      translation_key: "trinket.core.bond-of-superation",
+    } as ItemData,
+    {
+      id: "badge-of-the-west-wind",
+      itemType: "Trinket",
+      cardType: "Adventure",
+      translation_key: "trinket.core.badge-of-the-west-wind",
+    } as ItemData,
+    {
       id: "boots-of-agility",
       itemType: "Trinket",
       cardType: "Camp Item",
