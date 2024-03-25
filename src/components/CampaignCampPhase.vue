@@ -4,8 +4,10 @@ import BaseModal from "@/components/BaseModal.vue";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { CampaignStore } from "@/store/CampaignStore";
 import { HeroStore } from "@/store/HeroStore";
+import { useI18n } from "vue-i18n";
 
 const emit = defineEmits(["campPhase"]);
+const { t } = useI18n();
 
 const isOpen = ref(false);
 const campaignStore = CampaignStore();
@@ -43,7 +45,7 @@ function campPhase() {
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
-    Camp Phase
+    {{ t("label.camp-phase") }}
   </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>

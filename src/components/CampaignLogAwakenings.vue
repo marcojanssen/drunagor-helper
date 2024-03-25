@@ -3,6 +3,7 @@ import CampaignLogAura from "@/components/CampaignLogAura.vue";
 import CampaignLogStatus from "@/components/CampaignLogStatus.vue";
 import { CampaignLogStatusRepository } from "@/data/repository/campaign/awakenings/CampaignLogStatusRepository";
 import { CampaignLogAuraRepository } from "@/data/repository/campaign/awakenings/CampaignLogAuraRepository";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   heroId: string;
@@ -11,6 +12,7 @@ const props = defineProps<{
 
 const statusRepository = new CampaignLogStatusRepository();
 const auraRepository = new CampaignLogAuraRepository();
+const { t } = useI18n();
 </script>
 
 <template>
@@ -26,7 +28,7 @@ const auraRepository = new CampaignLogAuraRepository();
       class="hero-detail-btn"
     >
       <button class="w-full px-2 py-2 bg-emerald-700 text-gray-200 uppercase font-semibold text-sm rounded-lg">
-        Equipment & Skills
+        {{ t("label.equipment-skills") }}
       </button>
     </router-link>
   </div>

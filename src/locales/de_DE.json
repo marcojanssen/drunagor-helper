@@ -13,12 +13,30 @@
       "no-other-commander-available": "Kein anderer Kommandant / Leutnant verfügbar."
     }
   },
+  "label": {
+    "equipment-skills": "Ausrüstung & Fähigkeiten",
+    "remove-campaign": "Kampagne entfernen",
+    "new-campaign": "Neue Kampagne",
+    "export-campaign": "Kampagne exportieren",
+    "import-campaign": " Kampagne importieren",
+    "sequential-adventure": "Fortlaufendes Abenteuer",
+    "camp-phase": "Lagerphase",
+    "remove-hero": "Held entfernen",
+    "add-hero": "Held hinzufügen",
+    "campaigns": "Kampagnen",
+    "campaign": "Kampagne",
+    "campaign-log": "Kampagnenlog",
+    "yes": "Ja",
+    "no": "Nein",
+    "import": "Importieren",
+    "close": "Schließen",
+    "cancel": "Abbrechen"
+  },
   "weapon": {
     "core": {
       "amiran-crossbow": "Armbrust aus Amiran",
       "amiran-halberd": "Hellebarde aus Amiran",
       "amiran-royal-maul": "Königlicher Hammer",
-      "bane-of-the-shadows": "Bane Of The Shadows",
       "battle-maul": "Kriegshammer",
       "blacksteel-blade": "Schwarzstahlklinge",
       "blacksteel-greatsword": "Schwarzstahlspalter",
@@ -28,7 +46,6 @@
       "bloody-axe-socketed": "Blutige Axt (Sockel)",
       "corruptor-knife": "Verderbnismesser",
       "crossbow": "Armbrust",
-      "dark-piercer": "Dark Piercer",
       "dreampiercer-bow": "Traumbrecher Bogen",
       "dwarven-kings-sword-cosmic-gem": "Schwert des Zwergenkönigs (Kosmischer Edelstein)",
       "dwarven-kings-sword-socketed": "Schwert des Zwergenkönigs (Sockel)",
@@ -45,7 +62,6 @@
       "orcish-reaper-blade": "Orkische Sensenklinge",
       "repeating-crossbow": "Repetierarmbrust",
       "runecarved-blade": "Runenbesetzte Klinge",
-      "staff-of-gravity": "Staff Of Gravity",
       "staff-of-the-arcana": "Stab der arkanen Künste",
       "staff-of-the-dawn": "Stab der Dämmerung",
       "staff-of-the-moon": "Stab des Mondes",
@@ -59,8 +75,15 @@
       "terror-blade": "Schreckensklinge",
       "valaranian-runebow": "Valaranischer Bogen",
       "vicious-knife": "Bösartiges Messer",
-      "weapon-of-the-ancients": "Weapon Of The Ancients",
       "wooden-staff": "Holzstab"
+    },
+    "undeaddragon": {
+      "dark-piercer": "Dunkle Lanze",
+      "bane-of-the-shadows": "Hammer der Schatten"
+    },
+    "desertofhellscar": {
+      "staff-of-gravity": "Stab der Schwerkraft",
+      "weapon-of-the-ancients": "Waffe der Ahnen"
     },
     "apocalypse": {
       "axe-of-the-steppes": "Axe of the Steppes",
@@ -129,10 +152,8 @@
       "broken-phylactery": "Zerbrochenes Seelengefäß",
       "cursed-bracelet": "Cursed Bracelet",
       "dewey-and-guss-collar": "Halsbänder von Dewey & Guss",
-      "dragon-eye-of-memory": "Dragon Eye Of Memory",
       "family-locket-cosmic-gem": "Familienmedaillon (Kosmischer Edelstein)",
       "family-locket-socketed": "Familienmedaillon (Sockel)",
-      "frozen-tears-of-alagast": "Frozen Tears Of Alagast",
       "gold-medal": "Goldene Medaille",
       "golden-locket": "Goldener Anhänger",
       "good-quality-stick": "Stock von guter Qualität",
@@ -148,7 +169,15 @@
       "seed-of-darkness-bright": "Saat der Dunkelheit (Leuchtend)",
       "seed-of-darkness-dim": "Saat der Dunkelheit (Dunkel)",
       "sigil-of-narangerel": "Siegel von Narang'erel",
-      "teddy-bear": "Teddybär"
+      "teddy-bear": "Teddybär",
+      "bond-of-superation": "Stirnreif der Überwindung",
+      "badge-of-the-west-wind": "Abzeichen des Westwindes"
+    },
+    "undeaddragon": {
+      "dragon-eye-of-memory": "Dragon Eye Of Memory"
+    },
+    "desertofhellscar": {
+      "frozen-tears-of-alagast": "Eistränen aus Alagast"
     },
     "apocalypse": {
       "chain-of-the-lost-world": "Chain of the Lost World",
@@ -235,8 +264,10 @@
       "studded-leather-armor": "Nietenpanzer aus Leder",
       "studded-shadow-leather": "Genietetes Schattenleder",
       "thornmail": "Dornenbesetzter Kettenpanzer",
-      "wormscale-breastplate": "Wormscale Breastplate",
       "xerethian-breastplate": "Brustplatte von Xereth"
+    },
+    "desertofhellscar": {
+      "wormscale-breastplate": "Wurmschuppenpanzer"
     },
     "apocalypse": {
       "condottieris-breastplate": "Connottieri's Breastplate",
@@ -321,8 +352,6 @@
     "core": {
       "deadly-backstabber": "Tödlicher Verräter",
       "deft-stilleto": "Kurzschwert",
-      "dragonbone-wand": "Dragonbone Wand",
-      "dragonclaw-shield": "Dragonclaw Shield",
       "dreamcrafted-buckler": "Traumhafter Schild",
       "dueling-dagger": "Duelldolch",
       "empowered-pact-blade": "Mächtiges Ritualmesser",
@@ -334,7 +363,6 @@
       "kite-shield-socketed": "Drachenschild (Sockel)",
       "lesser-mystical-symbol": "Kleines mystisches Symbol",
       "lesser-symbol-of-light": "Kleines Symbol des Lichts",
-      "moonlight-dagger": "Moonlight Dagger",
       "mystical-symbol": "Mystisches Symbol",
       "pact-blade": "Ritualmesser",
       "round-brass-shield": "Rundschild aus Messing",
@@ -347,6 +375,13 @@
       "throwing-dagger": "Wurfdolch",
       "undermountain-scabbard": "Zwergische Schwertscheide",
       "vengeful-pact-blade": "Ritualmesser der Rache"
+    },
+    "undeaddragon": {
+      "moonlight-dagger": "Dolch des Mondlichts",
+      "dragonclaw-shield": "Drachenklauenschild"
+    },
+    "desertofhellscar": {
+      "dragonbone-wand": "Drachenknochenstab"
     },
     "apocalypse": {
       "carmillas-kiss": "Carmilla's Kiss",
@@ -416,7 +451,7 @@
     "commander-twin": "Twin",
     "commander-spawn": "Spawn",
     "commander-witch": "Witch",
-    "corrupted-farmer": "Corrupted Farmer",
+    "corrupted-farmer": "Verdorbener Bauer",
     "corrupted-worm": "Corrupted Worm",
     "death-messenger": "Todesbote",
     "demon-lord": "Dämonenfürst",

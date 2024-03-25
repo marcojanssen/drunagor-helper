@@ -10,6 +10,7 @@ import type { Hero } from "@/store/Hero";
 import { customAlphabet } from "nanoid";
 import { HeroEquipment } from "@/store/Hero";
 import { useToast } from "vue-toastification";
+import { useI18n } from "vue-i18n";
 
 const toast = useToast();
 
@@ -18,6 +19,7 @@ const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const router = useRouter();
 const nanoid = customAlphabet("1234567890", 5);
+const { t } = useI18n();
 
 const token = ref("");
 
@@ -78,12 +80,12 @@ function closeModal() {
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
-    Import campaign
+    {{ t("label.import-campaign") }}
   </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal" id="campaign-import-modal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">Import campaign</div>
+        <div class="w-full font-medium place-self-center">{{ t("label.import-campaign") }}</div>
         <div>
           <button
             id="close-modal"
@@ -108,14 +110,14 @@ function closeModal() {
           class="px-2 py-2 bg-emerald-500 text-gray-200 uppercase font-semibold text-sm rounded-lg"
           @click="importCampaign"
         >
-          Import
+          {{ t("label.import") }}
         </button>
         <button
           id="close-modal"
           class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
           @click="closeModal"
         >
-          Cancel
+          {{ t("label.cancel") }}
         </button>
       </div>
     </template>

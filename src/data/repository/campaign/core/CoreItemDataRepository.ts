@@ -71,7 +71,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy"],
-      translation_key: "weapon.core.bane-of-the-shadows",
+      translation_key: "weapon.undeaddragon.bane-of-the-shadows",
     } as WeaponItemData,
     {
       id: "battle-maul",
@@ -127,6 +127,18 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Trinket",
       cardType: "Adventure",
       translation_key: "trinket.core.blue-flame-torch",
+    } as ItemData,
+    {
+      id: "bond of superation",
+      itemType: "Trinket",
+      cardType: "Adventure",
+      translation_key: "trinket.core.bond-of-superation",
+    } as ItemData,
+    {
+      id: "badge-of-the-west-wind",
+      itemType: "Trinket",
+      cardType: "Adventure",
+      translation_key: "trinket.core.badge-of-the-west-wind",
     } as ItemData,
     {
       id: "boots-of-agility",
@@ -218,7 +230,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy", "Light"],
-      translation_key: "weapon.core.dark-piercer",
+      translation_key: "weapon.undeaddragon.dark-piercer",
     } as WeaponItemData,
     {
       id: "deadly-backstabber",
@@ -251,21 +263,21 @@ export class CoreItemDataRepository implements ItemDataRepository {
       id: "dragon-eye-of-memory",
       itemType: "Trinket",
       cardType: "Camp Item",
-      translation_key: "trinket.core.dragon-eye-of-memory",
+      translation_key: "trinket.undeaddragon.dragon-eye-of-memory",
     } as ItemData,
     {
       id: "dragonbone-wand",
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Relic"],
-      translation_key: "offhand.core.dragonbone-wand",
+      translation_key: "offhand.desertofhellscar.dragonbone-wand",
     } as OffHandItemData,
     {
       id: "dragonclaw-shield",
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Relic", "Shield"],
-      translation_key: "offhand.core.dragonclaw-shield",
+      translation_key: "offhand.undeaddragon.dragonclaw-shield",
     } as OffHandItemData,
     {
       id: "dream-weaveplate",
@@ -402,7 +414,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       id: "frozen-tears-of-alagast",
       itemType: "Trinket",
       cardType: "Camp Item",
-      translation_key: "trinket.core.frozen-tears-of-alagast",
+      translation_key: "trinket.desertofhellscar.frozen-tears-of-alagast",
     } as ItemData,
     {
       id: "full-plate-armor",
@@ -586,7 +598,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Off Hand",
       cardType: "Camp Item",
       offHandTypes: ["Off Hand Weapon", "Relic"],
-      translation_key: "offhand.core.moonlight-dagger",
+      translation_key: "offhand.undeaddragon.moonlight-dagger",
     } as OffHandItemData,
     {
       id: "mystical-symbol",
@@ -835,7 +847,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Implement"],
-      translation_key: "weapon.core.staff-of-gravity",
+      translation_key: "weapon.desertofhellscar.staff-of-gravity",
     } as WeaponItemData,
     {
       id: "staff-of-the-arcana",
@@ -995,7 +1007,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Weapon",
       cardType: "Camp Item",
       weaponTypes: ["Heavy", "Light", "Implement", "Ranged"],
-      translation_key: "weapon.core.weapon-of-the-ancients",
+      translation_key: "weapon.desertofhellscar.weapon-of-the-ancients",
     } as WeaponItemData,
     {
       id: "wooden-staff",
@@ -1009,7 +1021,7 @@ export class CoreItemDataRepository implements ItemDataRepository {
       itemType: "Armor",
       cardType: "Camp Item",
       armorTypes: ["Leather", "Plate"],
-      translation_key: "armor.core.wormscale-breastplate",
+      translation_key: "armor.desertofhellscar.wormscale-breastplate",
     } as ArmorItemData,
     {
       id: "xerethian-breastplate",
