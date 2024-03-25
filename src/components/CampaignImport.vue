@@ -85,7 +85,7 @@ function closeModal() {
   <BaseModal :is-open="isOpen" @close-modal="closeModal" id="campaign-import-modal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{}}</div>
+        <div class="w-full font-medium place-self-center">{{ t("label.import-campaign") }}</div>
         <div>
           <button
             id="close-modal"

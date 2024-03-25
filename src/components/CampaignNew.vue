@@ -44,7 +44,7 @@ function newCampaign(campaign: "core" | "apocalypse" | "awakenings") {
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{}}</div>
+        <div class="w-full font-medium place-self-center">{{ t("label.new-campaign") }}</div>
         <div>
           <button
             id="close-modal"

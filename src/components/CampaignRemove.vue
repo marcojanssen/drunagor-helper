@@ -45,7 +45,7 @@ function removeCampaign() {
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{}}</div>
+        <div class="w-full font-medium place-self-center">{{ t("label.remove-campaign") }}</div>
         <div>
           <button
             id="close-modal"
