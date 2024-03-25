@@ -3,9 +3,22 @@ import { defineStore } from "pinia";
 import { English } from "@/entity/Language/English";
 import { German } from "@/entity/Language/German";
 import type { Language } from "@/entity/Language/Language";
+import { French } from "@/entity/Language/French";
+import { Italian } from "@/entity/Language/Italian";
+import { Spanish } from "@/entity/Language/Spanish";
+import { Portuguese } from "@/entity/Language/Portuguese";
+import { Polish } from "@/entity/Language/Polish";
 
 export const LanguageStore = defineStore("language", () => {
-  const languages = [new English(), new German()] as Language[];
+  const languages = [
+    new English(),
+    new German(),
+    new French(),
+    new Italian(),
+    new Spanish(),
+    new Portuguese(),
+    new Polish(),
+  ] as Language[];
 
   function getAll(): Language[] {
     return languages;
