@@ -30,7 +30,30 @@
     "no": "No",
     "import": "Import",
     "close": "Close",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "filter-by-proficiency": "Filter by proficiency",
+    "weapon": "Weapon",
+    "off-hand": "Off Hand",
+    "armor": "Armor",
+    "trinket": "Trinket",
+    "bag-slot": "Bag Slot",
+    "skills": "Skills",
+    "stash": "Stash",
+    "nothing-found": "Nothing found",
+    "equipment": "Equipment",
+    "dungeon-role": "Dungeon Role",
+    "melee": "Melee",
+    "ranged": "Ranged",
+    "agility": "Agility",
+    "wisdom": "Wisdom",
+    "level": "Level",
+    "yellow": "Yellow",
+    "red": "Red",
+    "blue": "Blue",
+    "green": "Green"
+  },
+  "text": {
+    "select-action-cube-color": "Select action cube color"
   },
   "weapon": {
     "core": {

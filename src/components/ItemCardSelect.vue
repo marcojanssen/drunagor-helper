@@ -54,7 +54,9 @@ watch(selectedId, (newSelectedId) => {
 
 <template>
   <div class="flex flex-row">
-    <div class="hero-item-stash cursor-pointer text-slate-500 flex-shrink leading-10 pr-2" @click="onStash">Stash</div>
+    <div class="hero-item-stash cursor-pointer text-slate-500 flex-shrink leading-10 pr-2" @click="onStash">
+      {{ t("label.stash") }}
+    </div>
     <div class="flex-auto">
       <Combobox v-model="selectedId" nullable>
         <div class="relative mt-1">
@@ -88,7 +90,7 @@ watch(selectedId, (newSelectedId) => {
               v-if="filteredItems.length === 0 && query !== ''"
               class="relative cursor-default select-none py-2 px-4 text-white"
             >
-              Nothing found.
+              {{ t("label.nothing-found") }}.
             </div>
 
             <ComboboxOption
