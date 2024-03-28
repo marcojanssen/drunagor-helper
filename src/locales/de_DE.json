@@ -463,7 +463,7 @@
     "abomination": "Abscheulichkeit",
     "archon": "Archon",
     "bane": "Bane",
-    "bone-reaper": "Bone Reaper",
+    "bone-reaper": "Sensenmann",
     "commander-doctor": "Doctor",
     "commander-flinch": "Flinch",
     "commander-hexer": "Hexer",
@@ -498,13 +498,13 @@
     "shadow-cultist": "Schattenkultist",
     "shadow-guardian": "Schattenwächter",
     "shadow-knight": "Schattenritter",
-    "shadow-mistress": "Shadow Mistress",
+    "shadow-mistress": "Schatten Herrin",
     "shadow-pain": "Schattenschmerz",
     "shadow-vampire": "Schattenvampir",
     "shadow-witch": "Shadow Witch",
     "skeleton-archer": "Skelettbogenschütze",
     "skeleton-knight": "Skeleton Knight",
-    "walking-horror": "Walking Horror"
+    "walking-horror": "Wanderschrecken"
   },
   "menu": {
     "menu": "Menü",
@@ -518,7 +518,7 @@
     "german": "German (work in progress)"
   },
   "configuration": {
-    "language": "Language",
+    "language": "Sprache",
     "enabled-variant": "Aktivierte Variante",
     "monster-content": "Verfügbare Monster",
     "hero-content": "Verfügbare Helden",
@@ -532,11 +532,11 @@
     "core": "Grundspiel",
     "desert-of-hellscar": "Wüste der Narben",
     "fallen-sisters": "Fallen Sisters",
-    "handuriel": "Handuriel",
+    "handuriel": "Handuriel (Neue Helden & Neue Monster)",
     "hero-pack-1": "Hero Pack 1",
-    "lord-wrath": "Lordwrath",
+    "lord-wrath": "Lordwrath (Neue Helden & Neue Monster)",
     "lorien": "Lorien",
-    "monster-pack-1": "Monster Pack 1",
+    "monster-pack-1": "Neue Helden & Neue Monster",
     "rise-of-the-undead-dragon": "Der untote Drache",
     "spoils-of-war": "Kriegsbeute",
     "the-ruin-of-luccanor": "Admiral Luccanors Verderben",
@@ -555,7 +555,7 @@
     },
     {
       "id": "x-hp-(simple)",
-      "keyword": "+X HP (SIMPLE)",
+      "keyword": "[Wave 2] +X HP (SIMPLE)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> If you prefer not to deal with the granularity of the +X HP rule, you can choose the simple version and disregard the second and third NOTEs. So, if you lose an effect that confers +X HP, you lose Health accordingly. However, if you regain these effects later, you won't recover any Health, even if the sum of the +X HP effects you have exceeds 16 Health."
     },
     {
@@ -585,7 +585,7 @@
     },
     {
       "id": "activate",
-      "keyword": "ACTIVATE",
+      "keyword": "[Wave 2] ACTIVATE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Activate is a complicated term that appears in many effects over the three generations of the AoD System. At its design root, Activate is the instruction to take a turn. So, when you Activate a Monster, for example, you take a turn with that Monster; Whenever a Monster takes a turn, we say it is being “activated.” When a Character is activated, it takes a turn as normal: its Conditions trigger at the beginning of the turn, then its Triggered Abilities fire, and finally it takes a Movement Action and/or an Attack Action. Pets, however, have an optional effect: when you Activate one of them, instead of making them take a turn, you can Summon them. It's worth remembering: a Summoned Pet appears in an adjacent unoccupied space next to its Master."
     },
     {
@@ -610,32 +610,32 @@
     },
     {
       "id": "attack-twice",
-      "keyword": "DOPPELSCHADEN",
-      "description": "Monster moves once then attacks two times. Each attack is resolved separately (includes reactions). If character is out of range between attacks, the monster may choose another target for second attack as long it doesn't have to move."
+      "keyword": "[Wave 2]ATTACK TWICE",
+      "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Monster moves once then attacks two times. Each attack is resolved separately (includes reactions). If character is out of range between attacks, the monster may choose another target for second attack as long it doesn't have to move."
     },
     {
       "id": "aura",
       "keyword": "AURA",
-      "description": "Eine Aura ist die Konsequenz einer Interaktion oder eines Ereignisses, die ein Held in seinem Kampagnen-Logbuch notiert. In der Regel ist damit ein bestimmter Effekt verbunden, der so lange gilt, wie die Aura besteht. Ein Held kann nur 1 Aura gleichzeitig haben.Sie wird entfernt, wenn der Held eine neue Aura erhält (sie ersetzt die alte) oder der Held 1 TW erhält."
+      "description": "Eine Aura ist die Konsequenz einer Interaktion oder eines Ereignisses, die ein Held in seinem Kampagnen-Logbuch notiert. In der Regel ist damit ein bestimmter Effekt verbunden, der so lange gilt, wie die Aura besteht. Ein Held kann nur 1 Aura gleichzeitig haben. Sie wird entfernt, wenn der Held eine neue Aura erhält (sie ersetzt die alte) oder der Held 1 TW erhält."
     },
     {
       "id": "aura-(token)",
-      "keyword": "AURA (TOKEN)",
+      "keyword": "[Wave 2] AURA (TOKEN)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> As a Resolution effect, a Hero is often instructed to write down an Aura on their Campaign Log or Companion App. You can keep this token on your board as a tactile and visual reminder that you have a special effect noted there. Aura tokens are Reminder tokens and were introduced in Apocalypse."
     },
     {
       "id": "available",
-      "keyword": "AVAILABLE",
+      "keyword": "[Wave 2] AVAILABLE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Available refers more to a game term than necessarily a Keyword. An Available Skill, for example, is a Skill learned by a Hero that does not have its slot currently occupied (either by an Action Cube, Curse Cube, or Trauma Cube). An Available Resolution, in turn, is a Resolution that has not yet been chosen in a Charged Interaction or has not been declared “unavailable” by some effect."
     },
     {
       "id": "avoid",
-      "keyword": "AVOID",
+      "keyword": "[Wave 2] AVOID",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Avoid is not properly a Keyword, however, it is a new term in relation to the Corebox, so it is worth clarifying. “Avoid” is used to indicate that you do not suffer some effect, much as PREVENT would, but since PREVENT is a Keyword, the adoption of a different term is necessary."
     },
     {
       "id": "bash",
-      "keyword": "BASH",
+      "keyword": "[Wave 2] BASH",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Bash is a trait characteristic of the Hero Andreas. Whenever a Skill has Bash, at the moment you are about to resolve the effect containing the Bash Keyword, you may discard 2 Shield tokens. If you do, add the effect described between the “[]” to your Skill resolution. Otherwise, you must resolve that Skill without considering it a part of the effect."
     },
     {
@@ -645,7 +645,7 @@
     },
     {
       "id": "beginning-of-turn-(bot)",
-      "keyword": "BEGINNING OF TURN (BOT)",
+      "keyword": "[Wave 2] BEGINNING OF TURN (BOT)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> BOT is an abbreviation used to describe the “Beginning of Turn” moment of time, when some Characters’ special abilities are triggered, right after they suffer the effects of the Conditions they possess that also trigger at the beginning of their turn."
     },
     {
@@ -655,7 +655,7 @@
     },
     {
       "id": "blindness",
-      "keyword": "BLINDNESS",
+      "keyword": "[Wave 2] BLINDNESS",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> This is a special ability that a few Monsters possess and that turns them into very dangerous enemies. When a Character suffers BLINDNESS, they must take a BLIND token and keep it on their board. While holding a BLIND Token, the Character automatically misses any weapon attack if their natural d20 roll is 10 or lower, even if they have succeeded on their Weapon's Accuracy check. BLINDNESS is a Redundant Condition that lasts until the Character takes a Recall Action or it is removed by a CLEANSE effect."
     },
     {
@@ -665,12 +665,12 @@
     },
     {
       "id": "bounty",
-      "keyword": "BOUNTY",
+      "keyword": "[Wave 2] BOUNTY",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Bounty replaces and updates the “LOOT” Keyword that Companions had in Age of Darkness. Therefore, when a Monster is defeated by an attack that has BOUNTY, that Monster drops a LOOT token when removed from the board (LOOT tokens are Ground Movable Objects that can be collected with a Minor Action; when collecting Loot, a Hero draws a Chest card, but does not roll the Trap Die)."
     },
     {
       "id": "brittle",
-      "keyword": "BRITTLE",
+      "keyword": "[Wave 2] BRITTLE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Some attacks are capable of leaving their opponents vulnerable. When a Character suffers Brittle, they must take a Brittle token and keep it on their board. If they are a Hero, Pet, or Companion of any sort, the next time they suffer damage from any source, they will suffer double that damage and remove their Brittle token (remember, suffered damage is the damage taken that was not prevented). If they are a Monster, the next weapon or magic attack that hits them turns into a Critical Hit and removes their Brittle token. Brittle lingers until it is removed or is triggered as described. It is a Redundant Condition."
     },
     {
@@ -680,27 +680,27 @@
     },
     {
       "id": "cancel",
-      "keyword": "CANCEL",
+      "keyword": "[Wave 2] CANCEL",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Cancel is a term that has come to be associated with Interruptions due to their ability to respond to an attack while it is being delivered, rather than after it has already hit its target. When an attack is Canceled, this means that it no longer exists and doesn’t cause damage to any of its targets anymore. Characters who have already used Interrupts for a Canceled attack are still considered to have used those abilities, but after the attack is Canceled, no other Characters can use an Interrupt (and of course, no Reactions) against that attack."
     },
     {
       "id": "cast",
-      "keyword": "CAST",
+      "keyword": "[Wave 2] CAST",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> This term is used to define the moment when an effect is applied in the game, often related to the Character responsible for causing it. So, when your Hero spends one of their Action Cubes to use a Battle Focus Skill, for example, that Hero is casting a FOCUS 1 AND CLEANSE 1 effect."
     },
     {
       "id": "catalyze",
-      "keyword": "CATALYZE",
+      "keyword": "[Wave 2] CATALYZE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> This is a Keyword designed to condense an effect into a single word, saving text space. When a Hero Catalyzes, it means that the next Action Cube they use this turn (current turn only) is treated as a Wild Cube (if it is used to use a Hero Skill, treat all numbers written in their numerical form as if they were doubled). Wild Cubes can be used as if they were any color, but it is important to remember that the Range for the effects of a Skill activated using a Wild Cube is based on its Type (i.e., a Melee Skill activated through a Wild Cube still has Melee Range)."
     },
     {
       "id": "chain-up",
-      "keyword": "CHAIN-UP",
+      "keyword": "[Wave 2] CHAIN-UP",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Monsters with this skill specialize in capturing Heroes. At the beginning of their turn, immediately after suffering the effects of any Condition that might be affecting them, a Monster with Chain-Up targets the Strongest Hero who is not adjacent and within Range 1 (if there is such a Hero). That Hero suffers 2 non-preventable damage and is dragged to an empty square of their choice that is adjacent to the Monster with Chain-Up. If there is no space for them, the Hero suffers 4 non-preventable damage instead of 2, but they are not dragged."
     },
     {
       "id": "channel",
-      "keyword": "CHANNEL",
+      "keyword": "[Wave 2] CHANNEL",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> As long as a Skill with Channel has an Action Cube occupying its slot (not when it is blocked by a Curse Cube or Trauma Cube), the passive bonus described in “Channel - Effect” takes effect as if it were a Passive Skill. This benefit is also applied to the very Skill that generated it. It lasts until this Action Cube is recalled."
     },
     {
@@ -710,17 +710,17 @@
     },
     {
       "id": "charge",
-      "keyword": "CHARGE",
+      "keyword": "[Wave 2] CHARGE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Some Monsters have the ability to charge their enemies to maximize their attacks. Whenever a Monster with this ability moves 3 or more squares in order to reach their target, consider the base damage value of this attack as if it were double. Remember: Monsters will always move the least amount of squares they can in order to reach their targets or seek a position on top of Darkness. Despite this ability, Monsters are not smart enough to take the longest way to reach their target and receive this bonus. Their behavior remains the same: they move as few squares as possible to the target unless they can finish the movement upon Darkness or can avoid harmful terrain while doing so. Darkness damage boost, as well as damage reducers like Intimidate, are counted after this base value has been determined."
     },
     {
       "id": "charm",
-      "keyword": "CHARM",
+      "keyword": "[Wave 2] CHARM",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> By enchanting the simple-mindedness of a Creature of Darkness, a Hero can force it to attack its own allies. When a Monster is Charmed, the player who bewitched it immediately activates that Monster and controls its turn. In this way, you can force it to attack its own allies, move through harmful terrain, or position them in a disadvantageous or inefficient way. However, while fighting to keep control of its own mind, a Monster is weaker: its attack deals only half (round up) of the damage it would normally (collateral damage is applied as normal). Darkness damage boost, as well as damage reducers like Intimidate, are counted after this base value has been determined."
     },
     {
       "id": "claim",
-      "keyword": "CLAIM",
+      "keyword": "[Wave 2] CLAIM",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Claim is a typical Warlord effect, representing their ability to coordinate the assaults of their allies. When a Hero uses Claim, they place (or replace) the Banner on an empty square that is adjacent to them. While under the influence of a Banner, as a Minor Action, a Hero may discard an INSPIRATION token to make a Weapon Attack of +0 HIT. For rules purposes, all squares that are adjacent to a Banner are considered “Under the Banner”. Finally, Banners are Movable Solid Objects considered Furniture and, therefore, can be crushed by Large Monsters and cause 2 DMG AND BLEED 2 if they are thrown at a Character."
     },
     {
@@ -740,12 +740,12 @@
     },
     {
       "id": "command-a-draugr",
-      "keyword": "COMMAND A DRAUGR",
+      "keyword": "[Wave 2] COMMAND A DRAUGR",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> To Command a Draugr means to activate a Draugr of your choice that is already on the board. Unlike other Pets, Draugrs cannot be “Raised” through a “Command” effect or vice-versa. For them, these effects act independently. Other than this detail, Draugrs follow the same rules as a Pet when it comes to their turns and for other rules purposes."
     },
     {
       "id": "command-a-pet",
-      "keyword": "COMMAND A PET",
+      "keyword": "[Wave 2] COMMAND A PET",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Command a Pet is an effect similar to Activate a Pet, with the restriction that it can never be used to invoke a Pet on the board. So, when you Command a Pet you have summoned, you must choose a Pet that is already on the board and that is affiliated with you to Activate. An activation through this effect consists of a Move Action followed by a normal Attack Action. Similarly, any Conditions that this Pet has at the time it is activated are triggered. If another effect that allows you to summon a Pet on the board is triggered at the same time you would Command a Pet, you can choose to resolve it first"
     },
     {
@@ -760,12 +760,12 @@
     },
     {
       "id": "counter-x",
-      "keyword": "COUNTER X",
+      "keyword": "[Wave 2] COUNTER X",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Some Monsters are versed in the art of fencing and know how to take advantage of a Hero's slip-ups when fighting them. Whenever a Hero misses a Weapon Attack against a Monster that has this ability (an attack is only considered a miss after using their reroll abilities), the Monster swings their weapon around, causing the described amount of non-preventable damage to all enemies of the Monster that are adjacent to it."
     },
     {
       "id": "cover",
-      "keyword": "COVER",
+      "keyword": "[Wave 2] COVER",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Some protective abilities that Heroes possess go beyond just mitigating damage; they can also change the target of an attack. When a Character Covers the target of an attack, they redirect that attack to themselves, becoming the new target of that attack. Any Prevent effect that comes with a Cover effect is also redirected to the new target of that attack. If an attack is targeting you and another target at the same time, you can still Cover that other Character, but you will suffer both attacks as if you had been targeted by it twice."
     },
     {
@@ -786,7 +786,7 @@
     {
       "id": "cube-range-(cr)",
       "keyword": "WÜRFELREICHWEITE (WR)",
-      "description": "Die Farbe des eingesetzten AW bestimmt die Reichweite. <br><br>Eine Fähigkeit, die mit einem gelben AW ausgeführt wird, ist eine Nahkampffähigkeit. Damit kann diese Fähigkeit nur den Helden selbst oder Ziele betreffen, die direkt an das Feld des Helden angrenzen. <br><br> Fernkampffähigkeit (rot): Eine Fähigkeit, die mit einem roten AW ausgeführt wird, ist eine Fernkampffähigkeit und hat die Reichweite 1. Damit kann diese Fähigkeit den Helden selbst, und Ziele betreffen, die bis zu 1 Zone von der Zone des Helden entfernt sind. <br><br> Gewandtheitsfähigkeiten (grün): Eine Fähigkeit, die mit einem grünen AW ausgeführt wird, ist eine Gewandtheitsfähigkeit und hat unbegrenzte Reichweite. Damit kann diese Fähigkeit jedes Ziel auf dem Spielplan betreffen. <br><br> Weisheitsfähigkeiten (blau): Eine Fähigkeit, die mit einem blauen AW ausgeführt wird, ist eine Weisheitsfähigkeit und hat unbegrenzte Reichweite. Damit kann diese Fähigkeit jedes Ziel auf dem Spielplan betreffen."
+      "description": "Die Farbe des eingesetzten AW bestimmt die Reichweite. <br><br>Nahkampf (gelb): Eine Fähigkeit, die mit einem gelben AW ausgeführt wird, ist eine Nahkampffähigkeit. Damit kann diese Fähigkeit nur den Helden selbst oder Ziele betreffen, die direkt an das Feld des Helden angrenzen. <br><br> Fernkampf (rot): Eine Fähigkeit, die mit einem roten AW ausgeführt wird, ist eine Fernkampffähigkeit und hat die Reichweite 1. Damit kann diese Fähigkeit den Helden selbst, und Ziele betreffen, die bis zu 1 Zone von der Zone des Helden entfernt sind. <br><br> Gewandtheit (grün): Eine Fähigkeit, die mit einem grünen AW ausgeführt wird, ist eine Gewandtheitsfähigkeit und hat unbegrenzte Reichweite. Damit kann diese Fähigkeit jedes Ziel auf dem Spielplan betreffen. <br><br> Weisheit (blau): Eine Fähigkeit, die mit einem blauen AW ausgeführt wird, ist eine Weisheitsfähigkeit und hat unbegrenzte Reichweite. Damit kann diese Fähigkeit jedes Ziel auf dem Spielplan betreffen."
     },
     {
       "id": "curse-cubes-(cc)",
@@ -801,7 +801,7 @@
     {
       "id": "darkness-behavior",
       "keyword": "AUSBREITUNG DER DUNKELHEIT",
-      "description": "Die Dunkelheit versucht den stärksten Helden zu erreichen, der nicht auf Dunkelheit steht.<br><br>\"Dunkelheit aufbrechen\": Dunkelheit bricht auf, wenn: <br> 1. Das Dunkelheitsplättchen passt mit dieser Form überhaupt nicht auf den Geländeplan (es steht z. B. über).<br>2. Das Dunkelheitsplättchen passt zwar, aber durch Aufbrechen kann die Dunkelheit näher an ihr Ziel gelangen.<br>3. Die Dunkelheit muss sich von einer Ebene auf eine andere Ebene ausbreiten. <br><br>\"Zermalmung\": Stehen alle Helden bereits auf Dunkelheit, wird die gezogene Rune auf die Initiativleiste gelegt, allerdings wird kein Dunkelheitsplättchen platziert. Alle Helden erleiden stattdessen Y nicht-verhinderbaren Schaden (). (Y = Spielerzahl)"
+      "description": "Die Dunkelheit versucht den stärksten Helden zu erreichen, der nicht auf Dunkelheit steht.<br><br>\"Dunkelheit aufbrechen\": Dunkelheit bricht auf, wenn: <br> 1. Das Dunkelheitsplättchen passt mit dieser Form überhaupt nicht auf den Geländeplan (es steht z. B. über).<br>2. Das Dunkelheitsplättchen passt zwar, aber durch Aufbrechen kann die Dunkelheit näher an ihr Ziel gelangen.<br>3. Die Dunkelheit muss sich von einer Ebene auf eine andere Ebene ausbreiten. <br><br>\"Zermalmung\": Stehen alle Helden bereits auf Dunkelheit, wird die gezogene Rune auf die Initiativleiste gelegt, allerdings wird kein Dunkelheitsplättchen platziert. Alle Helden erleiden stattdessen Y nicht-verhinderbaren Schaden. (Y = Spielerzahl)"
     },
     {
       "id": "darkness-effect-(standing-on-it)",
@@ -815,7 +815,7 @@
     },
     {
       "id": "devourer",
-      "keyword": "DEVOURER",
+      "keyword": "[Wave 2] DEVOURER",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Monsters with this ability show atypical behavior. They prioritize looking for prey rather than victims. Therefore, such Monsters have Injured NPC tokens as their Primary Target instead of the Heroes. When they attack one of these tokens, they immediately slay them, satiating their bloodthirst. This, however, is not a good thing: After doing so, these Monsters complete their purpose and their bodies undergo a hideous mutation. Replace the Rotten Flesh model with an Abomination model and flip over the Unstable Devourer card. It gains 12 Health (this Health can exceed its maximum total) and becomes a Ravenous Abomination. If there are no Injured NPCs on the board (if your party has rescued them all, for example) this Monster’s behavior shifts to the standard: the Strongest Hero in range."
     },
     {
@@ -840,12 +840,12 @@
     },
     {
       "id": "empower",
-      "keyword": "EMPOWER",
+      "keyword": "[Wave 2] EMPOWER",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Concentrating your energy, you prepare to deliver a powerful blow. When you Empower, the next single Weapon Attack or Spell Attack you make this turn gains +4 DMG. Note that this effect lasts only until the end of this turn or when you make your next Weapon Attack or Spell Attack (even if you miss), whichever comes first. If an effect allows you to make two or more separate Weapon Attack as part of the same Action, the Empower effect is only applied to the first of them (Cleave is a single hit that affects two or more targets, so this bonus applies to all of them)."
     },
     {
       "id": "end-of-turn-(eot)",
-      "keyword": "END OF TURN (EOT)",
+      "keyword": "[Wave 2] END OF TURN (EOT)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>EOT is an abbreviation used to describe the “End of Turn” moment of time, when some effects are triggered, such as those that last until the end of the Character’s turn. The End of Turn is exactly the last thing that happens in a turn, before the Initiative 81 Marker is moved forward: it triggers right after a Hero has completed all their Actions and chooses whether or not to take a Willing Recall Action. If some effect triggers because of this Recall Action, the End of Turn occurs immediately after the resolution of that effect"
     },
     {
@@ -860,12 +860,12 @@
     },
     {
       "id": "enrage",
-      "keyword": "ENRAGE",
+      "keyword": "[Wave 2] ENRAGE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Some Monsters have a taste for battle that grows as they inflict wounds on their enemies. Whenever a Monster possessing this ability as Collateral Damage can reduce a Character’s Health or remove a Special Character (Pet, Companion, or any other kind of ally) from play with an attack, it gains a +1 DMG token. If the Monster has Attack Twice, the second attack made on its activation may do more damage, since this Monster may receive a +1 DMG token as a result of the first attack."
     },
     {
       "id": "entropy",
-      "keyword": "ENTROPY",
+      "keyword": "[Wave 2] ENTROPY",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Specialists in spellcasting can bring about miraculous transformations in their spells by releasing large amounts of energy. Whenever they do, the energy oscillation resulting from this process generates what we call Arcane Entropy, or just Entropy. When a Hero has 4 of these tokens, they can discard them to provoke an Entropy Burst and do one of two things: As a Minor Action, to gain an additional Cube Action this turn; Or to gain an additional Reaction against the current Threat. Entropy is a stackable Resource token."
     },
     {
@@ -890,7 +890,7 @@
     },
     {
       "id": "fine",
-      "keyword": "FINE",
+      "keyword": "[Wave 2] FINE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Fine is a term created to condense a larger game state into a single word: a Fine character is one who currently has half or more of their maximum Health (rounded up). Fine is the opposite of Wounded. For example, As long as a Hero with 15 maximum Health has 8 or more HP, they are Fine. If they have 7 or less HP, they are Wounded. A Character may be considered both Wounded and Fine when it has exactly half its maximum Health."
     },
     {
@@ -930,12 +930,12 @@
     },
     {
       "id": "heavy-wield",
-      "keyword": "HEAVY WIELD",
+      "keyword": "[Wave 2] HEAVY WIELD",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Weapons that have the Heavy Wield property are harder to handle, but usually do more damage when they hit. While you are equipped with a Weapon that has Heavy Wield, you can make only a single Weapon Attack from each Weapon Attack action you take or receive. So, you can't make two Weapon Attack from a single Cube Action (as you would with the Twin Strike Skill, for example), Focus Ability, Class Ability, or Command you take or receive while using these weapons. But you can, for example, make a Weapon Attack through each of your two Cube Actions and a third through your Focus Ability or by spending a KI token."
     },
     {
       "id": "idol",
-      "keyword": "IDOL",
+      "keyword": "[Wave 2] IDOL",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Idols are figures that possess magical properties which Heroes are able to summon to aid them in battle. When an Idol is Invoked, the Hero places or repositions (if that Idol is already on the board) its matching token on the center intersection of the area (blue square) they are in or in an area adjacent to it. Take note that just Invoking an Idol does not activate its effects immediately (Shamans have a class ability that allows them to do this as a special power). Once placed, the Idol is considered an Immovable Ground Object, meaning that it can’t be moved by any means, including Telekinesis. Each Idol has a power that can be Evoked by any Hero (not only the casting one) within Range 1 of that Idol using a Minor Action and spending any combination of 2 Resource tokens"
     },
     {
@@ -945,12 +945,12 @@
     },
     {
       "id": "inflict",
-      "keyword": "INFLICT",
+      "keyword": "[Wave 2] INFLICT",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>This is the term used to designate an effect (usually Conditions) applied by a casting Character against a target Character without giving them a chance to defend themselves, similar to what non-preventable damage would do. Thus, an Inflicted effect does not generate any Attack or Threat (even if it comes from an Attack card, for example), not allowing Characters to use their Interrupts and Reactions to defend themselves. Remember, if a Character is immune to a Condition, naturally, such Condition does not affect it when it is Inflicted on it."
     },
     {
       "id": "inspire",
-      "keyword": "INSPIRE",
+      "keyword": "[Wave 2] INSPIRE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Representing a morale boost, when a Hero becomes Inspired, they receive an Inspiration token. By discarding one of these tokens (no action required) a Hero can reroll any d20 roll they have just made, taking the second result even if it is lower than the first. Inspiration is a redundant Resource."
     },
     {
@@ -960,37 +960,37 @@
     },
     {
       "id": "interact-(stack-of-barrels)",
-      "keyword": "INTERACT (STACK OF BARRELS)",
+      "keyword": "[Wave 2] INTERACT (STACK OF BARRELS)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Dwarves and Halflings (only those) can get inside barrels and use them as hiding places. To stop hiding, the Hero will need to use another Minor Action.<br><br>- When a Hero enters a barrel, remove their model from the board. While there, they won't be able to target, or be targeted, by other Characters with any attack or effect. <br>- Monsters know that the Heroes are there. However, they must destroy the barrel before attacking them. Thus, when a Monster attacks a character inside the barrel, PREVENT all damage that this attack would cause and remove the barrel from the board. Reposition the Hero's model (the one that was hidden) in the square where the barrel was. <br>- If a Large Monster steps on a barrel with a hidden Hero, break that barrel and Shove the Hero aside. That Hero suffers 2 non-preventable damage."
     },
     {
       "id": "interact-(bookshelf)",
-      "keyword": "INTERACT (BOOKSHELF)",
+      "keyword": "[Wave 2] INTERACT (BOOKSHELF)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When a Hero interacts with a Bookshelf, they can search the Chest deck for a Scroll card and keep it or immediately use it as a Free Action, as if they had just drawn it from the Chest deck. Afterwards, remove the Bookshelf from the board."
     },
     {
       "id": "interact-(chest)",
-      "keyword": "INTERACT (CHEST)",
+      "keyword": "[Wave 2] INTERACT (CHEST)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When a Hero interacts with a Chest: <br><br> - They draw a card from the top of the Chest deck. That Hero can choose to consume that Item immediately as a Free Action or store it in their bag (if there is room).<br> - Finally, when searching a Chest, the Hero must roll the Trap Die and suffer the effect."
     },
     {
       "id": "interact-(pile-of-crates)",
-      "keyword": "INTERACT (PILE OF CRATES)",
+      "keyword": "[Wave 2] INTERACT (PILE OF CRATES)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Piles of Crates are not good for anything in particular. They count as obstacles until they are destroyed or thrown."
     },
     {
       "id": "interact-(stone-fountain)",
-      "keyword": "INTERACT (STONE FOUNTAIN)",
+      "keyword": "[Wave 2] INTERACT (STONE FOUNTAIN)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When a Hero interacts with a fountain, they flip the Concoction token up, apply its effects, then discard it. There are three possible effects:<br><br> **Fresh Water** (Blue): Nothing tastes better to calm rampant emotions! The drinking Character Regains 2 Health and gains CLEANSE 2.<br><br> **Empowerment Potion** (Orange): Search and you will find! The drinking Character gains INSPIRE and EMPOWER, and they may also take an additional Cube Action this turn. If they are a Large Monster, they just gain a +4 DMG Boost during this turn instead. <br><br> **Toxic Inoculation** (Green): The taste is even worse than the effect... The drinking Character suffers POISON 4."
     },
     {
       "id": "interact-(stone-pillar)",
-      "keyword": "INTERACT (STONE PILLAR)",
+      "keyword": "[Wave 2] INTERACT (STONE PILLAR)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Stone Pillars are of no use for anything in particular. They just represent a rigid obstacle."
     },
     {
       "id": "interrupt",
-      "keyword": "INTERRUPT",
+      "keyword": "[Wave 2] INTERRUPT",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> This Skill can only be used in response to a Character being targeted by an Attack, but before the targeted Character spends SHIELD tokens and a threat is generated. Thus, Interrupts are “faster” than Reactions. When using an Interrupt, a Character will not be able to use a Reaction against any threats generated by the attack they have interrupted, as if they had already “reacted” to that attack. Interrupts, also, cannot target attacks that deal non-preventable damage, and they are not considered Reactions for triggering abilities such as **Caltrops**, for example. A Hero can take only one Interruption per attack, regardless of how many Characters were targeted by it."
     },
     {
@@ -1001,7 +1001,7 @@
     {
       "id": "jump-x",
       "keyword": "SPRUNG X",
-      "description": "Das Ziel ist grundsätzlich der Ausführende Charakter. SPRUNG ist eine besondere Art der Bewegung und ignoriert das Gelände und die Dunkelheitsplättchen auf dem Weg zum Ziel. Nur das Feld, auf dem der Charakter seine SPRUNG-Bewegung beendet, oder für eine kleine Aktion unterbricht, wird tatsächlich betreten und entfaltet seinen Effekt wie üblich. Die Reichweite berechnet sich wie bei BEWEGUNG mit „Punkten“ (X). Es ist möglich „über“ Hindernisse und Gegner hinwegzuspringen, jedoch nicht darauf zu enden. Ein springender Charakter erleidet zwar keinen Fallschaden, aber die direkte Bewegung von Ebene 0 auf 2 verbraucht 2 „Punkte“"
+      "description": "Das Ziel ist grundsätzlich der Ausführende Charakter. SPRUNG ist eine besondere Art der Bewegung und ignoriert das Gelände und die Dunkelheitsplättchen auf dem Weg zum Ziel. Nur das Feld, auf dem der Charakter seine SPRUNG-Bewegung beendet, oder für eine kleine Aktion unterbricht, wird tatsächlich betreten und entfaltet seinen Effekt wie üblich. <br><br>Die Reichweite berechnet sich wie bei BEWEGUNG mit „Punkten“ (X). Es ist möglich „über“ Hindernisse und Gegner hinwegzuspringen, jedoch nicht darauf zu enden. Ein springender Charakter erleidet zwar keinen Fallschaden, aber die direkte Bewegung von Ebene 0 auf 2 verbraucht 2 „Punkte“"
     },
     {
       "id": "ki",
@@ -1010,12 +1010,12 @@
     },
     {
       "id": "killing-blow",
-      "keyword": "KILLING BLOW",
+      "keyword": "[Wave 2] KILLING BLOW",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Killing Blow is not necessarily a Keyword, but it is a term worth clarifying. The Killing Blow is the attack (and in this case it is necessarily an attack, Condition damage doesn't count, for example) that is responsible for defeating the Monster. If an effect Slays a Character, naturally, it also delivers the Killing Blow, since the term Slay specifies that it defeats the Character even though it doesn't reduce its Health to 0. **NOTE:** For a Monster to be defeated, it must be removed from the board. If an effect reduces a Monster's Health to zero, but does not cause it to be removed from the board (as happens if Special Mechanic - Shared Lifeline is in progress, for example), the attack is not considered a Killing Blow."
     },
     {
       "id": "keen",
-      "keyword": "KEEN",
+      "keyword": "[Wave 2] KEEN",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> In this second generation, we have replaced the Keyword CRIT 16+ with “Keen”. The effect remains the same: If you roll a natural 16 or more on the d20, you score a Critical Hit. With the introduction of Upgrade Skills and the Warlock Trait update, interactions with Wild Cubes will be more common, and doubling the numeric value “16+” (supposedly to “CRIT 32+”) is aesthetically displeasing as well as representing a detriment to the Skill rather than a benefit. Thus, we deemed it appropriate to turn this benefit into a Keyword to avoid this problem."
     },
     {
@@ -1035,17 +1035,17 @@
     },
     {
       "id": "learn",
-      "keyword": "LEARN",
+      "keyword": "[Wave 2] LEARN",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> During the Campaign, the terms used to represent your Hero's progression by acquiring a new Skill or Class Ability was “Learns and Unlocks”. From now on, this term has been simplified to just “Learn”, but its purpose is the same. So, when your Hero learns a Hero or Role Skill Level 1, they must choose a Level 1 Skill from their Hero or Role, take its respective card and Action Cube, and add them to their Hero Board. <br /><br /> **NOTE:** It is important to remember that a Hero cannot Learn a Hero or Role Skill of Level 2 if they have not learned a Level 1 Skill belonging to that same Skill Tree or Dungeon Role, as already mentioned in the Corebox Rulebook. When a Hero learns a Class Ability, they take the matching card—if it is the Level 1 Ability for that Class Tree—and a White Cube. They place the card beside their board and the cube on the appropriate space to mark the Class Ability they have learned. <br /><br /> **NOTE:** Likewise, it is important to remember that a Hero cannot Learn a Class Ability of Level 2 or 3 if they have not learned a Class Ability of Level 1 or 2 (respectively) belonging to that same Class Tree."
     },
     {
       "id": "loot-(tokens)",
-      "keyword": "LOOT (TOKENS)",
+      "keyword": "[Wave 2] LOOT (TOKENS)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Loot tokens are Movable Ground Objects that can be picked up by Heroes who are adjacent to or on top of them with a Minor Action. When they do, they draw the top card of the Chest deck, but do not have to roll the Trap Die: Loot is always safe. Like a Chest, the moment a Hero draws a Consumable Item, they can choose to use it immediately as a free action. Otherwise, they keep that card in their bag."
     },
     {
       "id": "loot",
-      "keyword": "BEUTE",
+      "keyword": "PLÜNDERN (vormals BEUTE)",
       "description": "Wenn ein Gefährte mit diesem Effekt ein Monster besiegt, ersetzt ihr die Miniatur des besiegten Monsters durch ein Truhenplättchen. Diese besondere Truhe ist kein Hindernis und ihr müsst nicht den Fallenwürfel werfen, wenn ihr sie durchsucht oder diese von einem großen Monster zertrümmert wird."
     },
     {
@@ -1060,12 +1060,12 @@
     },
     {
       "id": "mending-x",
-      "keyword": "MENDING X",
+      "keyword": "[Wave 2] MENDING X",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Monsters with this ability are field doctors in the enemy's service, keeping their allies ready for another round. When this ability is triggered, another weaker Monster (the Monster with the lowest Health at the time) within range 1 of the casting Monster regains X Health (this Health cannot exceed its maximum). If two or more Monsters are tied, the one that occupies the highest color slot on the Monster Status board between them will be the chosen target (yellow is higher than dark blue, for example). If there is no other Monster within Range 1 of the caster, a Monster cannot use Mending on itself."
     },
     {
       "id": "mindlock",
-      "keyword": "MINDLOCK",
+      "keyword": "[Wave 2] MINDLOCK",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Monsters with this ability are able to interfere with the Heroes thoughts just by being in their presence. While a Monster with this ability is on the board, no Hero can spend (blue) Wisdom Action Cubes to use Skills. They can still Expend these cubes to take Tie-Breaker Actions, additional Minor Actions, additional Move Actions, and so on."
     },
     {
@@ -1110,7 +1110,7 @@
     },
     {
       "id": "overpressure",
-      "keyword": "OVERPRESSURE",
+      "keyword": "[Wave 2] OVERPRESSURE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Some Monsters possess eldritch energy so powerful that they distort space-time and often emanate disrupting vibes. Therefore, while a Monster with this ability is on the board, no Hero can take Minor Actions except for “Use a Consumable Item” if they are taking this action to drink a potion."
     },
     {
@@ -1136,7 +1136,7 @@
     {
       "id": "pet",
       "keyword": "BEGLEITTIER",
-      "description": "Begleittiere besitzen eine eigene Karte und können SCHILD-Plättchen und Zustände erhalten sowie das Ziel von VERHINDERN-Effekten sein. Auf dem Spielplan werden sie durch ein eigenes Plättchen, das ihre Abbildung zeigt, repräsentiert und immer von 1 Helden kontrolliert. Der Held aktiviert sein Begleittier direkt nach seinem eigenen Zug. In seinem eigenen Zug kann er mit dem Effekt AKTIVIERE entweder 1 Begleittier beschwören oder 1 bereits vorhandenes Begleittier sofort einen Spielzug machen lassen. Jeder Held kann nur 1 Begleittier gleichzeitig kontrollieren.<br>Begleittiere haben in ihrem Zug 1 Bewegungs- und 1 Angriffsaktion, in genau dieser Reihenfolge. Begleittiere haben 1 LP und verschwinden, wenn sie Schaden nehmen. Sie können erneut beschworen werden.<br>Begleittiere werden nur dann angegriffen, wenn das Monster keinen Helden angreifen kann. Wenn ein Monster ein Begleittier oder einen Gefährten angreifen könnte, wählt der Anführer der Gruppe das Ziel. <br>Begleittiere verschwinden nach jedem Abenteuer, auch wenn keine Lagerphase stattfindet. "
+      "description": "Begleittiere besitzen eine eigene Karte und können SCHILD-Plättchen und Zustände erhalten sowie das Ziel von VERHINDERN-Effekten sein. Auf dem Spielplan werden sie durch ein eigenes Plättchen, das ihre Abbildung zeigt, repräsentiert und immer von 1 Helden kontrolliert. Der Held aktiviert sein Begleittier direkt nach seinem eigenen Zug. In seinem eigenen Zug kann er mit dem Effekt AKTIVIERE entweder 1 Begleittier beschwören oder 1 bereits vorhandenes Begleittier sofort einen Spielzug machen lassen. Jeder Held kann nur 1 Begleittier gleichzeitig kontrollieren.<br><br>Begleittiere haben in ihrem Zug 1 Bewegungs- und 1 Angriffsaktion, in genau dieser Reihenfolge. Begleittiere haben 1 LP und verschwinden, wenn sie Schaden nehmen. Sie können erneut beschworen werden.<br><br>Begleittiere werden nur dann angegriffen, wenn das Monster keinen Helden angreifen kann. Wenn ein Monster ein Begleittier oder einen Gefährten angreifen könnte, wählt der Anführer der Gruppe das Ziel. <br><br>Begleittiere verschwinden nach jedem Abenteuer, auch wenn keine Lagerphase stattfindet. "
     },
     {
       "id": "poison",
@@ -1155,7 +1155,7 @@
     },
     {
       "id": "polymorph-(simple)",
-      "keyword": "POLYMORPH (SIMPLE)",
+      "keyword": "[Wave 2] POLYMORPH (SIMPLE)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> If you have tried the mechanics of Polymorph and still consider them to be too complicated, you can, as a house rule, ignore the use of the Errant Behavior deck and the capybara model. You can then establish that the Polymorphed Character simply can’t take actions during their turn. Instead, at the beginning of each of their activations, they must roll the d20 to see what happens that turn: <br> - If they roll 11+, they break free from the Polymorph, but do not act this turn. <br>- Otherwise, if they roll 10-, they remain Polymorphed. <br><br> Regardless of your choice to proceed either withStandard Polymorph or with Simple Polymorph, the other rules to end this Condition early or to become immune to it remain the same."
     },
     {
@@ -1176,16 +1176,16 @@
     {
       "id": "push-x",
       "keyword": "SCHUBSEN X",
-      "description": "Der Charakter „bewegt“ das Ziel in gerader Linie (auch diagonal) X Felder weit von sich weg. Das Ziel muss sich mit jedem „Schritt“ weiter vom Charakter entfernen. Sofern nicht anders angegeben, kann ein kleiner Charakter keinen großen Charakter schubsen, alles andere ist erlaubt. Das Ziel wird so weit geschubst, bis der Effekt vollständig ausgeführt wurde oder sich ein Hindernis im Weg befindet. Ein Hindernis ist dabei auch die Seite eines Geländebauteils auf einer höheren Ebene oder das Ende des Spielplans. Das Ziel kann auf eine niedrigere Ebene fallen, Fallschaden erleiden und ist auf seinem Weg von gefährlichem Gelände betroffen."
+      "description": "Der Charakter „bewegt“ das Ziel in gerader Linie (auch diagonal) X Felder weit von sich weg. Das Ziel muss sich mit jedem „Schritt“ weiter vom Charakter entfernen. Sofern nicht anders angegeben, kann ein kleiner Charakter keinen großen Charakter schubsen, alles andere ist erlaubt. <br><br>Das Ziel wird so weit geschubst, bis der Effekt vollständig ausgeführt wurde oder sich ein Hindernis im Weg befindet. Ein Hindernis ist dabei auch die Seite eines Geländebauteils auf einer höheren Ebene oder das Ende des Spielplans. Das Ziel kann auf eine niedrigere Ebene fallen, Fallschaden erleiden und ist auf seinem Weg von gefährlichem Gelände betroffen."
     },
     {
       "id": "pushback",
-      "keyword": "PUSHBACK",
+      "keyword": "[Wave 2] PUSHBACK",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> This effect is similar to Push, but it is a version adapted to be used by Monsters. When a Character undergoes Pushback, they must push their model 1 square back, that is, further away from the source that pushed them. Effectively, they will have three squares to which they can be pushed. A Character who has suffered Pushback must always choose an unoccupied space where they can be pushed, even if it is a harmful terrain or if they have to suffer fall damage because they were pushed from a dungeon tray level 2 to 0. If all possible squares are occupied by Solid Objects, the Character cannot be pushed."
     },
     {
       "id": "raise-a-draugr",
-      "keyword": "RAISE A DRAUGR",
+      "keyword": "[Wave 2] RAISE A DRAUGR",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Reusing the evil energy used by the Darkness to make its Creatures, Necromancers can create an army of their own. Raising a Draugr means placing one of them in an empty square of your choice that is adjacent to you, loyal to the Necromancer who summoned it. Unlike other Pets, Draugrs cannot be “Raised” through a “Command” effect or vice-versa. Likewise, the generic effect of “Activate a Pet of your choice” doesn’t work to Raise or Command them. Only the specific effects of Raise a Draugr and Command a Draugr affect these creatures. Other than this detail, Draugrs follow the same rules as Pets when it comes to their turns and other rules purposes. If all four Draugrs are already on the board, a Necromancer can no longer Raise them, only Command them (note that unlike other Pets, an effect that allows you to Raise a Draugr does not allow you to Command a Draugr—these are separate effects for the Necromancer). <br><br> **NOTE:** Draugrs that are raised during the Draugrs turn (the one the Pets have after their masters turn) do not act during that activation. <br><br> **NOTE:** A Necromancer can Raise all four Draugrs, even though they can only sustain two of them during their turn."
     },
     {
@@ -1201,7 +1201,7 @@
     {
       "id": "reaction",
       "keyword": "REAKTIONEN",
-      "description": "Du darfst diese Art von Fähigkeit nur als Reaktion auf eine „Bedrohung“ einsetzen. Eine Bedrohung ist jede Art von Angriff, Ereignis oder Effekt, bei dem dein Held oder ein Verbündeter verhinderbaren Schaden erleiden würde.<br> Es ist dabei unerheblich, ob der Held bzw. Verbündete tatsächlich Schaden erleidet oder ob der Schaden vollständig verhindert wird. Mehrere Helden können auf dieselbe Bedrohung reagieren, aber jeder Held darf nur maximal 1x auf jede Bedrohung reagieren. Auf nicht-verhinderbaren Schaden darfst du nicht reagieren. Reaktionen mit SELBST kannst du nur benutzen, wenn dein Held bedroht wird. Den Effekt ZURÜCKSCHLAGEN kannst du nur benutzen, wenn dein Held angegriffen wird."
+      "description": "Du darfst diese Art von Fähigkeit nur als Reaktion auf eine „Bedrohung“ einsetzen. Eine Bedrohung ist jede Art von Angriff, Ereignis oder Effekt, bei dem dein Held oder ein Verbündeter verhinderbaren Schaden erleiden würde.<br><br> Es ist dabei unerheblich, ob der Held bzw. Verbündete tatsächlich Schaden erleidet oder ob der Schaden vollständig verhindert wird. Mehrere Helden können auf dieselbe Bedrohung reagieren, aber jeder Held darf nur maximal 1x auf jede Bedrohung reagieren. Auf nicht-verhinderbaren Schaden darfst du nicht reagieren. Reaktionen mit SELBST kannst du nur benutzen, wenn dein Held bedroht wird. Den Effekt ZURÜCKSCHLAGEN kannst du nur benutzen, wenn dein Held angegriffen wird."
     },
     {
       "id": "recall-x",
@@ -1210,7 +1210,7 @@
     },
     {
       "id": "redirect",
-      "keyword": "REDIRECT",
+      "keyword": "[Wave 2] REDIRECT",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When an effect instructs you to Redirect an attack to you or another Character, that Character becomes the target of that attack instead. If the Character in question is already being targeted by that attack (as it could be in Multishot, Cleave, or Strike, for example), they suffer it two times, resolving one attack at a time. Redirecting an attack does not generate an additional threat, and thus does not allow an extra Reaction."
     },
     {
@@ -1220,7 +1220,7 @@
     },
     {
       "id": "regain-x-health",
-      "keyword": "REGAIN X HEALTH",
+      "keyword": "[Wave 2] REGAIN X HEALTH",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> The target recovers X Health. A Character can never gain more Health than their maximum value. Any excess Health is lost. Since this effect is not bound to the Keyword HEAL, your Hero does not receive any bonus from “HEAL +X” abilities."
     },
     {
@@ -1240,7 +1240,7 @@
     },
     {
       "id": "relearn",
-      "keyword": "RELEARN",
+      "keyword": "[Wave 2] RELEARN",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Relearn is a term associated with character progression. It can refer to a Hero or Dungeon Role Skill Level 1 or 2, a Skill Upgrade, or the choice of a Dungeon Role, for example. Relearning something means to replace a choice you made regarding that element. So, Relearn a Dungeon Role is a simple process of “swapping” the cards in your Dungeon Role *(keeping your chosen progressions the same as normal)* while Relearn a Skill would be to forget *(remove the progression from)* a Skill you have and choose another in its place *(remember, when Relearning a Hero or Dungeon Role Skill, you will need to adjust your Action Cubes accordingly and may be forced to Relearn the Level 2 Skill associated with that Skill Tree as well).*"
     },
     {
@@ -1250,23 +1250,23 @@
     },
     {
       "id": "reroll",
-      "keyword": "WIEDERHOLUNG/WIEDERHOLEN:",
+      "keyword": "WIEDERHOLUNG/WIEDERHOLEN",
       "description": " Wenn der Waffenangriff misslingt und nicht trifft, darf dieser Angriffswurf 1x neu gewürfelt werden. Handelt es sich um mehrere Waffenangriffe, kann davon nur 1 Angriffswuf wiederholt werden."
     },
     {
       "id": "resolved",
-      "keyword": "RESOLVED",
+      "keyword": "[Wave 2] RESOLVED",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> “Resolved” is the term used to denote the end of some game situation. So, when it is mentioned with an effect, it means right after that effect is applied. For example, analyze the following statement about a basic rule regarding Collateral damage: <br><br> *“Collateral effects are applied after the damage is resolved.”* So, if a character Reacts with a Tumble Skill against a Shadow Knight’s attack, they will move before being Knocked Down, since the Tumble Skill (and its Jump 2) must be fully resolved before any Collateral damage applies (if it is applied at all). <br><br> This term can also be found referring to an Interaction or Resolution. When this is the case, you should know which of these two elements it is connected to. This is the key to understanding its meaning. <br><br> *“Until Interaction... is resolved”* means that the Interaction must be done in full; that is, until the Interaction token is removed from the board. This might be because it has run out of charges or an effect has stipulated that it should be removed before that. <br><br> The sentence *“...this Resolution is resolved”* only applies to the Resolution you are reading at that moment. Even if a Resolution is abruptly resolved by its own command, it will still remove 1 charge from the Interaction token (unless it is a Recurring Interaction or the effect itself specifies otherwise, of course)."
     },
     {
       "id": "restrain",
-      "keyword": "RESTRAIN",
+      "keyword": "[Wave 2] RESTRAIN",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Characters with the Restrain ability are armed with natural or artificial restraints and can use this ability to always keep their opponents within range. When a Character is Restrained by an enemy, they receive a Restrain token and cannot leave the space they occupy as long as they hold it. A Character may discard their Restrain token when there are no more enemies with the ability to Restrain them within Range 1. Restrain is a redundant Condition. <br><br>**NOTE:** Characters who are Restrained are able to leave their space through a Swap effect. When this is the case, the Object swapping with the Restrained Character takes its Restrain token. If this target is not a Character, the Restrain effect ends."
     },
     {
       "id": "retaliate-x",
       "keyword": "ZURÜCKSCHLAGEN X",
-      "description": "Fügt dem Ziel (dem Angreifer) sofort X Schaden zu. Ein Held kann nur gegen einen Angreifer ZURÜCKSCHLAGEN, der diesen Helden gerade angreift. Alle ZURÜCKSCHLAGEN-Effekte, die durch AW ausgelöst werden, können zudem nur Angreifer in Reichweite treffen, wie üblich. ZURÜCKSCHLAGEN-Effekte, die durch Fokus oder andere Quellen erzeugt werden, können dagegen Angreifer in unbegrenzter Reichweite treffen. Im Gegensatz zu VERHINDERN, dessen Ziel der Charakter ist, der den Schaden erleidet, zielt ZURÜCKSCHLAGEN nur direkt auf den Angreifer selbst."
+      "description": "Fügt dem Ziel (dem Angreifer) sofort X Schaden zu. Ein Held kann nur gegen einen Angreifer ZURÜCKSCHLAGEN, der diesen Helden gerade angreift. <br><br>Alle ZURÜCKSCHLAGEN-Effekte, die durch AW ausgelöst werden, können zudem nur Angreifer in Reichweite treffen, wie üblich. <br><br>ZURÜCKSCHLAGEN-Effekte, die durch Fokus oder andere Quellen erzeugt werden, können dagegen Angreifer in unbegrenzter Reichweite treffen. Im Gegensatz zu VERHINDERN, dessen Ziel der Charakter ist, der den Schaden erleidet, zielt ZURÜCKSCHLAGEN nur direkt auf den Angreifer selbst."
     },
     {
       "id": "roll-x",
@@ -1275,7 +1275,7 @@
     },
     {
       "id": "round",
-      "keyword": "ROUND",
+      "keyword": "[Wave 2] ROUND",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Round is a term used to denote the window of time from the first card to receive a turn on the Initiative Track to the last. Thus, we can say that the Hero playing the Defender Dungeon Role will always be the first Character to act in a Round while the Rune card will always be the last. All effects that are measured through a round (i.e., “...during this round”) end as soon as the Rune card’s turn in that round is resolved."
     },
     {
@@ -1305,7 +1305,7 @@
     },
     {
       "id": "skull-cracker",
-      "keyword": "SKULL-CRACKER",
+      "keyword": "[Wave 2] SKULL-CRACKER",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Monsters with this ability are terribly dangerous. Attacks made by creatures with this ability will pierce any Sturdiness value automatically. So be careful: the attack of such creatures is lethal against Allies such as Companions, Followers, Pets, and so on (you can still use Prevents from your Reactions or Interrupts to try to reduce the damage to 0 and prevent an allied Follower from being defeated)."
     },
     {
@@ -1315,7 +1315,7 @@
     },
     {
       "id": "slayer",
-      "keyword": "SLAYER",
+      "keyword": "[Wave 2] SLAYER",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> A Monster with this ability will chase Injured NPC tokens, Cohorts, and Followers as their Primary Target, in that order of preference. If there are two or more of those within reach, the Party Leader chooses which of them will be the target of this Monster this turn. If none of these NPCs are on the board or in reach, these Monsters switch their Primary Target to the Strongest Hero."
     },
     {
@@ -1330,17 +1330,17 @@
     },
     {
       "id": "soul-shard",
-      "keyword": "SOUL SHARD",
+      "keyword": "[Wave 2] SOUL SHARD",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> By confining a fragment of life energy from a creature's spirit within them, these crystals can be used to strengthen the Heroes. As a Minor Action, A Hero may discard a Soul Shard to give Double Damage to the next Weapon Attack or Spell Attack they make this turn. Note that this effect lasts only until the end of this turn or when you make your next Weapon Attack or Spell Attack (even if you miss), whichever comes first. If an effect allows you to make two or more separate Weapon Attack as part of the same Action, this effect is only applied to the first of them *(Cleave is a single hit that affects two or more targets, so this bonus applies to all of them)*. Soul Shards are redundant Resource tokens that can be exchanged between Heroes as if they were Consumable Items."
     },
     {
       "id": "special-mechanic-tokens",
-      "keyword": "SPECIAL MECHANIC TOKENS",
+      "keyword": "[Wave 2] SPECIAL MECHANIC TOKENS",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> These board elements are used as visual milestones for the function of any Special Mechanic established for an Adventure. Special Mechanic tokens are Immovable Ground Objects."
     },
     {
       "id": "spent",
-      "keyword": "SPENT",
+      "keyword": "[Wave 2] SPENT",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Spent is not properly a Keyword, however, it is a term that is worth clarifying. An Action Cube is considered spent when it is allocated to a Skill slot. Curse Cubes and Trauma Cubes are not considered Action Cubes even when they are spent as Action Cubes. They are treated as normal wounds once they become allocated to a slot."
     },
     {
@@ -1365,7 +1365,7 @@
     },
     {
       "id": "stalker-(trait)",
-      "keyword": "STALKER (TRAIT)",
+      "keyword": "[Wave 2] STALKER (TRAIT)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Some killers specialize in using stealth to their advantage. As long as the Stalker Skill is not blocked, whenever the Slayer's Stealth fades away *(that is, it is removed on its own at the beginning of its Hero's turn)*, the Slayer remains Hidden until the end of the current Hero's turn or until they try to surprise another Character. <br><br>**Example:** *Nyx received Stealth through the **Sucker Punch** Skill in the previous round. At the beginning of her turn, in this new round, her Stealth faded away, but she will still remain hidden until she tries to surprise another Character (which could lead her to cause Double Damage) or finishes her current turn (so, she would need to cast another Stealth effect if she wanted to continue in Stealth to escape the Monsters attacks).*"
     },
     {
@@ -1376,7 +1376,7 @@
     {
       "id": "stealth",
       "keyword": "VERBORGEN",
-      "description": "Das Ziel erhält 1 VERBORGEN-Plättchen und ist bis zum Beginn des nächsten eigenen Spielzuges für alle seine Gegner „unsichtbar“. Verborgene Charaktere sind deshalb nicht im Kampf gebunden und ihre Gegner können einen verborgenen Charakter nicht als Ziel wählen. Ein verborgener Charakter ist weiterhin ein Hindernis und VERBORGEN ist ein redundanter Zustand.<br>Ein Monster mit „Immunität gegen VERBORGEN“ kann verborgene Charaktere normal als Ziel wählen und sie im Kampf binden.<br>Verborgene Charaktere nehmen Schaden durch Flächenangriffe wie FLÄCHENSCHLAG und durch gefährliches Gelände. Zu Beginn seines nächsten Zuges wird der verborgene Charakter automatisch wieder sichtbar und wirft sein VERBORGEN-Plättchen ab. <br>Ein Held kann seine Verborgenheit vorzeitig durch einen Waffenangriff ( ) beenden und einen Überraschungsangriff durchführen. Dabei wird das VERBORGEN-Plättchen sofort abgeworfen. Der Angriffswurf bleibt unverändert, aber wenn dieser Angriff trifft, verursacht er DOPPELSCHADEN. Charaktere, die gegen VERBORGEN immun sind, können nicht überrascht werden.<br>Hinweis: DOPPELSCHADEN kann nur 1-mal eintreten. "
+      "description": "Das Ziel erhält 1 VERBORGEN-Plättchen und ist bis zum Beginn des nächsten eigenen Spielzuges für alle seine Gegner „unsichtbar“. Verborgene Charaktere sind deshalb nicht im Kampf gebunden und ihre Gegner können einen verborgenen Charakter nicht als Ziel wählen. Ein verborgener Charakter ist weiterhin ein Hindernis und VERBORGEN ist ein redundanter Zustand.<br><br>Ein Monster mit „Immunität gegen VERBORGEN“ kann verborgene Charaktere normal als Ziel wählen und sie im Kampf binden.<br><br>Verborgene Charaktere nehmen Schaden durch Flächenangriffe wie FLÄCHENSCHLAG und durch gefährliches Gelände. <br><br>Zu Beginn seines nächsten Zuges wird der verborgene Charakter automatisch wieder sichtbar und wirft sein VERBORGEN-Plättchen ab. <br><br>Ein Held kann seine Verborgenheit vorzeitig durch einen Waffenangriff beenden und einen Überraschungsangriff durchführen. Dabei wird das VERBORGEN-Plättchen sofort abgeworfen. Der Angriffswurf bleibt unverändert, aber wenn dieser Angriff trifft, verursacht er DOPPELSCHADEN. Charaktere, die gegen VERBORGEN immun sind, können nicht überrascht werden.<br><br>Hinweis: DOPPELSCHADEN kann nur 1-mal eintreten. "
     },
     {
       "id": "square",
@@ -1386,7 +1386,7 @@
     {
       "id": "strike-x",
       "keyword": "FLÄCHENSCHLAG X",
-      "description": "FLÄCHENSCHLAG verändert das Ziel eines Angriffes oder Effektes: Das Ziel sind alle Charaktere in X unterschiedlichen ganzen Zonen (blaue Quadrate).<br>FLÄCHENSCHLAG im Nahkampf bedeutet, dass mindestens 1 Feld der gewählten Zone direkt angrenzend sein muss (Nahkampfreichweite). <br>FLÄCHENSCHLAG in Reichweite 1 bedeutet, dass Zonen in Reichweite 1 gewählt werden dürfen (Fernkampf). <br> Bei einem FLÄCHENSCHLAG mit unbegrenzter Reichweite kann jede Zone auf dem Spielplan gewählt werden. <br>Ein positiver Effekt betrifft nur Verbündete und ein negativer Effekt (inklusive Angriffen) wird nur auf Gegner angewendet."
+      "description": "FLÄCHENSCHLAG verändert das Ziel eines Angriffes oder Effektes: Das Ziel sind alle Charaktere in X unterschiedlichen ganzen Zonen (blaue Quadrate).<br><br>FLÄCHENSCHLAG im Nahkampf bedeutet, dass mindestens 1 Feld der gewählten Zone direkt angrenzend sein muss (Nahkampfreichweite). <br><br>FLÄCHENSCHLAG in Reichweite 1 bedeutet, dass Zonen in Reichweite 1 gewählt werden dürfen (Fernkampf). <br> Bei einem FLÄCHENSCHLAG mit unbegrenzter Reichweite kann jede Zone auf dem Spielplan gewählt werden. <br><br>Ein positiver Effekt betrifft nur Verbündete und ein negativer Effekt (inklusive Angriffen) wird nur auf Gegner angewendet."
     },
     {
       "id": "strongest-hero",
@@ -1396,7 +1396,7 @@
     {
       "id": "stun",
       "keyword": "BETÄUBEN",
-      "description": "Das Ziel erhält 1 BETÄUBEN-Plättchen. Dieser Zustand funktioniert bei Helden und Monstern unterschiedlich: <br>Ein Monster verliert zu Beginn seines Zuges seine Angriffsaktion für diesen Zug, es kann sich jedoch bewegen. Es bewegt sich dabei so, als würde es angreifen können.<br> Ein Held verliert zu Beginn seines Zuges 1 Würfelaktion für diesen Zug. <br> In beiden Fällen werft ihr das Plättchen danach ab. BETÄUBEN ist ein redundanter Zustand."
+      "description": "Das Ziel erhält 1 BETÄUBEN-Plättchen. Dieser Zustand funktioniert bei Helden und Monstern unterschiedlich: <br><br>Ein Monster verliert zu Beginn seines Zuges seine Angriffsaktion für diesen Zug, es kann sich jedoch bewegen. Es bewegt sich dabei so, als würde es angreifen können.<br><br> Ein Held verliert zu Beginn seines Zuges 1 Würfelaktion für diesen Zug. <br> In beiden Fällen werft ihr das Plättchen danach ab. BETÄUBEN ist ein redundanter Zustand."
     },
     {
       "id": "sturdiness",
@@ -1405,7 +1405,7 @@
     },
     {
       "id": "suffer",
-      "keyword": "SUFFER",
+      "keyword": "[Wave 2] SUFFER",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Suffer is not properly a Keyword, however, it is a term that is worth clarifying. Suffer is used to define something that “hits” a Character after they have tried to protect themselves against it. So, “suffer damage” means to lose Health due to damage after you tried (if you could, naturally) to mitigate it through Prevent, Shield tokens, and so on."
     },
     {
@@ -1415,12 +1415,12 @@
     },
     {
       "id": "swarm",
-      "keyword": "SWARM",
+      "keyword": "[Wave 2] SWARM",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Swarm Monsters are tiny creatures that, joined together, form a single being, and thus they have no vital points in their body. Such creatures suffer only half damage (rounded up, after Prevent reductions have been applied) of all Weapon Attack that hit them.<br><br> **Example:** *If Lorelai has 2 Intimidate tokens when she attacks a Monster that has Swarm and 1 Shield token using a 6-damage attack, that Monster would suffer only 2 points of damage in the end (6 - 2 - 1 = 3; 3 ÷ 2 = 1.5, which is then rounded up to 2).*"
     },
     {
       "id": "take",
-      "keyword": "TAKE",
+      "keyword": "[Wave 2] TAKE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Take is not properly a Keyword, however, it is a term that is worth clarifying. Take is used to describe something that is given to a Character. Whenever that is damage, they have the opportunity to mitigate it through Shield tokens or Prevent effects (unless, of course, the damage is non-preventable). If it is a Condition (such as Bleed) or an Effect (such as Telekinesis), that Character can’t use Reactions or Interrupts to avoid it, but if they are Immune to the said effects, they simply won't take them. Taking a Curse Cube, on the other hand, is different from suffering Curse and thus, this effect can't be avoided even if the Character is Immune to Curse."
     },
     {
@@ -1430,37 +1430,37 @@
     },
     {
       "id": "threat",
-      "keyword": "THREAT",
+      "keyword": "[Wave 2] THREAT",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Threat is the term used to define the moment when a Hero can have their Health points reduced by some attack or effect, but is able to defend themselves and try to prevent this from happening.<br><br>Thus, Threat essentially defines when a Hero can usea Reaction in-game. As a rule, Heroes can use such Skills or Abilities whenever a Hero (either themselves or an ally) is threatened, that is, when they take preventable damage (non-preventable damage never generates a Threat).<br><br>Take note that Threat is just a term, it doesn't change any rules. Therefore, Reactions with “SELF” can only be used if the casting Character is also being threatened and so on, as described on page 14 of the Corebox Rulebook."
     },
     {
       "id": "throw-(stack-of-barrels)",
-      "keyword": "THROW (STACK OF BARRELS)",
+      "keyword": "[Wave 2] THROW (STACK OF BARRELS)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When thrown at a Character, a barrel deals 2 DMG and inflicts KNOCK DOWN to its target if it is a Small Character. Large Monsters bodies are so powerful that barrels don't even bother them. <br><br> - However, if a Hero was hidden inside the barrel, the throwing causes +2 DMG and it can even target Large Monsters and inflict KNOCK DOWN to them (overcoming their immunity thanks to the extra weight). <br>- Reposition the Hero that was in the barrel in a square of their choice that is adjacent to the target against which the barrel was thrown. *(Don't forget, thrown Furniture is broken and removed from the board).*"
     },
     {
       "id": "throw-(bookshelf)",
-      "keyword": "THROW (BOOKSHELF)",
+      "keyword": "[Wave 2] THROW (BOOKSHELF)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Bookshelves are too heavy to be thrown at a Character with a Minor Action. Instead, it is simply knocked over, affecting a Character that is adjacent to it (chosen by the Hero who used the Throw Furniture Minor Action). TELEKINESIS, on the other hand, can throw a bookshelf normally. <br><br>- Regardless of the way it was thrown, a bookshelf deals 2 DMG and inflicts STUN to its target (Don’t forget: Thrown Furniture is always broken and removed from the board.)"
     },
     {
       "id": "throw-(chest)",
-      "keyword": "THROW (CHEST)",
+      "keyword": "[Wave 2] THROW (CHEST)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When thrown at a Character, a Chest causes 2 DMG and you must roll the Trap Die: add the result to this damage as a side effect. *(Don't forget, thrown Furniture is broken and removed from the board.)*"
     },
     {
       "id": "throw-(piles-of-crates)",
-      "keyword": "THROW (PILE OF CRATES)",
+      "keyword": "[Wave 2] THROW (PILE OF CRATES)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When thrown, the Pile of Crate inflicts BRITTLE to its target if it is a Small Character. <br><br>- Large Monsters bodies are so powerful that the crates don't even bother them. (Don't forget, thrown Furniture is broken and removed from the board.)"
     },
     {
       "id": "throw-(stone-fountains)",
-      "keyword": "THROW (STONE FOUNTAIN)",
+      "keyword": "[Wave 2] THROW (STONE FOUNTAIN)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Stone Fountains are attached to the ground and therefore cannot be thrown at other Characters in any way *(but they can still be destroyed by Large Monsters who end their movement by stepping on them).*"
     },
     {
       "id": "throw-(stone-pillar)",
-      "keyword": "THROW (STONE PILLAR)",
+      "keyword": "[Wave 2] THROW (STONE PILLAR)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Stone Pillars are attached to the floor and ceiling and therefore cannot be thrown at other characters in any way. However, it is precisely because they are so firm that the opposite becomes true:<br><br>- When a Character is thrown against a stone pillar (by effects like TELEKINESIS or PUSH), they suffer 4 non-preventable damage and are repositioned in a square adjacent to the pillar chosen by the Character who threw them. The pillar is not removed from the board."
     },
     {
@@ -1471,7 +1471,7 @@
     {
       "id": "trap",
       "keyword": "FALLE",
-      "description": "Platziert ein Fallenplättchen in die Mitte der angegebenen Zone. Beginnt ein Gegner seinen Zug in einer Zone mit Falle oder bewegt er sich in eine solche Zone hinein, wird die Falle ausgelöst.Alle Gegner in dieser Zone sind jetzt von dieser Falle betroffen und erleiden den unten angegebenen Effekt. Entfernt das Fallenplättchen danach vom Spielplan. Es kann sich höchstens 1 Fallenplättchen in jeder Zone befinden und Fallen sind keine Hindernisse. <br>BÄRENFALLE: Beim Auslösen erleidet jeder Gegner in dieser Zone 2 nicht-verhinderbaren Schaden und BLUTEN 2.<br>BRANDFALLE: Beim Auslösen erleidet jeder Gegner in der Zone 2 nicht-verhinderbaren Schaden und BRENNEN 4.<br>GIFTFALLE: Beim Auslösen erleidet jeder Gegner in der Zone 2 nicht-verhinderbaren Schaden und GIFT 2."
+      "description": "Platziert ein Fallenplättchen in die Mitte der angegebenen Zone. Beginnt ein Gegner seinen Zug in einer Zone mit Falle oder bewegt er sich in eine solche Zone hinein, wird die Falle ausgelöst.Alle Gegner in dieser Zone sind jetzt von dieser Falle betroffen und erleiden den unten angegebenen Effekt. Entfernt das Fallenplättchen danach vom Spielplan. Es kann sich höchstens 1 Fallenplättchen in jeder Zone befinden und Fallen sind keine Hindernisse. <br><br>BÄRENFALLE: Beim Auslösen erleidet jeder Gegner in dieser Zone 2 nicht-verhinderbaren Schaden und BLUTEN 2.<br>BRANDFALLE: Beim Auslösen erleidet jeder Gegner in der Zone 2 nicht-verhinderbaren Schaden und BRENNEN 4.<br>GIFTFALLE: Beim Auslösen erleidet jeder Gegner in der Zone 2 nicht-verhinderbaren Schaden und GIFT 2."
     },
     {
       "id": "trauma-cube-(tc)",
@@ -1485,12 +1485,12 @@
     },
     {
       "id": "turn",
-      "keyword": "TURN",
+      "keyword": "[Wave 2] TURN",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>Turn is the term used to designate the time window in which a Character or a card on the Initiative Track may act. Even though a Monster type has only one card in the Initiative Track to represent all units of that type, each Monster’s turn is taken individually. Therefore, the turn of a Shadow Knight with a pink snap-on base is different from the turn of a Shadow Knight with the green snap-on base. This distinction is important, because effects that can be used once per turn can be used once during the turn of each of these Shadow Knights, for example."
     },
     {
       "id": "unavailable",
-      "keyword": "UNAVAILABLE",
+      "keyword": "[Wave 2] UNAVAILABLE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br>This is a game term usually associated with Interactions. When an effect states that a Resolution becomes unavailable, it means that Heroes cannot choose that Resolution anymore. Whenever a Hero chooses a Resolution from a Charged Interaction, for example, it becomes unavailable and cannot be chosen again during this Adventure."
     },
     {
@@ -1500,12 +1500,12 @@
     },
     {
       "id": "unlife",
-      "keyword": "UNLIFE",
+      "keyword": "[Wave 2] UNLIFE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Pets with this trait have a lying life, needing necrotic power to stay upright. At the beginning of their master’s turn, they will be dismissed. At this point, the Necromancer may choose to take a Curse Cube to extend the Unlife of such a Pet for one turn—This is called “Taint”. They may choose for each Pet with this trait whether or not to do so, paying the Taint cost for each one individually."
     },
     {
       "id": "versatile",
-      "keyword": "VERSATILE",
+      "keyword": "[Wave 2] VERSATILE",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Equipment that is Versatile can be handled in two different ways by its user. When you first receive this double-sided Equipment card, you can choose which face you want to use. From then on, as a Minor Action, you can flip the card over if there are no Action Cubes occupying any of its slots. You can even flip a card that is in your bag. <br><br>**NOTE:** If you flip a Versatile Equipment to a face with an Equipment type that you are not proficient in, you must immediately Unequip that card."
     },
     {
@@ -1515,22 +1515,22 @@
     },
     {
       "id": "voodoo",
-      "keyword": "VOODOO",
+      "keyword": "[Wave 2] VOODOO",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> When a Monster has this ability, it is able to remove its Stackable Conditions by inflicting them back against the Heroes. Thus, at the beginning of these Monsters turn, when they are to be affected by Stackable Conditions *(Burn, Bleed, and Intimidate are examples of Stackable Conditions)*, if any of its enemies (Hero, Pet, Companion etc.) are within Range 1 of that Monster, instead of it undergoing such effects, move them to the strongest enemy among them. If the Monster cannot redirect such tokens, only then does it suffers such effects."
     },
     {
       "id": "war-cry",
-      "keyword": "WAR CRY",
+      "keyword": "[Wave 2] WAR CRY",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> War Cry is a triggered ability that some Monsters possess. When activated, each other Monster within Range 1 of this Monster enrages and gains +1 DMG permanently (place this token on their Monster Status board)."
     },
     {
       "id": "warden-(trait)",
-      "keyword": "WARDEN (TRAIT)",
+      "keyword": "[Wave 2] WARDEN (TRAIT)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Characters who have the Warden trait can use Interrupts and Reactions with the Keyword “SELF” on other Characters as long as they are adjacent to them. Also, Wardens can use such Skills when Characters adjacent to them are attacked or threatened (if the Skill you are using is either an Interrupt or a Reaction, respectively) instead of using them only when they are attacked or threatened themselves."
     },
     {
       "id": "warlock-(trait)",
-      "keyword": "WARLOCK (TRAIT)",
+      "keyword": "[Wave 2] WARLOCK (TRAIT)",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Bargaining with the Darkness, Warlocks flirt with corruption in exchange for power. As long as the Otherwordly Pact Skill is not blocked, they receive their Curse Cubes as if they were Action Cubes, and when they spend them, these are treated as Wild Cubes. Once spent, these cubes become conventional Curse Cubes again, and are removed only through Cleanse effects."
     },
     {
@@ -1545,17 +1545,17 @@
     },
     {
       "id": "wild-copy",
-      "keyword": "WILD COPY",
+      "keyword": "[Wave 2] WILD COPY",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> To copy an ally's effect is one of the most rewarding AoD experiences. And, you'll be able to do it with preeminence from now on! An effect that Wild Copies a Skill applies the same effects as a Copy, but it doubles all the numbers written in its numerical form, as would have happened if those effects had been cast by spending a Wild Cube."
     },
     {
       "id": "wild-cube",
       "keyword": "JOKERWÜRFEL",
-      "description": "Wenn 1 AW als Jokerwürfel benutzt wird, hat er in diesem Moment alle 4 Farben und kann entsprechend platziert werden. Er zählt dabei immer als „passend“.<br> Außerdem hat er einen besonderen Effekt: Wenn ein Jokerwürfel eine Heldenfähigkeit (unabhängig davon, ob seine Farbe passt) aktiviert, verdoppelt er alle Zahlen in den Effekten dieser Fähigkeit. Diese Verdopplung gilt nicht für Kampfrollenfähigkeiten oder Ausrüstung und nicht für Effekte aus anderen Quellen, die die Fähigkeit verändern. <br> Beispiel: Du hast einen Jokerwürfel benutzt, um eine Fähigkeit mit diesen Effekten zu aktivieren: SELBST, HEILEN 2 UND SCHILD 4. Der Effekt wird verdoppelt und lautet nun: SELBST, HEILEN 4 UND SCHILD 8. SCHILD-Plättchen sind stapelbar und du erhältst darum trotzdem nur 4 SCHILD-Plättchen. HEILEN 4 stellt hingegen eine Verbesserung dar."
+      "description": "Wenn 1 AW als Jokerwürfel benutzt wird, hat er in diesem Moment alle 4 Farben und kann entsprechend platziert werden. Er zählt dabei immer als „passend“.<br><br> Außerdem hat er einen besonderen Effekt: Wenn ein Jokerwürfel eine Heldenfähigkeit (unabhängig davon, ob seine Farbe passt) aktiviert, verdoppelt er alle Zahlen in den Effekten dieser Fähigkeit. Diese Verdopplung gilt nicht für Kampfrollenfähigkeiten oder Ausrüstung und nicht für Effekte aus anderen Quellen, die die Fähigkeit verändern. <br><br> Beispiel: Du hast einen Jokerwürfel benutzt, um eine Fähigkeit mit diesen Effekten zu aktivieren: SELBST, HEILEN 2 UND SCHILD 4. Der Effekt wird verdoppelt und lautet nun: SELBST, HEILEN 4 UND SCHILD 8. SCHILD-Plättchen sind stapelbar und du erhältst darum trotzdem nur 4 SCHILD-Plättchen. HEILEN 4 stellt hingegen eine Verbesserung dar."
     },
     {
       "id": "wounded",
-      "keyword": "WOUNDED",
+      "keyword": "[Wave 2] WOUNDED",
       "description": "Aus Wave 2, Übersetzung folgt noch. <br><br> Wounded is a rare term that was created to condense a bigger effect into a single word: A Wounded Character is one who currently has half or less of their maximum Health (round down). A Character may be considered both Wounded and Fine when it has exactly half its maximum Health."
     },
     {
