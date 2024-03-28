@@ -13,9 +13,11 @@ import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItem
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 import { ApocalypseItemDataRepository } from "@/data/repository/campaign/apocalypse/ApocalypseItemDataRepository";
 import { AwakeningsItemDataRepository } from "@/data/repository/campaign/awakenings/AwakeningsItemDataRepository";
+import { useI18n } from "vue-i18n";
 
 const route = useRoute();
 const heroDataRepository = new HeroDataRepository();
+const { t } = useI18n();
 
 const heroId = route.params.heroId.toString();
 const campaignId = route.params.campaignId.toString();
@@ -59,7 +61,7 @@ function onStash() {
       </div>
     </div>
 
-    <BaseDividerAlt>Equipment</BaseDividerAlt>
+    <BaseDividerAlt>{{ t("label.equipment") }}</BaseDividerAlt>
 
     <div class="py-2 w-full">
       <CampaignHeroItems
@@ -71,13 +73,13 @@ function onStash() {
       />
     </div>
 
-    <BaseDividerAlt>Stash</BaseDividerAlt>
+    <BaseDividerAlt>{{ t("label.stash") }}</BaseDividerAlt>
 
     <div class="hero-stash-wrapper py-2 w-full">
       <CampaignHeroStash :campaign-id="campaignId" :repository="repository" :hero-id="heroId" :key="stash" />
     </div>
 
-    <BaseDividerAlt>Skills</BaseDividerAlt>
+    <BaseDividerAlt>{{ t("label.skills") }}</BaseDividerAlt>
 
     <div class="py-2 w-full">
       <CampaignHeroSkills :campaign-id="campaignId" :hero-id="heroId"></CampaignHeroSkills>

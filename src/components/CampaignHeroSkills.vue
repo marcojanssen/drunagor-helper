@@ -5,6 +5,7 @@ import BaseModal from "@/components/BaseModal.vue";
 import BaseList from "@/components/BaseList.vue";
 import BaseListItem from "@/components/BaseListItem.vue";
 import { CubeIcon, XMarkIcon } from "@heroicons/vue/24/solid";
+import { useI18n } from "vue-i18n";
 
 const heroStore = HeroStore();
 
@@ -15,15 +16,16 @@ const props = defineProps<{
 
 const isOpen = ref(false);
 const selectedSkillId = ref("");
+const { t } = useI18n();
 
 const cubeColors: Array<string> = ["Yellow", "Red", "Green", "Blue"];
 
 const skills = [
-  { id: "dungeon-role", name: "Dungeon Role" },
-  { id: "melee", name: "Melee" },
-  { id: "ranged", name: "Ranged" },
-  { id: "agility", name: "Agility" },
-  { id: "wisdom", name: "Wisdom" },
+  { id: "dungeon-role", name: "Dungeon Role", translationKey: "label.dungeon-role" },
+  { id: "melee", name: "Melee", translationKey: "label.melee" },
+  { id: "ranged", name: "Ranged", translationKey: "label.ranged" },
+  { id: "agility", name: "Agility", translationKey: "label.agility" },
+  { id: "wisdom", name: "Wisdom", translationKey: "label.wisdom" },
 ];
 const hero = heroStore.findInCampaign(props.heroId, props.campaignId);
 const selectedSkills = ref([] as string[]);
@@ -39,13 +41,15 @@ if (typeof hero.dungeonRoleSkillCubeColors === "undefined") {
 
 function getSkillLabel(skillId: string, level: number): string {
   if (!skillId.startsWith("dungeon-role")) {
-    return `Level ${level}`;
+    return `${t("label.level")} ${level}`;
   }
 
   const selectedCubes = heroStore.findInCampaign(props.heroId, props.campaignId).dungeonRoleSkillCubeColors;
   const selectedCube = level === 1 ? selectedCubes.rankOne : selectedCubes.rankTwo;
 
-  return selectedCube !== null ? `Level ${level} (${selectedCube})` : `Level ${level}`;
+  return selectedCube !== null
+    ? `${t("label.level")} ${level} (${t("label." + selectedCube.toLowerCase())})`
+    : `${t("label.level")} ${level}`;
 }
 
 function openModal() {
@@ -96,7 +100,7 @@ watch(selectedSkills, (newSkills) => {
 <template>
   <div class="w-full skill-container">
     <div v-for="skill in skills" :key="skill.id" class="skill">
-      <h3>{{ skill.name }}</h3>
+      <h3>{{ t(skill.translationKey) }}</h3>
       <div v-for="level in 2" :key="skill.name + '-' + level">
         <label :key="skill.id + '-' + level">
           <input
@@ -116,7 +120,7 @@ watch(selectedSkills, (newSkills) => {
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">Select action cube color</div>
+        <div class="w-full font-medium place-self-center">{{ t("text.select-action-cube-color") }}</div>
         <div>
           <button
             id="close-modal"
@@ -134,7 +138,7 @@ watch(selectedSkills, (newSkills) => {
           <BaseListItem @click="setSelectedCubeColor(color)">
             <div class="bg-neutral flex pt-3 pb-2 pl-3 w-full rounded-lg">
               <CubeIcon :class="'h-5 w-5 ' + color.toLowerCase()" />
-              <span class="ml-2">{{ color }}</span>
+              <span class="ml-2">{{ t("label." + color.toLowerCase()) }}</span>
             </div>
           </BaseListItem>
         </template>
