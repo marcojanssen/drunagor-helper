@@ -8,8 +8,10 @@ import {
   QuestionMarkCircleIcon,
   UserGroupIcon,
 } from "@heroicons/vue/24/solid";
+import { useI18n } from "vue-i18n";
 
 const isOpen = ref(false);
+const { t } = useI18n();
 
 function setIsOpen(value: boolean) {
   isOpen.value = value;
@@ -27,7 +29,7 @@ function open() {
 <template>
   <label @click="open" class="flex cursor-pointer">
     <Bars3Icon class="h-6 w-6" />
-    <span class="pl-2">Menu</span>
+    <span class="pl-2">{{ t("menu.menu") }}</span>
   </label>
 
   <TransitionRoot as="template" :show="isOpen">
@@ -50,7 +52,7 @@ function open() {
                   <span>
                     <QuestionMarkCircleIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">{{ $t("menu.random-monster") }}</span>
+                  <span class="pl-2">{{ t("menu.random-monster") }}</span>
                 </router-link>
               </li>
               <li>
@@ -58,7 +60,7 @@ function open() {
                   <span>
                     <UserGroupIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">{{ $t("menu.campaign") }}</span>
+                  <span class="pl-2">{{ t("menu.campaign") }}</span>
                 </router-link>
               </li>
               <li>
@@ -66,7 +68,7 @@ function open() {
                   <span>
                     <ListBulletIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">{{ $t("menu.keyword") }}</span>
+                  <span class="pl-2">{{ t("menu.keyword") }}</span>
                 </router-link>
               </li>
               <li>
@@ -74,7 +76,7 @@ function open() {
                   <span>
                     <Cog6ToothIcon class="h-7 w-7" />
                   </span>
-                  <span class="pl-2">{{ $t("menu.settings") }}</span>
+                  <span class="pl-2">{{ t("menu.settings") }}</span>
                 </router-link>
               </li>
             </ul>

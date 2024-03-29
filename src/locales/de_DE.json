@@ -50,10 +50,51 @@
     "yellow": "Gelb",
     "red": "Rot",
     "blue": "Blau",
-    "green": "Grün"
+    "green": "Grün",
+    "dwarf": "Zwerg",
+    "human": "Mensch",
+    "elf": "Elf",
+    "draconian": "Drakonier",
+    "orc": "Ork",
+    "vampire": "Vampir",
+    "hafling": "Halbling",
+    "efreet": "Efreet",
+    "succubus": "Succubus",
+    "valkyrie": "Valkyrie",
+    "azurean": "Azurean",
+    "mage": "Magier",
+    "sorcerer": "Sorcerer",
+    "shadow-knight": "Schattenritter",
+    "paladin": "Paladin",
+    "warrior": "Krieger",
+    "assasin": "Assasin",
+    "bard": "Barde",
+    "ranger": "Ranger",
+    "cleric": "Kleriker",
+    "barbarian": "Barbar",
+    "druid": "Druide",
+    "monk": "Mönch",
+    "swordmage": "Swordmage",
+    "warlord": "Warlord",
+    "necromancer": "Necromancer",
+    "shaman": "Schamane",
+    "mystics": "Mystisch",
+    "strength": "Stärke",
+    "devotion": "Aufopferung",
+    "cunning": "List",
+    "nature": "Natur"
   },
   "text": {
-    "select-action-cube-color": "Wähle eine Aktionswürfelfarbe"
+    "select-action-cube-color": "Wähle eine Aktionswürfelfarbe",
+    "curse-cubes": "Fluchwürfel",
+    "trauma-cube": "Traumawürfel",
+    "path-of": "Pfad: ",
+    "add-or-remove-status": "Status hinzufügen oder entfernen",
+    "add-or-remove-unfolding": "Add or remove unfolding",
+    "add-or-remove-outcome": "Auswirkung entfernen oder hinzufügen",
+    "add-or-remove-follower": "Gefährten hinzufügen oder entfernen",
+    "add-or-remove-stashed-items": "Gelagerte Gegenstände hinzufügen oder entfernen",
+    "select-aura": "Aura auswählen"
   },
   "weapon": {
     "core": {
@@ -514,11 +555,11 @@
     "settings": "Einstellungen"
   },
   "language": {
-    "english": "English",
-    "german": "German (work in progress)"
+    "english": "Englisch",
+    "german": "Deutsch (noch in Arbeit)"
   },
   "configuration": {
-    "language": "Language",
+    "language": "Sprache",
     "enabled-variant": "Aktivierte Variante",
     "monster-content": "Verfügbare Monster",
     "hero-content": "Verfügbare Helden",

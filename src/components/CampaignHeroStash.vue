@@ -67,7 +67,7 @@ watch(stashedItemIds, (newStashedItemCardIds) => {
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 rounded-lg"
-            placeholder="Add or remove stashed items"
+            :placeholder="t('text.add-or-remove-stashed-items')"
             @change="query = $event.target.value"
             id="hero-stash"
           />

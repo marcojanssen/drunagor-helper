@@ -56,8 +56,10 @@ function onStash() {
       </div>
       <div class="pl-8">
         <p>{{ hero.name }}</p>
-        <p>{{ hero.race }} {{ hero.class }}</p>
-        <p>Path of {{ hero.path }}</p>
+        <p>
+          {{ t("label." + hero.race.toLowerCase()) }} {{ t("label." + hero.class.toLowerCase().replace(" ", "-")) }}
+        </p>
+        <p>{{ t("text.path-of") }} {{ t("label." + hero.path.toLowerCase()) }}</p>
       </div>
     </div>
 
