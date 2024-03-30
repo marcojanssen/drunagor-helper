@@ -6,6 +6,7 @@ import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import { useRoute } from "vue-router";
 import { ChevronLeftIcon } from "@heroicons/vue/20/solid";
 import type { HeroData } from "@/data/repository/HeroData";
+import { useI18n } from "vue-i18n";
 
 const resourceDefinitions = [
   { id: "focus", name: "Focus" },
@@ -16,6 +17,7 @@ const resourceDefinitions = [
 
 const heroStore = HeroStore();
 const heroDataRepository = new HeroDataRepository();
+const { t } = useI18n();
 
 const route = useRoute();
 const heroId = route.params.heroId.toString();
@@ -52,13 +54,15 @@ watch(
       </div>
       <div class="pl-8">
         <p>{{ hero.name }}</p>
-        <p>{{ hero.race }} {{ hero.class }}</p>
-        <p>Path of {{ hero.path }}</p>
+        <p>
+          {{ t("label." + hero.race.toLowerCase()) }} {{ t("label." + hero.class.toLowerCase().replace(" ", "-")) }}
+        </p>
+        <p>{{ t("text.path-of") }} {{ t("label." + hero.path.toLowerCase()) }}</p>
       </div>
     </div>
 
     <div id="sequential-select" class="pt-4">
-      <label for="curse-cubes" class="block"> Curse Cubes </label>
+      <label for="curse-cubes" class="block"> {{ t("text.curse-cubes") }} </label>
       <select
         v-model.number="sequentialAdventureState.curseCubes"
         name="curse-cubes"
@@ -70,7 +74,7 @@ watch(
         </option>
       </select>
 
-      <label for="trauma-cube" class="block pt-2"> Trauma Cube </label>
+      <label for="trauma-cube" class="block pt-2"> {{ t("text.trauma-cube") }} </label>
       <select
         v-model.number="sequentialAdventureState.traumaCubes"
         name="trauma-cube"

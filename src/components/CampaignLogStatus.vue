@@ -5,6 +5,7 @@ import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid
 import type { Status } from "@/data/repository/campaign/Status";
 import { HeroStore } from "@/store/HeroStore";
 import type { StatusRepository } from "@/data/repository/campaign/StatusRepository";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   heroId: string;
@@ -15,6 +16,7 @@ const props = defineProps<{
 const statuses = props.repository.findAll();
 
 const heroStore = HeroStore();
+const { t } = useI18n();
 
 const statusIds = ref([] as string[]);
 statusIds.value = heroStore.findInCampaign(props.heroId, props.campaignId).statusIds ?? [];
@@ -58,7 +60,7 @@ watch(statusIds, (newStatusIds) => {
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 rounded-lg"
-            placeholder="Add or remove status"
+            :placeholder="t('text.add-or-remove-status')"
             @change="query = $event.target.value"
             id="campaign-log-status"
           />

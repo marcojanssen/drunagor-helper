@@ -5,6 +5,7 @@ import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid
 import type { Outcome } from "@/data/repository/campaign/Outcome";
 import { HeroStore } from "@/store/HeroStore";
 import type { OutcomeRepository } from "@/data/repository/campaign/OutcomeRepository";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   heroId: string;
@@ -13,6 +14,7 @@ const props = defineProps<{
 }>();
 
 const heroStore = HeroStore();
+const { t } = useI18n();
 
 const outcomes = props.repository.findAll();
 
@@ -58,7 +60,7 @@ watch(outcomeIds, (newOutcomeIds) => {
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 rounded-lg"
-            placeholder="Add or remove outcome"
+            :placeholder="t('text.add-or-remove-outcome')"
             @change="query = $event.target.value"
             id="campaign-log-outcome"
           />
