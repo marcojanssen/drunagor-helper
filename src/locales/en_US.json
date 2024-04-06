@@ -556,7 +556,12 @@
   },
   "language": {
     "english": "English",
-    "german": "German (work in progress)"
+    "german": "German (work in progress)",
+    "spanish": "Spanish (looking for translators)",
+    "french": "French (looking for translators)",
+    "italian": "Italian (looking for translators)",
+    "portuguese": "Portuguese (looking for translators)",
+    "polish": "Polish (looking for translators)"
   },
   "configuration": {
     "language": "Language",

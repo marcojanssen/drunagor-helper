@@ -28,6 +28,7 @@ watch(locale, () => {
         class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded"
       />
     </label>
+    <a target="_blank" class="underline" href="https://github.com/marcojanssen/drunagor-helper/blob/main/CONTRIBUTING.md">Click here to find out how to contribute</a>
   </div>
 </template>
 <style scoped></style>
