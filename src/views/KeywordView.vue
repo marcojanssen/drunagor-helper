@@ -8,7 +8,9 @@ import KeywordListItem from "@/components/KeywordListItem.vue";
 import { marked } from "marked";
 import BaseDivider from "@/components/BaseDivider.vue";
 import { ConfigurationStore } from "@/store/ConfigurationStore";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const route = useRoute();
 const keywordDataRepository = new KeywordDataRepository();
 const configurationStore = ConfigurationStore();
@@ -36,7 +38,7 @@ query.value = preselectedKeyword;
 
 <template>
   <div class="grid place-items-center w-full">
-    <BaseDivider>Keywords</BaseDivider>
+    <BaseDivider>{{ t("menu.keyword") }}</BaseDivider>
     <BaseListSearch
       id="keyword-search"
       @search="query = $event"
