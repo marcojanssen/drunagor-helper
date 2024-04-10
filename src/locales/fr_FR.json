@@ -57,7 +57,7 @@
     "draconian": "Draconien",
     "orc": "Orque",
     "vampire": "Vampire",
-    "hafling": "Halfelin",
+    "halfling": "Halfelin",
     "efreet": "Éfrit",
     "succubus": "Succube",
     "valkyrie": "Valkyrie",
@@ -593,7 +593,7 @@
     "alternate": "Alterner",
     "complex": "Complexe (A/B)"
   },
-  "keyword":[
+  "keyword": [
     {
       "id": "x-hp",
       "keyword": "+X PV",
@@ -632,7 +632,7 @@
     {
       "id": "activate",
       "keyword": "ACTIVER",
-      "description": "Activate est un terme compliqué qui apparaît dans de nombreux effets au cours des trois générations du système AoD. À la base de sa conception, Activate est l’instruction de prendre son tour. Ainsi, lorsque vous activez un monstre, par exemple, vous jouez un tour avec ce monstre ; Chaque fois qu'un monstre joue un tour, nous disons qu'il est « activé ». Lorsqu'un Personnage est activé, il effectue un tour normalement : ses Conditions se déclenchent au début du tour, puis ses Capacités Déclenchées se déclenchent, et enfin il effectue une Action de Mouvement et\/ou une Action d'Attaque. Les familiers ont cependant un effet optionnel : lorsque vous activez l'un d'entre eux, au lieu de le faire jouer un tour, vous pouvez l'invoquer. Rappelons-le : un familier invoqué apparaît dans un espace adjacent inoccupé à côté de son maître."
+      "description": "Activate est un terme compliqué qui apparaît dans de nombreux effets au cours des trois générations du système AoD. À la base de sa conception, Activate est l’instruction de prendre son tour. Ainsi, lorsque vous activez un monstre, par exemple, vous jouez un tour avec ce monstre ; Chaque fois qu'un monstre joue un tour, nous disons qu'il est « activé ». Lorsqu'un Personnage est activé, il effectue un tour normalement : ses Conditions se déclenchent au début du tour, puis ses Capacités Déclenchées se déclenchent, et enfin il effectue une Action de Mouvement et/ou une Action d'Attaque. Les familiers ont cependant un effet optionnel : lorsque vous activez l'un d'entre eux, au lieu de le faire jouer un tour, vous pouvez l'invoquer. Rappelons-le : un familier invoqué apparaît dans un espace adjacent inoccupé à côté de son maître."
     },
     {
       "id": "adj-or-adjacent",
@@ -832,7 +832,7 @@
     {
       "id": "cube-range-(cr)",
       "keyword": "GAMME CUBES (CR)",
-      "description": "Défini par la couleur du cube utilisé. Jaune (Mêlée) = Cible sur un CARRÉ adjacent. Rouge (à distance) = Ciblez sur n'importe quel CARRÉ jusqu'à 1 ZONE de distance. Vert (Agilité) \/ Bleu (Sagesse) = Cible à n'importe quelle distance."
+      "description": "Défini par la couleur du cube utilisé. Jaune (Mêlée) = Cible sur un CARRÉ adjacent. Rouge (à distance) = Ciblez sur n'importe quel CARRÉ jusqu'à 1 ZONE de distance. Vert (Agilité) / Bleu (Sagesse) = Cible à n'importe quelle distance."
     },
     {
       "id": "curse-cubes-(cc)",
@@ -947,7 +947,7 @@
     {
       "id": "flyby",
       "keyword": "SURVOL",
-      "description": "Ce familier revient librement sur un CARRÉ de son choix adjacent à son maître après avoir attaqué. Uniquement affecté par le terrain\/les ténèbres une fois atterri."
+      "description": "Ce familier revient librement sur un CARRÉ de son choix adjacent à son maître après avoir attaqué. Uniquement affecté par le terrain/les ténèbres une fois atterri."
     },
     {
       "id": "focus-x",
@@ -987,7 +987,7 @@
     {
       "id": "immunity",
       "keyword": "IMMUNITÉ",
-      "description": "Ce personnage ne peut pas être affecté par les conditions\/effets. L'immunité furtive signifie qu'ils peuvent cibler cette unité et ne peuvent pas être surpris (x2 DMG)."
+      "description": "Ce personnage ne peut pas être affecté par les conditions/effets. L'immunité furtive signifie qu'ils peuvent cibler cette unité et ne peuvent pas être surpris (x2 DMG)."
     },
     {
       "id": "inflict",
@@ -1082,7 +1082,7 @@
     {
       "id": "learn",
       "keyword": "APPRENDRE",
-      "description": "Pendant la campagne, les termes utilisés pour représenter la progression de votre héros en acquérant une nouvelle compétence ou capacité de classe étaient « Apprend et débloque ». Désormais, ce terme a été simplifié pour simplement « Apprendre », mais son objectif est le même. Ainsi, lorsque votre héros apprend une compétence de héros ou de rôle de niveau 1, il doit choisir une compétence de niveau 1 parmi son héros ou son rôle, prendre sa carte et son cube d'action respectifs, et les ajouter à son plateau de héros. <br \/><br \/> **REMARQUE :** Il est important de se rappeler qu'un héros ne peut pas apprendre un héros ou une compétence de rôle de niveau 2 s'il n'a pas appris une compétence de niveau 1 appartenant à ce même arbre de compétences ou rôle de donjon. , comme déjà mentionné dans le Corebox Rulebook. Lorsqu'un héros apprend une capacité de classe, il prend la carte correspondante (s'il s'agit de la capacité de niveau 1 pour cet arbre de classe) et un cube blanc. Ils placent la carte à côté de leur plateau et le cube sur l'espace approprié pour marquer la capacité de classe qu'ils ont apprise. <br \/><br \/> **REMARQUE :** De même, il est important de se rappeler qu'un héros ne peut pas apprendre une capacité de classe de niveau 2 ou 3 s'il n'a pas appris une capacité de classe de niveau 1 ou 2 (respectivement). appartenant à ce même arbre de classes."
+      "description": "Pendant la campagne, les termes utilisés pour représenter la progression de votre héros en acquérant une nouvelle compétence ou capacité de classe étaient « Apprend et débloque ». Désormais, ce terme a été simplifié pour simplement « Apprendre », mais son objectif est le même. Ainsi, lorsque votre héros apprend une compétence de héros ou de rôle de niveau 1, il doit choisir une compétence de niveau 1 parmi son héros ou son rôle, prendre sa carte et son cube d'action respectifs, et les ajouter à son plateau de héros. <br /><br /> **REMARQUE :** Il est important de se rappeler qu'un héros ne peut pas apprendre un héros ou une compétence de rôle de niveau 2 s'il n'a pas appris une compétence de niveau 1 appartenant à ce même arbre de compétences ou rôle de donjon. , comme déjà mentionné dans le Corebox Rulebook. Lorsqu'un héros apprend une capacité de classe, il prend la carte correspondante (s'il s'agit de la capacité de niveau 1 pour cet arbre de classe) et un cube blanc. Ils placent la carte à côté de leur plateau et le cube sur l'espace approprié pour marquer la capacité de classe qu'ils ont apprise. <br /><br /> **REMARQUE :** De même, il est important de se rappeler qu'un héros ne peut pas apprendre une capacité de classe de niveau 2 ou 3 s'il n'a pas appris une capacité de classe de niveau 1 ou 2 (respectivement). appartenant à ce même arbre de classes."
     },
     {
       "id": "loot-(tokens)",
@@ -1142,7 +1142,7 @@
     {
       "id": "non-preventable",
       "keyword": "INÉVITABLE",
-      "description": "Ces dommages ne peuvent être évités par aucun type d’effet, y compris SHIELD et\/ou PREVENT. Les dommages non évitables ne sont pas considérés comme une menace et ne peuvent donc pas être traités par des réactions."
+      "description": "Ces dommages ne peuvent être évités par aucun type d’effet, y compris SHIELD et/ou PREVENT. Les dommages non évitables ne sont pas considérés comme une menace et ne peuvent donc pas être traités par des réactions."
     },
     {
       "id": "npc",
@@ -1407,7 +1407,7 @@
     {
       "id": "stackable",
       "keyword": "EMPILABLE",
-      "description": "La propriété Stackable signifie qu'un personnage peut détenir jusqu'à 4 copies d'un même jeton sur ses plateaux\/cartes. Un jeton recto-verso qui affiche les faces 1 et 2 doit toujours être considéré comme s'il s'agissait du nombre de jetons individuels indiqué. Si un personnage devait recevoir un cinquième jeton d'un effet empilable, ignorez-le simplement. <br><br>**Exemple :** *2 jetons de Focus 2 et 4 jetons de Focus 1 sont considérés comme du Focus 4 dans les deux cas.*"
+      "description": "La propriété Stackable signifie qu'un personnage peut détenir jusqu'à 4 copies d'un même jeton sur ses plateaux/cartes. Un jeton recto-verso qui affiche les faces 1 et 2 doit toujours être considéré comme s'il s'agissait du nombre de jetons individuels indiqué. Si un personnage devait recevoir un cinquième jeton d'un effet empilable, ignorez-le simplement. <br><br>**Exemple :** *2 jetons de Focus 2 et 4 jetons de Focus 1 sont considérés comme du Focus 4 dans les deux cas.*"
     },
     {
       "id": "stalker-(trait)",
