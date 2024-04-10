@@ -592,7 +592,7 @@
         {
             "id": "x-hp",
             "keyword": "+X HP",
-            "description": "Maksymalne zdrowie Bohatera zwiększa się o +X punktów. Jak wyjaśniono na stronie 7 podręcznika zasad Age of Darkness, maksymalne zdrowie bohatera nigdy nie może przekroczyć 16 punktów. Jeśli bohater posiada dwa lub więcej efektów, które zwiększają jego punkty zdrowia, zawsze należy je zsumować, ale nigdy nie należy przekraczać wartości 16 pokazanej na planszy bohatera. Maksymalne zdrowie przekraczające 16 punktów jest uznawane za zmarnowane".
+            "description": "Maksymalne zdrowie Bohatera zwiększa się o +X punktów. Jak wyjaśniono na stronie 7 podręcznika zasad Age of Darkness, maksymalne zdrowie bohatera nigdy nie może przekroczyć 16 punktów. Jeśli bohater posiada dwa lub więcej efektów, które zwiększają jego punkty zdrowia, zawsze należy je zsumować, ale nigdy nie należy przekraczać wartości 16 pokazanej na planszy bohatera. Maksymalne zdrowie przekraczające 16 punktów jest uznawane za zmarnowane."
         },
         {
             "id": "x-hp-(simple)",
@@ -607,7 +607,7 @@
         {
             "id": "x-hit",
             "keyword": "+X lub -X HIT",
-            "description": "Wykonaj Atak Bronią dodając (lub odejmując) wartość X do swojego rzutu kością. Wpływa tylko na celność, a nie na trafienie krytyczne".
+            "description": "Wykonaj Atak Bronią dodając (lub odejmując) wartość X do swojego rzutu kością. Wpływa tylko na celność, a nie na trafienie krytyczne."
         },
         {
             "id": "x-to-hit",
@@ -617,17 +617,17 @@
         {
             "id": "x-movement",
             "keyword": "+X MOVEMENT",
-            "description": "Otrzymałeś X dodatkowych punktów ruchu za każdy zdobyty efekt Ruchu".
+            "description": "Otrzymałeś X dodatkowych punktów ruchu za każdy zdobyty efekt Ruchu."
         },
         {
             "id": "action-cubes-(ac)",
             "keyword": "ACTION CUBES (AC)",
-            "description": "Kolorowe kostki wydawane przez bohaterów na wykorzystanie ich umiejętności".
+            "description": "Kolorowe kostki wydawane przez bohaterów na wykorzystanie ich umiejętności."
         },
         {
             "id": "activate",
             "keyword": "ACTIVATE",
-            "description": "Aktywuj to skomplikowany termin, który pojawia się w wielu efektach na przestrzeni trzech generacji systemu AoD. U swoich podstaw, aktywacja jest instrukcją do wykonania tury. Na przykład, gdy aktywujesz potwora, wykonujesz turę tym potworem; za każdym razem, gdy potwór wykonuje turę, mówimy, że jest ”aktywowany”. Gdy postać jest aktywowana, wykonuje swoją turę w normalny sposób: jej warunki aktywują się na początku tury, następnie uruchamiają się jej zdolności, a na koniec wykonuje ona akcję ruchu i/lub akcję ataku. Zwierzęta mają jednak opcjonalny efekt: gdy aktywujesz jedno z nich, zamiast wykonywać turę, możesz je przywołać. Warto pamiętać, że przywołany zwierzak pojawia się na sąsiednim niezajętym polu obok swojego pana".
+            "description": "Aktywuj to skomplikowany termin, który pojawia się w wielu efektach na przestrzeni trzech generacji systemu AoD. U swoich podstaw, aktywacja jest instrukcją do wykonania tury. Na przykład, gdy aktywujesz potwora, wykonujesz turę tym potworem; za każdym razem, gdy potwór wykonuje turę, mówimy, że jest ”aktywowany”. Gdy postać jest aktywowana, wykonuje swoją turę w normalny sposób: jej warunki aktywują się na początku tury, następnie uruchamiają się jej zdolności, a na koniec wykonuje ona akcję ruchu i/lub akcję ataku. Zwierzęta mają jednak opcjonalny efekt: gdy aktywujesz jedno z nich, zamiast wykonywać turę, możesz je przywołać. Warto pamiętać, że przywołany zwierzak pojawia się na sąsiednim niezajętym polu obok swojego pana."
         },
         {
             "id": "adj-or-adjacent",
@@ -637,7 +637,7 @@
         {
             "id": "area",
             "keyword": "AREA",
-            "description": "Odnosi się do niebieskiego kwadratu na kafelku mapy".
+            "description": "Odnosi się do niebieskiego kwadratu na kafelku mapy."
         },
         {
             "id": "all",
@@ -657,7 +657,7 @@
         {
             "id": "aura",
             "keyword": "AURA",
-            "description": "Bohater może mieć tylko jedną i jest ona usuwana, gdy bohater zostanie KNOCKED OUT i otrzyma TRAUMA CUBE. (Nie jest usuwana podczas fazy obozu)"
+            "description": "Bohater może mieć tylko jedną i jest ona usuwana, gdy bohater zostanie KNOCKED OUT i otrzyma TRAUMA CUBE. (Nie jest usuwana podczas fazy obozu)."
         },
         {
             "id": "aura-(token)",
@@ -682,7 +682,7 @@
         {
             "id": "bear-trap",
             "keyword": "BEAR TRAP",
-            "description": "Wszyscy wrogowie w OBSZARZE otrzymują 2 obrażenia, którym nie można zapobiec, KREW 2, ODRZUĆ".
+            "description": "Wszyscy wrogowie w OBSZARZE otrzymują 2 obrażenia, którym nie można zapobiec, KREW 2, ODRZUĆ."
         },
         {
             "id": "beginning-of-turn-(bot)",
@@ -772,7 +772,7 @@
         {
             "id": "cleave-x",
             "keyword": "CLEAVE X",
-            "description": "Celuj w maksymalnie X wrogów sąsiadujących z atakującym jako pojedynczy rzut ataku".
+            "description": "Celuj w maksymalnie X wrogów sąsiadujących z atakującym jako pojedynczy rzut ataku."
         },
         {
             "id": "command",
@@ -832,12 +832,12 @@
         {
             "id": "curse-cubes-(cc)",
             "keyword": "CURSE CUBES (CC)",
-            "description": "Czarne kostki przydzielane do umiejętności Hero lub Dungeon Roles, które blokują ich użycie. Bohater zostaje skażony po otrzymaniu 6. kostki klątwy i kończy przygodę. "
+            "description": "Czarne kostki przydzielane do umiejętności Hero lub Dungeon Roles, które blokują ich użycie. Bohater zostaje skażony po otrzymaniu 6. kostki klątwy i kończy przygodę."
         },
         {
             "id": "curse-x",
             "keyword": "CURSE X",
-            "description": "Cel zyskuje X CC jako efekt".
+            "description": "Cel zyskuje X CC jako efekt."
         },
         {
             "id": "darkness-behavior",
@@ -872,7 +872,7 @@
         {
             "id": "discard",
             "keyword": "DISCARD",
-            "description": "Usuń tę rzecz ze swojej planszy".
+            "description": "Usuń tę rzecz ze swojej planszy."
         },
         {
             "id": "drain-health",
@@ -892,7 +892,7 @@
         {
             "id": "enemy",
             "keyword": "ENEMY",
-            "description": "Dowolna postać, która nie znajduje się w twojej drużynie lub nie jest postacią niezależną. Bohaterowie są wrogami potworów".
+            "description": "Dowolna postać, która nie znajduje się w twojej drużynie lub nie jest postacią niezależną. Bohaterowie są wrogami potworów."
         },
         {
             "id": "engaged",
@@ -937,12 +937,12 @@
         {
             "id": "fire-trap",
             "keyword": "FIRE TRAP",
-            "description": "Wszyscy wrogowie w OBSZARZE otrzymują 2 obrażenia, którym nie można zapobiec, SPALENIE 4, ODRZUCENIE".
+            "description": "Wszyscy wrogowie w OBSZARZE otrzymują 2 obrażenia, którym nie można zapobiec, SPALENIE 4, ODRZUCENIE."
         },
         {
             "id": "flyby",
             "keyword": "FLYBY",
-            "description": "Ten zwierzak swobodnie powraca do wybranego przez siebie KWADRATU sąsiadującego z jego panem po ataku. Po wylądowaniu wpływa na niego tylko teren/ciemność".
+            "description": "Ten zwierzak swobodnie powraca do wybranego przez siebie KWADRATU sąsiadującego z jego panem po ataku. Po wylądowaniu wpływa na niego tylko teren/ciemność."
         },
         {
             "id": "focus-x",
@@ -1057,7 +1057,7 @@
         {
             "id": "keen",
             "keyword": "KEEN",
-            "description": "W tej drugiej generacji zastąpiliśmy słowo kluczowe CRIT 16+ słowem “Keen“. Efekt pozostaje ten sam: jeśli wyrzucisz naturalną 16 lub więcej na d20, uzyskasz trafienie krytyczne. Wraz z wprowadzeniem umiejętności ulepszeń i aktualizacji cechy czarnoksiężnika, interakcje z dzikimi kostkami będą częstsze, a podwojenie wartości liczbowej “16+“ (rzekomo do “CRIT 32+“) jest nieestetyczne, a także stanowi raczej wadę umiejętności niż korzyść. Dlatego uznaliśmy za stosowne przekształcenie tej korzyści w słowo kluczowe, aby uniknąć tego problemu".
+            "description": "W tej drugiej generacji zastąpiliśmy słowo kluczowe CRIT 16+ słowem “Keen“. Efekt pozostaje ten sam: jeśli wyrzucisz naturalną 16 lub więcej na d20, uzyskasz trafienie krytyczne. Wraz z wprowadzeniem umiejętności ulepszeń i aktualizacji cechy czarnoksiężnika, interakcje z dzikimi kostkami będą częstsze, a podwojenie wartości liczbowej “16+“ (rzekomo do “CRIT 32+“) jest nieestetyczne, a także stanowi raczej wadę umiejętności niż korzyść. Dlatego uznaliśmy za stosowne przekształcenie tej korzyści w słowo kluczowe, aby uniknąć tego problemu."
         },
         {
             "id": "knock-down",
@@ -1082,7 +1082,7 @@
         {
             "id": "loot-(tokeny)",
             "keyword": "LOOT (TOKENY)",
-            "description": "Żetony łupów to ruchome obiekty naziemne, które mogą zostać podniesione przez Bohaterów, którzy sąsiadują z nimi lub znajdują się na nich, za pomocą pomniejszej akcji. Kiedy to zrobią, dobierają wierzchnią kartę z talii skrzyń, ale nie muszą rzucać kością pułapki: łup jest zawsze bezpieczny. Podobnie jak w przypadku skrzyni, w momencie dobrania przedmiotu konsumpcyjnego bohater może zdecydować się na jego natychmiastowe użycie w ramach darmowej akcji. W przeciwnym razie zachowuje tę kartę w swojej torbie".
+            "description": "Żetony łupów to ruchome obiekty naziemne, które mogą zostać podniesione przez Bohaterów, którzy sąsiadują z nimi lub znajdują się na nich, za pomocą pomniejszej akcji. Kiedy to zrobią, dobierają wierzchnią kartę z talii skrzyń, ale nie muszą rzucać kością pułapki: łup jest zawsze bezpieczny. Podobnie jak w przypadku skrzyni, w momencie dobrania przedmiotu konsumpcyjnego bohater może zdecydować się na jego natychmiastowe użycie w ramach darmowej akcji. W przeciwnym razie zachowuje tę kartę w swojej torbie."
         },
         {
             "id": "loot",
@@ -1157,7 +1157,7 @@
         {
             "id": "outcome",
             "keyword": "OUTCOME",
-            "description": "Kasowane tylko na polecenie innej rozdzielczości Interakcji".
+            "description": "Kasowane tylko na polecenie innej rozdzielczości Interakcji."
         },
         {
             "id": "passive",
@@ -1167,17 +1167,17 @@
         {
             "id": "pay-x-life",
             "keyword": "PAY X LIFE",
-            "description": "Bohater otrzymuje X obrażeń, aby zastosować korzyści. Nie można użyć, jeśli X > aktualne zdrowie".
+            "description": "Bohater otrzymuje X obrażeń, aby zastosować korzyści. Nie można użyć, jeśli X > aktualne zdrowie."
         },
         {
             "id": "penitence",
             "keyword": "PENITENCE",
-            "description": "Cel otrzymuje 1 obrażenie, któremu nie można zapobiec, za każdą KOSTKĘ KLĄTWY".
+            "description": "Cel otrzymuje 1 obrażenie, któremu nie można zapobiec, za każdą KOSTKĘ KLĄTWY."
         },
         {
             "id": "pet",
             "keyword": "PET",
-            "description": "Niektórzy bohaterowie mają towarzyszy, a każdy z nich ma własny żeton i kartę z jego atrybutami".
+            "description": "Niektórzy bohaterowie mają towarzyszy, a każdy z nich ma własny żeton i kartę z jego atrybutami."
         },
         {
             "id": "poison",
@@ -1217,7 +1217,7 @@
         {
             "id": "push-x",
             "keyword": "PUSH X",
-            "description": "Odepchnij cel o X KWADRATÓW od rzucającego w linii prostej. Musi zostać pchnięty na całej długości".
+            "description": "Odepchnij cel o X KWADRATÓW od rzucającego w linii prostej. Musi zostać pchnięty na całej długości."
         },
         {
             "id": "pushback",
@@ -1327,7 +1327,7 @@
         {
             "id": "shadow-aura",
             "keyword": "SHADOW AURA",
-            "description": "Mały kafelek Ciemności zostaje umieszczony pod Celem".
+            "description": "Mały kafelek Ciemności zostaje umieszczony pod Celem."
         },
         {
             "id": "shield-x",
@@ -1397,7 +1397,7 @@
         {
             "id": "spell-attack",
             "keyword": "SPELL ATTACK",
-            "description": "Umiejętność magiczna, która zawsze się udaje, zadając obrażenia".
+            "description": "Umiejętność magiczna, która zawsze się udaje, zadając obrażenia."
         },
         {
             "id": "stackable",
@@ -1442,7 +1442,7 @@
         {
             "id": "sturdiness",
             "keyword": "STURDINESS",
-            "description": "Obrażenia przekraczające tę liczbę pokonują towarzysza".
+            "description": "Obrażenia przekraczające tę liczbę pokonują towarzysza."
         },
         {
             "id": "suffer",
@@ -1552,7 +1552,7 @@
         {
             "id": "vicious",
             "keyword": "VICIOUS",
-            "description": "Obrażeniom zadawanym przez atak tego potwora nie można zapobiec".
+            "description": "Obrażeniom zadawanym przez atak tego potwora nie można zapobiec."
         },
         {
             "id": "voodoo",
