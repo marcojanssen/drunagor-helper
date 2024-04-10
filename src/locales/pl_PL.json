@@ -677,7 +677,7 @@
         {
             "id": "bash",
             "keyword": "BASH",
-            "description": "Bash to cecha charakterystyczna dla bohatera Andreasa. Za każdym razem, gdy umiejętność posiada Bash, w momencie, gdy masz zamiar rozpatrzyć efekt zawierający słowo kluczowe Bash, możesz odrzucić 2 żetony Tarczy. Jeśli to zrobisz, dodaj efekt opisany pomiędzy ”[]” do rozpatrzenia umiejętności. W przeciwnym razie musisz rozpatrzyć tę umiejętność, nie traktując jej jako części efektu".
+            "description": "Bash to cecha charakterystyczna dla bohatera Andreasa. Za każdym razem, gdy umiejętność posiada Bash, w momencie, gdy masz zamiar rozpatrzyć efekt zawierający słowo kluczowe Bash, możesz odrzucić 2 żetony Tarczy. Jeśli to zrobisz, dodaj efekt opisany pomiędzy ”[]” do rozpatrzenia umiejętności. W przeciwnym razie musisz rozpatrzyć tę umiejętność, nie traktując jej jako części efektu."
         },
         {
             "id": "bear-trap",
@@ -787,7 +787,7 @@
         {
             "id": "command-a-pet",
             "keyword": "COMMAND A PET",
-            "description": "Command a Pet to efekt podobny do Activate a Pet, z zastrzeżeniem, że nigdy nie może być użyty do przywołania zwierzaka na planszy. Kiedy więc rozkazujesz przywołanemu zwierzakowi, musisz wybrać zwierzaka, który jest już na planszy i jest z tobą powiązany, aby go aktywować. Aktywacja za pomocą tego efektu składa się z akcji ruchu, po której następuje normalna akcja ataku. Podobnie, aktywowane są wszelkie warunki, które posiada to zwierzę w momencie aktywacji. Jeśli inny efekt, który pozwala ci przywołać zwierzaka na planszę, zostanie uruchomiony w tym samym czasie, w którym miałbyś rozkazać zwierzakowi, możesz zdecydować, że rozstrzygniesz go jako pierwszy".
+            "description": "Command a Pet to efekt podobny do Activate a Pet, z zastrzeżeniem, że nigdy nie może być użyty do przywołania zwierzaka na planszy. Kiedy więc rozkazujesz przywołanemu zwierzakowi, musisz wybrać zwierzaka, który jest już na planszy i jest z tobą powiązany, aby go aktywować. Aktywacja za pomocą tego efektu składa się z akcji ruchu, po której następuje normalna akcja ataku. Podobnie, aktywowane są wszelkie warunki, które posiada to zwierzę w momencie aktywacji. Jeśli inny efekt, który pozwala ci przywołać zwierzaka na planszę, zostanie uruchomiony w tym samym czasie, w którym miałbyś rozkazać zwierzakowi, możesz zdecydować, że rozstrzygniesz go jako pierwszy."
         },
         {
             "id": "companions",
