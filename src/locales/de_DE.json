@@ -57,7 +57,7 @@
     "draconian": "Drakonier",
     "orc": "Ork",
     "vampire": "Vampir",
-    "hafling": "Halbling",
+    "halfling": "Halbling",
     "efreet": "Efreet",
     "succubus": "Succubus",
     "valkyrie": "Valkyrie",
@@ -556,7 +556,7 @@
   },
   "language": {
     "english": "Englisch",
-    "german": "Deutsch (noch in Arbeit)"
+    "german": "Deutsch"
   },
   "configuration": {
     "language": "Sprache",

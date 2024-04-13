@@ -15,7 +15,7 @@
   },
   "label": {
     "equipment-skills": "Equipment & Skills",
-    "remove-campaign": "Kampagne entfernen",
+    "remove-campaign": "Remove campaign",
     "new-campaign": "New campaign",
     "export-campaign": "Export campaign",
     "import-campaign": " Import campaign",
@@ -57,7 +57,7 @@
     "draconian": "Draconian",
     "orc": "Orc",
     "vampire": "Vampire",
-    "hafling": "Halfling",
+    "halfling": "Halfling",
     "efreet": "Efreet",
     "succubus": "Succubus",
     "valkyrie": "Valkyrie",
@@ -556,7 +556,12 @@
   },
   "language": {
     "english": "English",
-    "german": "German (work in progress)"
+    "german": "German",
+    "spanish": "Spanish (looking for translators)",
+    "french": "French",
+    "italian": "Italian (looking for translators)",
+    "portuguese": "Portuguese (looking for translators)",
+    "polish": "Polish (looking for translators)"
   },
   "configuration": {
     "language": "Language",

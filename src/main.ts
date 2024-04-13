@@ -15,6 +15,11 @@ import HeroDetailView from "@/views/HeroDetailView.vue";
 import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
 import * as enUS from "@/locales/en_US.json";
 import * as deDE from "@/locales/de_DE.json";
+import * as frFR from "@/locales/fr_FR.json";
+import * as itIT from "@/locales/it_IT.json";
+import * as plPL from "@/locales/pl_PL.json";
+import * as ptBR from "@/locales/pt_BR.json";
+import * as esES from "@/locales/es_ES.json";
 import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 const pinia = createPinia();
@@ -25,6 +30,21 @@ const messages = {
   },
   de_DE: {
     ...deDE,
+  },
+  fr_FR: {
+    ...frFR,
+  },
+  it_IT: {
+    ...itIT,
+  },
+  pl_PL: {
+    ...plPL,
+  },
+  pt_BR: {
+    ...ptBR,
+  },
+  es_ES: {
+    ...esES,
   },
 };
 
