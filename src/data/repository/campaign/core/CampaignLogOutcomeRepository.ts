@@ -36,7 +36,7 @@ export class CampaignLogOutcomeRepository implements OutcomeRepository {
     },
     {
       id: "curse-breaker",
-      name: "Curse breaker",
+      name: "Cursebreaker",
       effect: "",
       translationKey: "outcome.curse-breaker",
     },
@@ -66,7 +66,7 @@ export class CampaignLogOutcomeRepository implements OutcomeRepository {
     },
     {
       id: "lovebirds-reunited",
-      name: "Lovebird reunited",
+      name: "Lovebirds reunited",
       effect: "",
       translationKey: "outcome.lovebirds-reunited",
     },
