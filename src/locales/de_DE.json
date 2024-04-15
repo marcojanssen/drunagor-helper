@@ -557,7 +557,12 @@
   },
   "language": {
     "english": "Englisch",
-    "german": "Deutsch"
+    "german": "Deutsch",
+    "spanish": "Spanisch (Übersetzer gesucht)",
+    "french": "Französisch",
+    "italian": "Italienisch (Übersetzer gesucht)",
+    "portuguese": "Portugiesisch (Übersetzer gesucht)",
+    "polish": "Polnisch (Übersetzer gesucht)"
   },
   "configuration": {
     "language": "Sprache",
