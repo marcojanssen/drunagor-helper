@@ -7,77 +7,122 @@ export class CampaignLogOutcomeRepository implements OutcomeRepository {
     {
       id: "a-couriers-job",
       effect: "",
-      translationKey: "outcome.a-couriers-job",
+      translationKeys: {
+        name: "outcome.a-couriers-job",
+        effect: "",
+      },
     },
     {
       id: "adamant",
       effect: "",
-      translationKey: "outcome.adamant",
+      translationKeys: {
+        name: "outcome.adamant",
+        effect: "",
+      },
     },
     {
       id: "a-hideous-act",
       effect: "",
-      translationKey: "outcome.a-hideous-act",
+      translationKeys: {
+        name: "outcome.a-hideous-act",
+        effect: "",
+      },
     },
     {
       id: "a-lovers-request",
       effect: "",
-      translationKey: "outcome.a-lovers-request",
+      translationKeys: {
+        name: "outcome.a-lovers-request",
+        effect: "",
+      },
     },
     {
       id: "corrupted-hero",
       effect: "",
-      translationKey: "outcome.corrupted-hero",
+      translationKeys: {
+        name: "outcome.corrupted-hero",
+        effect: "",
+      },
     },
     {
       id: "curse-breaker",
       effect: "",
-      translationKey: "outcome.curse-breaker",
+      translationKeys: {
+        name: "outcome.curse-breaker",
+        effect: "",
+      },
     },
     {
       id: "dynamic-duo",
       effect: "",
-      translationKey: "outcome.dynamic-duo",
+      translationKeys: {
+        name: "outcome.dynamic-duo",
+        effect: "",
+      },
     },
     {
       id: "gentle-dismissal",
       effect: "",
-      translationKey: "outcome.gentle-dismissal",
+      translationKeys: {
+        name: "outcome.gentle-dismissal",
+        effect: "",
+      },
     },
     {
       id: "guardians-curse",
       effect: "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet.",
-      translationKey: "outcome.guardians-curse",
+      translationKeys: {
+        name: "outcome.guardians-curse",
+        effect: "outcome.guardians-curse-effect",
+      },
     },
     {
       id: "humbled",
       effect: "",
-      translationKey: "outcome.humbled",
+      translationKeys: {
+        name: "outcome.humbled",
+        effect: "",
+      },
     },
     {
       id: "lovebirds-reunited",
       effect: "",
-      translationKey: "outcome.lovebirds-reunited",
+      translationKeys: {
+        name: "outcome.lovebirds-reunited",
+        effect: "",
+      },
     },
     {
       id: "relic-breaker",
       effect: "",
-      translationKey: "outcome.relic-breaker",
+      translationKeys: {
+        name: "outcome.relic-breaker",
+        effect: "",
+      },
     },
     {
       id: "sowing-winds",
       effect: "",
-      translationKey: "outcome.sowing-winds",
+      translationKeys: {
+        name: "outcome.sowing-winds",
+        effect: "",
+      },
     },
     {
       id: "storyteller",
       effect: "",
-      translationKey: "outcome.storyteller",
+      translationKeys: {
+        name: "outcome.storyteller",
+        effect: "",
+      },
     },
     {
       id: "unbroken",
       effect: "",
-      translationKey: "outcome.unbroken",
+      translationKeys: {
+        name: "outcome.unbroken",
+        effect: "",
+      },
     },
   ];
 

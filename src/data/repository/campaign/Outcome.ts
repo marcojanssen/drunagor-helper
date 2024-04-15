@@ -1,5 +1,8 @@
 export interface Outcome {
   id: string;
   effect: string;
-  translationKey: string;
+  translationKeys: {
+    name: string;
+    effect: string;
+  };
 }

@@ -8,12 +8,18 @@ export class CampaignLogOutcomeRepository implements OutcomeRepository {
       id: "bitten",
       effect:
         "Whenever you take a Recall Action, you suffer STUN. This STUN pierces any kind of immunity you have, since it represents your difficulty in handling your actions after sustaining such a serious injury and not a mental disorder due to physical trauma.",
-      translationKey: "outcome.bitten",
+      translationKeys: {
+        name: "outcome.bitten",
+        effect: "outcome.bitten-effect",
+      },
     },
     {
       id: "deep-wound",
       effect: "You can hold one less Trauma Cube",
-      translationKey: "outcome.deep-wound",
+      translationKeys: {
+        name: "outcome.deep-wound",
+        effect: "outcome.deep-wound-effect",
+      },
     },
   ];
 

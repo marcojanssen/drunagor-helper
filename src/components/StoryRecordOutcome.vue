@@ -24,7 +24,7 @@ let filteredOutcomes = computed(() =>
   query.value === ""
     ? outcomes
     : outcomes.filter((outcome) =>
-        t(outcome.translationKey)
+        t(outcome.translationKeys.name)
           .toLowerCase()
           .replace(/\s+/g, "")
           .includes(query.value.toLowerCase().replace(/\s+/g, ""))
@@ -103,7 +103,7 @@ watch(outcomeIds, (newOutcomeIds) => {
             }"
           >
             <span class="block truncate">
-              {{ t(outcome.translationKey) }}
+              {{ t(outcome.translationKeys.name) }}
             </span>
             <span
               v-if="selected"
@@ -124,9 +124,9 @@ watch(outcomeIds, (newOutcomeIds) => {
     <template v-for="outcome in findOutcomes(outcomeIds)" :key="outcome.id">
       <ul id="story-record-outcome-display" class="list-disc list-inside">
         <li>
-          {{ t(outcome.translationKey) }}
+          {{ t(outcome.translationKeys.name) }}
           <span class="px-4 block" v-if="outcome.effect">
-            {{ outcome.effect }}
+            {{ t(outcome.translationKeys.effect) }}
           </span>
         </li>
       </ul>

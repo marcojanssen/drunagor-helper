@@ -7,163 +7,259 @@ export class StoryRecordOutcomeRepository implements OutcomeRepository {
     {
       id: "a-good-deal",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.a-good-deal",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.a-good-deal",
+        effect: "",
+      },
     },
     {
       id: "beautiful-lie",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.beautiful-lie",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.beautiful-lie",
+        effect: "",
+      },
     },
     {
       id: "broken",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.broken",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.broken",
+        effect: "",
+      },
     },
     {
       id: "exquisite-friends",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.exquisite-friends",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.exquisite-friends",
+        effect: "",
+      },
     },
     {
       id: "friendly-advice",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.friendly-advice",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.friendly-advice",
+        effect: "",
+      },
     },
     {
       id: "gal-s-fate",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.gal-s-fate",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.gal-s-fate",
+        effect: "",
+      },
     },
     {
       id: "hellscarian-ally",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.hellscarian-ally",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.hellscarian-ally",
+        effect: "",
+      },
     },
     {
       id: "hellscarian-enemy",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.hellscarian-enemy",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.hellscarian-enemy",
+        effect: "",
+      },
     },
     {
       id: "hero-s-journey",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.hero-s-journey",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.hero-s-journey",
+        effect: "",
+      },
     },
     {
       id: "humbled",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.humbled",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.humbled",
+        effect: "",
+      },
     },
     {
       id: "impostor",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.impostor",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.impostor",
+        effect: "",
+      },
     },
     {
       id: "insured-trip",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.insured-trip",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.insured-trip",
+        effect: "",
+      },
     },
     {
       id: "late-guests",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.late-guests",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.late-guests",
+        effect: "",
+      },
     },
     {
       id: "long-live",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.long-live",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.long-live",
+        effect: "",
+      },
     },
     {
       id: "luccanor-s-redemption",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.luccanor-s-redemption",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.luccanor-s-redemption",
+        effect: "",
+      },
     },
     {
       id: "misery-ended",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.misery-ended",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.misery-ended",
+        effect: "",
+      },
     },
     {
       id: "mob-justice",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.mob-justice",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.mob-justice",
+        effect: "",
+      },
     },
     {
       id: "no-quarter-given",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.no-quarter-given",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.no-quarter-given",
+        effect: "",
+      },
     },
     {
       id: "possessed",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.possessed",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.possessed",
+        effect: "",
+      },
     },
     {
       id: "scarce-provisions",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.scarce-provisions",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.scarce-provisions",
+        effect: "",
+      },
     },
     {
       id: "shattered-dreams",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.shattered-dreams",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.shattered-dreams",
+        effect: "",
+      },
     },
     {
       id: "strong-bonds",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.strong-bonds",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.strong-bonds",
+        effect: "",
+      },
     },
     {
       id: "the-duke-s-betrayal",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.the-duke-s-betrayal",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.the-duke-s-betrayal",
+        effect: "",
+      },
     },
     {
       id: "the-earl-of-blackriver",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.the-earl-of-blackriver",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.the-earl-of-blackriver",
+        effect: "",
+      },
     },
     {
       id: "triumphant",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.triumphant",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.triumphant",
+        effect: "",
+      },
     },
     {
       id: "truthful",
       effect:
         "Heroes hit with Weapon attack and succeed on Skill Challenges whenever they roll 1 on the d20. Each Hero that also has a Class Ability that turns their natural 1 rolls into Weapon attack hits also scores a Critical Hit on these attacks.",
-      translationKey: "outcome.apocalypse.storyrecord.truthful",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.truthful",
+        effect: "outcome.apocalypse.storyrecord.truthful-effect",
+      },
     },
     {
       id: "umbralian-ally",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.umbralian-ally",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.umbralian-ally",
+        effect: "",
+      },
     },
     {
       id: "umbralian-enemy",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.umbralian-enemy",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.umbralian-enemy",
+        effect: "",
+      },
     },
     {
       id: "unbroken",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.unbroken",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.unbroken",
+        effect: "",
+      },
     },
     {
       id: "uncertain-journey",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.uncertain-journey",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.uncertain-journey",
+        effect: "",
+      },
     },
     {
       id: "wounded-eye",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.wounded-eye",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.wounded-eye",
+        effect: "",
+      },
     },
     {
       id: "wounded-paw",
       effect: "",
-      translationKey: "outcome.apocalypse.storyrecord.wounded-paw",
+      translationKeys: {
+        name: "outcome.apocalypse.storyrecord.wounded-paw",
+        effect: "",
+      },
     },
   ];
 

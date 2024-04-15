@@ -7,82 +7,130 @@ export class StoryRecordOutcomeRepository implements OutcomeRepository {
     {
       id: "ancient-book",
       effect: "",
-      translationKey: "outcome.ancient-book",
+      translationKeys: {
+        name: "outcome.ancient-book",
+        effect: "",
+      },
     },
     {
       id: "counting-kittens",
       effect: "",
-      translationKey: "outcome.counting-kittens",
+      translationKeys: {
+        name: "outcome.counting-kittens",
+        effect: "",
+      },
     },
     {
       id: "defenders-fate",
       effect: "",
-      translationKey: "outcome.defenders-fate",
+      translationKeys: {
+        name: "outcome.defenders-fate",
+        effect: "",
+      },
     },
     {
       id: "drinking-pal",
       effect: "",
-      translationKey: "outcome.drinking-pal",
+      translationKeys: {
+        name: "outcome.drinking-pal",
+        effect: "",
+      },
     },
     {
       id: "entangled",
       effect: "",
-      translationKey: "outcome.entangled",
+      translationKeys: {
+        name: "outcome.entangled",
+        effect: "",
+      },
     },
     {
       id: "farewell",
       effect: "",
-      translationKey: "outcome.farewell",
+      translationKeys: {
+        name: "outcome.farewell",
+        effect: "",
+      },
     },
     {
       id: "full-house",
       effect: "",
-      translationKey: "outcome.full-house",
+      translationKeys: {
+        name: "outcome.full-house",
+        effect: "",
+      },
     },
     {
       id: "minervas-diary",
       effect: "",
-      translationKey: "outcome.minervas-diary",
+      translationKeys: {
+        name: "outcome.minervas-diary",
+        effect: "",
+      },
     },
     {
       id: "pirates-gift",
       effect: "",
-      translationKey: "outcome.pirates-gift",
+      translationKeys: {
+        name: "outcome.pirates-gift",
+        effect: "",
+      },
     },
     {
       id: "promised-reward",
       effect: "",
-      translationKey: "outcome.promised-reward",
+      translationKeys: {
+        name: "outcome.promised-reward",
+        effect: "",
+      },
     },
     {
       id: "reunited",
       effect: "",
-      translationKey: "outcome.reunited",
+      translationKeys: {
+        name: "outcome.reunited",
+        effect: "",
+      },
     },
     {
       id: "selfish",
       effect: "",
-      translationKey: "outcome.selfish",
+      translationKeys: {
+        name: "outcome.selfish",
+        effect: "",
+      },
     },
     {
       id: "selfless",
       effect: "",
-      translationKey: "outcome.selfless",
+      translationKeys: {
+        name: "outcome.selfless",
+        effect: "",
+      },
     },
     {
       id: "threats-or-treats",
       effect: "",
-      translationKey: "outcome.threats-or-treats",
+      translationKeys: {
+        name: "outcome.threats-or-treats",
+        effect: "",
+      },
     },
     {
       id: "untangled",
       effect: "",
-      translationKey: "outcome.untangled",
+      translationKeys: {
+        name: "outcome.untangled",
+        effect: "",
+      },
     },
     {
       id: "watcher",
       effect: "",
-      translationKey: "outcome.watcher",
+      translationKeys: {
+        name: "outcome.watcher",
+        effect: "",
+      },
     },
   ];
 
