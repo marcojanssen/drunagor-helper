@@ -94,7 +94,8 @@
     "add-or-remove-outcome": "Auswirkung entfernen oder hinzufügen",
     "add-or-remove-follower": "Gefährten hinzufügen oder entfernen",
     "add-or-remove-stashed-items": "Gelagerte Gegenstände hinzufügen oder entfernen",
-    "select-aura": "Aura auswählen"
+    "select-aura": "Aura auswählen",
+    "outcome-info": "Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt ändert sie."
   },
   "weapon": {
     "core": {
@@ -589,21 +590,21 @@
     "complex": "Komplex (A / B)"
   },
   "outcome": {
-    "a-couriers-job": "A courier's job",
-    "adamant": "Adamant",
-    "a-hideous-act": "A hideous act",
-    "a-lovers-request": "A lover's request",
-    "corrupted-hero": "Corrupted hero",
-    "curse-breaker": "Curse breaker",
-    "dynamic-duo": "Dynamic duo",
-    "gentle-dismissal": "Gentle dismissal",
-    "guardians-curse": "Guardian's curse",
-    "humbled": "Humbled",
-    "lovebirds-reunited": "Lovebird reunited",
-    "relic-breaker": "Relic breaker",
-    "sowing-winds": "Sowing winds",
-    "storyteller": "Storyteller",
-    "unbroken": "Unbroken"
+    "a-couriers-job": "Botengang",
+    "adamant": "Hartnäckig",
+    "a-hideous-act": "Eine abscheuliche Tat",
+    "a-lovers-request": "Wunsch der Liebenden",
+    "corrupted-hero": "Verdorbener Held",
+    "curse-breaker": "Fluchbrecher",
+    "dynamic-duo": "Dynamisches Duo",
+    "gentle-dismissal": "Sanfter Abschied",
+    "guardians-curse": "Der Fluch des Wächters",
+    "humbled": "Gedemütigt",
+    "lovebirds-reunited": "Wiedervereinte Turteltauben",
+    "relic-breaker": "Reliktbrecher",
+    "sowing-winds": "Saatwind",
+    "storyteller": "Geschichtenerzähler",
+    "unbroken": "Ungebrochen"
   },
   "keyword": [
     {
