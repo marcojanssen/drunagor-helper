@@ -94,7 +94,8 @@
     "add-or-remove-outcome": "Ajouter ou supprimer un résultat",
     "add-or-remove-follower": "Ajouter ou supprimer un abonné",
     "add-or-remove-stashed-items": "Ajouter ou supprimer des éléments cachés",
-    "select-aura": "Sélectionnez l'aura"
+    "select-aura": "Sélectionnez l'aura",
+    "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them."
   },
   "weapon": {
     "core": {
@@ -599,12 +600,12 @@
     "a-hideous-act": "A hideous act",
     "a-lovers-request": "A lover's request",
     "corrupted-hero": "Corrupted hero",
-    "curse-breaker": "Curse breaker",
+    "curse-breaker": "Cursebreaker",
     "dynamic-duo": "Dynamic duo",
     "gentle-dismissal": "Gentle dismissal",
     "guardians-curse": "Guardian's curse",
     "humbled": "Humbled",
-    "lovebirds-reunited": "Lovebird reunited",
+    "lovebirds-reunited": "Lovebirds reunited",
     "relic-breaker": "Relic breaker",
     "sowing-winds": "Sowing winds",
     "storyteller": "Storyteller",

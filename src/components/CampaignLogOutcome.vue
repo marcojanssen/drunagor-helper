@@ -25,7 +25,10 @@ let filteredOutcomes = computed(() =>
   query.value === ""
     ? outcomes
     : outcomes.filter((outcome) =>
-        outcome.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
+        t(outcome.translationKey)
+          .toLowerCase()
+          .replace(/\s+/g, "")
+          .includes(query.value.toLowerCase().replace(/\s+/g, ""))
       )
 );
 
@@ -101,7 +104,7 @@ watch(outcomeIds, (newOutcomeIds) => {
             }"
           >
             <span class="block truncate">
-              {{ outcome.name }}
+              {{ t(outcome.translationKey) }}
             </span>
             <span
               v-if="selected"
@@ -117,12 +120,12 @@ watch(outcomeIds, (newOutcomeIds) => {
   </Combobox>
   <template v-if="outcomeIds.length > 0">
     <p class="text-sm text-gray-500 py-2">
-      Remain in effect for the entire campaign unless some other effect changes them.
+      {{ t("text.outcome-info") }}
     </p>
     <template v-for="outcome in findOutcomes(outcomeIds)" :key="outcome.id">
       <ul id="campaign-log-outcome-display" class="list-disc list-inside">
         <li>
-          {{ outcome.name }}
+          {{ t(outcome.translationKey) }}
           <span class="px-4 block" v-if="outcome.effect">
             {{ outcome.effect }}
           </span>
