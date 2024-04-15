@@ -66,11 +66,11 @@ describe("outcome selection", () => {
 
     cy.get("#campaign-log-outcome-display").click();
     cy.get("#campaign-log-outcome-clear").click();
-    cy.get("#campaign-log-outcome").type("Lovebird reunited");
+    cy.get("#campaign-log-outcome").type("Lovebirds reunited");
     cy.get("ul#campaign-log-outcome-options li").first().click();
 
     cy.get("#campaign-log-outcome-display").click();
-    cy.get("#campaign-log-outcome-display > li").contains("Lovebird reunited");
+    cy.get("#campaign-log-outcome-display > li").contains("Lovebirds reunited");
   });
   it("displays the effect of an outcome", () => {
     cy.get("#campaign-add-hero").click();
@@ -85,7 +85,7 @@ describe("outcome selection", () => {
       "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
     );
 
-    cy.get("#campaign-log-outcome").type("Curse breaker");
+    cy.get("#campaign-log-outcome").type("Cursebreaker");
     cy.get("ul#campaign-log-outcome-options li").first().click();
 
     cy.get("#campaign-log-outcome-display").click();
@@ -94,6 +94,6 @@ describe("outcome selection", () => {
     cy.get("#campaign-log-outcome-display > li span").contains(
       "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
     );
-    cy.get("#campaign-log-outcome-display > li").contains("Curse breaker");
+    cy.get("#campaign-log-outcome-display > li").contains("Cursebreaker");
   });
 });
