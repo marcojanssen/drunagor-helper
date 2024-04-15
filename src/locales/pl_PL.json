@@ -588,6 +588,23 @@
     "alternate": "Alternatywnie",
     "complex": "Złożone (A/B)"
   },
+  "outcome": {
+    "a-couriers-job": "A courier's job",
+    "adamant": "Adamant",
+    "a-hideous-act": "A hideous act",
+    "a-lovers-request": "A lover's request",
+    "corrupted-hero": "Corrupted hero",
+    "curse-breaker": "Curse breaker",
+    "dynamic-duo": "Dynamic duo",
+    "gentle-dismissal": "Gentle dismissal",
+    "guardians-curse": "Guardian's curse",
+    "humbled": "Humbled",
+    "lovebirds-reunited": "Lovebird reunited",
+    "relic-breaker": "Relic breaker",
+    "sowing-winds": "Sowing winds",
+    "storyteller": "Storyteller",
+    "unbroken": "Unbroken"
+  },
   "keyword": [
     {
       "id": "x-hp",
