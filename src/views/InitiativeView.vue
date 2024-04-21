@@ -2,5 +2,5 @@
 </script>
 
 <template>
-    <h1>Initiative</h1>
+    <h1>Hello World</h1>
 </template>
