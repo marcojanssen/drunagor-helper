@@ -6,6 +6,7 @@ import type { Outcome } from "@/data/repository/campaign/Outcome";
 import type { OutcomeRepository } from "@/data/repository/campaign/OutcomeRepository";
 import { CampaignStore } from "@/store/CampaignStore";
 import { useI18n } from "vue-i18n";
+import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 const props = defineProps<{
   campaignId: string;
@@ -13,9 +14,11 @@ const props = defineProps<{
 }>();
 
 const campaignStore = CampaignStore();
+const configurationStore = ConfigurationStore();
+const { t } = useI18n();
+props.repository.load(configurationStore.enabledLanguage);
 
 const outcomes = props.repository.findAll();
-const { t } = useI18n();
 
 const outcomeIds = ref([] as string[]);
 outcomeIds.value = campaignStore.find(props.campaignId).outcomeIds ?? [];
@@ -24,10 +27,7 @@ let filteredOutcomes = computed(() =>
   query.value === ""
     ? outcomes
     : outcomes.filter((outcome) =>
-        t(outcome.translationKeys.name)
-          .toLowerCase()
-          .replace(/\s+/g, "")
-          .includes(query.value.toLowerCase().replace(/\s+/g, ""))
+        outcome.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""))
       )
 );
 
@@ -103,7 +103,7 @@ watch(outcomeIds, (newOutcomeIds) => {
             }"
           >
             <span class="block truncate">
-              {{ t(outcome.translationKeys.name) }}
+              {{ outcome.name }}
             </span>
             <span
               v-if="selected"
@@ -124,9 +124,9 @@ watch(outcomeIds, (newOutcomeIds) => {
     <template v-for="outcome in findOutcomes(outcomeIds)" :key="outcome.id">
       <ul id="story-record-outcome-display" class="list-disc list-inside">
         <li>
-          {{ t(outcome.translationKeys.name) }}
+          {{ outcome.name }}
           <span class="px-4 block" v-if="outcome.effect">
-            {{ t(outcome.translationKeys.effect) }}
+            {{ outcome.effect }}
           </span>
         </li>
       </ul>
