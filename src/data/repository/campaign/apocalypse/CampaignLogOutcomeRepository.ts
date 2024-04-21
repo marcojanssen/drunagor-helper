@@ -16,6 +16,7 @@ export class CampaignLogOutcomeRepository implements OutcomeRepository {
 
   public load(locale: string) {
     const i18n = useI18n();
-    this.outcomes = i18n.messages.value[locale]["outcome"].apocalypse.campaign as Outcome[];
+    const outcomeList: any = i18n.messages.value[locale].outcome;
+    this.outcomes = outcomeList["apocalypse"].campaign as Outcome[];
   }
 }
