@@ -5,6 +5,7 @@ import CampaignView from "@/views/CampaignView.vue";
 import ConfigurationView from "@/views/ConfigurationView.vue";
 import KeywordView from "@/views/KeywordView.vue";
 import RandomizerView from "@/views/RandomizerView.vue";
+import InitiativeView from "@/views/InitiativeView.vue";
 import { createPinia } from "pinia";
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
@@ -32,6 +33,7 @@ const routes = [
   },
   { path: "/campaign", name: "Campaign Overview", component: CampaignOverviewView },
   { path: "/keyword", name: "Keyword", component: KeywordView },
+  { path: "/initiative", name: "Initiative", component: InitiativeView },
 ];
 
 const router = createRouter({
