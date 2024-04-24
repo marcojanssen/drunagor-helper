@@ -17,6 +17,6 @@ export class StoryRecordOutcomeRepository implements OutcomeRepository {
   public load(locale: string) {
     const i18n = useI18n();
     const outcomeList: any = i18n.messages.value[locale].outcome;
-    this.outcomes = outcomeList["awakenings"] as Outcome[];
+    this.outcomes = outcomeList["awakenings"].campaign as Outcome[];
   }
 }
