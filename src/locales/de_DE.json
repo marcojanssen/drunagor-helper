@@ -595,165 +595,172 @@
     "complex": "Komplex (A / B)"
   },
   "outcome": {
-    "core": [
-      {
-        "id": "a-couriers-job",
-        "name": "Botengang",
-        "effect": ""
-      },
-      {
-        "id": "adamant",
-        "name": "Hartnäckig",
-        "effect": ""
-      },
-      {
-        "id": "a-hideous-act",
-        "name": "Eine abscheuliche Tat",
-        "effect": ""
-      },
-      {
-        "id": "a-lovers-request",
-        "name": "Wunsch der Liebenden",
-        "effect": ""
-      },
-      {
-        "id": "corrupted-hero",
-        "name": "Verdorbener Held",
-        "effect": ""
-      },
-      {
-        "id": "curse-breaker",
-        "name": "Fluchbrecher",
-        "effect": ""
-      },
-      {
-        "id": "dynamic-duo",
-        "name": "Dynamisches Duo",
-        "effect": ""
-      },
-      {
-        "id": "gentle-dismissal",
-        "name": "Sanfter Abschied",
-        "effect": ""
-      },
-      {
-        "id": "guardians-curse",
-        "name": "Der Fluch des Wächters",
-        "effect": "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
-      },
-      {
-        "id": "humbled",
-        "name": "Gedemütigt",
-        "effect": ""
-      },
-      {
-        "id": "lovebirds-reunited",
-        "name": "Wiedervereinte Turteltauben",
-        "effect": ""
-      },
-      {
-        "id": "relic-breaker",
-        "name": "Reliktbrecher",
-        "effect": ""
-      },
-      {
-        "id": "sowing-winds",
-        "name": "Saatwind",
-        "effect": ""
-      },
-      {
-        "id": "storyteller",
-        "name": "Geschichtenerzähler",
-        "effect": ""
-      },
-      {
-        "id": "unbroken",
-        "name": "Ungebrochen",
-        "effect": ""
-      }
-    ],
-    "awakenings": [
-      {
-        "id": "ancient-book",
-        "name": "Ancient Book",
-        "effect": ""
-      },
-      {
-        "id": "counting-kittens",
-        "name": "Counting Kittens",
-        "effect": ""
-      },
-      {
-        "id": "defenders-fate",
-        "name": "Defender's Fate",
-        "effect": ""
-      },
-      {
-        "id": "drinking-pal",
-        "name": "Drinking Pal",
-        "effect": ""
-      },
-      {
-        "id": "entangled",
-        "name": "Entangled",
-        "effect": ""
-      },
-      {
-        "id": "farewell",
-        "name": "Farewell",
-        "effect": ""
-      },
-      {
-        "id": "full-house",
-        "name": "Full House",
-        "effect": ""
-      },
-      {
-        "id": "minervas-diary",
-        "name": "Minerva's Diary",
-        "effect": ""
-      },
-      {
-        "id": "pirates-gift",
-        "name": "Pirate's Gift",
-        "effect": ""
-      },
-      {
-        "id": "promised-reward",
-        "name": "Promised Reward",
-        "effect": ""
-      },
-      {
-        "id": "reunited",
-        "name": "Reunited",
-        "effect": ""
-      },
-      {
-        "id": "selfish",
-        "name": "Selfish",
-        "effect": ""
-      },
-      {
-        "id": "selfless",
-        "name": "Selfless",
-        "effect": ""
-      },
-      {
-        "id": "threats-or-treats",
-        "name": "Threats or Treats",
-        "effect": ""
-      },
-      {
-        "id": "untangled",
-        "name": "Untangled",
-        "effect": ""
-      },
-      {
-        "id": "watcher",
-        "name": "Watcher",
-        "effect": ""
-      }
-    ],
+    "core": {
+      "campaign": [
+        {
+          "id": "a-couriers-job",
+          "name": "Botengang",
+          "effect": ""
+        },
+        {
+          "id": "adamant",
+          "name": "Hartnäckig",
+          "effect": ""
+        },
+        {
+          "id": "a-hideous-act",
+          "name": "Eine abscheuliche Tat",
+          "effect": ""
+        },
+        {
+          "id": "a-lovers-request",
+          "name": "Wunsch der Liebenden",
+          "effect": ""
+        },
+        {
+          "id": "corrupted-hero",
+          "name": "Verdorbener Held",
+          "effect": ""
+        },
+        {
+          "id": "curse-breaker",
+          "name": "Fluchbrecher",
+          "effect": ""
+        },
+        {
+          "id": "dynamic-duo",
+          "name": "Dynamisches Duo",
+          "effect": ""
+        },
+        {
+          "id": "gentle-dismissal",
+          "name": "Sanfter Abschied",
+          "effect": ""
+        },
+        {
+          "id": "guardians-curse",
+          "name": "Der Fluch des Wächters",
+          "effect": "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
+        },
+        {
+          "id": "humbled",
+          "name": "Gedemütigt",
+          "effect": ""
+        },
+        {
+          "id": "lovebirds-reunited",
+          "name": "Wiedervereinte Turteltauben",
+          "effect": ""
+        },
+        {
+          "id": "relic-breaker",
+          "name": "Reliktbrecher",
+          "effect": ""
+        },
+        {
+          "id": "sowing-winds",
+          "name": "Saatwind",
+          "effect": ""
+        },
+        {
+          "id": "storyteller",
+          "name": "Geschichtenerzähler",
+          "effect": ""
+        },
+        {
+          "id": "unbroken",
+          "name": "Ungebrochen",
+          "effect": ""
+        }
+      ],
+      "storyrecord": []
+    },
+
+    "awakenings": {
+      "campaign": [
+        {
+          "id": "ancient-book",
+          "name": "Ancient Book",
+          "effect": ""
+        },
+        {
+          "id": "counting-kittens",
+          "name": "Counting Kittens",
+          "effect": ""
+        },
+        {
+          "id": "defenders-fate",
+          "name": "Defender's Fate",
+          "effect": ""
+        },
+        {
+          "id": "drinking-pal",
+          "name": "Drinking Pal",
+          "effect": ""
+        },
+        {
+          "id": "entangled",
+          "name": "Entangled",
+          "effect": ""
+        },
+        {
+          "id": "farewell",
+          "name": "Farewell",
+          "effect": ""
+        },
+        {
+          "id": "full-house",
+          "name": "Full House",
+          "effect": ""
+        },
+        {
+          "id": "minervas-diary",
+          "name": "Minerva's Diary",
+          "effect": ""
+        },
+        {
+          "id": "pirates-gift",
+          "name": "Pirate's Gift",
+          "effect": ""
+        },
+        {
+          "id": "promised-reward",
+          "name": "Promised Reward",
+          "effect": ""
+        },
+        {
+          "id": "reunited",
+          "name": "Reunited",
+          "effect": ""
+        },
+        {
+          "id": "selfish",
+          "name": "Selfish",
+          "effect": ""
+        },
+        {
+          "id": "selfless",
+          "name": "Selfless",
+          "effect": ""
+        },
+        {
+          "id": "threats-or-treats",
+          "name": "Threats or Treats",
+          "effect": ""
+        },
+        {
+          "id": "untangled",
+          "name": "Untangled",
+          "effect": ""
+        },
+        {
+          "id": "watcher",
+          "name": "Watcher",
+          "effect": ""
+        }
+      ],
+      "storyrecord": []
+    },
     "apocalypse": {
       "campaign": [
         {
