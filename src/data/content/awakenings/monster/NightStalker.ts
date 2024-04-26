@@ -14,4 +14,5 @@ export class NightStalker implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  size: string = "small";
 }

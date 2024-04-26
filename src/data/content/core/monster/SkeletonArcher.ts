@@ -15,4 +15,5 @@ export class SkeletonArcher implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "white";
+  size: string = "small";
 }

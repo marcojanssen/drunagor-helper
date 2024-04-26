@@ -14,4 +14,5 @@ export class CorruptedWorm implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  size: string = "small";
 }

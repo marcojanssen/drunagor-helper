@@ -12,4 +12,5 @@ export interface MonsterData {
     miniature: string;
   };
   color: MonsterColor;
+  size: string;
 }

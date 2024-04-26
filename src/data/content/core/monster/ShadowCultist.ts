@@ -15,4 +15,5 @@ export class ShadowCultist implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "white";
+  size: string = "small";
 }

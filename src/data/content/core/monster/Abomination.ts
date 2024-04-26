@@ -15,4 +15,5 @@ export class Abomination implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "black";
+  size: string = "large";
 }

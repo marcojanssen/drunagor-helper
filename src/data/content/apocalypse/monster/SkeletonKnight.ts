@@ -14,4 +14,5 @@ export class SkeletonKnight implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "white";
+  size: string = "small";
 }

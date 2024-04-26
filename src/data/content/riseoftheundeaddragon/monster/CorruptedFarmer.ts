@@ -14,4 +14,5 @@ export class CorruptedFarmer implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "white";
+  size: string = "small";
 }

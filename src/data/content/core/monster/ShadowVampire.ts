@@ -15,4 +15,5 @@ export class ShadowVampire implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "gray";
+  size: string = "small";
 }

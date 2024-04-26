@@ -14,4 +14,5 @@ export class GrimDoctor implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "white";
+  size: string = "small";
 }

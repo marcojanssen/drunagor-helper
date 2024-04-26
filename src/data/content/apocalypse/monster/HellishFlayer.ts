@@ -14,4 +14,5 @@ export class HellishFlayer implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  size: string = "small";
 }

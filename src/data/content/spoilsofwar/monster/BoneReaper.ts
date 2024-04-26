@@ -15,4 +15,5 @@ export class BoneReaper implements MonsterData {
     miniature: MiniatureUrl,
   };
   color: MonsterColor = "gray";
+  size: string = "small";
 }

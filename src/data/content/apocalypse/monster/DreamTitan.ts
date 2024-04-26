@@ -14,4 +14,5 @@ export class DreamTitan implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "black";
+  size: string = "large";
 }
