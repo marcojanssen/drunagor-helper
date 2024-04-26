@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const { flag, text } = defineProps(["flag", "text"]);
+let { flag } = defineProps(["flag"]);
 </script>
 
 <template>
-    <div class="flex flex-wrap bg-base-100 justify-center py-1 px-4 mx-1 rounded-lg"
-        :class="flag ? 'bg-red-600' : 'bg-green-600'">
+    <div class="flex flex-wrap bg-base-100 justify-center rounded-lg" :class="flag ? 'bg-red-600' : 'bg-green-600'">
         <slot></slot>: {{ flag ? 'ON' : 'OFF' }}
     </div>
 </template>
