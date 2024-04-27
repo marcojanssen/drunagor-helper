@@ -1907,7 +1907,7 @@
             {
               "id": "head-start",
               "name": "Head Start",
-              "effect": `Heroes can take the following Reaction by Expending 1 AC: "SELF, PREVENT ALL DMG AND FATIGUE Y where Y is the number of Time tokens on the Famine Horseman's Boss Monster Status Board; Then the Famine Horseman receives a Time token (this is just a reminder, not a Condition or Resource)."`,
+              "effect": "Heroes can take the following Reaction by Expending 1 AC: \"SELF, PREVENT ALL DMG AND FATIGUE Y where Y is the number of Time tokens on the Famine Horseman's Boss Monster Status Board; Then the Famine Horseman receives a Time token (this is just a reminder, not a Condition or Resource).\"",
             },
             { 
               "id": "healed-wound", 
@@ -2126,7 +2126,7 @@
             {
               "id": "soft-heart",
               "name": "Soft Heart",
-              "effect": 'While there is another Hero adjacent to you, that Hero will receive the benefits of the "Dour" Aura (the Aura benefits will only apply while you are still adjacent to them).',
+              "effect": "While there is another Hero adjacent to you, that Hero will receive the benefits of the \"Dour\" Aura (the Aura benefits will only apply while you are still adjacent to them).",
             },
             {
               "id": "sweet-scent",
