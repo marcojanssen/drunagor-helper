@@ -1907,7 +1907,7 @@
             {
               "id": "head-start",
               "name": "Head Start",
-              "effect": `Heroes can take the following Reaction by Expending 1 AC: "SELF, PREVENT ALL DMG AND FATIGUE Y where Y is the number of Time tokens on the Famine Horseman's Boss Monster Status Board; Then the Famine Horseman receives a Time token (this is just a reminder, not a Condition or Resource)."`,
+              "effect": "Heroes can take the following Reaction by Expending 1 AC: \"SELF, PREVENT ALL DMG AND FATIGUE Y where Y is the number of Time tokens on the Famine Horseman's Boss Monster Status Board; Then the Famine Horseman receives a Time token (this is just a reminder, not a Condition or Resource).\"",
             },
             { 
               "id": "healed-wound", 
@@ -2126,7 +2126,7 @@
             {
               "id": "soft-heart",
               "name": "Soft Heart",
-              "effect": 'While there is another Hero adjacent to you, that Hero will receive the benefits of the "Dour" Aura (the Aura benefits will only apply while you are still adjacent to them).',
+              "effect": "While there is another Hero adjacent to you, that Hero will receive the benefits of the \"Dour\" Aura (the Aura benefits will only apply while you are still adjacent to them).",
             },
             {
               "id": "sweet-scent",
@@ -2592,7 +2592,7 @@
     {
       "id": "companions",
       "keyword": "GEFÄHRTEN",
-      "description": "Gefährten besitzen eine eigene Karte und können Plättchen (z. B. Schild oder Zustände) erhalten und das Ziel von VERHINDERN-Effekten sein. Auf dem Spielplan werden sie durch NSC-Plättchen repräsentiert und immer von 1 Helden kontrolliert. Der Held aktiviert seine Gefährten direkt nach seinem eigenen Zug. Kontrolliert er mehrere Gefährten, entscheidet er, welchen Gefährten er zuerst aktiviert.<br><br> Gefährten haben in ihrem Zug 1 Bewegungs- und 1 Angriffsaktion, in genau dieser Reihenfolge. Gefährten haben keine Lebenspunkte, sondern einen Wert namens Robustheit. Sie werden nur besiegt, wenn sie auf einmal Schaden erleiden, der ihre Robustheit übersteigt. Sie ignorieren allen Schaden, der diesen Wert nicht übersteigt.n<br><br> Gefährten werden nur dann angegriffen, wenn das Monster keinen Helden angreifen kann. Wenn ein Monster entweder ein Begleittier oder einen Gefährten angreifen könnte, wählt der Anführer der Gruppe das Ziel. In der Lagerphase verlassen Gefährten eure Gruppe"
+      "description": "Gefährten besitzen eine eigene Karte und können Plättchen (z. B. Schild oder Zustände) erhalten und das Ziel von VERHINDERN-Effekten sein. Auf dem Spielplan werden sie durch NSC-Plättchen repräsentiert und immer von 1 Helden kontrolliert. Der Held aktiviert seine Gefährten direkt nach seinem eigenen Zug. Kontrolliert er mehrere Gefährten, entscheidet er, welchen Gefährten er zuerst aktiviert.<br><br> Gefährten haben in ihrem Zug 1 Bewegungs- und 1 Angriffsaktion, in genau dieser Reihenfolge. Gefährten haben keine Lebenspunkte, sondern einen Wert namens Robustheit. Sie werden nur besiegt, wenn sie auf einmal Schaden erleiden, der ihre Robustheit übersteigt. Sie ignorieren allen Schaden, der diesen Wert nicht übersteigt.n<br><br> Gefährten werden nur dann angegriffen, wenn das Monster keinen Helden angreifen kann. Wenn ein Monster entweder ein Begleittier oder einen Gefährten angreifen könnte, wählt der Anführer der Gruppe das Ziel. In der Lagerphase verlassen Gefährten eure Gruppe."
     },
     {
       "id": "copy-effect",
