@@ -17,4 +17,5 @@ export class GorgonessWitch implements MonsterData {
   color: MonsterColor = "white";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_GREEN;
+  translation_key = "monster.gorgoness-witch";
 }

@@ -18,4 +18,5 @@ export class WalkingHorror implements MonsterData {
   color: MonsterColor = "white";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_RED;
+  translation_key = "monster.walking-horror";
 }

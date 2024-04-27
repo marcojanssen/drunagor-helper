@@ -17,4 +17,5 @@ export class FellAsteris implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.TOP_GREEN;
+  translation_key = "monster.fell-asteris";
 }

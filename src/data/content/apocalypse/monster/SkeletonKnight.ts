@@ -17,4 +17,5 @@ export class SkeletonKnight implements MonsterData {
   color: MonsterColor = "white";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_RED;
+  translation_key = "monster.skeleton-knight";
 }

@@ -18,4 +18,5 @@ export class Executioner implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_GREEN;
+  translation_key = "monster.executioner";
 }

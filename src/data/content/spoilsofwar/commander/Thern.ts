@@ -12,4 +12,5 @@ export class Thern implements CommanderData {
     big: ImageUrl,
     miniature: MiniatureUrl,
   };
+  translation_key = "monster.commander-thern";
 }

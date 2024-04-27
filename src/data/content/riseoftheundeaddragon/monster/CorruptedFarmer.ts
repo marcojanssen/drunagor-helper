@@ -17,4 +17,5 @@ export class CorruptedFarmer implements MonsterData {
   color: MonsterColor = "white";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_GREEN;
+  translation_key = "monster.corrupted-farmer";
 }

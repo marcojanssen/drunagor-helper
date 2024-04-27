@@ -5,6 +5,7 @@ import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid
 import type { FollowerRepository } from "@/data/repository/campaign/FollowerRepository";
 import { CampaignStore } from "@/store/CampaignStore";
 import type { Follower } from "@/data/repository/campaign/Follower";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   campaignId: string;
@@ -12,6 +13,7 @@ const props = defineProps<{
 }>();
 
 const campaignStore = CampaignStore();
+const { t } = useI18n();
 
 const followers = props.repository.findAll();
 
@@ -57,7 +59,7 @@ watch(followerIds, (newFollowerIds) => {
         <ComboboxButton as="div" class="flex">
           <ComboboxInput
             class="w-full bg-base-100 py-2 pl-3 pr-16 leading-5 focus:ring-0 rounded-lg"
-            placeholder="Add or remove follower"
+            :placeholder="t('text.add-or-remove-follower')"
             @change="query = $event.target.value"
             id="story-record-follower"
           />

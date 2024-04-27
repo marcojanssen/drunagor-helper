@@ -17,4 +17,5 @@ export class DreamTitan implements MonsterData {
   color: MonsterColor = "black";
   size: string = "large";
   initiative: number = InitiativePlaces.TOP_GRAY;
+  translation_key = "monster.dream-titan";
 }

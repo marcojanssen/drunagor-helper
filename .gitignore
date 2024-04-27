@@ -31,3 +31,4 @@ runner-results
 *.njsproj
 *.sln
 *.sw?
+.history

@@ -10,4 +10,5 @@ export class Witch implements CommanderData {
     big: ImageUrl,
     miniature: "",
   };
+  translation_key = "monster.commander-witch";
 }

@@ -18,4 +18,5 @@ export class ShadowKnight implements MonsterData {
   color: MonsterColor = "black";
   size: string = "large";
   initiative: number = InitiativePlaces.TOP_GRAY;
+  translation_key = "monster.shadow-knight";
 }

@@ -15,6 +15,7 @@ export class NightStalker implements MonsterData {
     miniature: "",
   };
   color: MonsterColor = "gray";
+  translation_key = "monster.night-stalker";
   size: string = "small";
   initiative: number = InitiativePlaces.TOP_RED;
 }

@@ -13,12 +13,14 @@ import { XMarkIcon } from "@heroicons/vue/24/solid";
 import type { HeroData } from "@/data/repository/HeroData";
 import { HeroStore } from "@/store/HeroStore";
 import { Hero } from "@/store/Hero";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   campaignId: string;
 }>();
 
 const toast = useToast();
+const { t } = useI18n();
 
 const isOpen = ref(false);
 
@@ -65,12 +67,12 @@ function addRandomHeroToCampaign() {
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
-    Add hero
+    {{ t("label.add-hero") }}
   </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">Add hero</div>
+        <div class="w-full font-medium place-self-center">{{ t("label.add-hero") }}</div>
         <div>
           <button
             id="close-modal"

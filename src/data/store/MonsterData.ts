@@ -26,3 +26,5 @@ export interface ActiveMonsterData extends MonsterData {
   active: boolean;
   conditions: ICondition[];
 };
+  translation_key: string;
+}

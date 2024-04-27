@@ -17,4 +17,5 @@ export class GremlinHorde implements MonsterData {
   color: MonsterColor = "white";
   size: string = "large";
   initiative: number = InitiativePlaces.BOTTOM_RED;
+  translation_key = "monster.gremlin-horde";
 }

@@ -17,4 +17,5 @@ export class GrimDoctor implements MonsterData {
   color: MonsterColor = "white";
   size: string = "small";
   initiative: number = InitiativePlaces.TOP_BLUE;
+  translation_key = "monster.grim-doctor";
 }

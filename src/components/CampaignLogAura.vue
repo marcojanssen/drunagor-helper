@@ -4,6 +4,7 @@ import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOption
 import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid";
 import type { AuraRepository } from "@/data/repository/campaign/AuraRepository";
 import { HeroStore } from "@/store/HeroStore";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   heroId: string;
@@ -13,6 +14,7 @@ const props = defineProps<{
 
 const heroStore = HeroStore();
 const auras = props.repository.findAll();
+const { t } = useI18n();
 
 const auraId = ref("");
 auraId.value = heroStore.findInCampaign(props.heroId, props.campaignId).auraId ?? "";
@@ -50,7 +52,7 @@ watch(auraId, (newAuraId) => {
             <ComboboxInput
               class="w-full bg-base-100 py-2 pl-3 pr-20 leading-5 focus:ring-0 rounded-lg"
               :displayValue="displayValue"
-              placeholder="Select aura"
+              :placeholder="t('text.select-aura')"
               @change="query = $event.target.value"
               @blur="query = ''"
               id="campaign-log-aura"

@@ -17,4 +17,5 @@ export class FacelessConjurer implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_ORANGE;
+  translation_key = "monster.faceless-conjurer";
 }

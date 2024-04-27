@@ -15,12 +15,14 @@ import CampaignCampPhase from "@/components/CampaignCampPhase.vue";
 import { ref } from "vue";
 import CampaignRunes from "@/components/CampaignRunes.vue";
 import SequentialAdventureButton from "@/components/SequentialAdventureButton.vue";
+import { useI18n } from "vue-i18n";
 
 const route = useRoute();
 
 const campaignId = route.params.id.toString();
 const campaignStore = CampaignStore();
 const campaign = campaignStore.find(campaignId);
+const { t } = useI18n();
 
 const heroStore = HeroStore();
 
@@ -41,7 +43,7 @@ function onSequentialAdventure() {
 </script>
 
 <template>
-  <BaseDivider>Campaign</BaseDivider>
+  <BaseDivider>{{ t("label.campaign") }}</BaseDivider>
   <BaseButtonMenu>
     <CampaignRemove :campaign-id="campaignId" />
     <CampaignExport :campaign-id="campaignId" />
@@ -64,7 +66,7 @@ function onSequentialAdventure() {
       <StoryRecord :campaign-id="campaignId" />
     </div>
   </template>
-  <BaseDivider>Campaign Log</BaseDivider>
+  <BaseDivider>{{ t("label.campaign-log") }}</BaseDivider>
   <BaseButtonMenu>
     <CampaignLogAddHero :campaign-id="campaignId" />
     <CampaignLogRemoveHero :campaign-id="campaignId" />

@@ -18,4 +18,5 @@ export class Abomination implements MonsterData {
   color: MonsterColor = "black";
   size: string = "large";
   initiative: number = InitiativePlaces.BOTTOM_GRAY;
+  translation_key = "monster.abomination";
 }

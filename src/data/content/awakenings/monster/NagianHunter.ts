@@ -17,4 +17,5 @@ export class NagianHunter implements MonsterData {
   color: MonsterColor = "white";
   size: string = "small";
   initiative: number = InitiativePlaces.TOP_ORANGE;
+  translation_key = "monster.nagian-hunter";
 }

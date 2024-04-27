@@ -18,4 +18,5 @@ export class RottenFlesh implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_RED;
+  translation_key = "monster.rotten-flesh";
 }

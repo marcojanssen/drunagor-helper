@@ -5,4 +5,5 @@ export interface ContentData {
   title: string;
   heroes: boolean;
   monsters: boolean;
+  translation_key: string;
 }

@@ -18,4 +18,5 @@ export class ShadowGuardian implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.TOP_GRAY;
+  translation_key = "monster.shadow-guardian";
 }

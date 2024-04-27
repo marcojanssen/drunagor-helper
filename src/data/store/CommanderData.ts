@@ -8,4 +8,5 @@ export interface CommanderData {
     big: string;
     miniature: string;
   };
+  translation_key: string;
 }

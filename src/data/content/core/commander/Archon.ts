@@ -11,4 +11,5 @@ export class Archon implements CommanderData {
     big: ImageUrl,
     miniature: MiniatureUrl,
   };
+  translation_key = "monster.archon";
 }

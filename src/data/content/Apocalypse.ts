@@ -6,4 +6,5 @@ export class Apocalypse implements ContentData {
   public readonly title = "Apocalypse";
   public readonly heroes = false;
   public readonly monsters = true;
+  public readonly translation_key = "content.apocalypse";
 }

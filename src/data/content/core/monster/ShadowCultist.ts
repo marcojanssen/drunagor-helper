@@ -18,4 +18,5 @@ export class ShadowCultist implements MonsterData {
   color: MonsterColor = "white";
   size: string = "small";
   initiative: number = InitiativePlaces.TOP_RED;
+  translation_key = "monster.shadow-cultist";
 }

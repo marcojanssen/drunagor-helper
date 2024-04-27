@@ -18,4 +18,5 @@ export class BoneReaper implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_GRAY;
+  translation_key = "monster.bone-reaper";
 }

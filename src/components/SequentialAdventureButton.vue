@@ -2,9 +2,11 @@
 import { CampaignStore } from "@/store/CampaignStore";
 import { HeroStore } from "@/store/HeroStore";
 import { SequentialAdventureState } from "@/store/Hero";
+import { useI18n } from "vue-i18n";
 
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
+const { t } = useI18n();
 
 const props = defineProps<{
   campaignId: string;
@@ -30,7 +32,7 @@ function startSequentialAdventure() {
     class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="startSequentialAdventure"
   >
-    Sequential Adventure
+    {{ t("label.sequential-adventure") }}
   </button>
 </template>
 

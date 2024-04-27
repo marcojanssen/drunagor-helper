@@ -8,12 +8,14 @@ import BaseListSearch from "@/components/BaseListSearch.vue";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { HeroStore } from "@/store/HeroStore";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   campaignId: string;
 }>();
 
 const isOpen = ref(false);
+const { t } = useI18n();
 
 function openModal() {
   isOpen.value = true;
@@ -48,12 +50,12 @@ function removeHeroFromCampaign(heroId: string) {
     class="float-right px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
     @click="openModal"
   >
-    Remove hero
+    {{ t("label.remove-hero") }}
   </button>
   <BaseModal :is-open="isOpen" @close-modal="closeModal">
     <template #header>
       <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">Remove hero</div>
+        <div class="w-full font-medium place-self-center">{{ t("label.remove-hero") }}</div>
         <div>
           <button
             id="close-modal"

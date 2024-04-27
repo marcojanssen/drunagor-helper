@@ -17,4 +17,5 @@ export class GorgonHexer implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.BOTTOM_BLUE;
+  translation_key = "monster.gorgon-hexer";
 }

@@ -9,7 +9,9 @@ import { HeroEquipment } from "@/store/Hero";
 import type { HeroData } from "@/data/repository/HeroData";
 import { ref } from "vue";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const heroStore = HeroStore();
 
 const props = defineProps<{
@@ -36,11 +38,11 @@ if (typeof campaignHero.equipment === "undefined") {
         id="filter-proficiencies"
         class="w-5 h-5 text-emerald-500 bg-base-100 rounded"
       />
-      Filter by proficiency
+      {{ t("label.filter-by-proficiency") }}
     </label>
 
     <div class="pt-4">
-      <span>Weapon</span>
+      <span>{{ t("label.weapon") }}</span>
     </div>
     <div class="hero-weapon-wrapper">
       <CampaignHeroWeapon
@@ -54,7 +56,7 @@ if (typeof campaignHero.equipment === "undefined") {
     </div>
 
     <div class="pt-2 col-auto leading-10">
-      <span>Off Hand</span>
+      <span>{{ t("label.off-hand") }}</span>
     </div>
     <div class="hero-offhand-wrapper">
       <CampaignHeroOffHand
@@ -69,7 +71,7 @@ if (typeof campaignHero.equipment === "undefined") {
     </div>
 
     <div class="pt-2">
-      <span>Armor</span>
+      <span>{{ t("label.armor") }}</span>
     </div>
     <div class="hero-armor-wrapper">
       <CampaignHeroArmor
@@ -84,7 +86,7 @@ if (typeof campaignHero.equipment === "undefined") {
     </div>
 
     <div class="pt-2">
-      <span>Trinket</span>
+      <span>{{ t("label.trinket") }}</span>
     </div>
     <div class="hero-trinket-wrapper">
       <CampaignHeroTrinket
@@ -99,7 +101,7 @@ if (typeof campaignHero.equipment === "undefined") {
 
   <div class="mt-8">
     <div class="">
-      <span>Bag Slot 1</span>
+      <span>{{ t("label.bag-slot") }} 1</span>
     </div>
     <div class="hero-bag1-wrapper">
       <CampaignHeroBagItem
@@ -113,7 +115,7 @@ if (typeof campaignHero.equipment === "undefined") {
     </div>
 
     <div class="pt-2">
-      <span>Bag Slot 2</span>
+      <span>{{ t("label.bag-slot") }} 2</span>
     </div>
     <div class="hero-bag2-wrapper">
       <CampaignHeroBagItem

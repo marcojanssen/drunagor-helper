@@ -18,4 +18,5 @@ export class DeathMessenger implements MonsterData {
   color: MonsterColor = "gray";
   size: string = "small";
   initiative: number = InitiativePlaces.TOP_RED;
+  translation_key = "monster.death-messenger";
 }

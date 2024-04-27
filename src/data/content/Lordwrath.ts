@@ -7,4 +7,5 @@ export class Lordwrath implements ContentData {
   public readonly heroes = true;
   public readonly monsters = false;
   public readonly items = false;
+  public readonly translation_key = "content.lord-wrath";
 }

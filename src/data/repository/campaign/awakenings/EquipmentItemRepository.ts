@@ -30,6 +30,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Armor",
       armorTypes: ["Cloth"],
+      translation_key: "armor.apocalypse.scholars-robe",
     } as ArmorItemData,
     {
       id: "warworn-breastplate",
@@ -40,6 +41,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Armor",
       armorTypes: ["Plate"],
+      translation_key: "armor.apocalypse.warworn-breastplate",
     } as ArmorItemData,
     {
       id: "veteran-cuirass",
@@ -50,6 +52,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Armor",
       armorTypes: ["Leather"],
+      translation_key: "armor.apocalypse.veteran-cuirass",
     } as ArmorItemData,
     {
       id: "hunting-shortbow",
@@ -60,6 +63,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Ranged"],
+      translation_key: "weapon.apocalypse.hunting-shortbow",
     } as WeaponItemData,
     {
       id: "axe-of-the-steppes",
@@ -70,6 +74,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Heavy"],
+      translation_key: "weapon.apocalypse.axe-of-the-steppes",
     } as WeaponItemData,
     {
       id: "hellscarian-falchions",
@@ -80,6 +85,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Light"],
+      translation_key: "weapon.apocalypse.hellscarian-falchions",
     } as WeaponItemData,
     {
       id: "counselors-staff",
@@ -90,6 +96,7 @@ export class EquipmentItemRepository implements ItemDataRepository {
       cardRarity: "Normal",
       itemType: "Weapon",
       weaponTypes: ["Implement"],
+      translation_key: "weapon.apocalypse.counselors-staff",
     } as WeaponItemData,
   ];
 

@@ -2,16 +2,19 @@
 import BaseDivider from "@/components/BaseDivider.vue";
 import ConfigurationContentHero from "@/components/ConfigurationContentHero.vue";
 import ConfigurationContentMonster from "@/components/ConfigurationContentMonster.vue";
+import ConfigurationLanguage from "@/components/ConfigurationLanguage.vue";
 import ConfigurationVariant from "@/components/ConfigurationVariant.vue";
 </script>
 
 <template>
   <div class="grid gap-4 place-items-center w-full">
-    <BaseDivider>Enabled variant</BaseDivider>
+    <BaseDivider>{{ $t("configuration.language") }}</BaseDivider>
+    <ConfigurationLanguage />
+    <BaseDivider>{{ $t("configuration.enabled-variant") }}</BaseDivider>
     <ConfigurationVariant />
-    <BaseDivider>Monster content</BaseDivider>
+    <BaseDivider>{{ $t("configuration.monster-content") }}</BaseDivider>
     <ConfigurationContentMonster />
-    <BaseDivider>Hero content</BaseDivider>
+    <BaseDivider>{{ $t("configuration.hero-content") }}</BaseDivider>
     <ConfigurationContentHero />
   </div>
 </template>

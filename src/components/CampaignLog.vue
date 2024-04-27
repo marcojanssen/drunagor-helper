@@ -6,6 +6,7 @@ import CampaignLogCore from "./CampaignLogCore.vue";
 import CampaignLogAwakenings from "./CampaignLogAwakenings.vue";
 import CampaignLogApocalypse from "./CampaignLogApocalypse.vue";
 import CampaignLogSequentialAdventure from "@/components/CampaignLogSequentialAdventure.vue";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   heroId: string;
@@ -15,6 +16,7 @@ const props = defineProps<{
 
 const heroDataRepository = new HeroDataRepository();
 const campaignStore = CampaignStore();
+const { t } = useI18n();
 
 const campaign = campaignStore.find(props.campaignId);
 const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
@@ -28,8 +30,10 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
       </div>
       <div class="pl-8">
         <p>{{ hero.name }}</p>
-        <p>{{ hero.race }} {{ hero.class }}</p>
-        <p>Path of {{ hero.path }}</p>
+        <p>
+          {{ t("label." + hero.race.toLowerCase()) }} {{ t("label." + hero.class.toLowerCase().replace(" ", "-")) }}
+        </p>
+        <p>{{ t("text.path-of") }} {{ t("label." + hero.path.toLowerCase()) }}</p>
       </div>
     </div>
     <CampaignLogSequentialAdventure v-if="isSequentialAdventure" :hero="hero" :campaign-id="campaignId" />
