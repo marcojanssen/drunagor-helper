@@ -1,5 +1,6 @@
 import ImageUrl from "@/assets/monster/big/ShadowGuardianBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowGuardianMiniature.webp";
+import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
@@ -16,4 +17,5 @@ export class ShadowGuardian implements MonsterData {
   };
   color: MonsterColor = "gray";
   size: string = "small";
+  initiative: number = InitiativePlaces.TOP_GRAY;
 }

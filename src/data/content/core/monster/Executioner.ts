@@ -1,5 +1,6 @@
 import ImageUrl from "@/assets/monster/big/ExecutionerBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ExecutionerMiniature.webp";
+import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
@@ -16,4 +17,5 @@ export class Executioner implements MonsterData {
   };
   color: MonsterColor = "gray";
   size: string = "small";
+  initiative: number = InitiativePlaces.BOTTOM_GREEN;
 }

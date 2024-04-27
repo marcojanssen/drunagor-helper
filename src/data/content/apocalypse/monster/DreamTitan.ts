@@ -1,4 +1,5 @@
 import ImageUrl from "@/assets/monster/big/DreamTitanBig.webp";
+import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
@@ -15,4 +16,5 @@ export class DreamTitan implements MonsterData {
   };
   color: MonsterColor = "black";
   size: string = "large";
+  initiative: number = InitiativePlaces.TOP_GRAY;
 }

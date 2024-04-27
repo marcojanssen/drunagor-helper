@@ -1,4 +1,5 @@
 import ImageUrl from "@/assets/monster/big/SkeletonKnightBig.webp";
+import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
@@ -15,4 +16,5 @@ export class SkeletonKnight implements MonsterData {
   };
   color: MonsterColor = "white";
   size: string = "small";
+  initiative: number = InitiativePlaces.BOTTOM_RED;
 }

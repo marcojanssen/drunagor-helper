@@ -1,5 +1,6 @@
 import ImageUrl from "@/assets/monster/big/AbominationBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/AbominationMiniature.webp";
+import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
 import type { MonsterColor } from "@/data/type/MonsterColor";
@@ -16,4 +17,5 @@ export class Abomination implements MonsterData {
   };
   color: MonsterColor = "black";
   size: string = "large";
+  initiative: number = InitiativePlaces.BOTTOM_GRAY;
 }
