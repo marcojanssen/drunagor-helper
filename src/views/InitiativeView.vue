@@ -1,21 +1,21 @@
 <script setup lang="ts">
 // #region external imports
 import { storeToRefs } from "pinia";
-import BaseDivider from "@/components/BaseDivider.vue";
-import OnOffButton from "@/components/common/OnOffButton.vue";
 import {
     ArrowPathIcon,
     PlusIcon
 } from "@heroicons/vue/24/solid";
-import { useInitiativeStore } from "@/store/InitiativeStore";
 import { ref, computed } from "vue";
 // #endregion
 
 // #region internal imports
+import { useInitiativeStore } from "@/store/InitiativeStore";
 import MonsterPicker from "@/components/initiative/MonsterPicker.vue";
 import MonsterInitiative from "@/components/initiative/MonsterInitiative.vue";
 import { InitiativeList, InitiativeTypes } from "@/data/initiative/InitiativePlaces";
 import type { ActiveMonsterData } from "@/data/store/MonsterData";
+import BaseDivider from "@/components/BaseDivider.vue";
+import OnOffButton from "@/components/common/OnOffButton.vue";
 // #endregion
 
 // #region store bindings

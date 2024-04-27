@@ -12,8 +12,6 @@ const props = defineProps<{
     onHpSwipeRight: (monster: ActiveMonsterData) => void,
     onHpSwipeLeft: (monster: ActiveMonsterData) => void,
     openDetails: (monster: ActiveMonsterData) => void,
-    addCondition: (monster: ActiveMonsterData, condition: string) => void,
-    removeCondition: (monster: ActiveMonsterData, condition: string) => void,
     removeMonster: (monster: ActiveMonsterData) => void,
 }>();
 
@@ -44,10 +42,8 @@ const props = defineProps<{
                                         {{ monster.hp }}
                                     </div>
                                 </div>
-                                <!-- <Conditions :conditions="monster.conditions" :monster="monster"
-                                    @add-condition="addCondition(monster, $event)"
-                                    @remove-condition="removeCondition(monster, $event)" />
-                                <TrashIcon class="fill-gray-600 w-12" @click="removeMonster(monster)" /> -->
+                                <Conditions :monster="monster" />
+                                <TrashIcon class="fill-gray-600 w-12" @click="removeMonster(monster)" />
                             </div>
                         </div>
                     </div>

@@ -4,8 +4,9 @@ import { useStorage } from "@vueuse/core";
 // #endregion
 
 // #region internal imports
-import { Conditions } from "@/data/conditions/Condition";
+import { Conditions, type ICondition } from "@/data/conditions/Condition";
 import { FacelessConjurer } from "@/data/content/apocalypse/monster/FacelessConjurer";
+import type { ActiveMonsterData } from "@/data/store/MonsterData";
 // #endregion
 
 export const useInitiativeStore = defineStore("initiative", () => {
@@ -35,12 +36,28 @@ export const useInitiativeStore = defineStore("initiative", () => {
             _initiativeList.value = [];
         }
     };
+    const decrementCondition = (monster: ActiveMonsterData, condition: ICondition) => {
+        const mIndex = _getMonsterIndex(monster);
+        const cIndex = monster.conditions.findIndex((c) => c.name == condition.name);
+        if (cIndex > -1 && monster.conditions[cIndex].count > 0) {
+            monster.conditions[cIndex].count--;
+            _initiativeList.value[mIndex] = monster;
+        }
+    };
     const decrementHp = (monster: any) => {
         if (monster.hp > 1) {
             monster.hp -= 1;
             updateMonster(monster);
         } else {
             removeMonster(monster);
+        }
+    };
+    const incrementCondition = (monster: ActiveMonsterData, condition: ICondition) => {
+        const mIndex = _getMonsterIndex(monster);
+        const cIndex = monster.conditions.findIndex((c) => c.name == condition.name);
+        if (cIndex > -1 && monster.conditions[cIndex].count < monster.conditions[cIndex].maxCount) {
+            monster.conditions[cIndex].count++;
+            _initiativeList.value[mIndex] = monster;
         }
     };
     const incrementHp = (monster: any) => {
@@ -57,7 +74,6 @@ export const useInitiativeStore = defineStore("initiative", () => {
             return b.initiative - a.initiative;
         });
     };
-
     const removeMonster = (monster: any) => {
         if (autoConfirmDelete.value || confirm(`Delete ${monster.name} - ${monster.baseColor}?`)) {
             const index = _getMonsterIndex(monster);
@@ -66,7 +82,6 @@ export const useInitiativeStore = defineStore("initiative", () => {
             }
         }
     };
-
     const updateMonster = (monster: any) => {
         const index = _getMonsterIndex(monster);
         _initiativeList.value[index] = monster;
@@ -166,8 +181,10 @@ export const useInitiativeStore = defineStore("initiative", () => {
         // functions
         addMonster,
         clearInitiative,
+        decrementCondition,
         decrementHp,
         getInitiativeList,
+        incrementCondition,
         incrementHp,
         removeMonster,
         updateMonster,

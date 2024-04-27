@@ -1,20 +1,35 @@
 <script setup lang="ts">
-import { ref } from "vue";
+// #region external imports
+import { ref, computed } from "vue";
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
 } from "@heroicons/vue/24/solid";
+import _ from "lodash";
+// #endregion
+
+// #region internal imports
+import { useInitiativeStore } from "@/store/InitiativeStore";
 import type { ICondition } from "@/data/conditions/Condition";
 import { Conditions, KnockDown, Stun } from "@/data/conditions/Condition";
-import type { MonsterData } from "@/data/store/MonsterData";
-import _ from "lodash";
-
-const emit = defineEmits(["add-condition", "remove-condition",]);
+import type { ActiveMonsterData, MonsterData } from "@/data/store/MonsterData";
+// #endregion
 
 const props = defineProps<{
-    conditions: ICondition[],
-    monster: MonsterData,
+    monster: ActiveMonsterData,
 }>();
+
+// #region store bindings
+const { decrementCondition, incrementCondition } = useInitiativeStore();
+// #endregion
+
+
+const validConditions = computed(() => {
+    return _.filter(props.monster.conditions, (condition) => {
+        return !_.includes(immunities.map(c => c.name), condition.name);
+    });
+});
+
 let immunities = props.monster.conditionImmunities || [] as ICondition[];
 
 if (props.monster.size == "large") {
@@ -26,31 +41,13 @@ if (props.monster.size == "large") {
     }
 }
 
-let validConditions = _.filter(Conditions, (condition) => {
-    return !_.includes(immunities.map(c => c.name), condition.name);
-});
-
-let conditions = ref(props.conditions);
-
 const isOpen = ref(false);
 
-function getIndex(condition: ICondition): number {
-    return conditions.value.map(c => c.name).indexOf(condition.name);
-}
-
-function isSelected(condition: ICondition) {
-    let index: number = getIndex(condition);
-    return index !== -1;
-}
-
-function toggleCondition(condition: ICondition) {
-    const index = getIndex(condition);
-    if (index == -1) {
-        conditions.value.push(condition);
-        emit("add-condition", condition);
+function handleConditionClicked(condition: ICondition) {
+    if (isOpen.value) {
+        incrementCondition(props.monster, condition);
     } else {
-        conditions.value.splice(index, 1);
-        emit("remove-condition", condition);
+        decrementCondition(props.monster, condition);
     }
 }
 
@@ -61,10 +58,9 @@ function alertConditionImmunity(condition: ICondition, monster: MonsterData) {
 </script>
 
 <template>
-
     <div v-for="(condition, index) in validConditions" :key="index">
-        <img :src="condition.image" class="w-12" v-if="isOpen || isSelected(condition)"
-            :class="{ 'opacity-25': !isSelected(condition) }" @click="toggleCondition(condition)" />
+        <img :src="condition.images[condition.count]" class="w-12" v-if="isOpen || condition.count > 0"
+            :class="{ 'opacity-25': condition.count < 1 }" @click="handleConditionClicked(condition)" />
     </div>
     <div v-for="(condition, index) in immunities" :key="index">
         <img :src="condition.image" class="w-12 border-red-500 border-2 rounded-lg opacity-25" v-if="isOpen"
