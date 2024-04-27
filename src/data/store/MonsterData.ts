@@ -25,6 +25,5 @@ export interface ActiveMonsterData extends MonsterData {
   initiative: number;
   active: boolean;
   conditions: ICondition[];
-};
   translation_key: string;
-}
+};
