@@ -22,8 +22,8 @@ const props = defineProps<{
             <template v-for="(monster) in props.monsters.sort((a, b) => a.msTimestamp - b.msTimestamp)"
                 :key="monster.msTimestamp">
                 <BaseListItem>
-                    <div class="grid grid-flow-col auto-cols-max" v-touch:swipe.right="onHpSwipeRight(monster)"
-                        v-touch:swipe.left="onHpSwipeLeft(monster)">
+                    <div class="grid grid-flow-col auto-cols-max" v-touch:swipe.right="() => onHpSwipeRight(monster)"
+                        v-touch:swipe.left="() => onHpSwipeLeft(monster)">
                         <img :src="monster.images.big" @click="openDetails(monster)"
                             :style="'border-color:' + monster.baseColor + ';'"
                             class="bg-white border-8 rounded-full shadow dark:bg-gray-800"

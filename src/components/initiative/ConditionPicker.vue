@@ -11,7 +11,7 @@ import _ from "lodash";
 // #region internal imports
 import { useInitiativeStore } from "@/store/InitiativeStore";
 import type { ICondition } from "@/data/conditions/Condition";
-import { Conditions, KnockDown, Stun } from "@/data/conditions/Condition";
+import { KnockDown, Stun } from "@/data/conditions/Condition";
 import type { ActiveMonsterData, MonsterData } from "@/data/store/MonsterData";
 // #endregion
 

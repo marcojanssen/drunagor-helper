@@ -7,6 +7,7 @@ import { useStorage } from "@vueuse/core";
 import { Conditions, type ICondition } from "@/data/conditions/Condition";
 import { FacelessConjurer } from "@/data/content/apocalypse/monster/FacelessConjurer";
 import type { ActiveMonsterData } from "@/data/store/MonsterData";
+import { InitiativeList } from "@/data/initiative/InitiativePlaces";
 // #endregion
 
 export const useInitiativeStore = defineStore("initiative", () => {
@@ -45,11 +46,13 @@ export const useInitiativeStore = defineStore("initiative", () => {
         }
     };
     const decrementHp = (monster: any) => {
-        if (monster.hp > 1) {
-            monster.hp -= 1;
-            updateMonster(monster);
+        const mIndex = _getMonsterIndex(monster);
+        const newMonster = _initiativeList.value[mIndex];
+        if (newMonster.hp > 1) {
+            newMonster.hp -= 1;
+            updateMonster(newMonster);
         } else {
-            removeMonster(monster);
+            removeMonster(newMonster);
         }
     };
     const incrementCondition = (monster: ActiveMonsterData, condition: ICondition) => {
@@ -61,12 +64,14 @@ export const useInitiativeStore = defineStore("initiative", () => {
         }
     };
     const incrementHp = (monster: any) => {
-        if (monster.hp < 0) {
-            monster.hp = 0;
+        const mIndex = _getMonsterIndex(monster);
+        const newMonster = _initiativeList.value[mIndex];
+        if (newMonster.hp < 0) {
+            newMonster.hp = 0;
         }
-        if (monster.hp < monster.maxHp || confirm(`Override Max HP: ${monster.maxHp}`)) {
-            monster.hp++;
-            updateMonster(monster);
+        if (newMonster.hp < newMonster.maxHp || confirm(`Override Max HP: ${newMonster.maxHp}`)) {
+            newMonster.hp++;
+            updateMonster(newMonster);
         }
     };
     const getInitiativeList = () => {
