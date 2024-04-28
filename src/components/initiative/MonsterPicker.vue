@@ -45,6 +45,10 @@ function pickMonster(monster: MonsterData) {
 function randomMonster(color: string) {
     let randomMonster = _.sample(monsters.filter((m) => m.color === color));
     if (randomMonster) {
+        const tag = prompt("Tag", 'R' + color.substring(0, 1).toUpperCase());
+        if (tag) {
+            randomMonster.name += ' [' + tag + ']';
+        }
         pickMonster(randomMonster);
     } else {
         toast.error("No monsters of that color");
