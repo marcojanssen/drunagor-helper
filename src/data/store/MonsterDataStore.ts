@@ -37,7 +37,7 @@ import { defineStore } from "pinia";
 export const MonsterDataStore = defineStore("data-monster", () => {
   const configurationStore = ConfigurationStore();
 
-  const monsters = [
+  const monsters : MonsterData[] = [
     new Abomination(),
     new BoneReaper(),
     new CorruptedFarmer(),

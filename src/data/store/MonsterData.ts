@@ -15,6 +15,7 @@ export interface MonsterData {
   color: MonsterColor;
   size: string;
   initiative: number;
+  translation_key: string;
 };
 
 export interface ActiveMonsterData extends MonsterData {
@@ -25,5 +26,4 @@ export interface ActiveMonsterData extends MonsterData {
   initiative: number;
   active: boolean;
   conditions: ICondition[];
-  translation_key: string;
 };

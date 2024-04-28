@@ -26,16 +26,16 @@ const { decrementCondition, incrementCondition } = useInitiativeStore();
 
 const validConditions = computed(() => {
     return _.filter(props.monster.conditions, (condition) => {
-        return !_.includes(immunities.map(c => c.name), condition.name);
+        return !_.includes(immunities.map((c: ICondition) => c.name), condition.name);
     });
 });
 
-let immunities = props.monster.conditionImmunities || [] as ICondition[];
+let immunities = [] as ICondition[];// props.monster.conditionImmunities || [] as ICondition[];
 
 if (props.monster.size == "large") {
     let largeImmunities = [KnockDown, Stun];
     for (let condition of largeImmunities) {
-        if (!_.includes(immunities.map(c => c.name), condition.name)) {
+        if (!_.includes(immunities.map((c: ICondition) => c.name), condition.name)) {
             immunities.push(condition);
         }
     }
@@ -63,7 +63,7 @@ function alertConditionImmunity(condition: ICondition, monster: MonsterData) {
             :class="{ 'opacity-25': condition.count < 1 }" @click="handleConditionClicked(condition)" />
     </div>
     <div v-for="(condition, index) in immunities" :key="index">
-        <img :src="condition.image" class="w-12 border-red-500 border-2 rounded-lg opacity-25" v-if="isOpen"
+        <img :src="condition.images[0]" class="w-12 border-red-500 border-2 rounded-lg opacity-25" v-if="isOpen"
             @click="alertConditionImmunity(condition, monster);" />
     </div>
     <ChevronRightIcon v-if="!isOpen" class="w-12 fill-wite" @click="isOpen = true" />
