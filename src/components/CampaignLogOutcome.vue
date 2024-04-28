@@ -6,6 +6,7 @@ import type { Outcome } from "@/data/repository/campaign/Outcome";
 import { HeroStore } from "@/store/HeroStore";
 import type { OutcomeRepository } from "@/data/repository/campaign/OutcomeRepository";
 import { useI18n } from "vue-i18n";
+import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 const props = defineProps<{
   heroId: string;
@@ -14,7 +15,9 @@ const props = defineProps<{
 }>();
 
 const heroStore = HeroStore();
+const configurationStore = ConfigurationStore();
 const { t } = useI18n();
+props.repository.load(configurationStore.enabledLanguage);
 
 const outcomes = props.repository.findAll();
 
@@ -117,7 +120,7 @@ watch(outcomeIds, (newOutcomeIds) => {
   </Combobox>
   <template v-if="outcomeIds.length > 0">
     <p class="text-sm text-gray-500 py-2">
-      Remain in effect for the entire campaign unless some other effect changes them.
+      {{ t("text.outcome-info") }}
     </p>
     <template v-for="outcome in findOutcomes(outcomeIds)" :key="outcome.id">
       <ul id="campaign-log-outcome-display" class="list-disc list-inside">

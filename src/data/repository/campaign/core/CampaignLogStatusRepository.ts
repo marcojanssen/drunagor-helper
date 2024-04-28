@@ -133,7 +133,7 @@ export class CampaignLogStatusRepository implements StatusRepository {
     },
     {
       id: "cursebreaker",
-      name: "Curse breaker",
+      name: "Cursebreaker",
       effect: "",
     },
     {

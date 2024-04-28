@@ -63,13 +63,13 @@
     "valkyrie": "Valkyrie",
     "azurean": "Azurean",
     "mage": "Magier",
-    "sorcerer": "Sorcerer",
+    "sorcerer": "Hexenmeister",
     "shadow-knight": "Schattenritter",
     "paladin": "Paladin",
     "warrior": "Krieger",
-    "assasin": "Assasin",
+    "assasin": "Assassine",
     "bard": "Barde",
-    "ranger": "Ranger",
+    "ranger": "Jäger",
     "cleric": "Kleriker",
     "barbarian": "Barbar",
     "druid": "Druide",
@@ -94,7 +94,8 @@
     "add-or-remove-outcome": "Auswirkung entfernen oder hinzufügen",
     "add-or-remove-follower": "Gefährten hinzufügen oder entfernen",
     "add-or-remove-stashed-items": "Gelagerte Gegenstände hinzufügen oder entfernen",
-    "select-aura": "Aura auswählen"
+    "select-aura": "Aura auswählen",
+    "outcome-info": "Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt ändert sie."
   },
   "weapon": {
     "core": {
@@ -512,7 +513,7 @@
     "commander-hunter": "Hunter",
     "commander-ox": "Ox",
     "commander-thern": "Thern",
-    "commander-twin": "Twin",
+    "commander-twin": "Twins",
     "commander-spawn": "Spawn",
     "commander-witch": "Witch",
     "corrupted-farmer": "Verdorbener Bauer",
@@ -539,7 +540,7 @@
     "shadow-cultist": "Schattenkultist",
     "shadow-guardian": "Schattenwächter",
     "shadow-knight": "Schattenritter",
-    "shadow-mistress": "Schatten Herrin",
+    "shadow-mistress": "Schattenherrin",
     "shadow-pain": "Schattenschmerz",
     "shadow-vampire": "Schattenvampir",
     "shadow-witch": "Shadow Witch",
@@ -556,7 +557,12 @@
   },
   "language": {
     "english": "Englisch",
-    "german": "Deutsch"
+    "german": "Deutsch",
+    "spanish": "Spanisch (Übersetzer gesucht)",
+    "french": "Französisch",
+    "italian": "Italienisch (Übersetzer gesucht)",
+    "portuguese": "Portugiesisch (Übersetzer gesucht)",
+    "polish": "Polnisch (Übersetzer gesucht)"
   },
   "configuration": {
     "language": "Sprache",
@@ -587,6 +593,349 @@
     "standard": "Standard",
     "alternate": "Alternativ",
     "complex": "Komplex (A / B)"
+  },
+  "outcome": {
+    "core": {
+      "campaign": [
+        {
+          "id": "a-couriers-job",
+          "name": "Botengang",
+          "effect": ""
+        },
+        {
+          "id": "adamant",
+          "name": "Hartnäckig",
+          "effect": ""
+        },
+        {
+          "id": "a-hideous-act",
+          "name": "Eine abscheuliche Tat",
+          "effect": ""
+        },
+        {
+          "id": "a-lovers-request",
+          "name": "Wunsch der Liebenden",
+          "effect": ""
+        },
+        {
+          "id": "corrupted-hero",
+          "name": "Verdorbener Held",
+          "effect": ""
+        },
+        {
+          "id": "curse-breaker",
+          "name": "Fluchbrecher",
+          "effect": ""
+        },
+        {
+          "id": "dynamic-duo",
+          "name": "Dynamisches Duo",
+          "effect": ""
+        },
+        {
+          "id": "gentle-dismissal",
+          "name": "Sanfter Abschied",
+          "effect": ""
+        },
+        {
+          "id": "guardians-curse",
+          "name": "Der Fluch des Wächters",
+          "effect": "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
+        },
+        {
+          "id": "humbled",
+          "name": "Gedemütigt",
+          "effect": ""
+        },
+        {
+          "id": "lovebirds-reunited",
+          "name": "Wiedervereinte Turteltauben",
+          "effect": ""
+        },
+        {
+          "id": "relic-breaker",
+          "name": "Reliktbrecher",
+          "effect": ""
+        },
+        {
+          "id": "sowing-winds",
+          "name": "Saatwind",
+          "effect": ""
+        },
+        {
+          "id": "storyteller",
+          "name": "Geschichtenerzähler",
+          "effect": ""
+        },
+        {
+          "id": "unbroken",
+          "name": "Ungebrochen",
+          "effect": ""
+        }
+      ],
+      "storyrecord": []
+    },
+    "apocalypse": {
+      "campaign": [
+        {
+          "id": "bitten",
+          "name": "Bitten",
+          "effect": "Whenever you take a Recall Action, you suffer STUN. This STUN pierces any kind of immunity you have, since it represents your difficulty in handling your actions after sustaining such a serious injury and not a mental disorder due to physical trauma."
+        },
+        {
+          "id": "deep-wound",
+          "name": "Deep Wound",
+          "effect": "You can hold one less Trauma Cube"
+        }
+      ],
+      "storyrecord": [
+        {
+          "id": "a-good-deal",
+          "name": "A Good Deal",
+          "effect": ""
+        },
+        {
+          "id": "beautiful-lie",
+          "name": "Beautiful Lie",
+          "effect": ""
+        },
+        {
+          "id": "broken",
+          "name": "Broken",
+          "effect": ""
+        },
+        {
+          "id": "exquisite-friends",
+          "name": "Exquisite Friends",
+          "effect": ""
+        },
+        {
+          "id": "friendly-advice",
+          "name": "Friendly Advice",
+          "effect": ""
+        },
+        {
+          "id": "gal-s-fate",
+          "name": "Gal's Fate",
+          "effect": ""
+        },
+        {
+          "id": "hellscarian-ally",
+          "name": "Hellscarian Ally",
+          "effect": ""
+        },
+        {
+          "id": "hellscarian-enemy",
+          "name": "Hellscarian Enemy",
+          "effect": ""
+        },
+        {
+          "id": "hero-s-journey",
+          "name": "Hero's Journey",
+          "effect": ""
+        },
+        {
+          "id": "humbled",
+          "name": "Humbled",
+          "effect": ""
+        },
+        {
+          "id": "impostor",
+          "name": "Impostor",
+          "effect": ""
+        },
+        {
+          "id": "insured-trip",
+          "name": "Insured Trip",
+          "effect": ""
+        },
+        {
+          "id": "late-guests",
+          "name": "Late Guests",
+          "effect": ""
+        },
+        {
+          "id": "long-live",
+          "name": "Long Live!",
+          "effect": ""
+        },
+        {
+          "id": "luccanor-s-redemption",
+          "name": "Luccanor's Redemption",
+          "effect": ""
+        },
+        {
+          "id": "misery-ended",
+          "name": "Misery Ended",
+          "effect": ""
+        },
+        {
+          "id": "mob-justice",
+          "name": "Mob Justice",
+          "effect": ""
+        },
+        {
+          "id": "no-quarter-given",
+          "name": "No Quarter Given",
+          "effect": ""
+        },
+        {
+          "id": "possessed",
+          "name": "Possessed",
+          "effect": ""
+        },
+        {
+          "id": "scarce-provisions",
+          "name": "Scarce Provisions",
+          "effect": ""
+        },
+        {
+          "id": "shattered-dreams",
+          "name": "Shattered Dreams",
+          "effect": ""
+        },
+        {
+          "id": "strong-bonds",
+          "name": "Strong Bonds",
+          "effect": ""
+        },
+        {
+          "id": "the-duke-s-betrayal",
+          "name": "The Duke's Betrayal",
+          "effect": ""
+        },
+        {
+          "id": "the-earl-of-blackriver",
+          "name": "The Earl of Blackriver",
+          "effect": ""
+        },
+        {
+          "id": "triumphant",
+          "name": "Triumphant",
+          "effect": ""
+        },
+        {
+          "id": "truthful",
+          "name": "Truthful",
+          "effect": "Heroes hit with Weapon attack and succeed on Skill Challenges whenever they roll 1 on the d20. Each Hero that also has a Class Ability that turns their natural 1 rolls into Weapon attack hits also scores a Critical Hit on these attacks."
+        },
+        {
+          "id": "umbralian-ally",
+          "name": "Umbralian Ally",
+          "effect": ""
+        },
+        {
+          "id": "umbralian-enemy",
+          "name": "Umbralian Enemy",
+          "effect": ""
+        },
+        {
+          "id": "unbroken",
+          "name": "Unbroken",
+          "effect": ""
+        },
+        {
+          "id": "uncertain-journey",
+          "name": "Uncertain Journey",
+          "effect": ""
+        },
+        {
+          "id": "wounded-eye",
+          "name": "Wounded Eye",
+          "effect": ""
+        },
+        {
+          "id": "wounded-paw",
+          "name": "Wounded Paw",
+          "effect": ""
+        }
+      ]
+    },
+    "awakenings": {
+      "campaign": [
+        {
+          "id": "ancient-book",
+          "name": "Ancient Book",
+          "effect": ""
+        },
+        {
+          "id": "counting-kittens",
+          "name": "Counting Kittens",
+          "effect": ""
+        },
+        {
+          "id": "defenders-fate",
+          "name": "Defender's Fate",
+          "effect": ""
+        },
+        {
+          "id": "drinking-pal",
+          "name": "Drinking Pal",
+          "effect": ""
+        },
+        {
+          "id": "entangled",
+          "name": "Entangled",
+          "effect": ""
+        },
+        {
+          "id": "farewell",
+          "name": "Farewell",
+          "effect": ""
+        },
+        {
+          "id": "full-house",
+          "name": "Full House",
+          "effect": ""
+        },
+        {
+          "id": "minervas-diary",
+          "name": "Minerva's Diary",
+          "effect": ""
+        },
+        {
+          "id": "pirates-gift",
+          "name": "Pirate's Gift",
+          "effect": ""
+        },
+        {
+          "id": "promised-reward",
+          "name": "Promised Reward",
+          "effect": ""
+        },
+        {
+          "id": "reunited",
+          "name": "Reunited",
+          "effect": ""
+        },
+        {
+          "id": "selfish",
+          "name": "Selfish",
+          "effect": ""
+        },
+        {
+          "id": "selfless",
+          "name": "Selfless",
+          "effect": ""
+        },
+        {
+          "id": "threats-or-treats",
+          "name": "Threats or Treats",
+          "effect": ""
+        },
+        {
+          "id": "untangled",
+          "name": "Untangled",
+          "effect": ""
+        },
+        {
+          "id": "watcher",
+          "name": "Watcher",
+          "effect": ""
+        }
+      ],
+      "storyrecord": []
+    }
   },
   "keyword": [
     {
