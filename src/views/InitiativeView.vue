@@ -77,9 +77,7 @@ const openDetails = (monster: ActiveMonsterData) => {
             <div v-for="initInfo in InitiativeList" :key="initInfo.index">
                 <!-- Monster Initiatives -->
                 <MonsterInitiative v-if="initInfo.type === InitiativeTypes.MONSTER" :turnImgUrl="initInfo.imgUrl"
-                    :monsters="monsterByInitiative(initInfo.index)" :onHpSwipeRight="incrementHp"
-                    :onHpSwipeLeft="decrementHp" @openDetails="openDetails" :addCondition="todo" :removeCondition="todo"
-                    :removeMonster="removeMonster" />
+                    :monsters="monsterByInitiative(initInfo.index)" @openDetails="openDetails" />
                 <!-- Non Monster Initiatives -->
                 <div v-if="initInfo.type != InitiativeTypes.MONSTER" class="grid grid-cols-12 divide-y"
                     id="initiative-container">

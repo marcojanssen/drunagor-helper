@@ -9,6 +9,7 @@ import { defineProps, defineEmits } from "vue";
 // #endregion
 
 // #region internal imports
+import { useInitiativeStore } from "@/store/InitiativeStore";
 import Conditions from "@/components/initiative/ConditionPicker.vue";
 import type { ActiveMonsterData } from "@/data/store/MonsterData";
 // #endregion
@@ -17,14 +18,15 @@ import type { ActiveMonsterData } from "@/data/store/MonsterData";
 const props = defineProps<{
     turnImgUrl?: string,
     monsters: ActiveMonsterData[],
-    onHpSwipeRight: (monster: ActiveMonsterData) => void,
-    onHpSwipeLeft: (monster: ActiveMonsterData) => void,
-    removeMonster: (monster: ActiveMonsterData) => void,
 }>();
 // #endregion
 
 // #region emits
 const emit = defineEmits(["open-details"]);
+// #endregion
+
+// #region store bindings
+const { decrementHp, incrementHp, removeMonster } = useInitiativeStore();
 // #endregion
 
 </script>
@@ -36,8 +38,8 @@ const emit = defineEmits(["open-details"]);
             <template v-for="(monster) in props.monsters.sort((a, b) => a.msTimestamp - b.msTimestamp)"
                 :key="monster.msTimestamp">
                 <BaseListItem>
-                    <div class="grid grid-flow-col auto-cols-max" v-touch:swipe.right="() => onHpSwipeRight(monster)"
-                        v-touch:swipe.left="() => onHpSwipeLeft(monster)">
+                    <div class="grid grid-flow-col auto-cols-max" v-touch:swipe.right="() => incrementHp(monster)"
+                        v-touch:swipe.left="() => decrementHp(monster)">
                         <img :src="monster.images.big" @click="emit('open-details', monster)"
                             :style="'border-color:' + monster.baseColor + ';'"
                             class="bg-white border-8 rounded-full shadow dark:bg-gray-800"
