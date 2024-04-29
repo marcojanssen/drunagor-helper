@@ -1,21 +1,35 @@
 <script setup lang="ts">
+
+// #region external imports
 import {
     HeartIcon,
     TrashIcon,
 } from "@heroicons/vue/24/solid";
+import { defineProps, defineEmits } from "vue";
+// #endregion
+
+// #region internal imports
 import Conditions from "@/components/initiative/ConditionPicker.vue";
 import type { ActiveMonsterData } from "@/data/store/MonsterData";
+// #endregion
 
+// #region props
 const props = defineProps<{
     turnImgUrl?: string,
     monsters: ActiveMonsterData[],
     onHpSwipeRight: (monster: ActiveMonsterData) => void,
     onHpSwipeLeft: (monster: ActiveMonsterData) => void,
-    openDetails: (monster: ActiveMonsterData) => void,
     removeMonster: (monster: ActiveMonsterData) => void,
 }>();
+// #endregion
 
-</script><template>
+// #region emits
+const emit = defineEmits(["open-details"]);
+// #endregion
+
+</script>
+
+<template>
     <div class="grid grid-cols-12" id="initiative-container">
         <div><img :src="turnImgUrl" /></div>
         <div class="col-span-11">
@@ -24,7 +38,7 @@ const props = defineProps<{
                 <BaseListItem>
                     <div class="grid grid-flow-col auto-cols-max" v-touch:swipe.right="() => onHpSwipeRight(monster)"
                         v-touch:swipe.left="() => onHpSwipeLeft(monster)">
-                        <img :src="monster.images.big" @click="openDetails(monster)"
+                        <img :src="monster.images.big" @click="emit('open-details', monster)"
                             :style="'border-color:' + monster.baseColor + ';'"
                             class="bg-white border-8 rounded-full shadow dark:bg-gray-800"
                             :class="monster.size == 'large' ? 'w-32' : 'w-24'" />

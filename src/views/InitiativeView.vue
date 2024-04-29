@@ -5,7 +5,7 @@ import {
     ArrowPathIcon,
     PlusIcon
 } from "@heroicons/vue/24/solid";
-import { ref, computed } from "vue";
+import { ref, computed, defineEmits } from "vue";
 // #endregion
 
 // #region internal imports
@@ -51,6 +51,10 @@ const todo = () => {
     alert("Not implemented yet");
 };
 
+const openDetails = (monster: ActiveMonsterData) => {
+    alert("Open details for: " + monster?.name);
+};
+
 </script>
 
 <template>
@@ -74,7 +78,7 @@ const todo = () => {
                 <!-- Monster Initiatives -->
                 <MonsterInitiative v-if="initInfo.type === InitiativeTypes.MONSTER" :turnImgUrl="initInfo.imgUrl"
                     :monsters="monsterByInitiative(initInfo.index)" :onHpSwipeRight="incrementHp"
-                    :onHpSwipeLeft="decrementHp" :openDetails="todo" :addCondition="todo" :removeCondition="todo"
+                    :onHpSwipeLeft="decrementHp" @openDetails="openDetails" :addCondition="todo" :removeCondition="todo"
                     :removeMonster="removeMonster" />
                 <!-- Non Monster Initiatives -->
                 <div v-if="initInfo.type != InitiativeTypes.MONSTER" class="grid grid-cols-12 divide-y"
