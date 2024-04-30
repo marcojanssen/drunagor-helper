@@ -1119,7 +1119,7 @@
       "storyrecord":[]
     },
     "awakenings":{
-      "campaign:"[
+      "campaign":[
         {
           "id": "ancient-spell",
           "name": "Ancient Spell",
@@ -2194,11 +2194,11 @@
   },
   "unfolding":{
     "core":{
-      "campaign:"[]
+      "campaign":[],
       "storyrecord":[]
     },
     "apocalypse":{
-      "campaign:"[]
+      "campaign":[],
       "storyrecord":[  
         {
           "id": "a-broken-man",
@@ -2328,7 +2328,7 @@
       ]
     },
     "awakenings":{
-      "campaign:"[]
+      "campaign":[],
       "storyrecord":[] 
     }
   },
