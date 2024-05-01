@@ -3,7 +3,8 @@
 import { storeToRefs } from "pinia";
 import {
     ArrowPathIcon,
-    PlusIcon
+    PlusIcon,
+    XMarkIcon,
 } from "@heroicons/vue/24/solid";
 import { ref, computed, defineEmits } from "vue";
 // #endregion
@@ -16,11 +17,12 @@ import { InitiativeList, InitiativeTypes } from "@/data/initiative/InitiativePla
 import type { ActiveMonsterData } from "@/data/store/MonsterData";
 import BaseDivider from "@/components/BaseDivider.vue";
 import OnOffButton from "@/components/common/OnOffButton.vue";
+import BaseModal from "@/components/BaseModal.vue";
 // #endregion
 
 // #region store bindings
 const { autoConfirmDelete, useDefaultHp } = storeToRefs(useInitiativeStore());
-const { getInitiativeList, addMonster, clearInitiative, decrementHp, incrementHp, removeMonster } =
+const { getInitiativeList, addMonster, clearInitiative } =
     useInitiativeStore();
 // #endregion
 
@@ -47,13 +49,25 @@ const monsterByInitiative = (initiative: number) => {
 };
 // #endregion
 
-const todo = () => {
-    alert("Not implemented yet");
-};
-
-const openDetails = (monster: ActiveMonsterData) => {
-    alert("Open details for: " + monster?.name);
-};
+// #region details popup
+const detailsOpen = ref(false);
+const detailsMonster = ref<ActiveMonsterData | null>(null);
+const detailsMonsterCardUrl = computed(() => {
+    const cards = (detailsMonster?.value as any)?.images?.cards;
+    if (!cards) {
+        return null;
+    }
+    const index = (detailsMonster?.value as any)?.cardIndex || 0;
+    return cards[index];
+});
+function openDetails(monster: ActiveMonsterData) {
+    detailsMonster.value = monster;
+    detailsOpen.value = true;
+}
+function closeDetails() {
+    detailsOpen.value = false;
+}
+// #endregion
 
 </script>
 
@@ -90,4 +104,27 @@ const openDetails = (monster: ActiveMonsterData) => {
     </div>
     <!-- Pop-Ups -->
     <MonsterPicker @pick-monster="addMonster" ref="monsterPickerRef" />
+    <BaseModal :is-open="detailsOpen" @close-modal="closeDetails">
+        <template #header>
+            <div class="grid grid-cols-2">
+                <div class="font-medium">{{ detailsMonster?.name }} ({{ detailsMonster?.baseColor }}) - <span
+                        class="text-slate-600">[{{ detailsMonster?.content }}]</span></div>
+                <div>
+                    <button id="close-modal"
+                        class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
+                        @click="closeDetails">
+                        <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
+                    </button>
+                </div>
+            </div>
+        </template>
+        <template #default>
+            <div class="container" @click="closeDetails">
+                <div class="border-8" :style="'border-color:' + detailsMonster?.baseColor + ';'">
+                    <img :src="detailsMonsterCardUrl" class="rounded-sm shadow dark:bg-gray-800 w-full" />
+                </div>
+                <img :src="detailsMonster?.images?.miniature" class="rounded-sm shadow dark:bg-gray-800 w-full" />
+            </div>
+        </template>
+    </BaseModal>
 </template>
