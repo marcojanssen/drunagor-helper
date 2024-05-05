@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/DeathMessengerBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/DeathMessengerMiniature.webp";
+import CardStandard from "@/assets/monster/cards/death-messenger/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/death-messenger/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class DeathMessenger implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "gray";
   size: string = "small";

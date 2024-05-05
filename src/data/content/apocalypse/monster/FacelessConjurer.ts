@@ -1,4 +1,6 @@
 import ImageUrl from "@/assets/monster/big/FacelessConjurerBig.webp";
+import CardStandard from "@/assets/monster/cards/faceless-conjurer/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/faceless-conjurer/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -13,6 +15,7 @@ export class FacelessConjurer implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "gray";
   size: string = "small";

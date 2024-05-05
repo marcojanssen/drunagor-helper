@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/ShadowMistressBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowMistressMiniature.webp";
+import CardStandard from "@/assets/monster/cards/shadow-mistress/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/shadow-mistress/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class ShadowMistress implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "white";
   size: string = "small";

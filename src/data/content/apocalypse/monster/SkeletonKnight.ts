@@ -1,4 +1,6 @@
 import ImageUrl from "@/assets/monster/big/SkeletonKnightBig.webp";
+import CardStandard from "@/assets/monster/cards/skeleton-knight/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/skeleton-knight/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -13,6 +15,7 @@ export class SkeletonKnight implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "white";
   size: string = "small";

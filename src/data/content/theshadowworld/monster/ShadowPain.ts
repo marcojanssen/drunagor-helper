@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/ShadowPainBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowPainMiniature.webp";
+import CardStandard from "@/assets/monster/cards/shadow-pain/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/shadow-pain/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class ShadowPain implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "white";
   size: string = "small";

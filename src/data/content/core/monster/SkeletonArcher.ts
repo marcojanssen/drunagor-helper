@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/SkeletonArcherBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/SkeletonArcherMiniature.webp";
+import CardStandard from "@/assets/monster/cards/skeleton-archer/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/skeleton-archer/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class SkeletonArcher implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "white";
   size: string = "small";

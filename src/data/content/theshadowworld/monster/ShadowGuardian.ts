@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/ShadowGuardianBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowGuardianMiniature.webp";
+import CardStandard from "@/assets/monster/cards/shadow-guardian/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/shadow-guardian/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class ShadowGuardian implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "gray";
   size: string = "small";

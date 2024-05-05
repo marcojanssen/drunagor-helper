@@ -53,8 +53,9 @@ const monsterByInitiative = (initiative: number) => {
 const detailsOpen = ref(false);
 const detailsMonster = ref<ActiveMonsterData | null>(null);
 const detailsMonsterCardUrl = computed(() => {
-    const cards = (detailsMonster?.value as any)?.images?.cards;
+    const cards = detailsMonster?.value?.images?.cards;
     if (!cards) {
+        console.warn("No cards found for monster", detailsMonster);
         return null;
     }
     const index = (detailsMonster?.value as any)?.cardIndex || 0;

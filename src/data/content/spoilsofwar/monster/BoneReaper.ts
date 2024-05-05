@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/BoneReaperBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/BoneReaperMiniature.webp";
+import CardStandard from "@/assets/monster/cards/bone-reaper/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/bone-reaper/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class BoneReaper implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "gray";
   size: string = "small";
