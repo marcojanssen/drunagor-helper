@@ -5,7 +5,6 @@ import {
     HeartIcon,
     TrashIcon,
 } from "@heroicons/vue/24/solid";
-import { defineProps, defineEmits } from "vue";
 // #endregion
 
 // #region internal imports

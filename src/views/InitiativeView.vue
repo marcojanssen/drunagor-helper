@@ -6,7 +6,7 @@ import {
     PlusIcon,
     XMarkIcon,
 } from "@heroicons/vue/24/solid";
-import { ref, computed, defineEmits } from "vue";
+import { ref, computed } from "vue";
 // #endregion
 
 // #region internal imports
