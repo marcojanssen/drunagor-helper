@@ -52,14 +52,15 @@ const monsterByInitiative = (initiative: number) => {
 // #region details popup
 const detailsOpen = ref(false);
 const detailsMonster = ref<ActiveMonsterData | null>(null);
-const detailsMonsterCardUrl = computed((): string | null => {
+const detailsMonsterCardUrl = computed((): string => {
     const cards = detailsMonster?.value?.images?.cards;
+    const defaultImg = detailsMonster?.value?.images?.big ?? '';
     if (!cards) {
         console.warn("No cards found for monster", detailsMonster);
-        return detailsMonster?.value?.images?.big || null;
+        return defaultImg;
     }
     const index = (detailsMonster?.value as any)?.cardIndex || 0;
-    return cards[index] || detailsMonster?.value?.images?.big || null;
+    return cards[index] || defaultImg;
 });
 function openDetails(monster: ActiveMonsterData) {
     detailsMonster.value = monster;
