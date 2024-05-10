@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/ShadowVampireBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowVampireMiniature.webp";
+import CardStandard from "@/assets/monster/cards/shadow-vampire/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/shadow-vampire/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class ShadowVampire implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "gray";
   size: string = "small";

@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/AbominationBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/AbominationMiniature.webp";
+import CardStandard from "@/assets/monster/cards/abomination/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/abomination/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class Abomination implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "black";
   size: string = "large";

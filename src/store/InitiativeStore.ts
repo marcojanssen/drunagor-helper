@@ -7,7 +7,6 @@ import { useStorage } from "@vueuse/core";
 import { Conditions, type ICondition } from "@/data/conditions/Condition";
 import { FacelessConjurer } from "@/data/content/apocalypse/monster/FacelessConjurer";
 import type { ActiveMonsterData } from "@/data/store/MonsterData";
-import { InitiativeList } from "@/data/initiative/InitiativePlaces";
 // #endregion
 
 export const useInitiativeStore = defineStore("initiative", () => {

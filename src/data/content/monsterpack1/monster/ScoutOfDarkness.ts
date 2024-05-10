@@ -1,5 +1,7 @@
 import ImageUrl from "@/assets/monster/big/ScoutOfDarknessBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ScoutOfDarknessMiniature.webp";
+import CardStandard from "@/assets/monster/cards/scout-of-darkness/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/scout-of-darkness/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -14,6 +16,7 @@ export class ScoutOfDarkness implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "white";
   size: string = "small";

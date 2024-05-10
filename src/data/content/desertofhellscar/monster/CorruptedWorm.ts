@@ -1,4 +1,6 @@
 import ImageUrl from "@/assets/monster/big/CorruptedWormBig.webp";
+import CardStandard from "@/assets/monster/cards/corrupted-worm/rookie/standard.jpg";
+import CardAlternate from "@/assets/monster/cards/corrupted-worm/rookie/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -13,6 +15,7 @@ export class CorruptedWorm implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
+    cards: [CardStandard, CardAlternate,],
   };
   color: MonsterColor = "gray";
   size: string = "small";

@@ -11,6 +11,7 @@ export interface MonsterData {
   images: {
     big: string;
     miniature: string;
+    cards: string[];
   };
   color: MonsterColor;
   size: string;
