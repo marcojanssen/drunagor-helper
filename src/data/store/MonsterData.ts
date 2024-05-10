@@ -27,4 +27,5 @@ export interface ActiveMonsterData extends MonsterData {
   initiative: number;
   active: boolean;
   conditions: ICondition[];
+  rank: null | 'rookie' | 'fighter' | 'veteran' | 'champion';
 };
