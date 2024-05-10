@@ -16,6 +16,8 @@ const toast = useToast();
 
 const isOpen = ref(false);
 
+const rank = ref('rookie');
+
 function openModal() {
     isOpen.value = true;
 }
@@ -39,7 +41,7 @@ const monsters = monsterStore.findAllEnabled().sort((a, b) => {
 const emit = defineEmits(["pick-monster"]);
 
 function pickMonster(monster: MonsterData) {
-    emit("pick-monster", monster);
+    emit("pick-monster", { ...monster, rank: rank.value });
 }
 
 function randomMonster(color: string) {
@@ -61,7 +63,15 @@ function randomMonster(color: string) {
     <BaseModal :is-open="isOpen" @close-modal="closeModal">
         <template #header>
             <div class="grid grid-cols-2">
-                <div class="w-full font-medium place-self-center">Add Monster</div>
+                <div class="flex">
+                    <div class="w-full font-medium place-self-center">Add Monster</div>
+                    <select class="bg-base-100 py-2 pl-3 pr-20 w-full leading-5 focus:ring-0 rounded-lg" v-model="rank">
+                        <option value="rookie">Rookie</option>
+                        <option value="fighter">Fighter</option>
+                        <option value="veteran">Veteran</option>
+                        <option value="champion">Champion</option>
+                    </select>
+                </div>
                 <div>
                     <button id="close-modal"
                         class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
