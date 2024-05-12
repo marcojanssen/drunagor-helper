@@ -1,6 +1,12 @@
 import ImageUrl from "@/assets/monster/big/DreamTitanBig.webp";
-import CardStandard from "@/assets/monster/cards/dream-titan/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/dream-titan/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/dream-titan/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/dream-titan/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/dream-titan/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/dream-titan/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/dream-titan/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/dream-titan/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/dream-titan/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/dream-titan/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -15,7 +21,12 @@ export class DreamTitan implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    },
   };
   color: MonsterColor = "black";
   size: string = "large";

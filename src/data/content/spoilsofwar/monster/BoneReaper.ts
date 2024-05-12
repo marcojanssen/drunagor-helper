@@ -1,7 +1,13 @@
 import ImageUrl from "@/assets/monster/big/BoneReaperBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/BoneReaperMiniature.webp";
-import CardStandard from "@/assets/monster/cards/bone-reaper/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/bone-reaper/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/bone-reaper/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/bone-reaper/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/bone-reaper/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/bone-reaper/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/bone-reaper/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/bone-reaper/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/bone-reaper/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/bone-reaper/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -16,7 +22,12 @@ export class BoneReaper implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    },
   };
   color: MonsterColor = "gray";
   size: string = "small";

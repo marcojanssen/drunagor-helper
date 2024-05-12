@@ -1,6 +1,12 @@
 import ImageUrl from "@/assets/monster/big/NagianHunterBig.webp";
-import CardStandard from "@/assets/monster/cards/nagian-hunter/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/nagian-hunter/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/nagian-hunter/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/nagian-hunter/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/nagian-hunter/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/nagian-hunter/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/nagian-hunter/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/nagian-hunter/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/nagian-hunter/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/nagian-hunter/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -15,7 +21,12 @@ export class NagianHunter implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    }
   };
   color: MonsterColor = "white";
   size: string = "small";

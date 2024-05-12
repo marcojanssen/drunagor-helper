@@ -1,7 +1,13 @@
 import ImageUrl from "@/assets/monster/big/ShadowMistressBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/ShadowMistressMiniature.webp";
-import CardStandard from "@/assets/monster/cards/shadow-mistress/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/shadow-mistress/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/shadow-mistress/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/shadow-mistress/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/shadow-mistress/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/shadow-mistress/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/shadow-mistress/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/shadow-mistress/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/shadow-mistress/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/shadow-mistress/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -16,7 +22,12 @@ export class ShadowMistress implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    },
   };
   color: MonsterColor = "white";
   size: string = "small";

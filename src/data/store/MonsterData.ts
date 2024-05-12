@@ -11,7 +11,12 @@ export interface MonsterData {
   images: {
     big: string;
     miniature: string;
-    cards: string[];
+    cards: {
+      rookie: string[];
+      fighter: string[];
+      veteran: string[];
+      champion: string[];
+    };
   };
   color: MonsterColor;
   size: string;
