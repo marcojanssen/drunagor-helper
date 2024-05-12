@@ -1,6 +1,12 @@
 import ImageUrl from "@/assets/monster/big/RavagerBig.webp";
-import CardStandard from "@/assets/monster/cards/ravager/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/ravager/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/ravager/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/ravager/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/ravager/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/ravager/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/ravager/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/ravager/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/ravager/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/ravager/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -15,7 +21,12 @@ export class Ravager implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    }
   };
   color: MonsterColor = "white";
   size: string = "small";

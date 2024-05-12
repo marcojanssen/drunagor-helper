@@ -60,7 +60,8 @@ const detailsMonsterCardUrl = computed((): string => {
         return defaultImg;
     }
     const index = (detailsMonster?.value as any)?.cardIndex || 0;
-    return cards[index] || defaultImg;
+    const rank = detailsMonster?.value?.rank || 'rookie';
+    return cards[rank][index] || defaultImg;
 });
 function openDetails(monster: ActiveMonsterData) {
     detailsMonster.value = monster;

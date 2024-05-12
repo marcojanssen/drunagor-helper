@@ -1,7 +1,13 @@
 import ImageUrl from "@/assets/monster/big/AbominationBig.webp";
 import MiniatureUrl from "@/assets/monster/miniature/AbominationMiniature.webp";
-import CardStandard from "@/assets/monster/cards/abomination/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/abomination/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/abomination/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/abomination/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/abomination/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/abomination/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/abomination/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/abomination/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/abomination/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/abomination/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -16,7 +22,12 @@ export class Abomination implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: MiniatureUrl,
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    },
   };
   color: MonsterColor = "black";
   size: string = "large";

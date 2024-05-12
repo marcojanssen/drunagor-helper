@@ -1,6 +1,12 @@
 import ImageUrl from "@/assets/monster/big/NightStalkerBig.webp";
-import CardStandard from "@/assets/monster/cards/night-stalker/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/night-stalker/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/night-stalker/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/night-stalker/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/night-stalker/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/night-stalker/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/night-stalker/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/night-stalker/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/night-stalker/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/night-stalker/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -15,7 +21,12 @@ export class NightStalker implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    },
   };
   color: MonsterColor = "gray";
   translation_key = "monster.night-stalker";

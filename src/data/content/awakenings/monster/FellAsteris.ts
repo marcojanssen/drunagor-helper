@@ -1,6 +1,12 @@
 import ImageUrl from "@/assets/monster/big/FellAsterisBig.webp";
-import CardStandard from "@/assets/monster/cards/fell-asteris/rookie/standard.jpg";
-import CardAlternate from "@/assets/monster/cards/fell-asteris/rookie/alternate.jpg";
+import RookieStandard from "@/assets/monster/cards/fell-asteris/rookie/standard.jpg";
+import RookieAlternate from "@/assets/monster/cards/fell-asteris/rookie/alternate.jpg";
+import FighterStandard from "@/assets/monster/cards/fell-asteris/fighter/standard.jpg";
+import FighterAlternate from "@/assets/monster/cards/fell-asteris/fighter/alternate.jpg";
+import VeteranStandard from "@/assets/monster/cards/fell-asteris/veteran/standard.jpg";
+import VeteranAlternate from "@/assets/monster/cards/fell-asteris/veteran/alternate.jpg";
+import ChampionStandard from "@/assets/monster/cards/fell-asteris/champion/standard.jpg";
+import ChampionAlternate from "@/assets/monster/cards/fell-asteris/champion/alternate.jpg";
 import InitiativePlaces from "@/data/initiative/InitiativePlaces";
 import type { MonsterData } from "@/data/store/MonsterData";
 import type { ContentId } from "@/data/type/ContentId";
@@ -15,7 +21,12 @@ export class FellAsteris implements MonsterData {
   images = {
     big: ImageUrl,
     miniature: "",
-    cards: [CardStandard, CardAlternate,],
+    cards: {
+      rookie: [RookieStandard, RookieAlternate,],
+      fighter: [FighterStandard, FighterAlternate,],
+      veteran: [VeteranStandard, VeteranAlternate,],
+      champion: [ChampionStandard, ChampionAlternate,],
+    },
   };
   color: MonsterColor = "gray";
   size: string = "small";
