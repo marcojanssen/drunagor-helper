@@ -1,1 +1,1 @@
-export type MonsterColor = "white" | "gray" | "black";
+export type MonsterColor = "white" | "gray" | "black" | "other";
