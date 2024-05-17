@@ -100,6 +100,12 @@ function randomMonster(color: string) {
                         {{ monster.name }}
                     </BaseListItem>
                 </template>
+                <div>Scenario Monsters</div>
+                <template v-for="monster in monsterStore.scenarioMonsters" :key="monster.id">
+                    <BaseListItem :avatar="monster.images.big" @click="pickMonster(monster)">
+                        {{ monster.name }}
+                    </BaseListItem>
+                </template>
             </BaseList>
         </template>
     </BaseModal>

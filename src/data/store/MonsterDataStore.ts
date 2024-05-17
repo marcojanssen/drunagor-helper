@@ -33,6 +33,33 @@ import type { MonsterData } from "@/data/store/MonsterData";
 import { ConfigurationStore } from "@/store/ConfigurationStore";
 import * as _ from "lodash-es";
 import { defineStore } from "pinia";
+import { DriftingApparition } from "@/data/content/core/monster/DriftingApparition";
+import { ShadowVampireSpawn } from "@/data/content/core/monster/ShadowVampireSpawn";
+import { SkeletonArcherMinion } from "@/data/content/core/monster/SkeletonArcherMinion";
+import { TormentOfEnvy } from "@/data/content/core/monster/TormentOfEnvy";
+import { TormentOfGrief } from "../content/core/monster/TormentOfGrief";
+import { MurderousApparition } from "../content/core/monster/MurderousApparition";
+import { ManifestationOfWrath } from "../content/core/monster/ManifestationOfWrath";
+import { MournfulApparition } from "../content/core/monster/MournfulApparition";
+import { MindlessReaver } from "../content/apocalypse/monster/MindlessReaver";
+import { GarothianRevenant } from "../content/apocalypse/monster/GarothianRevenant";
+import { Nightmare } from "../content/awakenings/monster/Nightmare";
+import { GarothianMarksman } from "../content/apocalypse/monster/GarothianMarksman";
+import { Tidehunter } from "../content/awakenings/monster/Tidehunter";
+import { Boatswain } from "../content/awakenings/monster/Boatswain";
+import { FellWoodman } from "../content/awakenings/monster/FellWoodman";
+import { PlagueCarrier } from "../content/apocalypse/monster/PlagueCarrier";
+import { FoulShooter } from "../content/awakenings/monster/FoulShooter";
+import { UnstableDevourer } from "../content/apocalypse/monster/UnstableDevourer";
+import { FlickeringBoar } from "../content/awakenings/monster/FlickeringBoar";
+import { RavenousAbomination } from "../content/apocalypse/monster/RavenousAbomination";
+import { RavenousStalker } from "../content/apocalypse/monster/RavenousStalker";
+import { ViciousMauler } from "../content/awakenings/monster/ViciousMauler";
+import { CoiledHarridan } from "../content/awakenings/monster/CoiledHarridan";
+import { VileSpawn } from "../content/awakenings/monster/VileSpawn";
+import { SowerCultist } from "../content/apocalypse/monster/SowerCultist";
+import { SkeletonSentry } from "../content/awakenings/monster/SkeletonSentry";
+import { DireExecutioner } from "../content/core/monster/DireExecutioner";
 
 export const MonsterDataStore = defineStore("data-monster", () => {
   const configurationStore = ConfigurationStore();
@@ -71,6 +98,36 @@ export const MonsterDataStore = defineStore("data-monster", () => {
     new WalkingHorror(),
   ];
 
+  const scenarioMonsters: MonsterData[] = [
+    new Boatswain(),
+    new CoiledHarridan(),
+    new DireExecutioner(),
+    new DriftingApparition(),
+    new FellWoodman(),
+    new FlickeringBoar(),
+    new FoulShooter(),
+    new GarothianMarksman(),
+    new GarothianRevenant(),
+    new ManifestationOfWrath(),
+    new MindlessReaver(),
+    new MournfulApparition(),
+    new MurderousApparition(),
+    new Nightmare(),
+    new PlagueCarrier(),
+    new RavenousAbomination(),
+    new RavenousStalker(),
+    new ShadowVampireSpawn(),
+    new SkeletonArcherMinion(),
+    new SkeletonSentry(),
+    new SowerCultist(),
+    new Tidehunter(),
+    new TormentOfEnvy(),
+    new TormentOfGrief(),
+    new UnstableDevourer(),
+    new ViciousMauler(),
+    new VileSpawn(),
+  ];
+
   function find(monsterId: string): MonsterData {
     const monster = _.find(monsters, { id: monsterId });
     if (monster === undefined) {
@@ -97,6 +154,7 @@ export const MonsterDataStore = defineStore("data-monster", () => {
 
   return {
     monsters,
+    scenarioMonsters,
     find,
     findAll,
     findAllEnabled,
