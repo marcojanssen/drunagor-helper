@@ -95,7 +95,9 @@
     "add-or-remove-follower": "Add or remove follower",
     "add-or-remove-stashed-items": "Add or remove stashed items",
     "select-aura": "Select aura",
-    "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them."
+    "aura-info": "Aura is removed when you receive a trauma cube or another aura.",
+    "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them.",
+    "status-info": "Statuses are removed during the camp phase."
   },
   "weapon": {
     "core": {

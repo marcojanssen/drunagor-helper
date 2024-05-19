@@ -6,16 +6,19 @@ import type { Status } from "@/data/repository/campaign/Status";
 import type { StatusRepository } from "@/data/repository/campaign/StatusRepository";
 import { CampaignStore } from "@/store/CampaignStore";
 import { useI18n } from "vue-i18n";
+import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 const props = defineProps<{
   campaignId: string;
   repository: StatusRepository;
 }>();
 
-const statuses = props.repository.findAll();
-const { t } = useI18n();
-
 const campaignStore = CampaignStore();
+const configurationStore = ConfigurationStore();
+const { t } = useI18n();
+props.repository.load(configurationStore.enabledLanguage);
+
+const statuses = props.repository.findAll();
 
 const statusIds = ref([] as string[]);
 statusIds.value = campaignStore.find(props.campaignId).statusIds ?? [];
@@ -115,7 +118,9 @@ watch(statusIds, (newStatusIds) => {
     </div>
   </Combobox>
   <template v-if="statusIds.length > 0">
-    <p class="text-sm text-gray-500 py-2">Statuses are removed during the camp phase.</p>
+    <p class="text-sm text-gray-500 py-2">
+      {{ t("text.status-info") }}
+    </p>
     <ul id="story-record-status-display" class="list-disc list-inside">
       <template v-for="status in findStatuses(statusIds)" :key="status.id">
         <li>
