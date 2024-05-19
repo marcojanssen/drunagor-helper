@@ -7,6 +7,7 @@ import { useStorage } from "@vueuse/core";
 import { Conditions, type ICondition } from "@/data/conditions/Condition";
 import { FacelessConjurer } from "@/data/content/apocalypse/monster/FacelessConjurer";
 import type { ActiveMonsterData } from "@/data/store/MonsterData";
+import type { HeroData } from "@/data/repository/HeroData";
 // #endregion
 
 export const useInitiativeStore = defineStore("initiative", () => {
@@ -14,10 +15,14 @@ export const useInitiativeStore = defineStore("initiative", () => {
     const autoConfirmDelete = useStorage("initiative.AutoConfirmDelete", false);
     const useDefaultHp = useStorage("initiative.UseDefaultHp", true);
     const _initiativeList = useStorage("initiative.InitiativeList", [] as any[]);
+    const _heros = useStorage("initiative.Heros", {} as Record<string, HeroData>);
     const _monsterMaxHp = useStorage("initiative.MonsterMaxHp", {} as Record<string, number>);
     // #endregion
 
     // #region store functions
+    const addHero = (dungeonRole: string, hero: HeroData) => {
+        _heros.value[dungeonRole] = hero;
+    };
     const addMonster = (monster: any) => {
         const maxHp = _getDefaultHp(monster);
         let newMonster = {
@@ -54,6 +59,12 @@ export const useInitiativeStore = defineStore("initiative", () => {
             removeMonster(newMonster);
         }
     };
+    const getHero = (dungeonRole: string | undefined): HeroData | null => {
+        if (!dungeonRole) {
+            return null;
+        }
+        return _heros.value[dungeonRole];
+    };
     const incrementCondition = (monster: ActiveMonsterData, condition: ICondition) => {
         const mIndex = _getMonsterIndex(monster);
         const cIndex = monster.conditions.findIndex((c) => c.name == condition.name);
@@ -77,6 +88,9 @@ export const useInitiativeStore = defineStore("initiative", () => {
         return _initiativeList.value.sort((a, b) => {
             return b.initiative - a.initiative;
         });
+    };
+    const removeHero = (dungeonRole: string) => {
+        delete _heros.value[dungeonRole];
     };
     const removeMonster = (monster: any) => {
         if (autoConfirmDelete.value || confirm(`Delete ${monster.name} - ${monster.baseColor}?`)) {
@@ -183,13 +197,16 @@ export const useInitiativeStore = defineStore("initiative", () => {
         autoConfirmDelete,
         useDefaultHp,
         // functions
+        addHero,
         addMonster,
         clearInitiative,
         decrementCondition,
         decrementHp,
+        getHero,
         getInitiativeList,
         incrementCondition,
         incrementHp,
+        removeHero,
         removeMonster,
         updateMonster,
     };

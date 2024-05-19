@@ -44,11 +44,13 @@ export const InitiativeList = [
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.TOP_ORANGE,
         imgUrl: TopOrangeImgUrl,
+        text: "TOP ORANGE",
     },
     {
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.TOP_GREEN,
         imgUrl: TopGreenImgUrl,
+        text: "TOP GREEN",
     },
     {
         type: InitiativeTypes.HERO,
@@ -59,11 +61,13 @@ export const InitiativeList = [
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.TOP_BLUE,
         imgUrl: TopBlueImgUrl,
+        text: "TOP BLUE",
     },
     {
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.TOP_RED,
         imgUrl: TopRedImgUrl,
+        text: "TOP RED",
     },
     {
         type: InitiativeTypes.HERO,
@@ -74,11 +78,13 @@ export const InitiativeList = [
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.TOP_GRAY,
         imgUrl: TopGrayImgUrl,
+        text: "TOP GRAY",
     },
     {
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.BOTTOM_ORANGE,
         imgUrl: BottomOrangeImgUrl,
+        text: "BOTTOM ORANGE",
     },
     {
         type: InitiativeTypes.HERO,
@@ -89,11 +95,13 @@ export const InitiativeList = [
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.BOTTOM_GREEN,
         imgUrl: BottomGreenImgUrl,
+        text: "BOTTOM GREEN",
     },
     {
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.BOTTOM_BLUE,
         imgUrl: BottomBlueImgUrl,
+        text: "BOTTOM BLUE",
     },
     {
         type: InitiativeTypes.HERO,
@@ -104,11 +112,13 @@ export const InitiativeList = [
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.BOTTOM_RED,
         imgUrl: BottomRedImgUrl,
+        text: "BOTTOM RED",
     },
     {
         type: InitiativeTypes.MONSTER,
         index: InitiativePlaces.BOTTOM_GRAY,
         imgUrl: BottomGrayImgUrl,
+        text: "BOTTOM GRAY",
     },
     {
         type: InitiativeTypes.RUNE,

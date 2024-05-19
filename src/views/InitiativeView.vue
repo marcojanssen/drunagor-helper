@@ -3,6 +3,7 @@
 import { storeToRefs } from "pinia";
 import {
     ArrowPathIcon,
+    MinusIcon,
     PlusIcon,
     XMarkIcon,
 } from "@heroicons/vue/24/solid";
@@ -10,6 +11,7 @@ import { ref, computed } from "vue";
 // #endregion
 
 // #region internal imports
+import { HeroStore } from "@/store/HeroStore";
 import { useInitiativeStore } from "@/store/InitiativeStore";
 import MonsterPicker from "@/components/initiative/MonsterPicker.vue";
 import MonsterInitiative from "@/components/initiative/MonsterInitiative.vue";
@@ -18,12 +20,33 @@ import type { ActiveMonsterData } from "@/data/store/MonsterData";
 import BaseDivider from "@/components/BaseDivider.vue";
 import OnOffButton from "@/components/common/OnOffButton.vue";
 import BaseModal from "@/components/BaseModal.vue";
+import type { HeroData } from "@/data/repository/HeroData";
 // #endregion
 
 // #region store bindings
 const { autoConfirmDelete, useDefaultHp } = storeToRefs(useInitiativeStore());
-const { getInitiativeList, addMonster, clearInitiative } =
+const { getInitiativeList, addMonster, clearInitiative, addHero, getHero, removeHero } =
     useInitiativeStore();
+const { heroes } = storeToRefs(HeroStore());
+console.log(`heroes length: ${heroes.value.length}`);
+heroes.value.forEach((hero) => {
+    console.log(hero);
+});
+const heroStore = HeroStore();
+// #endregion
+
+// #region hero picker
+const dungeonRoleToPick = ref<string | null>(null);
+const closeHeroPicker = (): void => {
+    dungeonRoleToPick.value = null;
+};
+const heroData: HeroData[] = heroes.value.map((hero) => {
+    return heroStore.getHero(hero.heroId);
+});
+const assignHero = (hero: HeroData): void => {
+    addHero(dungeonRoleToPick.value as string, hero);
+    closeHeroPicker();
+};
 // #endregion
 
 // #region monster picker
@@ -96,10 +119,20 @@ function closeDetails() {
                 <MonsterInitiative v-if="initInfo.type === InitiativeTypes.MONSTER" :turnImgUrl="initInfo.imgUrl"
                     :monsters="monsterByInitiative(initInfo.index)" @openDetails="openDetails" />
                 <!-- Non Monster Initiatives -->
-                <div v-if="initInfo.type != InitiativeTypes.MONSTER" class="grid grid-cols-12 divide-y"
-                    id="initiative-container">
-                    <div class="col-span-11 col-start-2 text-4xl font-extrabold mb-4">
+                <div v-else class="grid grid-cols-12 divide-y" id="initiative-container">
+                    <div v-if="getHero(initInfo.text) == null"
+                        class="col-span-11 col-start-2 text-4xl font-extrabold mb-4 flex">
                         {{ initInfo.text }}
+                        <PlusIcon class="w-8 bg-slate-800 rounded-lg ml-4"
+                            @click="() => dungeonRoleToPick = initInfo.text" />
+                    </div>
+                    <div v-else class="col-span-11 col-start-2 text-4xl font-extrabold mb-4 flex">
+                        <img :src="getHero(initInfo.text)?.images?.avatar || ''" class="rounded-full w-16 h-16" />
+                        <div class="flex flex-row ml-4">
+                            {{ getHero(initInfo.text)?.name }}
+                            <MinusIcon class="w-8 h-8 bg-slate-800 rounded-lg ml-4 mt-2"
+                                @click="() => removeHero(initInfo.text)" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,6 +140,22 @@ function closeDetails() {
     </div>
     <!-- Pop-Ups -->
     <MonsterPicker @pick-monster="addMonster" ref="monsterPickerRef" />
+    <BaseModal :is-open="dungeonRoleToPick != null" @close-modal="closeHeroPicker">
+        <template #header>
+            <div class="font-medium">Pick a Hero</div>
+        </template>
+        <template #default>
+            <div class="container">
+                <div class="grid grid-cols-3 gap-4">
+                    <div v-for="hero in heroData" :key="hero.name" class="flex flex-col items-center">
+                        <img :src="hero.images.avatar" class="rounded-full" @click="() => assignHero(hero)" />
+                        <div>{{ hero.name }}</div>
+                        <button @click="addHero(hero.name, hero)">Add</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </BaseModal>
     <BaseModal :is-open="detailsOpen" @close-modal="closeDetails">
         <template #header>
             <div class="grid grid-cols-2">

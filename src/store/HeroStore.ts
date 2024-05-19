@@ -2,6 +2,10 @@ import { useStorage } from "@vueuse/core";
 import * as _ from "lodash-es";
 import { defineStore } from "pinia";
 import type { Hero } from "./Hero";
+import { Sskar } from "@/data/content/spoilsofwar/hero/Sskar";
+import { VacrenWarlord } from "@/data/content/awakenings/hero/VacrenWarlord";
+import { Kellam } from "@/data/content/spoilsofwar/hero/Kellam";
+import { CatharinaMage } from "@/data/content/awakenings/hero/CatharinaMage";
 
 export const HeroStore = defineStore("hero", () => {
   const heroes = useStorage("HeroStore.heroes", [] as Hero[]);
@@ -44,8 +48,24 @@ export const HeroStore = defineStore("hero", () => {
     });
   }
 
+  function getHero(id: string) {
+    switch(id) {
+      case 'catharina-mage':
+        return new CatharinaMage();
+      case 'sskar':
+        return new Sskar();
+      case 'vacren':
+        return new VacrenWarlord();
+      case 'kellam':
+        return new Kellam();
+      default:
+        throw new Error("Unknown hero: " + id);
+    }
+  }
+
   return {
     heroes,
+    getHero,
     hasInCampaign,
     findInCampaign,
     findAllInCampaign,
