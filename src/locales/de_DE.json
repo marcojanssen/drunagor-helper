@@ -96,7 +96,10 @@
     "add-or-remove-follower": "Gefährten hinzufügen oder entfernen",
     "add-or-remove-stashed-items": "Gelagerte Gegenstände hinzufügen oder entfernen",
     "select-aura": "Aura auswählen",
-    "outcome-info": "Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt ändert sie."
+    "outcome-info": "Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt ändert sie.",
+    "number-of-runes": "Anzahl Runen:",
+    "party-name": "Name der Gruppe:",
+    "no-resources": "Keine Ressourcen"
   },
   "weapon": {
     "core": {

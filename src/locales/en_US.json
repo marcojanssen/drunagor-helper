@@ -96,7 +96,10 @@
     "add-or-remove-follower": "Add or remove follower",
     "add-or-remove-stashed-items": "Add or remove stashed items",
     "select-aura": "Select aura",
-    "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them."
+    "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them.",
+    "number-of-runes": "Number of runes:",
+    "party-name": "Party name:",
+    "no-resources": "No resources"
   },
   "weapon": {
     "core": {
@@ -938,10 +941,10 @@
       "storyrecord": []
     }
   },
-  "auras":{
-    "core":{
-      "campaign":[
-        {   
+  "auras": {
+    "core": {
+      "campaign": [
+        {
           "id": "blessing-of-good-fortune",
           "name": "Blessing of good fortune",
           "effect": "Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also recall 1 AC."
@@ -1045,12 +1048,12 @@
           "id": "well-meaning",
           "name": "Well meaning",
           "effect": "Whenever you use a CLEANSE effect on any Hero, that Hero may also Recall up to one Action Cube."
-         }
-       ],
-       "storyrecord":[]
-      },
-    "apocalypse":{
-      "campaign":[
+        }
+      ],
+      "storyrecord": []
+    },
+    "apocalypse": {
+      "campaign": [
         {
           "id": "brute-force",
           "name": "Brute Force",
@@ -1117,10 +1120,10 @@
           "effect": "Whenever a Monster attacks you: before taking any damage, you gain SHIELD 1."
         }
       ],
-      "storyrecord":[]
+      "storyrecord": []
     },
-    "awakenings":{
-      "campaign":[
+    "awakenings": {
+      "campaign": [
         {
           "id": "ancient-spell",
           "name": "Ancient Spell",
@@ -1282,12 +1285,12 @@
           "effect": "All Ranged Weapon Attack you make and Ranged effects you cast gain +1 RANGE. Then, you may continue to play the Adventure"
         }
       ],
-      "storyrecord":[]
-     }
+      "storyrecord": []
+    }
   },
-  "statuses":{
-    "core":{
-      "campaign":[
+  "statuses": {
+    "core": {
+      "campaign": [
         {
           "id": "a-cooperative-approach",
           "name": "A cooperative approach",
@@ -2193,14 +2196,14 @@
       ]
     }
   },
-  "unfolding":{
-    "core":{
-      "campaign":[],
-      "storyrecord":[]
+  "unfolding": {
+    "core": {
+      "campaign": [],
+      "storyrecord": []
     },
-    "apocalypse":{
-      "campaign":[],
-      "storyrecord":[  
+    "apocalypse": {
+      "campaign": [],
+      "storyrecord": [
         {
           "id": "a-broken-man",
           "name": "A Broken Man",
@@ -2328,15 +2331,15 @@
         }
       ]
     },
-    "awakenings":{
-      "campaign":[],
-      "storyrecord":[] 
+    "awakenings": {
+      "campaign": [],
+      "storyrecord": []
     }
   },
-  "followers":{
-    "core":{
-      "campaign":[],
-      "storyrecord":[]
+  "followers": {
+    "core": {
+      "campaign": [],
+      "storyrecord": []
     },
     "apocalypse": {
       "campaign": [],
