@@ -97,7 +97,10 @@
     "select-aura": "Wybierz aurę",
     "aura-info": "Aura is removed when you receive a trauma cube or another aura.",
     "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them.",
-    "status-info": "Statuses are removed during the camp phase."
+    "status-info": "Statuses are removed during the camp phase.",
+    "number-of-runes": "Number of runes:",
+    "party-name": "Party name:",
+    "no-resources": "No resources"
   },
   "weapon": {
     "core": {
