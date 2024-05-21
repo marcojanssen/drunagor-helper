@@ -7,9 +7,11 @@ describe("status selection", () => {
     it("has multiple statuses available", () => {
       cy.get("#story-record-status").click();
 
-      cy.get("ul#story-record-status-options li").should("have.length", 67);
+      cy.get("ul#story-record-status-options li").should("have.length", 69);
       cy.get("ul#story-record-status-options li")
         .first()
+        .should("have.text", "A Broken Man")
+        .next()
         .should("have.text", "A Hard Bargain")
         .next()
         .should("have.text", "Afterlife Mysteries")
