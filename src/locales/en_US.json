@@ -82,12 +82,13 @@
     "strength": "Strength",
     "devotion": "Devotion",
     "cunning": "Cunning",
-    "nature": "Nature"
+    "nature": "Nature",
+    "resources": "Resources"
   },
   "text": {
     "select-action-cube-color": "Select action cube color",
     "curse-cubes": "Curse Cubes",
-    "trauma-cube": "Trauma Cube",
+    "trauma-cubes": "Trauma Cube",
     "path-of": "Path of",
     "add-or-remove-status": "Add or remove status",
     "add-or-remove-unfolding": "Add or remove unfolding",
@@ -95,7 +96,10 @@
     "add-or-remove-follower": "Add or remove follower",
     "add-or-remove-stashed-items": "Add or remove stashed items",
     "select-aura": "Select aura",
-    "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them."
+    "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them.",
+    "number-of-runes": "Number of runes:",
+    "party-name": "Party name:",
+    "no-resources": "No resources"
   },
   "weapon": {
     "core": {
@@ -937,15 +941,15 @@
       "storyrecord": []
     }
   },
-  "auras":{
-    "core":{
-      "campaign":[
-        {   
+  "auras": {
+    "core": {
+      "campaign": [
+        {
           "id": "blessing-of-good-fortune",
           "name": "Blessing of good fortune",
           "effect": "Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also recall 1 AC."
         },
-        {   
+        {
           "id": "blessing-of-the-guardian",
           "name": "Blessing of the guardian",
           "effect": "Whenever any Hero Expends an AC for any effect other than FATIGUE (as to gain an additional Move Action in a turn, for example) they also gain SHIELD 2."
@@ -1044,12 +1048,12 @@
           "id": "well-meaning",
           "name": "Well meaning",
           "effect": "Whenever you use a CLEANSE effect on any Hero, that Hero may also Recall up to one Action Cube."
-         }
-       ],
-       "storyrecord":[]
-      },
-    "apocalypse":{
-      "campaign":[
+        }
+      ],
+      "storyrecord": []
+    },
+    "apocalypse": {
+      "campaign": [
         {
           "id": "brute-force",
           "name": "Brute Force",
@@ -1116,10 +1120,10 @@
           "effect": "Whenever a Monster attacks you: before taking any damage, you gain SHIELD 1."
         }
       ],
-      "storyrecord":[]
+      "storyrecord": []
     },
-    "awakenings":{
-      "campaign":[
+    "awakenings": {
+      "campaign": [
         {
           "id": "ancient-spell",
           "name": "Ancient Spell",
@@ -1256,7 +1260,7 @@
           "effect": "Whenever your allies in Range 1 are attacked, you may suffer FATIGUE 1 to: COVER target ALLY (if two or more allies are being attacked at the same time, you can Cover only one of them). Covering a Target like this takes no action and is done at Interrupt speed, but is not considered an Interrupt."
         },
         {
-           "id": "throat-slitter",
+          "id": "throat-slitter",
           "name": "Throat Slitter",
           "effect": "Whenever you deliver a Killing Blow: you gain FOCUS 1. This effect can trigger only once per turn."
         },
@@ -1281,12 +1285,12 @@
           "effect": "All Ranged Weapon Attack you make and Ranged effects you cast gain +1 RANGE. Then, you may continue to play the Adventure"
         }
       ],
-      "storyrecord":[]
-     }
+      "storyrecord": []
+    }
   },
-  "statuses":{
-    "core":{
-      "campaign":[
+  "statuses": {
+    "core": {
+      "campaign": [
         {
           "id": "a-cooperative-approach",
           "name": "A cooperative approach",
@@ -1633,577 +1637,573 @@
           "effect": ""
         }
       ],
-      "storyrecord":[]
-     },
-      "apocalypse":{
-        "campaign":[
-            { 
-              "id": "a-strange-rod", 
-              "name": "A Strange Rod", 
-              "effect": "" 
-            },
-            {
-              "id": "bloodlust",
-              "name": "Bloodlust",
-              "effect": "Whenever you defeat a Monster, you receive INSPIRE."
-            },
-            {
-              "id": "bully",
-              "name": "Bully",
-              "effect": "Wwhenever you score a Critical Hit: You gain an INSPIRATION token."
-            },
-            {
-              "id": "chaotic-wheel",
-              "name": "Chaotic Wheel",
-              "effect": "Whenever you cast a Spell attack, roll the D20: If you roll an even number, it deals DOUBLE DAMAGE; If you roll an odd number, the attack fails."
-            },
-            {
-              "id": "crystal-clear",
-              "name": "Crystal Clear",
-              "effect": "If you would draw a Chest card, search the deck for a card of your choice and pick it instead. Shuffle the Chest deck afterwards."
-            },
-            {
-              "id": "disappointed",
-              "name": "Disappointed",
-              "effect": "Whenever you roll 1 on the d20, you score a Critical Hit and then you may RECYCLE."
-            },
-            {
-              "id": "disgusted",
-              "name": "Disgusted",
-              "effect": "Whenever you Search a Chest, draw an additional card, choose one of those cards to keep, and put the other on the bottom of the Chest deck."
-            },
-            {
-              "id": "dismembered",
-              "name": "Dismembered",
-              "effect": "Whenever you take a Recall Action, you suffer STUN. This STUN pierces any kind of immunity you have, since it represents your difficulty in handling your actions after the recent loss of a limb."
-            },
-            { "id": "effort", 
-              "name": "Effort", 
-              "effect": "" 
-            },
-            {
-              "id": "empathetic",
-              "name": "Empathetic",
-              "effect": "Whenever a Hero from their party receives a Curse Cube, they may take it instead (they may choose individually if they receive more than one in a single effect)."
-            },
-            {
-              "id": "exquisite-attunement",
-              "name": "Exquisite Attunement",
-              "effect": "Whenever you take the “Tie-Breaker Special Rule“ Action, you gain both FOCUS 1 and CLEANSE 1 instead of choosing one of them."
-            },
-            {
-              "id": "guess-what",
-              "name": "Guess What",
-              "effect": "At the beginning of each of your turns, you may rearange the Skills being blocked by the Curse Cubes and Trauma Cubes you are holding."
-            },
-            {
-              "id": "heartbroken",
-              "name": "Heartbroken",
-              "effect": "Whenever you or another Hero from your party suffers damage: you gain FURY 1."
-            },
-            {
-              "id": "lash-out",
-              "name": "Lash Out",
-              "effect": "Whenever you roll 1 on the d20, you fail the current Accuracy check or Skill Challenge you are taking and suffer FATIGUE 4. This FATIGUE pierces any kind of immunity your Hero might have."
-            },
-            {
-              "id": "orcish-perseverance",
-              "name": "Orcish Perseverance",
-              "effect": "You can hold one additional Trauma Cube."
-            },
-            {
-              "id": "possession",
-              "name": "Possession",
-              "effect": "Whenever you move the third space in a turn, you must make an Agility (green) Skill Challenge of Difficulty 11. Each Agility cube you have gives you a +2 bonus to your roll. If you fail, you suffer KNOCK DOWN. If you succed, you gain EMPOWER instead."
-            },
-            {
-              "id": "queen-slayer",
-              "name": "Queen Slayer",
-              "effect": "Whenever you take a Willing or Unwilling Recall Action, the next Weapon or Spell attack you make this turn does not require an Accuracy check and is considered a Critical Hit."
-            },
-            {
-              "id": "scornful",
-              "name": "Scornful",
-              "effect": "If you would suffer only 1 point of damage from an Attack, you suffer no damage instead."
-            },
-            {
-              "id": "second-thoughts",
-              "name": "Second Thoughts",
-              "effect": "At the beginning of your turn, you may recall one AC spent in one of your Hero or Role Skills. If you do, you must place a different AC in one of your available Skills; This effect does not activate any of your Skills."
-            },
-            {
-              "id": "shielded-mind",
-              "name": "Shielded Mind",
-              "effect": "You and every Hero within Range 1 of you are immune to INTIMIDATE. Also, whenever a Character tries to cast an INTIMIDATE effect against you or any other Hero within Range 1 of you, the target of that INTIMIDATE effect receives INSPIRE instead."
-            },
-            {
-              "id": "veteran-s-sorrow",
-              "name": "Veteran's Sorrow",
-              "effect": "Whenever you miss a Weapon attack, you may: SELF, CURSE 1. If you do, the attack hits instead."
-            }
-        ],
-        "storyrecord":[
-            { 
-              "id": "a-broken-man", 
-              "name": "A Broken Man", 
-              "effect": "" 
-            },
-            { 
-              "id": "a-hard-bargain", 
-              "name": "A Hard Bargain", 
-              "effect": "" 
-            },
-            {
-              "id": "afterlife-mysteries",
-              "name": "Afterlife Mysteries",
-              "effect": "Whenever any Hero scores a Critical Hit, they may Recall up to one AC."
-            },
-            {
-              "id": "aftermath",
-              "name": "Aftermath",
-              "effect": "Whenever a Hero from your party takes a Recall Action, after resolving it, they receive CLEANSE 1 or FOCUS 1."
-            },
-            {
-              "id": "aggressive-negotiations",
-              "name": "Aggressive Negotiations",
-              "effect": ""
-            },
-            { 
-              "id": "anchor-locked", 
-              "name": "Anchor Locked", 
-              "effect": "" 
-            },
-            { 
-              "id": "anchor-sunk", 
-              "name": "Anchor Sunk", 
-              "effect": "" 
-            },
-            {
-              "id": "anger-management",
-              "name": "Anger Management",
-              "effect": "Whenever a Hero suffers damage from an Attack card, they gain INSPIRE."
-            },
-            {
-              "id": "angered-entrepreneur",
-              "name": "Angered Entrepreneur",
-              "effect": "Whenever a Hero rolls 16+: Activate Carmilla Reinard. This Ability can trigger only once per turn."
-            },
-            {
-              "id": "back-to-back",
-              "name": "Back-to-Back",
-              "effect": "All Heroes in your party gain the WARDEN trait."
-            },
-            { 
-              "id": "bad-hosting", 
-              "name": "Bad Hosting", 
-              "effect": "" 
-            },
-            {
-              "id": "betrayed1",
-              "name": "Betrayed (Condottieri)",
-              "effect": "Whenever a Hero defeats a Condottieri, they gain either FOCUS 2 or CLEANSE 2."
-            },
-            {
-              "id": "betrayed2",
-              "name": "Betrayed (Dunedancer)",
-              "effect": "Whenever a Hero defeats a Dunedancer, they gain either FOCUS 2 or CLEANSE 2."
-            },            
-            {
-              "id": "bloody-mess",
-              "name": "Bloody Mess",
-              "effect": "Whenever a Hero drops to 0 Health, each other Hero suffers CURSE 1."
-            },
-            {
-              "id": "bricklayer-s-assistant",
-              "name": "Bricklayer's Assistant",
-              "effect": ""
-            },
-            { 
-              "id": "broken-man", 
-              "name": "Broken Man", 
-              "effect": "" 
-            },
-            {
-              "id": "clean-conscience",
-              "name": "Clean Conscience",
-              "effect": "At the beginning of each Hero's turn, if they are holding no Curse Cubes, they receive INSPIRE."
-            },
-            {
-              "id": "compassion",
-              "name": "Compassion",
-              "effect": "Heroes do not roll the Trap Die when opening Chests."
-            },
-            {
-              "id": "contempt",
-              "name": "Contempt",
-              "effect": "Whenever a Hero inflicts damage to the Plague Horseman with a Weapon or Spell attack, they gain CLEANSE 1."
-            },
-            { 
-              "id": "damsel-in-distress", 
-              "name": "Damsel in Distress", 
-              "effect": "" 
-            },
-            { 
-              "id": "declawed-beast", 
-              "name": "Declawed Beast", 
-              "effect": "" 
-            },
-            {
-              "id": "deep-understanding",
-              "name": "Deep Understanding",
-              "effect": "Whenever a Hero takes a Willing Recall Action, they may immediately take an additional Cube Action before ending their turn."
-            },
-            {
-              "id": "desert-knight",
-              "name": "Desert Knight",
-              "effect": "Whenever a Hero defeats a Condottieri, they gain either FOCUS 2 or CLEANSE 2."
-            },
-            { 
-              "id": "disarmed-father", 
-              "name": "Disarmed Father", 
-              "effect": "" 
-            },
-            {
-              "id": "downer",
-              "name": "Downer",
-              "effect": "Critical Hits no longer double the damage of an attack."
-            },
-            { 
-              "id": "drowned-prayer", 
-              "name": "Drowned Prayer", 
-              "effect": ""
-            },
-            { 
-              "id": "element-collection", 
-              "name": "Element Collection", 
-              "effect": "" 
-            },
-            { 
-              "id": "even-number", 
-              "name": "Even Number", 
-              "effect": "" 
-            },
-            { 
-              "id": "frozen-to-death", 
-              "name": "Frozen to Death", 
-              "effect": "" 
-            },
-            {
-              "id": "ghostly-plunder",
-              "name": "Ghostly Plunder",
-              "effect": "As a Cube Action, a Hero may Expend 1 AC to: If there are three or fewer Chests on the board, place a Chest in a square that is adjacent to them."
-            },
-            { 
-              "id": "give-or-take", 
-              "name": "Give or Take", 
-              "effect": "" 
-            },
-            { 
-              "id": "glyph-unraveled", 
-              "name": "Glyph Unraveled", 
-              "effect": "" 
-            },
-            {
-              "id": "gold-digger",
-              "name": "Gold Digger",
-              "effect": "Whenever a Monster is defeated for the first time in a round, it drops a Loot token."
-            },
-            {
-              "id": "head-start",
-              "name": "Head Start",
-              "effect": "Heroes can take the following Reaction by Expending 1 AC: \"SELF, PREVENT ALL DMG AND FATIGUE Y where Y is the number of Time tokens on the Famine Horseman's Boss Monster Status Board; Then the Famine Horseman receives a Time token (this is just a reminder, not a Condition or Resource).\""
-            },
-            { 
-              "id": "healed-wound", 
-              "name": "Healed Wound", 
-              "effect": "" 
-            },
-            { 
-              "id": "heirloom-blade", 
-              "name": "Heirloom Blade", 
-              "effect": "" 
-            },
-            {
-              "id": "herosplaining",
-              "name": "Herosplaining",
-              "effect": "Whenever a Hero rolls 1 on the d20 while attacking, they score a Critical Hit instead of a Critical Failure."
-            },
-            {
-              "id": "improvisation-time",
-              "name": "Improvisation Time",
-              "effect": "Wwhenever a Hero defeats a Minion, they gain either FOCUS 1 or CLEANSE 1."
-            },
-            {
-              "id": "initiative",
-              "name": "Initiative",
-              "effect": "Whenever a Hero from your party takes a Reaction, roll the 20: If they roll 16+: Recall the AC they just spent."
-            },
-            {
-              "id": "it-takes-two",
-              "name": "It Takes Two",
-              "effect": "The Cohort Robin Rising activates two times during each of his turns."
-            },
-            { 
-              "id": "lever-pushed", 
-              "name": "Lever Pushed", 
-              "effect": "" 
-            },
-            { 
-              "id": "lifesaver", 
-              "name": "Lifesaver", 
-              "effect": "" 
-            },
-            {
-              "id": "luccanor-s-revenge",
-              "name": "Luccanor's Revenge",
-              "effect": "Whenever a Hero inflicts damage to the Commander Betrayer with a Weapon or Spell attack, they gain FOCUS 1."
-            },
-            { 
-              "id": "no-maiden-fair", 
-              "name": "No Maiden Fair", 
-              "effect": "" 
-            },
-            {
-              "id": "obstinate",
-              "name": "Obstinate",
-              "effect": "Whenever a Hero takes a Willing Recall Action, they may immediately take a Cube Action before ending their turn."
-            },
-            { 
-              "id": "odd-number", 
-              "name": "Odd Number", 
-              "effect": "" 
-            },
-            {
-              "id": "past-life-hauntings",
-              "name": "Past-Life Hauntings",
-              "effect": "If the Scenario Commanders Lorennor or Uldannor receive a HEAL effect, they will take that same amount of non-preventable damage instead of regaining Health. Similarly, if they receive CLEANSE, they suffer INTIMIDATE 4 instead of removing a Curse Cube."
-            },
-            { 
-              "id": "perimeter-kept", 
-              "name": "Perimeter Kept", 
-              "effect": "" 
-            },
-            {
-              "id": "pirate-s-luck",
-              "name": "Pirate's Luck",
-              "effect": "Whenever the first Monster is defeated on each new Setup your party makes, replace its miniature with a Loot token. If that Monster is a Large Monster, Commander, or Overlord, replace it with two of these tokens instead"
-            },
-            {
-              "id": "post-traumatic-stress",
-              "name": "Post-Traumatic Stress",
-              "effect": "Whenever a Hero is Knocked Out, each other Hero in your party gains FOCUS 1 and suffers CURSE 1. This effect pierces any kind of immunity a Hero might have."
-            },
-            { 
-              "id": "questioning", 
-              "name": "Questioning", 
-              "effect": "" 
-            },
-            { 
-              "id": "removed-helmet", 
-              "name": "Removed Helmet", 
-              "effect": "" 
-            },
-            { 
-              "id": "removed-necklace", 
-              "name": "Removed Necklace", 
-              "effect": "" 
-            },
-            { 
-              "id": "removed-shield", 
-              "name": "Removed Shield", 
-              "effect": "" 
-            },
-            {
-              "id": "righteous",
-              "name": "Righteous",
-              "effect": "Heroes from your party can hold one additional Trauma Cube."
-            },
-            { 
-              "id": "royal-outrage", 
-              "name": "Royal Outrage", 
-              "effect": "" 
-            },
-            { 
-              "id": "sealed-fate", 
-              "name": "Sealed Fate", 
-              "effect": "" 
-            },
-            { 
-              "id": "ship-s-on", 
-              "name": "Ship's On", 
-              "effect": "" 
-            },
-            {
-              "id": "suspicious",
-              "name": "Suspicious",
-              "effect": "Heroes that are being threatened can take one additional Reaction against their threats."
-            },
-            {
-              "id": "swallowed-pride",
-              "name": "Swallowed Pride",
-              "effect": "Whenever a Hero scores a Crit, that Hero also gains FOCUS 2."
-            },
-            { 
-              "id": "terrible-fate", 
-              "name": "Terrible Fate", 
-              "effect": "" 
-            },
-            { 
-              "id": "the-heirloom-blade", 
-              "name": "The Heirloom Blade", 
-              "effect": "" 
-            },
-            { 
-              "id": "thy-kingdom-come", 
-              "name": "Thy Kingdom Come", 
-              "effect": "" 
-            },
-            { 
-              "id": "two-words", 
-              "name": "Two Words", 
-              "effect": "" 
-            },
-            {
-              "id": "umbralian-knight",
-              "name": "Umbralian Knight",
-              "effect": "Whenever a Hero defeats a Dunedancer, they gain either FOCUS 2 or CLEANSE 2."
-            },
-            {
-              "id": "until-the-end",
-              "name": "Until the End",
-              "effect": "Whenever a Hero takes the Tie Breaker Special Mechanic action, the War Horsewoman loses 2 Health per Rune removed."
-            },
-            {
-              "id": "varatash-terror",
-              "name": "Varatash Terror",
-              "effect": "At the beginning of each Hero's turn, they gain: SELF, INSPIRE."
-            },
-            {
-              "id": "weak-spot",
-              "name": "Weak Spot",
-              "effect": "Whenever any Hero hits the Famine Horseman with a Weapon attack or a Critical Hit, they choose one of his Attack cards to receive INTIMIDATE 2 (up to a maximum of 4 per card). The next time that card is activated, remove all of these tokens from it. The activated Attack deals -1 damage per token removed this way."
-            },
-            {
-              "id": "well-fed",
-              "name": "Well Fed",
-              "effect": "Heroes receive only two Curse Cubes as a penalty when taking a Recall Action."
-            }
-        ]
-      },
-      "awakenings":{
-        "campaign":[
-            {
-              "id": "acquaintance",
-              "name": "Acquaintance",
-              "effect": ""
-            },
-            {
-              "id": "better-judgment",
-              "name": "Better Judgment",
-              "effect": "Once per turn, after you miss with a Weapon Attack made from a Skill, you may Recall the cube you just spent to use that Skill."
-            },
-            {
-              "id": "corrupt-power",
-              "name": "Corrupt Power",
-              "effect": "Heroes may never have fewer than 2 Curse Cubes in their boards and, once per turn, they may roll the d20 if they disliked a move’s outcome."
-            },
-            {
-              "id": "haunted",
-              "name": "Haunted",
-              "effect": "Whenever you roll 1 on the d20 while attacking, if an Ally is in that attack's Range, they are hit by it instead of a Monster (this happens even if you have abilities that turn 1 rolls into hits or critical hits)."
-            },
-            {
-              "id": "lifesaver",
-              "name": "Lifesaver",
-              "effect": "As a Cube Action, you may Expend 1 Action Cube to take 2 Curse Cubes (taking a Curse Cube is different from suffering CURSE) and remove a Trauma Cube from a Knocked Out Hero who is adjacent to you. If that Hero has already Regained their Breath, you can't remove their Trauma Cube in this way."
-            },
-            {
-              "id": "power-of-hate",
-              "name": "Power of Hate",
-              "effect": "Heroes can take 1 additional Cube Action on their turns."
-            },
-            {
-              "id": "shadow-crown",
-              "name": "Shadow Crown",
-              "effect": "Heroes are not affected by Darkness (they suffer neither the damage nor the penalties)."
-            },
-            {
-              "id": "soft-heart",
-              "name": "Soft Heart",
-              "effect": "While there is another Hero adjacent to you, that Hero will receive the benefits of the \"Dour\" Aura (the Aura benefits will only apply while you are still adjacent to them)."
-            },
-            {
-              "id": "sweet-scent",
-               "name": "Sweet Scent",
-               "effect": "Minions are bewitched by its pleasant smell and are unable to attack you (they don't consider you as a target) and the Wild Boar that roams the island (if still alive) will no longer try to escape. Instead, it will move towards you, trying to stay adjacent to you."
-            }                
-          ],
-          "storyrecord":[
-            { "id": "acquaintance", "name": "Acquaintance", "effect": "" },
-            { "id": "acquainted", "name": "Acquainted", "effect": "" },
-            { "id": "bright-pupil", "name": "Bright Pupil", "effect": "" },
-            { "id": "careful", "name": "Careful", "effect": "" },
-            {
-              "id": "christi-s-aid",
-              "name": "Christi's Aid",
-              "effect": "Whenever a Hero in your party takes a Recall Action, that Hero gains an Inspiration token"
-            },
-            { "id": "dark-past", "name": "Dark Past", "effect": "" },
-            { "id": "guided", "name": "Guided", "effect": "" },
-            { "id": "heirloom", "name": "Heirloom", "effect": "" },
-            { "id": "imminent-danger", "name": "Imminent Danger", "effect": "" },
-            { "id": "karsten-freed", "name": "Karsten Freed", "effect": "" },
-            { "id": "king-s-cause", "name": "King's Cause", "effect": "" },
-            { "id": "loose-arm", "name": "Loose Arm", "effect": "" },
-            { "id": "nautical-empathy", "name": "Nautical Empathy", "effect": "" },
-            { "id": "painful-memories", "name": "Painful Memories", "effect": "" },
-            { "id": "pirate-s-gift", "name": "Pirate's Gift", "effect": "" },
-            { "id": "pushover", "name": "Pushover", "effect": "" },
-            { "id": "remorse", "name": "Remorse", "effect": "" },
-            {
-              "id": "salamander-s-sweat",
-              "name": "Salamander's Sweat",
-              "effect": "Whenever a Hero rolls 16+ during an attack with a Weapon Attack or they cast a Spell Attack: the attack gains BURN 2."
-            },
-            {
-             "id": "sea-fighter",
-             "name": "Sea Fighter",
-             "effect":
-              "At the end of the Rune turn, after the Rune card effects are resolved, each Hero may take a SIDESTEP. A SIDESTEP is a MOVE 1 effect that is not affected by any movement bonuses or penalties you might have. In addition, it can be taken even if you are SLOWED or KNOCKED DOWN, however, these Conditions are not removed."
-            },
-            {
-              "id": "search-party",
-              "name": "Search Party",
-              "effect": "Whenever a Hero in your party draws an Eradren Surprises Special Event card, that Hero gains FOCUS 2"
-            },
-            { "id": "sunken-relic", "name": "Sunken Relic", "effect": "" },
-            {
-              "id": "suspicious",
-              "name": "Suspicious",
-              "effect": "Whenever a Hero Search a Chest, they draw an additional card, choose one of those cards to keep, and put the other on the bottom of the Chest deck."
-            },
-            {
-              "id": "the-x-mark-the-spot",
-              "name": "The X Mark the Spot",
-              "effect": "Whenever a Hero delivers the killing blow through a Critical Hit, the defeated Monster drops a Loot token on its space."
-            },
-            {
-              "id": "turn-around",
-              "name": "Turn Around",
-              "effect": "Any Weapon Attack bonus to HIT your Attacks would have or receive becomes DMG bonus instead. Example: Vorn's Arching Swing reads: “CLEAVE 2, +3 HIT”; therefore, it becomes: “CLEAVE 2, +0 HIT, +3 DMG”. Any HIT bonus your Hero has from Equipment, Class Abilities, or Special Effects also turns into bonus damage."
-            },
-            { "id": "wrong-foot", "name": "Wrong Foot", "effect": "" }
-          ]
-      }
-  },
-  "unfolding":{
-    "core":{
-      "campaign":[],
-      "storyrecord":[]
+      "storyrecord": []
     },
-    "apocalypse":{
-      "campaign":[],
-      "storyrecord":[  
+    "apocalypse": {
+      "campaign": [
+        {
+          "id": "a-strange-rod",
+          "name": "A Strange Rod",
+          "effect": ""
+        },
+        {
+          "id": "bloodlust",
+          "name": "Bloodlust",
+          "effect": "Whenever you defeat a Monster, you receive INSPIRE."
+        },
+        {
+          "id": "bully",
+          "name": "Bully",
+          "effect": "Wwhenever you score a Critical Hit: You gain an INSPIRATION token."
+        },
+        {
+          "id": "chaotic-wheel",
+          "name": "Chaotic Wheel",
+          "effect": "Whenever you cast a Spell attack, roll the D20: If you roll an even number, it deals DOUBLE DAMAGE; If you roll an odd number, the attack fails."
+        },
+        {
+          "id": "crystal-clear",
+          "name": "Crystal Clear",
+          "effect": "If you would draw a Chest card, search the deck for a card of your choice and pick it instead. Shuffle the Chest deck afterwards."
+        },
+        {
+          "id": "disappointed",
+          "name": "Disappointed",
+          "effect": "Whenever you roll 1 on the d20, you score a Critical Hit and then you may RECYCLE."
+        },
+        {
+          "id": "disgusted",
+          "name": "Disgusted",
+          "effect": "Whenever you Search a Chest, draw an additional card, choose one of those cards to keep, and put the other on the bottom of the Chest deck."
+        },
+        {
+          "id": "dismembered",
+          "name": "Dismembered",
+          "effect": "Whenever you take a Recall Action, you suffer STUN. This STUN pierces any kind of immunity you have, since it represents your difficulty in handling your actions after the recent loss of a limb."
+        },
+        { "id": "effort", "name": "Effort", "effect": "" },
+        {
+          "id": "empathetic",
+          "name": "Empathetic",
+          "effect": "Whenever a Hero from their party receives a Curse Cube, they may take it instead (they may choose individually if they receive more than one in a single effect)."
+        },
+        {
+          "id": "exquisite-attunement",
+          "name": "Exquisite Attunement",
+          "effect": "Whenever you take the “Tie-Breaker Special Rule“ Action, you gain both FOCUS 1 and CLEANSE 1 instead of choosing one of them."
+        },
+        {
+          "id": "guess-what",
+          "name": "Guess What",
+          "effect": "At the beginning of each of your turns, you may rearange the Skills being blocked by the Curse Cubes and Trauma Cubes you are holding."
+        },
+        {
+          "id": "heartbroken",
+          "name": "Heartbroken",
+          "effect": "Whenever you or another Hero from your party suffers damage: you gain FURY 1."
+        },
+        {
+          "id": "lash-out",
+          "name": "Lash Out",
+          "effect": "Whenever you roll 1 on the d20, you fail the current Accuracy check or Skill Challenge you are taking and suffer FATIGUE 4. This FATIGUE pierces any kind of immunity your Hero might have."
+        },
+        {
+          "id": "orcish-perseverance",
+          "name": "Orcish Perseverance",
+          "effect": "You can hold one additional Trauma Cube."
+        },
+        {
+          "id": "possession",
+          "name": "Possession",
+          "effect": "Whenever you move the third space in a turn, you must make an Agility (green) Skill Challenge of Difficulty 11. Each Agility cube you have gives you a +2 bonus to your roll. If you fail, you suffer KNOCK DOWN. If you succed, you gain EMPOWER instead."
+        },
+        {
+          "id": "queen-slayer",
+          "name": "Queen Slayer",
+          "effect": "Whenever you take a Willing or Unwilling Recall Action, the next Weapon or Spell attack you make this turn does not require an Accuracy check and is considered a Critical Hit."
+        },
+        {
+          "id": "scornful",
+          "name": "Scornful",
+          "effect": "If you would suffer only 1 point of damage from an Attack, you suffer no damage instead."
+        },
+        {
+          "id": "second-thoughts",
+          "name": "Second Thoughts",
+          "effect": "At the beginning of your turn, you may recall one AC spent in one of your Hero or Role Skills. If you do, you must place a different AC in one of your available Skills; This effect does not activate any of your Skills."
+        },
+        {
+          "id": "shielded-mind",
+          "name": "Shielded Mind",
+          "effect": "You and every Hero within Range 1 of you are immune to INTIMIDATE. Also, whenever a Character tries to cast an INTIMIDATE effect against you or any other Hero within Range 1 of you, the target of that INTIMIDATE effect receives INSPIRE instead."
+        },
+        {
+          "id": "veteran-s-sorrow",
+          "name": "Veteran's Sorrow",
+          "effect": "Whenever you miss a Weapon attack, you may: SELF, CURSE 1. If you do, the attack hits instead."
+        }
+      ],
+      "storyrecord": [
+        {
+          "id": "a-broken-man",
+          "name": "A Broken Man",
+          "effect": ""
+        },
+        {
+          "id": "a-hard-bargain",
+          "name": "A Hard Bargain",
+          "effect": ""
+        },
+        {
+          "id": "afterlife-mysteries",
+          "name": "Afterlife Mysteries",
+          "effect": "Whenever any Hero scores a Critical Hit, they may Recall up to one AC."
+        },
+        {
+          "id": "aftermath",
+          "name": "Aftermath",
+          "effect": "Whenever a Hero from your party takes a Recall Action, after resolving it, they receive CLEANSE 1 or FOCUS 1."
+        },
+        {
+          "id": "aggressive-negotiations",
+          "name": "Aggressive Negotiations",
+          "effect": ""
+        },
+        {
+          "id": "anchor-locked",
+          "name": "Anchor Locked",
+          "effect": ""
+        },
+        {
+          "id": "anchor-sunk",
+          "name": "Anchor Sunk",
+          "effect": ""
+        },
+        {
+          "id": "anger-management",
+          "name": "Anger Management",
+          "effect": "Whenever a Hero suffers damage from an Attack card, they gain INSPIRE."
+        },
+        {
+          "id": "angered-entrepreneur",
+          "name": "Angered Entrepreneur",
+          "effect": "Whenever a Hero rolls 16+: Activate Carmilla Reinard. This Ability can trigger only once per turn."
+        },
+        {
+          "id": "back-to-back",
+          "name": "Back-to-Back",
+          "effect": "All Heroes in your party gain the WARDEN trait."
+        },
+        {
+          "id": "bad-hosting",
+          "name": "Bad Hosting",
+          "effect": ""
+        },
+        {
+          "id": "betrayed1",
+          "name": "Betrayed (Condottieri)",
+          "effect": "Whenever a Hero defeats a Condottieri, they gain either FOCUS 2 or CLEANSE 2."
+        },
+        {
+          "id": "betrayed2",
+          "name": "Betrayed (Dunedancer)",
+          "effect": "Whenever a Hero defeats a Dunedancer, they gain either FOCUS 2 or CLEANSE 2."
+        },
+        {
+          "id": "bloody-mess",
+          "name": "Bloody Mess",
+          "effect": "Whenever a Hero drops to 0 Health, each other Hero suffers CURSE 1."
+        },
+        {
+          "id": "bricklayer-s-assistant",
+          "name": "Bricklayer's Assistant",
+          "effect": ""
+        },
+        {
+          "id": "broken-man",
+          "name": "Broken Man",
+          "effect": ""
+        },
+        {
+          "id": "clean-conscience",
+          "name": "Clean Conscience",
+          "effect": "At the beginning of each Hero's turn, if they are holding no Curse Cubes, they receive INSPIRE."
+        },
+        {
+          "id": "compassion",
+          "name": "Compassion",
+          "effect": "Heroes do not roll the Trap Die when opening Chests."
+        },
+        {
+          "id": "contempt",
+          "name": "Contempt",
+          "effect": "Whenever a Hero inflicts damage to the Plague Horseman with a Weapon or Spell attack, they gain CLEANSE 1."
+        },
+        {
+          "id": "damsel-in-distress",
+          "name": "Damsel in Distress",
+          "effect": ""
+        },
+        {
+          "id": "declawed-beast",
+          "name": "Declawed Beast",
+          "effect": ""
+        },
+        {
+          "id": "deep-understanding",
+          "name": "Deep Understanding",
+          "effect": "Whenever a Hero takes a Willing Recall Action, they may immediately take an additional Cube Action before ending their turn."
+        },
+        {
+          "id": "desert-knight",
+          "name": "Desert Knight",
+          "effect": "Whenever a Hero defeats a Condottieri, they gain either FOCUS 2 or CLEANSE 2."
+        },
+        {
+          "id": "disarmed-father",
+          "name": "Disarmed Father",
+          "effect": ""
+        },
+        {
+          "id": "downer",
+          "name": "Downer",
+          "effect": "Critical Hits no longer double the damage of an attack."
+        },
+        {
+          "id": "drowned-prayer",
+          "name": "Drowned Prayer",
+          "effect": ""
+        },
+        {
+          "id": "element-collection",
+          "name": "Element Collection",
+          "effect": ""
+        },
+        {
+          "id": "even-number",
+          "name": "Even Number",
+          "effect": ""
+        },
+        {
+          "id": "frozen-to-death",
+          "name": "Frozen to Death",
+          "effect": ""
+        },
+        {
+          "id": "ghostly-plunder",
+          "name": "Ghostly Plunder",
+          "effect": "As a Cube Action, a Hero may Expend 1 AC to: If there are three or fewer Chests on the board, place a Chest in a square that is adjacent to them."
+        },
+        {
+          "id": "give-or-take",
+          "name": "Give or Take",
+          "effect": ""
+        },
+        {
+          "id": "glyph-unraveled",
+          "name": "Glyph Unraveled",
+          "effect": ""
+        },
+        {
+          "id": "gold-digger",
+          "name": "Gold Digger",
+          "effect": "Whenever a Monster is defeated for the first time in a round, it drops a Loot token."
+        },
+        {
+          "id": "head-start",
+          "name": "Head Start",
+          "effect": "Heroes can take the following Reaction by Expending 1 AC: \"SELF, PREVENT ALL DMG AND FATIGUE Y where Y is the number of Time tokens on the Famine Horseman's Boss Monster Status Board; Then the Famine Horseman receives a Time token (this is just a reminder, not a Condition or Resource).\""
+        },
+        {
+          "id": "healed-wound",
+          "name": "Healed Wound",
+          "effect": ""
+        },
+        {
+          "id": "heirloom-blade",
+          "name": "Heirloom Blade",
+          "effect": ""
+        },
+        {
+          "id": "herosplaining",
+          "name": "Herosplaining",
+          "effect": "Whenever a Hero rolls 1 on the d20 while attacking, they score a Critical Hit instead of a Critical Failure."
+        },
+        {
+          "id": "improvisation-time",
+          "name": "Improvisation Time",
+          "effect": "Wwhenever a Hero defeats a Minion, they gain either FOCUS 1 or CLEANSE 1."
+        },
+        {
+          "id": "initiative",
+          "name": "Initiative",
+          "effect": "Whenever a Hero from your party takes a Reaction, roll the 20: If they roll 16+: Recall the AC they just spent."
+        },
+        {
+          "id": "it-takes-two",
+          "name": "It Takes Two",
+          "effect": "The Cohort Robin Rising activates two times during each of his turns."
+        },
+        {
+          "id": "lever-pushed",
+          "name": "Lever Pushed",
+          "effect": ""
+        },
+        {
+          "id": "lifesaver",
+          "name": "Lifesaver",
+          "effect": ""
+        },
+        {
+          "id": "luccanor-s-revenge",
+          "name": "Luccanor's Revenge",
+          "effect": "Whenever a Hero inflicts damage to the Commander Betrayer with a Weapon or Spell attack, they gain FOCUS 1."
+        },
+        {
+          "id": "no-maiden-fair",
+          "name": "No Maiden Fair",
+          "effect": ""
+        },
+        {
+          "id": "obstinate",
+          "name": "Obstinate",
+          "effect": "Whenever a Hero takes a Willing Recall Action, they may immediately take a Cube Action before ending their turn."
+        },
+        {
+          "id": "odd-number",
+          "name": "Odd Number",
+          "effect": ""
+        },
+        {
+          "id": "past-life-hauntings",
+          "name": "Past-Life Hauntings",
+          "effect": "If the Scenario Commanders Lorennor or Uldannor receive a HEAL effect, they will take that same amount of non-preventable damage instead of regaining Health. Similarly, if they receive CLEANSE, they suffer INTIMIDATE 4 instead of removing a Curse Cube."
+        },
+        {
+          "id": "perimeter-kept",
+          "name": "Perimeter Kept",
+          "effect": ""
+        },
+        {
+          "id": "pirate-s-luck",
+          "name": "Pirate's Luck",
+          "effect": "Whenever the first Monster is defeated on each new Setup your party makes, replace its miniature with a Loot token. If that Monster is a Large Monster, Commander, or Overlord, replace it with two of these tokens instead"
+        },
+        {
+          "id": "post-traumatic-stress",
+          "name": "Post-Traumatic Stress",
+          "effect": "Whenever a Hero is Knocked Out, each other Hero in your party gains FOCUS 1 and suffers CURSE 1. This effect pierces any kind of immunity a Hero might have."
+        },
+        {
+          "id": "questioning",
+          "name": "Questioning",
+          "effect": ""
+        },
+        {
+          "id": "removed-helmet",
+          "name": "Removed Helmet",
+          "effect": ""
+        },
+        {
+          "id": "removed-necklace",
+          "name": "Removed Necklace",
+          "effect": ""
+        },
+        {
+          "id": "removed-shield",
+          "name": "Removed Shield",
+          "effect": ""
+        },
+        {
+          "id": "righteous",
+          "name": "Righteous",
+          "effect": "Heroes from your party can hold one additional Trauma Cube."
+        },
+        {
+          "id": "royal-outrage",
+          "name": "Royal Outrage",
+          "effect": ""
+        },
+        {
+          "id": "sealed-fate",
+          "name": "Sealed Fate",
+          "effect": ""
+        },
+        {
+          "id": "ship-s-on",
+          "name": "Ship's On",
+          "effect": ""
+        },
+        {
+          "id": "suspicious",
+          "name": "Suspicious",
+          "effect": "Heroes that are being threatened can take one additional Reaction against their threats."
+        },
+        {
+          "id": "swallowed-pride",
+          "name": "Swallowed Pride",
+          "effect": "Whenever a Hero scores a Crit, that Hero also gains FOCUS 2."
+        },
+        {
+          "id": "terrible-fate",
+          "name": "Terrible Fate",
+          "effect": ""
+        },
+        {
+          "id": "the-heirloom-blade",
+          "name": "The Heirloom Blade",
+          "effect": ""
+        },
+        {
+          "id": "thy-kingdom-come",
+          "name": "Thy Kingdom Come",
+          "effect": ""
+        },
+        {
+          "id": "two-words",
+          "name": "Two Words",
+          "effect": ""
+        },
+        {
+          "id": "umbralian-knight",
+          "name": "Umbralian Knight",
+          "effect": "Whenever a Hero defeats a Dunedancer, they gain either FOCUS 2 or CLEANSE 2."
+        },
+        {
+          "id": "until-the-end",
+          "name": "Until the End",
+          "effect": "Whenever a Hero takes the Tie Breaker Special Mechanic action, the War Horsewoman loses 2 Health per Rune removed."
+        },
+        {
+          "id": "varatash-terror",
+          "name": "Varatash Terror",
+          "effect": "At the beginning of each Hero's turn, they gain: SELF, INSPIRE."
+        },
+        {
+          "id": "weak-spot",
+          "name": "Weak Spot",
+          "effect": "Whenever any Hero hits the Famine Horseman with a Weapon attack or a Critical Hit, they choose one of his Attack cards to receive INTIMIDATE 2 (up to a maximum of 4 per card). The next time that card is activated, remove all of these tokens from it. The activated Attack deals -1 damage per token removed this way."
+        },
+        {
+          "id": "well-fed",
+          "name": "Well Fed",
+          "effect": "Heroes receive only two Curse Cubes as a penalty when taking a Recall Action."
+        }
+      ]
+    },
+    "awakenings": {
+      "campaign": [
+        {
+          "id": "acquaintance",
+          "name": "Acquaintance",
+          "effect": ""
+        },
+        {
+          "id": "better-judgment",
+          "name": "Better Judgment",
+          "effect": "Once per turn, after you miss with a Weapon Attack made from a Skill, you may Recall the cube you just spent to use that Skill."
+        },
+        {
+          "id": "corrupt-power",
+          "name": "Corrupt Power",
+          "effect": "Heroes may never have fewer than 2 Curse Cubes in their boards and, once per turn, they may roll the d20 if they disliked a move’s outcome."
+        },
+        {
+          "id": "haunted",
+          "name": "Haunted",
+          "effect": "Whenever you roll 1 on the d20 while attacking, if an Ally is in that attack's Range, they are hit by it instead of a Monster (this happens even if you have abilities that turn 1 rolls into hits or critical hits)."
+        },
+        {
+          "id": "lifesaver",
+          "name": "Lifesaver",
+          "effect": "As a Cube Action, you may Expend 1 Action Cube to take 2 Curse Cubes (taking a Curse Cube is different from suffering CURSE) and remove a Trauma Cube from a Knocked Out Hero who is adjacent to you. If that Hero has already Regained their Breath, you can't remove their Trauma Cube in this way."
+        },
+        {
+          "id": "power-of-hate",
+          "name": "Power of Hate",
+          "effect": "Heroes can take 1 additional Cube Action on their turns."
+        },
+        {
+          "id": "shadow-crown",
+          "name": "Shadow Crown",
+          "effect": "Heroes are not affected by Darkness (they suffer neither the damage nor the penalties)."
+        },
+        {
+          "id": "soft-heart",
+          "name": "Soft Heart",
+          "effect": "While there is another Hero adjacent to you, that Hero will receive the benefits of the \"Dour\" Aura (the Aura benefits will only apply while you are still adjacent to them)."
+        },
+        {
+          "id": "sweet-scent",
+          "name": "Sweet Scent",
+          "effect": "Minions are bewitched by its pleasant smell and are unable to attack you (they don't consider you as a target) and the Wild Boar that roams the island (if still alive) will no longer try to escape. Instead, it will move towards you, trying to stay adjacent to you."
+        }
+      ],
+      "storyrecord": [
+        { "id": "acquaintance", "name": "Acquaintance", "effect": "" },
+        { "id": "acquainted", "name": "Acquainted", "effect": "" },
+        { "id": "bright-pupil", "name": "Bright Pupil", "effect": "" },
+        { "id": "careful", "name": "Careful", "effect": "" },
+        {
+          "id": "christi-s-aid",
+          "name": "Christi's Aid",
+          "effect": "Whenever a Hero in your party takes a Recall Action, that Hero gains an Inspiration token"
+        },
+        { "id": "dark-past", "name": "Dark Past", "effect": "" },
+        { "id": "guided", "name": "Guided", "effect": "" },
+        { "id": "heirloom", "name": "Heirloom", "effect": "" },
+        { "id": "imminent-danger", "name": "Imminent Danger", "effect": "" },
+        { "id": "karsten-freed", "name": "Karsten Freed", "effect": "" },
+        { "id": "king-s-cause", "name": "King's Cause", "effect": "" },
+        { "id": "loose-arm", "name": "Loose Arm", "effect": "" },
+        { "id": "nautical-empathy", "name": "Nautical Empathy", "effect": "" },
+        { "id": "painful-memories", "name": "Painful Memories", "effect": "" },
+        { "id": "pirate-s-gift", "name": "Pirate's Gift", "effect": "" },
+        { "id": "pushover", "name": "Pushover", "effect": "" },
+        { "id": "remorse", "name": "Remorse", "effect": "" },
+        {
+          "id": "salamander-s-sweat",
+          "name": "Salamander's Sweat",
+          "effect": "Whenever a Hero rolls 16+ during an attack with a Weapon Attack or they cast a Spell Attack: the attack gains BURN 2."
+        },
+        {
+          "id": "sea-fighter",
+          "name": "Sea Fighter",
+          "effect": "At the end of the Rune turn, after the Rune card effects are resolved, each Hero may take a SIDESTEP. A SIDESTEP is a MOVE 1 effect that is not affected by any movement bonuses or penalties you might have. In addition, it can be taken even if you are SLOWED or KNOCKED DOWN, however, these Conditions are not removed."
+        },
+        {
+          "id": "search-party",
+          "name": "Search Party",
+          "effect": "Whenever a Hero in your party draws an Eradren Surprises Special Event card, that Hero gains FOCUS 2"
+        },
+        { "id": "sunken-relic", "name": "Sunken Relic", "effect": "" },
+        {
+          "id": "suspicious",
+          "name": "Suspicious",
+          "effect": "Whenever a Hero Search a Chest, they draw an additional card, choose one of those cards to keep, and put the other on the bottom of the Chest deck."
+        },
+        {
+          "id": "the-x-mark-the-spot",
+          "name": "The X Mark the Spot",
+          "effect": "Whenever a Hero delivers the killing blow through a Critical Hit, the defeated Monster drops a Loot token on its space."
+        },
+        {
+          "id": "turn-around",
+          "name": "Turn Around",
+          "effect": "Any Weapon Attack bonus to HIT your Attacks would have or receive becomes DMG bonus instead. Example: Vorn's Arching Swing reads: “CLEAVE 2, +3 HIT”; therefore, it becomes: “CLEAVE 2, +0 HIT, +3 DMG”. Any HIT bonus your Hero has from Equipment, Class Abilities, or Special Effects also turns into bonus damage."
+        },
+        { "id": "wrong-foot", "name": "Wrong Foot", "effect": "" }
+      ]
+    }
+  },
+  "unfolding": {
+    "core": {
+      "campaign": [],
+      "storyrecord": []
+    },
+    "apocalypse": {
+      "campaign": [],
+      "storyrecord": [
         {
           "id": "a-broken-man",
           "name": "A Broken Man",
@@ -2331,19 +2331,19 @@
         }
       ]
     },
-    "awakenings":{
-      "campaign":[],
-      "storyrecord":[] 
+    "awakenings": {
+      "campaign": [],
+      "storyrecord": []
     }
   },
-  "followers":{
-    "core":{
-      "campaign":[],
-      "storyrecord":[]
+  "followers": {
+    "core": {
+      "campaign": [],
+      "storyrecord": []
     },
-    "apocalypse":{
-      "campaign":[],
-      "storyrecord":[
+    "apocalypse": {
+      "campaign": [],
+      "storyrecord": [
         {
           "id": "amster-dehanse",
           "name": "Amsterd deHanse"
@@ -2366,9 +2366,9 @@
         }
       ]
     },
-    "awakenings":{
-      "campaign":[],
-      "storyrecord":[
+    "awakenings": {
+      "campaign": [],
+      "storyrecord": [
         {
           "id": "elros",
           "name": "Elros, the Assassin"
