@@ -82,12 +82,13 @@
     "strength": "Force",
     "devotion": "Dévouement",
     "cunning": "Rusé",
-    "nature": "Nature"
+    "nature": "Nature",
+    "resources": "Resources"
   },
   "text": {
     "select-action-cube-color": "Sélectionnez la couleur du cube d'action",
     "curse-cubes": "Cubes de malédiction",
-    "trauma-cube": "Cube de traumatologie",
+    "trauma-cubes": "Cube de traumatologie",
     "path-of": "Chemin de",
     "add-or-remove-status": "Ajouter ou supprimer un statut",
     "add-or-remove-unfolding": "Ajouter ou supprimer un dépliage",
@@ -95,9 +96,7 @@
     "add-or-remove-follower": "Ajouter ou supprimer un abonné",
     "add-or-remove-stashed-items": "Ajouter ou supprimer des éléments cachés",
     "select-aura": "Sélectionnez l'aura",
-    "aura-info": "Aura is removed when you receive a trauma cube or another aura.",
     "outcome-info": "Remain in effect for the entire campaign unless some other effect changes them.",
-    "status-info": "Statuses are removed during the camp phase.",
     "number-of-runes": "Number of runes:",
     "party-name": "Party name:",
     "no-resources": "No resources"
