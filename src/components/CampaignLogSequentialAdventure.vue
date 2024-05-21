@@ -4,6 +4,7 @@ import { HeroStore } from "@/store/HeroStore";
 import { useRouter } from "vue-router";
 import { SequentialAdventureState } from "@/store/Hero";
 import type { HeroData } from "@/data/repository/HeroData";
+import { useI18n } from "vue-i18n";
 
 const props = defineProps<{
   hero: HeroData;
@@ -12,6 +13,7 @@ const props = defineProps<{
 
 const heroStore = HeroStore();
 const router = useRouter();
+const { t } = useI18n();
 
 const sequentialAdventureState = ref({} as SequentialAdventureState);
 sequentialAdventureState.value =
@@ -39,14 +41,14 @@ function openSequentialStateEditor() {
     <div id="curse-cubes" class="resource-wrapper text-center flex justify-end">
       <div class="w-full">
         <span class="block border-b text-lg">{{ sequentialAdventureState.curseCubes }}</span>
-        <span class="whitespace-nowrap">Curse Cubes</span>
+        <span class="whitespace-nowrap">{{ t("text.curse-cubes") }}</span>
       </div>
     </div>
 
     <div id="trauma-cubes" class="resource-wrapper text-center flex justify-end">
       <div class="w-full">
         <span class="block border-b text-lg">{{ sequentialAdventureState.traumaCubes }}</span>
-        <span class="whitespace-nowrap">Trauma Cubes</span>
+        <span class="whitespace-nowrap">{{ t("text.trauma-cubes") }}</span>
       </div>
     </div>
 
@@ -57,9 +59,9 @@ function openSequentialStateEditor() {
         </span>
       </div>
       <div class="block border-b text-lg" v-else>
-        <span class="italic text-sm text-gray-500">No Resources</span>
+        <span class="italic text-sm text-gray-500">{{ t("text.no-resources") }}</span>
       </div>
-      <span>Resources</span>
+      <span>{{ t("label.resources") }}</span>
     </div>
   </div>
 </template>

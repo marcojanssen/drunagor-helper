@@ -82,12 +82,13 @@
     "strength": "Force",
     "devotion": "Dévouement",
     "cunning": "Rusé",
-    "nature": "Nature"
+    "nature": "Nature",
+    "resources": "Resources"
   },
   "text": {
     "select-action-cube-color": "Sélectionnez la couleur du cube d'action",
     "curse-cubes": "Cubes de malédiction",
-    "trauma-cube": "Cube de traumatologie",
+    "trauma-cubes": "Cube de traumatologie",
     "path-of": "Chemin de",
     "add-or-remove-status": "Ajouter ou supprimer un statut",
     "add-or-remove-unfolding": "Ajouter ou supprimer un dépliage",

@@ -82,12 +82,13 @@
     "strength": "Wytrzymałość",
     "devotion": "Poświęcenie",
     "cunning": "Podstępny",
-    "nature": "Natura"
+    "nature": "Natura",
+    "resources": "Resources"
   },
   "text": {
     "select-action-cube-color": "Wybierz kolor kości akcji",
     "curse-cubes": "Przeklęta kostka",
-    "trauma-cube": "Kości Traumy",
+    "trauma-cubes": "Kości Traumy",
     "path-of": "Ścieżka: ",
     "add-or-remove-status": "Dodaj lub usuń status",
     "add-or-remove-unfolding": "Dodaj lub usuń rozwinięcie",
