@@ -74,7 +74,7 @@ watch(
         </option>
       </select>
 
-      <label for="trauma-cube" class="block pt-2"> {{ t("text.trauma-cube") }} </label>
+      <label for="trauma-cube" class="block pt-2"> {{ t("text.trauma-cubes") }} </label>
       <select
         v-model.number="sequentialAdventureState.traumaCubes"
         name="trauma-cube"
@@ -86,7 +86,7 @@ watch(
       </select>
     </div>
 
-    <h3 class="py-5">Resources</h3>
+    <h3 class="py-5">{{ t("label.resources") }}</h3>
 
     <div id="resource-select">
       <template v-for="resource in resourceDefinitions" :key="resource.id">
