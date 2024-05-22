@@ -83,7 +83,12 @@
     "devotion": "Dévouement",
     "cunning": "Rusé",
     "nature": "Nature",
-    "resources": "Resources"
+    "resources": "Resources",
+    "focus": "Focus",
+    "fury": "Fury",
+    "fruit-of-life": "Fruit of Life",
+    "ki": "KI",
+    "shield": "Shield"
   },
   "text": {
     "select-action-cube-color": "Sélectionnez la couleur du cube d'action",
