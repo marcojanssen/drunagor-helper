@@ -83,7 +83,12 @@
     "devotion": "der Aufopferung",
     "cunning": "der List",
     "nature": "der Natur",
-    "resources": "Ressourcen"
+    "resources": "Ressourcen",
+    "focus": "Fokus",
+    "fury": "Wut",
+    "fruit-of-life": "Frucht des Lebens",
+    "ki": "KI",
+    "shield": "Schild"
   },
   "text": {
     "select-action-cube-color": "Wähle eine Aktionswürfelfarbe",

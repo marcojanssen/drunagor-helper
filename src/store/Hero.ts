@@ -1,8 +1,9 @@
 const resourceDefinitions = [
-  { id: "focus", name: "Focus" },
-  { id: "fruit-of-life", name: "Fruit of Life" },
-  { id: "ki", name: "KI" },
-  { id: "shield", name: "Shield" },
+  { id: "focus", translation_key: "label.focus" },
+  { id: "fruit-of-life", translation_key: "label.fruit-of-life" },
+  { id: "ki", translation_key: "label.ki", name: "KI" },
+  { id: "shield", translation_key: "label.shield" },
+  { id: "fury", translation_key: "label.fury" },
 ];
 
 export class HeroEquipment {
@@ -21,8 +22,8 @@ export class SequentialAdventureState {
 
   constructor() {
     resourceDefinitions.forEach((resource) => {
-      if (!(resource.name in this.resources)) {
-        this.resources[resource.name] = 0;
+      if (!(resource.translation_key in this.resources)) {
+        this.resources[resource.translation_key] = 0;
       }
     });
   }

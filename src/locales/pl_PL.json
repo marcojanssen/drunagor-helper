@@ -83,7 +83,12 @@
     "devotion": "Poświęcenie",
     "cunning": "Podstępny",
     "nature": "Natura",
-    "resources": "Resources"
+    "resources": "Resources",
+    "focus": "Focus",
+    "fury": "Fury",
+    "fruit-of-life": "Fruit of Life",
+    "ki": "KI",
+    "shield": "Shield"
   },
   "text": {
     "select-action-cube-color": "Wybierz kolor kości akcji",
