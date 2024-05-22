@@ -27,24 +27,24 @@ describe("status selection", () => {
     cy.get("ul#story-record-status-options li").first().click();
 
     cy.get("#story-record-status-display").click();
-    cy.get("#story-record-status-display > li").contains("A Hard Bargain");
+    cy.get("#story-record-status-display > li").contains("A Broken Man");
 
     cy.get("#story-record-status").click();
     cy.get("ul#story-record-status-options li").first().next().click();
 
     cy.get("#story-record-status-display").click();
+    cy.get("#story-record-status-display > li").contains("A Broken Man");
     cy.get("#story-record-status-display > li").contains("A Hard Bargain");
-    cy.get("#story-record-status-display > li").contains("Afterlife Mysteries");
 
     cy.get("#story-record-status").click();
     cy.get("ul#story-record-status-options li").first().click();
 
     cy.get("#story-record-status-display").click();
-    cy.get("#story-record-status-display > li").contains("Afterlife Mysteries");
+    cy.get("#story-record-status-display > li").contains("A Hard Bargain");
 
     cy.reload();
 
-    cy.get("#story-record-status-display > li").contains("Afterlife Mysteries");
+    cy.get("#story-record-status-display > li").contains("A Hard Bargain");
   });
   it("can search for an status", () => {
     cy.get("#story-record-status").type("Entrepreneur");
