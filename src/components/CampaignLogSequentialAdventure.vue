@@ -25,7 +25,10 @@ const resourceDisplay = computed(() => {
 
   for (const resource in resources) {
     if (resources[resource] > 0) {
-      resourcesToDisplay.push({ name: resource, count: resources[resource] });
+      resourcesToDisplay.push({
+        name: resource,
+        count: resources[resource],
+      });
     }
   }
   return resourcesToDisplay;
@@ -55,7 +58,7 @@ function openSequentialStateEditor() {
     <div class="text-center">
       <div id="resources" class="block border-b text-lg" v-if="resourceDisplay.length > 0">
         <span v-for="resource in resourceDisplay" :key="resource.name" class="block">
-          {{ resource.count }} {{ resource.name }}
+          {{ resource.count }} {{ t(resource.name) }}
         </span>
       </div>
       <div class="block border-b text-lg" v-else>

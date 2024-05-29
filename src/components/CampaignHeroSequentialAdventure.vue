@@ -9,10 +9,11 @@ import type { HeroData } from "@/data/repository/HeroData";
 import { useI18n } from "vue-i18n";
 
 const resourceDefinitions = [
-  { id: "focus", name: "Focus" },
-  { id: "fruit-of-life", name: "Fruit of Life" },
-  { id: "ki", name: "KI" },
-  { id: "shield", name: "Shield" },
+  { id: "focus", translation_key: "label.focus" },
+  { id: "fruit-of-life", translation_key: "label.fruit-of-life" },
+  { id: "ki", translation_key: "label.ki" },
+  { id: "shield", translation_key: "label.shield" },
+  { id: "fury", translation_key: "label.fury" },
 ];
 
 const heroStore = HeroStore();
@@ -91,11 +92,11 @@ watch(
     <div id="resource-select">
       <template v-for="resource in resourceDefinitions" :key="resource.id">
         <label :for="resource.id">
-          {{ resource.name }}
+          {{ t(resource.translation_key) }}
         </label>
         <div>
           <select
-            v-model.number="sequentialAdventureState.resources[resource.name]"
+            v-model.number="sequentialAdventureState.resources[resource.translation_key]"
             :name="resource.id"
             :id="resource.id"
             class="bg-base-100 py-2 pl-3 pr-20 w-full leading-5 focus:ring-0 rounded-lg"
