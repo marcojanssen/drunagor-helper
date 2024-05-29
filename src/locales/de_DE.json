@@ -96,7 +96,9 @@
     "add-or-remove-follower": "Gefährten hinzufügen oder entfernen",
     "add-or-remove-stashed-items": "Gelagerte Gegenstände hinzufügen oder entfernen",
     "select-aura": "Aura auswählen",
+    "aura-info": "Aura wird entfernt, wenn du einen Traumawürfel oder eine andere Aura erhälst.",
     "outcome-info": "Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt ändert sie.",
+    "status-info": "Status werden während der Lagerphase entfernt.",
     "number-of-runes": "Anzahl Runen:",
     "party-name": "Name der Gruppe:",
     "no-resources": "Keine Ressourcen"

@@ -5,6 +5,7 @@ import { CheckIcon, ChevronUpDownIcon, XMarkIcon } from "@heroicons/vue/20/solid
 import type { AuraRepository } from "@/data/repository/campaign/AuraRepository";
 import { HeroStore } from "@/store/HeroStore";
 import { useI18n } from "vue-i18n";
+import { ConfigurationStore } from "@/store/ConfigurationStore";
 
 const props = defineProps<{
   heroId: string;
@@ -13,8 +14,10 @@ const props = defineProps<{
 }>();
 
 const heroStore = HeroStore();
-const auras = props.repository.findAll();
+const configurationStore = ConfigurationStore();
 const { t } = useI18n();
+props.repository.load(configurationStore.enabledLanguage);
+const auras = props.repository.findAll();
 
 const auraId = ref("");
 auraId.value = heroStore.findInCampaign(props.heroId, props.campaignId).auraId ?? "";
@@ -114,7 +117,9 @@ watch(auraId, (newAuraId) => {
     </Combobox>
   </div>
   <template v-if="auraId">
-    <p class="text-sm text-gray-500 py-2">Aura is removed when you receive a trauma cube or another aura.</p>
+    <p class="text-sm text-gray-500 py-2">
+      {{ t("text.aura-info") }}
+    </p>
     <div id="campaign-log-aura-effect" class="w-full rounded-md">
       {{ props.repository.find(auraId)?.effect }}
     </div>

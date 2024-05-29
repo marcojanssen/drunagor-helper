@@ -7,9 +7,11 @@ describe("status selection", () => {
     it("has multiple statuses available", () => {
       cy.get("#story-record-status").click();
 
-      cy.get("ul#story-record-status-options li").should("have.length", 67);
+      cy.get("ul#story-record-status-options li").should("have.length", 69);
       cy.get("ul#story-record-status-options li")
         .first()
+        .should("have.text", "A Broken Man")
+        .next()
         .should("have.text", "A Hard Bargain")
         .next()
         .should("have.text", "Afterlife Mysteries")
@@ -25,24 +27,24 @@ describe("status selection", () => {
     cy.get("ul#story-record-status-options li").first().click();
 
     cy.get("#story-record-status-display").click();
-    cy.get("#story-record-status-display > li").contains("A Hard Bargain");
+    cy.get("#story-record-status-display > li").contains("A Broken Man");
 
     cy.get("#story-record-status").click();
     cy.get("ul#story-record-status-options li").first().next().click();
 
     cy.get("#story-record-status-display").click();
+    cy.get("#story-record-status-display > li").contains("A Broken Man");
     cy.get("#story-record-status-display > li").contains("A Hard Bargain");
-    cy.get("#story-record-status-display > li").contains("Afterlife Mysteries");
 
     cy.get("#story-record-status").click();
     cy.get("ul#story-record-status-options li").first().click();
 
     cy.get("#story-record-status-display").click();
-    cy.get("#story-record-status-display > li").contains("Afterlife Mysteries");
+    cy.get("#story-record-status-display > li").contains("A Hard Bargain");
 
     cy.reload();
 
-    cy.get("#story-record-status-display > li").contains("Afterlife Mysteries");
+    cy.get("#story-record-status-display > li").contains("A Hard Bargain");
   });
   it("can search for an status", () => {
     cy.get("#story-record-status").type("Entrepreneur");
