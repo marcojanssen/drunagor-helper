@@ -651,7 +651,7 @@
         {
           "id": "guardians-curse",
           "name": "Der Fluch des Wächters",
-          "effect": "As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet."
+          "effect": "Solange du den Fluch des Wächters hast, kannst Du den Verfluchten Armreif nicht ablegen."
         },
         {
           "id": "humbled",
