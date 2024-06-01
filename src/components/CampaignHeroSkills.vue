@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
 import { HeroStore } from "@/store/HeroStore";
-import BaseModal from "@/components/BaseModal.vue";
 import BaseList from "@/components/BaseList.vue";
 import BaseListItem from "@/components/BaseListItem.vue";
-import { CubeIcon, XMarkIcon } from "@heroicons/vue/24/solid";
+import { CubeIcon } from "@heroicons/vue/24/solid";
 import { useI18n } from "vue-i18n";
 
 const heroStore = HeroStore();
@@ -14,7 +13,7 @@ const props = defineProps<{
   campaignId: string;
 }>();
 
-const isOpen = ref(false);
+const visible = ref(false);
 const selectedSkillId = ref("");
 const { t } = useI18n();
 
@@ -53,11 +52,11 @@ function getSkillLabel(skillId: string, level: number): string {
 }
 
 function openModal() {
-  isOpen.value = true;
+  visible.value = true;
 }
 
 function closeModal() {
-  isOpen.value = false;
+  visible.value = false;
 }
 
 function onSkillSelect(skillId: string) {
@@ -103,12 +102,11 @@ watch(selectedSkills, (newSkills) => {
       <h3>{{ t(skill.translationKey) }}</h3>
       <div v-for="level in 2" :key="skill.name + '-' + level">
         <label :key="skill.id + '-' + level">
-          <input
-            type="checkbox"
+          <Checkbox
+            variant="outlined"
+            :data-testid="skill.id + '-' + level"
             v-model="selectedSkills"
-            :id="skill.id + '-' + level"
             :value="skill.id + '-' + level"
-            class="w-5 h-5 text-emerald-500 bg-base-100 rounded"
             @change="() => onSkillSelect(skill.id + '-' + level)"
           />
           <span class="ml-1 skill-label">{{ getSkillLabel(skill.id + "-" + level, level) }}</span>
@@ -117,34 +115,24 @@ watch(selectedSkills, (newSkills) => {
     </div>
   </div>
 
-  <BaseModal :is-open="isOpen" @close-modal="closeModal">
-    <template #header>
-      <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{ t("text.select-action-cube-color") }}</div>
-        <div>
-          <button
-            id="close-modal"
-            class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
-            @click="closeModal"
-          >
-            <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
-          </button>
-        </div>
-      </div>
-    </template>
-    <template #default>
-      <BaseList id="campaign-add-heroes">
-        <template v-for="color in cubeColors" :key="color">
-          <BaseListItem @click="setSelectedCubeColor(color)">
-            <div class="bg-neutral flex pt-3 pb-2 pl-3 w-full rounded-lg">
-              <CubeIcon :class="'h-5 w-5 ' + color.toLowerCase()" />
-              <span class="ml-2">{{ t("label." + color.toLowerCase()) }}</span>
-            </div>
-          </BaseListItem>
-        </template>
-      </BaseList>
-    </template>
-  </BaseModal>
+  <Dialog
+    v-model:visible="visible"
+    modal
+    :header="t('text.select-action-cube-color')"
+    :dismissableMask="true"
+    class="w-full md:w-1/3 m-2"
+  >
+    <BaseList>
+      <template v-for="color in cubeColors" :key="color">
+        <BaseListItem @click="setSelectedCubeColor(color)">
+          <div class="flex pt-3 pb-2 pl-3 w-full rounded-lg">
+            <CubeIcon :class="'h-5 w-5 ' + color.toLowerCase()" />
+            <span class="ml-2">{{ t("label." + color.toLowerCase()) }}</span>
+          </div>
+        </BaseListItem>
+      </template>
+    </BaseList>
+  </Dialog>
 </template>
 
 <style scoped>

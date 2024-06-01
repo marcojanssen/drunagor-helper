@@ -23,7 +23,7 @@ const hero = heroDataRepository.find(props.heroId) ?? ({} as HeroData);
 </script>
 
 <template>
-  <div class="hero-list-item p-4">
+  <div class="hero-list-item p-4" style="background-color: #1f2937">
     <div class="flex h-28">
       <div>
         <img class="-ml-1 w-14 rounded-full hero-image" :src="hero.images.avatar" />

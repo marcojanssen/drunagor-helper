@@ -11,15 +11,18 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="p-4 grid gap-2">
-    <span class="w-48">{{ t("text.number-of-runes") }}</span>
-    <input
-      type="number"
-      v-model.number="campaignStore.find(props.campaignId).sequentialAdventureRunes"
-      id="runes"
-      class="w-full bg-base-100 focus:ring-0 rounded-lg"
-    />
-  </div>
+  <label for="runes" class="block pb-4">{{ t("text.number-of-runes") }}</label>
+  <InputNumber
+    :inputStyle="{ width: '100%' }"
+    incrementButtonIcon="pi pi-plus"
+    decrementButtonIcon="pi pi-minus"
+    id="runes"
+    name="runes"
+    showButtons
+    buttonLayout="horizontal"
+    :min="0"
+    v-model="campaignStore.find(props.campaignId).sequentialAdventureRunes"
+  />
 </template>
 
 <style scoped></style>

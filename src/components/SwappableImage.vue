@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, toRef, watch } from "vue";
-import { ArrowsRightLeftIcon } from "@heroicons/vue/20/solid";
 
 const props = defineProps<{
   title: string;
@@ -41,14 +40,14 @@ function swapImage() {
       <p id="swappable-title" class="text-center font-semibold pt-2">{{ props.title }}</p>
       <p id="swappable-sub-title" class="text-center">{{ props.subTitle }}</p>
     </div>
-    <button
-      id="swappable-button"
+    <Button
+      icon="pi pi-arrow-right-arrow-left"
+      aria-label="Swap"
       v-if="backImage"
+      class="absolute left-1/2 -bottom-3 transform -translate-x-1/2 p-2 w-6 h-6"
+      id="swappable-button"
       @click="swapImage()"
-      class="absolute left-1/2 -bottom-6 transform -translate-x-1/2 p-2"
-    >
-      <ArrowsRightLeftIcon class="bg-emerald-500 h-7 rounded-lg p-1" />
-    </button>
+    />
   </div>
 </template>
 

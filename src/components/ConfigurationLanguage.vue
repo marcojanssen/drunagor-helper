@@ -14,25 +14,30 @@ watch(locale, () => {
 </script>
 
 <template>
-  <div id="configuration-language" class="grid gap-4 bg-neutral form-control p-4 drop-shadow-lg rounded-lg w-full">
-    <label v-for="language in languageStore.getAll()" :key="language.locale" class="cursor-pointer">
-      <span class="label-text text-base">
-        {{ $t(language.translation_key) }}
-      </span>
-      <input
-        type="radio"
-        v-model="$i18n.locale"
-        :id="language.locale"
-        :value="language.locale"
-        class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded"
-      />
-    </label>
-    <a
-      target="_blank"
-      class="underline"
-      href="https://github.com/marcojanssen/drunagor-helper/blob/main/CONTRIBUTING.md"
-      >Click here to find out how to contribute</a
-    >
-  </div>
+  <Card class="w-full" data-testid="configuration-language">
+    <template #title> {{ $t("configuration.language") }} </template>
+    <template #content>
+      <div v-for="language in languageStore.getAll()" :key="language.locale" class="pb-4">
+        <label class="cursor-pointer"
+          >{{ $t(language.translation_key) }}
+          <RadioButton
+            variant="outlined"
+            v-model="$i18n.locale"
+            :data-testid="'configuration-language-' + language.locale"
+            :value="language.locale"
+            class="float-right"
+          />
+        </label>
+      </div>
+      <div>
+        <a
+          target="_blank"
+          class="underline"
+          href="https://github.com/marcojanssen/drunagor-helper/blob/main/CONTRIBUTING.md"
+          >Click here to find out how to contribute</a
+        >
+      </div>
+    </template>
+  </Card>
 </template>
 <style scoped></style>
