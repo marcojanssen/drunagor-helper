@@ -5,7 +5,6 @@ import CampaignView from "@/views/CampaignView.vue";
 import ConfigurationView from "@/views/ConfigurationView.vue";
 import KeywordView from "@/views/KeywordView.vue";
 import RandomizerView from "@/views/RandomizerView.vue";
-import { createI18n } from "vue-i18n";
 import { createPinia } from "pinia";
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
@@ -13,48 +12,11 @@ import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import HeroDetailView from "@/views/HeroDetailView.vue";
 import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
-import * as enUS from "@/locales/en_US.json";
-import * as deDE from "@/locales/de_DE.json";
-import * as frFR from "@/locales/fr_FR.json";
-import * as itIT from "@/locales/it_IT.json";
-import * as plPL from "@/locales/pl_PL.json";
-import * as ptBR from "@/locales/pt_BR.json";
-import * as esES from "@/locales/es_ES.json";
+import { loadLanguage } from "@/language";
 import { ConfigurationStore } from "@/store/ConfigurationStore";
+import { i18n } from "@/i18n";
 
 const pinia = createPinia();
-
-const messages = {
-  en_US: {
-    ...enUS,
-  },
-  de_DE: {
-    ...deDE,
-  },
-  fr_FR: {
-    ...frFR,
-  },
-  it_IT: {
-    ...itIT,
-  },
-  pl_PL: {
-    ...plPL,
-  },
-  pt_BR: {
-    ...ptBR,
-  },
-  es_ES: {
-    ...esES,
-  },
-};
-
-const i18n = createI18n({
-  legacy: false,
-  globalInjection: true,
-  locale: "en_US",
-  fallbackLocale: "en_US",
-  messages,
-});
 
 const routes = [
   { path: "/", name: "Home", component: RandomizerView },
@@ -80,14 +42,20 @@ const router = createRouter({
   routes,
 });
 
-const app = createApp(App);
+async function startApp() {
+  const app = createApp(App);
 
-app.use(i18n);
-app.use(pinia);
-app.use(router);
-app.use(Toast, { timeout: 3000 });
+  app.use(i18n);
+  app.use(pinia);
+  app.use(router);
+  app.use(Toast, { timeout: 3000 });
 
-app.mount("#app");
+  await loadLanguage("en_US");
 
-const configurationStore = ConfigurationStore();
-i18n.global.locale.value = configurationStore.enabledLanguage as "en_US" | "de_DE";
+  const configurationStore = ConfigurationStore();
+  await loadLanguage(configurationStore.enabledLanguage);
+
+  app.mount("#app");
+}
+
+startApp();

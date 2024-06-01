@@ -14,7 +14,7 @@ export class CampaignLogAuraRepository implements AuraRepository {
     return this.auras;
   }
 
-    public load(locale: string) {
+  public load(locale: string) {
     const i18n = useI18n();
     const auraList: any = i18n.messages.value[locale].auras;
     this.auras = auraList["apocalypse"].campaign as Aura[];

@@ -1,0 +1,194 @@
+---
+randomizer:
+  random-monster: Monstre aléatoire
+  exclude-current-monster: Exclure le caractère actuellement dessiné
+  enabled-content: Variante/contenu activé
+  white: Blanc
+  gray: Gris
+  black: Noir
+  commander: Le commandant
+  overlord: Suzerain
+  error:
+    no-other-monster-available: Aucun autre monstre disponible.
+    no-other-commander-available: Aucun autre commandant / suzerain disponible.
+label:
+  equipment-skills: Équipement et compétences
+  remove-campaign: Campagne d'entraide
+  new-campaign: Nouvelle campagne
+  export-campaign: Campagne d'exportation
+  import-campaign: Campagne d'importation
+  sequential-adventure: Aventure séquentielle
+  camp-phase: Phase de camp
+  remove-hero: Supprimer le héros
+  add-hero: Ajouter un héros
+  campaigns: Campagnes
+  campaign: Campagne
+  campaign-log: Journal de campagne
+  "yes": Oui
+  "no": Non
+  import: Importer
+  close: Fermer
+  cancel: Annuler
+  filter-by-proficiency: Filtrer par compétence
+  weapon: Arme
+  off-hand: Hors main
+  armor: Armure
+  trinket: Bibelot
+  bag-slot: Fente pour sac
+  skills: Compétences
+  stash: Planque
+  nothing-found: Rien n'a été trouvé
+  equipment: Équipement
+  dungeon-role: Rôle dans le donjon
+  melee: Mêlée
+  ranged: À distance
+  agility: Agilité
+  wisdom: Sagesse
+  level: Niveau
+  yellow: Jaune
+  red: Rouge
+  blue: Bleu
+  green: Vert
+  dwarf: Nain
+  human: Humain
+  elf: Elfe
+  draconian: Draconien
+  orc: Orque
+  vampire: Vampire
+  halfling: Halfelin
+  efreet: Éfrit
+  succubus: Succube
+  valkyrie: Valkyrie
+  azurean: Azuréen
+  mage: mage
+  sorcerer: Sorcier
+  shadow-knight: Chevalier de l'ombre
+  paladin: Paladin
+  warrior: Guerrier
+  assasin: Assassin
+  bard: Barde
+  ranger: Ranger
+  cleric: Clerc
+  barbarian: Barbare
+  druid: Druide
+  monk: Moine
+  swordmage: Mage d'épée
+  warlord: Chef militaire
+  necromancer: Nécromancien
+  shaman: Chaman
+  mystics: Mystiques
+  strength: Force
+  devotion: Dévouement
+  cunning: Rusé
+  nature: Nature
+  resources: Resources
+  focus: Focus
+  fury: Fury
+  fruit-of-life: Fruit of Life
+  ki: KI
+  shield: Shield
+text:
+  select-action-cube-color: Sélectionnez la couleur du cube d'action
+  curse-cubes: Cubes de malédiction
+  trauma-cubes: Cubes de traumatologie
+  path-of: Chemin de
+  add-or-remove-status: Ajouter ou supprimer un statut
+  add-or-remove-unfolding: Ajouter ou supprimer un dépliage
+  add-or-remove-outcome: Ajouter ou supprimer un résultat
+  add-or-remove-follower: Ajouter ou supprimer un abonné
+  add-or-remove-stashed-items: Ajouter ou supprimer des éléments cachés
+  select-aura: Sélectionnez l'aura
+  aura-info: Aura is removed when you receive a trauma cube or another aura.
+  outcome-info: Remain in effect for the entire campaign unless some other effect
+    changes them.
+  status-info: Statuses are removed during the camp phase.
+  number-of-runes: "Number of runes:"
+  party-name: "Party name:"
+  no-resources: No resources
+
+monster:
+  abomination: Abomination
+  archon: Archonte
+  bane: Fléau
+  bone-reaper: Faucheur d'os
+  commander-doctor: Médecin
+  commander-flinch: Reculer
+  commander-hexer: Hexeur
+  commander-horde: Horde
+  commander-hunter: Chasseur
+  commander-ox: Bœuf
+  commander-thern: Alors
+  commander-twin: Double
+  commander-spawn: Frayer
+  commander-witch: Sorcière
+  corrupted-farmer: Fermier corrompu
+  corrupted-worm: Ver corrompu
+  death-messenger: Messager de la mort
+  demon-lord: Seigneur Démon
+  dream-titan: Titan de rêve
+  executioner: Bourreau
+  faceless-conjurer: Invocateur sans visage
+  fallen-sisters: Sœurs déchues
+  fell-asteris: Astéris est tombé
+  gorgon-hexer: Gorgone maléfique
+  gorgoness-witch: Sorcière Gorgone
+  gremlin-horde: Horde de Gremlins
+  grim-doctor: Docteur sinistre
+  hellish-flayer: Écorcheur infernal
+  hellspawn-brute: Brute engeance de l'enfer
+  lady-claw: Dame Griffe
+  nagian-hunter: Chasseur Nagian
+  night-stalker: Rodeur nocturne
+  ravager: Ravageur
+  rotten-flesh: Chair pourrie
+  scout-of-darkness: Éclaireur des ténèbres
+  shadow-cultist: Cultiste de l'Ombre
+  shadow-guardian: Gardien de l'Ombre
+  shadow-knight: Chevalier de l'ombre
+  shadow-mistress: Maîtresse de l'Ombre
+  shadow-pain: Douleur de l'Ombre
+  shadow-vampire: Vampire de l'Ombre
+  shadow-witch: Sorcière de l'Ombre
+  skeleton-archer: Archer squelette
+  skeleton-knight: Chevalier Squelette
+  walking-horror: Horreur ambulante
+menu:
+  menu: Menu
+  random-monster: Monstre aléatoire
+  campaign: Campagne
+  keyword: Mot-clé
+  settings: Paramètres
+language:
+  english: Anglais
+  german: Allemand
+  spanish: Espagnol
+  french: Français
+  italian: Italien
+  portuguese: Portugais
+  polish: Polonais
+configuration:
+  language: Langue
+  enabled-variant: Variante activée
+  monster-content: Contenu monstre
+  hero-content: Contenu de héros
+  error:
+    atleast-one-selected: Il faut en sélectionner au moins un.
+content:
+  apocalypse: Apocalypse
+  awakenings: Réveils
+  core: Cœur
+  desert-of-hellscar: Désert de Hellscar
+  fallen-sisters: Sœurs déchues
+  handuriel: Handuriel
+  hero-pack-1: Pack Héros 1
+  lord-wrath: Courroux du Seigneur
+  lorien: Lorien
+  monster-pack-1: Pack Monstre 1
+  rise-of-the-undead-dragon: L'avènement du dragon mort-vivant
+  spoils-of-war: Butin de guerre
+  the-ruin-of-luccanor: La ruine de Luccanor
+  the-shadow-world: Le monde des ombres
+variant:
+  standard: Standard
+  alternate: Alterner
+  complex: Complexe (A/B)

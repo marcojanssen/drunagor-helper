@@ -19,5 +19,4 @@ export class StoryRecordStatusRepository implements StatusRepository {
     const statusList: any = i18n.messages.value[locale].statuses;
     this.statuses = statusList["apocalypse"].storyrecord as Status[];
   }
-
 }
