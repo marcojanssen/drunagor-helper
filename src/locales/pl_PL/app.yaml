@@ -1,0 +1,188 @@
+---
+randomizer:
+  random-monster: Losowy potwór
+  exclude-current-monster: Wyklucz aktualnie narysowaną postać
+  enabled-content: Aktywowany wariant/treść
+  white: Biały
+  gray: Szary
+  black: Czarny
+  commander: dowódca
+  overlord: porucznik
+  error:
+    no-other-monster-available: Żaden inny potwór nie jest dostępny.
+    no-other-commander-available: Żaden inny dowódca/porucznik nie jest dostępny.
+label:
+  equipment-skills: sprzęt
+  remove-campaign: Usuń kampanię
+  new-campaign: Nowa kampania
+  export-campaign: Kampania eksportowa
+  import-campaign: " Importuj kampanię"
+  sequential-adventure: Ciągła przygoda
+  camp-phase: Faza przechowywania
+  remove-hero: Usuń bohatera
+  add-hero: Dodaj bohatera
+  campaigns: Kampanie
+  campaign: kampania
+  campaign-log: Dziennik kampanii
+  "yes": Tak
+  "no": NIE
+  import: Import
+  close: Zamknąć
+  cancel: Anulować
+  filter-by-proficiency: Filtruj według umiejętności
+  weapon: broń
+  off-hand: Bezceremonialny
+  armor: zbroja
+  trinket: Kawałek biżuterii
+  bag-slot: Kieszonkowa przestrzeń
+  skills: umiejętności
+  stash: obóz
+  nothing-found: Nic nie znaleziono
+  equipment: sprzęt
+  dungeon-role: rolę bojową
+  melee: Walka w zwarciu
+  ranged: Walka dystansowa
+  agility: Zwinność
+  wisdom: mądrość
+  level: Poziom
+  yellow: Żółty
+  red: Czerwony
+  blue: Niebieski
+  green: Zielony
+  dwarf: Krasnolud
+  human: Osoba
+  elf: Jedenaście
+  draconian: drakoński
+  orc: Ork
+  vampire: wampir
+  halfling: Niziołek
+  efreet: Efreet
+  succubus: Sukkub
+  valkyrie: Walkiria
+  azurean: Azurean
+  mage: magik
+  sorcerer: Czarownik
+  shadow-knight: Rycerz Cienia
+  paladin: paladyn
+  warrior: wojownik
+  assasin: Morderca
+  bard: bard
+  ranger: leśniczy
+  cleric: duchowny
+  barbarian: Barbarzyńca
+  druid: druid
+  monk: mnich
+  swordmage: Mag miecza
+  warlord: Dygnitarz wojskowy
+  necromancer: Nekromanta
+  shaman: szaman
+  mystics: Mistyczne
+  strength: Wytrzymałość
+  devotion: Poświęcenie
+  cunning: Podstępny
+  nature: Natura
+  resources: Resources
+  focus: Focus
+  fury: Fury
+  fruit-of-life: Fruit of Life
+  ki: KI
+  shield: Shield
+text:
+  select-action-cube-color: Wybierz kolor kości akcji
+  curse-cubes: Przeklęta kostka
+  trauma-cubes: Kości Traumy
+  path-of: "Ścieżka: "
+  add-or-remove-status: Dodaj lub usuń status
+  add-or-remove-unfolding: Dodaj lub usuń rozwinięcie
+  add-or-remove-outcome: Usuń lub dodaj wpływ
+  add-or-remove-follower: Dodaj lub usuń towarzyszy
+  add-or-remove-stashed-items: Dodaj lub usuń zapisane elementy
+  select-aura: Wybierz aurę
+  aura-info: Aura is removed when you receive a trauma cube or another aura.
+  outcome-info: Remain in effect for the entire campaign unless some other effect
+    changes them.
+  status-info: Statuses are removed during the camp phase.
+  number-of-runes: "Number of runes:"
+  party-name: "Party name:"
+  no-resources: No resources
+monster:
+  abomination: Wstręt
+  archon: Archont
+  bane: Zmora
+  bone-reaper: Żniwiarz
+  commander-doctor: Lekarz
+  commander-flinch: Wzdrygnąć się
+  commander-hexer: Wiedźmin
+  commander-horde: horda
+  commander-hunter: myśliwy
+  commander-ox: Wół
+  commander-thern: Następnie
+  commander-twin: Bliźniak
+  commander-spawn: ikra
+  commander-witch: Czarownica
+  corrupted-farmer: Zepsuty rolnik
+  corrupted-worm: Uszkodzony robak
+  death-messenger: Posłaniec śmierci
+  demon-lord: Władca Demonów
+  dream-titan: Wymarzony Tytan
+  executioner: Egzekutor
+  faceless-conjurer: Zaklinacz bez twarzy
+  fallen-sisters: Upadłe siostry
+  fell-asteris: Futrzana Asteris
+  gorgon-hexer: Czarodziej Gorgony
+  gorgoness-witch: Gorgona Czarownica
+  gremlin-horde: Horda Gremlinów
+  grim-doctor: Ponury Doktor
+  hellish-flayer: Piekielni Łupieżcy
+  hellspawn-brute: Piekielny brutal
+  lady-claw: Pazurający wąż
+  nagian-hunter: Łowca Nagiana
+  night-stalker: Nocny Prześladowca
+  ravager: Niszczyciel
+  rotten-flesh: Cielesny golem
+  scout-of-darkness: Mroczny Skaut
+  shadow-cultist: Kult Cienia
+  shadow-guardian: Strażnik Cieni
+  shadow-knight: Rycerz Cienia
+  shadow-mistress: Pani Cieni
+  shadow-pain: Ból cienia
+  shadow-vampire: Wampir cienia
+  shadow-witch: Czarownica Cienia
+  skeleton-archer: Szkieletowy łucznik
+  skeleton-knight: Szkieletowy Rycerz
+  walking-horror: Wędrujący terror
+menu:
+  menu: menu
+  random-monster: Losowy potwór
+  campaign: kampania
+  keyword: słowa kluczowe
+  settings: Ustawienia
+language:
+  english: język angielski
+  german: Niemiecki (wciąż w toku)
+configuration:
+  language: Język
+  enabled-variant: Aktywowany wariant
+  monster-content: Dostępne potwory
+  hero-content: Dostępni bohaterowie
+  error:
+    atleast-one-selected: Należy wybrać co najmniej jedną opcję.
+content:
+  apocalypse: Apokalipsa
+  awakenings: Przebudzenia
+  core: Podstawowa gra
+  desert-of-hellscar: Pustynia Blizn
+  fallen-sisters: Upadłe siostry
+  handuriel: Handuriel (Nowi bohaterowie
+  hero-pack-1: Pakiet Bohaterów 1
+  lord-wrath: Lordwrath (nowi bohaterowie
+  lorien: Lorien
+  monster-pack-1: Nowi bohaterowie
+  rise-of-the-undead-dragon: Nieumarły smok
+  spoils-of-war: łupy wojenne
+  the-ruin-of-luccanor: Zagłada admirała Luccanora
+  the-shadow-world: Świat cieni
+variant:
+  standard: domyślny
+  alternate: Alternatywnie
+  complex: Złożone (A/B)

@@ -8,6 +8,7 @@
     "strict": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["@modyfi/vite-plugin-yaml/modules"]
   }
 }
