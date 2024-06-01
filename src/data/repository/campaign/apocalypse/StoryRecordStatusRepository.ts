@@ -18,5 +18,6 @@ export class StoryRecordStatusRepository implements StatusRepository {
     const i18n = useI18n();
     const statusList: any = i18n.messages.value[locale].statuses;
     this.statuses = statusList["apocalypse"].storyrecord as Status[];
+    this.statuses = _.sortBy(this.statuses, ["name"]);
   }
 }

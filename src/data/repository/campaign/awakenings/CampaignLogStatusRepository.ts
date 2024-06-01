@@ -18,5 +18,6 @@ export class CampaignLogStatusRepository implements StatusRepository {
     const i18n = useI18n();
     const statusList: any = i18n.messages.value[locale].statuses;
     this.status = statusList["awakenings"].campaign as Status[];
+    this.status = _.sortBy(this.status, ["name"]);
   }
 }
