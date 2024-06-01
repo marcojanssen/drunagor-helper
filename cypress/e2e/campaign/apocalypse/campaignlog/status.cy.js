@@ -92,7 +92,7 @@ describe("status selection", () => {
     cy.get("#campaign-log-status-display").click();
     cy.get("#campaign-log-status-display > li").contains("Exquisite Attunement");
     cy.get("#campaign-log-status-display > li span").contains(
-      'Whenever you take the “Tie-Breaker Special Rule“ Action, you gain both FOCUS 1 and CLEANSE 1 instead of choosing one of them.'
+      "Whenever you take the “Tie-Breaker Special Rule“ Action, you gain both FOCUS 1 and CLEANSE 1 instead of choosing one of them."
     );
   });
 });

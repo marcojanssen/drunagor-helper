@@ -1,0 +1,193 @@
+---
+randomizer:
+  random-monster: Random monster
+  exclude-current-monster: Exclude current drawn character
+  enabled-content: Enabled variant / content
+  white: White
+  gray: Gray
+  black: Black
+  commander: Commander
+  overlord: Overlord
+  error:
+    no-other-monster-available: No other monster available.
+    no-other-commander-available: No other commander / overlord available.
+label:
+  equipment-skills: Equipment & Skills
+  remove-campaign: Remove campaign
+  new-campaign: New campaign
+  export-campaign: Export campaign
+  import-campaign: " Import campaign"
+  sequential-adventure: Sequential Adventure
+  camp-phase: Camp Phase
+  remove-hero: Remove hero
+  add-hero: Add hero
+  campaigns: Campaigns
+  campaign: Campaign
+  campaign-log: Campaign Log
+  yes: Yes
+  no: No
+  import: Import
+  close: Close
+  cancel: Cancel
+  filter-by-proficiency: Filter by proficiency
+  weapon: Weapon
+  off-hand: Off Hand
+  armor: Armor
+  trinket: Trinket
+  bag-slot: Bag Slot
+  skills: Skills
+  stash: Stash
+  nothing-found: Nothing found
+  equipment: Equipment
+  dungeon-role: Dungeon Role
+  melee: Melee
+  ranged: Ranged
+  agility: Agility
+  wisdom: Wisdom
+  level: Level
+  yellow: Yellow
+  red: Red
+  blue: Blue
+  green: Green
+  dwarf: Dwarf
+  human: Human
+  elf: Elf
+  draconian: Draconian
+  orc: Orc
+  vampire: Vampire
+  halfling: Halfling
+  efreet: Efreet
+  succubus: Succubus
+  valkyrie: Valkyrie
+  azurean: Azurean
+  mage: Mage
+  sorcerer: Sorcerer
+  shadow-knight: Shadow Knight
+  paladin: Paladin
+  warrior: Warrior
+  assasin: Assasin
+  bard: Bard
+  ranger: Ranger
+  cleric: Cleric
+  barbarian: Barbarian
+  druid: Druid
+  monk: Monk
+  swordmage: Swordmage
+  warlord: Warlord
+  necromancer: Necromancer
+  shaman: Shaman
+  mystics: Mystics
+  strength: Strength
+  devotion: Devotion
+  cunning: Cunning
+  nature: Nature
+  resources: Resources
+  focus: Focus
+  fury: Fury
+  fruit-of-life: Fruit of Life
+  ki: KI
+  shield: Shield
+text:
+  select-action-cube-color: Select action cube color
+  curse-cubes: Curse Cubes
+  trauma-cubes: Trauma Cube
+  path-of: Path of
+  add-or-remove-status: Add or remove status
+  add-or-remove-unfolding: Add or remove unfolding
+  add-or-remove-outcome: Add or remove outcome
+  add-or-remove-follower: Add or remove follower
+  add-or-remove-stashed-items: Add or remove stashed items
+  select-aura: Select aura
+  aura-info: Aura is removed when you receive a trauma cube or another aura.
+  outcome-info: Remain in effect for the entire campaign unless some other effect
+    changes them.
+  status-info: Statuses are removed during the camp phase.
+  number-of-runes: "Number of runes:"
+  party-name: "Party name:"
+  no-resources: No resources
+monster:
+  abomination: Abomination
+  archon: Archon
+  bane: Bane
+  bone-reaper: Bone Reaper
+  commander-doctor: Doctor
+  commander-flinch: Flinch
+  commander-hexer: Hexer
+  commander-horde: Horde
+  commander-hunter: Hunter
+  commander-ox: Ox
+  commander-thern: Thern
+  commander-twin: Twin
+  commander-spawn: Spawn
+  commander-witch: Witch
+  corrupted-farmer: Corrupted Farmer
+  corrupted-worm: Corrupted Worm
+  death-messenger: Death Messenger
+  demon-lord: Demon Lord
+  dream-titan: Dream Titan
+  executioner: Executioner
+  faceless-conjurer: Faceless Conjurer
+  fallen-sisters: Fallen Sisters
+  fell-asteris: Fell Asteris
+  gorgon-hexer: Gorgon Hexer
+  gorgoness-witch: Gorgoness Witch
+  gremlin-horde: Gremlin Horde
+  grim-doctor: Grim Doctor
+  hellish-flayer: Hellish Flayer
+  hellspawn-brute: Hellspawn Brute
+  lady-claw: Lady Claw
+  nagian-hunter: Nagian Hunter
+  night-stalker: Night Stalker
+  ravager: Ravager
+  rotten-flesh: Rotten Flesh
+  scout-of-darkness: Scout Of Darkness
+  shadow-cultist: Shadow Cultist
+  shadow-guardian: Shadow Guardian
+  shadow-knight: Shadow Knight
+  shadow-mistress: Shadow Mistress
+  shadow-pain: Shadow Pain
+  shadow-vampire: Shadow Vampire
+  shadow-witch: Shadow Witch
+  skeleton-archer: Skeleton Archer
+  skeleton-knight: Skeleton Knight
+  walking-horror: Walking Horror
+menu:
+  menu: Menu
+  random-monster: Random monster
+  campaign: Campaign
+  keyword: Keyword
+  settings: Settings
+language:
+  english: English
+  german: German
+  spanish: Spanish
+  french: French
+  italian: Italian
+  portuguese: Portuguese
+  polish: Polish
+configuration:
+  language: Language
+  enabled-variant: Enabled variant
+  monster-content: Monster content
+  hero-content: Hero content
+  error:
+    atleast-one-selected: At least one has to be selected.
+content:
+  apocalypse: Apocalypse
+  awakenings: Awakenings
+  core: Core
+  desert-of-hellscar: Desert of Hellscar
+  fallen-sisters: Fallen Sisters
+  handuriel: Handuriel
+  hero-pack-1: Hero Pack 1
+  lord-wrath: Lordwrath
+  lorien: Lorien
+  monster-pack-1: Monster Pack 1
+  rise-of-the-undead-dragon: Rise of the Undead Dragon
+  spoils-of-war: Spoils of War
+  the-ruin-of-luccanor: The Ruin of Luccanor
+  the-shadow-world: The Shadow World
+variant:
+  standard: Standard
+  alternate: Alternate
+  complex: Complex (A / B)

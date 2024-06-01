@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import { ConfigurationStore } from "@/store/ConfigurationStore";
+import { setLanguage, loadLanguage } from "@/language";
 import { LanguageStore } from "@/store/LanguageStore";
 import { watch } from "vue";
 import { useI18n } from "vue-i18n";
 
+const languageStore = LanguageStore();
 const { locale } = useI18n();
 
-const languageStore = LanguageStore();
-const configurationStore = ConfigurationStore();
-
 watch(locale, () => {
-  configurationStore.enabledLanguage = locale.value;
+  setLanguage(locale.value);
+  loadLanguage(locale.value);
 });
 </script>
 

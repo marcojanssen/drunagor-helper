@@ -1,0 +1,379 @@
+---
+weapon:
+  core:
+    amiran-crossbow: Amiran Crossbow
+    amiran-halberd: Amiran Halberd
+    amiran-royal-maul: Amiran Royal Maul
+    battle-maul: Battle Maul
+    blacksteel-blade: Blacksteel Blade
+    blacksteel-greatsword: Blacksteel Greatsword
+    blacksteel-longsword: Blacksteel Longsword
+    blooded-sword: Blooded Sword
+    bloody-axe-cosmic-gem: Bloody Axe (Cosmic Gem)
+    bloody-axe-socketed: Bloody Axe (Socketed)
+    corruptor-knife: Corruptor Knife
+    crossbow: Crossbow
+    dreampiercer-bow: Dreampiercer Bow
+    dwarven-kings-sword-cosmic-gem: Dwarven King's Sword (Cosmic Gem)
+    dwarven-kings-sword-socketed: Dwarven King's Sword (Socketed)
+    elvish-bow: Elvish Bow
+    enchanted-crossbow-cosmic-gem: Enchanted Crossbow (Cosmic Gem)
+    enchanted-crossbow-socketed: Enchanted Crossbow (Socketed)
+    exquisite-dreamblade: Exquisite Dreamblade
+    hellscarian-short-bow: Hellscarian Short Bow
+    jagged-blade-axe: Jagged Blade Axe
+    light-maul: Light Maul
+    marksman-bow: Marksman Bow
+    orcish-blade: Orcish Blade
+    orcish-cleaver: Orcish Cleaver
+    orcish-reaper-blade: Orcish Reaper Blade
+    repeating-crossbow: Repeating Crossbow
+    runecarved-blade: Runecarved Blade
+    staff-of-the-arcana: Staff Of The Arcana
+    staff-of-the-dawn: Staff Of The Dawn
+    staff-of-the-moon: Staff Of The Moon
+    staff-of-the-noon: Staff Of The Noon
+    staff-of-the-stars: Staff Of The Stars
+    staff-of-the-twilight: Staff Of The Twilight
+    staff-of-the-wildfire-cosmic-gem: Staff Of The Wildfire (Cosmic Gem)
+    staff-of-the-wildfire-socketed: Staff Of The Wildfire (Socketed)
+    sword-of-the-dynasty: Sword Of The Dynasty
+    sword-of-the-prince: Sword Of The Prince
+    terror-blade: Terror Blade
+    valaranian-runebow: Valaranian Runebow
+    vicious-knife: Vicious Knife
+    wooden-staff: Wooden Staff
+  undeaddragon:
+    dark-piercer: Dark Piercer
+    bane-of-the-shadows: Bane Of The Shadows
+  desertofhellscar:
+    staff-of-gravity: Staff Of Gravity
+    weapon-of-the-ancients: Weapon Of The Ancients
+  apocalypse:
+    axe-of-the-steppes: Axe of the Steppes
+    counselors-staff: Counselor's Staff
+    empyrean-bowstaff: Empyrean Bowstaff
+    gil-garoths-sword: Gil Garoth's Sword
+    hellscarian-falchion: Hellscarian Falchion
+    hunting-shotbow: Hunting Shortbow
+    improved-arbalast: Improved Arbalast
+    improved-arcannon: Improved Arcannon
+    improved-claymore: Improved Claymore
+    improved-crossbow: Improved Crossbow
+    improved-longsword: Improved Longsword
+    improved-rapier: Improved Rapier
+    improved-royal-staff: Improved Royal Staff
+    lionhearteds-sword: Lionhearted's Sword
+    standard-arbalast: Standard Arbalast
+    standard-arcannon: Standard Arcannon
+    standard-claymore: Standard Claymore
+    standard-crossbow: Standard Crossbow
+    standard-longsword: Standard Longsword
+    standard-rapier: Standard Rapier
+    standard-royal-staff: Standard Royal Staff
+    sword-of-kane: Sword of Kane
+    ultimate-arbalast: Ultimate Arbalast
+    ultimate-arcannon: Ultimate Arcannon
+    ultimate-claymore: Ultimate Claymore
+    ultimate-crossbow: Ultimate Crossbow
+    ultimate-longsword: Ultimate Longsword
+    ultimate-rapier: Ultimate Rapier
+    ultimate-royal-staff: Ultimate Royal Staff
+  awakenings:
+    arcabalest: Arcabalest
+    chaos-staff: Chaos Staff
+    cleavescythe: Cleavescythe
+    hack-slash: Hack-Slash
+    improved-hack-slash: Improved Hack-Slash
+    improved-twin-blades: Improved Twin-Blades
+    improved-cleavescythe: Improved Cleavescythe
+    improved-chaos-staff: Improved Chaos Staff
+    improved-war-bow: Improved War Bow
+    improved-arcabalest: Improved Arcabalest
+    twin-blades: Twin-Blades
+    rancor-blade: Rancor Blade
+    ultimate-hack-slash: Ultimate Hack-Slash
+    ultimate-twin-blades: Ultimate Twin-Blades
+    ultimate-cleavescythe: Ultimate Cleavescythe
+    ultimate-chaos-staff: Ultimate Chaos Staff
+    ultimate-war-bow: Ultimate War Bow
+    ultimate-arcabalest: Ultimate Arcabalest
+    war-bow: War Bow
+trinket:
+  core:
+    amulet-of-power: Amulet Of Power
+    amulet-of-rewinding: Amulet Of Rewinding
+    amulet-of-the-copycat: Amulet Of The Copycat
+    badge-of-the-wardens: Badge Of The Wardens
+    blue-flame-torch: Blue Flame Torch
+    boots-of-agility: Boots Of Agility
+    boots-of-levitation: Boots Of Levitation
+    boots-of-striding: Boots Of Striding
+    bracers-of-endurance: Bracers Of Endurance
+    broken-phylactery: Broken Phylactery
+    cursed-bracelet: Cursed Bracelet
+    dewey-and-guss-collar: Dewey & Guss' Collar
+    family-locket-cosmic-gem: Family Locket (Cosmic Gem)
+    family-locket-socketed: Family Locket (Socketed)
+    gold-medal: Gold Medal
+    golden-locket: Golden Locket
+    good-quality-stick: Good-Quality Stick
+    good-quality-torch: Good-Quality Torch
+    lovers-promise: Lover's Promise
+    periapt-of-greater-healing: Periapt Of Greater Healing
+    periapt-of-healing: Periapt Of Healing
+    periapt-of-supreme-healing: Periapt Of Supreme Healing
+    ring-of-greater-precision: Ring Of Greater Precision
+    ring-of-legendary-precision: Ring Of Legendary Precision
+    ring-of-precision: Ring Of Precision
+    ruby-brooch: Ruby Brooch
+    seed-of-darkness-bright: Seed Of Darkness (Bright)
+    seed-of-darkness-dim: Seed Of Darkness (Dim)
+    sigil-of-narangerel: Sigil Of Narang'erel
+    teddy-bear: Teddy Bear
+    bond-of-superation: Bond of Superation
+    badge-of-the-west-wind: Badge of the West Wind
+  undeaddragon:
+    dragon-eye-of-memory: Dragon Eye Of Memory
+  desertofhellscar:
+    frozen-tears-of-alagast: Frozen Tears Of Alagast
+  apocalypse:
+    chain-of-the-lost-world: Chain of the Lost World
+    eldritch-symbiot: Eldritch Symbiot
+    executioners-helmet: Executioner's Helmet
+    gilded-collar-death: Gilded Collar (Death)
+    gilded-collar-life: Gilded Collar (Life)
+    grayrock-signet: Grayrock Signet
+    improved-eldritch-mask: Improved Eldritch Mask
+    improved-emerald-ring: Improved Emerald Ring
+    improved-power-gauntlet: Improved Power Gauntlet
+    improved-titan-stompers: Improved Titan Stompers
+    jeweled-necklace: Jeweled Necklace
+    outlander-helmet: Outlander Helmet
+    ragged-doll: Ragged Doll
+    rainbow-mask: Rainbow Mask
+    righteous-torch: Righteous Torch
+    sapphire-pendant: Sapphire Pendant
+    sprout-of-darkness: Sprout of Darkness
+    standard-eldritch-mask: Standard Eldritch Mask
+    standard-emerald-ring: Standard Emerald Ring
+    standard-power-gauntlet: Standard Power Gauntlet
+    standard-titan-stompers: Standard Titan Stompers
+    ultimate-eldritch-mask: Ultimate Eldritch Mask
+    ultimate-emerald-ring: Ultimate Emerald Ring
+    ultimate-power-gauntlet: Ultimate Power Gauntlet
+    ultimate-titan-stompers: Ultimate Titan Stompers
+    vow-keeper: Vow Keeper
+  awakenings:
+    accuracy-ring: Accuracy Ring
+    cornucopia: Cornucopia
+    arcane-glove: Arcane Glove
+    black-harpoon: Black Harpoon
+    bright-crest: Bright Crest
+    captains-brooch: Captain's Brooch
+    christis-kitten: Christi's Kitten
+    cosmic-heart-chipped: Cosmic Heart - Chipped
+    cosmic-heart-flawless: Cosmic Heart - Flawless
+    eradrens-lamp: Eradren's Lamp
+    felix-felis: Felix Felis
+    fighters-ring-back: Fighter's Ring (Back)
+    fighters-ring-front: Fighter's Ring (Front)
+    grimoire: Grimoire
+    huntmasters-whistle: Huntmaster's Whistle
+    improved-accuracy-ring: Improved Accuracy Ring
+    improved-tracker-boots: Improved Tracker Boots
+    improved-cornucopia: Improved Cornucopia
+    improved-grimoire: Improved Grimoire
+    loriens-flute: Lorien's Flute
+    mind-gem: Mind Gem
+    polished-helmet: Polished Helmet
+    token-of-friendship: Token of Friendship
+    tracker-boots: Tracker Boots
+    trappers-toolkit: Trapper's Toolkit
+    ultimate-accuracy-ring: Ultimate Accuracy Ring
+    ultimate-tracker-boots: Ultimate Tracker Boots
+    ultimate-cornucopia: Ultimate Cornucopia
+    ultimate-grimoire: Ultimate Grimoire
+armor:
+  core:
+    breastplate: Breastplate
+    cloth-armor: Cloth Armor
+    displacement-cloak: Displacement Cloak
+    dream-weaveplate: Dream Weaveplate
+    full-plate-armor: Full Plate Armor
+    greater-displacement-cloak: Greater Displacement Cloak
+    greater-spellweave-cloak: Greater Spellweave Cloak
+    half-plate-armor: Half-Plate Armor
+    heavy-thornmail: Heavy Thornmail
+    leather-armor: Leather Armor
+    lesser-displacement-cloak: Lesser Displacement Cloak
+    lesser-spellweave-cloak: Lesser Spellweave Cloak
+    light-thornmail: Light Thornmail
+    padded-leather-armor: Padded Leather Armor
+    plate-armor: Plate Armor
+    reinforced-leather-armor: Reinforced Leather Armor
+    reinforced-shadow-leather: Reinforced Shadow Leather
+    runecarved-cloak: Runecarved Cloak
+    shadow-leather-armor: Shadow Leather Armor
+    spellweave-cloak: Spellweave Cloak
+    studded-leather-armor: Studded Leather Armor
+    studded-shadow-leather: Studded Shadow Leather
+    thornmail: Thornmail
+    xerethian-breastplate: Xerethian Breastplate
+  desertofhellscar:
+    wormscale-breastplate: Wormscale Breastplate
+  apocalypse:
+    condottieris-breastplate: Connottieri's Breastplate
+    improved-arming-doublet: Improved Arming Doublet
+    improved-cape-of-the-magi: Improved Cape of the Magi
+    improved-lorica-armor: Improved Lorica Armor
+    improved-royal-plate: Improved Royal Plate
+    improved-shadow-leather: Improved Shadow Leather
+    masterpiece-armor: Masterpiece Armor
+    outlander-black-plate: Outlander Black Plate
+    scholars-robe: Scholar's Robe
+    standard-arming-doublet: Standard Arming Doublet
+    standard-cape-of-the-magi: Standard Cape of the Magi
+    standard-lorica-armor: Standard Lorica Armor
+    standard-royal-plate: Standard Royal Plate
+    standard-shadow-leather: Standard Shadow Leather
+    ultimate-arming-doublet: Ultimate Arming Doublet
+    ultimate-cape-of-the-magi: Ultimate Cape of the Magi
+    ultimate-lorica-armor: Ultimate Lorica Armor
+    ultimate-royal-plate: Ultimate Royal Plate
+    ultimate-shadow-leather: Ultimate Shadow Leather
+    veteran-cuirass: Veteran Cuirass
+    warworn-breastplate: Warworn Breastplate
+  awakenings:
+    battle-plate: Battle Plate
+    exquisite-mail: Exquisite Mail
+    improved-mystics-robe: Improved Mystic's Robe
+    improved-rogues-vest: Improved Rogue's Vest
+    improved-battle-plate: Improved Battle Plate
+    improved-exquisite-mail: Improved Exquisite Mail
+    improved-quilted-doublet: Improved Quilted Doublet
+    mystics-robe: Mystic's Robe
+    quilted-doublet: Quilted Doublet
+    rogues-vest: Rogue's Vest
+    ultimate-mystics-robe: Ultimate Mystic's Robe
+    ultimate-rogues-vest: Ultimate Rogue's Vest
+    ultimate-battle-plate: Ultimate Battle Plate
+    ultimate-exquisite-mail: Ultimate Exquisite Mail
+    ultimate-quilted-doublet: Ultimate Quilted Doublet
+consumable:
+  core:
+    cosmic-gemstone: Cosmic Gemstone
+    cosmic-gemstone-chest: Cosmic Gemstone (Chest)
+    cosmic-gemstone-from-sigil-of-honor: Cosmic Gemstone (From Sigil Of Honor)
+    dreamcrafted-pattern-bracers-of-endurance: Dreamcrafted Pattern (Bracers Of Endurance)
+    dreamcrafted-pattern-dream-weaveplate: Dreamcrafted Pattern (Dream Weaveplate)
+    dreamcrafted-pattern-dreamcrafted-buckler: Dreamcrafted Pattern (Dreamcrafted
+      Buckler)
+    dreamcrafted-pattern-dreampiercer-bow: Dreamcrafted Pattern (Dreampiercer Bow)
+    dreamcrafted-pattern-exquisite-dreamblade: Dreamcrafted Pattern (Exquisite Dreamblade)
+    dreamcrafted-pattern-sigil-of-narangerel: Dreamcrafted Pattern (Sigil Of Narang'erel)
+    potion-of-fortitude: Potion Of Fortitude
+    potion-of-healing: Potion Of Healing
+    potion-of-preparation: Potion Of Preparation
+    scroll-of-displacement: Scroll Of Displacement
+    scroll-of-icy-bolts: Scroll Of Icy Bolts
+    scroll-of-incinerate: Scroll Of Incinerate
+    scroll-of-unmaking: Scroll Of Unmaking
+  apocalypse:
+    artisans-tools: Artisan's Tools (Veteran)
+    scroll-of-charm: Scroll of Charm
+    scroll-of-the-copy-cat: Scroll of the Copy Cat
+    scroll-of-translocation: Scroll of Translocation
+    treasure-trove: Treasure trove (Veteran)
+  awakenings:
+    artisans-tools: Artisan's Tools (Hero)
+    combustible-grenade: Combustible Grenade
+    dragons-breath: Dragon's Breath
+    potion-of-haste: Potion of Haste
+    potion-of-strength: Potion of Strength
+    scroll-of-beguile: Scroll of Beguile
+    scroll-of-polymorph: Scroll of Polymorph
+    scroll-of-protection: Scroll of Protection
+    treasure-trove: Treasure Trove (Hero)
+offhand:
+  core:
+    deadly-backstabber: Deadly Backstabber
+    deft-stilleto: Deft Stilleto
+    dreamcrafted-buckler: Dreamcrafted Buckler
+    dueling-dagger: Dueling Dagger
+    empowered-pact-blade: Empowered Pact Blade
+    greater-mystical-symbol: Greater Mystical Symbol
+    greater-symbol-of-light: Greater Symbol Of Light
+    heavy-shield: Heavy Shield
+    iron-shield: Iron Shield
+    kite-shield-cosmic-gem: Kite Shield (Cosmic Gem)
+    kite-shield-socketed: Kite Shield (Socketed)
+    lesser-mystical-symbol: Lesser Mystical Symbol
+    lesser-symbol-of-light: Lesser Symbol Of Light
+    mystical-symbol: Mystical Symbol
+    pact-blade: Pact Blade
+    round-brass-shield: Round Brass Shield
+    round-golden-shield: Round Golden Shield
+    round-silver-shield: Round Silver Shield
+    runecarved-shield: Runecarved Shield
+    sigil-of-honor: Sigil Of Honor
+    steel-shield: Steel Shield
+    symbol-of-light: Symbol Of Light
+    throwing-dagger: Throwing Dagger
+    undermountain-scabbard: Undermountain Scabbard
+    vengeful-pact-blade: Vengeful Pact Blade
+  undeaddragon:
+    moonlight-dagger: Moonlight Dagger
+    dragonclaw-shield: Dragonclaw Shield
+  desertofhellscar:
+    dragonbone-wand: Dragonbone Wand
+  apocalypse:
+    carmillas-kiss: Carmilla's Kiss
+    commodores-shield: Commodore's Shield
+    draconian-war-gauntlet: Draconian War-Gauntlet
+    emerald-claw-gauntlet: Emerald Claw-Gauntlet
+    improved-astral-shard: Improved Astral Shard
+    improved-pact-blade: Improved Pact Blade
+    improved-shadday-shield: Improved Shadday Shield
+    improved-shell-opener: Improved Shell Opener
+    improved-umbral-buckler: Improved Umbral Buckler
+    kraken-slayer: Kraken Slayer
+    masterpiece-blade: Masterpiece Blade
+    masterpiece-bow: Masterpiece Bow
+    masterpiece-staff: Masterpiece Staff
+    outlander-shield: Outlander Shield
+    princess-bowaegis: Princess' Bowaegis
+    reality-render: Reality Render
+    rod-of-the-prince: Rod of the Prince
+    standard-astral-shard: Standard Astral Shard
+    standard-pact-blade: Standard Pact Blade
+    standard-shadday-shield: Standard Shadday Shield
+    standard-shell-opener: Standard Shell Opener
+    standard-umbral-buckler: Standard Umbral Buckler
+    ultimate-astral-shard: Ultimate Astral Shard
+    ultimate-pact-blade: Ultimate Pact Blade
+    ultimate-shadday-shield: Ultimate Shadday Shield
+    ultimate-shell-opener: Ultimate Shell Opener
+    ultimate-umbral-buckler: Ultimate Umbral Buckler
+  awakenings:
+    astral-symbol: Astral Symbol
+    buckler: Buckler
+    azure-robins-knife: Azure Robins Knife
+    defenders-buckler-back: Defender's Buckler (Back)
+    defenders-buckler-front: Defender's Buckler (Front)
+    heart-of-the-ocean: Heart of the Ocean
+    heavy-shield: Heavy Shield
+    hippocampus-banner: Hippocampus Banner
+    holy-aegis: Holy Aegis
+    improved-astral-symbol: Improved Astral Symbol
+    improved-heavy-shield: Improved Heavy Shield
+    improved-skull-piercer: Improved Skull Piercer
+    improved-holy-aegis: Improved Holy Aegis
+    improved-buckler: Improved Buckler
+    ominous-spearhead: Ominous Spearhead
+    skull-piercer: Skull Piercer
+    ultimate-astral-symbol: Ultimate Astral Symbol
+    ultimate-heavy-shield: Ultimate Heavy Shield
+    ultimate-skull-piercer: Ultimate Skull Piercer
+    ultimate-holy-aegis: Ultimate Holy Aegis
+    ultimate-buckler: Ultimate Buckler

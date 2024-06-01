@@ -1,0 +1,378 @@
+---
+weapon:
+  core:
+    amiran-crossbow: Kusza Amirana
+    amiran-halberd: Halabarda z Amiranu
+    amiran-royal-maul: Królewski młotek
+    battle-maul: Warhammera
+    blacksteel-blade: Ostrze ze stali czarnej
+    blacksteel-greatsword: Tasak ze stali czarnej
+    blacksteel-longsword: Miecz ze stali czarnej
+    blooded-sword: Krwawy miecz
+    bloody-axe-cosmic-gem: Krwawy Topór (Kosmiczny Klejnot)
+    bloody-axe-socketed: Krwawy Topór (Podstawa)
+    corruptor-knife: Nóż korupcyjny
+    crossbow: kusza
+    dreampiercer-bow: Łuk łamacza snów
+    dwarven-kings-sword-cosmic-gem: Miecz Króla Krasnoludów (Kosmiczny Klejnot)
+    dwarven-kings-sword-socketed: Miecz Króla Krasnoludów (podstawa)
+    elvish-bow: Elficki łuk
+    enchanted-crossbow-cosmic-gem: Zaczarowana Kusza (Kosmiczny Klejnot)
+    enchanted-crossbow-socketed: Zaczarowana Kusza (Podstawa)
+    exquisite-dreamblade: Dreamblade
+    hellscarian-short-bow: Piekielny krótki łuk
+    jagged-blade-axe: Wyszczerbiony topór
+    light-maul: Lekki młotek
+    marksman-bow: Łuk łucznika
+    orcish-blade: Orkowe ostrze
+    orcish-cleaver: Tasak orków
+    orcish-reaper-blade: Orkowe ostrze kosy
+    repeating-crossbow: Powtarzająca się kusza
+    runecarved-blade: Runiczne ostrze
+    staff-of-the-arcana: Kostur Sztuk Tajemnych
+    staff-of-the-dawn: Kostur Zmierzchu
+    staff-of-the-moon: Laska Księżyca
+    staff-of-the-noon: Personel godziny południowej
+    staff-of-the-stars: Personel Gwiazd
+    staff-of-the-twilight: Kostur Zmierzchu
+    staff-of-the-wildfire-cosmic-gem: Kostur Dzikiego Ognia (Kosmiczny Klejnot)
+    staff-of-the-wildfire-socketed: Kostur Dzikiego Ognia (nasadka)
+    sword-of-the-dynasty: Miecz dynastii
+    sword-of-the-prince: Miecz księcia
+    terror-blade: Straszliwe ostrze
+    valaranian-runebow: Valarański łuk
+    vicious-knife: Okrutny nóż
+    wooden-staff: drewniany patyk
+  undeaddragon:
+    dark-piercer: Ciemna Lanca
+    bane-of-the-shadows: Młot Cieni
+  desertofhellscar:
+    staff-of-gravity: Pręt grawitacyjny
+    weapon-of-the-ancients: Broń przodków
+  apocalypse:
+    axe-of-the-steppes: Topór Stepów
+    counselors-staff: Personel Doradcy
+    empyrean-bowstaff: Empirejski Bowstaff
+    gil-garoths-sword: Miecz Gila Garotha
+    hellscarian-falchion: Piekielny Falchion
+    hunting-shotbow: Krótki łuk myśliwski
+    improved-arbalast: Ulepszony Arbalast
+    improved-arcannon: Ulepszone Arkano
+    improved-claymore: Ulepszony Claymore
+    improved-crossbow: Ulepszona kusza
+    improved-longsword: Ulepszony długi miecz
+    improved-rapier: Ulepszony Rapier
+    improved-royal-staff: Ulepszony personel królewski
+    lionhearteds-sword: Miecz Lwiego Serca
+    standard-arbalast: Standardowy arbalast
+    standard-arcannon: Standardowy Arcannon
+    standard-claymore: Standardowy Claymore
+    standard-crossbow: Standardowa kusza
+    standard-longsword: Standardowy długi miecz
+    standard-rapier: Standardowy rapier
+    standard-royal-staff: Standardowy personel królewski
+    sword-of-kane: Miecz Kane'a
+    ultimate-arbalast: Najlepszy Arbalast
+    ultimate-arcannon: Ostateczne Arkano
+    ultimate-claymore: Ostateczny Claymore
+    ultimate-crossbow: Najlepsza kusza
+    ultimate-longsword: Ostateczny Długi Miecz
+    ultimate-rapier: Ostateczny Rapier
+    ultimate-royal-staff: Ostateczny Królewski Kostur
+  awakenings:
+    arcabalest: Arcabalest
+    chaos-staff: Kostur Chaosu
+    cleavescythe: Cleavescythe'a
+    hack-slash: Hack-slash
+    improved-hack-slash: Ulepszony hack-slash
+    improved-twin-blades: Ulepszone podwójne ostrza
+    improved-cleavescythe: Ulepszony Cleavescythe
+    improved-chaos-staff: Ulepszony Kostur Chaosu
+    improved-war-bow: Ulepszony łuk bojowy
+    improved-arcabalest: Ulepszony Arcabalest
+    twin-blades: Bliźniacze Ostrza
+    rancor-blade: Ostrze Rancora
+    ultimate-hack-slash: Ostateczny hack-slash
+    ultimate-twin-blades: Najlepsze Bliźniacze Ostrza
+    ultimate-cleavescythe: Ostateczny Cleavescythe
+    ultimate-chaos-staff: Ostateczny Kostur Chaosu
+    ultimate-war-bow: Ostateczny łuk bojowy
+    ultimate-arcabalest: Ostateczny Arcabalest
+    war-bow: Był Bow
+trinket:
+  core:
+    amulet-of-power: Amulet mocy
+    amulet-of-rewinding: Amulet Przewijania
+    amulet-of-the-copycat: Amulet Naśladowcy
+    badge-of-the-wardens: Odznaka Strażników
+    blue-flame-torch: Latarka z niebieskim płomieniem
+    boots-of-agility: Buty Zręczności
+    boots-of-levitation: Buty pływające
+    boots-of-striding: Buty akrobatyczne
+    bracers-of-endurance: Karwasze Wytrzymałości
+    broken-phylactery: Uszkodzone naczynie duszy
+    cursed-bracelet: Przeklęta bransoletka
+    dewey-and-guss-collar: Obroże Deweya
+    family-locket-cosmic-gem: Medalik rodzinny (kosmiczny kamień szlachetny)
+    family-locket-socketed: Medalion rodzinny (podstawa)
+    gold-medal: Złoty medal
+    golden-locket: Złoty wisiorek
+    good-quality-stick: Dobrej jakości kij
+    good-quality-torch: Świeżo zapalona pochodnia
+    lovers-promise: Znak miłości
+    periapt-of-greater-healing: Amulet lepszego leczenia
+    periapt-of-healing: Amulet uzdrawiania
+    periapt-of-supreme-healing: Amulet najwyższego uzdrowienia
+    ring-of-greater-precision: Lepszy pierścień precyzji
+    ring-of-legendary-precision: Legendarny Pierścień Precyzji
+    ring-of-precision: Pierścień Precyzji
+    ruby-brooch: Rubinowa broszka
+    seed-of-darkness-bright: Nasienie Ciemności (Świecące)
+    seed-of-darkness-dim: Nasienie Ciemności (Ciemność)
+    sigil-of-narangerel: Pieczęć Narang'erela
+    teddy-bear: Miś
+    bond-of-superation: Opaska na głowę przezwyciężenia
+    badge-of-the-west-wind: Odznaka Zachodniego Wiatru
+  undeaddragon:
+    dragon-eye-of-memory: Smocze Oko Pamięci
+  desertofhellscar:
+    frozen-tears-of-alagast: Lodowe Łzy z Alagast
+  apocalypse:
+    chain-of-the-lost-world: Łańcuch Zaginionego Świata
+    eldritch-symbiot: Niesamowity symbiont
+    executioners-helmet: Hełm Kata
+    gilded-collar-death: Pozłacany kołnierz (Śmierć)
+    gilded-collar-life: Pozłacany kołnierz (Życie)
+    grayrock-signet: Sygnet Grayrocka
+    improved-eldritch-mask: Ulepszona Maska Niesamowitości
+    improved-emerald-ring: Ulepszony szmaragdowy pierścień
+    improved-power-gauntlet: Ulepszona Rękawica Mocy
+    improved-titan-stompers: Ulepszone Stompery Tytanów
+    jeweled-necklace: Naszyjnik z klejnotami
+    outlander-helmet: Hełm Outlandera
+    ragged-doll: Obdarta Lalka
+    rainbow-mask: Tęczowa maska
+    righteous-torch: Sprawiedliwa Pochodnia
+    sapphire-pendant: Szafirowy wisiorek
+    sprout-of-darkness: Pęd Ciemności
+    standard-eldritch-mask: Standardowa maska ​​Eldritcha
+    standard-emerald-ring: Standardowy pierścionek ze szmaragdem
+    standard-power-gauntlet: Standardowa rękawica mocy
+    standard-titan-stompers: Standardowe tytanowe stopery
+    ultimate-eldritch-mask: Ostateczna Maska Niesamowitości
+    ultimate-emerald-ring: Ostateczny szmaragdowy pierścień
+    ultimate-power-gauntlet: Ostateczna rękawica mocy
+    ultimate-titan-stompers: Ostateczne Stompery Tytanów
+    vow-keeper: Strażnicy ślubów
+  awakenings:
+    accuracy-ring: Pierścień dokładności
+    cornucopia: Róg obfitości
+    arcane-glove: Tajemna Rękawica
+    black-harpoon: Czarny harpun
+    bright-crest: Jasny Grzebień
+    captains-brooch: Broszka Kapitana
+    christis-kitten: Kocięta Christi
+    cosmic-heart-chipped: Kosmiczne Serce - Rozdrobnione
+    cosmic-heart-flawless: Kosmiczne serce – bez skazy
+    eradrens-lamp: Lampa Eradrena
+    felix-felis: Feliks Felis
+    fighters-ring-back: Pierścień Wojownika (Tył)
+    fighters-ring-front: Pierścień Wojownika (przód)
+    grimoire: Grimuar
+    huntmasters-whistle: Gwizdek mistrza łowów
+    improved-accuracy-ring: Ulepszony pierścień dokładności
+    improved-tracker-boots: Ulepszone buty trackera
+    improved-cornucopia: Ulepszony róg obfitości
+    improved-grimoire: Ulepszony Grimoire
+    loriens-flute: Flet Lorien
+    mind-gem: Klejnot umysłu
+    polished-helmet: Polerowany hełm
+    token-of-friendship: Znaki Przyjaźni
+    tracker-boots: Buty tropiciela
+    trappers-toolkit: Zestaw narzędzi trapera
+    ultimate-accuracy-ring: Pierścień najwyższej dokładności
+    ultimate-tracker-boots: Najlepsze buty śledzące
+    ultimate-cornucopia: Ostateczny róg obfitości
+    ultimate-grimoire: Ostateczny Grimoire
+armor:
+  core:
+    breastplate: Napierśnik
+    cloth-armor: część garderoby
+    displacement-cloak: Peleryna-niewidka
+    dream-weaveplate: Zbroja Dreamweave
+    full-plate-armor: Pełna zbroja płytowa
+    greater-displacement-cloak: Lepsza peleryna-niewidka
+    greater-spellweave-cloak: Lepszy płaszcz ochronny
+    half-plate-armor: Zbroja półpłytowa
+    heavy-thornmail: Ciężka zbroja cierniowa
+    leather-armor: Skórzany pancerz
+    lesser-displacement-cloak: Mała peleryna-niewidka
+    lesser-spellweave-cloak: Mało znaczący płaszcz
+    light-thornmail: Cierniowa Zbroja Światła
+    padded-leather-armor: Wyściełana skórzana zbroja
+    plate-armor: Zbroja płytowa
+    reinforced-leather-armor: Wzmocniona skórzana zbroja
+    reinforced-shadow-leather: Wzmocniona Zbroja Cienia
+    runecarved-cloak: Runiczny płaszcz
+    shadow-leather-armor: Skórzana Zbroja Cienia
+    spellweave-cloak: Płaszcz ochronny
+    studded-leather-armor: Nabijana skórzana zbroja
+    studded-shadow-leather: Nitowana cieniowana skóra
+    thornmail: Kolczasta kolczuga
+    xerethian-breastplate: Napierśnik Xereth
+  desertofhellscar:
+    wormscale-breastplate: Skorupa Robaczej Łuski
+  apocalypse:
+    condottieris-breastplate: Napierśnik Connottieriego
+    improved-arming-doublet: Ulepszony dublet uzbrojenia
+    improved-cape-of-the-magi: Ulepszony Przylądek Magów
+    improved-lorica-armor: Ulepszony pancerz Loricy
+    improved-royal-plate: Ulepszony talerz królewski
+    improved-shadow-leather: Ulepszona Skóra Cienia
+    masterpiece-armor: Mistrzowska zbroja
+    outlander-black-plate: Czarna płyta Outlandera
+    scholars-robe: Szata uczonego
+    standard-arming-doublet: Standardowy dublet uzbrojenia
+    standard-cape-of-the-magi: Standardowy Przylądek Trzech Króli
+    standard-lorica-armor: Standardowa zbroja Lorica
+    standard-royal-plate: Standardowy talerz królewski
+    standard-shadow-leather: Standardowa skóra cieni
+    ultimate-arming-doublet: Dublet ostatecznego uzbrojenia
+    ultimate-cape-of-the-magi: Ostateczny Przylądek Trzech Króli
+    ultimate-lorica-armor: Ostateczna Zbroja Loricy
+    ultimate-royal-plate: Ostateczny talerz królewski
+    ultimate-shadow-leather: Najlepsza Skóra Cienia
+    veteran-cuirass: Kirys Weterana
+    warworn-breastplate: Zniszczony napierśnik
+  awakenings:
+    battle-plate: Płyta bojowa
+    exquisite-mail: Wyśmienita poczta
+    improved-mystics-robe: Ulepszona Szata Mistyka
+    improved-rogues-vest: Ulepszona kamizelka Łotrzyka
+    improved-battle-plate: Ulepszona płyta bojowa
+    improved-exquisite-mail: Ulepszona wykwintna poczta
+    improved-quilted-doublet: Ulepszony pikowany dublet
+    mystics-robe: Szata mistyka
+    quilted-doublet: Pikowany dublet
+    rogues-vest: Kamizelka Łotrzyka
+    ultimate-mystics-robe: Szata Ostatecznego Mistyka
+    ultimate-rogues-vest: Kamizelka Ostatecznego Łotrzyka
+    ultimate-battle-plate: Ostateczna płyta bojowa
+    ultimate-exquisite-mail: Najlepsza wykwintna poczta
+    ultimate-quilted-doublet: Najlepszy pikowany dublet
+consumable:
+  core:
+    cosmic-gemstone: Kosmiczny kamień szlachetny
+    cosmic-gemstone-chest: Kosmiczny Klejnot (Skrzynia)
+    cosmic-gemstone-from-sigil-of-honor: Kosmiczny Klejnot (usunięty z Pieczęci Honoru)
+    dreamcrafted-pattern-bracers-of-endurance: Zjawiskowy wzór (szelki wytrzymałości)
+    dreamcrafted-pattern-dream-weaveplate: Zjawiskowy wzór (Zbroja Dreamweave)
+    dreamcrafted-pattern-dreamcrafted-buckler: Zjawiskowy wzór (Zjawiskowa tarcza)
+    dreamcrafted-pattern-dreampiercer-bow: Zjawiskowy wzór (Łuk Łamacza Snów)
+    dreamcrafted-pattern-exquisite-dreamblade: Zjawiskowy wzór (Dreamblade)
+    dreamcrafted-pattern-sigil-of-narangerel: Zjawiskowy wzór (Pieczęć Narang'erela)
+    potion-of-fortitude: Eliksir siły
+    potion-of-healing: Mikstura lecznicza
+    potion-of-preparation: Mikstura przygotowawcza
+    scroll-of-displacement: Rola represji
+    scroll-of-icy-bolts: Rola lodowych rakiet
+    scroll-of-incinerate: Rola spalania
+    scroll-of-unmaking: Rola uchylenia
+  apocalypse:
+    artisans-tools: Narzędzia rzemieślnika (Weteran)
+    scroll-of-charm: Zwój Uroku
+    scroll-of-the-copy-cat: Zwój kopiowanego kota
+    scroll-of-translocation: Zwój Translokacji
+    treasure-trove: Skarbiec (Weteran)
+  awakenings:
+    artisans-tools: Narzędzia rzemieślnika (bohater)
+    combustible-grenade: Granat palny
+    dragons-breath: Oddech smoka
+    potion-of-haste: Mikstura pośpiechu
+    potion-of-strength: Mikstura Siły
+    scroll-of-beguile: Zwój Beguile
+    scroll-of-polymorph: Zwój Polimorfa
+    scroll-of-protection: Zwój Ochrony
+    treasure-trove: Skarbiec (bohater)
+offhand:
+  core:
+    deadly-backstabber: Śmiertelny zdrajca
+    deft-stilleto: Krótki miecz
+    dreamcrafted-buckler: Fantastyczna tarcza
+    dueling-dagger: Sztylet pojedynkowy
+    empowered-pact-blade: Potężny nóż rytualny
+    greater-mystical-symbol: Lepszy mistyczny symbol
+    greater-symbol-of-light: Lepszy symbol światła
+    heavy-shield: Ciężka tarcza
+    iron-shield: Żelazna tarcza
+    kite-shield-cosmic-gem: Smocza Tarcza (Kosmiczny Klejnot)
+    kite-shield-socketed: Smocza Tarcza (podstawa)
+    lesser-mystical-symbol: Mały mistyczny symbol
+    lesser-symbol-of-light: Mały symbol światła
+    mystical-symbol: Mistyczny symbol
+    pact-blade: Rytualny nóż
+    round-brass-shield: Mosiężna okrągła tarcza
+    round-golden-shield: Złota okrągła tarcza
+    round-silver-shield: Srebrna okrągła tarcza
+    runecarved-shield: Runiczna tarcza
+    sigil-of-honor: Pieczęć honoru
+    steel-shield: Stalowa tarcza
+    symbol-of-light: Symbol światła
+    throwing-dagger: Rzucanie sztyletem
+    undermountain-scabbard: Krasnoludzka pochwa
+    vengeful-pact-blade: Rytualny Nóż Zemsty
+  undeaddragon:
+    moonlight-dagger: Sztylet Światła Księżyca
+    dragonclaw-shield: Tarcza Smoczego Pazura
+  desertofhellscar:
+    dragonbone-wand: Kostur Smoczej Kości
+  apocalypse:
+    carmillas-kiss: Pocałunek Carmilli
+    commodores-shield: Tarcza Commodore
+    draconian-war-gauntlet: Drakońska Rękawica Wojenna
+    emerald-claw-gauntlet: Rękawica Szmaragdowego Szponu
+    improved-astral-shard: Ulepszony Odłamek Astralny
+    improved-pact-blade: Ulepszone Ostrze Paktu
+    improved-shadday-shield: Ulepszona Tarcza Shadday
+    improved-shell-opener: Ulepszony otwieracz skorup
+    improved-umbral-buckler: Ulepszony Puklerz Umbralny
+    kraken-slayer: Zabójca Krakena
+    masterpiece-blade: Arcydzieło Ostrze
+    masterpiece-bow: Arcydzieło Łuku
+    masterpiece-staff: Arcydzieło personelu
+    outlander-shield: Tarcza Outlandera
+    princess-bowaegis: Księżniczka Bowaegis
+    reality-render: Renderowanie rzeczywistości
+    rod-of-the-prince: Różdżka Księcia
+    standard-astral-shard: Standardowy Odłamek Astralny
+    standard-pact-blade: Standardowe ostrze Paktu
+    standard-shadday-shield: Standardowa tarcza Shadday
+    standard-shell-opener: Domyślny otwieracz powłoki
+    standard-umbral-buckler: Standardowy puklerz umbralny
+    ultimate-astral-shard: Ostateczny Odłamek Astralny
+    ultimate-pact-blade: Ostateczne Ostrze Paktu
+    ultimate-shadday-shield: Ostateczna Tarcza Shadday
+    ultimate-shell-opener: Najlepszy Otwieracz Muszli
+    ultimate-umbral-buckler: Ostateczny Puklerz Umbralny
+  awakenings:
+    astral-symbol: Symbol astralny
+    buckler: Puklerz
+    azure-robins-knife: Nóż Azure Robina
+    defenders-buckler-back: Puklerz obrońcy (tył)
+    defenders-buckler-front: Puklerz obrońcy (przód)
+    heart-of-the-ocean: Serce Oceanu
+    heavy-shield: Ciężka Tarcza
+    hippocampus-banner: Banery hipokampa
+    holy-aegis: Święta Egida
+    improved-astral-symbol: Ulepszony symbol astralny
+    improved-heavy-shield: Ulepszona ciężka tarcza
+    improved-skull-piercer: Ulepszony Przebijacz Czaszek
+    improved-holy-aegis: Ulepszona Święta Egida
+    improved-buckler: Ulepszony puklerz
+    ominous-spearhead: Złowieszczy grot włóczni
+    skull-piercer: Przebijacz Czaszek
+    ultimate-astral-symbol: Ostateczny symbol astralny
+    ultimate-heavy-shield: Ostateczna ciężka tarcza
+    ultimate-skull-piercer: Ostateczny Przebijacz Czaszki
+    ultimate-holy-aegis: Ostateczna Święta Egida
+    ultimate-buckler: Ostateczny Puklerz
