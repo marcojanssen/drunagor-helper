@@ -3,18 +3,17 @@ import { ref } from "vue";
 import { CampaignStore } from "@/store/CampaignStore";
 import { HeroStore } from "@/store/HeroStore";
 import { useRouter } from "vue-router";
-import BaseModal from "@/components/BaseModal.vue";
-import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { Campaign } from "@/store/Campaign";
 import type { Hero } from "@/store/Hero";
 import { customAlphabet } from "nanoid";
 import { HeroEquipment } from "@/store/Hero";
-import { useToast } from "vue-toastification";
+import { useToast } from "primevue/usetoast";
 import { useI18n } from "vue-i18n";
+import BaseButtonMenu from "@/components/BaseButtonMenu.vue";
 
 const toast = useToast();
 
-const isOpen = ref(false);
+const visible = ref(false);
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const router = useRouter();
@@ -37,7 +36,7 @@ function importCampaign() {
       campaign = data.campaignData;
       campaign.campaignId = campaignId;
     } else {
-      toast.error("Invalid token.");
+      toast.add({ severity: "error", summary: "Error", detail: "Invalid token.", life: 3000 });
       return;
     }
 
@@ -58,70 +57,39 @@ function importCampaign() {
       heroStore.add(h);
     });
     closeModal();
+    toast.add({ severity: "success", summary: "Success", detail: "Campaign imported", life: 3000 });
     router.push({ name: "Campaign", params: { id: campaignId } });
   } catch (e) {
-    toast.error("Invalid token.");
+    toast.add({ severity: "error", summary: "Error", detail: "Invalid token", life: 3000 });
     return;
   }
 }
 
 function openModal() {
-  isOpen.value = true;
+  visible.value = true;
 }
 
 function closeModal() {
-  isOpen.value = false;
+  visible.value = false;
 }
 </script>
 
 <template>
-  <button
-    id="campaign-import"
-    class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
-    @click="openModal"
+  <Button outlined id="campaign-import" :label="t('label.import-campaign')" @click="openModal"></Button>
+  <Dialog
+    v-model:visible="visible"
+    modal
+    :header="t('label.import-campaign')"
+    :dismissableMask="true"
+    class="w-full md:w-1/3 m-2"
   >
-    {{ t("label.import-campaign") }}
-  </button>
-  <BaseModal :is-open="isOpen" @close-modal="closeModal" id="campaign-import-modal">
-    <template #header>
-      <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{ t("label.import-campaign") }}</div>
-        <div>
-          <button
-            id="close-modal"
-            class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
-            @click="closeModal"
-          >
-            <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
-          </button>
-        </div>
-      </div>
-    </template>
-    <template #default>
-      <div class="py-4">Paste your token here</div>
-      <textarea
-        v-model="token"
-        id="campaign-token"
-        class="w-full h-60 text-black rounded shadow border-transparent focus:border-transparent focus:ring-0"
-      ></textarea>
-      <div class="flex flex-wrap justify-center gap-4 pt-4">
-        <button
-          id="import-button"
-          class="px-2 py-2 bg-emerald-500 text-gray-200 uppercase font-semibold text-sm rounded-lg"
-          @click="importCampaign"
-        >
-          {{ t("label.import") }}
-        </button>
-        <button
-          id="close-modal"
-          class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
-          @click="closeModal"
-        >
-          {{ t("label.cancel") }}
-        </button>
-      </div>
-    </template>
-  </BaseModal>
+    <div class="py-4">Paste your token here</div>
+    <Textarea id="campaign-token" v-model="token" rows="5" cols="25" class="w-full"></Textarea>
+    <BaseButtonMenu>
+      <Button outlined id="import-button" :label="t('label.import')" @click="importCampaign"></Button>
+      <Button outlined id="import-button" :label="t('label.cancel')" @click="closeModal"></Button>
+    </BaseButtonMenu>
+  </Dialog>
 </template>
 
 <style scoped></style>

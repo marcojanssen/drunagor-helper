@@ -17,46 +17,22 @@ watch(backgroundAndTraitIds, async (newBackgroundAndTraitsIds) => {
 </script>
 
 <template>
-  <div id="story-record-background-and-trait" class="grid gap-4 bg-neutral form-control w-full">
+  <div id="story-record-background-and-trait" class="grid gap-1 form-control w-full">
     <label class="cursor-pointer">
       <span class="label-text text-base">Folk Hero</span>
-      <input
-        type="checkbox"
-        v-model="backgroundAndTraitIds"
-        id="story-record-background-and-trait-folk-hero"
-        value="folk-hero"
-        class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded focus:ring-0"
-      />
+      <Checkbox variant="outlined" v-model="backgroundAndTraitIds" value="folk-hero" class="float-right" />
     </label>
     <label class="cursor-pointer">
       <span class="label-text text-base">Knight of Amira</span>
-      <input
-        type="checkbox"
-        v-model="backgroundAndTraitIds"
-        id="story-record-background-and-trait-knight-of-amira"
-        value="knight-of-amira"
-        class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded focus:ring-0"
-      />
+      <Checkbox variant="outlined" v-model="backgroundAndTraitIds" value="knight-of-amir" class="float-right" />
     </label>
     <label class="cursor-pointer">
       <span class="label-text text-base">Redeemer</span>
-      <input
-        type="checkbox"
-        v-model="backgroundAndTraitIds"
-        id="story-record-background-and-trait-redeemer"
-        value="redeemer"
-        class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded focus:ring-0"
-      />
+      <Checkbox variant="outlined" v-model="backgroundAndTraitIds" value="redeemer" class="float-right" />
     </label>
     <label class="cursor-pointer">
       <span class="label-text text-base">Passionate</span>
-      <input
-        type="checkbox"
-        v-model="backgroundAndTraitIds"
-        id="story-record-background-and-trait-passionate"
-        value="passionate"
-        class="float-right w-5 h-5 text-emerald-500 bg-base-100 rounded focus:ring-0"
-      />
+      <Checkbox variant="outlined" v-model="backgroundAndTraitIds" value="passionate" class="float-right" />
     </label>
   </div>
 </template>

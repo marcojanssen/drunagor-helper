@@ -1,12 +1,9 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import type { HeroData } from "@/data/repository/HeroData";
-import BaseModal from "@/components/BaseModal.vue";
 import BaseList from "@/components/BaseList.vue";
 import BaseListItem from "@/components/BaseListItem.vue";
-import BaseListSearch from "@/components/BaseListSearch.vue";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
-import { XMarkIcon } from "@heroicons/vue/24/solid";
+import type { HeroData } from "@/data/repository/HeroData";
 import { HeroStore } from "@/store/HeroStore";
 import { useI18n } from "vue-i18n";
 
@@ -14,28 +11,26 @@ const props = defineProps<{
   campaignId: string;
 }>();
 
-const isOpen = ref(false);
+const visible = ref(false);
 const { t } = useI18n();
 
 function openModal() {
-  isOpen.value = true;
-  query.value = "";
+  visible.value = true;
 }
 function closeModal() {
-  isOpen.value = false;
+  visible.value = false;
 }
 
 const heroStore = HeroStore();
 const heroes = new HeroDataRepository().findAll();
 
 let filteredHeroes = computed(() => heroes.filter(filterHero));
-let query = ref("");
 
 function filterHero(hero: HeroData) {
   if (heroStore.hasInCampaign(hero.id, props.campaignId) == false) {
     return false;
   }
-  return hero.name.toLowerCase().replace(/\s+/g, "").includes(query.value.toLowerCase().replace(/\s+/g, ""));
+  return true;
 }
 
 function removeHeroFromCampaign(heroId: string) {
@@ -45,39 +40,29 @@ function removeHeroFromCampaign(heroId: string) {
 </script>
 
 <template>
-  <button
+  <Button
+    outlined
     id="campaign-remove-hero"
-    class="float-right px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
+    :label="t('label.remove-hero')"
     @click="openModal"
+    :disabled="filteredHeroes.length === 0"
+  ></Button>
+  <Dialog
+    v-model:visible="visible"
+    modal
+    :header="t('label.remove-hero')"
+    :dismissableMask="true"
+    class="w-full md:w-1/3 m-2"
   >
-    {{ t("label.remove-hero") }}
-  </button>
-  <BaseModal :is-open="isOpen" @close-modal="closeModal">
-    <template #header>
-      <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{ t("label.remove-hero") }}</div>
-        <div>
-          <button
-            id="close-modal"
-            class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
-            @click="closeModal"
-          >
-            <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
-          </button>
-        </div>
-      </div>
-    </template>
-    <template #default>
-      <BaseListSearch @search="query = $event" />
-      <BaseList id="campaign-remove-heroes">
-        <template v-for="hero in filteredHeroes" :key="hero.id">
-          <BaseListItem :avatar="hero.images.avatar" @click="removeHeroFromCampaign(hero.id)">
-            {{ hero.name }}
-          </BaseListItem>
-        </template>
-      </BaseList>
-    </template>
-  </BaseModal>
+    <BaseList id="campaign-remove-heroes">
+      <template v-for="hero in filteredHeroes" :key="hero.id">
+        <BaseListItem :avatar="hero.images.avatar" @click="removeHeroFromCampaign(hero.id)">
+          {{ hero.name }}
+        </BaseListItem>
+        <Divider class="m-2" />
+      </template>
+    </BaseList>
+  </Dialog>
 </template>
 
 <style scoped></style>

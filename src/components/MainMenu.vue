@@ -7,24 +7,53 @@ import {
   ListBulletIcon,
   QuestionMarkCircleIcon,
   UserGroupIcon,
-  ClockIcon,
 } from "@heroicons/vue/24/solid";
 import { useI18n } from "vue-i18n";
+import Menubar from "primevue/menubar";
+import { useRouter } from "vue-router";
 
-const isOpen = ref(false);
 const { t } = useI18n();
-
-function setIsOpen(value: boolean) {
-  isOpen.value = value;
-}
+const visible = ref(false);
+const router = useRouter();
 
 function close() {
-  isOpen.value = false;
+  visible.value = false;
 }
 
-function open() {
-  isOpen.value = true;
-}
+const items = ref([
+  {
+    label: t("menu.random-monster"),
+    icon: "pi pi-question",
+    command: () => {
+      router.push({ name: "Home" });
+      close();
+    },
+  },
+  {
+    label: t("menu.campaign"),
+    icon: "pi pi-users",
+    command: () => {
+      router.push({ name: "Campaign Overview" });
+      close();
+    },
+  },
+  {
+    label: t("menu.keyword"),
+    icon: "pi pi-search",
+    command: () => {
+      router.push({ name: "Keyword" });
+      close();
+    },
+  },
+  {
+    label: t("menu.settings"),
+    icon: "pi pi-cog",
+    command: () => {
+      router.push({ name: "Configuration" });
+      close();
+    },
+  },
+]);
 </script>
 
 <template>
@@ -36,9 +65,15 @@ function open() {
   <TransitionRoot as="template" :show="isOpen">
     <Dialog :open="isOpen" @close="setIsOpen">
       <DialogOverlay class="absolute z-40 inset-0 bg-black bg-opacity-60 backdrop-blur" />
-      <TransitionChild enter="transform ease-in-out transition-transform duration-150" enter-from="-translate-x-full"
-        enter-to="translate-x-0" leave="transform ease-in-out transition-transform duration-150"
-        leave-from="translate-x-0" leave-to="-translate-x-full" as="template">
+      <TransitionChild
+        enter="transform ease-in-out transition-transform duration-150"
+        enter-from="-translate-x-full"
+        enter-to="translate-x-0"
+        leave="transform ease-in-out transition-transform duration-150"
+        leave-from="translate-x-0"
+        leave-to="-translate-x-full"
+        as="template"
+      >
         <div class="fixed inset-0 z-50 flex">
           <DialogPanel>
             <ul class="w-80 h-full flex gap-1 flex-col pt-4 px-4 bg-base-300">
@@ -74,14 +109,6 @@ function open() {
                   <span class="pl-2">{{ t("menu.settings") }}</span>
                 </router-link>
               </li>
-              <li>
-                <router-link class="flex p-3 rounded items-center" to="/initiative" @click="close">
-                  <span>
-                    <ClockIcon class="h-7 w-7" />
-                  </span>
-                  <span class="pl-2">Initiative</span>
-                </router-link>
-              </li>
             </ul>
           </DialogPanel>
         </div>
@@ -94,7 +121,6 @@ function open() {
 a {
   outline: none;
 }
-
 .router-link-active {
   @apply bg-neutral;
 }

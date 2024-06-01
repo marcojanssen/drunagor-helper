@@ -5,7 +5,6 @@ import CampaignLog from "@/components/CampaignLog.vue";
 import { useRoute } from "vue-router";
 import { HeroStore } from "@/store/HeroStore";
 import CampaignRemove from "@/components/CampaignRemove.vue";
-import BaseDivider from "@/components/BaseDivider.vue";
 import BaseButtonMenu from "@/components/BaseButtonMenu.vue";
 import CampaignExport from "@/components/CampaignExport.vue";
 import StoryRecord from "@/components/StoryRecord.vue";
@@ -15,14 +14,12 @@ import CampaignCampPhase from "@/components/CampaignCampPhase.vue";
 import { ref } from "vue";
 import CampaignRunes from "@/components/CampaignRunes.vue";
 import SequentialAdventureButton from "@/components/SequentialAdventureButton.vue";
-import { useI18n } from "vue-i18n";
 
 const route = useRoute();
 
 const campaignId = route.params.id.toString();
 const campaignStore = CampaignStore();
 const campaign = campaignStore.find(campaignId);
-const { t } = useI18n();
 
 const heroStore = HeroStore();
 
@@ -43,35 +40,48 @@ function onSequentialAdventure() {
 </script>
 
 <template>
-  <BaseDivider>{{ t("label.campaign") }}</BaseDivider>
-  <BaseButtonMenu>
+  <BaseButtonMenu class="mb-2">
     <CampaignRemove :campaign-id="campaignId" />
     <CampaignExport :campaign-id="campaignId" />
     <SequentialAdventureButton
       :campaign-id="campaignId"
       @sequential-adventure="onSequentialAdventure"
-      v-if="!isSequentialAdventure"
+      :disabled="isSequentialAdventure"
     />
     <CampaignCampPhase :campaign-id="campaignId" @camp-phase="onCampPhase" />
   </BaseButtonMenu>
-  <div class="bg-neutral mt-4 form-control drop-shadow rounded-lg">
-    <CampaignName :campaign-id="campaignId" />
-  </div>
-  <div class="bg-neutral mt-4 form-control drop-shadow rounded-lg" v-if="isSequentialAdventure">
-    <CampaignRunes :campaign-id="campaignId" />
-  </div>
+  <Card class="mb-2">
+    <template #content>
+      <CampaignName :campaign-id="campaignId" />
+    </template>
+  </Card>
+  <Card v-if="isSequentialAdventure">
+    <template #content>
+      <CampaignRunes :campaign-id="campaignId" />
+    </template>
+  </Card>
   <template v-if="campaign.campaign == 'awakenings' || campaign.campaign == 'apocalypse'">
-    <BaseDivider>Story record</BaseDivider>
-    <div class="bg-neutral form-control drop-shadow rounded-lg" :key="update">
+    <div class="bg-neutral form-control drop-shadow rounded-lg mb-2" :key="update">
       <StoryRecord :campaign-id="campaignId" />
     </div>
   </template>
-  <BaseDivider>{{ t("label.campaign-log") }}</BaseDivider>
+  <template v-if="campaign.campaign == 'apocalypse'">
+    <div class="bg-neutral form-control drop-shadow rounded-lg mb-2" :key="update">
+      <div class="p-4" style="background-color: #1f2937">
+        <div class="pt-2 w-full">
+          <StoryRecordLegacyTrail :campaign-id="campaignId" />
+        </div>
+        <div class="pt-4 w-full">
+          <StoryRecordBackgroundAndTrait :campaign-id="campaignId" />
+        </div>
+      </div>
+    </div>
+  </template>
   <BaseButtonMenu>
     <CampaignLogAddHero :campaign-id="campaignId" />
     <CampaignLogRemoveHero :campaign-id="campaignId" />
   </BaseButtonMenu>
-  <div id="heroes" class="grid pt-4 gap-4 w-full" :key="update">
+  <div id="heroes" class="grid pt-2 gap-2 w-full" :key="update">
     <template v-for="hero in heroStore.findAllInCampaign(campaignId)" :key="hero.heroId">
       <div class="bg-neutral form-control drop-shadow rounded-lg">
         <CampaignLog

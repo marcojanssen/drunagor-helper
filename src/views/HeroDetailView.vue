@@ -2,12 +2,10 @@
 import type { HeroData } from "@/data/repository/HeroData";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import { useRoute } from "vue-router";
-import { ChevronLeftIcon } from "@heroicons/vue/20/solid";
 import CampaignHeroItems from "@/components/CampaignHeroItems.vue";
 import CampaignHeroStash from "@/components/CampaignHeroStash.vue";
 import CampaignHeroSkills from "@/components/CampaignHeroSkills.vue";
 import { ref } from "vue";
-import BaseDividerAlt from "@/components/BaseDividerAlt.vue";
 import { CampaignStore } from "@/store/CampaignStore";
 import { CoreItemDataRepository } from "@/data/repository/campaign/core/CoreItemDataRepository";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
@@ -45,11 +43,9 @@ function onStash() {
 
 <template>
   <div>
-    <button class="px-3 py-3 w-16 bg-neutral rounded-lg" @click="$router.go(-1)">
-      <ChevronLeftIcon class="h-5 w-5 mx-auto" />
-    </button>
+    <Button outlined id="campaign-export" label="Back" @click="$router.go(-1)"></Button>
   </div>
-  <div id="hero-card" class="bg-neutral form-control drop-shadow rounded-lg p-4 mt-4">
+  <div id="hero-card" class="bg-neutral form-control drop-shadow rounded-lg p-4 mt-4" style="background-color: #1f2937">
     <div class="flex h-28">
       <div>
         <img class="-ml-1 w-14 rounded-full hero-image" :src="hero.images.avatar" />
@@ -63,7 +59,7 @@ function onStash() {
       </div>
     </div>
 
-    <BaseDividerAlt>{{ t("label.equipment") }}</BaseDividerAlt>
+    <Divider>{{ t("label.equipment") }}</Divider>
 
     <div class="py-2 w-full">
       <CampaignHeroItems
@@ -75,13 +71,13 @@ function onStash() {
       />
     </div>
 
-    <BaseDividerAlt>{{ t("label.stash") }}</BaseDividerAlt>
+    <Divider>{{ t("label.stash") }}</Divider>
 
     <div class="hero-stash-wrapper py-2 w-full">
       <CampaignHeroStash :campaign-id="campaignId" :repository="repository" :hero-id="heroId" :key="stash" />
     </div>
 
-    <BaseDividerAlt>{{ t("label.skills") }}</BaseDividerAlt>
+    <Divider>{{ t("label.skills") }}</Divider>
 
     <div class="py-2 w-full">
       <CampaignHeroSkills :campaign-id="campaignId" :hero-id="heroId"></CampaignHeroSkills>

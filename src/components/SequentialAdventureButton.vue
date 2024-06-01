@@ -27,13 +27,12 @@ function startSequentialAdventure() {
 </script>
 
 <template>
-  <button
+  <Button
+    outlined
     id="sequential-adventure-btn"
-    class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
+    :label="t('label.sequential-adventure')"
     @click="startSequentialAdventure"
-  >
-    {{ t("label.sequential-adventure") }}
-  </button>
+  ></Button>
 </template>
 
 <style scoped></style>

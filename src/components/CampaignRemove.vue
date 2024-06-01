@@ -1,23 +1,24 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import BaseModal from "@/components/BaseModal.vue";
-import { XMarkIcon } from "@heroicons/vue/24/solid";
 import { CampaignStore } from "@/store/CampaignStore";
 import { useRouter } from "vue-router";
 import { HeroStore } from "@/store/HeroStore";
 import { useI18n } from "vue-i18n";
+import { useToast } from "primevue/usetoast";
 
-const isOpen = ref(false);
+const toast = useToast();
+
+const visible = ref(false);
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const router = useRouter();
 const { t } = useI18n();
 
 function openModal() {
-  isOpen.value = true;
+  visible.value = true;
 }
 function closeModal() {
-  isOpen.value = false;
+  visible.value = false;
 }
 
 const props = defineProps<{
@@ -29,54 +30,27 @@ function removeCampaign() {
   heroStore.findAllInCampaign(props.campaignId).forEach((hero) => {
     heroStore.removeFromCampaign(hero.heroId, props.campaignId);
   });
+  toast.add({ severity: "success", summary: "Success", detail: "Campaign removed", life: 3000 });
   closeModal();
   router.push("/campaign/");
 }
 </script>
 
 <template>
-  <button
-    id="campaign-remove"
-    class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
-    @click="openModal"
+  <Button outlined id="campaign-remove" :label="t('label.remove-campaign')" @click="openModal"></Button>
+  <Dialog
+    v-model:visible="visible"
+    modal
+    :header="t('label.remove-campaign')"
+    :dismissableMask="true"
+    class="w-full md:w-1/3 m-2"
   >
-    {{ t("label.remove-campaign") }}
-  </button>
-  <BaseModal :is-open="isOpen" @close-modal="closeModal">
-    <template #header>
-      <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{ t("label.remove-campaign") }}</div>
-        <div>
-          <button
-            id="close-modal"
-            class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
-            @click="closeModal"
-          >
-            <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
-          </button>
-        </div>
-      </div>
-    </template>
-    <template #default>
-      <div class="py-4">This will remove the campaign. It can not be restored. Are you sure?</div>
-      <div class="flex flex-wrap justify-center gap-4">
-        <button
-          id="close-modal"
-          class="px-2 py-2 bg-red-500 text-gray-200 uppercase font-semibold text-sm rounded-lg"
-          @click="removeCampaign"
-        >
-          {{ t("label.yes") }}
-        </button>
-        <button
-          id="close-modal"
-          class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
-          @click="closeModal"
-        >
-          {{ t("label.no") }}
-        </button>
-      </div>
-    </template>
-  </BaseModal>
+    <span>This can not be restored. Are you sure?</span>
+    <BaseButtonMenu>
+      <Button outlined :label="t('label.yes')" @click="removeCampaign"></Button>
+      <Button outlined :label="t('label.no')" @click="closeModal"></Button>
+    </BaseButtonMenu>
+  </Dialog>
 </template>
 
 <style scoped></style>
