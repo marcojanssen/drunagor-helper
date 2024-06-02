@@ -56,10 +56,10 @@ function closeModal() {
     :dismissableMask="true"
     class="w-full md:w-1/3 m-2"
   >
-    <div class="py-4">Copy this token to import your campaign on another device</div>
+    <div class="py-4">{{ t("text.copy-this-token") }}</div>
     <Textarea id="campaign-token" v-model="token" rows="5" cols="25" class="w-full"></Textarea>
     <BaseButtonMenu>
-      <Button outlined label="Copy to clipboard" @click="copyToClipboard"></Button>
+      <Button outlined :label="t('label.copy-to-clipboard')" @click="copyToClipboard"></Button>
       <Button outlined :label="t('label.cancel')" @click="closeModal"></Button>
     </BaseButtonMenu>
   </Dialog>

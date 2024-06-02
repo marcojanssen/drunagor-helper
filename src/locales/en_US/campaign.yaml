@@ -28,8 +28,7 @@ outcome:
         effect: ""
       - id: guardians-curse
         name: Guardian's curse
-        effect: As long as you have Guardian's Curse, you cannot unequip the Cursed
-          Bracelet.
+        effect: As long as you have Guardian's Curse, you cannot unequip the Cursed Bracelet.
       - id: humbled
         name: Humbled
         effect: ""
