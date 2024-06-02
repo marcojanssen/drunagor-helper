@@ -74,7 +74,7 @@ watch(
         v-model="sequentialAdventureState.curseCubes"
       />
 
-      <label for="trauma-cube" class="block py-2">{{ t("text.trauma-cube") }}</label>
+      <label for="trauma-cube" class="block py-2">{{ t("text.trauma-cubes") }}</label>
       <InputNumber
         :inputStyle="{ width: '100%' }"
         incrementButtonIcon="pi pi-plus"
