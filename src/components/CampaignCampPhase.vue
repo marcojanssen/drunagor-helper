@@ -46,7 +46,7 @@ function campPhase() {
     :dismissableMask="true"
     class="w-full md:w-1/3 m-2"
   >
-    <span>This will reset all statuses and sequential adventure states from this campaign. Are you sure?</span>
+    <span>{{ t("text.reset-state") }}</span>
     <BaseButtonMenu>
       <Button outlined :label="t('label.yes')" @click="campPhase"></Button>
       <Button outlined :label="t('label.no')" @click="closeModal"></Button>

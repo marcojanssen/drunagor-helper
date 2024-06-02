@@ -16,7 +16,8 @@ label:
   remove-campaign: Kampagne entfernen
   new-campaign: Neue Kampagne
   export-campaign: Kampagne exportieren
-  import-campaign: " Kampagne importieren"
+  copy-to-clipboard: Kopieren in die Zwischenablage
+  import-campaign: Kampagne importieren
   sequential-adventure: Fortlaufendes Abenteuer
   camp-phase: Lagerphase
   remove-hero: Held entfernen
@@ -24,8 +25,8 @@ label:
   campaigns: Kampagnen
   campaign: Kampagne
   campaign-log: Kampagnenlog
-  "yes": Ja
-  "no": Nein
+  yes: Ja
+  no: Nein
   import: Importieren
   close: Schließen
   cancel: Abbrechen
@@ -88,6 +89,10 @@ label:
   ki: KI
   shield: Schild
 text:
+  input-token: Gib hier deinen Token ein
+  reset-state: Dies wird alle Status und aufeinanderfolgende Abenteuerzustände dieser Kampagne zurücksetzen. Bist du sicher?
+  cannot-be-restored: Dies kann nicht wiederhergestellt werden. Bist du sicher?
+  copy-this-token: Kopiere diesen Token, um deine Kampagne auf einem anderen Gerät zu importieren.
   select-action-cube-color: Wähle eine Aktionswürfelfarbe
   curse-cubes: Fluchwürfel
   trauma-cubes: Traumawürfel
