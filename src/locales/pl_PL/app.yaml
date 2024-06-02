@@ -24,8 +24,10 @@ label:
   campaigns: Kampanie
   campaign: kampania
   campaign-log: Dziennik kampanii
-  "yes": Tak
-  "no": NIE
+  yes: Tak
+  no: Nie
+  back: back
+  success: Success
   import: Import
   close: Zamknąć
   cancel: Anulować
@@ -87,6 +89,8 @@ label:
   fruit-of-life: Fruit of Life
   ki: KI
   shield: Shield
+  campaign-imported: Campaign imported
+  campaign-removed: Campaign removed
 text:
   select-action-cube-color: Wybierz kolor kości akcji
   curse-cubes: Przeklęta kostka
@@ -105,6 +109,8 @@ text:
   number-of-runes: "Number of runes:"
   party-name: "Party name:"
   no-resources: No resources
+  this-cannot-be-restored: "This can not be restored. Are you sure?"
+  paste-your-token-here: Paste your token here
 monster:
   abomination: Wstręt
   archon: Archont

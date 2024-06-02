@@ -24,8 +24,10 @@ label:
   campaigns: Kampagnen
   campaign: Kampagne
   campaign-log: Kampagnenlog
-  "yes": Ja
-  "no": Nein
+  yes: Ja
+  no: Nein
+  back: Zurück
+  success: Erfolg
   import: Importieren
   close: Schließen
   cancel: Abbrechen
@@ -87,6 +89,8 @@ label:
   fruit-of-life: Frucht des Lebens
   ki: KI
   shield: Schild
+  campaign-imported: Kampagne importiert
+  campaign-removed: Kampagne entfernt
 text:
   select-action-cube-color: Wähle eine Aktionswürfelfarbe
   curse-cubes: Fluchwürfel
@@ -98,14 +102,14 @@ text:
   add-or-remove-follower: Gefährten hinzufügen oder entfernen
   add-or-remove-stashed-items: Gelagerte Gegenstände hinzufügen oder entfernen
   select-aura: Aura auswählen
-  aura-info: Aura wird entfernt, wenn du einen Traumawürfel oder eine andere Aura
-    erhälst.
-  outcome-info: Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt
-    ändert sie.
+  aura-info: Aura wird entfernt, wenn du einen Traumawürfel oder eine andere Aura erhälst.
+  outcome-info: Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt ändert sie.
   status-info: Status werden während der Lagerphase entfernt.
   number-of-runes: "Anzahl Runen:"
   party-name: "Name der Gruppe:"
   no-resources: Keine Ressourcen
+  this-cannot-be-restored: "Dieser Vorgang kann nicht rückgängig gemacht werden. Bist du sicher?"
+  paste-your-token-here: Hier das Token einfügen
 monster:
   abomination: Abscheulichkeit
   archon: Archon

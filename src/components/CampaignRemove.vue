@@ -30,7 +30,7 @@ function removeCampaign() {
   heroStore.findAllInCampaign(props.campaignId).forEach((hero) => {
     heroStore.removeFromCampaign(hero.heroId, props.campaignId);
   });
-  toast.add({ severity: "success", summary: "Success", detail: "Campaign removed", life: 3000 });
+  toast.add({ severity: "success", summary: t("label.success"), detail: t("label.campaign-removed"), life: 3000 });
   closeModal();
   router.push("/campaign/");
 }
@@ -45,7 +45,7 @@ function removeCampaign() {
     :dismissableMask="true"
     class="w-full md:w-1/3 m-2"
   >
-    <span>This can not be restored. Are you sure?</span>
+    <span>{{ t("text.this-cannot-be-restored") }}</span>
     <BaseButtonMenu>
       <Button outlined :label="t('label.yes')" @click="removeCampaign"></Button>
       <Button outlined :label="t('label.no')" @click="closeModal"></Button>

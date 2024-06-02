@@ -26,6 +26,8 @@ label:
   campaign-log: Campaign Log
   yes: Yes
   no: No
+  back: back
+  success: Success
   import: Import
   close: Close
   cancel: Cancel
@@ -87,6 +89,8 @@ label:
   fruit-of-life: Fruit of Life
   ki: KI
   shield: Shield
+  campaign-imported: Campaign imported
+  campaign-removed: Campaign removed
 text:
   select-action-cube-color: Select action cube color
   curse-cubes: Curse Cubes
@@ -99,12 +103,13 @@ text:
   add-or-remove-stashed-items: Add or remove stashed items
   select-aura: Select aura
   aura-info: Aura is removed when you receive a trauma cube or another aura.
-  outcome-info: Remain in effect for the entire campaign unless some other effect
-    changes them.
+  outcome-info: Remain in effect for the entire campaign unless some other effect changes them.
   status-info: Statuses are removed during the camp phase.
   number-of-runes: "Number of runes:"
   party-name: "Party name:"
   no-resources: No resources
+  this-cannot-be-restored: "This can not be restored. Are you sure?"
+  paste-your-token-here: Paste your token here
 monster:
   abomination: Abomination
   archon: Archon
