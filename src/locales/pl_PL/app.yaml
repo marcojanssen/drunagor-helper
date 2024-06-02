@@ -87,6 +87,8 @@ label:
   fruit-of-life: Fruit of Life
   ki: KI
   shield: Shield
+  back: Back
+  success: Success
 text:
   select-action-cube-color: Wybierz kolor kości akcji
   curse-cubes: Przeklęta kostka
@@ -105,6 +107,8 @@ text:
   number-of-runes: "Number of runes:"
   party-name: "Party name:"
   no-resources: No resources
+  campaign-imported: Campaign imported
+  campaign-removed: Campaign removed
 monster:
   abomination: Wstręt
   archon: Archont

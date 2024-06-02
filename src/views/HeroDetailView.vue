@@ -43,7 +43,7 @@ function onStash() {
 
 <template>
   <div>
-    <Button outlined id="campaign-export" label="Back" @click="$router.go(-1)"></Button>
+    <Button outlined id="campaign-export" :label="t('label.back')" @click="$router.go(-1)"></Button>
   </div>
   <div id="hero-card" class="bg-neutral form-control drop-shadow rounded-lg p-4 mt-4" style="background-color: #1f2937">
     <div class="flex h-28">

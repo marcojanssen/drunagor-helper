@@ -38,7 +38,12 @@ function openModal() {
 
 function copyToClipboard() {
   navigator.clipboard.writeText(token.value);
-  toast.add({ severity: "success", summary: "Success", detail: "Token has been copied to clipboard.", life: 3000 });
+  toast.add({
+    severity: "success",
+    summary: t("label.success"),
+    detail: "Token has been copied to clipboard.",
+    life: 3000,
+  });
   closeModal();
 }
 
