@@ -18,5 +18,6 @@ export class StoryRecordOutcomeRepository implements OutcomeRepository {
     const i18n = useI18n();
     const outcomeList: any = i18n.messages.value[locale].outcome;
     this.outcomes = outcomeList["apocalypse"].storyrecord as Outcome[];
+    this.outcomes = _.sortBy(this.outcomes, ["name"]);
   }
 }

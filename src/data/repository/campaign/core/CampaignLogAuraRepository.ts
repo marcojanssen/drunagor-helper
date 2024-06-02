@@ -17,6 +17,8 @@ export class CampaignLogAuraRepository implements AuraRepository {
   public load(locale: string) {
     const i18n = useI18n();
     const auraList: any = i18n.messages.value[locale].auras;
+
     this.auras = auraList["core"].campaign as Aura[];
+    this.auras = _.sortBy(this.auras, ["name"]);
   }
 }
