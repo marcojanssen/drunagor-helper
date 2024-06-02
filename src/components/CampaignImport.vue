@@ -83,7 +83,7 @@ function closeModal() {
     :dismissableMask="true"
     class="w-full md:w-1/3 m-2"
   >
-    <div class="py-4">Paste your token here</div>
+    <div class="py-4">{{ t("text.input-token") }}</div>
     <Textarea id="campaign-token" v-model="token" rows="5" cols="25" class="w-full"></Textarea>
     <BaseButtonMenu>
       <Button outlined id="import-button" :label="t('label.import')" @click="importCampaign"></Button>
