@@ -33,9 +33,7 @@ const { t } = useI18n();
       :to="{ name: 'Hero', params: { campaignId: campaignId, heroId: props.heroId } }"
       class="hero-detail-btn"
     >
-      <button class="w-full px-2 py-2 bg-emerald-700 text-gray-200 uppercase font-semibold text-sm rounded-lg">
-        {{ t("label.equipment-skills") }}
-      </button>
+      <Button outlined :label="t('label.equipment-skills')" class="w-full"></Button>
     </router-link>
   </div>
 </template>

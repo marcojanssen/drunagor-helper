@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { ItemData } from "@/data/repository/ItemData";
 import { HeroStore } from "@/store/HeroStore";
-import ItemCardSelectCategorized from "@/components/ItemCardSelectCategorized.vue";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 
 const heroStore = HeroStore();
@@ -65,9 +64,9 @@ function onStash() {
   <ItemCardSelectCategorized
     @clear="onClear"
     :categories="itemCardCategories"
-    :item-type="null"
     :sub-type-list="subTypeList"
     :value="itemId"
+    :bagSlot="bagSlot"
     @selected="onSelect"
     @stash="onStash"
     :repository="cardsDataRepository"

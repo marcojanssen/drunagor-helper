@@ -6,12 +6,13 @@ import type { RandomCommander } from "@/entity/RandomCommander";
 import { RandomizeMonster } from "@/service/RandomizeMonster";
 import { RandomizeCommander } from "@/service/RandomizeCommander";
 import { ref } from "vue";
-import { useToast } from "vue-toastification";
+import { useToast } from "primevue/usetoast";
 import { useI18n } from "vue-i18n";
 import SwappableImage from "@/components/SwappableImage.vue";
 import RandomizerTitle from "@/assets/Randomizer.webp";
 import backgroundImage from "@/assets/monster/big/Background.webp";
 import RandomizerQuickSelect from "@/components/RandomizerQuickSelect.vue";
+import BaseButtonMenu from "@/components/BaseButtonMenu.vue";
 
 const toast = useToast();
 const { t } = useI18n();
@@ -37,7 +38,12 @@ function getRandomMonster(color: MonsterColor) {
   let monster: RandomMonster | null = new RandomizeMonster().randomizeByColor(color, getExcludedCharacters());
 
   if (monster === null) {
-    toast.error(t("randomizer.error.no-other-monster-available"));
+    toast.add({
+      severity: "error",
+      summary: "Error",
+      detail: t("randomizer.error.no-other-monster-available"),
+      life: 3000,
+    });
     return;
   }
 
@@ -52,7 +58,12 @@ function getRandomCommander() {
   let commander: RandomCommander | null = new RandomizeCommander().randomize(getExcludedCharacters());
 
   if (commander === null) {
-    toast.error(t("randomizer.error.no-other-commander-available"));
+    toast.add({
+      severity: "error",
+      summary: "Error",
+      detail: t("randomizer.error.no-other-commander-available"),
+      life: 3000,
+    });
     return;
   }
 
@@ -78,51 +89,16 @@ function getRandomCommander() {
       :frontImage="frontImage"
       :backImage="backImage"
     />
-    <div class="grid grid-cols-1 gap-4 place-items-center">
-      <label class="cursor-pointer">
-        <span class="text-md pr-4">{{ $t("randomizer.exclude-current-monster") }}</span>
-        <input
-          type="checkbox"
-          id="randomizer-exclude-current-character"
-          v-model="excludeCurrentCharacter"
-          class="w-5 h-5 text-emerald-500 bg-base-100 rounded"
-        />
-      </label>
-    </div>
-    <div class="grid grid-flow-col auto-cols-max gap-2">
-      <div>
-        <button
-          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
-          @click="getRandomMonster('white')"
-        >
-          {{ $t("randomizer.white") }}
-        </button>
-      </div>
-      <div>
-        <button
-          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
-          @click="getRandomMonster('gray')"
-        >
-          {{ $t("randomizer.gray") }}
-        </button>
-      </div>
-      <div>
-        <button
-          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
-          @click="getRandomMonster('black')"
-        >
-          {{ $t("randomizer.black") }}
-        </button>
-      </div>
-      <div>
-        <button
-          class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg active:bg-emerald-500"
-          @click="getRandomCommander()"
-        >
-          {{ $t("randomizer.commander") }}
-        </button>
-      </div>
-    </div>
+    <label class="cursor-pointer">
+      <span class="text-md pr-4">{{ $t("randomizer.exclude-current-monster") }}</span>
+      <Checkbox v-model="excludeCurrentCharacter" :binary="true" inputId="randomizer-exclude-current-character" />
+    </label>
+    <BaseButtonMenu>
+      <Button outlined :label="$t('randomizer.white')" @click="getRandomMonster('white')" />
+      <Button outlined :label="$t('randomizer.gray')" @click="getRandomMonster('gray')" />
+      <Button outlined :label="$t('randomizer.black')" @click="getRandomMonster('black')" />
+      <Button outlined :label="$t('randomizer.commander')" @click="getRandomCommander()" />
+    </BaseButtonMenu>
   </div>
 </template>
 

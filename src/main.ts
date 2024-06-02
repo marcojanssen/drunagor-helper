@@ -1,40 +1,35 @@
 import App from "@/App.vue";
 import "@/assets/main.css";
-import CampaignOverviewView from "@/views/CampaignOverviewView.vue";
-import CampaignView from "@/views/CampaignView.vue";
-import ConfigurationView from "@/views/ConfigurationView.vue";
-import KeywordView from "@/views/KeywordView.vue";
-import RandomizerView from "@/views/RandomizerView.vue";
 import { createPinia } from "pinia";
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
-import Toast from "vue-toastification";
-import "vue-toastification/dist/index.css";
-import HeroDetailView from "@/views/HeroDetailView.vue";
-import CampaignHeroSequentialAdventure from "@/components/CampaignHeroSequentialAdventure.vue";
 import { loadLanguage } from "@/language";
-import { ConfigurationStore } from "@/store/ConfigurationStore";
 import { i18n } from "@/i18n";
+import { ConfigurationStore } from "@/store/ConfigurationStore";
+import PrimeVue from "primevue/config";
+import ToastService from "primevue/toastservice";
+import "primevue/resources/themes/lara-dark-green/theme.css";
+import "primeicons/primeicons.css";
 
 const pinia = createPinia();
 
 const routes = [
-  { path: "/", name: "Home", component: RandomizerView },
+  { path: "/", name: "Home", component: () => import("@/views/RandomizerView.vue") },
   {
     path: "/configuration",
     name: "Configuration",
-    component: ConfigurationView,
+    component: () => import("@/views/ConfigurationView.vue"),
   },
   { path: "/party", redirect: "/campaign" },
-  { path: "/campaign/:id", name: "Campaign", component: CampaignView },
-  { path: "/campaign/:campaignId/hero/:heroId", name: "Hero", component: HeroDetailView },
+  { path: "/campaign/:id", name: "Campaign", component: () => import("@/views/CampaignView.vue") },
+  { path: "/campaign/:campaignId/hero/:heroId", name: "Hero", component: () => import("@/views/HeroDetailView.vue") },
   {
     path: "/campaign/:campaignId/hero/:heroId/sequential-state",
     name: "HeroSequentialState",
-    component: CampaignHeroSequentialAdventure,
+    component: () => import("@/components/CampaignHeroSequentialAdventure.vue"),
   },
-  { path: "/campaign", name: "Campaign Overview", component: CampaignOverviewView },
-  { path: "/keyword", name: "Keyword", component: KeywordView },
+  { path: "/campaign", name: "Campaign Overview", component: () => import("@/views/CampaignOverviewView.vue") },
+  { path: "/keyword", name: "Keyword", component: () => import("@/views/KeywordView.vue") },
 ];
 
 const router = createRouter({
@@ -48,7 +43,8 @@ async function startApp() {
   app.use(i18n);
   app.use(pinia);
   app.use(router);
-  app.use(Toast, { timeout: 3000 });
+  app.use(PrimeVue, { ripple: true });
+  app.use(ToastService);
 
   await loadLanguage("en_US");
 

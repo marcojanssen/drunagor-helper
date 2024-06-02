@@ -12,8 +12,10 @@ const campaign = campaignStore.find(props.campaignId);
 </script>
 
 <template>
-  <StoryRecordApocalypse v-if="campaign.campaign == 'apocalypse'" :campaign-id="props.campaignId" />
-  <StoryRecordAwakenings v-if="campaign.campaign == 'awakenings'" :campaign-id="props.campaignId" />
+  <div class="p-4" style="background-color: #1f2937">
+    <StoryRecordApocalypse v-if="campaign.campaign == 'apocalypse'" :campaign-id="props.campaignId" />
+    <StoryRecordAwakenings v-if="campaign.campaign == 'awakenings'" :campaign-id="props.campaignId" />
+  </div>
 </template>
 
 <style scoped></style>

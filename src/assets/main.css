@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
 
 ::-webkit-scrollbar {
   width: 3px;
@@ -20,4 +27,20 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #dde1e4;
+}
+
+.p-toast {
+  max-width: calc(100vw - 40px);
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  border: 0px;
+}
+
+.p-accordion .p-accordion-content {
+  border: 0px;
+}
+
+.p-accordion .p-accordion-tab {
+  margin-bottom: 12px;
 }

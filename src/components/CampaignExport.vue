@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useToast } from "primevue/usetoast";
 import { CampaignStore } from "@/store/CampaignStore";
 import { HeroStore } from "@/store/HeroStore";
-import BaseModal from "@/components/BaseModal.vue";
-import { XMarkIcon } from "@heroicons/vue/24/solid";
-import { useToast } from "vue-toastification";
 import { useI18n } from "vue-i18n";
 
 const toast = useToast();
@@ -13,7 +11,7 @@ const props = defineProps<{
   campaignId: string;
 }>();
 
-const isOpen = ref(false);
+const visible = ref(false);
 const campaignStore = CampaignStore();
 const heroStore = HeroStore();
 const token = ref("");
@@ -35,67 +33,36 @@ function openModal() {
   };
   token.value = btoa(JSON.stringify(data));
 
-  isOpen.value = true;
+  visible.value = true;
 }
 
 function copyToClipboard() {
   navigator.clipboard.writeText(token.value);
-  toast.success("Token has been copied to clipboard.");
+  toast.add({ severity: "success", summary: "Success", detail: "Token has been copied to clipboard.", life: 3000 });
+  closeModal();
 }
 
 function closeModal() {
-  isOpen.value = false;
+  visible.value = false;
 }
 </script>
 
 <template>
-  <button
-    id="campaign-export"
-    class="px-3 py-3 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
-    @click="openModal"
+  <Button outlined id="campaign-export" :label="t('label.export-campaign')" @click="openModal"></Button>
+  <Dialog
+    v-model:visible="visible"
+    modal
+    :header="t('label.export-campaign')"
+    :dismissableMask="true"
+    class="w-full md:w-1/3 m-2"
   >
-    {{ t("label.export-campaign") }}
-  </button>
-  <BaseModal :is-open="isOpen" @close-modal="closeModal">
-    <template #header>
-      <div class="grid grid-cols-2">
-        <div class="w-full font-medium place-self-center">{{ t("label.export-campaign") }}</div>
-        <div>
-          <button
-            id="close-modal"
-            class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg float-right"
-            @click="closeModal"
-          >
-            <XMarkIcon class="h-5 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg" />
-          </button>
-        </div>
-      </div>
-    </template>
-    <template #default>
-      <div class="py-4">Copy this token to import your campaign on another device</div>
-      <textarea
-        v-model="token"
-        id="campaign-token"
-        class="w-full h-60 text-black rounded shadow border-transparent focus:border-transparent focus:ring-0"
-      ></textarea>
-      <div class="flex flex-wrap justify-center gap-4 pt-4">
-        <button
-          id="campaign-token-copy-to-clipboard"
-          class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
-          @click="copyToClipboard"
-        >
-          Copy to clipboard
-        </button>
-        <button
-          id="close-modal"
-          class="px-2 py-2 bg-neutral text-gray-200 uppercase font-semibold text-sm rounded-lg"
-          @click="closeModal"
-        >
-          {{ t("label.close") }}
-        </button>
-      </div>
-    </template>
-  </BaseModal>
+    <div class="py-4">Copy this token to import your campaign on another device</div>
+    <Textarea id="campaign-token" v-model="token" rows="5" cols="25" class="w-full"></Textarea>
+    <BaseButtonMenu>
+      <Button outlined label="Copy to clipboard" @click="copyToClipboard"></Button>
+      <Button outlined :label="t('label.cancel')" @click="closeModal"></Button>
+    </BaseButtonMenu>
+  </Dialog>
 </template>
 
 <style scoped></style>

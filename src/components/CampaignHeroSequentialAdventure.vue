@@ -4,7 +4,6 @@ import { ref, watch } from "vue";
 import { HeroStore } from "@/store/HeroStore";
 import { HeroDataRepository } from "@/data/repository/HeroDataRepository";
 import { useRoute } from "vue-router";
-import { ChevronLeftIcon } from "@heroicons/vue/20/solid";
 import type { HeroData } from "@/data/repository/HeroData";
 import { useI18n } from "vue-i18n";
 
@@ -44,11 +43,9 @@ watch(
 
 <template>
   <div>
-    <button class="px-3 py-3 w-16 bg-neutral rounded-lg" @click="$router.go(-1)">
-      <ChevronLeftIcon class="h-5 w-5 mx-auto" />
-    </button>
+    <Button outlined label="Back" @click="$router.go(-1)"></Button>
   </div>
-  <div id="hero-card" class="bg-neutral form-control drop-shadow rounded-lg p-4 mt-4">
+  <div id="hero-card" class="bg-neutral form-control drop-shadow rounded-lg p-4 mt-4" style="background-color: #1f2937">
     <div class="flex h-28">
       <div>
         <img class="-ml-1 w-14 rounded-full hero-image" :src="hero.images.avatar" />
@@ -63,59 +60,54 @@ watch(
     </div>
 
     <div id="sequential-select" class="pt-4">
-      <label for="curse-cubes" class="block"> {{ t("text.curse-cubes") }} </label>
-      <select
-        v-model.number="sequentialAdventureState.curseCubes"
-        name="curse-cubes"
+      <label for="curse-cubes" class="block pt-4">{{ t("text.curse-cubes") }}</label>
+      <InputNumber
+        :inputStyle="{ width: '100%' }"
+        incrementButtonIcon="pi pi-plus"
+        decrementButtonIcon="pi pi-minus"
         id="curse-cubes"
-        class="bg-base-100 py-2 pl-3 pr-20 w-full leading-5 focus:ring-0 rounded-lg"
-      >
-        <option v-for="index in 6" :value="index - 1" :key="index">
-          {{ index - 1 }}
-        </option>
-      </select>
+        name="curse-cubes"
+        showButtons
+        buttonLayout="horizontal"
+        :min="0"
+        :max="5"
+        v-model="sequentialAdventureState.curseCubes"
+      />
 
-      <label for="trauma-cube" class="block pt-2"> {{ t("text.trauma-cubes") }} </label>
-      <select
-        v-model.number="sequentialAdventureState.traumaCubes"
-        name="trauma-cube"
+      <label for="trauma-cube" class="block py-2">{{ t("text.trauma-cube") }}</label>
+      <InputNumber
+        :inputStyle="{ width: '100%' }"
+        incrementButtonIcon="pi pi-plus"
+        decrementButtonIcon="pi pi-minus"
         id="trauma-cube"
-        class="bg-base-100 py-2 pl-3 pr-20 w-full leading-5 focus:ring-0 rounded-lg"
-      >
-        <option value="0">0</option>
-        <option value="1">1</option>
-      </select>
+        name="trauma-cube"
+        showButtons
+        buttonLayout="horizontal"
+        :min="0"
+        :max="1"
+        v-model="sequentialAdventureState.traumaCubes"
+      />
     </div>
 
-    <h3 class="py-5">{{ t("label.resources") }}</h3>
+    <Divider>{{ t("label.resources") }}</Divider>
 
     <div id="resource-select">
       <template v-for="resource in resourceDefinitions" :key="resource.id">
-        <label :for="resource.id">
-          {{ t(resource.translation_key) }}
-        </label>
-        <div>
-          <select
-            v-model.number="sequentialAdventureState.resources[resource.translation_key]"
-            :name="resource.id"
-            :id="resource.id"
-            class="bg-base-100 py-2 pl-3 pr-20 w-full leading-5 focus:ring-0 rounded-lg"
-          >
-            <option v-for="index in 5" :value="index - 1" :key="index">
-              {{ index - 1 }}
-            </option>
-          </select>
-        </div>
+        <label :for="resource.id" class="block py-2">{{ t(resource.translation_key) }}</label>
+        <InputNumber
+          :inputStyle="{ width: '100%' }"
+          incrementButtonIcon="pi pi-plus"
+          decrementButtonIcon="pi pi-minus"
+          :name="resource.id"
+          :id="resource.id"
+          showButtons
+          buttonLayout="horizontal"
+          :min="0"
+          :max="4"
+          v-model.number="sequentialAdventureState.resources[resource.translation_key]"
+        />
       </template>
     </div>
-
-    <button
-      id="save-seq-adv"
-      class="px-4 py-2 mt-4 w-full bg-emerald-500 text-gray-200 uppercase font-semibold text-sm rounded-lg"
-      @click="$router.back()"
-    >
-      Ok
-    </button>
   </div>
 </template>
 
@@ -123,11 +115,5 @@ watch(
 #hero-card {
   background-image: url("@/assets/hero/flag-bg-red.webp");
   background-repeat: no-repeat;
-}
-
-#resource-select {
-  display: grid;
-  grid-template-columns: max-content auto;
-  grid-gap: 0.5em;
 }
 </style>
