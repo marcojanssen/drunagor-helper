@@ -57,7 +57,7 @@ function importCampaign() {
       heroStore.add(h);
     });
     closeModal();
-    toast.add({ severity: "success", summary: "Success", detail: "Campaign imported", life: 3000 });
+    toast.add({ severity: "success", summary: t("label.success"), detail: t("text.campaign-imported"), life: 3000 });
     router.push({ name: "Campaign", params: { id: campaignId } });
   } catch (e) {
     toast.add({ severity: "error", summary: "Error", detail: "Invalid token", life: 3000 });

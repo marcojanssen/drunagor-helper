@@ -87,6 +87,8 @@ label:
   fruit-of-life: Fruit of Life
   ki: KI
   shield: Shield
+  back: Back
+  success: Success
 text:
   select-action-cube-color: Sélectionnez la couleur du cube d'action
   curse-cubes: Cubes de malédiction
@@ -105,7 +107,8 @@ text:
   number-of-runes: "Number of runes:"
   party-name: "Party name:"
   no-resources: No resources
-
+  campaign-imported: Campaign imported
+  campaign-removed: Campaign removed
 monster:
   abomination: Abomination
   archon: Archonte
