@@ -977,7 +977,7 @@ keyword:
     keyword: SHADOW AURA
     description: Mały kafelek Ciemności zostaje umieszczony pod Celem.
   - id: shield-x
-    słowo kluczowe: SHIELD X
+    keyword: SHIELD X
     description: Cel zyskuje X żetonów SHIELD. Każdy żeton SHIELD może zostać użyty
       do zaabsorbowania 1 punktu obrażeń otrzymanych przez postać. Musisz użyć wszystkich
       żetonów SHIELD przed utratą zdrowia lub użyciem efektu PREVENT - nie możesz zdecydować
@@ -1041,7 +1041,7 @@ keyword:
       wymieniane między bohaterami tak, jakby były przedmiotami konsumpcyjnymi.
   - id: special-mechanic-tokens
     keyword: SPECJALNE TOKENY MECHANIKA
-    opis: Te elementy planszy są używane jako wizualne kamienie milowe dla funkcji dowolnego
+    description: Te elementy planszy są używane jako wizualne kamienie milowe dla funkcji dowolnego
       Mechanika Specjalnego ustanowionego dla Przygody. Żetony Mechaniki Specjalnej
       są nieruchomymi obiektami naziemnymi.
   - id: spent
