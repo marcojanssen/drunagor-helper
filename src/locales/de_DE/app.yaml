@@ -88,10 +88,12 @@ label:
   fruit-of-life: Frucht des Lebens
   ki: KI
   shield: Schild
+  back: Zurück
+  success: Erfolg
 text:
   input-token: Gib hier deinen Token ein
   reset-state: Dies wird alle Status und aufeinanderfolgende Abenteuerzustände dieser Kampagne zurücksetzen. Bist du sicher?
-  cannot-be-restored: Dies kann nicht wiederhergestellt werden. Bist du sicher?
+  cannot-be-restored: Die Kampagne kann nicht wiederhergestellt werden. Bist du sicher?
   copy-this-token: Kopiere diesen Token, um deine Kampagne auf einem anderen Gerät zu importieren.
   select-action-cube-color: Wähle eine Aktionswürfelfarbe
   curse-cubes: Fluchwürfel
@@ -104,13 +106,15 @@ text:
   add-or-remove-stashed-items: Gelagerte Gegenstände hinzufügen oder entfernen
   select-aura: Aura auswählen
   aura-info: Aura wird entfernt, wenn du einen Traumawürfel oder eine andere Aura
-    erhälst.
+    erhältst.
   outcome-info: Bleiben für die gesamte Kampagne aktiv, es sei denn, ein anderer Effekt
     ändert sie.
   status-info: Status werden während der Lagerphase entfernt.
   number-of-runes: "Anzahl Runen:"
   party-name: "Name der Gruppe:"
   no-resources: Keine Ressourcen
+  campaign-imported: Kampagne importiert
+  campaign-removed: Kampagne entfernt
 monster:
   abomination: Abscheulichkeit
   archon: Archon
