@@ -51,7 +51,6 @@ watch(selectedId, (newSelectedId) => {
         :options="filteredItems"
         showClear
         checkmark
-        filter
         optionLabel="name"
         optionValue="id"
         :placeholder="placeholder"
