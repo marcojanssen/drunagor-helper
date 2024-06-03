@@ -57,7 +57,6 @@ watch(selectedId, (newSelectedId) => {
         :options="filteredCategories"
         showClear
         checkmark
-        filter
         optionLabel="name"
         optionValue="id"
         optionGroupLabel="name"
@@ -71,7 +70,7 @@ watch(selectedId, (newSelectedId) => {
           </template>
           <template v-else>
             {{ t(repository.find(slotProps.value)?.translation_key ?? slotProps.value) }}
-          </template>
+          </template>        
         </template>
         <template #option="slotProps">
           {{ t(slotProps.option.translation_key) }}
