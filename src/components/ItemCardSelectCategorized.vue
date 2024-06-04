@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { ref, watch } from "vue";
 import type { ItemData } from "@/data/repository/ItemData";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 import { useI18n } from "vue-i18n";
+import * as _ from "lodash-es";
 
 const props = defineProps<{
   categories: { name: string; items: ItemData[] }[];
@@ -17,24 +18,21 @@ const placeholder = "Select Bag Slot " + props.bagSlot;
 const selectedId = ref(props.value);
 const { t } = useI18n();
 
-let query = ref("");
-let filteredCategories = computed(() =>
-  query.value === ""
-    ? props.categories
-    : props.categories
-        .map((category) => {
-          return {
-            name: category.name,
-            items: category.items.filter((item) =>
-              t(item.translation_key)
-                .toLowerCase()
-                .replace(/\s+/g, "")
-                .includes(query.value.toLowerCase().replace(/\s+/g, ""))
-            ),
-          };
-        })
-        .filter((category) => category.items.length > 0)
-);
+let categories = props.categories.map((category) => {
+  const translatedItems = category.items.map((item) => {
+    return {
+      ...item,
+      name: t(item.translation_key),
+    };
+  });
+
+  const sortedItems = _.sortBy(translatedItems, ["name"]);
+
+  return {
+    ...category,
+    items: sortedItems,
+  };
+});
 
 function onStash() {
   emit("stash");
@@ -54,9 +52,10 @@ watch(selectedId, (newSelectedId) => {
     <div class="flex-auto" :data-testid="'item-bag-slot-' + props.bagSlot">
       <Dropdown
         v-model="selectedId"
-        :options="filteredCategories"
+        :options="categories"
         showClear
         checkmark
+        filter
         optionLabel="name"
         optionValue="id"
         optionGroupLabel="name"
@@ -64,16 +63,8 @@ watch(selectedId, (newSelectedId) => {
         :placeholder="placeholder"
         class="w-full"
       >
-        <template #value="slotProps">
-          <template v-if="slotProps.value == '' || slotProps.value == null">
-            {{ slotProps.placeholder }}
-          </template>
-          <template v-else>
-            {{ t(repository.find(slotProps.value)?.translation_key ?? slotProps.value) }}
-          </template>        
-        </template>
         <template #option="slotProps">
-          {{ t(slotProps.option.translation_key) }}
+          {{ slotProps.option.name }}
           <span class="text-slate-500 text-xs px-2" v-if="subTypeList(slotProps.option) !== ''">{{
             subTypeList(slotProps.option)
           }}</span>

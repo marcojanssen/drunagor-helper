@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { ref, watch } from "vue";
 import type { ItemData } from "@/data/repository/ItemData";
 import type { ItemType } from "@/data/type/ItemType";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 import { useI18n } from "vue-i18n";
+import * as _ from "lodash-es";
 
 const props = defineProps<{
   items: ItemData[];
@@ -18,17 +19,14 @@ const selectedId = ref(props.value);
 
 const { t } = useI18n();
 
-let query = ref("");
-let filteredItems = computed(() =>
-  query.value === ""
-    ? props.items
-    : props.items.filter((card) =>
-        t(card.translation_key)
-          .toLowerCase()
-          .replace(/\s+/g, "")
-          .includes(query.value.toLowerCase().replace(/\s+/g, ""))
-      )
-);
+let items = props.items.map((item) => {
+  return {
+    ...item,
+    name: t(item.translation_key),
+  };
+});
+
+items = _.sortBy(items, ["name"]);
 
 function onStash() {
   emit("stash");
@@ -48,24 +46,17 @@ watch(selectedId, (newSelectedId) => {
     <div class="flex-auto" :data-testid="'item-' + itemType">
       <Dropdown
         v-model="selectedId"
-        :options="filteredItems"
+        :options="items"
         showClear
         checkmark
+        filter
         optionLabel="name"
         optionValue="id"
         :placeholder="placeholder"
         class="w-full"
       >
-        <template #value="slotProps">
-          <template v-if="slotProps.value == '' || slotProps.value == null">
-            {{ slotProps.placeholder }}
-          </template>
-          <template v-else>
-            {{ t(repository.find(slotProps.value)?.translation_key ?? slotProps.value) }}
-          </template>
-        </template>
         <template #option="slotProps">
-          {{ t(slotProps.option.translation_key) }}
+          {{ slotProps.option.name }}
           <span class="text-slate-500 text-xs px-2" v-if="subTypeList(slotProps.option) !== ''">{{
             subTypeList(slotProps.option)
           }}</span>
