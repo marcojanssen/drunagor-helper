@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { ref, watch, computed } from "vue";
 import type { ItemData } from "@/data/repository/ItemData";
 import type { ItemType } from "@/data/type/ItemType";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 import { useI18n } from "vue-i18n";
-import * as _ from "lodash-es";
+import { sortBy } from "lodash-es";
 
 const props = defineProps<{
   items: ItemData[];
@@ -19,14 +19,17 @@ const selectedId = ref(props.value);
 
 const { t } = useI18n();
 
-let items = props.items.map((item) => {
-  return {
-    ...item,
-    name: t(item.translation_key),
-  };
-});
-
-items = _.sortBy(items, ["name"]);
+let items = computed(() =>
+  sortBy(
+    props.items.map((item) => {
+      return {
+        ...item,
+        name: t(item.translation_key),
+      };
+    }),
+    ["name"]
+  )
+);
 
 function onStash() {
   emit("stash");
