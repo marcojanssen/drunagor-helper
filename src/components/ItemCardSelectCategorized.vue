@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { ref, watch, computed } from "vue";
 import type { ItemData } from "@/data/repository/ItemData";
 import type { ItemDataRepository } from "@/data/repository/ItemDataRepository";
 import { useI18n } from "vue-i18n";
-import * as _ from "lodash-es";
+import { sortBy } from "lodash-es";
 
 const props = defineProps<{
   categories: { name: string; items: ItemData[] }[];
@@ -18,20 +18,22 @@ const placeholder = "Select Bag Slot " + props.bagSlot;
 const selectedId = ref(props.value);
 const { t } = useI18n();
 
-let categories = props.categories.map((category) => {
-  const translatedItems = category.items.map((item) => {
+let categories = computed(() => {
+  return props.categories.map((category) => {
+    const translatedItems = category.items.map((item) => {
+      return {
+        ...item,
+        name: t(item.translation_key),
+      };
+    });
+
+    const sortedItems = sortBy(translatedItems, ["name"]);
+
     return {
-      ...item,
-      name: t(item.translation_key),
+      ...category,
+      items: sortedItems,
     };
   });
-
-  const sortedItems = _.sortBy(translatedItems, ["name"]);
-
-  return {
-    ...category,
-    items: sortedItems,
-  };
 });
 
 function onStash() {
