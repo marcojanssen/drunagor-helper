@@ -55,6 +55,7 @@ declare module 'vue' {
     ItemCardSelect: typeof import('./src/components/ItemCardSelect.vue')['default']
     ItemCardSelectCategorized: typeof import('./src/components/ItemCardSelectCategorized.vue')['default']
     MainMenu: typeof import('./src/components/MainMenu.vue')['default']
+    Menubar: typeof import('primevue/menubar')['default']
     MultiSelect: typeof import('primevue/multiselect')['default']
     RadioButton: typeof import('primevue/radiobutton')['default']
     RandomizerQuickSelect: typeof import('./src/components/RandomizerQuickSelect.vue')['default']

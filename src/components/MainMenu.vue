@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import Menubar from "primevue/menubar";
 import { useRouter } from "vue-router";
 
 const { t, locale } = useI18n();
@@ -16,7 +15,6 @@ function getMenuItems() {
       icon: "pi pi-question",
       command: () => {
         router.push({ name: "Home" });
-        close();
       },
     },
     {
@@ -24,7 +22,6 @@ function getMenuItems() {
       icon: "pi pi-users",
       command: () => {
         router.push({ name: "Campaign Overview" });
-        close();
       },
     },
     {
@@ -32,7 +29,6 @@ function getMenuItems() {
       icon: "pi pi-search",
       command: () => {
         router.push({ name: "Keyword" });
-        close();
       },
     },
     {
@@ -40,7 +36,6 @@ function getMenuItems() {
       icon: "pi pi-cog",
       command: () => {
         router.push({ name: "Configuration" });
-        close();
       },
     },
   ];
