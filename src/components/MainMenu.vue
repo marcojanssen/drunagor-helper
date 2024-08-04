@@ -16,7 +16,6 @@ function getMenuItems() {
       icon: "pi pi-question",
       command: () => {
         router.push({ name: "Home" });
-        close();
       },
     },
     {
@@ -24,7 +23,6 @@ function getMenuItems() {
       icon: "pi pi-users",
       command: () => {
         router.push({ name: "Campaign Overview" });
-        close();
       },
     },
     {
@@ -32,7 +30,6 @@ function getMenuItems() {
       icon: "pi pi-search",
       command: () => {
         router.push({ name: "Keyword" });
-        close();
       },
     },
     {
@@ -40,7 +37,6 @@ function getMenuItems() {
       icon: "pi pi-cog",
       command: () => {
         router.push({ name: "Configuration" });
-        close();
       },
     },
   ];
