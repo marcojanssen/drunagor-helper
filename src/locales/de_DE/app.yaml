@@ -57,10 +57,10 @@ label:
   orc: Ork
   vampire: Vampir
   halfling: Halbling
-  efreet: Efreet
+  efreet: Ifrit
   succubus: Succubus
-  valkyrie: Valkyrie
-  azurean: Azurean
+  valkyrie: Walküre
+  azurean: Azurier
   mage: Magier
   sorcerer: Hexenmeister
   shadow-knight: Schattenritter
@@ -73,9 +73,9 @@ label:
   barbarian: Barbar
   druid: Druide
   monk: Mönch
-  swordmage: Swordmage
-  warlord: Warlord
-  necromancer: Necromancer
+  swordmage: Schwertmagier
+  warlord: Kriegsherr
+  necromancer: Nekromant
   shaman: Schamane
   mystics: des Mystischen
   strength: der Stärke
@@ -100,8 +100,8 @@ text:
   trauma-cubes: Traumawürfel
   path-of: "Pfad "
   add-or-remove-status: Status hinzufügen oder entfernen
-  add-or-remove-unfolding: Add or remove unfolding
-  add-or-remove-outcome: Auswirkung entfernen oder hinzufügen
+  add-or-remove-unfolding: Enthüllung hinzufügen oder entfernen
+  add-or-remove-outcome: Auswirkung hinzufügen oder entfernen
   add-or-remove-follower: Gefährten hinzufügen oder entfernen
   add-or-remove-stashed-items: Gelagerte Gegenstände hinzufügen oder entfernen
   select-aura: Aura auswählen
@@ -120,34 +120,34 @@ monster:
   archon: Archon
   bane: Bane
   bone-reaper: Sensenmann
-  commander-doctor: Doctor
-  commander-flinch: Flinch
-  commander-hexer: Hexer
-  commander-horde: Horde
-  commander-hunter: Hunter
-  commander-ox: Ox
+  commander-doctor: Böse Koryphäe
+  commander-flinch: Nachtschrecken
+  commander-hexer: Legänderer Fluch
+  commander-horde: Anführer der Horde
+  commander-hunter: Jagdführer
+  commander-ox: Minotaurus
   commander-thern: Thern
   commander-twin: Twins
-  commander-spawn: Spawn
-  commander-witch: Witch
+  commander-spawn: Brutkommandant
+  commander-witch: Oberhexe
   corrupted-farmer: Verdorbener Bauer
   corrupted-worm: Lindwurm Brut
   death-messenger: Todesbote
   demon-lord: Dämonenfürst
-  dream-titan: Dream Titan
+  dream-titan: Traumtitan
   executioner: Vollstrecker
-  faceless-conjurer: Faceless Conjurer
-  fallen-sisters: Fallen Sisters
-  fell-asteris: Fell Asteris
-  gorgon-hexer: Gorgon Hexer
-  gorgoness-witch: Gorgoness Witch
-  gremlin-horde: Gremlin Horde
-  grim-doctor: Grim Doctor
-  hellish-flayer: Hellish Flayer
-  hellspawn-brute: Hellspawn Brute
+  faceless-conjurer: Anonymer Gaukler
+  fallen-sisters: Fallen Sisters      # Übersetzung fehlt
+  fell-asteris: Todeshorn
+  gorgon-hexer: Gorgonenfluch
+  gorgoness-witch: Gorgonenhexe
+  gremlin-horde: Gremlinhorde
+  grim-doctor: Böser Doktor
+  hellish-flayer: Höllenhäuter
+  hellspawn-brute: Höllenbrut
   lady-claw: Klauennatter
-  nagian-hunter: Nagian Hunter
-  night-stalker: Night Stalker
+  nagian-hunter: Nagischer Jäger
+  night-stalker: Jäger der Nacht
   ravager: Verwüster
   rotten-flesh: Fleischgolem
   scout-of-darkness: Dunkler Späher
@@ -157,9 +157,9 @@ monster:
   shadow-mistress: Schattenherrin
   shadow-pain: Schattenschmerz
   shadow-vampire: Schattenvampir
-  shadow-witch: Shadow Witch
+  shadow-witch: Schattenhexe
   skeleton-archer: Skelettbogenschütze
-  skeleton-knight: Skeleton Knight
+  skeleton-knight: Knochenritter
   walking-horror: Wanderschrecken
 menu:
   menu: Menü

@@ -50,55 +50,55 @@ weapon:
     staff-of-gravity: Stab der Schwerkraft
     weapon-of-the-ancients: Waffe der Ahnen
   apocalypse:
-    axe-of-the-steppes: Axe of the Steppes
-    counselors-staff: Counselor's Staff
-    empyrean-bowstaff: Empyrean Bowstaff
-    gil-garoths-sword: Gil Garoth's Sword
-    hellscarian-falchion: Hellscarian Falchion
-    hunting-shotbow: Hunting Shortbow
-    improved-arbalast: Improved Arbalast
-    improved-arcannon: Improved Arcannon
-    improved-claymore: Improved Claymore
-    improved-crossbow: Improved Crossbow
-    improved-longsword: Improved Longsword
-    improved-rapier: Improved Rapier
-    improved-royal-staff: Improved Royal Staff
-    lionhearteds-sword: Lionhearted's Sword
-    standard-arbalast: Standard Arbalast
-    standard-arcannon: Standard Arcannon
-    standard-claymore: Standard Claymore
-    standard-crossbow: Standard Crossbow
-    standard-longsword: Standard Longsword
-    standard-rapier: Standard Rapier
-    standard-royal-staff: Standard Royal Staff
-    sword-of-kane: Sword of Kane
-    ultimate-arbalast: Ultimate Arbalast
-    ultimate-arcannon: Ultimate Arcannon
-    ultimate-claymore: Ultimate Claymore
-    ultimate-crossbow: Ultimate Crossbow
-    ultimate-longsword: Ultimate Longsword
-    ultimate-rapier: Ultimate Rapier
-    ultimate-royal-staff: Ultimate Royal Staff
+    axe-of-the-steppes: Axt des Steppenvolks
+    counselors-staff: Stab des Beraters
+    empyrean-bowstaff: Schlagbogen
+    gil-garoths-sword: Gil Garoths Schwert
+    hellscarian-falchion: Malchus der Wüste
+    hunting-shotbow: Jagdbogen
+    improved-arbalast: Bessere Armbrust
+    improved-arcannon: Bessere Zauberkanone
+    improved-claymore: Besseres Breitschwert
+    improved-crossbow: Bessere Armbrust
+    improved-longsword: Besseres Langschwert
+    improved-rapier: Besseres Rapier
+    improved-royal-staff: Besserer Königsstab
+    lionhearteds-sword: Löwenherzschwert
+    standard-arbalast: Standard Armbrust
+    standard-arcannon: Simple Zauberkanone
+    standard-claymore: Simples Breitschwert
+    standard-crossbow: Simple Armbrust
+    standard-longsword: Simples Langschwert
+    standard-rapier: Simples Rapier
+    standard-royal-staff: Simpler Königsstab
+    sword-of-kane: Schwert von Kane
+    ultimate-arbalast: Perfekte Armbrust
+    ultimate-arcannon: Perfekte Zauberkanone
+    ultimate-claymore: Perfektes Breitschwert
+    ultimate-crossbow: Perfekte Armbrust
+    ultimate-longsword: Perfektes Langschwert
+    ultimate-rapier: Perfektes Rapier
+    ultimate-royal-staff: Perfekter Königsstab
   awakenings:
-    arcabalest: Arcabalest
-    chaos-staff: Chaos Staff
-    cleavescythe: Cleavescythe
-    hack-slash: Hack-Slash
-    improved-hack-slash: Improved Hack-Slash
-    improved-twin-blades: Improved Twin-Blades
-    improved-cleavescythe: Improved Cleavescythe
-    improved-chaos-staff: Improved Chaos Staff
-    improved-war-bow: Improved War Bow
-    improved-arcabalest: Improved Arcabalest
-    twin-blades: Twin-Blades
-    rancor-blade: Rancor Blade
-    ultimate-hack-slash: Ultimate Hack-Slash
-    ultimate-twin-blades: Ultimate Twin-Blades
-    ultimate-cleavescythe: Ultimate Cleavescythe
-    ultimate-chaos-staff: Ultimate Chaos Staff
-    ultimate-war-bow: Ultimate War Bow
-    ultimate-arcabalest: Ultimate Arcabalest
-    war-bow: War Bow
+    arcabalest: Simpler Arkambrust
+    chaos-staff: Simpler Chaosstab
+    cleavescythe: Simple Bogensichel
+    hack-slash: Simple Hammerkralle
+    improved-hack-slash: Bessere Hammerkralle
+    improved-twin-blades: Bessere Doppelklinge
+    improved-cleavescythe: Bessere Bogensichel
+    improved-chaos-staff: Besserer Chaosstab
+    improved-war-bow: Besserer Kriegsbogen
+    improved-arcabalest: Bessere Arkambrust
+    twin-blades: Simple Doppelklinge
+    rancor-blade: Grollklinge
+    ultimate-hack-slash: Perfekte Hammerkralle
+    ultimate-twin-blades: Perfekte Doppelklinge
+    ultimate-cleavescythe: Perfekte Bogensichel
+    ultimate-chaos-staff: Perfekter Chaosstab
+    ultimate-war-bow: Perfekter Kriegsbogen
+    ultimate-arcabalest: Perfekte Arkambrust
+    war-bow: Simpler Kriegsbogen
 trinket:
   core:
     amulet-of-power: Amulett der Macht
@@ -138,62 +138,62 @@ trinket:
   desertofhellscar:
     frozen-tears-of-alagast: Eistränen aus Alagast
   apocalypse:
-    chain-of-the-lost-world: Chain of the Lost World
-    eldritch-symbiot: Eldritch Symbiot
-    executioners-helmet: Executioner's Helmet
-    gilded-collar-death: Gilded Collar (Death)
-    gilded-collar-life: Gilded Collar (Life)
-    grayrock-signet: Grayrock Signet
-    improved-eldritch-mask: Improved Eldritch Mask
-    improved-emerald-ring: Improved Emerald Ring
-    improved-power-gauntlet: Improved Power Gauntlet
-    improved-titan-stompers: Improved Titan Stompers
-    jeweled-necklace: Jeweled Necklace
-    outlander-helmet: Outlander Helmet
-    ragged-doll: Ragged Doll
-    rainbow-mask: Rainbow Mask
-    righteous-torch: Righteous Torch
-    sapphire-pendant: Sapphire Pendant
-    sprout-of-darkness: Sprout of Darkness
-    standard-eldritch-mask: Standard Eldritch Mask
-    standard-emerald-ring: Standard Emerald Ring
-    standard-power-gauntlet: Standard Power Gauntlet
-    standard-titan-stompers: Standard Titan Stompers
-    ultimate-eldritch-mask: Ultimate Eldritch Mask
-    ultimate-emerald-ring: Ultimate Emerald Ring
-    ultimate-power-gauntlet: Ultimate Power Gauntlet
-    ultimate-titan-stompers: Ultimate Titan Stompers
-    vow-keeper: Vow Keeper
+    chain-of-the-lost-world: Kette der verlorenen Welt
+    eldritch-symbiot: Unheimlicher Symbiot
+    executioners-helmet: Helm des Henkers
+    gilded-collar-death: Halsreif (Tod)
+    gilded-collar-life: Halsreif (Leben)
+    grayrock-signet: Siegelring von Graustein
+    improved-eldritch-mask: Bessere Schauermaske
+    improved-emerald-ring: Besserer Smaragdring
+    improved-power-gauntlet: Besserer Krafthandschuh
+    improved-titan-stompers: Bessere Titanenstampfer
+    jeweled-necklace: Juwelenkette
+    outlander-helmet: Helm des Fremdlings
+    ragged-doll: Zerlumpte Puppe
+    rainbow-mask: Regenbogenmaske
+    righteous-torch: Rechtschaffende Fackel
+    sapphire-pendant: Saphiranhänger
+    sprout-of-darkness: Spross der Dunkelheit
+    standard-eldritch-mask: Simple Schauermaske
+    standard-emerald-ring: Simpler Smaragdring
+    standard-power-gauntlet: Simpler Krafthandschuh
+    standard-titan-stompers: Simple Titanenstampfer
+    ultimate-eldritch-mask: Perfekte Schauermaske
+    ultimate-emerald-ring: Perfekter Smaragdring
+    ultimate-power-gauntlet: Perfekter Krafthandschuh
+    ultimate-titan-stompers: Perfekte Titanenstamper
+    vow-keeper: Ewiges Gelübde
   awakenings:
-    accuracy-ring: Accuracy Ring
-    cornucopia: Cornucopia
-    arcane-glove: Arcane Glove
-    black-harpoon: Black Harpoon
-    bright-crest: Bright Crest
-    captains-brooch: Captain's Brooch
-    christis-kitten: Christi's Kitten
-    cosmic-heart-chipped: Cosmic Heart - Chipped
-    cosmic-heart-flawless: Cosmic Heart - Flawless
-    eradrens-lamp: Eradren's Lamp
+    accuracy-ring: Simpler Präzisionsring
+    cornucopia: Simples Füllhorn
+    arcane-glove: Arkane Handschuhe
+    black-harpoon: Schwarze Harpune
+    bright-crest: Zeichen des Lichts
+    captains-brooch: Kapitänsbrosche
+    christis-kitten: Christis Kätzchen
+    cosmic-heart-chipped: Kosmisches Herz (Dumpf)
+    cosmic-heart-flawless: Kosmisches Herz (Hell)
+    eradrens-lamp: Eradrens Laterne
     felix-felis: Felix Felis
-    fighters-ring-back: Fighter's Ring (Back)
-    fighters-ring-front: Fighter's Ring (Front)
-    grimoire: Grimoire
-    huntmasters-whistle: Huntmaster's Whistle
-    improved-accuracy-ring: Improved Accuracy Ring
-    improved-tracker-boots: Improved Tracker Boots
-    improved-cornucopia: Improved Cornucopia
-    improved-grimoire: Improved Grimoire
-    loriens-flute: Lorien's Flute
-    mind-gem: Mind Gem
-    polished-helmet: Polished Helmet
-    token-of-friendship: Token of Friendship
-    tracker-boots: Tracker Boots
-    trappers-toolkit: Trapper's Toolkit
-    ultimate-accuracy-ring: Ultimate Accuracy Ring
-    ultimate-tracker-boots: Ultimate Tracker Boots
-    ultimate-cornucopia: Ultimate Cornucopia
-    ultimate-grimoire: Ultimate Grimoire
+    fighters-ring-back: Kampfring (Geladen)
+    fighters-ring-front: Kampfring (Erloschen)
+    grimoire: Simpler Grimoire
+    huntmasters-whistle: Jagdpfeife
+    improved-accuracy-ring: Besserer Präzisionsring
+    improved-tracker-boots: Besserer Jagdstiefel
+    improved-cornucopia: Besseres Füllhorn
+    improved-grimoire: Besserer Grimoire
+    loriens-flute: Loriens Flöte
+    mind-gem: Gedankenstein
+    polished-helmet: Glänzender Helm
+    token-of-friendship: Freundschaftsring
+    tracker-boots: Simple Jagdstiefel
+    trappers-toolkit: Fallenkasten
+    ultimate-accuracy-ring: Perfekter Präzisionsring
+    ultimate-tracker-boots: Perfekte Jagdstiefel
+    ultimate-cornucopia: Perfektes Füllhorn
+    ultimate-grimoire: Perfekter Grimoire
 armor:
   core:
     breastplate: Brustplatte
@@ -223,43 +223,43 @@ armor:
   desertofhellscar:
     wormscale-breastplate: Wurmschuppenpanzer
   apocalypse:
-    condottieris-breastplate: Connottieri's Breastplate
-    improved-arming-doublet: Improved Arming Doublet
-    improved-cape-of-the-magi: Improved Cape of the Magi
-    improved-lorica-armor: Improved Lorica Armor
-    improved-royal-plate: Improved Royal Plate
-    improved-shadow-leather: Improved Shadow Leather
-    masterpiece-armor: Masterpiece Armor
-    outlander-black-plate: Outlander Black Plate
-    scholars-robe: Scholar's Robe
-    standard-arming-doublet: Standard Arming Doublet
-    standard-cape-of-the-magi: Standard Cape of the Magi
-    standard-lorica-armor: Standard Lorica Armor
-    standard-royal-plate: Standard Royal Plate
-    standard-shadow-leather: Standard Shadow Leather
-    ultimate-arming-doublet: Ultimate Arming Doublet
-    ultimate-cape-of-the-magi: Ultimate Cape of the Magi
-    ultimate-lorica-armor: Ultimate Lorica Armor
-    ultimate-royal-plate: Ultimate Royal Plate
-    ultimate-shadow-leather: Ultimate Shadow Leather
-    veteran-cuirass: Veteran Cuirass
-    warworn-breastplate: Warworn Breastplate
+    condottieris-breastplate: Condottieri-Rüstung
+    improved-arming-doublet: Besserer Waffensams
+    improved-cape-of-the-magi: Besserer Zauberumhang
+    improved-lorica-armor: Loricas Bessere Rüstung
+    improved-royal-plate: Bessere Königsplatten
+    improved-shadow-leather: Besseres Schattenleder
+    masterpiece-armor: Meisterliche Rüstung
+    outlander-black-plate: Rüstung des Fremdlings
+    scholars-robe: Umhang des Gelehrten 
+    standard-arming-doublet: Simples Waffensams
+    standard-cape-of-the-magi: Simpler Zauberumhang
+    standard-lorica-armor: Loricas Simple Rüstung
+    standard-royal-plate: Simple Königsplatten
+    standard-shadow-leather: Simples Schattenleder
+    ultimate-arming-doublet: Perfektes Waffensams
+    ultimate-cape-of-the-magi: Perfekter Zauberumhang
+    ultimate-lorica-armor: Loricas Perfekte Rüstung
+    ultimate-royal-plate: Perfekte Königsplatten
+    ultimate-shadow-leather: Perfektes Schattenleder
+    veteran-cuirass: Kürass des Veteranen
+    warworn-breastplate: Lädierter Brustpanzer
   awakenings:
-    battle-plate: Battle Plate
-    exquisite-mail: Exquisite Mail
-    improved-mystics-robe: Improved Mystic's Robe
-    improved-rogues-vest: Improved Rogue's Vest
-    improved-battle-plate: Improved Battle Plate
-    improved-exquisite-mail: Improved Exquisite Mail
-    improved-quilted-doublet: Improved Quilted Doublet
-    mystics-robe: Mystic's Robe
-    quilted-doublet: Quilted Doublet
-    rogues-vest: Rogue's Vest
-    ultimate-mystics-robe: Ultimate Mystic's Robe
-    ultimate-rogues-vest: Ultimate Rogue's Vest
-    ultimate-battle-plate: Ultimate Battle Plate
-    ultimate-exquisite-mail: Ultimate Exquisite Mail
-    ultimate-quilted-doublet: Ultimate Quilted Doublet
+    battle-plate: Simpler Plattenpanzer
+    exquisite-mail: Simpler Kettenpanzer
+    improved-mystics-robe: Bessere Mystikerrobe
+    improved-rogues-vest: Bessere Diebesweste
+    improved-battle-plate: Besserer Plattenpanzer
+    improved-exquisite-mail: Besserer Kettenpanzer
+    improved-quilted-doublet: Besseres Wams
+    mystics-robe: Simple Mystikerrobe
+    quilted-doublet: Simples Wams
+    rogues-vest: Simple Diebesweste
+    ultimate-mystics-robe: Perfekte Mystikerrobe
+    ultimate-rogues-vest: Perfekte Diebesweste
+    ultimate-battle-plate: Perfekter Plattenpanzer
+    ultimate-exquisite-mail: Perfekter Kettenpanzer
+    ultimate-quilted-doublet: Perfektes Wams
 consumable:
   core:
     cosmic-gemstone: Kosmischer Edelstein
@@ -281,21 +281,21 @@ consumable:
     scroll-of-incinerate: Rolle des Verbrennens
     scroll-of-unmaking: Rolle der Aufhebung
   apocalypse:
-    artisans-tools: Artisan's Tools (Veteran)
-    scroll-of-charm: Scroll of Charm
-    scroll-of-the-copy-cat: Scroll of the Copy Cat
-    scroll-of-translocation: Scroll of Translocation
-    treasure-trove: Treasure trove (Veteran)
+    artisans-tools: Werkzeug (Veteranenbeute)
+    scroll-of-charm: Rolle der Verzückung
+    scroll-of-the-copy-cat: Rolle der Imitation
+    scroll-of-translocation: Rolle der Teleportation
+    treasure-trove: Schatz (Veteranenbeute)
   awakenings:
-    artisans-tools: Artisan's Tools (Hero)
-    combustible-grenade: Combustible Grenade
-    dragons-breath: Dragon's Breath
-    potion-of-haste: Potion of Haste
-    potion-of-strength: Potion of Strength
-    scroll-of-beguile: Scroll of Beguile
-    scroll-of-polymorph: Scroll of Polymorph
-    scroll-of-protection: Scroll of Protection
-    treasure-trove: Treasure Trove (Hero)
+    artisans-tools: Werkzeug (Heldenbeute)
+    combustible-grenade: Brandgranate
+    dragons-breath: Drachenatem
+    potion-of-haste: Trank der Eile
+    potion-of-strength: Trank der Stärke
+    scroll-of-beguile: Rolle der Mainpulation
+    scroll-of-polymorph: Rolle der Verniedlichung
+    scroll-of-protection: Rolle des Schutzes
+    treasure-trove: Schatz (Heldenbeute)
 offhand:
   core:
     deadly-backstabber: Tödlicher Verräter
@@ -329,52 +329,52 @@ offhand:
   desertofhellscar:
     dragonbone-wand: Drachenknochenstab
   apocalypse:
-    carmillas-kiss: Carmilla's Kiss
-    commodores-shield: Commodore's Shield
-    draconian-war-gauntlet: Draconian War-Gauntlet
-    emerald-claw-gauntlet: Emerald Claw-Gauntlet
-    improved-astral-shard: Improved Astral Shard
-    improved-pact-blade: Improved Pact Blade
-    improved-shadday-shield: Improved Shadday Shield
-    improved-shell-opener: Improved Shell Opener
-    improved-umbral-buckler: Improved Umbral Buckler
-    kraken-slayer: Kraken Slayer
-    masterpiece-blade: Masterpiece Blade
-    masterpiece-bow: Masterpiece Bow
-    masterpiece-staff: Masterpiece Staff
-    outlander-shield: Outlander Shield
-    princess-bowaegis: Princess' Bowaegis
-    reality-render: Reality Render
-    rod-of-the-prince: Rod of the Prince
-    standard-astral-shard: Standard Astral Shard
-    standard-pact-blade: Standard Pact Blade
-    standard-shadday-shield: Standard Shadday Shield
-    standard-shell-opener: Standard Shell Opener
-    standard-umbral-buckler: Standard Umbral Buckler
-    ultimate-astral-shard: Ultimate Astral Shard
-    ultimate-pact-blade: Ultimate Pact Blade
-    ultimate-shadday-shield: Ultimate Shadday Shield
-    ultimate-shell-opener: Ultimate Shell Opener
-    ultimate-umbral-buckler: Ultimate Umbral Buckler
+    carmillas-kiss: Carmillas Küsse
+    commodores-shield: Schild des Admirals
+    draconian-war-gauntlet: Drakonische Kriegsklaue
+    emerald-claw-gauntlet: Klauenhandschuh
+    improved-astral-shard: Besserer Astraler Splitter
+    improved-pact-blade: Bessere Paktklinge
+    improved-shadday-shield: Shaddays Besseres Schild
+    improved-shell-opener: Besseres Austernmesser
+    improved-umbral-buckler: Umbrals Besserer Schild
+    kraken-slayer: Krakentöter
+    masterpiece-blade: Meisterliche Klinge
+    masterpiece-bow: Meisterlicher Bogen
+    masterpiece-staff: Meisterlicher Stab
+    outlander-shield: Schild des Fremdlings
+    princess-bowaegis: Schildbogen
+    reality-render: Realitätszerstörer
+    rod-of-the-prince: Stab des Prinzen
+    standard-astral-shard: Simpler Astraler Splitter
+    standard-pact-blade: Simple Paktklinge
+    standard-shadday-shield: Shaddays Simples Schild
+    standard-shell-opener: Simples Austernmesser
+    standard-umbral-buckler: Umbrals Simpler Schild
+    ultimate-astral-shard: Perfekter Astraler Splitter
+    ultimate-pact-blade: Perfekte Paktklinge
+    ultimate-shadday-shield: Shaddays Perfektes Schild
+    ultimate-shell-opener: Perfektes Austernmesser
+    ultimate-umbral-buckler: Umbrals Perfekter Schild
   awakenings:
-    astral-symbol: Astral Symbol
-    buckler: Buckler
-    azure-robins-knife: Azure Robins Knife
-    defenders-buckler-back: Defender's Buckler (Back)
-    defenders-buckler-front: Defender's Buckler (Front)
-    heart-of-the-ocean: Heart of the Ocean
-    heavy-shield: Heavy Shield
-    hippocampus-banner: Hippocampus Banner
-    holy-aegis: Holy Aegis
-    improved-astral-symbol: Improved Astral Symbol
-    improved-heavy-shield: Improved Heavy Shield
-    improved-skull-piercer: Improved Skull Piercer
-    improved-holy-aegis: Improved Holy Aegis
-    improved-buckler: Improved Buckler
-    ominous-spearhead: Ominous Spearhead
-    skull-piercer: Skull Piercer
-    ultimate-astral-symbol: Ultimate Astral Symbol
-    ultimate-heavy-shield: Ultimate Heavy Shield
-    ultimate-skull-piercer: Ultimate Skull Piercer
-    ultimate-holy-aegis: Ultimate Holy Aegis
-    ultimate-buckler: Ultimate Buckler
+    astral-symbol: Simples Astralsymbol
+    buckler: Simpler Faustschild
+    azure-robins-knife: Messer der Blausperber
+    defenders-buckler-back: Verteidigerschild (Hell)
+    defenders-buckler-front: Verteidigerschild (Stumpf)
+    heart-of-the-ocean: Herz des Meeres
+    heavy-shield: Simples Vollschild
+    hippocampus-banner: Seepferdbanner
+    holy-aegis: Simple Schildägis
+    improved-astral-symbol: Besseres Astralsymbol
+    improved-heavy-shield: Besseres Vollschild
+    improved-skull-piercer: Besseres Skalpmesser
+    improved-holy-aegis: Bessere Schildägis
+    improved-buckler: Besserer Faustschild
+    ominous-spearhead: Goldene Speerspitze
+    skull-piercer: Simples Skalpmesser
+    ultimate-astral-symbol: Pefektes Astralsymbol
+    ultimate-heavy-shield: Perfektes Vollschild
+    ultimate-skull-piercer: Perfektes Skalpmesser
+    ultimate-holy-aegis: Perfekte Schildägis
+    ultimate-buckler: Perfekter Faustschild
