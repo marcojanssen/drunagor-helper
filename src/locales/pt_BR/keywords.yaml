@@ -1,1 +1,1365 @@
 ---
+keyword:
+  - id: x-hp
+    keyword: "+X PV"
+    description: A Vida Máxima do Herói aumenta em +X pontos. Conforme explicado na página
+      7 do Livro de Regras de Era das Trevas, a Vida Máxima de um Herói, porém, nunca
+      pode exceder 16. Se um Herói tiver dois ou mais efeitos que aumentem seus Pontos
+      de Vida, você deve sempre somá-los, mas nunca ultrapassar o valor de 16 mostrado
+      no painel do Herói. Toda Vida Máxima que exceder 16 é considerada desperdiçada.
+  - id: x-hp-(simple)
+    keyword: "+X PV (SIMPLES)"
+    description: Se você prefere não lidar com a granularidade da regra +X PV, pode
+      escolher a versão simples e desconsiderar a segunda e a terceira NOTA. Assim, se
+      você perder um efeito que confere +X PV, perderá Vida de forma correspondente.
+      Porém, se você recuperar esses efeitos depois, não recuperará nenhuma Vida, mesmo
+      que a soma dos efeitos +X PV que você tenha exceda 16 de Vida.
+  - id: x-dmg
+    keyword: "+X ou -X DANO"
+    description: O valor X é somado ou subtraído do Dano que seu Ataque causa. Acertos
+      Críticos e DANO DOBRADO também dobram esse valor.
+  - id: x-hit
+    keyword: "+X ou -X ACERTO"
+    description: Faça um Ataque de Arma somando (ou subtraindo) o valor X à sua rolagem
+      de dado. Afeta apenas a Precisão, não a obtenção de um Acerto Crítico.
+  - id: x-to-hit
+    keyword: "+X PARA ACERTAR"
+    description: "Qualquer Ataque de Arma que você fizer ganha um bônus de +X no Teste
+      de Precisão para acertar seus alvos. Lembre-se de que esse bônus afeta apenas o
+      resultado da Precisão da Arma, não se você obtém um Acerto Crítico: Se você tiver
+      +6 PARA ACERTAR e rolar 14 no D20, isso não significa que é um “20 natural”—é
+      uma Precisão 20 e um 14 natural."
+  - id: x-movement
+    keyword: "+X MOVIMENTO"
+    description: Você recebe X pontos adicionais de movimento a cada efeito de Mover
+      ganho.
+  - id: action-cubes-(ac)
+    keyword: CUBOS DE AÇÃO (CA)
+    description: Cubos coloridos gastos por Heróis para usar suas habilidades.
+  - id: activate
+    keyword: ATIVAR
+    description: "Ativar é um termo complicado que aparece em muitos efeitos ao longo
+      das três gerações do Sistema AoD. Na sua raiz de design, Ativar é a instrução
+      para tomar um turno. Assim, quando você Ativa um Monstro, por exemplo, você toma
+      um turno com aquele Monstro; sempre que um Monstro toma um turno, dizemos que
+      ele está sendo “ativado”. Quando um Personagem é ativado, ele toma um turno normalmente:
+      suas Condições disparam no início do turno, então suas Habilidades Ativadas disparam
+      e, finalmente, ele toma uma Ação de Movimento e/ou uma Ação de Ataque. Mascotes,
+      porém, têm um efeito opcional: quando você Ativa um deles, em vez de fazê-lo tomar
+      um turno, você pode Invocá-lo. Vale lembrar: um Mascote Invocado aparece em uma
+      casa adjacente e desocupada ao lado de seu Mestre."
+  - id: adj-or-adjacent
+    keyword: ADJ OU ADJACENTE
+    description: Este efeito só pode afetar um Alvo em uma casa adjacente ao Personagem
+      conjurador, independentemente do Alcance da Habilidade.
+  - id: area
+    keyword: ÁREA
+    description: Refere-se a um quadrado azul no tile do mapa.
+  - id: all
+    keyword: TODOS
+    description: Um efeito com este termo significa equivalente ao dano que o Alvo está
+      recebendo. O efeito ainda se aplica apenas a um Alvo de um ataque, não a dois ou
+      mais, durante MULTIALVO, TALHAR ou GOLPE.
+  - id: ambush
+    keyword: EMBOSCADA
+    description: O Monstro se teletransporta para qualquer casa desocupada adjacente
+      ao seu alvo, à escolha desse alvo. Sofre efeitos do terreno onde pousa.
+  - id: attack-twice
+    keyword: ATACAR DUAS VEZES
+    description: O Monstro se move uma vez e então ataca duas vezes. Cada ataque é resolvido
+      separadamente (inclui reações). Se o personagem estiver fora de alcance entre os
+      ataques, o monstro pode escolher outro alvo para o segundo ataque desde que não
+      tenha de se mover.
+  - id: aura
+    keyword: AURA
+    description: Um herói só pode ter uma e ela é removida quando o herói é NOCAUTEADO
+      e recebe um CUBO DE TRAUMA. (Não é removida durante a Fase de Acampamento)
+  - id: aura-(token)
+    keyword: AURA (MARCADOR)
+    description: Como um efeito de Resolução, um Herói é frequentemente instruído a anotar
+      uma Aura em seu Registro de Campanha ou Aplicativo Companheiro. Você pode manter
+      este marcador em seu painel como um lembrete tátil e visual de que tem um efeito
+      especial anotado ali. Marcadores de Aura são marcadores de Lembrete e foram introduzidos
+      em Apocalypse.
+  - id: available
+    keyword: DISPONÍVEL
+    description: Disponível refere-se mais a um termo de jogo do que necessariamente
+      a uma Palavra-Chave. Uma Habilidade Disponível, por exemplo, é uma Habilidade aprendida
+      por um Herói que não tem seu espaço atualmente ocupado (por um Cubo de Ação, Cubo
+      de Maldição ou Cubo de Trauma). Uma Resolução Disponível, por sua vez, é uma Resolução
+      que ainda não foi escolhida em uma Interação Carregada ou não foi declarada “indisponível”
+      por algum efeito.
+  - id: avoid
+    keyword: EVITAR
+    description: Evitar não é propriamente uma Palavra-Chave, porém, é um novo termo
+      em relação à Caixa Base, então vale esclarecer. “Evitar” é usado para indicar que
+      você não sofre algum efeito, assim como PREVENIR faria, mas como PREVENIR é uma
+      Palavra-Chave, foi necessária a adoção de um termo diferente.
+  - id: bash
+    keyword: PANCADA
+    description: Pancada é uma característica típica do Herói Andreas. Sempre que uma
+      Habilidade tem Pancada, no momento em que você está prestes a resolver o efeito
+      que contém a Palavra-Chave Pancada, você pode descartar 2 marcadores de Escudo.
+      Se o fizer, adicione o efeito descrito entre os “[]” à resolução da sua Habilidade.
+      Caso contrário, você deve resolver aquela Habilidade sem considerá-lo como parte
+      do efeito.
+  - id: bear-trap
+    keyword: ARMADILHA DE URSO
+    description: Todos os inimigos na ÁREA recebem 2 de Dano não prevenível, SANGRAMENTO
+      2, DESCARTAR.
+  - id: beginning-of-turn-(bot)
+    keyword: INÍCIO DO TURNO (IDT)
+    description: IDT é uma abreviação usada para descrever o momento de “Início do Turno”,
+      quando algumas habilidades especiais dos Personagens são acionadas, logo após eles
+      sofrerem os efeitos das Condições que possuem que também disparam no início de
+      seu turno.
+  - id: bleed-x
+    keyword: SANGRAMENTO X
+    description: O Alvo recebe X marcadores de SANGRAMENTO. No início do próximo turno
+      daquele personagem, ele recebe 1 de dano não prevenível para cada marcador de SANGRAMENTO
+      que possui e então remove todos eles de seu painel. SANGRAMENTO é uma Condição
+      empilhável.
+  - id: blindness
+    keyword: CEGUEIRA
+    description: Esta é uma habilidade especial que alguns Monstros possuem e que os
+      torna inimigos muito perigosos. Quando um Personagem sofre CEGUEIRA, ele deve pegar
+      um marcador de CEGO e mantê-lo em seu painel. Enquanto mantém um marcador de CEGO,
+      o Personagem automaticamente erra qualquer ataque com arma se sua rolagem natural
+      no d20 for 10 ou menos, mesmo que tenha sucesso no teste de Precisão de sua Arma.
+      CEGUEIRA é uma Condição Redundante que dura até o Personagem tomar uma Ação de
+      Recuperação ou ser removida por um efeito de PURIFICAR.
+  - id: bloodseeker
+    keyword: CAÇADOR DE SANGUE
+    description: Um Monstro com Caçador de Sangue tem como Alvo Principal o Herói Mais
+      Fraco (aquele com a menor Vida no momento).
+  - id: bounty
+    keyword: RECOMPENSA
+    description: Recompensa substitui e atualiza a Palavra-Chave “SAQUE” que os Companheiros
+      tinham em Era das Trevas. Portanto, quando um Monstro é derrotado por um ataque
+      que tem RECOMPENSA, aquele Monstro deixa cair um marcador de SAQUE quando removido
+      do tabuleiro (marcadores de SAQUE são Objetos Móveis de Solo que podem ser coletados
+      com uma Ação Menor; ao coletar Saque, um Herói compra uma carta de Baú, mas não
+      rola o Dado de Armadilha).
+  - id: brittle
+    keyword: FRÁGIL
+    description: Alguns ataques são capazes de deixar seus oponentes vulneráveis. Quando
+      um Personagem sofre Frágil, ele deve pegar um marcador de Frágil e mantê-lo em
+      seu painel. Se for um Herói, Mascote ou Companheiro de qualquer tipo, na próxima
+      vez que sofrer dano de qualquer fonte, sofrerá o dobro daquele dano e removerá
+      seu marcador de Frágil (lembre-se, dano sofrido é o dano recebido que não foi prevenido).
+      Se for um Monstro, o próximo ataque de arma ou magia que o acertar se torna um
+      Acerto Crítico e remove seu marcador de Frágil. Frágil persiste até ser removida
+      ou disparada conforme descrito. É uma Condição Redundante.
+  - id: burn-x
+    keyword: QUEIMADURA X
+    description: O Alvo recebe X marcadores de QUEIMADURA. No início do próximo turno
+      daquele personagem, ele recebe 1 de dano não prevenível para cada marcador de QUEIMADURA
+      que possui e então remove um desses marcadores de seu painel. QUEIMADURA é uma
+      Condição empilhável.
+  - id: cancel
+    keyword: CANCELAR
+    description: Cancelar é um termo que passou a estar associado às Interrupções devido
+      à capacidade delas de responderem a um ataque enquanto ele está sendo desferido,
+      em vez de depois que já atingiu seu alvo. Quando um ataque é Cancelado, isso significa
+      que ele não existe mais e não causa mais dano a nenhum de seus alvos. Personagens
+      que já usaram Interrupções para um ataque Cancelado ainda são considerados como
+      tendo usado essas habilidades, mas depois que o ataque é Cancelado, nenhum outro
+      Personagem pode usar uma Interrupção (e claro, nem Reações) contra aquele ataque.
+  - id: cast
+    keyword: CONJURAR
+    description: Este termo é usado para definir o momento em que um efeito é aplicado
+      no jogo, frequentemente relacionado ao Personagem responsável por causá-lo. Assim,
+      quando seu Herói gasta um de seus Cubos de Ação para usar uma Habilidade de Foco
+      de Batalha, por exemplo, aquele Herói está conjurando um efeito FOCO 1 E PURIFICAR
+      1.
+  - id: catalyze
+    keyword: CATALISAR
+    description: Esta é uma Palavra-Chave projetada para condensar um efeito em uma única
+      palavra, economizando espaço de texto. Quando um Herói Catalisa, significa que
+      o próximo Cubo de Ação que ele usar neste turno (apenas o turno atual) é tratado
+      como um Cubo Curinga (se for usado para acionar uma Habilidade de Herói, trate
+      todos os números escritos em sua forma numérica como se fossem dobrados). Cubos
+      Curinga podem ser usados como se fossem de qualquer cor, mas é importante lembrar
+      que o Alcance dos efeitos de uma Habilidade ativada usando um Cubo Curinga é baseado
+      no seu Tipo (ou seja, uma Habilidade Corpo a Corpo ativada por um Cubo Curinga
+      ainda tem Alcance Corpo a Corpo).
+  - id: chain-up
+    keyword: ACORRENTAR
+    description: Monstros com esta habilidade se especializam em capturar Heróis. No
+      início de seu turno, imediatamente após sofrer os efeitos de qualquer Condição
+      que possa estar afetando-o, um Monstro com Acorrentar mira no Herói Mais Forte
+      que não esteja adjacente e esteja dentro do Alcance 1 (se houver tal Herói). Aquele
+      Herói sofre 2 de dano não prevenível e é arrastado para uma casa vazia à sua escolha
+      que seja adjacente ao Monstro com Acorrentar. Se não houver espaço para ele, o
+      Herói sofre 4 de dano não prevenível em vez de 2, mas não é arrastado.
+  - id: channel
+    keyword: CANALIZAR
+    description: Enquanto uma Habilidade com Canalizar tem um Cubo de Ação ocupando seu
+      espaço (não quando está bloqueado por um Cubo de Maldição ou Cubo de Trauma), o
+      bônus passivo descrito em “Canalizar - Efeito” tem efeito como se fosse uma Habilidade
+      Passiva. Este benefício também é aplicado à própria Habilidade que o gerou. Dura
+      até que este Cubo de Ação seja recuperado.
+  - id: character
+    keyword: PERSONAGEM
+    description: Heróis, Monstros, Mascotes, NPCs, Companheiros e assim por diante. Todos
+      podem receber efeitos como PREVENIR, mas apenas personagens com cartas ou painéis
+      podem manter Condições ou Recursos. Personagens são Objetos Sólidos Móveis para
+      fins de regras.
+  - id: charge
+    keyword: INVESTIDA
+    description: "Alguns Monstros têm a habilidade de investir contra seus inimigos para
+      maximizar seus ataques. Sempre que um Monstro com esta habilidade se move 3 ou
+      mais casas para alcançar seu alvo, considere o valor de dano base deste ataque
+      como se fosse o dobro. Lembre-se: os Monstros sempre se moverão a menor quantidade
+      de casas possível para alcançar seus alvos ou buscar uma posição em cima da Escuridão.
+      Apesar desta habilidade, os Monstros não são inteligentes o suficiente para pegar
+      o caminho mais longo para alcançar seu alvo e receber este bônus. Seu comportamento
+      permanece o mesmo: eles se movem o mínimo de casas possível até o alvo, a menos
+      que possam terminar o movimento sobre a Escuridão ou evitar terreno prejudicial
+      ao fazê-lo. O bônus de dano da Escuridão, bem como redutores de dano como Intimidar,
+      são contados após este valor base ter sido determinado."
+  - id: charm
+    keyword: ENCANTAR
+    description: "Encantando a mente-simples de uma Criatura da Escuridão, um Herói pode
+      forçá-la a atacar seus próprios aliados. Quando um Monstro é Encantado, o jogador
+      que o enfeitiçou imediatamente ativa aquele Monstro e controla seu turno. Dessa
+      forma, você pode forçá-lo a atacar seus próprios aliados, mover-se por terreno
+      prejudicial ou posicioná-lo de forma desvantajosa ou ineficiente. No entanto, enquanto
+      luta para manter o controle de sua própria mente, um Monstro está mais fraco: seu
+      ataque causa apenas metade (arredondado para cima) do dano que causaria normalmente
+      (dano colateral é aplicado normalmente). O bônus de dano da Escuridão, bem como
+      redutores de dano como Intimidar, são contados após este valor base ter sido determinado."
+  - id: claim
+    keyword: RECLAMAR
+    description: Reclamar é um efeito típico do Senhor da Guerra, representando sua habilidade
+      de coordenar os assaltos de seus aliados. Quando um Herói usa Reclamar, ele coloca
+      (ou reposiciona) o Estandarte em uma casa vazia adjacente a ele. Enquanto sob a
+      influência de um Estandarte, como uma Ação Menor, um Herói pode descartar um marcador
+      de INSPIRAÇÃO para fazer um Ataque de Arma com +0 ACERTO. Para fins de regras,
+      todas as casas adjacentes a um Estandarte são consideradas “Sob o Estandarte”.
+      Por fim, Estandartes são Objetos Sólidos Móveis considerados Mobília e, portanto,
+      podem ser esmagados por Monstros Grandes e causam 2 DANO E SANGRAMENTO 2 se forem
+      arremessados contra um Personagem.
+  - id: cleanse-x
+    keyword: PURIFICAR X
+    description: "O Alvo remove até X CM e todos os VENENOS de seu painel. <br><br>
+      *Apocalypse atualizou PURIFICAR da seguinte forma:* <br><br> O alvo remove até
+      X Cubos de Maldição ou Pilhas de Condição de seu painel. Uma Pilha é: todos os
+      marcadores do mesmo tipo que o Personagem tem. Para cada ponto de PURIFICAR recebido,
+      aquele Personagem pode escolher remover um Cubo de Maldição ou uma Pilha de Condição.
+      Ele não precisa gastar todos os pontos da mesma forma."
+  - id: cleave-x
+    keyword: TALHAR X
+    description: Mire em até X inimigos adjacentes ao atacante como uma única Rolagem
+      de Ataque.
+  - id: command
+    keyword: COMANDAR
+    description: Ativa o próximo Monstro Mais Forte (não ele mesmo), então continua seu
+      turno.
+  - id: command-a-draugr
+    keyword: COMANDAR UM DRAUGR
+    description: Comandar um Draugr significa ativar um Draugr de sua escolha que já
+      está no tabuleiro. Diferente de outros Mascotes, Draugrs não podem ser “Erguidos”
+      por um efeito de “Comandar” ou vice-versa. Para eles, esses efeitos agem independentemente.
+      Além desse detalhe, Draugrs seguem as mesmas regras de um Mascote quanto aos seus
+      turnos e para outros fins de regras.
+  - id: command-a-pet
+    keyword: COMANDAR UM MASCOTE
+    description: Comandar um Mascote é um efeito semelhante a Ativar um Mascote, com
+      a restrição de que nunca pode ser usado para invocar um Mascote no tabuleiro. Assim,
+      quando você Comanda um Mascote que invocou, deve escolher um Mascote que já esteja
+      no tabuleiro e que seja afiliado a você para Ativar. Uma ativação através desse
+      efeito consiste em uma Ação de Movimento seguida por uma Ação de Ataque normal.
+      Da mesma forma, quaisquer Condições que este Mascote tenha no momento em que é
+      ativado são disparadas. Se outro efeito que permite invocar um Mascote no tabuleiro
+      for disparado ao mesmo tempo que você Comandaria um Mascote, você pode escolher
+      resolvê-lo primeiro
+  - id: companions
+    keyword: COMPANHEIROS
+    description: Ativam-se após o herói que seguem, Mover e então Atacar. Só serão atacados
+      se nenhum herói estiver no alcance. O número no canto superior esquerdo é a ROBUSTEZ.
+      Podem manter ESCUDOS e receber efeitos de PREVENIR. Descarregados durante a Fase
+      de Acampamento.
+  - id: copy-effect
+    keyword: COPIAR EFEITO
+    description: Copia o efeito de outra habilidade de Herói incluindo sua cor base (alcance).
+      **Habilidades de Rolagem de Masmorra, Habilidades de Equipamento e Reações, salvo
+      indicação em contrário, não podem ser copiadas.**
+  - id: counter-x
+    keyword: CONTRA-ATAQUE X
+    description: Alguns Monstros são versados na arte da esgrima e sabem tirar vantagem
+      dos deslizes de um Herói ao lutar contra eles. Sempre que um Herói erra um Ataque
+      de Arma contra um Monstro que possui essa habilidade (um ataque só é considerado
+      erro após usar suas habilidades de rerrolar), o Monstro brande sua arma em torno,
+      causando a quantidade descrita de dano não prevenível a todos os inimigos do Monstro
+      que estejam adjacentes a ele.
+  - id: cover
+    keyword: COBRIR
+    description: Algumas habilidades protetoras que os Heróis possuem vão além de apenas
+      mitigar dano; elas também podem mudar o alvo de um ataque. Quando um Personagem
+      Cobre o alvo de um ataque, ele redireciona aquele ataque para si mesmo, tornando-se
+      o novo alvo daquele ataque. Qualquer efeito de Prevenir que venha com um efeito
+      de Cobrir também é redirecionado para o novo alvo daquele ataque. Se um ataque
+      está mirando em você e em outro alvo ao mesmo tempo, você ainda pode Cobrir esse
+      outro Personagem, mas sofrerá ambos os ataques como se tivesse sido alvo dele duas
+      vezes.
+  - id: covetous
+    keyword: COBIÇOSO
+    description: Um Monstro com Cobiçoso tem como Alvo Principal o Herói que carrega
+      mais marcadores de Recurso (FOCO, ESCUDO e KI são exemplos). Se dois Heróis estiverem
+      empatados com o mesmo número de marcadores de Recurso, um Monstro com Cobiçoso
+      mira naquele entre eles que ocupa o Espaço de Iniciativa mais rápido.
+  - id: crit-x
+    keyword: CRÍT X+
+    description: Rolar X ou mais no D20 dá Acerto Crítico (x2 DANO). Não inflige condições
+      dobradas.
+  - id: cube-action-(ca)
+    keyword: AÇÃO COM CUBO (AC)
+    description: Gastar um CA. Um herói pode realizar 2 AC por turno e pode usar outras
+      ações antes, entre ou depois de cada AC. Reações não contam.
+  - id: cube-range-(cr)
+    keyword: ALCANCE DO CUBO (AC)
+    description: Definido pela cor do cubo usado. Amarelo (Corpo a corpo) = Alvo em uma
+      CASA adjacente. Vermelho (À distância) = Alvo em qualquer CASA até 1 ÁREA de distância.
+      Verde (Agilidade) / Azul (Sabedoria) = Alvo a qualquer distância.
+  - id: curse-cubes-(cc)
+    keyword: CUBOS DE MALDIÇÃO (CM)
+    description: "Cubos pretos que são alocados em habilidades de Herói ou de Funções
+      da Masmorra e bloqueiam seu uso. O Herói é corrompido ao receber um 6º CM e termina
+      a aventura. "
+  - id: curse-x
+    keyword: MALDIÇÃO X
+    description: O alvo ganha X CM como efeito.
+  - id: darkness-behavior
+    keyword: COMPORTAMENTO DA ESCURIDÃO
+    description: 'Tenta alcançar o Herói Mais Forte que não esteja sobre a Escuridão.
+      "Esmagar": Se todos os Heróis já estiverem sobre a Escuridão quando uma Runa for
+      comprada, pule a geração do tile e todos os Heróis recebem N de Dano. (N = Número
+      de Heróis).'
+  - id: darkness-effect-(standing-on-it)
+    keyword: EFEITO DA ESCURIDÃO (PISANDO NELA)
+    description: "Causa 2 de Dano não prevenível a um Herói (uma vez por turno), Companheiro
+      ou Mascote pego por ela quando gerada; pisou nela pela primeira vez em um turno;
+      ou terminou seu turno sobre ela. Heróis: Impõe penalidade de -2 ACERTO. Monstros:
+      Dá bônus de +2 DANO."
+  - id: defiant
+    keyword: DESAFIADOR
+    description: Um Monstro com Desafiador tem como Alvo Principal o Herói Mais Vigoroso
+      (aquele com mais Cubos de Ação disponíveis no momento).
+  - id: devourer
+    keyword: DEVORADOR
+    description: "Monstros com esta habilidade mostram comportamento atípico. Priorizam
+      procurar por presas em vez de vítimas. Portanto, tais Monstros têm marcadores
+      de NPC Ferido como seu Alvo Principal em vez dos Heróis. Quando atacam um desses
+      marcadores, imediatamente os massacram, saciando sua sede de sangue. Isso, porém,
+      não é uma coisa boa: Depois de fazerem isso, esses Monstros completam seu propósito
+      e seus corpos passam por uma mutação hedionda. Substitua o modelo de Carne Apodrecida
+      por um modelo de Abominação e vire a carta de Devorador Instável. Ele ganha 12
+      de Vida (esta Vida pode exceder seu total máximo) e se torna uma Abominação Voraz.
+      Se não houver NPCs Feridos no tabuleiro (se seu grupo já os resgatou todos, por
+      exemplo) o comportamento deste Monstro muda para o padrão: o Herói Mais Forte
+      no alcance."
+  - id: difficult-terrain
+    keyword: TERRENO DIFÍCIL
+    description: Um personagem afetado por Terreno Difícil (como Água) perde 1 ponto
+      de movimento do seu efeito de movimento atual. Como em qualquer terreno prejudicial,
+      um personagem só pode ser afetado por Terreno Difícil uma vez por turno.
+  - id: disarm
+    keyword: DESARMAR
+    description: "(Conta como FADIGA) GASTAR todos os CA disponíveis de Corpo a corpo
+      e À distância."
+  - id: discard
+    keyword: DESCARTAR
+    description: Remova aquela coisa de seu painel.
+  - id: drain-health
+    keyword: DRENAR VIDA
+    description: O alvo perde X pontos de vida e o conjurador os ganha. Reações não podem
+      ser usadas.
+  - id: empower
+    keyword: FORTALECER
+    description: Concentrando sua energia, você se prepara para desferir um poderoso
+      golpe. Quando você Fortalece, o próximo único Ataque de Arma ou Ataque Mágico que
+      você fizer neste turno ganha +4 DANO. Note que este efeito dura apenas até o final
+      deste turno ou quando você fizer seu próximo Ataque de Arma ou Ataque Mágico (mesmo
+      que erre), o que ocorrer primeiro. Se um efeito permitir que você faça dois ou
+      mais Ataques de Arma separados como parte da mesma Ação, o efeito de Fortalecer
+      só é aplicado ao primeiro deles (Talhar é um único golpe que afeta dois ou mais
+      alvos, então este bônus se aplica a todos eles).
+  - id: end-of-turn-(eot)
+    keyword: FIM DO TURNO (FDT)
+    description: "FDT é uma abreviação usada para descrever o momento de “Fim do Turno”,
+      quando alguns efeitos são disparados, como aqueles que duram até o fim do turno
+      do Personagem. O Fim do Turno é exatamente a última coisa que acontece em um turno,
+      antes do Marcador de Iniciativa 81 ser avançado: ele dispara logo após um Herói
+      ter completado todas as suas Ações e escolher tomar ou não uma Ação de Recuperação
+      Voluntária. Se algum efeito disparar por causa desta Ação de Recuperação, o Fim
+      do Turno ocorre imediatamente após a resolução daquele efeito"
+  - id: enemy
+    keyword: INIMIGO
+    description: Qualquer personagem que não esteja em seu grupo ou um NPC. Os heróis
+      são inimigos dos monstros.
+  - id: engaged
+    keyword: ENGAJADO
+    description: Quando um Personagem está adjacente a um Inimigo. Ataques à Distância
+      e a maioria das Ações Menores não são permitidos.
+  - id: enrage
+    keyword: ENFURECER
+    description: Alguns Monstros têm um gosto por batalha que cresce à medida que causam
+      ferimentos em seus inimigos. Sempre que um Monstro que possui essa habilidade como
+      Dano Colateral puder reduzir a Vida de um Personagem ou remover um Personagem Especial
+      (Mascote, Companheiro ou qualquer outro tipo de aliado) do jogo com um ataque,
+      ele ganha um marcador de +1 DANO. Se o Monstro tiver Atacar Duas Vezes, o segundo
+      ataque feito em sua ativação pode causar mais dano, já que este Monstro pode receber
+      um marcador de +1 DANO como resultado do primeiro ataque.
+  - id: entropy
+    keyword: ENTROPIA
+    description: "Especialistas em conjuração podem provocar transformações miraculosas
+      em suas magias liberando grandes quantidades de energia. Sempre que fazem isso,
+      a oscilação de energia resultante desse processo gera o que chamamos de Entropia
+      Arcana, ou apenas Entropia. Quando um Herói tem 4 desses marcadores, ele pode
+      descartá-los para provocar uma Explosão de Entropia e fazer uma de duas coisas:
+      Como uma Ação Menor, ganhar uma Ação com Cubo adicional neste turno; ou ganhar
+      uma Reação adicional contra a Ameaça atual. Entropia é um marcador de Recurso
+      empilhável."
+  - id: evolve
+    keyword: EVOLUIR
+    description: O Monstro ganha +2 DANO e +1 MOVIMENTO.
+  - id: expend
+    keyword: GASTAR
+    description: Mova um CA disponível para a caixa de CA Gasto no painel do herói. CA
+      Gasto pode ser recuperado, mas não pode ser usado para habilidades enquanto estiver
+      lá.
+  - id: falling-damage
+    keyword: DANO DE QUEDA
+    description: O Personagem sofre 2 de Dano não prevenível ao descer dois níveis em
+      um único passo.
+  - id: fatigue-x
+    keyword: FADIGA X
+    description: O Alvo deve gastar X (ou quantos for possível) de seus CA disponíveis
+      sem efeito.
+  - id: fine
+    keyword: SAUDÁVEL
+    description: "Saudável é um termo criado para condensar um estado maior do jogo em
+      uma única palavra: um personagem Saudável é aquele que atualmente tem metade ou
+      mais de sua Vida máxima (arredondada para cima). Saudável é o oposto de Ferido.
+      Por exemplo, enquanto um Herói com 15 de Vida máxima tiver 8 ou mais PV, ele está
+      Saudável. Se tiver 7 ou menos PV, está Ferido. Um Personagem pode ser considerado
+      tanto Ferido quanto Saudável quando tem exatamente metade de sua Vida máxima."
+  - id: fire-trap
+    keyword: ARMADILHA DE FOGO
+    description: Todos os inimigos na ÁREA recebem 2 de Dano não prevenível, QUEIMADURA
+      4, DESCARTAR.
+  - id: flyby
+    keyword: VOO RASANTE
+    description: Este mascote retorna livremente para uma CASA à sua escolha adjacente
+      ao seu mestre após atacar. Só é afetado por terreno/Escuridão depois de pousar.
+  - id: focus-x
+    keyword: FOCO X
+    description: O Alvo ganha X marcadores de FOCO, que ele pode gastar posteriormente
+      para usar Habilidades de Foco. FOCO é um recurso empilhável.
+  - id: free-recall-action
+    keyword: AÇÃO DE RECUPERAÇÃO GRÁTIS
+    description: O Herói toma uma AÇÃO DE RECUPERAÇÃO sem sofrer penalidade de CM.
+  - id: fruit-of-life
+    keyword: FRUTO DA VIDA
+    description: "Com uma Ação Menor de Usar Item Consumível, um Personagem carregando
+      um FRUTO DA VIDA pode descartá-lo para: EM SI, RECUPERAR 2 DE VIDA. Além disso,
+      esses frutos são considerados itens e podem ser trocados com outros Heróis como
+      qualquer outro item normalmente seria, mas não ocupam nenhum espaço na mochila.
+      FRUTO DA VIDA é um recurso empilhável."
+  - id: fury
+    keyword: FÚRIA
+    description: Quando você acerta com um Ataque Mágico ou Ataque de Arma, pode descartar
+      1 FÚRIA para adicionar +1 DANO ao seu Ataque. Você pode descartar apenas 1 marcador
+      de FÚRIA por turno ou Reação (se tiver uma habilidade que também seja uma Reação,
+      por exemplo). FÚRIA é um recurso empilhável.<br><br> *Apocalypse atualizou FÚRIA
+      da seguinte forma:* <br><br> Quando você acerta com um Ataque Mágico ou Ataque
+      de Arma, pode descartar 1 FÚRIA para adicionar +1 DANO ao seu Ataque (nenhuma
+      ação é necessária). Você pode descartar 1 marcador de FÚRIA para cada Ataque de
+      Arma ou Ataque Mágico individual que fizer, o que pode ser mais de uma vez por
+      turno. FÚRIA é um recurso empilhável.<br><br> **NOTA:** Sempre que você descartar
+      1 Fúria para reforçar um ataque que tem mais de um Personagem como alvo de uma
+      só vez (TALHAR e GOLPE, por exemplo), o dano bônus é aplicado a cada alvo. Você
+      não precisa descartar 1 marcador de Fúria para cada Personagem alvo dessa forma.
+  - id: heal-x
+    keyword: CURAR X
+    description: O Alvo recupera X de Vida que não pode exceder a Vida máxima.
+  - id: heavy-wield
+    keyword: EMPUNHADURA PESADA
+    description: Armas que têm a propriedade Empunhadura Pesada são mais difíceis de
+      manusear, mas geralmente causam mais dano quando acertam. Enquanto você estiver
+      equipado com uma Arma que tem Empunhadura Pesada, você pode fazer apenas um único
+      Ataque de Arma de cada ação de Ataque de Arma que tomar ou receber. Assim, você
+      não pode fazer dois Ataques de Arma de uma única Ação com Cubo (como faria com
+      a Habilidade Golpe Duplo, por exemplo), Habilidade de Foco, Habilidade de Classe
+      ou Comando que tomar ou receber ao usar essas armas. Mas você pode, por exemplo,
+      fazer um Ataque de Arma por meio de cada uma de suas duas Ações com Cubo e um
+      terceiro por meio de sua Habilidade de Foco ou gastando um marcador de KI.
+  - id: idol
+    keyword: ÍDOLO
+    description: Ídolos são figuras que possuem propriedades mágicas que os Heróis podem
+      invocar para ajudá-los em batalha. Quando um Ídolo é Invocado, o Herói coloca ou
+      reposiciona (se aquele Ídolo já estiver no tabuleiro) seu marcador correspondente
+      na interseção central da área (quadrado azul) em que ele está ou em uma área adjacente
+      a ela. Note que apenas Invocar um Ídolo não ativa seus efeitos imediatamente (Xamãs
+      têm uma habilidade de classe que permite fazer isso como um poder especial). Uma
+      vez colocado, o Ídolo é considerado um Objeto de Solo Imóvel, ou seja, não pode
+      ser movido por nenhum meio, incluindo Telecinese. Cada Ídolo tem um poder que pode
+      ser Evocado por qualquer Herói (não apenas pelo conjurador) dentro do Alcance 1
+      daquele Ídolo usando uma Ação Menor e gastando qualquer combinação de 2 marcadores
+      de Recurso
+  - id: immunity
+    keyword: IMUNIDADE
+    description: Este personagem não pode ser afetado pelas condições/efeito. Imunidade
+      a Furtividade significa que ele pode mirar naquela unidade e não pode ser surpreendido
+      (x2 DANO).
+  - id: inflict
+    keyword: INFLIGIR
+    description: Este é o termo usado para designar um efeito (geralmente Condições)
+      aplicado por um Personagem conjurador contra um Personagem alvo sem lhe dar chance
+      de se defender, similar ao que dano não prevenível faria. Assim, um efeito Infligido
+      não gera nenhum Ataque ou Ameaça (mesmo que venha de uma carta de Ataque, por exemplo),
+      não permitindo que os Personagens usem suas Interrupções e Reações para se defender.
+      Lembre-se, se um Personagem for imune a uma Condição, naturalmente, tal Condição
+      não o afeta quando é Infligida sobre ele.
+  - id: inspire
+    keyword: INSPIRAR
+    description: Representando um impulso de moral, quando um Herói se torna Inspirado,
+      ele recebe um marcador de Inspiração. Ao descartar um desses marcadores (nenhuma
+      ação é necessária) um Herói pode rerrolar qualquer rolagem de d20 que acabou de
+      fazer, ficando com o segundo resultado mesmo que seja menor que o primeiro. Inspiração
+      é um Recurso redundante.
+  - id: interact
+    keyword: INTERAGIR
+    description: Interações são situações que acontecem durante uma Aventura nas quais
+      seu Herói pode (ou deve) intervir. Algumas Interações serão apresentadas ao seu
+      grupo por meio de efeitos no jogo, mas a maioria delas será encontrada no tabuleiro
+      como marcadores de Interação.
+  - id: interact-(stack-of-barrels)
+    keyword: INTERAGIR (PILHA DE BARRIS)
+    description: Anões e Halflings (apenas eles) podem entrar em barris e usá-los como
+      esconderijos. Para parar de se esconder, o Herói precisará usar outra Ação Menor.<br><br>-
+      Quando um Herói entra em um barril, remova seu modelo do tabuleiro. Enquanto estiver
+      ali, ele não poderá mirar nem ser mirado por outros Personagens com qualquer ataque
+      ou efeito. <br>- Os Monstros sabem que os Heróis estão ali. No entanto, precisam
+      destruir o barril antes de atacá-los. Assim, quando um Monstro ataca um personagem
+      dentro do barril, PREVINA todo o dano que esse ataque causaria e remova o barril
+      do tabuleiro. Reposicione o modelo do Herói (aquele que estava escondido) na casa
+      onde o barril estava. <br>- Se um Monstro Grande pisar em um barril com um Herói
+      escondido, quebre esse barril e Empurre o Herói para o lado. Esse Herói sofre 2
+      de dano não prevenível.
+  - id: interact-(bookshelf)
+    keyword: INTERAGIR (ESTANTE DE LIVROS)
+    description: Quando um Herói interage com uma Estante de Livros, ele pode procurar
+      no baralho de Baú por uma carta de Pergaminho e mantê-la ou usá-la imediatamente
+      como uma Ação Livre, como se tivesse acabado de comprá-la do baralho de Baú. Depois,
+      remova a Estante de Livros do tabuleiro.
+  - id: interact-(chest)
+    keyword: INTERAGIR (BAÚ)
+    description: "Quando um Herói interage com um Baú: <br><br> - Ele compra uma carta
+      do topo do baralho de Baú. Esse Herói pode escolher consumir aquele Item imediatamente
+      como uma Ação Livre ou guardá-lo em sua mochila (se houver espaço).<br> - Por
+      fim, ao vasculhar um Baú, o Herói deve rolar o Dado de Armadilha e sofrer o efeito."
+  - id: interact-(pile-of-crates)
+    keyword: INTERAGIR (PILHA DE CAIXOTES)
+    description: Pilhas de Caixotes não são boas para nada em particular. Contam como
+      obstáculos até serem destruídas ou arremessadas.
+  - id: interact-(stone-fountain)
+    keyword: INTERAGIR (FONTE DE PEDRA)
+    description: "Quando um Herói interage com uma fonte, ele vira o marcador de Poção
+      para cima, aplica seus efeitos e o descarta. Há três efeitos possíveis:<br><br>
+      **Água Fresca** (Azul): Nada tem gosto melhor para acalmar emoções desenfreadas!
+      O Personagem que bebeu Recupera 2 de Vida e ganha PURIFICAR 2.<br><br> **Poção
+      de Empoderamento** (Laranja): Procure e você encontrará! O Personagem que bebeu
+      ganha INSPIRAR e FORTALECER, e também pode tomar uma Ação com Cubo adicional neste
+      turno. Se for um Monstro Grande, ele apenas ganha um bônus de +4 DANO durante
+      este turno em vez disso. <br><br> **Inoculação Tóxica** (Verde): O gosto é ainda
+      pior que o efeito... O Personagem que bebeu sofre VENENO 4."
+  - id: interact-(stone-pillar)
+    keyword: INTERAGIR (PILAR DE PEDRA)
+    description: Pilares de Pedra não têm utilidade para nada em particular. Representam
+      apenas um obstáculo rígido.
+  - id: interrupt
+    keyword: INTERRUPÇÃO
+    description: Esta Habilidade só pode ser usada em resposta a um Personagem sendo
+      alvo de um Ataque, mas antes que o Personagem alvo gaste marcadores de ESCUDO e
+      uma ameaça seja gerada. Assim, Interrupções são “mais rápidas” que Reações. Ao
+      usar uma Interrupção, um Personagem não poderá usar uma Reação contra nenhuma ameaça
+      gerada pelo ataque que ele interrompeu, como se já tivesse “reagido” a esse ataque.
+      Interrupções, também, não podem mirar em ataques que causam dano não prevenível
+      e não são consideradas Reações para disparar habilidades como **Estrepes**, por
+      exemplo. Um Herói só pode tomar uma Interrupção por ataque, independentemente de
+      quantos Personagens tenham sido alvo dele.
+  - id: intimidate-x
+    keyword: INTIMIDAR X
+    description: O Personagem tem -X DANO para cada marcador de INTIMIDAR que estiver
+      carregando. Diferente de outras Condições, INTIMIDAR não tem efeito no início do
+      próximo turno, ele persiste até ser removido. Na próxima vez que o personagem afetado
+      fizer um Ataque (seja um Ataque de Arma ou um Ataque Mágico), acerte ou erre, ele
+      remove todos os marcadores de INTIMIDAR que está carregando. INTIMIDAR é uma Condição
+      empilhável.
+  - id: jump-x
+    keyword: SALTAR X
+    description: Mesmo que MOVER X, mas afetado apenas pelo terreno onde pousa e pode
+      passar por inimigos. Não afetado por DANO DE QUEDA. Subir 2 níveis ainda custa
+      2 de movimento.
+  - id: ki
+    keyword: KI
+    description: Você pode descartar um KI para fazer um Ataque de Arma com +0 ACERTO.
+      Independentemente de ter gasto um KI para fazer um Ataque de Arma ou para usar
+      qualquer outra habilidade que tenha aprendido, você só pode descartar um KI por
+      turno ou Reação (se tiver uma habilidade que também seja uma Reação, por exemplo).
+      KI é um recurso empilhável.
+  - id: killing-blow
+    keyword: GOLPE MORTAL
+    description: Golpe Mortal não é necessariamente uma Palavra-Chave, mas é um termo
+      que vale esclarecer. O Golpe Mortal é o ataque (e neste caso é necessariamente
+      um ataque, dano de Condição não conta, por exemplo) que é responsável por derrotar
+      o Monstro. Se um efeito Massacra um Personagem, naturalmente, também desfere o
+      Golpe Mortal, já que o termo Massacrar especifica que ele derrota o Personagem
+      mesmo que não reduza sua Vida a 0. **NOTA:** Para um Monstro ser derrotado, ele
+      deve ser removido do tabuleiro. Se um efeito reduzir a Vida de um Monstro a zero,
+      mas não fizer com que ele seja removido do tabuleiro (como acontece se a Mecânica
+      Especial - Linha de Vida Compartilhada estiver em progresso, por exemplo), o ataque
+      não é considerado um Golpe Mortal.
+  - id: keen
+    keyword: AGUÇADO
+    description: "Nesta segunda geração, substituímos a Palavra-Chave CRIT 16+ por “Aguçado”.
+      O efeito permanece o mesmo: Se você rolar 16 ou mais natural no d20, marca um Acerto
+      Crítico. Com a introdução de Habilidades de Aprimoramento e a atualização do Traço
+      Bruxo, interações com Cubos Curinga serão mais comuns, e dobrar o valor numérico
+      “16+” (supostamente para “CRIT 32+”) é esteticamente desagradável, além de representar
+      um prejuízo à Habilidade em vez de um benefício. Assim, consideramos apropriado
+      transformar esse benefício em uma Palavra-Chave para evitar esse problema."
+  - id: knock-down
+    keyword: DERRUBAR
+    description: O Alvo recebe um marcador de DERRUBAR. Diferente de outras Condições,
+      DERRUBAR não tem efeito no início do próximo turno do personagem, ele persiste
+      até ser removido. Na próxima vez que o personagem afetado receber um efeito de
+      Mover, ele cancela esse efeito e remove seu marcador de DERRUBAR de seu painel.
+      DERRUBAR é uma Condição redundante.
+  - id: knock-out
+    keyword: NOCAUTEAR
+    description: Algumas Habilidades arriscam tudo em troca da vitória. Quando um Herói
+      recebe um efeito de Nocautear, ele é imediatamente nocauteado como se tivesse sua
+      Vida reduzida a zero (deve deitar seu modelo, pegar um Cubo de Trauma e tudo mais
+      como descrito no Livro de Regras na página 15). Um efeito com Nocautear é final.
+      Ou seja, nenhum efeito pode impedir você de ser Nocauteado dessa forma.
+  - id: large-monster
+    keyword: MONSTRO GRANDE
+    description: Este Monstro é considerado Grande (mesmo que sua base seja de tamanho
+      pequeno). Um Monstro Grande é imune a DERRUBAR, EMPURRAR, ATORDOAR e TELECINESE.
+  - id: learn
+    keyword: APRENDER
+    description: Durante a Campanha, os termos usados para representar o progresso do
+      seu Herói ao adquirir uma nova Habilidade ou Habilidade de Classe eram “Aprende
+      e Desbloqueia”. A partir de agora, este termo foi simplificado para apenas “Aprender”,
+      mas seu propósito é o mesmo. Assim, quando seu Herói aprende uma Habilidade de
+      Herói ou de Função Nível 1, ele deve escolher uma Habilidade de Nível 1 de seu
+      Herói ou Função, pegar sua carta respectiva e o Cubo de Ação, e adicioná-los ao
+      Painel do Herói. <br /><br /> **NOTA:** É importante lembrar que um Herói não pode
+      Aprender uma Habilidade de Herói ou de Função de Nível 2 se não tiver aprendido
+      uma Habilidade de Nível 1 pertencente à mesma Árvore de Habilidades ou Função da
+      Masmorra, como já mencionado no Livro de Regras da Caixa Base. Quando um Herói
+      aprende uma Habilidade de Classe, ele pega a carta correspondente—se for a Habilidade
+      de Nível 1 para aquela Árvore de Classe—e um Cubo Branco. Ele coloca a carta ao
+      lado de seu painel e o cubo no espaço apropriado para marcar a Habilidade de Classe
+      que aprendeu. <br /><br /> **NOTA:** Da mesma forma, é importante lembrar que um
+      Herói não pode Aprender uma Habilidade de Classe de Nível 2 ou 3 se não tiver aprendido
+      uma Habilidade de Classe de Nível 1 ou 2 (respectivamente) pertencente à mesma
+      Árvore de Classe.
+  - id: loot-(tokens)
+    keyword: SAQUE (MARCADORES)
+    description: "Marcadores de Saque são Objetos Móveis de Solo que podem ser recolhidos
+      por Heróis adjacentes ou em cima deles com uma Ação Menor. Quando o fazem, compram
+      a carta do topo do baralho de Baú, mas não precisam rolar o Dado de Armadilha:
+      o Saque é sempre seguro. Como em um Baú, no momento em que um Herói compra um
+      Item Consumível, pode escolher usá-lo imediatamente como uma ação livre. Caso
+      contrário, mantém aquela carta em sua mochila."
+  - id: loot
+    keyword: SAQUE
+    description: Se este companheiro desferir o golpe mortal em um inimigo, substitua
+      o Alvo por um Baú. Ele é seguro (nenhuma rolagem do Dado de Armadilha ao abrir)
+      e é apenas um OBJETO (não SÓLIDO).
+  - id: maelstrom
+    keyword: MAELSTROM
+    description: Na ativação do Suserano, você embaralha suas cartas de Ataque de volta
+      no baralho e compra um novo conjunto (uma por Herói).
+  - id: manifest
+    keyword: MANIFESTAR
+    description: Pegue aleatoriamente uma Runa da sacola e revele-a, disparando o efeito.
+      Não gera Escuridão e é colocada de volta na sacola.
+  - id: mending-x
+    keyword: RESTAURAR X
+    description: Monstros com esta habilidade são médicos de campo a serviço do inimigo,
+      mantendo seus aliados prontos para outra rodada. Quando esta habilidade é disparada,
+      outro Monstro mais fraco (o Monstro com a menor Vida no momento) dentro do alcance
+      1 do Monstro conjurador recupera X de Vida (esta Vida não pode exceder seu máximo).
+      Se dois ou mais Monstros estiverem empatados, aquele que ocupa o espaço de cor
+      mais alto no painel de Status do Monstro entre eles será o alvo escolhido (amarelo
+      é mais alto que azul-escuro, por exemplo). Se não houver outro Monstro dentro do
+      Alcance 1 do conjurador, um Monstro não pode usar Restaurar em si mesmo.
+  - id: mindlock
+    keyword: BLOQUEIO MENTAL
+    description: Monstros com esta habilidade são capazes de interferir nos pensamentos
+      dos Heróis apenas por estarem em sua presença. Enquanto um Monstro com esta habilidade
+      estiver no tabuleiro, nenhum Herói pode gastar Cubos de Ação (azuis) de Sabedoria
+      para usar Habilidades. Eles ainda podem Gastar esses cubos para tomar Ações de
+      Desempate, Ações Menores adicionais, Ações de Movimento adicionais e assim por
+      diante.
+  - id: most-corrupted-hero
+    keyword: HERÓI MAIS CORROMPIDO
+    description: O Herói com o maior número de Cubos de Maldição é o Herói Mais Corrompido.
+      Se dois Heróis estiverem empatados com o mesmo número de Cubos de Maldição, o Mais
+      Corrompido entre eles será aquele que ocupa o Espaço de Iniciativa mais rápido.
+  - id: most-tired-hero
+    keyword: HERÓI MAIS CANSADO
+    description: O Herói com o menor número de Cubos de Ação disponíveis é o Herói Mais
+      Cansado. Se dois Heróis estiverem empatados com o mesmo número de Cubos de Ação
+      disponíveis, o Mais Cansado entre eles será aquele que ocupa o Espaço de Iniciativa
+      mais lento.
+  - id: most-vigorous-hero
+    keyword: HERÓI MAIS VIGOROSO
+    description: O Herói com o maior número de Cubos de Ação disponíveis é o Herói Mais
+      Vigoroso. Se dois Heróis estiverem empatados com o mesmo número de Cubos de Ação
+      disponíveis, o Mais Vigoroso entre eles será aquele que ocupa o Espaço de Iniciativa
+      mais rápido.
+  - id: move-x
+    keyword: MOVER X
+    description: O Alvo pode se mover até X CASAS ortogonal ou diagonalmente. Não pode
+      passar por OBJETOS SÓLIDOS ou INIMIGOS, mas pode passar por aliados sem parar sobre
+      eles. O movimento pode ser interrompido para fazer uma Ação Menor e então continuado,
+      mas usar uma CA ou REAÇÃO fará perder os pontos de movimento restantes.
+  - id: multishot-x
+    keyword: MULTIALVO X
+    description: O Personagem dispara um único Ataque à Distância contra X Alvos diferentes
+      dentro do Alcance. Heróis fazem 1 rolagem de ataque.
+  - id: non-preventable
+    keyword: NÃO PREVENÍVEL
+    description: Este dano não pode ser prevenido por nenhum tipo de efeito, incluindo
+      ESCUDO e/ou PREVENIR. Dano não prevenível não é considerado uma ameaça e, portanto,
+      não pode ter Reações usadas contra ele.
+  - id: npc
+    keyword: NPC
+    description: NPC (Personagens Não Jogadores) são os coadjuvantes de uma Campanha.
+      Alguns Marcadores de NPC são usados para representar seus Companheiros no tabuleiro,
+      enquanto outros apenas incorporam NPCs genéricos como "Aldeões" ou "Crianças".
+      De qualquer forma, um Marcador de NPC é um Objeto Sólido e sempre que são usados,
+      seguem um conjunto de regras especiais próprias. Cada Aventura descreverá exatamente
+      como esses marcadores interagem com os jogadores e a Aventura atual.
+  - id: object
+    keyword: OBJETO
+    description: Armadilhas, tiles de Escuridão ou outros especificados como tal. Personagens
+      podem passar por cima e terminar o movimento neles.
+  - id: overpressure
+    keyword: SOBREPRESSÃO
+    description: Alguns Monstros possuem energia arcana tão poderosa que distorcem o
+      espaço-tempo e frequentemente emanam vibrações perturbadoras. Portanto, enquanto
+      um Monstro com esta habilidade estiver no tabuleiro, nenhum Herói pode tomar Ações
+      Menores exceto “Usar Item Consumível” se estiver tomando essa ação para beber uma
+      poção.
+  - id: outcome
+    keyword: DESFECHO
+    description: Só é apagado quando comandado pela resolução de outra Interação.
+  - id: passive
+    keyword: PASSIVA
+    description: A habilidade está sempre ativa (incluindo cartas de Ataque de Comandante)
+      a menos que bloqueada por CUBO DE TRAUMA ou CUBO DE MALDIÇÃO.
+  - id: pay-x-life
+    keyword: PAGAR X DE VIDA
+    description: O Herói sofre X de Dano para aplicar os benefícios. Não pode usar se
+      X > Vida atual.
+  - id: penitence
+    keyword: PENITÊNCIA
+    description: O Alvo recebe 1 de Dano não prevenível por CUBO DE MALDIÇÃO.
+  - id: pet
+    keyword: MASCOTE
+    description: Alguns Heróis têm companheiros e cada um deles tem seu próprio marcador
+      e uma carta com seus atributos.
+  - id: poison
+    keyword: VENENO
+    description: O Alvo recebe X marcadores de VENENO. No início do próximo turno daquele
+      personagem, ele recebe 1 de dano não prevenível para cada marcador de VENENO que
+      possui. Diferente de SANGRAMENTO ou QUEIMADURA, VENENO não é removido depois de
+      causar seu dano. No entanto, sempre que um personagem receber um efeito de PURIFICAR,
+      ele também remove todo VENENO que o afeta. VENENO é uma Condição empilhável.
+  - id: poison-trap
+    keyword: ARMADILHA DE VENENO
+    description: Todos os inimigos na ÁREA recebem 2 de Dano não prevenível, VENENO 2,
+      DESCARTAR.
+  - id: polymorph
+    keyword: POLIMORFAR
+    description: "Não há nada mais satisfatório do que ridicularizar uma ameaça, transformando
+      um inimigo outrora poderoso em uma capivara indefesa! Para emular esse efeito
+      com seu devido glamour no Sistema AoD, você precisará seguir alguns passos de
+      preparação. No entanto, não se preocupe: assim que se compreende o conceito desse
+      efeito, esses passos se tornam intuitivos! Quando um Personagem sofre Polimorfar,
+      você deve substituir seu modelo por uma capivara, virada na direção de sua escolha,
+      e dar a ele um marcador de Condição Polimorfar. Note que a direção para a qual
+      esses Personagens estão virados é importante: Ao manipular esses Personagens novamente,
+      não mude sua direção (a menos que seja especificado o contrário). O livro de regras
+      explica o conceito totalmente."
+  - id: polymorph-(simple)
+    keyword: POLIMORFAR (SIMPLES)
+    description: "Se você tentou a mecânica de Polimorfar e ainda a considera muito complicada,
+      pode, como regra da casa, ignorar o uso do baralho de Comportamento Errático e
+      do modelo da capivara. Você pode então estabelecer que o Personagem Polimorfado
+      simplesmente não pode tomar ações durante seu turno. Em vez disso, no início de
+      cada uma de suas ativações, ele deve rolar o d20 para ver o que acontece nesse
+      turno: <br> - Se rolar 11+, ele se liberta do Polimorfar, mas não age neste turno.
+      <br>- Caso contrário, se rolar 10-, ele permanece Polimorfado. <br><br> Independentemente
+      de sua escolha em prosseguir com o Polimorfar Padrão ou com o Polimorfar Simples,
+      as outras regras para encerrar essa Condição antecipadamente ou para se tornar
+      imune a ela permanecem as mesmas."
+  - id: prevent-x
+    keyword: PREVENIR X
+    description: Ignore até X de Dano que seria causado ao alvo dentro do Alcance.
+  - id: primary-target
+    keyword: ALVO PRINCIPAL
+    description: O Alvo Principal de um Monstro é o personagem que ele busca atacar durante
+      seu turno. Todos os Monstros que seguem o comportamento Padrão têm o Herói Mais
+      Forte como seu Alvo Principal, por exemplo.
+  - id: protect
+    keyword: PROTEGER
+    description: Este personagem se torna o Alvo, a menos que já seja um Alvo devido
+      a TALHAR, MULTIALVO ou GOLPE.
+  - id: push-x
+    keyword: EMPURRAR X
+    description: Empurre o Alvo X CASAS para longe do Conjurador em linha reta. Deve
+      ser empurrado toda a extensão.
+  - id: pushback
+    keyword: EMPURRÃO PARA TRÁS
+    description: Este efeito é semelhante ao Empurrar, mas é uma versão adaptada para
+      ser usada por Monstros. Quando um Personagem sofre Empurrão para Trás, ele deve
+      empurrar seu modelo 1 casa para trás, ou seja, mais longe da fonte que o empurrou.
+      Efetivamente, ele terá três casas para as quais pode ser empurrado. Um Personagem
+      que sofreu Empurrão para Trás deve sempre escolher um espaço desocupado onde possa
+      ser empurrado, mesmo que seja um terreno prejudicial ou se tiver de sofrer dano
+      de queda por ter sido empurrado de um nível 2 para 0 da bandeja da masmorra. Se
+      todas as casas possíveis estiverem ocupadas por Objetos Sólidos, o Personagem não
+      pode ser empurrado.
+  - id: raise-a-draugr
+    keyword: ERGUER UM DRAUGR
+    description: Reutilizando a energia maligna usada pela Escuridão para criar suas
+      Criaturas, Necromantes podem criar um exército próprio. Erguer um Draugr significa
+      colocar um deles em uma casa vazia à sua escolha adjacente a você, leal ao Necromante
+      que o invocou. Diferente de outros Mascotes, Draugrs não podem ser “Erguidos” por
+      um efeito de “Comandar” ou vice-versa. Da mesma forma, o efeito genérico de “Ativar
+      um Mascote de sua escolha” não funciona para Erguer ou Comandar. Apenas os efeitos
+      específicos de Erguer um Draugr e Comandar um Draugr afetam essas criaturas. Além
+      desse detalhe, Draugrs seguem as mesmas regras dos Mascotes quanto aos seus turnos
+      e outros fins de regras. Se todos os quatro Draugrs já estiverem no tabuleiro,
+      um Necromante não pode mais Erguê-los, apenas Comandá-los (note que, diferente
+      de outros Mascotes, um efeito que permite Erguer um Draugr não permite Comandar
+      um Draugr—esses são efeitos separados para o Necromante). <br><br> **NOTA:** Draugrs
+      que são erguidos durante o turno dos Draugrs (aquele que os Mascotes têm depois
+      do turno de seus mestres) não agem durante essa ativação. <br><br> **NOTA:** Um
+      Necromante pode Erguer todos os quatro Draugrs, embora só possa sustentar dois
+      deles durante seu turno.
+  - id: range-x
+    keyword: ALCANCE X
+    description: "Alcance é contado usando X ÁREAS de distância. RECUPERAR X: Recupere
+      X CA Gastos ou Usados."
+  - id: rangers-mark
+    keyword: MARCA DO PATRULHEIRO
+    description: Quando um personagem é Marcado, ele recebe um marcador de MARCA DO PATRULHEIRO.
+      Todos os Ataques de Arma e Ataques Mágicos feitos pelo Patrulheiro contra um personagem
+      que ele marcou causam +1 DANO. Como mencionado anteriormente, esse dano é dobrado
+      se o personagem obtiver um Acerto Crítico normalmente.
+  - id: reaction
+    keyword: REAÇÃO
+    description: Habilidade que pode ser usada em resposta a uma ameaça (recebendo dano
+      prevenível). Cada herói só pode usar uma Reação por ameaça. Escudos devem ser aplicados
+      antes e Reações ainda podem ser usadas mesmo que o dano tenha sido reduzido a 0.
+  - id: recall-x
+    keyword: RECUPERAR X
+    description: Você recupera até X Cubos de Ação Gastos ou Usados do seu painel para
+      sua caixa de Cubos de Ação Disponíveis.
+  - id: redirect
+    keyword: REDIRECIONAR
+    description: Quando um efeito instrui você a Redirecionar um ataque para você ou
+      outro Personagem, esse Personagem se torna o alvo daquele ataque. Se o Personagem
+      em questão já estiver sendo alvo daquele ataque (como poderia estar em Multialvo,
+      Talhar ou Golpe, por exemplo), ele sofre duas vezes, resolvendo um ataque de cada
+      vez. Redirecionar um ataque não gera uma ameaça adicional e, portanto, não permite
+      uma Reação extra.
+  - id: reckoner
+    keyword: JULGADOR
+    description: Um Monstro com Julgador tem como Alvo Principal o Herói Mais Corrompido
+      (aquele com mais Cubos de Maldição no momento).
+  - id: regain-x-health
+    keyword: RECUPERAR X DE VIDA
+    description: O alvo recupera X de Vida. Um Personagem nunca pode ganhar mais Vida
+      do que seu valor máximo. Qualquer excesso de Vida é perdido. Como este efeito não
+      está vinculado à Palavra-Chave CURAR, seu Herói não recebe nenhum bônus de habilidades
+      “CURAR +X”.
+  - id: regain-your-breath
+    keyword: RECUPERAR O FÔLEGO
+    description: Recupere-se de estar NOCAUTEADO.
+  - id: redundant
+    keyword: REDUNDANTE
+    description: Um efeito redundante significa que um personagem só pode ter um marcador
+      daquele efeito específico. Se um personagem ganhasse um segundo marcador de um
+      efeito redundante, apenas ignore-o.
+  - id: regeneration-x
+    keyword: REGENERAÇÃO X
+    description: O Personagem recupera X de Vida que não pode exceder a Vida máxima.
+  - id: relearn
+    keyword: REAPRENDER
+    description: Reaprender é um termo associado ao progresso do personagem. Pode se
+      referir a uma Habilidade de Herói ou Função de Masmorra Nível 1 ou 2, um Aprimoramento
+      de Habilidade ou à escolha de uma Função de Masmorra, por exemplo. Reaprender algo
+      significa substituir uma escolha que você fez em relação àquele elemento. Assim,
+      Reaprender uma Função de Masmorra é um processo simples de “trocar” as cartas em
+      sua Função de Masmorra *(mantendo suas progressões escolhidas como normal)* enquanto
+      Reaprender uma Habilidade seria esquecer *(remover a progressão de)* uma Habilidade
+      que você tem e escolher outra em seu lugar *(lembre-se, ao Reaprender uma Habilidade
+      de Herói ou Função de Masmorra, você precisará ajustar seus Cubos de Ação apropriadamente
+      e pode ser forçado a Reaprender também a Habilidade de Nível 2 associada àquela
+      Árvore de Habilidades).*
+  - id: relentless
+    keyword: IMPLACÁVEL
+    description: Um Monstro com Implacável tem como Alvo Principal o Herói Mais Cansado
+      (aquele com menos Cubos de Ação disponíveis no momento).
+  - id: reroll
+    keyword: REROLAR
+    description: Quando uma Habilidade tem REROLAR, significa que você recebe uma rerrolagem
+      grátis do d20 para um Ataque de Arma realizado por aquela Habilidade que você pode
+      escolher usar quando erra.
+  - id: resolved
+    keyword: RESOLVIDA
+    description: "“Resolvida” é o termo usado para denotar o fim de alguma situação de
+      jogo. Assim, quando é mencionado com um efeito, significa logo após aquele efeito
+      ser aplicado. Por exemplo, analise a seguinte afirmação sobre uma regra básica
+      referente ao dano Colateral: <br><br> *“Efeitos colaterais são aplicados após o
+      dano ser resolvido.”* Assim, se um personagem Reage com uma Habilidade de Cambalhota
+      contra o ataque de um Cavaleiro das Sombras, ele se move antes de ser Derrubado,
+      já que a Habilidade de Cambalhota (e seu Saltar 2) deve ser totalmente resolvida
+      antes que qualquer dano Colateral se aplique (se for aplicado). <br><br> Este termo
+      também pode ser encontrado referindo-se a uma Interação ou Resolução. Quando esse
+      for o caso, você deve saber a qual desses dois elementos está conectado. Essa é
+      a chave para entender seu significado. <br><br> *“Até que a Interação... seja
+      resolvida”* significa que a Interação deve ser feita por completo; ou seja, até
+      que o marcador de Interação seja removido do tabuleiro. Isso pode ser porque ela
+      ficou sem cargas ou um efeito estipulou que ela deve ser removida antes disso.
+      <br><br> A frase *“...esta Resolução é resolvida”* só se aplica à Resolução que
+      você está lendo naquele momento. Mesmo que uma Resolução seja abruptamente resolvida
+      por seu próprio comando, ainda removerá 1 carga do marcador de Interação (a menos
+      que seja uma Interação Recorrente ou o próprio efeito especifique de outra forma,
+      é claro)."
+  - id: restrain
+    keyword: IMOBILIZAR
+    description: Personagens com a habilidade de Imobilizar estão armados com contenções
+      naturais ou artificiais e podem usar essa habilidade para sempre manter seus oponentes
+      dentro do alcance. Quando um Personagem é Imobilizado por um inimigo, ele recebe
+      um marcador de Imobilizar e não pode deixar o espaço que ocupa enquanto o segurar.
+      Um Personagem pode descartar seu marcador de Imobilizar quando não houver mais
+      inimigos com a habilidade de Imobilizá-lo dentro do Alcance 1. Imobilizar é uma
+      Condição redundante. <br><br>**NOTA:** Personagens que estão Imobilizados podem
+      deixar seu espaço por meio de um efeito de Trocar. Quando esse for o caso, o Objeto
+      que troca com o Personagem Imobilizado pega seu marcador de Imobilizar. Se este
+      alvo não for um Personagem, o efeito de Imobilizar termina.
+  - id: retaliate-x
+    keyword: RETALIAR X
+    description: Inflija X de Dano ao atacante dentro do AC ou qualquer alcance de outra
+      forma. O conjurador deve ser um dos alvos.
+  - id: roll-x
+    keyword: ROLAR X
+    description: Dispara um benefício para a rolagem de ataque em rolagem natural. Modificadores
+      +X ACERTO não disparam isso.
+  - id: round
+    keyword: RODADA
+    description: Rodada é um termo usado para denotar a janela de tempo desde a primeira
+      carta a receber um turno na Trilha de Iniciativa até a última. Assim, podemos dizer
+      que o Herói que joga com a Função de Masmorra de Defensor sempre será o primeiro
+      Personagem a agir em uma Rodada, enquanto a carta de Runa sempre será a última.
+      Todos os efeitos que são medidos por meio de uma rodada (ou seja, “...durante esta
+      rodada”) terminam assim que o turno da carta de Runa naquela rodada é resolvido.
+  - id: self
+    keyword: EM SI
+    description: 'Habilidades com a Palavra-Chave EM SI só podem mirar no personagem
+      conjurador. Por exemplo: "EM SI, PREVENIR 3" significa que o personagem pode prevenir
+      3 de dano apenas em si mesmo.'
+  - id: shadow-aura
+    keyword: AURA DA ESCURIDÃO
+    description: Um pequeno tile de Escuridão é colocado sob o Alvo.
+  - id: shield-x
+    keyword: ESCUDO X
+    description: O alvo ganha X marcadores de ESCUDO. Cada marcador de ESCUDO pode ser
+      usado para absorver 1 ponto de dano recebido contra o personagem. Você deve usar
+      todos os seus marcadores de ESCUDO antes de perder qualquer Vida ou usar um efeito
+      de PREVENIR—você não pode optar por receber o dano e manter seus marcadores de
+      ESCUDO ou PREVENIR o dano com outra Habilidade para economizá-los. Marcadores de
+      ESCUDO são um recurso empilhável.
+  - id: shove
+    keyword: EMPURRAR PARA O LADO
+    description: Quando dois personagens ocupariam o mesmo espaço e um deles tem prioridade
+      sobre o outro, dizemos que o primeiro empurra o segundo para o lado. Quando um
+      personagem é empurrado para o lado, ele é movido para uma casa adjacente à área
+      (quadrado azul) que ocupava anteriormente. O Líder do Grupo escolhe para onde um
+      Monstro seria empurrado, enquanto um Herói empurrado pode escolher sua nova posição.
+      Personagens sofrem os efeitos de pisar em terreno prejudicial quando são empurrados
+      para eles (se ainda não os sofreram neste turno).
+  - id: silence
+    keyword: SILÊNCIO
+    description: "(Conta como FADIGA) GASTAR todos os CA de Agilidade e Sabedoria."
+  - id: skull-cracker
+    keyword: ESMAGA-CRÂNIO
+    description: "Monstros com esta habilidade são terrivelmente perigosos. Ataques feitos
+      por criaturas com esta habilidade automaticamente perfurarão qualquer valor de
+      Robustez. Portanto, cuidado: o ataque de tais criaturas é letal contra Aliados
+      como Companheiros, Seguidores, Mascotes e assim por diante (você ainda pode usar
+      Prevenções de suas Reações ou Interrupções para tentar reduzir o dano a 0 e evitar
+      que um Seguidor aliado seja derrotado)."
+  - id: slaughter
+    keyword: MASSACRE
+    description: Um Monstro com Massacre tem como Alvo Principal marcadores de NPC (não
+      Companheiros).
+  - id: slayer
+    keyword: MATADOR
+    description: Um Monstro com esta habilidade perseguirá marcadores de NPC Ferido,
+      Coortes e Seguidores como seu Alvo Principal, nesta ordem de preferência. Se houver
+      dois ou mais dentro do alcance, o Líder do Grupo escolhe qual deles será o alvo
+      deste Monstro neste turno. Se nenhum desses NPCs estiver no tabuleiro ou ao alcance,
+      esses Monstros mudam seu Alvo Principal para o Herói Mais Forte.
+  - id: slow
+    keyword: LENTO
+    description: O Alvo recebe um marcador de LENTO. Diferente de outras Condições, LENTO
+      não tem efeito no início do próximo turno daquele personagem, ele persiste até
+      ser removido. Na próxima vez que o personagem afetado receber um efeito de Mover,
+      ele perde 2 pontos de movimento desse efeito e remove seu marcador de LENTO de
+      seu painel. LENTO é uma Condição redundante.
+  - id: solid-objects
+    keyword: OBJETOS SÓLIDOS
+    description: Personagens, Baús, Interações, Pilhas de Runas, NPCs e outros especificados
+      como tal durante uma preparação.
+  - id: soul-shard
+    keyword: FRAGMENTO DE ALMA
+    description: Ao confinar um fragmento de energia vital do espírito de uma criatura
+      em si, esses cristais podem ser usados para fortalecer os Heróis. Como uma Ação
+      Menor, um Herói pode descartar um Fragmento de Alma para dar Dano Dobrado ao próximo
+      Ataque de Arma ou Ataque Mágico que fizer neste turno. Note que este efeito dura
+      apenas até o final deste turno ou quando você fizer seu próximo Ataque de Arma
+      ou Ataque Mágico (mesmo que erre), o que ocorrer primeiro. Se um efeito permitir
+      que você faça dois ou mais Ataques de Arma separados como parte da mesma Ação,
+      este efeito só é aplicado ao primeiro deles *(Talhar é um único golpe que afeta
+      dois ou mais alvos, então este bônus se aplica a todos eles)*. Fragmentos de Alma
+      são marcadores de Recurso redundantes que podem ser trocados entre Heróis como
+      se fossem Itens Consumíveis.
+  - id: special-mechanic-tokens
+    keyword: MARCADORES DE MECÂNICA ESPECIAL
+    description: Estes elementos do tabuleiro são usados como marcos visuais para a função
+      de qualquer Mecânica Especial estabelecida para uma Aventura. Marcadores de Mecânica
+      Especial são Objetos de Solo Imóveis.
+  - id: spent
+    keyword: GASTO
+    description: Gasto não é propriamente uma Palavra-Chave, porém, é um termo que vale
+      esclarecer. Um Cubo de Ação é considerado gasto quando é alocado em um espaço de
+      Habilidade. Cubos de Maldição e Cubos de Trauma não são considerados Cubos de Ação
+      mesmo quando são gastos como Cubos de Ação. Eles são tratados como ferimentos normais
+      uma vez que se tornam alocados em um espaço.
+  - id: split
+    keyword: DIVIDIR
+    description: O Personagem conjurador pode escolher dividir o efeito descrito entre
+      qualquer número de alvos (dentro do Alcance) que escolher. Para ser considerado
+      um alvo, um Personagem deve receber uma parcela de pelo menos 1 ponto. Qualquer
+      bônus de fortalecimento que aquele personagem tenha é aplicado ao total, não a
+      cada alvo que escolher. <br><br>**Exemplo:** *Um Bônus de +1 CURAR aplicado a um
+      efeito DIVIDIR, CURAR 4 resultaria em um DIVIDIR, CURAR 5 em vez de quatro efeitos
+      individuais de CURAR 2.*
+  - id: spread
+    keyword: DISPERSAR
+    description: Alguns ataques se espalham ao redor da vítima. Sempre que um Herói é
+      acertado por DISPERSAR, ele reflete a mesma quantidade de dano que sofreu (dano
+      sofrido é o dano que foi recebido e não foi mitigado ou PREVENIDO) em cada outro
+      Herói que estiver Adjacente a ele. Este dano refletido é causado como dano não
+      prevenível. Por exemplo, Vorn recebeu 6 de dano com DISPERSAR. Depois de mitigar
+      2 de dano com seus 2 marcadores de ESCUDO e PREVENIR 2 de dano com uma Habilidade,
+      no final, ele sofreu 2 de dano. Então, cada outro Herói que estiver Adjacente a
+      ele recebe 2 de dano não prevenível.
+  - id: spell-attack
+    keyword: ATAQUE MÁGICO
+    description: Habilidade mágica que sempre tem sucesso, infligindo dano.
+  - id: stackable
+    keyword: EMPILHÁVEL
+    description: A propriedade Empilhável significa que um personagem pode manter até
+      4 cópias de um mesmo marcador em seus painéis/cartas. Um marcador de dois lados
+      que exibe as faces 1 e 2 deve sempre ser considerado como se fosse o número de
+      marcadores individuais indicado. Se um personagem receberia um quinto marcador
+      de um efeito Empilhável, apenas ignore-o. <br><br>**Exemplo:** *2 marcadores de
+      Foco 2 e 4 marcadores de Foco 1 são considerados Foco 4 de qualquer forma.*
+  - id: stalker-(trait)
+    keyword: ESPREITADOR (TRAÇO)
+    description: Alguns assassinos se especializam em usar a furtividade a seu favor.
+      Enquanto a Habilidade Espreitador não estiver bloqueada, sempre que a Furtividade
+      do Matador desaparecer *(ou seja, é removida por conta própria no início do turno
+      de seu Herói)*, o Matador permanece Oculto até o fim do turno do Herói atual ou
+      até que ele tente surpreender outro Personagem. <br><br>**Exemplo:** *Nyx recebeu
+      Furtividade por meio da Habilidade **Golpe Traiçoeiro** na rodada anterior. No
+      início de seu turno, nesta nova rodada, sua Furtividade desapareceu, mas ela ainda
+      permanecerá oculta até que tente surpreender outro Personagem (o que poderia levá-la
+      a causar Dano Dobrado) ou termine seu turno atual (assim, ela precisaria conjurar
+      outro efeito de Furtividade se quisesse continuar em Furtividade para escapar dos
+      ataques dos Monstros).*
+  - id: status
+    keyword: ESTADO
+    description: Estado é uma recompensa relacionada a uma escolha que um personagem
+      fez durante a história. Alguns Estados podem dar habilidades especiais como se
+      fossem uma espécie de bênção, enquanto outros são apenas relacionados à história.
+      De qualquer forma, um personagem pode ter qualquer número de Estados anotados em
+      seu Registro de Campanha e todos os Estados são apagados durante a próxima Fase
+      de Acampamento.
+  - id: stealth
+    keyword: FURTIVIDADE
+    description: O Alvo recebe um marcador de FURTIVIDADE e é considerado oculto enquanto
+      o segurar. <br><br>- Personagens sem Imunidade a FURTIVIDADE não contam um personagem
+      oculto como seu Alvo nem como um inimigo para fins de engajamento (eles ainda não
+      podem passar por eles se forem inimigos). - Personagens ocultos ainda recebem dano
+      de Ataques em área como GOLPE e da Escuridão. <br>- No início de seu próximo turno,
+      o personagem não está mais oculto e deve descartar seu marcador de FURTIVIDADE.<br><br>Alternativamente,
+      como fazem muitos assassinos experientes, um personagem pode encerrar sua FURTIVIDADE
+      mais cedo tentando Surpreender um Alvo. <br><br>- Assim, se um personagem com um
+      marcador de FURTIVIDADE fizer um Ataque de Arma, acerte ou não, ele imediatamente
+      perde FURTIVIDADE. Por outro lado, se o Ataque acertar, ele ganha DANO DOBRADO
+      se o personagem atacante fosse considerado oculto para seu Alvo. Isso se chama
+      "Surpresa". <br>- Personagens imunes a FURTIVIDADE não podem ser Surpreendidos.
+  - id: square
+    keyword: CASA
+    description: "Refere-se a um quadrado branco no tile do mapa. "
+  - id: strike-x
+    keyword: GOLPE X
+    description: Mira em todos os personagens em X ÁREAS dentro do Alcance. Corpo a corpo
+      deve ser em ÁREAS adjacentes à própria CASA.
+  - id: strongest-hero
+    keyword: HERÓI MAIS FORTE
+    description: O Herói com a maior Vida no momento. Os Monstros frequentemente miram
+      no Herói Mais Forte. Se dois Heróis estiverem empatados com a maior Vida, o Mais
+      Forte entre eles será aquele que ocupa o Espaço de Iniciativa mais rápido.
+  - id: stun
+    keyword: ATORDOAR
+    description: ATORDOAR funciona diferente entre Heróis e Monstros. Quando o efeito
+      ATORDOAR é resolvido no início do turno de um Monstro, aquele Monstro perde sua
+      ação de Ataque para aquele turno e então remove o marcador de ATORDOAR *(ainda
+      tomará sua ação de Mover)*. No início do turno de um Herói afetado, por outro lado,
+      ele perde uma de suas duas Ações com Cubo permitidas para aquele turno e então
+      remove o marcador de seu painel. ATORDOAR é uma Condição redundante.
+  - id: sturdiness
+    keyword: ROBUSTEZ
+    description: Dano que exceda este número derrota o companheiro.
+  - id: suffer
+    keyword: SOFRER
+    description: Sofrer não é propriamente uma Palavra-Chave, porém, é um termo que vale
+      esclarecer. Sofrer é usado para definir algo que “acerta” um Personagem depois
+      que ele tentou se proteger contra isso. Assim, “sofrer dano” significa perder Vida
+      devido a dano depois que você tentou (se pudesse, naturalmente) mitigá-lo através
+      de Prevenir, marcadores de Escudo e assim por diante.
+  - id: swap
+    keyword: TROCAR
+    description: Dois objetos trocam de posições e PERSONAGENS são afetados por terreno
+      prejudicial ou Escuridão onde pousam.
+  - id: swarm
+    keyword: ENXAME
+    description: Monstros de Enxame são criaturas minúsculas que, unidas, formam um único
+      ser e, portanto, não têm pontos vitais em seu corpo. Tais criaturas sofrem apenas
+      metade do dano (arredondado para cima, após aplicadas as reduções de Prevenir)
+      de todos os Ataques de Arma que os acertarem.<br><br> **Exemplo:** *Se Lorelai
+      tiver 2 marcadores de Intimidar quando ataca um Monstro que tem Enxame e 1 marcador
+      de Escudo usando um ataque de 6 de dano, aquele Monstro sofreria apenas 2 pontos
+      de dano no final (6 - 2 - 1 = 3; 3 ÷ 2 = 1,5, que é arredondado para 2).*
+  - id: take
+    keyword: RECEBER
+    description: Receber não é propriamente uma Palavra-Chave, porém, é um termo que
+      vale esclarecer. Receber é usado para descrever algo que é dado a um Personagem.
+      Sempre que for dano, ele tem a oportunidade de mitigá-lo por meio de marcadores
+      de Escudo ou efeitos de Prevenir (a menos, é claro, que o dano seja não prevenível).
+      Se for uma Condição (como Sangramento) ou um Efeito (como Telecinese), aquele Personagem
+      não pode usar Reações ou Interrupções para evitá-lo, mas se for Imune aos ditos
+      efeitos, simplesmente não os receberá. Receber um Cubo de Maldição, por outro lado,
+      é diferente de sofrer Maldição e, portanto, este efeito não pode ser evitado mesmo
+      que o Personagem seja Imune a Maldição.
+  - id: telekinesis-x
+    keyword: TELECINESE X
+    description: Mova qualquer objeto de tamanho pequeno (incluindo pequenos tiles de
+      Escuridão) ou OBJETOS SÓLIDOS (exceto Interações) até X CASAS. O Alvo é afetado
+      por terreno prejudicial ou Escuridão onde pousa, incluindo DANO DE QUEDA.
+  - id: threat
+    keyword: AMEAÇA
+    description: Ameaça é o termo usado para definir o momento em que um Herói pode ter
+      seus pontos de Vida reduzidos por algum ataque ou efeito, mas é capaz de se defender
+      e tentar impedir que isso aconteça.<br><br>Assim, Ameaça essencialmente define
+      quando um Herói pode usar uma Reação no jogo. Como regra, os Heróis podem usar
+      tais Habilidades ou Aptidões sempre que um Herói (ele mesmo ou um aliado) é ameaçado,
+      ou seja, quando recebe dano prevenível (dano não prevenível nunca gera Ameaça).<br><br>Note
+      que Ameaça é apenas um termo, ele não muda nenhuma regra. Portanto, Reações com
+      “EM SI” só podem ser usadas se o Personagem conjurador também estiver sendo ameaçado
+      e assim por diante, como descrito na página 14 do Livro de Regras da Caixa Base.
+  - id: throw-(stack-of-barrels)
+    keyword: ARREMESSAR (PILHA DE BARRIS)
+    description: Quando arremessado contra um Personagem, um barril causa 2 DANO e inflige
+      DERRUBAR ao seu alvo se ele for um Personagem Pequeno. Corpos de Monstros Grandes
+      são tão poderosos que barris nem os incomodam. <br><br> - No entanto, se um Herói
+      estava escondido dentro do barril, o arremesso causa +2 DANO e pode até mirar em
+      Monstros Grandes e infligir DERRUBAR a eles (superando sua imunidade graças ao
+      peso extra). <br>- Reposicione o Herói que estava no barril em uma casa à sua escolha
+      que seja adjacente ao alvo contra o qual o barril foi arremessado. *(Não esqueça,
+      Mobília arremessada é quebrada e removida do tabuleiro).*
+  - id: throw-(bookshelf)
+    keyword: ARREMESSAR (ESTANTE DE LIVROS)
+    description: "Estantes de Livros são pesadas demais para serem arremessadas contra
+      um Personagem com uma Ação Menor. Em vez disso, elas são simplesmente derrubadas,
+      afetando um Personagem adjacente a ela (escolhido pelo Herói que usou a Ação Menor
+      Arremessar Mobília). TELECINESE, por outro lado, pode arremessar uma estante de
+      livros normalmente. <br><br>- Independente da forma como for arremessada, uma
+      estante de livros causa 2 DANO e inflige ATORDOAR a seu alvo (Não esqueça: Mobília
+      arremessada é sempre quebrada e removida do tabuleiro.)"
+  - id: throw-(chest)
+    keyword: ARREMESSAR (BAÚ)
+    description: "Quando arremessado contra um Personagem, um Baú causa 2 DANO e você
+      deve rolar o Dado de Armadilha: some o resultado a este dano como efeito colateral.
+      *(Não esqueça, Mobília arremessada é quebrada e removida do tabuleiro.)*"
+  - id: throw-(piles-of-crates)
+    keyword: ARREMESSAR (PILHA DE CAIXOTES)
+    description: Quando arremessada, a Pilha de Caixotes inflige FRÁGIL a seu alvo se
+      ele for um Personagem Pequeno. <br><br>- Corpos de Monstros Grandes são tão poderosos
+      que os caixotes nem os incomodam. (Não esqueça, Mobília arremessada é quebrada
+      e removida do tabuleiro.)
+  - id: throw-(stone-fountains)
+    keyword: ARREMESSAR (FONTE DE PEDRA)
+    description: Fontes de Pedra estão fixadas ao chão e, portanto, não podem ser arremessadas
+      contra outros Personagens de forma alguma *(mas ainda podem ser destruídas por
+      Monstros Grandes que terminam seu movimento pisando nelas).*
+  - id: throw-(stone-pillar)
+    keyword: ARREMESSAR (PILAR DE PEDRA)
+    description: Pilares de Pedra estão fixados ao chão e ao teto e, portanto, não podem
+      ser arremessados contra outros personagens de forma alguma. No entanto, é precisamente
+      por serem tão firmes que o oposto se torna verdadeiro:<br><br>- Quando um Personagem
+      é arremessado contra um pilar de pedra (por efeitos como TELECINESE ou EMPURRAR),
+      ele sofre 4 de dano não prevenível e é reposicionado em uma casa adjacente ao
+      pilar escolhida pelo Personagem que o arremessou. O pilar não é removido do tabuleiro.
+  - id: trample-x
+    keyword: PISOTEAR X
+    description: Passa por, mas não termina em INIMIGOS. Inflige X de Dano a cada inimigo
+      pisoteado uma vez.
+  - id: trap
+    keyword: ARMADILHA
+    description: Coloque um marcador de Armadilha no centro de uma área adjacente à sua
+      área (quadrado azul). Na primeira vez que um inimigo se ativar dentro daquela área
+      ou se mover para dentro daquela área, a Armadilha é disparada. Todos os inimigos
+      dentro daquela área são afetados pela Armadilha, então remova o marcador de Armadilha.
+      Só pode haver 1 marcador de Armadilha em uma área por vez.
+  - id: trauma-cube-(tc)
+    keyword: CUBO DE TRAUMA (CT)
+    description: Cubos roxos que são alocados em habilidades de Herói ou de Funções de
+      Masmorra e bloqueiam seu uso. O Herói é morto ao receber um 2º CUBO DE TRAUMA e
+      encerra a aventura.
+  - id: trick-or-treat
+    keyword: DOCES OU TRAVESSURAS
+    description: O controlador de Tharmagar escolhe ALCANCE 1, CURAR 2 ou ALCANCE 1,
+      (SANGRAMENTO 2 ou QUEIMADURA 2 ou VENENO 2).
+  - id: turn
+    keyword: TURNO
+    description: Turno é o termo usado para designar a janela de tempo em que um Personagem
+      ou uma carta na Trilha de Iniciativa pode agir. Embora um tipo de Monstro tenha
+      apenas uma carta na Trilha de Iniciativa para representar todas as unidades daquele
+      tipo, o turno de cada Monstro é tomado individualmente. Portanto, o turno de um
+      Cavaleiro das Sombras com uma base de encaixe rosa é diferente do turno de um Cavaleiro
+      das Sombras com base de encaixe verde. Esta distinção é importante, porque efeitos
+      que podem ser usados uma vez por turno podem ser usados uma vez durante o turno
+      de cada um desses Cavaleiros das Sombras, por exemplo.
+  - id: unavailable
+    keyword: INDISPONÍVEL
+    description: Este é um termo de jogo geralmente associado a Interações. Quando um
+      efeito afirma que uma Resolução se torna indisponível, significa que os Heróis
+      não podem mais escolher aquela Resolução. Sempre que um Herói escolhe uma Resolução
+      de uma Interação Carregada, por exemplo, ela se torna indisponível e não pode ser
+      escolhida novamente durante esta Aventura.
+  - id: unique
+    keyword: ÚNICO
+    description: Este mascote só pode ser invocado por uma habilidade específica. Caso
+      contrário, uma vez invocado, habilidades de ativação de mascote podem ser usadas.
+  - id: unlife
+    keyword: NÃO VIDA
+    description: Mascotes com este traço têm uma vida deitada, precisando de poder necrótico
+      para permanecer de pé. No início do turno de seu mestre, eles serão dispensados.
+      Nesse momento, o Necromante pode escolher receber um Cubo de Maldição para estender
+      a Não Vida de tal Mascote por um turno—Isso é chamado de “Contaminação”. Ele pode
+      escolher para cada Mascote com este traço se faz ou não isso, pagando o custo de
+      Contaminação individualmente para cada um.
+  - id: versatile
+    keyword: VERSÁTIL
+    description: Equipamento que é Versátil pode ser manuseado de duas formas diferentes
+      por seu usuário. Quando você recebe pela primeira vez esta carta de Equipamento
+      de dois lados, pode escolher qual face deseja usar. A partir de então, como uma
+      Ação Menor, você pode virar a carta se não houver Cubos de Ação ocupando nenhum
+      de seus espaços. Você pode até virar uma carta que esteja em sua mochila. <br><br>**NOTA:**
+      Se você virar um Equipamento Versátil para uma face com um tipo de Equipamento
+      no qual não é proficiente, deve imediatamente Desequipar aquela carta.
+  - id: vicious
+    keyword: VIL
+    description: O dano causado pelo ataque deste Monstro é não prevenível.
+  - id: voodoo
+    keyword: VUDU
+    description: Quando um Monstro tem esta habilidade, ele é capaz de remover suas Condições
+      Empilháveis infligindo-as de volta contra os Heróis. Assim, no início do turno
+      desses Monstros, quando forem afetados por Condições Empilháveis *(Queimadura,
+      Sangramento e Intimidar são exemplos de Condições Empilháveis)*, se algum de seus
+      inimigos (Herói, Mascote, Companheiro etc.) estiver dentro do Alcance 1 daquele
+      Monstro, em vez de sofrer tais efeitos, mova-os para o inimigo mais forte entre
+      eles. Se o Monstro não puder redirecionar tais marcadores, só então ele sofre tais
+      efeitos.
+  - id: war-cry
+    keyword: GRITO DE GUERRA
+    description: Grito de Guerra é uma habilidade disparada que alguns Monstros possuem.
+      Quando ativada, cada outro Monstro dentro do Alcance 1 deste Monstro enfurece e
+      ganha +1 DANO permanentemente (coloque este marcador em seu painel de Status de
+      Monstro).
+  - id: warden-(trait)
+    keyword: GUARDIÃO (TRAÇO)
+    description: Personagens que têm o traço Guardião podem usar Interrupções e Reações
+      com a Palavra-Chave “EM SI” em outros Personagens desde que estejam adjacentes
+      a eles. Além disso, Guardiões podem usar tais Habilidades quando Personagens adjacentes
+      a eles são atacados ou ameaçados (se a Habilidade que estiverem usando for uma
+      Interrupção ou uma Reação, respectivamente) em vez de usá-las apenas quando eles
+      próprios são atacados ou ameaçados.
+  - id: warlock-(trait)
+    keyword: BRUXO (TRAÇO)
+    description: Barganhando com a Escuridão, Bruxos flertam com a corrupção em troca
+      de poder. Enquanto a Habilidade Pacto de Outro Mundo não estiver bloqueada, eles
+      recebem seus Cubos de Maldição como se fossem Cubos de Ação e, quando os gastam,
+      esses são tratados como Cubos Curinga. Uma vez gastos, esses cubos se tornam Cubos
+      de Maldição convencionais novamente e só são removidos por efeitos de Purificar.
+  - id: weakest-hero
+    keyword: HERÓI MAIS FRACO
+    description: O Herói com a menor Vida no momento é o Herói Mais Fraco. Se dois Heróis
+      estiverem empatados com a menor Vida, o mais fraco entre eles será aquele que ocupa
+      o espaço de Iniciativa mais lento.
+  - id: weapon-attack
+    keyword: ATAQUE DE ARMA
+    description: Habilidade de ataque usando sua Arma. Role o D20; o ataque tem sucesso
+      se a rolagem for igual ou maior que a chance de acerto da Arma após aplicar os
+      modificadores de ACERTO. Atacar de um nível mais alto que o Alvo dá +2 ACERTO;
+      no entanto, atacar de um nível mais baixo dá -2 ACERTO. Por padrão, antes dos modificadores
+      de ACERTO, uma rolagem de 1 é sempre uma Falha Crítica e uma rolagem de 20 é um
+      Acerto Crítico (x2 DANO).
+  - id: wild-copy
+    keyword: CÓPIA CURINGA
+    description: Copiar o efeito de um aliado é uma das experiências mais recompensadoras
+      de AoD. E, a partir de agora, você poderá fazê-lo com preeminência! Um efeito que
+      faz Cópia Curinga de uma Habilidade aplica os mesmos efeitos que um Copiar, mas
+      dobra todos os números escritos em forma numérica, como teria acontecido se esses
+      efeitos tivessem sido conjurados gastando um Cubo Curinga.
+  - id: wild-cube
+    keyword: CUBO CURINGA
+    description: Considerado como sendo um CA de qualquer cor. Efeitos de Habilidade
+      de Herói (não Funções de Masmorra ou Equipamento) são dobrados, incluindo condições.
+  - id: wounded
+    keyword: FERIDO
+    description: "Ferido é um termo raro criado para condensar um efeito maior em uma
+      única palavra: Um Personagem Ferido é aquele que atualmente tem metade ou menos
+      de sua Vida máxima (arredondada para baixo). Um Personagem pode ser considerado
+      tanto Ferido quanto Saudável quando tem exatamente metade de sua Vida máxima."
+  - id: x
+    keyword: X
+    description: Qualquer variável 'X' em uma carta de Monstro ou Ataque significa o
+      número de marcadores de Runa na Trilha de Iniciativa que corresponde à Runa daquele
+      Ataque.

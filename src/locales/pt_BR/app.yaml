@@ -1,1 +1,201 @@
 ---
+randomizer:
+  random-monster: Monstro aleatório
+  exclude-current-monster: Excluir o personagem sorteado atualmente
+  enabled-content: Variante / conteúdo habilitado
+  white: Branco
+  gray: Cinza
+  black: Preto
+  commander: Comandante
+  overlord: Suserano
+  error:
+    no-other-monster-available: Não há outros monstros disponíveis.
+    no-other-commander-available: Não há outros comandantes / suseranos disponíveis.
+label:
+  equipment-skills: Equipamento & Habilidades
+  remove-campaign: Remover campanha
+  new-campaign: Nova campanha
+  export-campaign: Exportar campanha
+  copy-to-clipboard: Copiar para a área de transferência
+  import-campaign: " Importar campanha"
+  sequential-adventure: Aventura Sequencial
+  camp-phase: Fase de Acampamento
+  remove-hero: Remover herói
+  add-hero: Adicionar herói
+  campaigns: Campanhas
+  campaign: Campanha
+  campaign-log: Registro da Campanha
+  yes: Sim
+  no: Não
+  import: Importar
+  close: Fechar
+  cancel: Cancelar
+  filter-by-proficiency: Filtrar por proficiência
+  weapon: Arma
+  off-hand: Mão Secundária
+  armor: Armadura
+  trinket: Adorno
+  bag-slot: Espaço da Mochila
+  skills: Habilidades
+  stash: Depósito
+  nothing-found: Nada encontrado
+  equipment: Equipamento
+  dungeon-role: Função na Masmorra
+  melee: Corpo a corpo
+  ranged: À distância
+  agility: Agilidade
+  wisdom: Sabedoria
+  level: Nível
+  yellow: Amarelo
+  red: Vermelho
+  blue: Azul
+  green: Verde
+  dwarf: Anão
+  human: Humano
+  elf: Elfo
+  draconian: Draconiano
+  orc: Orc
+  vampire: Vampiro
+  halfling: Halfling
+  efreet: Efrit
+  succubus: Súcubo
+  valkyrie: Valquíria
+  azurean: Azureano
+  mage: Mago
+  sorcerer: Feiticeiro
+  shadow-knight: Cavaleiro das Sombras
+  paladin: Paladino
+  warrior: Guerreiro
+  assasin: Assassino
+  bard: Bardo
+  ranger: Patrulheiro
+  cleric: Clérigo
+  barbarian: Bárbaro
+  druid: Druida
+  monk: Monge
+  swordmage: Espadamago
+  warlord: Senhor da Guerra
+  necromancer: Necromante
+  shaman: Xamã
+  mystics: dos Místicos
+  strength: da Força
+  devotion: da Devoção
+  cunning: da Astúcia
+  nature: da Natureza
+  resources: Recursos
+  focus: Foco
+  fury: Fúria
+  fruit-of-life: Fruto da Vida
+  ki: KI
+  shield: Escudo
+  back: Voltar
+  success: Sucesso
+text:
+  input-token: Insira seu token aqui
+  reset-state: Isto irá redefinir todos os estados e o progresso da aventura sequencial desta campanha. Tem certeza?
+  cannot-be-restored: Isto não pode ser desfeito. Tem certeza?
+  copy-this-token: Copie este token para importar sua campanha em outro dispositivo
+  select-action-cube-color: Selecione a cor do cubo de ação
+  curse-cubes: Cubos de Maldição
+  trauma-cubes: Cubos de Trauma
+  path-of: Caminho
+  add-or-remove-status: Adicionar ou remover estado
+  add-or-remove-unfolding: Adicionar ou remover desdobramento
+  add-or-remove-outcome: Adicionar ou remover desfecho
+  add-or-remove-follower: Adicionar ou remover seguidor
+  add-or-remove-stashed-items: Adicionar ou remover itens do depósito
+  select-aura: Selecione a aura
+  aura-info: A aura é removida quando você recebe um cubo de trauma ou outra aura.
+  outcome-info: Permanecem em efeito durante toda a campanha, a menos que algum outro efeito os altere.
+  status-info: Os estados são removidos durante a fase de acampamento.
+  number-of-runes: "Número de runas:"
+  party-name: "Nome do grupo:"
+  no-resources: Sem recursos
+  campaign-imported: Campanha importada
+  campaign-removed: Campanha removida
+monster:
+  abomination: Abominação
+  archon: Arconte
+  bane: Bane
+  bone-reaper: Ceifador de Ossos
+  commander-doctor: Doutor
+  commander-flinch: Flinch
+  commander-hexer: Enfeitiçador
+  commander-horde: Horda
+  commander-hunter: Caçador
+  commander-ox: Boi
+  commander-thern: Thern
+  commander-twin: Gêmeos
+  commander-spawn: Progênie
+  commander-witch: Bruxa
+  corrupted-farmer: Fazendeiro Corrompido
+  corrupted-worm: Verme Corrompido
+  death-messenger: Mensageiro da Morte
+  demon-lord: Senhor Demônio
+  dream-titan: Titã dos Sonhos
+  executioner: Executor
+  faceless-conjurer: Conjurador Sem Rosto
+  fallen-sisters: Irmãs Caídas
+  fell-asteris: Fell Asteris
+  gorgon-hexer: Enfeitiçador Górgona
+  gorgoness-witch: Bruxa Górgona
+  gremlin-horde: Horda de Gremlins
+  grim-doctor: Doutor Sinistro
+  hellish-flayer: Esfolador Infernal
+  hellspawn-brute: Bruto Prole-Infernal
+  lady-claw: Dama-Garra
+  nagian-hunter: Caçador Nagiano
+  night-stalker: Predador Noturno
+  ravager: Devastador
+  rotten-flesh: Carne Apodrecida
+  scout-of-darkness: Batedor das Trevas
+  shadow-cultist: Cultista das Sombras
+  shadow-guardian: Guardião das Sombras
+  shadow-knight: Cavaleiro das Sombras
+  shadow-mistress: Senhora das Sombras
+  shadow-pain: Dor das Sombras
+  shadow-vampire: Vampiro das Sombras
+  shadow-witch: Bruxa das Sombras
+  skeleton-archer: Arqueiro Esqueleto
+  skeleton-knight: Cavaleiro Esqueleto
+  walking-horror: Horror Ambulante
+menu:
+  menu: Menu
+  random-monster: Monstro aleatório
+  campaign: Campanha
+  keyword: Palavra-chave
+  settings: Configurações
+language:
+  english: Inglês
+  german: Alemão
+  spanish: Espanhol
+  french: Francês
+  italian: Italiano
+  portuguese: Português
+  polish: Polonês
+configuration:
+  language: Idioma
+  enabled-variant: Variante habilitada
+  monster-content: Conteúdo de monstros
+  hero-content: Conteúdo de heróis
+  error:
+    atleast-one-selected: Ao menos uma opção deve ser selecionada.
+content:
+  apocalypse: Apocalypse
+  awakenings: Awakenings
+  core: Base
+  desert-of-hellscar: Deserto de Hellscar
+  fallen-sisters: Fallen Sisters
+  handuriel: Handuriel
+  hero-pack-1: Hero Pack 1
+  lord-wrath: Lordwrath
+  lorien: Lorien
+  monster-pack-1: Monster Pack 1
+  rise-of-the-undead-dragon: Ascensão do Dragão Morto-Vivo
+  spoils-of-war: Espólios de Guerra
+  the-ruin-of-luccanor: A Ruína de Luccanor
+  the-shadow-world: O Mundo das Sombras
+variant:
+  standard: Padrão
+  alternate: Alternativa
+  complex: Complexa (A / B)
