@@ -1,1 +1,1383 @@
 ---
+outcome:
+  core:
+    campaign:
+      - id: a-couriers-job
+        name: Trabalho de mensageiro
+        effect: ""
+      - id: adamant
+        name: Inflexível
+        effect: ""
+      - id: a-hideous-act
+        name: Um ato hediondo
+        effect: ""
+      - id: a-lovers-request
+        name: Pedido de um amante
+        effect: ""
+      - id: corrupted-hero
+        name: Herói corrompido
+        effect: ""
+      - id: curse-breaker
+        name: Quebra-maldição
+        effect: ""
+      - id: dynamic-duo
+        name: Dupla dinâmica
+        effect: ""
+      - id: gentle-dismissal
+        name: Dispensa gentil
+        effect: ""
+      - id: guardians-curse
+        name: Maldição do guardião
+        effect: Enquanto você tiver a Maldição do Guardião, não pode desequipar o Bracelete
+          Amaldiçoado.
+      - id: humbled
+        name: Humilhado
+        effect: ""
+      - id: lovebirds-reunited
+        name: Pombinhos reunidos
+        effect: ""
+      - id: relic-breaker
+        name: Quebra-relíquias
+        effect: ""
+      - id: sowing-winds
+        name: Semeando ventos
+        effect: ""
+      - id: storyteller
+        name: Contador de histórias
+        effect: ""
+      - id: unbroken
+        name: Inquebrável
+        effect: ""
+    storyrecord: []
+  apocalypse:
+    campaign:
+      - id: bitten
+        name: Mordido
+        effect: Sempre que você tomar uma Ação de Recuperação, sofre ATORDOAR. Este
+          ATORDOAR ignora qualquer tipo de imunidade que você tenha, já que representa
+          sua dificuldade em lidar com suas ações após sofrer um ferimento tão grave
+          e não um transtorno mental devido a trauma físico.
+      - id: deep-wound
+        name: Ferida Profunda
+        effect: Você pode manter um Cubo de Trauma a menos
+    storyrecord:
+      - id: a-good-deal
+        name: Um Bom Acordo
+        effect: ""
+      - id: beautiful-lie
+        name: Bela Mentira
+        effect: ""
+      - id: broken
+        name: Quebrado
+        effect: ""
+      - id: exquisite-friends
+        name: Amigos Refinados
+        effect: ""
+      - id: friendly-advice
+        name: Conselho Amigável
+        effect: ""
+      - id: gal-s-fate
+        name: Destino da Gal
+        effect: ""
+      - id: hellscarian-ally
+        name: Aliado de Hellscar
+        effect: ""
+      - id: hellscarian-enemy
+        name: Inimigo de Hellscar
+        effect: ""
+      - id: hero-s-journey
+        name: Jornada do Herói
+        effect: ""
+      - id: humbled
+        name: Humilhado
+        effect: ""
+      - id: impostor
+        name: Impostor
+        effect: ""
+      - id: insured-trip
+        name: Viagem Segura
+        effect: ""
+      - id: late-guests
+        name: Convidados Atrasados
+        effect: ""
+      - id: long-live
+        name: Vida Longa!
+        effect: ""
+      - id: luccanor-s-redemption
+        name: Redenção de Luccanor
+        effect: ""
+      - id: misery-ended
+        name: Miséria Encerrada
+        effect: ""
+      - id: mob-justice
+        name: Justiça da Turba
+        effect: ""
+      - id: no-quarter-given
+        name: Sem Piedade
+        effect: ""
+      - id: possessed
+        name: Possuído
+        effect: ""
+      - id: scarce-provisions
+        name: Provisões Escassas
+        effect: ""
+      - id: shattered-dreams
+        name: Sonhos Despedaçados
+        effect: ""
+      - id: strong-bonds
+        name: Laços Fortes
+        effect: ""
+      - id: the-duke-s-betrayal
+        name: A Traição do Duque
+        effect: ""
+      - id: the-earl-of-blackriver
+        name: O Conde de Blackriver
+        effect: ""
+      - id: triumphant
+        name: Triunfante
+        effect: ""
+      - id: truthful
+        name: Verdadeiro
+        effect: Heróis acertam com Ataque de Arma e têm sucesso em Testes de Habilidade
+          sempre que rolarem 1 no d20. Cada Herói que também tem uma Habilidade de Classe
+          que transforma suas rolagens naturais de 1 em acertos de Ataque de Arma também
+          obtém um Acerto Crítico nesses ataques.
+      - id: umbralian-ally
+        name: Aliado Umbraliano
+        effect: ""
+      - id: umbralian-enemy
+        name: Inimigo Umbraliano
+        effect: ""
+      - id: unbroken
+        name: Inquebrável
+        effect: ""
+      - id: uncertain-journey
+        name: Jornada Incerta
+        effect: ""
+      - id: wounded-eye
+        name: Olho Ferido
+        effect: ""
+      - id: wounded-paw
+        name: Pata Ferida
+        effect: ""
+  awakenings:
+    campaign:
+      - id: ancient-book
+        name: Livro Antigo
+        effect: ""
+      - id: counting-kittens
+        name: Contando Gatinhos
+        effect: ""
+      - id: defenders-fate
+        name: Destino do Defensor
+        effect: ""
+      - id: drinking-pal
+        name: Colega de Bebida
+        effect: ""
+      - id: entangled
+        name: Enredado
+        effect: ""
+      - id: farewell
+        name: Despedida
+        effect: ""
+      - id: full-house
+        name: Casa Cheia
+        effect: ""
+      - id: minervas-diary
+        name: Diário da Minerva
+        effect: ""
+      - id: pirates-gift
+        name: Presente do Pirata
+        effect: ""
+      - id: promised-reward
+        name: Recompensa Prometida
+        effect: ""
+      - id: reunited
+        name: Reunidos
+        effect: ""
+      - id: selfish
+        name: Egoísta
+        effect: ""
+      - id: selfless
+        name: Altruísta
+        effect: ""
+      - id: threats-or-treats
+        name: Ameaças ou Guloseimas
+        effect: ""
+      - id: untangled
+        name: Desenredado
+        effect: ""
+      - id: watcher
+        name: Vigilante
+        effect: ""
+    storyrecord: []
+auras:
+  core:
+    campaign:
+      - id: blessing-of-good-fortune
+        name: Bênção da boa sorte
+        effect: Sempre que qualquer Herói Gastar um CA para qualquer efeito que não
+          seja FADIGA (como ganhar uma Ação de Movimento adicional em um turno, por
+          exemplo), ele também recupera 1 CA.
+      - id: blessing-of-the-guardian
+        name: Bênção do guardião
+        effect: Sempre que qualquer Herói Gastar um CA para qualquer efeito que não
+          seja FADIGA (como ganhar uma Ação de Movimento adicional em um turno, por
+          exemplo), ele também ganha ESCUDO 2.
+      - id: bloodlust
+        name: Sede de sangue
+        effect: "Sempre que você matar um Monstro durante seu turno: Depois de resolver
+          a Ação atual, você pode tomar uma Ação com Cubo adicional. Esta habilidade
+          só pode ser ativada uma vez por turno."
+      - id: bonding
+        name: Vínculo
+        effect: Sempre que um Companheiro terminar seu turno adjacente a você, ele ganha
+          ESCUDO 4.
+      - id: boon-of-empathy
+        name: Bênção da empatia
+        effect: Como uma Ação Menor, você pode pegar um Cubo de Trauma de um Herói que
+          esteja adjacente a você e colocá-lo em seu painel. Receber um Cubo de Trauma
+          desta forma não encerra os efeitos desta Bênção.
+      - id: boon-of-gratitude
+        name: Bênção da gratidão
+        effect: PREVENIR ganha um bônus de +1
+      - id: brave-hearted
+        name: Coração corajoso
+        effect: A Escuridão sempre trata você como o Herói Mais Forte (a menos que você
+          já esteja sobre a Escuridão) e você não recebe dano da Escuridão.
+      - id: clear-conscious
+        name: Consciência limpa
+        effect: "Sempre que você matar uma criatura com um ataque (Mágico ou de Arma),
+          você ganha: EM SI, PURIFICAR 1."
+      - id: cold-hearted
+        name: Coração frio
+        effect: A Escuridão sempre trata você como o Herói Mais Forte (a menos que você
+          já esteja sobre a Escuridão) e, enquanto você estiver sobre a Escuridão, sempre
+          que acertar um Monstro com um Ataque de Arma ou Ataque Mágico pela primeira
+          vez durante seu turno, esse ataque causa +2 de dano.
+      - id: disdained
+        name: Desprezado
+        effect: Sempre que você tomar uma Ação de Recuperação, sofre FADIGA 1 após resolvê-la.
+      - id: determined
+        name: Determinado
+        effect: Você é imune a LENTO e ATORDOAR.
+      - id: grandeur
+        name: Grandeza
+        effect: "Sempre que qualquer Herói obtiver um Acerto Crítico, ele ganha: EM SI,
+          PURIFICAR 2."
+      - id: hellbent
+        name: Obstinado
+        effect: Sempre que qualquer Herói obtiver um Acerto Crítico, o ataque ganha
+          +1 DANO (não dobre por causa do crítico) por Cubo de Maldição que aquele Herói
+          estiver mantendo.
+      - id: inspiring-leadership
+        name: Liderança inspiradora
+        effect: Todos os Heróis do grupo obtêm um Acerto Crítico em vez de uma Falha
+          Crítica sempre que rolarem 1 no d20.
+      - id: intoxicated
+        name: Intoxicado
+        effect: Sempre que você tomar uma Ação de Recuperação, sofre VENENO 4.
+      - id: murderous-intent
+        name: Intenção assassina
+        effect: "Sempre que você matar uma criatura com um Ataque (Mágico ou de Arma),
+          você ganha: EM SI, FOCO 1."
+      - id: over-the-edge
+        name: No limite
+        effect: "Sempre que qualquer Herói obtiver um Acerto Crítico, ele ganha: EM SI,
+          FOCO 1."
+      - id: soulmates-reunited
+        name: Almas gêmeas reunidas
+        effect: Sempre que você rolar 1 no d20, obtém um Acerto Crítico em vez de uma
+          Falha Crítica e ganha FOCO 2.
+      - id: spellshock
+        name: Choque mágico
+        effect: Sempre que você tomar uma Reação, sofre FADIGA 1.
+      - id: true-hearted-blessing
+        name: Bênção do coração verdadeiro
+        effect: Sempre que qualquer Herói Gastar um CA para qualquer efeito que não
+          seja FADIGA (como ganhar uma Ação de Movimento adicional em um turno, por
+          exemplo), ele também ganha FOCO 1.
+      - id: well-meaning
+        name: Bem intencionado
+        effect: Sempre que você usar um efeito de PURIFICAR em qualquer Herói, aquele
+          Herói também pode Recuperar até um Cubo de Ação.
+    storyrecord: []
+  apocalypse:
+    campaign:
+      - id: brute-force
+        name: Força Bruta
+        effect: "Como uma Ação Menor, você pode Gastar 1 CA para: EM SI, FORTALECER."
+      - id: burden-of-guilt
+        name: Fardo da Culpa
+        effect: "Sempre que você tomar uma Ação de Recuperação: Você sofre INTIMIDAR
+          4. Este INTIMIDAR ignora qualquer tipo de imunidade que seu Herói possa ter."
+      - id: dried-tears
+        name: Lágrimas Secas
+        effect: "Sempre que você tomar uma Ação de Recuperação: Você recebe PURIFICAR
+          1."
+      - id: grievous-wound
+        name: Ferida Grave
+        effect: "Sempre que você tomar uma Ação de Recuperação: Você sofre SANGRAMENTO
+          4. Este SANGRAMENTO ignora qualquer tipo de imunidade que seu Herói possa
+          ter."
+      - id: helpful
+        name: Prestativo
+        effect: "Sempre que você derrotar um Monstro (você deve ser aquele a desferir
+          o golpe final): EM SI, INSPIRAR."
+      - id: inobtrusive
+        name: Discreto
+        effect: Um Monstro não pode atacar você a menos que você ou um NPC de seu grupo
+          (seus Mascotes incluídos) já os tenham atacado ou os tenham afetado com um
+          efeito de qualquer tipo.
+      - id: justiciar
+        name: Justiceiro
+        effect: Sempre que um Herói tomar uma Ação de Recuperação, após resolvê-la,
+          esse Herói recebe PURIFICAR 1 ou FOCO 1.
+      - id: last-stand
+        name: Último Suporte
+        effect: Sempre que você fosse cair a 0 de Vida, faça um Teste de Habilidade
+          de Força (amarelo) de Dificuldade 11. Cada cubo Corpo a corpo que você tem
+          concede um bônus de +2 à sua rolagem. Além disso, cada Estado “Esforço” que
+          você tem anotado em seu Registro de Campanha carrega uma penalidade de -5
+          à sua rolagem. Se tiver sucesso, você cai a 1 de Vida e anota um Estado “Esforço”
+          em seu Registro de Campanha. Se falhar, você é Nocauteado normalmente (o que
+          fará com que esta Aura seja removida de seu Registro de Campanha).
+      - id: like-water
+        name: Como Água
+        effect: "Como uma Ação Menor, você pode Gastar 1 CA para: EM SI, ESCUDO 4."
+      - id: overwhelming-power
+        name: Poder Avassalador
+        effect: "Como uma Ação Menor você pode Gastar 1 CA para: Alcance 1, Ataque Mágico
+          de 4 DANO."
+      - id: peace-broker
+        name: Mediador de Paz
+        effect: Sempre que um Herói tomar uma Ação de Recuperação, após resolvê-la,
+          esse Herói ganha ESCUDO 4.
+      - id: steadfast
+        name: Firme
+        effect: Sempre que um Herói tomar uma Ação de Recuperação, esse Herói ganha
+          FOCO 2.
+      - id: stern
+        name: Severo
+        effect: "Sempre que um Monstro atacar você: antes de sofrer qualquer dano, você
+          ganha ESCUDO 1."
+    storyrecord: []
+  awakenings:
+    campaign:
+      - id: ancient-spell
+        name: Feitiço Antigo
+        effect: No início de seu turno, você ganha ESCUDO 1.
+      - id: bastion
+        name: Bastião
+        effect: Você não pode ser PISOTEADO por Devastadores Vis.
+      - id: blessing-of-prosperity
+        name: Bênção da Prosperidade
+        effect: Sempre que você comprar uma carta de Baú, compre uma carta de Baú adicional
+          e escolha uma dentre elas para manter.
+      - id: calm-mind
+        name: Mente Calma
+        effect: Sempre que qualquer Herói receber um efeito de PURIFICAR, ele RECUPERA
+          2 DE VIDA.
+      - id: city-hero
+        name: Herói da Cidade
+        effect: Sempre que você tomar uma Ação de Recuperação, faça um Teste de Habilidade
+          de Sabedoria (azul) de Dificuldade 13. Cada cubo de Sabedoria que você tem
+          lhe dá um bônus de +2 à sua rolagem. Se Suceder, evite a Penalidade de Cubo
+          de Maldição que você receberia. Caso contrário, sofre a Penalidade de Cubo
+          de Maldição normalmente.
+      - id: critical-movements
+        name: Movimentos Críticos
+        effect: Ataques de Arma que você fizer ganham AGUÇADO.
+      - id: dour
+        name: Sombrio
+        effect: Se nenhum aliado estiver adjacente a você, seus Ataques de Arma ganham
+          um bônus de +2 no ACERTO e seus Ataques Mágicos ganham um bônus de +1 DANO.
+      - id: dragon-s-breath
+        name: Sopro do Dragão
+        effect: Sempre que você tomar uma Ação de Recuperação, você arrota fogo, pegando
+          um Cubo de Maldição adicional (num total de dois) e escolhendo uma área (quadrado
+          azul) dentro do Alcance 1 para infligir QUEIMADURA 4 em cada Personagem nela.
+          Cada um dos outros Heróis que não foi pego pelo fogo acha isso hilário e recebe
+          um marcador de INSPIRAÇÃO.
+      - id: fainted-memoir
+        name: Memória Vacilante
+        effect: Sempre que um Herói tomar uma Ação de Recuperação, ele ganha um marcador
+          de INSPIRAÇÃO e recebe FORTALECER.
+      - id: fighting-back
+        name: Contra-Ataque
+        effect: Sempre que qualquer Herói tomar uma Interrupção ou uma Reação para responder
+          a um ataque, o atacante sofre 1 de dano não prevenível.
+      - id: fighting-spirit
+        name: Espírito de Luta
+        effect: "Sempre que um Monstro for morto: Em Si, Recupere 1 de Vida"
+      - id: gold-digger
+        name: Garimpeiro
+        effect: Sempre que você vasculhar um Baú ou pegar um Saque, você compra as duas
+          cartas do topo do baralho de Baú, escolhe uma delas para manter e descarta
+          a outra em vez de apenas comprar a carta do topo.
+      - id: heroic-resolution
+        name: Resolução Heroica
+        effect: Sempre que um Herói fosse ser Nocauteado pelo dano de um ataque, ele
+          pode fazer um Teste de Habilidade de Força (amarelo) de dificuldade 13. Cada
+          cubo Corpo a corpo que ele tem lhe dá um bônus de +2 à sua rolagem. Se tiver
+          sucesso, ele cai a 1 de Vida em vez disso. Se falhar, ele é Nocauteado normalmente.
+      - id: hurry-up
+        name: Depressa
+        effect: Sempre que qualquer Herói Gastar 1 CA para tomar uma Ação de Movimento
+          Adicional em um turno, essa Ação de Movimento Adicional ganha +1 MOVIMENTO
+          e PISOTEAR 2.
+      - id: inspired
+        name: Inspirado
+        effect: Uma vez por turno e apenas durante seu turno, você pode rerrolar um
+          d20 que acabou de rolar se não gostou do resultado.
+      - id: inspiring-presence
+        name: Presença Inspiradora
+        effect: Ataques de Arma feitos por qualquer Herói dentro do Alcance 1 dele ganham
+          um Bônus de +1 PARA ACERTAR.
+      - id: kitten-chaser
+        name: Perseguidor de Gatinhos
+        effect: Sempre que você Gastar 1 CA para tomar uma Ação de Movimento adicional
+          (isto não inclui nenhuma Habilidade de Agilidade ou sua Ação de Movimento
+          Grátis), você ganha FOCO 2.
+      - id: lone-wolf
+        name: Lobo Solitário
+        effect: Enquanto nenhum outro aliado estiver adjacente a você (Heróis, Camaradas
+          e Mascotes são aliados), sempre que você tomar uma Interrupção ou uma Reação
+          contra um ataque ou ameaça gerada por um Monstro, o monstro atacante sofre
+          2 de DANO não prevenível.
+      - id: moves-like-jagger
+        name: Se Move Como Jagger
+        effect: Sempre que você tomar uma Reação, também tenha como Alvo Outro Herói,
+          INSPIRAR.
+      - id: obscure-lore
+        name: Saber Obscuro
+        effect: Efeitos de FOCO que você conjurar ganham um Bônus de +1.
+      - id: prohibition
+        name: Proibição
+        effect: Cada Herói pode, uma vez por turno, pegar um Cubo de Maldição para rerrolar
+          um d20 que acabou de rolar cujo resultado não gostou.
+      - id: protector
+        name: Protetor
+        effect: Efeitos de PREVENIR que qualquer Herói conjurar ganham um BÔNUS de +1.
+      - id: reckless-revenge
+        name: Vingança Imprudente
+        effect: Sempre que você perder 1 ou mais de Vida, ganha FOCO 1 (sofrer dano
+          causa perda de vida).
+      - id: sentinel
+        name: Sentinela
+        effect: "Sempre que um Personagem aliado adjacente a você for atacado, como
+          uma Interrupção, você pode Gastar 1 Cubo de Ação para fazer um Ataque de Arma
+          de +0 ACERTO contra o Monstro que o está atacando, se esse Monstro também
+          estiver no Alcance de sua arma. Se esse Monstro for derrotado por seu ataque,
+          cancele seu ataque atual: ele não causará dano a nenhum de seus alvos. NOTA:
+          Se você tomar uma Interrupção contra o ataque de um Monstro, não pode também
+          tomar Reações contra nenhuma ameaça gerada por esse mesmo ataque."
+      - id: setting-sun-s-blessing
+        name: Bênção do Sol Poente
+        effect: "Heróis acertam com Ataque de Arma e têm sucesso com Testes de Habilidade
+          sempre que rolarem 1 no d20. Além disso, sempre que um Herói conjurar um efeito
+          de Ataque Mágico, ele deve rolar o d20: se rolar 16+, esse Ataque Mágico é
+          um Acerto Crítico (causa o dobro do dano que normalmente causaria)."
+      - id: sisters-bond
+        name: Laço de Irmãs
+        effect: Sempre que outro Herói dentro do Alcance 1 fosse sofrer dano ou receber
+          um Cubo de Maldição, você pode sofrer esse dano ou receber esse Cubo de Maldição
+          em seu lugar. Se o fizer, sente-se recompensado e ganha um marcador de INSPIRAÇÃO.
+      - id: taunt
+        name: Provocação
+        effect: "Sempre que seus aliados no Alcance 1 forem atacados, você pode sofrer
+          FADIGA 1 para: COBRIR o ALIADO alvo (se dois ou mais aliados estiverem sendo
+          atacados ao mesmo tempo, você só pode Cobrir um deles). Cobrir um Alvo desta
+          forma não requer ação e é feito na velocidade de uma Interrupção, mas não é
+          considerado uma Interrupção."
+      - id: throat-slitter
+        name: Cortador de Gargantas
+        effect: "Sempre que você desferir um Golpe Mortal: você ganha FOCO 1. Este efeito
+          só pode ser ativado uma vez por turno."
+      - id: truthful
+        name: Verdadeiro
+        effect: Você só recebe um Cubo de Maldição ao tomar Ações de Recuperação.
+      - id: uncertain-readings
+        name: Leituras Incertas
+        effect: Heróis podem pegar um Cubo de Maldição e sofrer FRÁGIL para transformar
+          um Teste de Precisão que acabaram de errar em um sucesso.
+      - id: valorous-party
+        name: Grupo Valoroso
+        effect: Sempre que um Herói obtiver um Acerto Crítico, esse Herói pode ganhar
+          à sua escolha FOCO 1 ou PURIFICAR 1
+      - id: vision-beyond-reach
+        name: Visão Além do Alcance
+        effect: Todos os Ataques de Arma à Distância que você fizer e efeitos à Distância
+          que você conjurar ganham +1 de ALCANCE. Então, você pode continuar a jogar
+          a Aventura
+    storyrecord: []
+statuses:
+  core:
+    campaign:
+      - id: a-cooperative-approach
+        name: Uma abordagem cooperativa
+        effect: Sempre que um Herói vasculhar um Baú, ele pode comprar uma carta adicional
+          e escolher uma das duas que comprou para manter. Ele deve embaralhar a outra
+          carta de volta no baralho.
+      - id: a-friendly-approach
+        name: Uma abordagem amigável
+        effect: Sempre que qualquer Herói resolver um efeito com a palavra-chave 'EM
+          SI', ele pode escolher outro personagem que esteja adjacente a ele como seu
+          alvo em vez de si mesmo.
+      - id: aggressive-approach
+        name: Abordagem agressiva
+        effect: "Como uma Ação Menor, você pode: EM SI, MALDIÇÃO 1 para desinvocar uma
+          Assombração do Rei Morto-Vivo."
+      - id: a-man-s-best-friend
+        name: O melhor amigo do homem
+        effect: ""
+      - id: a-mysterious-click
+        name: Um clique misterioso
+        effect: ""
+      - id: apathetic
+        name: Apático
+        effect: ""
+      - id: a-suspicious-approach
+        name: Uma abordagem suspeita
+        effect: Todos os Baús são considerados seguros e os Heróis não precisam rolar
+          o dado de Armadilha ao vasculhá-los.
+      - id: battlefield-medic
+        name: Médico de campo
+        effect: "Como uma Ação com Cubo, você pode: Gastar 1 CA enquanto adjacente a
+          um Herói Nocauteado para remover o Cubo de Trauma que ele acabou de receber
+          de seu painel (esta ação não pode remover um Cubo de Trauma de um Herói depois
+          que ele recuperou o fôlego)."
+      - id: beheaded
+        name: Decapitado
+        effect: ""
+      - id: blessed-source
+        name: Fonte abençoada
+        effect: Você não recebe nenhum Cubo de Maldição ao tomar uma Ação de Recuperação.
+      - id: bloodlust
+        name: Sede de sangue
+        effect: Sempre que você matar um Monstro durante seu turno, depois de resolver
+          a Ação atual, você pode tomar uma Ação com Cubo adicional. Este efeito só
+          pode ser ativado uma vez por turno. Caso contrário, se nenhum Herói o tiver,
+          você ganha FOCO 2.
+      - id: blue-flame
+        name: Chama azul
+        effect: Você não sofre dano da Escuridão.
+      - id: bookworm
+        name: Rato de biblioteca
+        effect: Sempre que você tomar uma Ação de Recuperação durante seu turno, você
+          pode recuperar uma carta de Pergaminho da pilha de descarte do baralho de
+          Baú e usá-la imediatamente. Isso não conta como uma Ação Menor de “Usar Item
+          Consumível”. Se o fizer, após resolver aquela carta, embaralhe-a de volta
+          no baralho de Baú em vez de colocá-la novamente na pilha de descarte.
+      - id: bullied
+        name: Intimidado
+        effect: Sempre que você rolar 5 ou menos no d20, você obtém uma falha crítica.
+      - id: cautious
+        name: Cauteloso
+        effect: "Sempre que um Herói sem o Estado 'Alertado' fosse ser nocauteado, esse
+          Herói pode: EM SI, MALDIÇÃO 1. Se o fizer, deve anotar o Estado 'Alertado'
+          em seu Registro de Campanha e cair a 1 de Vida em vez disso."
+      - id: certainty-1
+        name: Certeza
+        effect: ""
+      - id: certainty-2
+        name: Certeza
+        effect: ""
+      - id: certainty-3
+        name: Certeza
+        effect: ""
+      - id: challenger
+        name: Desafiante
+        effect: "Sempre que você sofrer 4 ou mais de dano de um ataque (dano sofrido
+          é calculado após PREVENIR): RETALIAR 2."
+      - id: cicadas-chant
+        name: Canto da cigarra
+        effect: ""
+      - id: curiosity-1
+        name: Curiosidade
+        effect: ""
+      - id: curiosity-2
+        name: Curiosidade
+        effect: ""
+      - id: curiosity-3
+        name: Curiosidade
+        effect: ""
+      - id: curse
+        name: Maldição
+        effect: ""
+      - id: cursebreaker
+        name: Quebra-maldição
+        effect: ""
+      - id: deep-understanding
+        name: Compreensão profunda
+        effect: "Sempre que qualquer Herói escolher uma Interação, ele pode: EM SI,
+          MALDIÇÃO 1. Se o fizer, pode desfazer a Interação que acabou de ler e escolher
+          outra Interação daquela mesma cena novamente. Ele só pode usar esta habilidade
+          uma vez por Interação, e a Interação que é revertida desta forma se torna
+          disponível novamente."
+      - id: double-check
+        name: Verificação dupla
+        effect: "Como uma Ação Menor, você pode: EM SI, MALDIÇÃO 1 para remover um tile
+          de Escuridão em que você esteja sobre e ganhar FOCO 1."
+      - id: embarrassed
+        name: Envergonhado
+        effect: Você só pode usar cubos Verdes e Azuis para Ativar suas Habilidades
+          que têm um Espaço de CA de quatro cores.
+      - id: emeraldblessing
+        name: Bênção esmeralda
+        effect: "Seus Ataques Mágicos ganham VENENO 2 e seus Ataques de Arma ganham
+          'Sempre que você Rolar 16+: este ataque ganha VENENO 2'"
+      - id: fair-and-square
+        name: Justo e reto
+        effect: Você obtém um Acerto Crítico sempre que rolar 4 ou 16 no d20.
+      - id: fire-ruby
+        name: Rubi de fogo
+        effect: "Seus Ataques Mágicos ganham QUEIMADURA 2 e seus Ataques de Arma ganham
+          “Sempre que você rolar 16+: Este ataque ganha QUEIMADURA 2.”"
+      - id: focused
+        name: Focado
+        effect: Sempre que qualquer Herói obtiver um Crítico, esse Herói ganha FOCO
+          1.
+      - id: folk-hero
+        name: Herói popular
+        effect: "Sempre que você remover um Cubo de Maldição de seu painel, você também:
+          EM SI, CURAR 2."
+      - id: for-the-first-time
+        name: Pela primeira vez
+        effect: Depois que você gastar seu primeiro CA durante seu turno, você pode
+          escolher recuperá-lo imediatamente (ele ainda conta como uma de suas Ações
+          com Cubo). Este efeito ocorre antes de você tomar uma Ação de Recuperação
+          Involuntária.
+      - id: foul-play
+        name: Jogo sujo
+        effect: Sempre que você tomar uma Ação de Recuperação, sofre VENENO 2.
+      - id: greetings
+        name: Saudações
+        effect: ""
+      - id: harmless
+        name: Inofensivo
+        effect: ""
+      - id: help-yourself
+        name: Sirva-se
+        effect: "Como uma Ação Menor, você pode: EM SI, MALDIÇÃO 1 para retornar uma
+          Pilha de Runas revelada inteira (que está no tabuleiro, não na Trilha de Iniciativa)
+          para a sacola e ganhar FOCO 1."
+      - id: horseblood
+        name: Sangue de cavalo
+        effect: Todos os Heróis são imunes a todas as Condições impostas por inimigos
+          ou terreno prejudicial.
+      - id: inspired
+        name: Inspirado
+        effect: Uma vez por turno, você pode rerrolar um D20 quando errar.
+      - id: invincible
+        name: Invencível
+        effect: "Como uma Ação Menor, você pode: EM SI, Remover um Cubo de Trauma para
+          fazer com que o próximo Ataque de Arma (um único ataque, não a Ação com Cubo
+          inteira) ou Ataque Mágico feito naquele turno cause dano dobrado."
+      - id: key
+        name: Chave
+        effect: ""
+      - id: key-shard
+        name: Fragmento de chave
+        effect: ""
+      - id: master-of-undeath
+        name: Mestre da não-vida
+        effect: "Sempre que você tomar uma Ação de Recuperação, após resolvê-la, você
+          pode: EM SI, MALDIÇÃO 1. Se o fizer, ative uma Aparição de base pequena de
+          sua escolha. Você controla seu turno durante essa ativação (você pode ignorar
+          suas prioridades de mira e forçá-la a atacar outro Monstro)."
+      - id: meek
+        name: Manso
+        effect: Sempre que qualquer Herói fosse cair a 0 de PV ou menos, até um outro
+          Herói pode fazer um Teste de Habilidade de Sabedoria (azul) de Dificuldade
+          15. Cada cubo de Sabedoria que ele tem lhe dá um bônus de +2 à sua rolagem.
+          Se tiver sucesso, ele redireciona para si mesmo o dano que nocautearia aquele
+          Herói (este dano não pode ser prevenido nem reagido).
+      - id: merciful
+        name: Misericordioso
+        effect: ""
+      - id: mistwalker
+        name: Caminhante da névoa
+        effect: "Sempre que um Herói tomar uma Ação de Movimento, ele pode: EM SI, MALDIÇÃO
+          1. Se o fizer, ele remove seu Herói do tabuleiro e o coloca em qualquer casa
+          revelada de sua escolha em vez de se mover. Isso é considerado “tomar uma
+          Ação de Movimento” para fins de disparar habilidades."
+      - id: noise
+        name: Ruído
+        effect: ""
+      - id: play-dumb
+        name: Fingir-se de tolo
+        effect: Você pode escolher não receber nenhum Cubo de Maldição ao tomar uma
+          Ação de Recuperação.
+      - id: practical
+        name: Prático
+        effect: Sempre que qualquer Herói fosse receber um Ataque que fosse cair seu
+          PV a 0 ou menos, como uma Reação esse Herói pode fazer um Teste de Habilidade
+          de Agilidade (verde) de Dificuldade 15. Cada cubo de Agilidade que ele tem
+          lhe dá um bônus de +2 à sua rolagem. Se tiver sucesso, ele SALTA 2 e PREVINE
+          TODO o DANO que sofreria.
+      - id: protection-of-the-citadel
+        name: Proteção da Cidadela
+        effect: ""
+      - id: proud
+        name: Orgulhoso
+        effect: Sempre que qualquer Herói cair a 0 de PV ou menos, esse Herói pode fazer
+          um Teste de Habilidade de Destreza (vermelho) de Dificuldade 15. Cada cubo
+          À distância que ele tem lhe dá um bônus de +2 à sua rolagem. Se tiver sucesso,
+          RETALIAR 10.
+      - id: reaping-a-hurricane
+        name: Colhendo um furacão
+        effect: "No início de seu turno: EM SI, MALDIÇÃO 1. Em vez de colocar o CM que
+          recebem em um Espaço de Habilidade, eles o mantêm como se fosse também um
+          CA e ele pode ser usado naquele turno como um Cubo Curinga (ainda conta para
+          o limite de CM que o Herói pode manter)."
+      - id: rest-in-peace
+        name: Descanse em paz
+        effect: ""
+      - id: restrained
+        name: Contido
+        effect: Todos os Heróis podem usar seus cubos verdes como se fossem cubos azuis
+          ou amarelos. Sempre que um Herói usar um cubo verde para ativar uma Habilidade
+          de Corpo a corpo que NÃO é um Ataque de Arma desta forma, essa Habilidade
+          ganha Alcance ilimitado.
+      - id: safeguard
+        name: Salvaguarda
+        effect: "Seus Ataques Mágicos ganham ', ESCUDO 2' e seus Ataques de Arma ganham
+          'Sempre que você rolar 16+: ESCUDO 2.'"
+      - id: secret-passage
+        name: Passagem secreta
+        effect: ""
+      - id: shattered-barrier-inferno
+        name: "Barreira despedaçada: Inferno"
+        effect: ""
+      - id: shattered-barrier-thunder
+        name: "Barreira despedaçada: Trovão"
+        effect: ""
+      - id: steadfast
+        name: Firme
+        effect: Sempre que qualquer Herói cair a 0 de PV ou menos, esse Herói pode fazer
+          um Teste de Habilidade de Força (amarelo) de Dificuldade 15. Cada cubo Corpo
+          a corpo que ele tem lhe dá um bônus de +2 à sua rolagem. Se tiver sucesso,
+          ele cai a 1 de PV em vez disso.
+      - id: tell-my-fingertips
+        name: Diga às pontas dos meus dedos
+        effect: ""
+      - id: the-honorable-gesture
+        name: O gesto honroso
+        effect: Sempre que você tomar uma Ação de Recuperação, também ganha FOCO 1.
+      - id: trick-or-treat
+        name: Doces ou travessuras
+        effect: "Sempre que você tomar uma Ação de Recuperação, escolha uma: inflija
+          QUEIMADURA 2 em um Alvo dentro do Alcance 1, ou, Alvo Herói dentro do Alcance
+          1, CURAR 2."
+      - id: truthful
+        name: Verdadeiro
+        effect: Cada Herói pode manter dois Cubos de Maldição adicionais em seu painel.
+      - id: truth-seeker
+        name: Buscador da verdade
+        effect: "Sempre que você remover um Cubo de Maldição de seu painel, você também:
+          EM SI, ESCUDO 2."
+      - id: unraveling-the-mystery
+        name: Desvendando o mistério
+        effect: Sempre que um efeito fosse invocar um Lacaio (Lacaios são um tipo específico
+          de Monstro que não são Brancos, Cinzas ou Pretos), você pode Gastar 2 CA para
+          cancelar o efeito de invocação. Você não pode cancelar Lacaios que são adicionados
+          por uma Preparação, mas pode cancelar aqueles que são invocados por meio das
+          habilidades de seus inimigos.
+      - id: warned
+        name: Alertado
+        effect: ""
+      - id: watch-your-step
+        name: Cuidado onde pisa
+        effect: ""
+      - id: waxed
+        name: Encerado
+        effect: ""
+    storyrecord: []
+  apocalypse:
+    campaign:
+      - id: a-strange-rod
+        name: Um Cetro Estranho
+        effect: ""
+      - id: bloodlust
+        name: Sede de Sangue
+        effect: Sempre que você derrotar um Monstro, você recebe INSPIRAR.
+      - id: bully
+        name: Valentão
+        effect: "Sempre que você obtiver um Acerto Crítico: Você ganha um marcador de
+          INSPIRAÇÃO."
+      - id: chaotic-wheel
+        name: Roda Caótica
+        effect: "Sempre que você conjurar um Ataque Mágico, role o D20: Se rolar um
+          número par, ele causa DANO DOBRADO; Se rolar um número ímpar, o ataque falha."
+      - id: crystal-clear
+        name: Cristalino
+        effect: Se você fosse comprar uma carta de Baú, procure no baralho por uma carta
+          de sua escolha e pegue-a. Embaralhe o baralho de Baú depois.
+      - id: disappointed
+        name: Decepcionado
+        effect: Sempre que você rolar 1 no d20, obtém um Acerto Crítico e então pode
+          RECICLAR.
+      - id: disgusted
+        name: Enojado
+        effect: Sempre que você Vasculhar um Baú, compre uma carta adicional, escolha
+          uma dessas cartas para manter e coloque a outra no fundo do baralho de Baú.
+      - id: dismembered
+        name: Desmembrado
+        effect: Sempre que você tomar uma Ação de Recuperação, sofre ATORDOAR. Este
+          ATORDOAR ignora qualquer tipo de imunidade que você tenha, já que representa
+          sua dificuldade em lidar com suas ações após a recente perda de um membro.
+      - id: effort
+        name: Esforço
+        effect: ""
+      - id: empathetic
+        name: Empático
+        effect: Sempre que um Herói de seu grupo receber um Cubo de Maldição, ele pode
+          pegá-lo em vez disso (pode escolher individualmente se receber mais de um
+          em um único efeito).
+      - id: exquisite-attunement
+        name: Sintonia Refinada
+        effect: Sempre que você tomar a Ação de “Regra Especial de Desempate”, ganha
+          tanto FOCO 1 quanto PURIFICAR 1 em vez de escolher um deles.
+      - id: guess-what
+        name: Adivinha
+        effect: No início de cada um de seus turnos, você pode reorganizar as Habilidades
+          que estão sendo bloqueadas pelos Cubos de Maldição e Cubos de Trauma que está
+          mantendo.
+      - id: heartbroken
+        name: De coração partido
+        effect: "Sempre que você ou outro Herói de seu grupo sofrer dano: você ganha
+          FÚRIA 1."
+      - id: lash-out
+        name: Espernear
+        effect: Sempre que você rolar 1 no d20, você falha no atual teste de Precisão
+          ou Teste de Habilidade que estiver fazendo e sofre FADIGA 4. Esta FADIGA ignora
+          qualquer tipo de imunidade que seu Herói possa ter.
+      - id: orcish-perseverance
+        name: Perseverança Orc
+        effect: Você pode manter um Cubo de Trauma adicional.
+      - id: possession
+        name: Possessão
+        effect: Sempre que você se mover pelo terceiro espaço em um turno, deve fazer
+          um Teste de Habilidade de Agilidade (verde) de Dificuldade 11. Cada cubo de
+          Agilidade que você tem lhe dá um bônus de +2 à sua rolagem. Se falhar, você
+          sofre DERRUBAR. Se tiver sucesso, você ganha FORTALECER em vez disso.
+      - id: queen-slayer
+        name: Matador de Rainha
+        effect: Sempre que você tomar uma Ação de Recuperação Voluntária ou Involuntária,
+          o próximo Ataque de Arma ou Ataque Mágico que você fizer neste turno não requer
+          um teste de Precisão e é considerado um Acerto Crítico.
+      - id: scornful
+        name: Desdenhoso
+        effect: Se você fosse sofrer apenas 1 ponto de dano de um Ataque, não sofre
+          dano algum.
+      - id: second-thoughts
+        name: Segundos Pensamentos
+        effect: No início de seu turno, você pode recuperar um CA gasto em uma de suas
+          Habilidades de Herói ou Função. Se o fizer, deve colocar um CA diferente em
+          uma de suas Habilidades disponíveis; este efeito não ativa nenhuma de suas
+          Habilidades.
+      - id: shielded-mind
+        name: Mente Protegida
+        effect: Você e cada Herói dentro do Alcance 1 de você são imunes a INTIMIDAR.
+          Além disso, sempre que um Personagem tentar conjurar um efeito de INTIMIDAR
+          contra você ou qualquer outro Herói dentro do Alcance 1 de você, o alvo desse
+          efeito de INTIMIDAR recebe INSPIRAR em vez disso.
+      - id: veteran-s-sorrow
+        name: Tristeza do Veterano
+        effect: "Sempre que você errar um Ataque de Arma, você pode: EM SI, MALDIÇÃO
+          1. Se o fizer, o ataque acerta em vez disso."
+    storyrecord:
+      - id: a-broken-man
+        name: Um Homem Quebrado
+        effect: ""
+      - id: a-hard-bargain
+        name: Um Acordo Difícil
+        effect: ""
+      - id: afterlife-mysteries
+        name: Mistérios do Além
+        effect: Sempre que qualquer Herói obtiver um Acerto Crítico, ele pode Recuperar
+          até um CA.
+      - id: aftermath
+        name: Rescaldo
+        effect: Sempre que um Herói de seu grupo tomar uma Ação de Recuperação, após
+          resolvê-la, ele recebe PURIFICAR 1 ou FOCO 1.
+      - id: aggressive-negotiations
+        name: Negociações Agressivas
+        effect: ""
+      - id: anchor-locked
+        name: Âncora Presa
+        effect: ""
+      - id: anchor-sunk
+        name: Âncora Afundada
+        effect: ""
+      - id: anger-management
+        name: Controle de Raiva
+        effect: Sempre que um Herói sofrer dano de uma carta de Ataque, ele ganha INSPIRAR.
+      - id: angered-entrepreneur
+        name: Empresário Irado
+        effect: "Sempre que um Herói rolar 16+: Ative Carmilla Reinard. Esta Habilidade
+          só pode ser ativada uma vez por turno."
+      - id: back-to-back
+        name: Costas com Costas
+        effect: Todos os Heróis de seu grupo ganham o traço GUARDIÃO.
+      - id: bad-hosting
+        name: Má Hospitalidade
+        effect: ""
+      - id: betrayed1
+        name: Traído (Condottieri)
+        effect: Sempre que um Herói derrotar um Condottieri, ele ganha FOCO 2 ou PURIFICAR
+          2.
+      - id: betrayed2
+        name: Traído (Dunedancer)
+        effect: Sempre que um Herói derrotar um Dunedancer, ele ganha FOCO 2 ou PURIFICAR
+          2.
+      - id: bloody-mess
+        name: Bagunça Sangrenta
+        effect: Sempre que um Herói cair a 0 de Vida, cada outro Herói sofre MALDIÇÃO
+          1.
+      - id: bricklayer-s-assistant
+        name: Ajudante do Pedreiro
+        effect: ""
+      - id: broken-man
+        name: Homem Quebrado
+        effect: ""
+      - id: clean-conscience
+        name: Consciência Limpa
+        effect: No início do turno de cada Herói, se ele não estiver mantendo nenhum
+          Cubo de Maldição, ele recebe INSPIRAR.
+      - id: compassion
+        name: Compaixão
+        effect: Heróis não rolam o Dado de Armadilha ao abrir Baús.
+      - id: contempt
+        name: Desprezo
+        effect: Sempre que um Herói infligir dano ao Cavaleiro da Praga com um Ataque
+          de Arma ou Ataque Mágico, ele ganha PURIFICAR 1.
+      - id: damsel-in-distress
+        name: Donzela em Perigo
+        effect: ""
+      - id: declawed-beast
+        name: Fera sem Garras
+        effect: ""
+      - id: deep-understanding
+        name: Compreensão Profunda
+        effect: Sempre que um Herói tomar uma Ação de Recuperação Voluntária, ele pode
+          imediatamente tomar uma Ação com Cubo adicional antes de terminar seu turno.
+      - id: desert-knight
+        name: Cavaleiro do Deserto
+        effect: Sempre que um Herói derrotar um Condottieri, ele ganha FOCO 2 ou PURIFICAR
+          2.
+      - id: disarmed-father
+        name: Pai Desarmado
+        effect: ""
+      - id: downer
+        name: Estraga-prazeres
+        effect: Acertos Críticos não dobram mais o dano de um ataque.
+      - id: drowned-prayer
+        name: Prece Afogada
+        effect: ""
+      - id: element-collection
+        name: Coleção de Elementos
+        effect: ""
+      - id: even-number
+        name: Número Par
+        effect: ""
+      - id: frozen-to-death
+        name: Morto de Frio
+        effect: ""
+      - id: ghostly-plunder
+        name: Pilhagem Fantasmagórica
+        effect: "Como uma Ação com Cubo, um Herói pode Gastar 1 CA para: Se houver três
+          ou menos Baús no tabuleiro, colocar um Baú em uma casa adjacente a ele."
+      - id: give-or-take
+        name: Dá ou Toma
+        effect: ""
+      - id: glyph-unraveled
+        name: Glifo Desvendado
+        effect: ""
+      - id: gold-digger
+        name: Garimpeiro
+        effect: Sempre que um Monstro for derrotado pela primeira vez em uma rodada,
+          ele deixa cair um marcador de Saque.
+      - id: head-start
+        name: Vantagem Inicial
+        effect: 'Heróis podem tomar a seguinte Reação Gastando 1 CA: "EM SI, PREVENIR
+          TODO o DANO E FADIGA Y onde Y é o número de marcadores de Tempo no Painel de
+          Status de Monstro Chefe do Cavaleiro da Fome; Então o Cavaleiro da Fome recebe
+          um marcador de Tempo (isso é apenas um lembrete, não uma Condição ou Recurso)."'
+      - id: healed-wound
+        name: Ferida Curada
+        effect: ""
+      - id: heirloom-blade
+        name: Lâmina de Herança
+        effect: ""
+      - id: herosplaining
+        name: Herói-explicando
+        effect: Sempre que um Herói rolar 1 no d20 ao atacar, ele obtém um Acerto Crítico
+          em vez de uma Falha Crítica.
+      - id: improvisation-time
+        name: Hora de Improvisar
+        effect: Sempre que um Herói derrotar um Lacaio, ele ganha FOCO 1 ou PURIFICAR
+          1.
+      - id: initiative
+        name: Iniciativa
+        effect: "Sempre que um Herói de seu grupo tomar uma Reação, role o D20: Se rolar
+          16+: Recupere o CA que acabou de gastar."
+      - id: it-takes-two
+        name: São Precisos Dois
+        effect: O Coorte Robin Rising se ativa duas vezes durante cada um de seus turnos.
+      - id: lever-pushed
+        name: Alavanca Empurrada
+        effect: ""
+      - id: lifesaver
+        name: Salva-vidas
+        effect: ""
+      - id: luccanor-s-revenge
+        name: Vingança de Luccanor
+        effect: Sempre que um Herói infligir dano ao Comandante Traidor com um Ataque
+          de Arma ou Ataque Mágico, ele ganha FOCO 1.
+      - id: no-maiden-fair
+        name: Nenhuma Donzela Bela
+        effect: ""
+      - id: obstinate
+        name: Obstinado
+        effect: Sempre que um Herói tomar uma Ação de Recuperação Voluntária, ele pode
+          imediatamente tomar uma Ação com Cubo antes de terminar seu turno.
+      - id: odd-number
+        name: Número Ímpar
+        effect: ""
+      - id: past-life-hauntings
+        name: Assombrações de Vidas Passadas
+        effect: Se os Comandantes de Cenário Lorennor ou Uldannor receberem um efeito
+          de CURAR, sofrerão a mesma quantidade de dano não prevenível em vez de recuperar
+          Vida. Da mesma forma, se receberem PURIFICAR, sofrem INTIMIDAR 4 em vez de
+          remover um Cubo de Maldição.
+      - id: perimeter-kept
+        name: Perímetro Mantido
+        effect: ""
+      - id: pirate-s-luck
+        name: Sorte de Pirata
+        effect: Sempre que o primeiro Monstro for derrotado em cada nova Preparação
+          que seu grupo fizer, substitua sua miniatura por um marcador de Saque. Se
+          esse Monstro for um Monstro Grande, Comandante ou Suserano, substitua-o por
+          dois desses marcadores.
+      - id: post-traumatic-stress
+        name: Estresse Pós-Traumático
+        effect: Sempre que um Herói for Nocauteado, cada outro Herói de seu grupo ganha
+          FOCO 1 e sofre MALDIÇÃO 1. Este efeito ignora qualquer tipo de imunidade que
+          um Herói possa ter.
+      - id: questioning
+        name: Questionamento
+        effect: ""
+      - id: removed-helmet
+        name: Elmo Removido
+        effect: ""
+      - id: removed-necklace
+        name: Colar Removido
+        effect: ""
+      - id: removed-shield
+        name: Escudo Removido
+        effect: ""
+      - id: righteous
+        name: Justo
+        effect: Heróis de seu grupo podem manter um Cubo de Trauma adicional.
+      - id: royal-outrage
+        name: Ultraje Real
+        effect: ""
+      - id: sealed-fate
+        name: Destino Selado
+        effect: ""
+      - id: ship-s-on
+        name: O Navio Segue
+        effect: ""
+      - id: suspicious
+        name: Suspeito
+        effect: Heróis que estão sendo ameaçados podem tomar uma Reação adicional contra
+          suas ameaças.
+      - id: swallowed-pride
+        name: Orgulho Engolido
+        effect: Sempre que um Herói obtiver um Crítico, esse Herói também ganha FOCO
+          2.
+      - id: terrible-fate
+        name: Destino Terrível
+        effect: ""
+      - id: the-heirloom-blade
+        name: A Lâmina de Herança
+        effect: ""
+      - id: thy-kingdom-come
+        name: Venha o Teu Reino
+        effect: ""
+      - id: two-words
+        name: Duas Palavras
+        effect: ""
+      - id: umbralian-knight
+        name: Cavaleiro Umbraliano
+        effect: Sempre que um Herói derrotar um Dunedancer, ele ganha FOCO 2 ou PURIFICAR
+          2.
+      - id: until-the-end
+        name: Até o Fim
+        effect: Sempre que um Herói tomar a ação da Mecânica Especial de Desempate,
+          a Cavaleira da Guerra perde 2 de Vida por Runa removida.
+      - id: varatash-terror
+        name: Terror de Varatash
+        effect: "No início do turno de cada Herói, ele ganha: EM SI, INSPIRAR."
+      - id: weak-spot
+        name: Ponto Fraco
+        effect: Sempre que qualquer Herói acertar o Cavaleiro da Fome com um Ataque
+          de Arma ou um Acerto Crítico, ele escolhe uma de suas cartas de Ataque para
+          receber INTIMIDAR 2 (até um máximo de 4 por carta). Na próxima vez que essa
+          carta for ativada, remova todos esses marcadores dela. O Ataque ativado causa
+          -1 de dano por marcador removido desta forma.
+      - id: well-fed
+        name: Bem Alimentado
+        effect: Heróis recebem apenas dois Cubos de Maldição como penalidade ao tomar
+          uma Ação de Recuperação.
+  awakenings:
+    campaign:
+      - id: acquaintance
+        name: Conhecido
+        effect: ""
+      - id: better-judgment
+        name: Bom Senso
+        effect: Uma vez por turno, depois de errar com um Ataque de Arma feito de uma
+          Habilidade, você pode Recuperar o cubo que acabou de gastar para usar essa
+          Habilidade.
+      - id: corrupt-power
+        name: Poder Corrompido
+        effect: Heróis nunca podem ter menos de 2 Cubos de Maldição em seus painéis
+          e, uma vez por turno, podem rolar o d20 se não gostaram do resultado de um
+          movimento.
+      - id: haunted
+        name: Assombrado
+        effect: Sempre que você rolar 1 no d20 ao atacar, se um Aliado estiver no Alcance
+          do ataque, ele é atingido em vez de um Monstro (isso acontece mesmo que você
+          tenha habilidades que transformam rolagens de 1 em acertos ou acertos críticos).
+      - id: lifesaver
+        name: Salva-vidas
+        effect: Como uma Ação com Cubo, você pode Gastar 1 Cubo de Ação para pegar 2
+          Cubos de Maldição (pegar um Cubo de Maldição é diferente de sofrer MALDIÇÃO)
+          e remover um Cubo de Trauma de um Herói Nocauteado que esteja adjacente a
+          você. Se esse Herói já tiver Recuperado o Fôlego, você não pode remover seu
+          Cubo de Trauma desta forma.
+      - id: power-of-hate
+        name: Poder do Ódio
+        effect: Heróis podem tomar 1 Ação com Cubo adicional em seus turnos.
+      - id: shadow-crown
+        name: Coroa das Sombras
+        effect: Heróis não são afetados pela Escuridão (não sofrem nem o dano nem as
+          penalidades).
+      - id: soft-heart
+        name: Coração Mole
+        effect: Enquanto houver outro Herói adjacente a você, esse Herói receberá os
+          benefícios da Aura "Sombrio" (os benefícios da Aura só se aplicam enquanto
+          você ainda estiver adjacente a ele).
+      - id: sweet-scent
+        name: Aroma Doce
+        effect: Lacaios são enfeitiçados por seu cheiro agradável e são incapazes de
+          atacar você (não consideram você como um alvo) e o Javali Selvagem que perambula
+          pela ilha (se ainda estiver vivo) não tentará mais escapar. Em vez disso,
+          ele se moverá em sua direção, tentando permanecer adjacente a você.
+    storyrecord:
+      - id: acquaintance
+        name: Conhecido
+        effect: ""
+      - id: acquainted
+        name: Familiarizado
+        effect: ""
+      - id: bright-pupil
+        name: Aluno Brilhante
+        effect: ""
+      - id: careful
+        name: Cuidadoso
+        effect: ""
+      - id: christi-s-aid
+        name: Ajuda de Christi
+        effect: Sempre que um Herói de seu grupo tomar uma Ação de Recuperação, esse
+          Herói ganha um marcador de Inspiração
+      - id: dark-past
+        name: Passado Obscuro
+        effect: ""
+      - id: guided
+        name: Guiado
+        effect: ""
+      - id: heirloom
+        name: Herança
+        effect: ""
+      - id: imminent-danger
+        name: Perigo Iminente
+        effect: ""
+      - id: karsten-freed
+        name: Karsten Libertado
+        effect: ""
+      - id: king-s-cause
+        name: Causa do Rei
+        effect: ""
+      - id: loose-arm
+        name: Braço Solto
+        effect: ""
+      - id: nautical-empathy
+        name: Empatia Náutica
+        effect: ""
+      - id: painful-memories
+        name: Memórias Dolorosas
+        effect: ""
+      - id: pirate-s-gift
+        name: Presente do Pirata
+        effect: ""
+      - id: pushover
+        name: Frouxo
+        effect: ""
+      - id: remorse
+        name: Remorso
+        effect: ""
+      - id: salamander-s-sweat
+        name: Suor de Salamandra
+        effect: "Sempre que um Herói rolar 16+ durante um ataque com Ataque de Arma
+          ou conjurar um Ataque Mágico: o ataque ganha QUEIMADURA 2."
+      - id: sea-fighter
+        name: Guerreiro do Mar
+        effect: No fim do turno da Runa, após os efeitos da carta de Runa serem resolvidos,
+          cada Herói pode tomar um DESVIO LATERAL. Um DESVIO LATERAL é um efeito de
+          MOVER 1 que não é afetado por nenhum bônus ou penalidade de movimento que
+          você possa ter. Além disso, pode ser tomado mesmo se você estiver LENTO ou
+          DERRUBADO, porém, essas Condições não são removidas.
+      - id: search-party
+        name: Grupo de Busca
+        effect: Sempre que um Herói de seu grupo comprar uma carta de Evento Especial
+          das Surpresas de Eradren, esse Herói ganha FOCO 2
+      - id: sunken-relic
+        name: Relíquia Afundada
+        effect: ""
+      - id: suspicious
+        name: Suspeito
+        effect: Sempre que um Herói Vasculhar um Baú, compra uma carta adicional, escolhe
+          uma dessas cartas para manter e coloca a outra no fundo do baralho de Baú.
+      - id: the-x-mark-the-spot
+        name: O X Marca o Local
+        effect: Sempre que um Herói desferir o golpe mortal por meio de um Acerto Crítico,
+          o Monstro derrotado deixa cair um marcador de Saque em sua casa.
+      - id: turn-around
+        name: Reviravolta
+        effect: "Qualquer bônus de ACERTO em Ataque de Arma que seus Ataques teriam
+          ou receberiam se torna bônus de DANO em vez disso. Exemplo: O Balanço em Arco
+          de Vorn diz: “TALHAR 2, +3 ACERTO”; portanto, se torna: “TALHAR 2, +0 ACERTO,
+          +3 DANO”. Qualquer bônus de ACERTO que seu Herói tenha por Equipamento, Habilidades
+          de Classe ou Efeitos Especiais também se transforma em dano bônus."
+      - id: wrong-foot
+        name: Pé Errado
+        effect: ""
+unfolding:
+  core:
+    campaign: []
+    storyrecord: []
+  apocalypse:
+    campaign: []
+    storyrecord:
+      - id: a-broken-man
+        name: Um Homem Quebrado
+        act: 2
+      - id: a-crown-with-no-jewels
+        name: Uma Coroa sem Joias
+        act: 2
+      - id: a-hero-restored
+        name: Um Herói Restaurado
+        act: 2
+      - id: carmillas-goodbye
+        name: Adeus de Carmilla
+        act: 1
+      - id: compromising
+        name: Comprometendo
+        act: 4
+      - id: connecting-dots
+        name: Ligando os Pontos
+        act: 3
+      - id: crossroads
+        name: Encruzilhada
+        act: 3
+      - id: gil-garoth-reborn
+        name: Gil Garoth Renascido
+        act: 2
+      - id: heroic-folks
+        name: Gente Heroica
+        act: 1
+      - id: luccanors-redemption
+        name: Redenção de Luccanor
+        act: 1
+      - id: luccanors-regret
+        name: Arrependimento de Luccanor
+        act: 1
+      - id: no-ones-land
+        name: Terra de Ninguém
+        act: 2
+      - id: survivors-survived
+        name: Sobreviventes Sobrevivem
+        act: 3
+      - id: the-bargain
+        name: O Acordo
+        act: 3
+      - id: the-bonds-uniting-us
+        name: Os Laços que Nos Unem
+        act: 3
+      - id: the-desert-flower
+        name: A Flor do Deserto
+        act: 2
+      - id: the-earl-of-nothing
+        name: O Conde do Nada
+        act: 3
+      - id: the-fallout
+        name: As Consequências
+        act: 4
+      - id: the-good-duke
+        name: O Bom Duque
+        act: 1
+      - id: the-last-dance
+        name: A Última Dança
+        act: 2
+      - id: the-safeguard-corporation
+        name: A Corporação Salvaguarda
+        act: 3
+      - id: to-be-or-not-to-be
+        name: Ser ou Não Ser?
+        act: 1
+      - id: tragic-fate
+        name: Destino Trágico
+        act: 3
+      - id: truth-untold
+        name: Verdade Não Contada
+        act: 1
+      - id: what-goes-around-comes-around
+        name: Tudo o que Vai, Volta
+        act: 3
+  awakenings:
+    campaign: []
+    storyrecord: []
+followers:
+  core:
+    campaign: []
+    storyrecord: []
+  apocalypse:
+    campaign: []
+    storyrecord:
+      - id: amster-dehanse
+        name: Amsterd deHanse
+      - id: carmilla-reinard
+        name: Carmilla Reinard
+      - id: condottieri-daviggo
+        name: Condottieri DaViggo
+      - id: dunedancer-khadija
+        name: Dunedancer Khadija
+      - id: robin-rising
+        name: Robin Rising
+  awakenings:
+    campaign: []
+    storyrecord:
+      - id: elros
+        name: Elros, o Assassino
+      - id: lorelai
+        name: Lorelai, a Maga
+      - id: maya
+        name: Maya, a Patrulheira
+      - id: minerva
+        name: Minerva
+      - id: vorn
+        name: Vorn, o Guerreiro

@@ -1,1 +1,378 @@
 ---
+weapon:
+  core:
+    amiran-crossbow: Besta Amiran
+    amiran-halberd: Alabarda Amiran
+    amiran-royal-maul: Malho Real Amiran
+    battle-maul: Malho de Batalha
+    blacksteel-blade: Lâmina de Aço Negro
+    blacksteel-greatsword: Espada Grande de Aço Negro
+    blacksteel-longsword: Espada Longa de Aço Negro
+    blooded-sword: Espada Sangrenta
+    bloody-axe-cosmic-gem: Machado Sangrento (Gema Cósmica)
+    bloody-axe-socketed: Machado Sangrento (Encaixado)
+    corruptor-knife: Faca Corruptora
+    crossbow: Besta
+    dreampiercer-bow: Arco Perfura-Sonhos
+    dwarven-kings-sword-cosmic-gem: Espada do Rei Anão (Gema Cósmica)
+    dwarven-kings-sword-socketed: Espada do Rei Anão (Encaixada)
+    elvish-bow: Arco Élfico
+    enchanted-crossbow-cosmic-gem: Besta Encantada (Gema Cósmica)
+    enchanted-crossbow-socketed: Besta Encantada (Encaixada)
+    exquisite-dreamblade: Lâmina Onírica Refinada
+    hellscarian-short-bow: Arco Curto de Hellscar
+    jagged-blade-axe: Machado de Lâmina Serrilhada
+    light-maul: Malho Leve
+    marksman-bow: Arco de Atirador
+    orcish-blade: Lâmina Orc
+    orcish-cleaver: Cutelo Orc
+    orcish-reaper-blade: Lâmina Ceifadora Orc
+    repeating-crossbow: Besta de Repetição
+    runecarved-blade: Lâmina Rúnica
+    staff-of-the-arcana: Cajado dos Arcanos
+    staff-of-the-dawn: Cajado da Aurora
+    staff-of-the-moon: Cajado da Lua
+    staff-of-the-noon: Cajado do Meio-Dia
+    staff-of-the-stars: Cajado das Estrelas
+    staff-of-the-twilight: Cajado do Crepúsculo
+    staff-of-the-wildfire-cosmic-gem: Cajado do Fogo Selvagem (Gema Cósmica)
+    staff-of-the-wildfire-socketed: Cajado do Fogo Selvagem (Encaixado)
+    sword-of-the-dynasty: Espada da Dinastia
+    sword-of-the-prince: Espada do Príncipe
+    terror-blade: Lâmina do Terror
+    valaranian-runebow: Arco Rúnico Valaraniano
+    vicious-knife: Faca Cruel
+    wooden-staff: Cajado de Madeira
+  undeaddragon:
+    dark-piercer: Perfurador Sombrio
+    bane-of-the-shadows: Ruína das Sombras
+  desertofhellscar:
+    staff-of-gravity: Cajado da Gravidade
+    weapon-of-the-ancients: Arma dos Anciões
+  apocalypse:
+    axe-of-the-steppes: Machado das Estepes
+    counselors-staff: Cajado do Conselheiro
+    empyrean-bowstaff: Arco-Cajado Empíreo
+    gil-garoths-sword: Espada de Gil Garoth
+    hellscarian-falchion: Falchion de Hellscar
+    hunting-shotbow: Arco Curto de Caça
+    improved-arbalast: Arbalete Aprimorado
+    improved-arcannon: Arcanhão Aprimorado
+    improved-claymore: Claymore Aprimorada
+    improved-crossbow: Besta Aprimorada
+    improved-longsword: Espada Longa Aprimorada
+    improved-rapier: Rapieira Aprimorada
+    improved-royal-staff: Cajado Real Aprimorado
+    lionhearteds-sword: Espada Coração-de-Leão
+    standard-arbalast: Arbalete Padrão
+    standard-arcannon: Arcanhão Padrão
+    standard-claymore: Claymore Padrão
+    standard-crossbow: Besta Padrão
+    standard-longsword: Espada Longa Padrão
+    standard-rapier: Rapieira Padrão
+    standard-royal-staff: Cajado Real Padrão
+    sword-of-kane: Espada de Kane
+    ultimate-arbalast: Arbalete Definitivo
+    ultimate-arcannon: Arcanhão Definitivo
+    ultimate-claymore: Claymore Definitiva
+    ultimate-crossbow: Besta Definitiva
+    ultimate-longsword: Espada Longa Definitiva
+    ultimate-rapier: Rapieira Definitiva
+    ultimate-royal-staff: Cajado Real Definitivo
+  awakenings:
+    arcabalest: Arcabalesta
+    chaos-staff: Cajado do Caos
+    cleavescythe: Cortafoice
+    hack-slash: Corte-Retalho
+    improved-hack-slash: Corte-Retalho Aprimorado
+    improved-twin-blades: Lâminas Gêmeas Aprimoradas
+    improved-cleavescythe: Cortafoice Aprimorada
+    improved-chaos-staff: Cajado do Caos Aprimorado
+    improved-war-bow: Arco de Guerra Aprimorado
+    improved-arcabalest: Arcabalesta Aprimorada
+    twin-blades: Lâminas Gêmeas
+    rancor-blade: Lâmina do Rancor
+    ultimate-hack-slash: Corte-Retalho Definitivo
+    ultimate-twin-blades: Lâminas Gêmeas Definitivas
+    ultimate-cleavescythe: Cortafoice Definitiva
+    ultimate-chaos-staff: Cajado do Caos Definitivo
+    ultimate-war-bow: Arco de Guerra Definitivo
+    ultimate-arcabalest: Arcabalesta Definitiva
+    war-bow: Arco de Guerra
+trinket:
+  core:
+    amulet-of-power: Amuleto do Poder
+    amulet-of-rewinding: Amuleto do Retrocesso
+    amulet-of-the-copycat: Amuleto do Imitador
+    badge-of-the-wardens: Insígnia dos Guardiões
+    blue-flame-torch: Tocha de Chama Azul
+    boots-of-agility: Botas da Agilidade
+    boots-of-levitation: Botas da Levitação
+    boots-of-striding: Botas do Passo Longo
+    bracers-of-endurance: Braceletes da Resistência
+    broken-phylactery: Filactério Quebrado
+    cursed-bracelet: Bracelete Amaldiçoado
+    dewey-and-guss-collar: Coleira de Dewey & Guss
+    family-locket-cosmic-gem: Medalhão de Família (Gema Cósmica)
+    family-locket-socketed: Medalhão de Família (Encaixado)
+    gold-medal: Medalha de Ouro
+    golden-locket: Medalhão Dourado
+    good-quality-stick: Bastão de Boa Qualidade
+    good-quality-torch: Tocha de Boa Qualidade
+    lovers-promise: Promessa de Amantes
+    periapt-of-greater-healing: Amuleto de Cura Maior
+    periapt-of-healing: Amuleto de Cura
+    periapt-of-supreme-healing: Amuleto de Cura Suprema
+    ring-of-greater-precision: Anel da Precisão Maior
+    ring-of-legendary-precision: Anel da Precisão Lendária
+    ring-of-precision: Anel da Precisão
+    ruby-brooch: Broche de Rubi
+    seed-of-darkness-bright: Semente das Trevas (Brilhante)
+    seed-of-darkness-dim: Semente das Trevas (Opaca)
+    sigil-of-narangerel: Sigilo de Narang'erel
+    teddy-bear: Ursinho de Pelúcia
+    bond-of-superation: Elo da Superação
+    badge-of-the-west-wind: Insígnia do Vento Oeste
+  undeaddragon:
+    dragon-eye-of-memory: Olho de Dragão da Memória
+  desertofhellscar:
+    frozen-tears-of-alagast: Lágrimas Congeladas de Alagast
+  apocalypse:
+    chain-of-the-lost-world: Corrente do Mundo Perdido
+    eldritch-symbiot: Simbionte Eldritch
+    executioners-helmet: Elmo do Executor
+    gilded-collar-death: Coleira Dourada (Morte)
+    gilded-collar-life: Coleira Dourada (Vida)
+    grayrock-signet: Sinete de Cinzarocha
+    improved-eldritch-mask: Máscara Eldritch Aprimorada
+    improved-emerald-ring: Anel de Esmeralda Aprimorado
+    improved-power-gauntlet: Manopla do Poder Aprimorada
+    improved-titan-stompers: Pisadores Titânicos Aprimorados
+    jeweled-necklace: Colar Enjoiado
+    outlander-helmet: Elmo do Forasteiro
+    ragged-doll: Boneca Esfarrapada
+    rainbow-mask: Máscara Arco-Íris
+    righteous-torch: Tocha Justiceira
+    sapphire-pendant: Pingente de Safira
+    sprout-of-darkness: Broto das Trevas
+    standard-eldritch-mask: Máscara Eldritch Padrão
+    standard-emerald-ring: Anel de Esmeralda Padrão
+    standard-power-gauntlet: Manopla do Poder Padrão
+    standard-titan-stompers: Pisadores Titânicos Padrão
+    ultimate-eldritch-mask: Máscara Eldritch Definitiva
+    ultimate-emerald-ring: Anel de Esmeralda Definitivo
+    ultimate-power-gauntlet: Manopla do Poder Definitiva
+    ultimate-titan-stompers: Pisadores Titânicos Definitivos
+    vow-keeper: Guardião do Voto
+  awakenings:
+    accuracy-ring: Anel da Precisão
+    cornucopia: Cornucópia
+    arcane-glove: Luva Arcana
+    black-harpoon: Arpão Negro
+    bright-crest: Brasão Brilhante
+    captains-brooch: Broche do Capitão
+    christis-kitten: Gatinho de Christi
+    cosmic-heart-chipped: Coração Cósmico - Trincado
+    cosmic-heart-flawless: Coração Cósmico - Impecável
+    eradrens-lamp: Lâmpada de Eradren
+    felix-felis: Felix Felis
+    fighters-ring-back: Anel do Lutador (Costas)
+    fighters-ring-front: Anel do Lutador (Frente)
+    grimoire: Grimório
+    huntmasters-whistle: Apito do Mestre-Caçador
+    improved-accuracy-ring: Anel da Precisão Aprimorado
+    improved-tracker-boots: Botas do Rastreador Aprimoradas
+    improved-cornucopia: Cornucópia Aprimorada
+    improved-grimoire: Grimório Aprimorado
+    loriens-flute: Flauta de Lorien
+    mind-gem: Gema da Mente
+    polished-helmet: Elmo Polido
+    token-of-friendship: Símbolo da Amizade
+    tracker-boots: Botas do Rastreador
+    trappers-toolkit: Kit do Trapaceiro
+    ultimate-accuracy-ring: Anel da Precisão Definitivo
+    ultimate-tracker-boots: Botas do Rastreador Definitivas
+    ultimate-cornucopia: Cornucópia Definitiva
+    ultimate-grimoire: Grimório Definitivo
+armor:
+  core:
+    breastplate: Peitoral
+    cloth-armor: Armadura de Tecido
+    displacement-cloak: Manto do Deslocamento
+    dream-weaveplate: Armadura Tecida em Sonhos
+    full-plate-armor: Armadura Completa de Placas
+    greater-displacement-cloak: Manto do Deslocamento Maior
+    greater-spellweave-cloak: Manto Tecido por Magia Maior
+    half-plate-armor: Meia-Armadura de Placas
+    heavy-thornmail: Cota de Espinhos Pesada
+    leather-armor: Armadura de Couro
+    lesser-displacement-cloak: Manto do Deslocamento Menor
+    lesser-spellweave-cloak: Manto Tecido por Magia Menor
+    light-thornmail: Cota de Espinhos Leve
+    padded-leather-armor: Armadura de Couro Acolchoada
+    plate-armor: Armadura de Placas
+    reinforced-leather-armor: Armadura de Couro Reforçada
+    reinforced-shadow-leather: Couro Sombrio Reforçado
+    runecarved-cloak: Manto Rúnico
+    shadow-leather-armor: Armadura de Couro Sombrio
+    spellweave-cloak: Manto Tecido por Magia
+    studded-leather-armor: Armadura de Couro Cravejada
+    studded-shadow-leather: Couro Sombrio Cravejado
+    thornmail: Cota de Espinhos
+    xerethian-breastplate: Peitoral Xerethiano
+  desertofhellscar:
+    wormscale-breastplate: Peitoral de Escamas de Verme
+  apocalypse:
+    condottieris-breastplate: Peitoral do Condottieri
+    improved-arming-doublet: Gibão de Armar Aprimorado
+    improved-cape-of-the-magi: Capa dos Magi Aprimorada
+    improved-lorica-armor: Armadura Lorica Aprimorada
+    improved-royal-plate: Armadura Real Aprimorada
+    improved-shadow-leather: Couro Sombrio Aprimorado
+    masterpiece-armor: Armadura Obra-Prima
+    outlander-black-plate: Armadura Negra do Forasteiro
+    scholars-robe: Túnica do Erudito
+    standard-arming-doublet: Gibão de Armar Padrão
+    standard-cape-of-the-magi: Capa dos Magi Padrão
+    standard-lorica-armor: Armadura Lorica Padrão
+    standard-royal-plate: Armadura Real Padrão
+    standard-shadow-leather: Couro Sombrio Padrão
+    ultimate-arming-doublet: Gibão de Armar Definitivo
+    ultimate-cape-of-the-magi: Capa dos Magi Definitiva
+    ultimate-lorica-armor: Armadura Lorica Definitiva
+    ultimate-royal-plate: Armadura Real Definitiva
+    ultimate-shadow-leather: Couro Sombrio Definitivo
+    veteran-cuirass: Couraça de Veterano
+    warworn-breastplate: Peitoral Marcado pela Guerra
+  awakenings:
+    battle-plate: Armadura de Batalha
+    exquisite-mail: Cota Refinada
+    improved-mystics-robe: Túnica do Místico Aprimorada
+    improved-rogues-vest: Colete do Ladino Aprimorado
+    improved-battle-plate: Armadura de Batalha Aprimorada
+    improved-exquisite-mail: Cota Refinada Aprimorada
+    improved-quilted-doublet: Gibão Acolchoado Aprimorado
+    mystics-robe: Túnica do Místico
+    quilted-doublet: Gibão Acolchoado
+    rogues-vest: Colete do Ladino
+    ultimate-mystics-robe: Túnica do Místico Definitiva
+    ultimate-rogues-vest: Colete do Ladino Definitivo
+    ultimate-battle-plate: Armadura de Batalha Definitiva
+    ultimate-exquisite-mail: Cota Refinada Definitiva
+    ultimate-quilted-doublet: Gibão Acolchoado Definitivo
+consumable:
+  core:
+    cosmic-gemstone: Gema Cósmica
+    cosmic-gemstone-chest: Gema Cósmica (Baú)
+    cosmic-gemstone-from-sigil-of-honor: Gema Cósmica (Do Sigilo da Honra)
+    dreamcrafted-pattern-bracers-of-endurance: Padrão Onírico (Braceletes da Resistência)
+    dreamcrafted-pattern-dream-weaveplate: Padrão Onírico (Armadura Tecida em Sonhos)
+    dreamcrafted-pattern-dreamcrafted-buckler: Padrão Onírico (Broquel Onírico)
+    dreamcrafted-pattern-dreampiercer-bow: Padrão Onírico (Arco Perfura-Sonhos)
+    dreamcrafted-pattern-exquisite-dreamblade: Padrão Onírico (Lâmina Onírica Refinada)
+    dreamcrafted-pattern-sigil-of-narangerel: Padrão Onírico (Sigilo de Narang'erel)
+    potion-of-fortitude: Poção da Fortitude
+    potion-of-healing: Poção de Cura
+    potion-of-preparation: Poção da Preparação
+    scroll-of-displacement: Pergaminho do Deslocamento
+    scroll-of-icy-bolts: Pergaminho de Raios Gelados
+    scroll-of-incinerate: Pergaminho da Incineração
+    scroll-of-unmaking: Pergaminho da Desfazedura
+  apocalypse:
+    artisans-tools: Ferramentas do Artesão (Veterano)
+    scroll-of-charm: Pergaminho do Encantamento
+    scroll-of-the-copy-cat: Pergaminho do Imitador
+    scroll-of-translocation: Pergaminho da Translocação
+    treasure-trove: Baú do Tesouro (Veterano)
+  awakenings:
+    artisans-tools: Ferramentas do Artesão (Herói)
+    combustible-grenade: Granada Combustível
+    dragons-breath: Sopro do Dragão
+    potion-of-haste: Poção da Pressa
+    potion-of-strength: Poção da Força
+    scroll-of-beguile: Pergaminho da Sedução
+    scroll-of-polymorph: Pergaminho do Polimorfismo
+    scroll-of-protection: Pergaminho da Proteção
+    treasure-trove: Baú do Tesouro (Herói)
+offhand:
+  core:
+    deadly-backstabber: Apunhalador Mortífero
+    deft-stilleto: Estilete Ágil
+    dreamcrafted-buckler: Broquel Onírico
+    dueling-dagger: Adaga de Duelo
+    empowered-pact-blade: Lâmina do Pacto Fortalecida
+    greater-mystical-symbol: Símbolo Místico Maior
+    greater-symbol-of-light: Símbolo da Luz Maior
+    heavy-shield: Escudo Pesado
+    iron-shield: Escudo de Ferro
+    kite-shield-cosmic-gem: Escudo Papagaio (Gema Cósmica)
+    kite-shield-socketed: Escudo Papagaio (Encaixado)
+    lesser-mystical-symbol: Símbolo Místico Menor
+    lesser-symbol-of-light: Símbolo da Luz Menor
+    mystical-symbol: Símbolo Místico
+    pact-blade: Lâmina do Pacto
+    round-brass-shield: Escudo Redondo de Latão
+    round-golden-shield: Escudo Redondo Dourado
+    round-silver-shield: Escudo Redondo de Prata
+    runecarved-shield: Escudo Rúnico
+    sigil-of-honor: Sigilo da Honra
+    steel-shield: Escudo de Aço
+    symbol-of-light: Símbolo da Luz
+    throwing-dagger: Adaga de Arremesso
+    undermountain-scabbard: Bainha das Profundezas
+    vengeful-pact-blade: Lâmina do Pacto Vingativa
+  undeaddragon:
+    moonlight-dagger: Adaga do Luar
+    dragonclaw-shield: Escudo Garra-de-Dragão
+  desertofhellscar:
+    dragonbone-wand: Varinha de Osso de Dragão
+  apocalypse:
+    carmillas-kiss: Beijo de Carmilla
+    commodores-shield: Escudo do Comodoro
+    draconian-war-gauntlet: Manopla de Guerra Draconiana
+    emerald-claw-gauntlet: Manopla-Garra Esmeralda
+    improved-astral-shard: Fragmento Astral Aprimorado
+    improved-pact-blade: Lâmina do Pacto Aprimorada
+    improved-shadday-shield: Escudo Shadday Aprimorado
+    improved-shell-opener: Abre-Concha Aprimorado
+    improved-umbral-buckler: Broquel Umbral Aprimorado
+    kraken-slayer: Matador de Kraken
+    masterpiece-blade: Lâmina Obra-Prima
+    masterpiece-bow: Arco Obra-Prima
+    masterpiece-staff: Cajado Obra-Prima
+    outlander-shield: Escudo do Forasteiro
+    princess-bowaegis: Arco-Égide da Princesa
+    reality-render: Rasgador da Realidade
+    rod-of-the-prince: Cetro do Príncipe
+    standard-astral-shard: Fragmento Astral Padrão
+    standard-pact-blade: Lâmina do Pacto Padrão
+    standard-shadday-shield: Escudo Shadday Padrão
+    standard-shell-opener: Abre-Concha Padrão
+    standard-umbral-buckler: Broquel Umbral Padrão
+    ultimate-astral-shard: Fragmento Astral Definitivo
+    ultimate-pact-blade: Lâmina do Pacto Definitiva
+    ultimate-shadday-shield: Escudo Shadday Definitivo
+    ultimate-shell-opener: Abre-Concha Definitivo
+    ultimate-umbral-buckler: Broquel Umbral Definitivo
+  awakenings:
+    astral-symbol: Símbolo Astral
+    buckler: Broquel
+    azure-robins-knife: Faca do Robim Azul
+    defenders-buckler-back: Broquel do Defensor (Costas)
+    defenders-buckler-front: Broquel do Defensor (Frente)
+    heart-of-the-ocean: Coração do Oceano
+    heavy-shield: Escudo Pesado
+    hippocampus-banner: Estandarte do Hipocampo
+    holy-aegis: Égide Sagrada
+    improved-astral-symbol: Símbolo Astral Aprimorado
+    improved-heavy-shield: Escudo Pesado Aprimorado
+    improved-skull-piercer: Perfura-Crânio Aprimorado
+    improved-holy-aegis: Égide Sagrada Aprimorada
+    improved-buckler: Broquel Aprimorado
+    ominous-spearhead: Ponta de Lança Sinistra
+    skull-piercer: Perfura-Crânio
+    ultimate-astral-symbol: Símbolo Astral Definitivo
+    ultimate-heavy-shield: Escudo Pesado Definitivo
+    ultimate-skull-piercer: Perfura-Crânio Definitivo
+    ultimate-holy-aegis: Égide Sagrada Definitiva
+    ultimate-buckler: Broquel Definitivo
